@@ -244,6 +244,9 @@ th { font-family: var(--f-display); font-weight: 600; font-size: 13px; letter-sp
 .evtab td { padding: 0 4px; height: 27px; border-top: 1px solid var(--soft); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .evtab td.rk { width: 28px; padding-left: 0; } .evtab td.rider a { white-space: nowrap; }
 .evtab tr.pad td { border-top-color: transparent; }
+.evtile.wide { grid-column: span 2; } @media (max-width: 640px) { .evtile.wide { grid-column: auto; } }
+.evtab.all td.pl { width: 46%; } .plc { display: inline-block; font: 600 10.5px var(--f-mono); padding: 1px 5px; margin-right: 3px; border-radius: 4px; background: var(--soft); color: var(--muted); }
+.plc.m1 { background: #f2c200; color: #17191e; } .plc.m2 { background: #c9ced6; color: #17191e; } .plc.m3 { background: #d39a63; color: #17191e; }
 .evtab td .rl { white-space: nowrap; display: block; overflow: hidden; text-overflow: ellipsis; }
 .evtab td.n { text-align: right; font-family: var(--f-mono); font-size: 11.5px; }
 .evtab td.n { width: 34px; } .evtab td.n.s { color: var(--muted); width: 36px; padding-right: 0; }
@@ -639,17 +642,19 @@ td.rk.win { color: var(--accent); font-weight: 700; }
 .squadcard b, .rostercard b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .squadcard span, .rostercard span { font-size: 13px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .season-seg { margin: 4px 0 14px; }
-.s2grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 12px; }
-.s2card { display: flex; gap: 14px; align-items: center; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; min-width: 0; background: var(--bg); }
-.s2card .crest { flex: none; }
-.s2card .s2body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
-.s2card .s2team { font-family: var(--f-display); font-weight: 700; font-size: 19px; line-height: 1.15; }
-.s2card .s2line { font-size: 13px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.s2card .s2line b { color: var(--ink); font-weight: 600; }
-.s2tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 3px; }
-.s2tag { font-size: 11.5px; font-weight: 600; letter-spacing: .02em; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
-.s2tag.new { border-color: transparent; background: var(--ink); color: var(--bg); }
-.s2tag.prov { border-style: dashed; }
+.s2grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 190px), 1fr)); gap: 12px; }
+.s2card { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; padding: 16px 12px 14px; border: 1px solid var(--soft); border-radius: 12px; background: var(--bg); min-width: 0; transition: border-color .15s, transform .15s; }
+.s2card:hover { border-color: var(--line); transform: translateY(-2px); }
+a.s2card { color: inherit; } a.s2card:hover .s2team { color: var(--accent, inherit); }
+.s2jsy { width: 92px; height: 92px; display: grid; place-items: center; margin-bottom: 8px; }
+.s2jsy img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 4px 10px rgba(0,0,0,.35)); }
+.s2jsy span { width: 64px; height: 64px; border-radius: 14px; display: grid; place-items: center; background: var(--soft); font: 700 26px var(--f-display); color: var(--muted); }
+.s2team { font-family: var(--f-display); font-weight: 700; font-size: 18px; line-height: 1.15; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.s2flag { margin-left: 6px; font: 600 10px var(--f-display); letter-spacing: .05em; padding: 1px 6px; border-radius: 999px; border: 1px dashed var(--muted); color: var(--muted); vertical-align: 3px; }
+.s2mgr { font-size: 14px; font-weight: 600; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.s2mgr a { color: inherit; }
+.s2was { font-size: 12px; color: var(--muted); max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.s2new { color: var(--gc); font-weight: 600; }
 .s2pending { display: flex; flex-wrap: wrap; gap: 8px; }
 .s2pending a, .s2pending span { font-size: 14px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; }
 .roster { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 8px; }
@@ -701,7 +706,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.5.2', updated: '2026-11-05T22:17' };
+const SITE = { version: '1.6.0', updated: '2026-11-05T22:25' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0 };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -1326,7 +1331,7 @@ function profileSvg(t, key, div, still) {
   if (!t || !t.curve) return null;
   const rp = key ? rpOf(key) : null;
   const info = rp && rp.src === 'file' ? evItems(key, t, div) : null;
-  const marksOnly = info ? info.items.filter((it) => it.e.type !== 'finish') : [];
+  const marksOnly = info ? info.items.filter((it) => it.e.type === 'kom' || it.e.type === 'sprint') : [];
   const W = 720, H = 190, P = { l: 40, r: 10, t: 26, b: 22 };
   // keep a minimum height range so a flat or rolling stage doesn't look like a mountain stage
   const ys = t.curve, n = ys.length, lo = Math.max(0, Math.min(...ys) - 20), hi = Math.max(...ys, lo + 900);
@@ -1418,6 +1423,10 @@ function evItems(key, t, div) {
     } else if (res && res[e.type]) got = res[e.type][String(e.i)] || null;
     return { e, spr, fin: isFin, pts, secs, got, has: div != null && tb && (isFin || e.summit ? !!stg : !!res), ok: res ? res[(spr ? 'sprint' : 'kom') + '_ok'] : false };
   });
+  if (res && res.sprintRiders && res.sprintRiders.length) {
+    const last = items.map((it) => it.spr).lastIndexOf(true);
+    items.splice(last + 1, 0, { e: { type: 'allspr', name: 'All intermediate sprints', km: null }, all: res.sprintRiders, n: items.filter((it) => it.spr).length, secsKnown: res.sprintRiders.some((x) => x[3] != null), pts: [], secs: [] });
+  }
   return { rp, tb, res, items };
 }
 const evLabel = (e) => (e.type === 'sprint' ? 'Intermediate sprint' : e.type === 'finish' ? 'Finish' : e.summit ? CATLAB[e.cat] + ' · finish' : CATLAB[e.cat]);
@@ -1440,7 +1449,20 @@ function evPlaces(it, all) {
   if (!pts.length) return h('p', { class: 'evunk' }, 'No points: one-day races keep no mountains or points classification.');
   return tableOf((all ? pts : pts.slice(0, 3)).map((p, k) => row(k, h('span', { class: 'mute' }, ORD(k + 1) + ' place'), p)));
 }
+// every rider who scored in the day's sprints, with his places (which sprint each place was in can't be told)
+function evAllRow(it) {
+  const rows = it.all.map(([r, places, p, sc]) => h('tr', null,
+    h('td', { class: 'rider' }, riderLink(r)),
+    h('td', { class: 'pl' }, places ? places.map((x) => h('span', { class: 'plc' + (x <= 3 ? ' m' + x : '') }, ORD(x))) : h('span', { class: 'mute' }, '?')),
+    h('td', { class: 'n' }, p),
+    it.secsKnown ? h('td', { class: 'n s' }, sc ? sc + '″' : '') : null));
+  return h('div', { class: 'evtile wide', style: '--ec:#16a34a' },
+    h('div', { class: 'evhd' }, h('span', { class: 'evb spr' }, 'Σ'), h('div', { class: 'evn' }, h('b', null, 'All ' + it.n + ' intermediate sprints'), h('small', null, 'each rider’s places · points · bonus seconds'))),
+    h('div', { class: 'evbody' }, h('table', { class: 'evtab all' }, h('tbody', null, rows))),
+    h('div', { class: 'evft' }, h('span', null, 'Worked out from each rider’s points' + (it.secsKnown ? ' and bonus seconds' : '') + ' of the day'), h('span'), h('span')));
+}
 function evRow(it) {
+  if (it.e.type === 'allspr') return evAllRow(it);
   const { e, pts, secs, got } = it;
   const more = (it.has ? (got || []).length : pts.length) > 3;
   let all = false;
@@ -1968,8 +1990,16 @@ const seasonSeg = (cur) => S.s2signups ? h('div', { class: 'seg season-seg', rol
 function viewSquads() {
   $view.append(h('div', null, h('div', { class: 'eyebrow' }, 'Season 1 · PCM 26'), h('h1', null, 'Teams'), h('p', { class: 'sub' }, 'Every cycling team that raced in the league, with the managers who ran it and its wins.'), seasonSeg(1)));
   const list = [...IX.squad.entries()].sort((a, b) => b[1].wins - a[1].wins || b[1].pod - a[1].pod);
-  const grid = h('div', { class: 'squads' }, list.map(([ti, q]) => h('a', { class: 'squadcard', href: '#squad-' + ti }, crest(ti, 52),
-    h('div', null, h('b', null, tid(ti)), h('span', null, [...q.mgrs].map(teamOf).filter((v, k, a) => a.indexOf(v) === k).join(', ') || '—'), h('span', { class: 'num' }, q.wins + ' wins · ' + q.riders.size + ' riders')))));
+  // same cards as the Season 2 page: jersey, team, manager, one quiet line
+  const grid = h('div', { class: 's2grid' }, list.map(([ti, q]) => {
+    const mgr = [...q.mgrs].map(teamOf).filter((v, k, a) => v && a.indexOf(v) === k)[0] || '—';
+    const jsy = jerseyOf(tid(ti));
+    return h('a', { class: 's2card', href: '#squad-' + ti, title: [...q.mgrs].map(teamOf).filter((v, k, a) => v && a.indexOf(v) === k).join(', ') },
+      h('div', { class: 's2jsy' }, jsy ? h('img', { src: jsy, alt: tid(ti) + ' jersey', loading: 'lazy' }) : h('span', null, (tid(ti).match(/[A-Za-z0-9]/) || ['?'])[0].toUpperCase())),
+      h('div', { class: 's2team' }, tid(ti)),
+      h('div', { class: 's2mgr' }, mgr),
+      h('div', { class: 's2was' }, q.wins + (q.wins === 1 ? ' win' : ' wins') + ' · ' + q.riders.size + ' riders'));
+  }));
   $view.append(h('section', { class: 'card' }, grid));
 }
 function viewSquad(ti) {
@@ -1999,21 +2029,16 @@ function viewS2Teams() {
   $view.append(h('div', { class: 'kpis' }, kpi('Sign-ups', teams.length, 'teams so far'), kpi('From Season 1', back.length, 'teams run by Season 1 managers'), kpi('New', fresh.length, fresh.length === 1 ? 'manager in the league' : 'managers in the league'), kpi('Season starts', days ? days + ' days' : 'Today', fdate(D.start))));
   const mgrCell = (t) => t.s1 && IX.teamIds.has(t.s1) ? h('a', { href: '#team-' + encodeTeam(t.s1) }, t.web) : t.web;
   const s1Teams = (n) => { const t = IX.team.get(n); return t ? [...t.squads].map(tid).filter(Boolean).filter((v, k, a) => a.indexOf(v) === k) : []; };
+  // one clean card per team: jersey, team, manager (one name), one quiet line; the rest goes in the tooltip
   const grid = h('div', { class: 's2grid' }, teams.map((t) => {
     const was = t.s1 ? s1Teams(t.s1) : [];
-    return h('div', { class: 's2card' },
-      t.jersey ? h('div', { class: 'crest jsy', style: 'width:64px;height:74px' }, h('img', { src: 'img/jerseys/' + t.jersey + '.png', alt: t.team + ' jersey', loading: 'lazy', title: t.jerseyNote || '' }))
-        : h('div', { class: 'crest', style: 'width:64px;height:64px', title: 'No jersey yet' }, (t.team.match(/[A-Za-z0-9]/) || ['?'])[0].toUpperCase()),
-      h('div', { class: 's2body' },
-        h('div', { class: 's2team' }, t.team),
-        h('div', { class: 's2line' }, 'Manager ', h('b', null, mgrCell(t)), t.pcm && t.pcm !== t.web ? ' · in game ' + t.pcm : ''),
-        t.s1 ? h('div', { class: 's2line' }, 'Season 1 ', h('b', null, t.s1), was.length ? ' · ' + was.join(', ') : '') : null,
-        h('div', { class: 's2tags' },
-          t.s1 ? null : h('span', { class: 's2tag new' }, 'New manager'),
-          t.provisional ? h('span', { class: 's2tag prov', title: t.note || '' }, 'Team not final') : null,
-          t.community ? h('span', { class: 's2tag' }, t.community) : null,
-          h('span', { class: 's2tag' }, 'Signed ' + new Date(t.posted.slice(0, 10) + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' })),
-          t.jerseyNote ? h('span', { class: 's2tag prov', title: t.jerseyNote }, 'Jersey approx.') : null)));
+    const signed = new Date(t.posted.slice(0, 10) + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' });
+    const tip = ['Signed up ' + signed, t.pcm && t.pcm !== t.web ? 'in game: ' + t.pcm : '', t.community ? 'community: ' + t.community : '', t.note || '', t.jerseyNote || ''].filter(Boolean).join(' · ');
+    return h('div', { class: 's2card', title: tip },
+      h('div', { class: 's2jsy' }, t.jersey ? h('img', { src: 'img/jerseys/' + t.jersey + '.png', alt: t.team + ' jersey', loading: 'lazy' }) : h('span', null, (t.team.match(/[A-Za-z0-9]/) || ['?'])[0].toUpperCase())),
+      h('div', { class: 's2team' }, t.team, t.provisional ? h('span', { class: 's2flag', title: t.note || 'Team not final yet' }, 'TBC') : null),
+      h('div', { class: 's2mgr' }, mgrCell(t)),
+      h('div', { class: 's2was' }, t.s1 ? (was.length ? 'S1 · ' + was[0] : 'Raced Season 1') : h('span', { class: 's2new' }, 'New in the IPL')));
   }));
   $view.append(card('Signed up', null, grid));
   // Season 1 managers who have not signed up yet (pairs that split count as signed up)
