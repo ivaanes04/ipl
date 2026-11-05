@@ -3,9 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="description" content="Results, standings, riders and teams of the International Pro League (PCM UK, Pro Cycling Manager 26).">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="IPL Multi">
+<meta property="og:title" content="IPL Multi · International Pro League">
+<meta property="og:description" content="Results, standings, riders with their PCM stats and every stage profile of the PCM UK International Pro League.">
+<meta property="og:url" content="https://iplmulti.pages.dev/">
+<meta property="og:image" content="https://iplmulti.pages.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#d0142c">
 <style>[hidden]{display:none!important}</style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>IPL Results</title>
+<title>IPL Multi · International Pro League</title>
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="favicon-48.png" sizes="48x48" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -55,7 +65,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .nav::-webkit-scrollbar { display: none; }
   .nav a { flex: none; }
 }
-.theme-btn { margin-left: auto; width: 38px; height: 38px; border-radius: 999px; border: 1px solid rgb(127 127 127 / .35); background: transparent; color: inherit; display: grid; place-items: center; cursor: pointer; }
+.gsearch { position: relative; margin-left: auto; flex: 0 1 260px; min-width: 0; }
+.gsearch svg { position: absolute; left: 10px; top: 50%; width: 16px; height: 16px; transform: translateY(-50%); fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; opacity: .6; pointer-events: none; }
+.gsearch input { width: 100%; height: 36px; padding: 0 12px 0 32px; border-radius: 999px; border: 1px solid rgb(127 127 127 / .35); background: rgb(255 255 255 / .08); color: inherit; font: inherit; font-size: 14px; }
+.gsearch input::placeholder { color: inherit; opacity: .55; }
+.gs-list { position: absolute; right: 0; top: calc(100% + 6px); width: min(380px, calc(100vw - 32px)); max-height: 70vh; overflow-y: auto; background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 12px 32px rgb(0 0 0 / .25); padding: 6px; z-index: 20; }
+.gs-it { display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 7px 8px; border-radius: 8px; color: inherit; }
+.gs-it[aria-selected="true"], .gs-it:hover { background: var(--soft); }
+.gs-it .gs-ic { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 8px; overflow: hidden; background: var(--soft); font: 700 11px var(--f-display); color: var(--muted); }
+.gs-it .gs-ic img { width: 100%; height: 100%; object-fit: cover; }
+.gs-it .gs-ic.jsy img { object-fit: contain; }
+.gs-it b { display: block; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gs-it small { display: block; font-size: 12px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gs-it .gs-k { font: 600 10px var(--f-display); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.gs-none { padding: 10px; color: var(--muted); font-size: 14px; }
+@media (max-width: 700px) {
+  .gsearch { flex: 1 1 auto; margin-left: 0; }
+  .gsearch input { height: 34px; }
+  /* phones: the results open full width right under the search box instead of hanging off the left edge */
+  .gs-list { position: fixed; left: 12px; right: 12px; top: auto; width: auto; margin-top: 6px; max-height: 65vh; }
+}
+.theme-btn { margin-left: 0; width: 38px; height: 38px; border-radius: 999px; border: 1px solid rgb(127 127 127 / .35); background: transparent; color: inherit; display: grid; place-items: center; cursor: pointer; }
 .theme-btn:hover { background: rgb(127 127 127 / .2); }
 .theme-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .theme-btn svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
@@ -432,6 +462,10 @@ input[type=search] { width: min(340px, 100%); }
 .cov.full { color: var(--ok); }
 .empty { color: var(--muted); padding: 10px 2px; }
 .foot { font-size: 13px; color: var(--muted); max-width: 80ch; }
+.foot .ver { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin-top: 8px; font-family: var(--f-mono); font-size: 12px; }
+.foot .ver b { color: var(--ink); font-weight: 500; }
+.foot .ver .live, .foot .ver .prev { padding: 1px 8px; border-radius: 999px; font-family: var(--f-display); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; font-size: 11px; }
+.foot .ver .live { background: color-mix(in srgb, #16a34a 18%, transparent); color: #16a34a; } .foot .ver .prev { background: color-mix(in srgb, #d97706 18%, transparent); color: #d97706; }
 /* home */
 .hero { position: relative; overflow: hidden; background: var(--bar); color: var(--bar-ink); border-radius: var(--r); padding: 22px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 20px; align-items: center; }
 .hero .eyebrow { color: var(--accent); }
@@ -571,6 +605,11 @@ td.rk.win { color: var(--accent); font-weight: 700; }
       <a href="#squads" data-nav="squads">Teams</a>
       <a href="#teams" data-nav="teams">Managers</a>
     </nav>
+    <div class="gsearch" role="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+      <input id="gq" type="search" autocomplete="off" placeholder="Search riders, teams, races" aria-label="Search riders, teams, managers and races" aria-controls="gsList" aria-expanded="false">
+      <div class="gs-list" id="gsList" role="listbox" hidden></div>
+    </div>
     <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch to dark mode" title="Light / dark mode">
       <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
       <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
@@ -596,6 +635,10 @@ td.rk.win { color: var(--accent); font-weight: 700; }
 'use strict';
 const $view = document.getElementById('view');
 const S = {};
+// site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
+// The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
+const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
+const SITE = { version: '1.0.0', updated: '2026-11-05T13:50' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0 };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -703,8 +746,9 @@ const riderLink = (i) => h('span', { class: 'rl' }, flag(natOf(i)), h('a', { hre
 // portrait placeholder until real photos exist: initials over a jersey tint derived from the team
 function avatar(i, ti, size) {
   const name = rid(i), parts = name.split(/\s+/);
-  const photo = (S.photos || {})[name];
-  if (photo) return h('div', { class: 'avatar photo', style: `width:${size}px;height:${size}px` }, h('img', { src: photo, alt: name, loading: 'lazy' }));
+  // portraits are one small file each (img/r/), listed in data/photo_index.json: a page only downloads what it shows
+  const photo = S.photos ? S.photos[name] : (S.photoIndex || {})[name] && 'img/r/' + S.photoIndex[name];
+  if (photo) return h('div', { class: 'avatar photo', style: `width:${size}px;height:${size}px` }, h('img', { src: photo, alt: name, loading: 'lazy', decoding: 'async', width: size, height: size }));
   const ini = ((parts[0] || '')[0] || '') + ((parts[parts.length - 1] || '')[0] || '');
   let hsh = 0; for (const ch of tid(ti) || name) hsh = (hsh * 31 + ch.charCodeAt(0)) >>> 0;
   const hue = hsh % 360;
@@ -879,6 +923,11 @@ function route() {
   $view.classList.remove('view-in'); void $view.offsetWidth; $view.classList.add('view-in');
   const views = { home: viewHome, races: viewRaces, race: () => viewRace(arg), s2race: () => viewS2Race(arg), standings: viewStandings, riders: () => { UI.rmode = 'season'; viewRiders(); }, riderstats: () => { UI.rmode = 'stats'; viewRiders(); }, rider: () => viewRiderPcs(arg), teams: viewTeams, team: () => viewTeam(arg), squads: viewSquads, squad: () => viewSquad(arg) };
   (views[name] || viewHome)();
+  // tab title: the page's own heading (race, rider, team...) then the site name
+  const h1 = $view.querySelector('h1');
+  const stg = name === 'race' && S.s1.races[arg] && S.s1.races[arg].stages > 1 && UI.race[arg] ? UI.race[arg].stage : 0;
+  const head = name === 'home' || !h1 ? '' : h1.textContent.replace(/★\s*Monument/, '').trim() + (stg ? ' · Stage ' + stg : '');
+  document.title = head ? head + ' · IPL Multi' : 'IPL Multi · International Pro League';
   window.scrollTo(0, 0);
 }
 
@@ -1720,14 +1769,68 @@ function viewTeam(id) {
     card('Victories', null, wins.length ? table([{ label: 'Date' }, { label: 'Race' }, { label: 'Stage' }, { label: 'Div' }, { label: 'Rider' }], wins, { tall: true }) : h('p', { class: 'empty' }, 'No wins yet.'))));
 }
 
+// ---------- global search (top bar): riders, teams, managers, races ----------
+function setupSearch() {
+  const input = document.getElementById('gq'), list = document.getElementById('gsList');
+  if (!input) return;
+  const fold = (s) => String(s || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  const items = [];
+  for (const [i, o] of IX.rider) if (rid(i)) items.push({ k: 'Rider', name: rid(i), sub: [...o.teams].filter((t) => tid(t)).map(tid)[0] || '', href: '#rider-' + i, pts: o.pts, rider: i });
+  for (const [ti, q] of IX.squad || new Map()) items.push({ k: 'Team', name: tid(ti), sub: [...q.mgrs].map(teamOf).filter((v, k, a) => a.indexOf(v) === k).join(', '), href: '#squad-' + ti, pts: 500 + q.wins, squad: ti });
+  for (const [n, id] of IX.teamIds) items.push({ k: 'Manager', name: n, sub: 'Season 1', href: '#team-' + id, pts: 600 });
+  S.s1.races.forEach((r, i) => items.push({ k: 'Race', name: r.name, sub: 'Season 1 · ' + (r.stages > 1 ? r.stages + ' stages' : 'one-day'), href: '#race-' + i, pts: 700 }));
+  IX.s2.forEach((r, i) => items.push({ k: 'Race', name: r.race, sub: 'Season 2 · ' + fdate(r.date), href: '#s2race-' + i, pts: 650 }));
+  items.forEach((it) => { it.f = fold(it.name + ' ' + it.sub); it.fn = fold(it.name); });
+  let shown = [], sel = 0;
+  const icon = (it) => {
+    if (it.k === 'Rider') { const p = S.photos ? S.photos[it.name] : (S.photoIndex || {})[it.name] && 'img/r/' + S.photoIndex[it.name]; return h('span', { class: 'gs-ic' }, p ? h('img', { src: p, alt: '', loading: 'lazy' }) : 'R'); }
+    if (it.k === 'Team') { const j = jerseyOf(it.name); return h('span', { class: 'gs-ic jsy' }, j ? h('img', { src: j, alt: '' }) : 'T'); }
+    return h('span', { class: 'gs-ic' }, it.k === 'Race' ? '🏁' : 'M');
+  };
+  const close = () => { list.hidden = true; input.setAttribute('aria-expanded', 'false'); };
+  const go = (it) => { if (!it) return; close(); input.value = ''; input.blur(); location.hash = it.href; };
+  const draw = () => {
+    const q = fold(input.value.trim());
+    if (q.length < 2) { close(); return; }
+    const words = q.split(/\s+/);
+    shown = items.filter((it) => words.every((w) => it.f.includes(w)))
+      .sort((a, b) => (b.fn.startsWith(q) - a.fn.startsWith(q)) || (b.fn.split(/\s+/).some((w) => w.startsWith(words[0])) - a.fn.split(/\s+/).some((w) => w.startsWith(words[0]))) || b.pts - a.pts)
+      .slice(0, 9);
+    sel = 0;
+    list.replaceChildren(...(shown.length ? shown.map((it, k) => h('a', { class: 'gs-it', href: it.href, role: 'option', 'aria-selected': String(k === sel), onclick: (e) => { e.preventDefault(); go(it); } }, icon(it), h('span', null, h('b', null, it.name), it.sub ? h('small', null, it.sub) : null), h('span', { class: 'gs-k' }, it.k)))
+      : [h('div', { class: 'gs-none' }, 'Nothing found for “' + input.value.trim() + '”')]));
+    list.hidden = false; input.setAttribute('aria-expanded', 'true');
+  };
+  const mark = () => [...list.children].forEach((c, k) => c.setAttribute && c.setAttribute('aria-selected', String(k === sel)));
+  input.addEventListener('input', draw);
+  input.addEventListener('focus', () => { if (input.value.trim().length >= 2) draw(); });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowDown' && shown.length) { sel = (sel + 1) % shown.length; mark(); e.preventDefault(); }
+    else if (e.key === 'ArrowUp' && shown.length) { sel = (sel - 1 + shown.length) % shown.length; mark(); e.preventDefault(); }
+    else if (e.key === 'Enter') { go(shown[sel]); e.preventDefault(); }
+    else if (e.key === 'Escape') { close(); input.blur(); }
+  });
+  document.addEventListener('click', (e) => { if (!e.target.closest('.gsearch')) close(); });
+  // "/" jumps to the search box from anywhere
+  document.addEventListener('keydown', (e) => { if (e.key === '/' && !/input|textarea/i.test(document.activeElement.tagName)) { e.preventDefault(); input.focus(); } });
+}
 // ---------- boot ----------
-Promise.all(['data/s1.json', 'data/league.json', 'data/profiles.json', 'data/points_scale.json', 'data/transfers.json', 'data/photos.json', 'data/stage_types.json', 'data/riderdb.json'].map((u) => fetch(u).then((r) => { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); })))
-  .then(([s1, league, prof, scale, transfers, photos, types, riderdb]) => {
-    Object.assign(S, { s1, league, prof, scale, transfers, photos, types, riderdb });
+Promise.all(['data/s1.json', 'data/league.json', 'data/profiles.json', 'data/points_scale.json', 'data/transfers.json', 'data/photo_index.json', 'data/stage_types.json', 'data/riderdb.json'].map((u) => fetch(u).then((r) => { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); })))
+  .then(([s1, league, prof, scale, transfers, photoIndex, types, riderdb]) => {
+    Object.assign(S, { s1, league, prof, scale, transfers, photoIndex, types, riderdb });
+    // the Claude preview can hold at most 512 files, so it keeps every portrait in one file (data/photos.json)
+    // instead of the 496 small ones the live site loads one by one
+    if (PREVIEW) return fetch('data/photos.json').then((r) => (r.ok ? r.json() : null)).then((p) => { if (p) S.photos = p; }).catch(() => {});
+  })
+  .then(() => {
     buildIndex();
+    setupSearch();
     window.addEventListener('hashchange', route);
     route();
-    document.body.append(h('p', { class: 'foot wrap' }, 'Results come from the PCM exports and the official IPL sheet posted on the PCM UK Discord. Rounds 1–3 were raced in random groups, shown here as divisions. Rider ranking points are worked out on this page with the IPL scale and are not official.'));
+    const live = !PREVIEW && !/^localhost$|^127\.0\.0\.1$/.test(location.hostname);
+    const upd = new Date(SITE.updated).toLocaleString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+    document.body.append(h('div', { class: 'foot wrap' }, h('p', null, 'Results come from the PCM exports and the official IPL sheet posted on the PCM UK Discord. Rounds 1–3 were raced in random groups, shown here as divisions. Rider ranking points are worked out on this page with the IPL scale and are not official.'),
+      h('p', { class: 'ver' }, h('span', null, 'Last update ', h('b', null, upd)), h('span', null, 'Version ', h('b', null, SITE.version)), h('span', { class: live ? 'live' : 'prev' }, live ? 'Live site' : 'Preview'))));
   })
   .catch((e) => { $view.replaceChildren(h('div', { class: 'note' }, 'Could not load the results data (' + e.message + '). Reload the page to try again.')); });
 })();
