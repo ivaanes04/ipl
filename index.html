@@ -227,7 +227,7 @@ th { font-family: var(--f-display); font-weight: 600; font-size: 13px; letter-sp
 .evtile { border: 1px solid var(--soft); border-radius: 12px; overflow: hidden; background: var(--bg); display: flex; flex-direction: column; min-width: 0; }
 .evhd { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 9px; align-items: center; padding: 9px 12px; border-top: 3px solid var(--ec); background: color-mix(in srgb, var(--ec) 10%, transparent); }
 .evb { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 999px; background: #e11d48; color: #fff; font: 700 10.5px var(--f-display); }
-.evb.kHC { background: #7f1d1d; font-size: 9px; } .evb.k1 { background: #be123c; } .evb.k3, .evb.k4 { background: #f43f5e; }
+.evb.kHC { background: #7f1d1d; font-size: 10px; letter-spacing: -.02em; } .evb.k1 { background: #be123c; } .evb.k3, .evb.k4 { background: #f43f5e; }
 .evb.spr { background: #16a34a; } .evb.fin { background: var(--soft); font-size: 11px; }
 .evn { min-width: 0; line-height: 1.25; } .evn b { display: block; font-size: 13.5px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } .evn small { display: block; font-size: 11.5px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .evbody { padding: 6px 12px; flex: 1; }
@@ -555,6 +555,8 @@ input[type=search] { width: min(340px, 100%); }
 .result-h { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; flex-wrap: wrap; }
 .result-h a { font-weight: 600; font-size: 16px; }
 .divs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 10px 18px; }
+/* podiums with a rider photo need room for the names, or they end up as 'Tom Pidc…' */
+.divs:has(> .divres) { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
 .empty-state { display: flex; flex-direction: column; gap: 6px; padding: 14px; border: 1px dashed var(--line); border-radius: 8px; color: var(--muted); font-size: 14px; }
 .empty-state b { color: var(--ink); font-family: var(--f-display); font-size: 17px; letter-spacing: .02em; }
 .fl { display: inline-flex; vertical-align: -1px; margin-right: 6px; }
@@ -587,6 +589,8 @@ input[type=search] { width: min(340px, 100%); }
 .src { font-size: 12px; color: var(--muted); }
 .divres { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 10px; align-items: start; }
 .divres > div { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+/* phones: no winner photo, so the names fit */
+@media (max-width: 480px) { .divres { grid-template-columns: minmax(0, 1fr); } .divres > .sqwrap:first-child { display: none; } }
 .sqwrap .avatar { border-radius: 50%; }
 .profgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 12px; }
 .profgrid figure { margin: 0; display: flex; flex-direction: column; gap: 4px; }
@@ -706,7 +710,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.6.0', updated: '2026-11-05T22:25' };
+const SITE = { version: '1.7.0', updated: '2026-11-05T23:07' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0 };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -1987,9 +1991,15 @@ function viewRiderPcs(i) {
 const seasonSeg = (cur) => S.s2signups ? h('div', { class: 'seg season-seg', role: 'group', 'aria-label': 'Season' },
   h('button', { type: 'button', 'aria-pressed': String(cur === 1), onclick: () => { location.hash = '#squads'; } }, 'Season 1 · teams'),
   h('button', { type: 'button', 'aria-pressed': String(cur === 2), onclick: () => { location.hash = '#s2teams'; } }, 'Season 2 · sign-ups')) : null;
+// official wins (IPL sheet) of the manager who ran a team; the first manager listed is the one who ran it most
+function squadWins(ti, q) {
+  const m = [...q.mgrs].map(teamOf).filter((v, k, a) => v && a.indexOf(v) === k)[0];
+  return m ? sheetWins(m) : null;
+}
 function viewSquads() {
   $view.append(h('div', null, h('div', { class: 'eyebrow' }, 'Season 1 · PCM 26'), h('h1', null, 'Teams'), h('p', { class: 'sub' }, 'Every cycling team that raced in the league, with the managers who ran it and its wins.'), seasonSeg(1)));
-  const list = [...IX.squad.entries()].sort((a, b) => b[1].wins - a[1].wins || b[1].pod - a[1].pod);
+  // wins are the official ones from the IPL sheet (per manager), like on the Managers page
+  const list = [...IX.squad.entries()].sort((a, b) => (squadWins(b[0], b[1]) ?? -1) - (squadWins(a[0], a[1]) ?? -1) || b[1].pod - a[1].pod);
   // same cards as the Season 2 page: jersey, team, manager, one quiet line
   const grid = h('div', { class: 's2grid' }, list.map(([ti, q]) => {
     const mgr = [...q.mgrs].map(teamOf).filter((v, k, a) => v && a.indexOf(v) === k)[0] || '—';
@@ -1998,7 +2008,7 @@ function viewSquads() {
       h('div', { class: 's2jsy' }, jsy ? h('img', { src: jsy, alt: tid(ti) + ' jersey', loading: 'lazy' }) : h('span', null, (tid(ti).match(/[A-Za-z0-9]/) || ['?'])[0].toUpperCase())),
       h('div', { class: 's2team' }, tid(ti)),
       h('div', { class: 's2mgr' }, mgr),
-      h('div', { class: 's2was' }, q.wins + (q.wins === 1 ? ' win' : ' wins') + ' · ' + q.riders.size + ' riders'));
+      h('div', { class: 's2was', title: 'Stage and one-day wins of the manager, from the official IPL sheet' }, (w => w + (w === 1 ? ' win' : ' wins'))(squadWins(ti, q) ?? q.wins) + ' · ' + q.riders.size + ' riders'));
   }));
   $view.append(h('section', { class: 'card' }, grid));
 }
@@ -2009,7 +2019,7 @@ function viewSquad(ti) {
   $view.append(h('div', { class: 'teamhead' }, crest(ti, 92), h('div', null, h('div', { class: 'eyebrow' }, 'Team · Season 1'), h('h1', null, tid(ti)),
     h('div', { class: 'facts' }, h('span', null, 'Manager ', mgrs.map((m, j) => [j ? ', ' : '', h('b', null, teamLink(m))])), q.subs ? h('span', null, 'Replacements ', h('b', null, [...q.subs].join(', '))) : null, h('span', null, 'Divisions ', h('b', null, [...q.divs].sort().map((d) => 'D' + d).join(', '))))),
     h('a', { class: 'btn ghost', href: '#squads' }, 'All teams')));
-  $view.append(h('div', { class: 'kpis' }, kpi('Wins', q.wins, 'stages and one-day races'), kpi('Podiums', q.pod, 'top 3'), kpi('Riders', q.riders.size, 'with results'), kpi('Race days', q.days, 'rider days')));
+  $view.append(h('div', { class: 'kpis' }, kpi('Wins', squadWins(ti, q) ?? q.wins, squadWins(ti, q) != null ? 'stage and one-day · official sheet' : 'stages and one-day races'), kpi('Podiums', q.pod, 'top 3'), kpi('Riders', q.riders.size, 'with results'), kpi('Race days', q.days, 'rider days')));
   const riders = [...q.riders.entries()].sort((a, b) => b[1].wins - a[1].wins || b[1].pod - a[1].pod || b[1].days - a[1].days);
   const roster = h('div', { class: 'roster' }, riders.map(([r, x]) => h('a', { class: 'rostercard', href: '#rider-' + r }, avatar(r, ti, 44), h('div', null, h('b', null, flag(natOf(r)), rid(r)), h('span', null, (x.wins ? x.wins + ' wins · ' : '') + x.days + ' days')))));
   const wins = q.list.slice().sort((a, b) => a.st.race - b.st.race || a.st.stage - b.st.stage).map((e) => { const race = S.s1.races[e.st.race]; return h('tr', null, h('td', { class: 'mute num' }, fshort((IX.dates.get(race.round) || ['2026-01-01'])[0])), h('td', null, h('a', { href: '#race-' + e.st.race, onclick: () => openRace(e.st, 'stage') }, race.name)), h('td', { class: 'mute' }, race.stages > 1 ? 'Stage ' + e.st.stage : ''), h('td', null, h('span', { class: 'flag' + (e.st.div === 1 ? ' d1' : '') }, 'D' + e.st.div)), h('td', { class: 'rider' }, riderLink(e.rider))); });
@@ -2017,6 +2027,15 @@ function viewSquad(ti) {
 }
 
 // ---------- Season 2 sign-ups (from #sign-ups on Discord, data/s2_signups.json) ----------
+function s2Name(t) {
+  // a returning manager keeps his Season 1 name; a Season 1 pair shows only the person who signed up now
+  if (!t.s1) return t.web;
+  if (!/\+/.test(t.s1)) return t.s1;
+  const f = (x) => String(x || '').normalize('NFKD').replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+  const me = [t.web, t.pcm, t.discord].map(f);
+  const part = t.s1.split(/\s*\+\s*/).find((p) => me.some((m) => m && (m.includes(f(p)) || f(p).includes(m))));
+  return part || t.web;
+}
 function viewS2Teams() {
   const D = S.s2signups;
   if (!D) return viewSquads();
@@ -2027,7 +2046,7 @@ function viewS2Teams() {
   $view.append(h('div', null, h('div', { class: 'eyebrow' }, 'Season 2 · PCM 26'), h('h1', null, 'Season 2 teams'),
     h('p', { class: 'sub' }, 'Teams signed up for Season 2 in #sign-ups on the PCM UK Discord, in the order they were posted. Rosters are decided in the auction on pcmmulti.com/ipl; divisions are not set yet.'), seasonSeg(2)));
   $view.append(h('div', { class: 'kpis' }, kpi('Sign-ups', teams.length, 'teams so far'), kpi('From Season 1', back.length, 'teams run by Season 1 managers'), kpi('New', fresh.length, fresh.length === 1 ? 'manager in the league' : 'managers in the league'), kpi('Season starts', days ? days + ' days' : 'Today', fdate(D.start))));
-  const mgrCell = (t) => t.s1 && IX.teamIds.has(t.s1) ? h('a', { href: '#team-' + encodeTeam(t.s1) }, t.web) : t.web;
+  const mgrCell = (t) => t.s1 && IX.teamIds.has(t.s1) ? h('a', { href: '#team-' + encodeTeam(t.s1) }, s2Name(t)) : s2Name(t);
   const s1Teams = (n) => { const t = IX.team.get(n); return t ? [...t.squads].map(tid).filter(Boolean).filter((v, k, a) => a.indexOf(v) === k) : []; };
   // one clean card per team: jersey, team, manager (one name), one quiet line; the rest goes in the tooltip
   const grid = h('div', { class: 's2grid' }, teams.map((t) => {
@@ -2084,7 +2103,7 @@ function setupSearch() {
   for (const [ti, q] of IX.squad || new Map()) items.push({ k: 'Team', name: tid(ti), sub: [...q.mgrs].map(teamOf).filter((v, k, a) => a.indexOf(v) === k).join(', '), href: '#squad-' + ti, pts: 500 + q.wins, squad: ti });
   for (const [n, id] of IX.teamIds) items.push({ k: 'Manager', name: n, sub: 'Season 1', href: '#team-' + id, pts: 600 });
   S.s1.races.forEach((r, i) => items.push({ k: 'Race', name: r.name, sub: 'Season 1 · ' + (r.stages > 1 ? r.stages + ' stages' : 'one-day'), href: '#race-' + i, pts: 700 }));
-  for (const t of (S.s2signups && S.s2signups.teams) || []) items.push({ k: 'Team', name: t.team, sub: 'Season 2 · ' + t.web, href: '#s2teams', pts: 520, jersey: t.jersey ? 'img/jerseys/' + t.jersey + '.png' : null });
+  for (const t of (S.s2signups && S.s2signups.teams) || []) items.push({ k: 'Team', name: t.team, sub: 'Season 2 · ' + s2Name(t), href: '#s2teams', pts: 520, jersey: t.jersey ? 'img/jerseys/' + t.jersey + '.png' : null });
   IX.s2.forEach((r, i) => items.push({ k: 'Race', name: r.race, sub: 'Season 2 · ' + fdate(r.date), href: '#s2race-' + i, pts: 650 }));
   items.forEach((it) => { it.f = fold(it.name + ' ' + it.sub); it.fn = fold(it.name); });
   let shown = [], sel = 0;
