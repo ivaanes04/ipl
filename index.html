@@ -213,6 +213,47 @@ th { font-family: var(--f-display); font-weight: 600; font-size: 13px; letter-sp
 .clb i { display: grid; place-items: center; min-width: 24px; height: 24px; padding: 0 4px; border-radius: 999px; background: #e11d48; color: #fff; font: 700 11px var(--f-display); font-style: normal; }
 .clb i.cHC { background: #7f1d1d; } .clb i.c1 { background: #be123c; } .clb i.c3, .clb i.c4 { background: #f43f5e; }
 .clb b { display: block; font-size: 13px; } .clb small { font-size: 12px; color: var(--muted); }
+.psvg .pk.spr { fill: #16a34a; } .psvg .pm.spr { stroke: #16a34a; }
+.psvg .pkt.hc { font-size: 8.5px; }
+.psvg { position: relative; }
+.shotfold { padding-top: 12px; padding-bottom: 12px; } .shotfold summary { cursor: pointer; font-size: 14px; } .shotfold[open] summary { margin-bottom: 10px; }
+.psvg.live .pkg { cursor: pointer; outline: none; } .psvg .pkhit { fill: transparent; }
+.psvg.live .pkg:hover .pk, .psvg.live .pkg.on .pk, .psvg.live .pkg:focus-visible .pk { stroke: var(--ink); stroke-width: 2.5; }
+.psvg.live .pkg .pkt { pointer-events: none; }
+.ppop { position: absolute; top: 18%; z-index: 20; width: min(300px, 100%); max-height: 70vh; overflow: auto; background: var(--bg); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+.evstage { border-top: 1px solid var(--soft); padding: 8px 0; } .evstage summary { cursor: pointer; font-size: 14px; } .evstage[open] summary { margin-bottom: 4px; }
+.evh { margin: 16px 0 0; font: 700 15px var(--f-display); letter-spacing: .04em; text-transform: uppercase; }
+.evgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 12px; margin-top: 10px; align-items: stretch; }
+.evtile { border: 1px solid var(--soft); border-radius: 12px; overflow: hidden; background: var(--bg); display: flex; flex-direction: column; min-width: 0; }
+.evhd { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 9px; align-items: center; padding: 9px 12px; border-top: 3px solid var(--ec); background: color-mix(in srgb, var(--ec) 10%, transparent); }
+.evb { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 999px; background: #e11d48; color: #fff; font: 700 10.5px var(--f-display); }
+.evb.kHC { background: #7f1d1d; font-size: 9px; } .evb.k1 { background: #be123c; } .evb.k3, .evb.k4 { background: #f43f5e; }
+.evb.spr { background: #16a34a; } .evb.fin { background: var(--soft); font-size: 11px; }
+.evn { min-width: 0; line-height: 1.25; } .evn b { display: block; font-size: 13.5px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } .evn small { display: block; font-size: 11.5px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.evbody { padding: 6px 12px; flex: 1; }
+.evunk { margin: 8px 0; font-size: 12px; color: var(--muted); line-height: 1.4; }
+.evft { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 10px; align-items: center; padding: 7px 12px; border-top: 1px solid var(--soft); font: 500 10.5px var(--f-mono); color: var(--muted); white-space: nowrap; }
+.evft > span:first-child { overflow: hidden; text-overflow: ellipsis; }
+.evmore { border: 0; background: none; color: var(--muted); font: 600 10.5px var(--f-display); letter-spacing: .04em; text-transform: uppercase; padding: 0; cursor: pointer; white-space: nowrap; }
+.evmore:hover { color: var(--ink); }
+.evcard .unk { color: var(--muted); white-space: normal; font-size: 12px; }
+.evcard { padding: 10px 12px; }
+.evch { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 8px; align-items: center; margin-bottom: 8px; }
+.evcard .evp { justify-items: start; } .evcard .evpts, .evcard .evsec { justify-content: flex-start; }
+.evtab { width: 100%; border-collapse: collapse; font-size: 12.5px; table-layout: fixed; }
+.evtab td { padding: 0 4px; height: 27px; border-top: 1px solid var(--soft); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.evtab td.rk { width: 28px; padding-left: 0; } .evtab td.rider a { white-space: nowrap; }
+.evtab tr.pad td { border-top-color: transparent; }
+.evtab td .rl { white-space: nowrap; display: block; overflow: hidden; text-overflow: ellipsis; }
+.evtab td.n { text-align: right; font-family: var(--f-mono); font-size: 11.5px; }
+.evtab td.n { width: 34px; } .evtab td.n.s { color: var(--muted); width: 36px; padding-right: 0; }
+.evtile .evtab tr:first-child td { border-top: 0; }
+.src.partial { border-left: 3px solid var(--gc); padding-left: 8px; }
+.evtab .lrk { min-width: 20px; height: 18px; font-size: 10.5px; border-radius: 5px; }
+.evtab .lrk:not(.m1):not(.m2):not(.m3) { background: none; color: var(--muted); }
+.evnote { font-size: 12.5px; color: var(--muted); margin-top: 8px; }
+.evwarn { font-size: 13px; margin-top: 10px; padding: 8px 10px; border-radius: 8px; border: 1px dashed #e11d48; }
+
 .stg-ptrow { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 6px; }
 .psb { display: inline-flex; align-items: center; gap: 6px; } .psb small { font-family: var(--f-mono); font-size: 11px; color: var(--muted); }
 .chip .pti { --s: 16px; margin-right: 5px; vertical-align: -3px; }
@@ -397,6 +438,13 @@ input[type=search] { width: min(340px, 100%); }
 .kr-i span { display: flex; align-items: center; gap: 5px; font-size: 13px; color: var(--muted); white-space: nowrap; }
 .kr-i i { width: 8px; height: 8px; border-radius: 2px; background: var(--k); flex: none; }
 .chart { position: relative; min-height: 300px; }
+.pick { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 10px; font-size: 13px; }
+.pick select { font: inherit; padding: 5px 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); max-width: 220px; }
+.pchip { display: inline-flex; align-items: center; gap: 6px; padding: 4px 8px; border-radius: 999px; border: 1px solid var(--line); background: none; color: var(--ink); font: inherit; cursor: pointer; }
+.pchip i { width: 10px; height: 10px; border-radius: 3px; background: var(--c); } .pchip span { color: var(--muted); }
+.btn.sm { padding: 4px 10px; font-size: 13px; }
+.follow { border: 0; background: none; cursor: pointer; color: var(--muted); padding: 0 4px; border-radius: 4px; font-size: 13px; }
+.follow:hover { color: var(--ink); } .follow.on { color: var(--c); font-weight: 700; }
 .chart svg text { font-family: var(--f-mono); font-size: 11px; fill: var(--muted); }
 .tip { position: absolute; top: 6px; pointer-events: none; background: var(--panel); border: 1px solid var(--line); box-shadow: 0 8px 22px rgb(0 0 0 / .14); border-radius: 8px; padding: 6px 9px; font-size: 13px; display: none; z-index: 2; white-space: nowrap; }
 .tip .r { display: flex; justify-content: space-between; gap: 14px; }
@@ -590,6 +638,20 @@ td.rk.win { color: var(--accent); font-weight: 700; }
 .squadcard div, .rostercard div { display: flex; flex-direction: column; min-width: 0; }
 .squadcard b, .rostercard b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .squadcard span, .rostercard span { font-size: 13px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.season-seg { margin: 4px 0 14px; }
+.s2grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 12px; }
+.s2card { display: flex; gap: 14px; align-items: center; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; min-width: 0; background: var(--bg); }
+.s2card .crest { flex: none; }
+.s2card .s2body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.s2card .s2team { font-family: var(--f-display); font-weight: 700; font-size: 19px; line-height: 1.15; }
+.s2card .s2line { font-size: 13px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.s2card .s2line b { color: var(--ink); font-weight: 600; }
+.s2tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 3px; }
+.s2tag { font-size: 11.5px; font-weight: 600; letter-spacing: .02em; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+.s2tag.new { border-color: transparent; background: var(--ink); color: var(--bg); }
+.s2tag.prov { border-style: dashed; }
+.s2pending { display: flex; flex-wrap: wrap; gap: 8px; }
+.s2pending a, .s2pending span { font-size: 14px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; }
 .roster { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 8px; }
 @media (max-width: 640px) { .racehead { grid-template-columns: 1fr; } .replay { grid-template-columns: 1fr; } th, td { padding: 5px 6px; } }
 @media (prefers-reduced-motion: no-preference) { .view-in { animation: rise .22s ease-out; } @keyframes rise { from { opacity: .5; transform: translateY(4px); } to { opacity: 1; transform: none; } } }
@@ -639,7 +701,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.0.2', updated: '2026-11-05T14:29' };
+const SITE = { version: '1.5.2', updated: '2026-11-05T22:17' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0 };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -668,7 +730,7 @@ const CLS = [
   { key: 'young', label: 'Youth', j: 'j-young', val: 'Time' },
   { key: 'teams', label: 'Teams', j: 'j-team', val: 'Time' }
 ];
-const COLORS = ['#d0142c', '#e0a800', '#2f9e44', '#3a5a9b', '#8e44ad', '#e8590c'];
+const COLORS = ['#d0142c', '#e0a800', '#2f9e44', '#3a5a9b', '#8e44ad', '#e8590c', '#0ea5e9', '#db2777'];
 
 // ---------- helpers ----------
 const h = (tag, attrs, ...kids) => {
@@ -872,7 +934,7 @@ function buildIndex() {
     const f = divFactor(race, st.div);
     // team time trial: the league scores every team once, by its place (first rider home); each rider gets his team's place
     const tbase = (ti) => (tid(ti) || '').replace(/ 2$/, '');
-    const ttt = /\bTTT\b/.test(race.name) ? new Map() : null;
+    const ttt = /\bTTT\b/.test(race.name) || st.ttt ? new Map() : null;
     if (ttt) for (const row of (st.cls.stage || [])) { const b = tbase(row[2]); if (!ttt.has(b)) ttt.set(b, ttt.size + 1); }
     const tttSeen = new Set();
     for (const row of (st.cls.stage || [])) {
@@ -927,22 +989,25 @@ function buildIndex() {
 // ---------- routing ----------
 function route() {
   stopReplay();
+  // tabs / division / stage buttons re-draw the page in place: keep the reader where he was
+  const keepY = UI.keepScroll ? window.scrollY : null;
   const hash = location.hash.slice(1) || 'home';
   const m = hash.match(/^([a-z0-9]+?)(?:-(\d+))?(?:-(\d+))?$/);
   UI.pendingStage = m && m[3] != null ? +m[3] : null; // #race-<n>-<stage> opens that stage
   const name = m ? m[1] : 'home', arg = m && m[2] != null ? +m[2] : null;
-  const section = { home: 'home', races: 'races', race: 'races', s2race: 'races', standings: 'standings', riders: 'riders', riderstats: 'riders', rider: 'riders', teams: 'teams', team: 'teams', squads: 'squads', squad: 'squads' }[name] || 'home';
+  const section = { home: 'home', races: 'races', race: 'races', s2race: 'races', standings: 'standings', riders: 'riders', riderstats: 'riders', rider: 'riders', teams: 'teams', team: 'teams', squads: 'squads', squad: 'squads', s2teams: 'squads' }[name] || 'home';
   document.querySelectorAll('[data-nav]').forEach((a) => { if (a.dataset.nav === section) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
   $view.replaceChildren();
   $view.classList.remove('view-in'); void $view.offsetWidth; $view.classList.add('view-in');
-  const views = { home: viewHome, races: viewRaces, race: () => viewRace(arg), s2race: () => viewS2Race(arg), standings: viewStandings, riders: () => { UI.rmode = 'season'; viewRiders(); }, riderstats: () => { UI.rmode = 'stats'; viewRiders(); }, rider: () => viewRiderPcs(arg), teams: viewTeams, team: () => viewTeam(arg), squads: viewSquads, squad: () => viewSquad(arg) };
+  const views = { home: viewHome, races: viewRaces, race: () => viewRace(arg), s2race: () => viewS2Race(arg), standings: viewStandings, riders: () => { UI.rmode = 'season'; viewRiders(); }, riderstats: () => { UI.rmode = 'stats'; viewRiders(); }, rider: () => viewRiderPcs(arg), teams: viewTeams, team: () => viewTeam(arg), squads: viewSquads, squad: () => viewSquad(arg), s2teams: viewS2Teams };
   (views[name] || viewHome)();
   // tab title: the page's own heading (race, rider, team...) then the site name
   const h1 = $view.querySelector('h1');
   const stg = name === 'race' && S.s1.races[arg] && S.s1.races[arg].stages > 1 && UI.race[arg] ? UI.race[arg].stage : 0;
   const head = name === 'home' || !h1 ? '' : h1.textContent.replace(/★\s*Monument/, '').trim() + (stg ? ' · Stage ' + stg : '');
   document.title = head ? head + ' · IPL Multi' : 'IPL Multi · International Pro League';
-  window.scrollTo(0, 0);
+  window.scrollTo(0, keepY != null ? keepY : 0);
+  UI.keepScroll = false;
 }
 
 // ---------- home ----------
@@ -1096,6 +1161,19 @@ function viewStandings() {
   const fin = h('button', { class: 'btn ghost', type: 'button' }, 'Final');
   const lbl = h('div', { class: 'lbl' });
   const kpis = h('div', { class: 'kpis' }), chart = h('div', { class: 'chart' }), tableBox = h('div', { class: 'stand' });
+  // pick managers to follow on the chart (empty = the top 6 after the selected round)
+  UI.focus = UI.focus || [];
+  const pick = h('div', { class: 'pick' });
+  const toggle = (p) => { const i = UI.focus.indexOf(p); if (i >= 0) UI.focus.splice(i, 1); else if (UI.focus.length < COLORS.length) UI.focus.push(p); draw(); };
+  const drawPick = () => {
+    const finRows = L.out.get(last);
+    const sel = h('select', { 'aria-label': 'Show a manager on the chart', onchange: (e) => { if (e.target.value) toggle(e.target.value); } },
+      h('option', { value: '' }, UI.focus.length >= COLORS.length ? 'Up to ' + COLORS.length + ' managers' : 'Follow a manager…'),
+      finRows.filter((r) => !UI.focus.includes(r.p)).map((r) => h('option', { value: r.p }, '#' + r.rank + ' ' + r.p)));
+    pick.replaceChildren(sel,
+      ...UI.focus.map((p, i) => h('button', { type: 'button', class: 'pchip', style: '--c:' + COLORS[i], title: 'Remove ' + p, onclick: () => toggle(p) }, h('i'), p, h('span', { 'aria-hidden': 'true' }, '×'))),
+      UI.focus.length ? h('button', { type: 'button', class: 'btn ghost sm', onclick: () => { UI.focus = []; draw(); } }, 'Show top 6') : h('span', { class: 'mute' }, 'Showing the top 6 · pick managers to follow their curve'));
+  };
   const draw = () => {
     const rows = L.out.get(UI.round);
     range.value = UI.round;
@@ -1103,10 +1181,11 @@ function viewStandings() {
     lbl.replaceChildren('After round ', h('b', null, UI.round), ' of ', last, ' · ', rl.name, ' · ', rl.date);
     const top = [...rows].sort((a, b) => (b.today ?? -1) - (a.today ?? -1))[0];
     kpis.replaceChildren(kpi('Leader', rows[0].p, Math.round(rows[0].total).toLocaleString('en-GB') + ' pts'), kpi('Gap to 2nd', Math.round(rows[0].total - (rows[1]?.total || 0)).toLocaleString('en-GB'), 'over ' + (rows[1]?.p || '')), kpi('Top score this round', Math.round(top.today), top.p), kpi('Teams scoring', rows.length, 'so far'));
+    drawPick();
     drawChart(chart, L, UI.round);
     tableBox.replaceChildren(table([{ label: '#' }, { label: '+/-', n: 1, hs: 1 }, { label: 'Manager' }, { label: 'Total', n: 1 }, { label: 'This round', n: 1 }, { label: 'Race pts', n: 1, hs: 1 }, { label: 'Wins', n: 1 }, { label: 'Penalties', n: 1, hs: 1 }, { label: 'Rounds', n: 1, hs: 1 }],
       rows.map((r) => h('tr', { class: r.rank === 1 ? 'p1' : null }, h('td', { class: 'rk' }, rankChip(r.rank)), h('td', { class: 'n ' + (r.move > 0 ? 'up' : r.move < 0 ? 'down' : 'mute') }, r.move ? (r.move > 0 ? '▲' : '▼') + Math.abs(r.move) : ''),
-        h('td', { class: 'rider' }, IX.team.has(r.p) ? h('a', { href: '#team-' + IX.teamIds.get(r.p) }, r.p) : r.p), h('td', { class: 'n' }, ptsBlock(r.total, rows[0].total)), h('td', { class: 'n' + (r.today ? ' up' : ' mute') }, r.today ? '+' + Math.round(r.today).toLocaleString('en-GB') : r.today == null ? '' : '0'), h('td', { class: 'n mute' }, r.race == null ? '' : Math.round(r.race).toLocaleString('en-GB')),
+        h('td', { class: 'rider' }, IX.team.has(r.p) ? h('a', { href: '#team-' + IX.teamIds.get(r.p) }, r.p) : r.p, ' ', h('button', { type: 'button', class: 'follow' + (UI.focus.includes(r.p) ? ' on' : ''), style: UI.focus.includes(r.p) ? '--c:' + COLORS[UI.focus.indexOf(r.p)] : null, title: (UI.focus.includes(r.p) ? 'Stop following ' : 'Follow ') + r.p + ' on the chart', 'aria-pressed': String(UI.focus.includes(r.p)), onclick: () => toggle(r.p) }, '〜')), h('td', { class: 'n' }, ptsBlock(r.total, rows[0].total)), h('td', { class: 'n' + (r.today ? ' up' : ' mute') }, r.today ? '+' + Math.round(r.today).toLocaleString('en-GB') : r.today == null ? '' : '0'), h('td', { class: 'n mute' }, r.race == null ? '' : Math.round(r.race).toLocaleString('en-GB')),
         h('td', { class: 'n mute' }, r.wins == null ? '' : r.wins), h('td', { class: 'n ' + (r.pen < 0 ? 'down' : 'mute') }, r.pen ? Math.round(r.pen) : ''), h('td', { class: 'n mute' }, r.n)))));
   };
   const reset = () => { stopReplay(); play.textContent = 'Play season'; };
@@ -1118,7 +1197,7 @@ function viewStandings() {
     play.textContent = 'Pause'; draw();
     UI.timer = setInterval(() => { const i = L.orders.indexOf(UI.round); if (i >= L.orders.length - 1) return reset(); UI.round = L.orders[i + 1]; draw(); }, matchMedia('(prefers-reduced-motion: reduce)').matches ? 2200 : 1400);
   });
-  $view.append(h('section', { class: 'card replay', 'aria-label': 'Season replay' }, h('div', { class: 'tools' }, play, fin), h('div', null, range, lbl)), kpis, card('Points race', null, chart), card('League table after the selected round', null, tableBox));
+  $view.append(h('section', { class: 'card replay', 'aria-label': 'Season replay' }, h('div', { class: 'tools' }, play, fin), h('div', null, range, lbl)), kpis, card('Points race', null, pick, chart), card('League table after the selected round', null, tableBox));
   // rider ranking
   const box = h('div');
   const chips = h('div', { class: 'chips', role: 'group', 'aria-label': 'Division filter' });
@@ -1152,8 +1231,9 @@ function drawChart(box, L, round) {
   const step = Math.ceil(L.orders.length / Math.max(2, Math.floor((right - left) / 46)));
   L.orders.forEach((o, i) => { if ((L.orders.length - 1 - i) % step === 0) add('text', { x: x(o), y: H - 6, 'text-anchor': 'middle' }, 'R' + o); });
   const path = (pts) => pts.map((d, i) => (i ? 'L' : 'M') + x(d.o).toFixed(1) + ',' + y(d.c).toFixed(1)).join('');
-  series.slice(6).forEach((s) => add('path', { d: path(s.pts), fill: 'none', stroke: 'var(--line)', 'stroke-width': 1.3 }));
-  const top = series.slice(0, 6);
+  const focus = (UI.focus || []).filter((p) => ranks.has(p));
+  const top = focus.length ? focus.map((p) => series.find((x) => x.p === p)).filter(Boolean).slice(0, COLORS.length) : series.slice(0, 6);
+  series.filter((x) => !top.includes(x)).forEach((s) => add('path', { d: path(s.pts), fill: 'none', stroke: 'var(--line)', 'stroke-width': focus.length ? 1 : 1.3, opacity: focus.length ? 0.55 : 1 }));
   top.forEach((s, i) => add('path', { d: path(s.pts), fill: 'none', stroke: COLORS[i], 'stroke-width': 2.4, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' }));
   top.forEach((s, i) => { const d = s.pts[s.pts.length - 1]; add('circle', { cx: x(d.o), cy: y(d.c), r: 3.2, fill: COLORS[i] }); });
   if (labW) {
@@ -1242,15 +1322,25 @@ function typeSummary(types) {
 }
 const ptLegend = () => h('div', { class: 'ptlegend', 'aria-label': 'Stage type key' }, Object.entries(PT).map(([k, v]) => h('span', { title: v.hint }, ptIcon(k, 18), v.long)), h('span', null, ptIcon('tt', 18), 'Time trial'), h('span', null, ptIcon('cob', 18), 'Cobbles'));
 // elevation drawing from the stage file, with the climbs marked (S1 has almost no profile screenshots)
-function profileSvg(t) {
+function profileSvg(t, key, div, still) {
   if (!t || !t.curve) return null;
+  const rp = key ? rpOf(key) : null;
+  const info = rp && rp.src === 'file' ? evItems(key, t, div) : null;
+  const marksOnly = info ? info.items.filter((it) => it.e.type !== 'finish') : [];
   const W = 720, H = 190, P = { l: 40, r: 10, t: 26, b: 22 };
-  const ys = t.curve, n = ys.length, lo = Math.min(...ys), hi = Math.max(...ys, lo + 300);
+  // keep a minimum height range so a flat or rolling stage doesn't look like a mountain stage
+  const ys = t.curve, n = ys.length, lo = Math.max(0, Math.min(...ys) - 20), hi = Math.max(...ys, lo + 900);
   const X = (k) => P.l + (k / (n - 1)) * (W - P.l - P.r), Y = (a) => P.t + (1 - (a - lo) / (hi - lo)) * (H - P.t - P.b);
   const kmX = (km) => P.l + (km / t.km) * (W - P.l - P.r);
   const line = ys.map((a, k) => (k ? 'L' : 'M') + X(k).toFixed(1) + ' ' + Y(a).toFixed(1)).join('');
-  const climbs = (t.climbs || []).filter((c) => c.score >= 12);
-  const marks = climbs.map((c) => {
+  const climbs = rp && rp.src === 'file' ? [] : (t.climbs || []).filter((c) => c.score >= 12);
+  const altAt = (km) => ys[Math.max(0, Math.min(n - 1, Math.round((km / t.km) * (n - 1))))];
+  const evMarks = info ? marksOnly.map((it, k) => {
+    const e = it.e, x = Math.min(W - P.r - 9, kmX(e.km == null ? t.km : e.km)), y = Y(Math.min(hi, altAt(e.km == null ? t.km : e.km))), spr = it.spr;
+    const lab = spr ? 'S' : e.cat;
+    return `<g class="pkg" data-i="${info.items.indexOf(it)}" data-x="${x.toFixed(1)}"${still ? '' : ' tabindex="0" role="button"'} aria-label="${(spr ? 'Sprint' : CATLAB[e.cat]) + (e.name ? ' ' + e.name.replace(/["<&]/g, '') : '')}, km ${Math.round(e.km == null ? t.km : e.km)}"><line class="pm${spr ? ' spr' : ''}" x1="${x.toFixed(1)}" x2="${x.toFixed(1)}" y1="${(y - 4).toFixed(1)}" y2="${P.t - 2}"/><circle class="pkhit" cx="${x.toFixed(1)}" cy="${P.t - 10}" r="14"/><circle class="pk ${spr ? 'spr' : 'c' + e.cat}" cx="${x.toFixed(1)}" cy="${P.t - 10}" r="8.5"/><text class="pkt${lab === 'HC' ? ' hc' : ''}" x="${x.toFixed(1)}" y="${P.t - 6.5}">${lab}</text></g>`;
+  }).join('') : '';
+  const marks = evMarks + climbs.map((c) => {
     const x = kmX(c.top), y = Y(Math.min(hi, c.alt));
     return `<rect class="pc" x="${kmX(c.km).toFixed(1)}" y="${P.t}" width="${(kmX(c.top) - kmX(c.km)).toFixed(1)}" height="${H - P.t - P.b}"/>` +
       `<line class="pm" x1="${x.toFixed(1)}" x2="${x.toFixed(1)}" y1="${(y - 4).toFixed(1)}" y2="${P.t - 2}"/><circle class="pk c${c.cat}" cx="${x.toFixed(1)}" cy="${P.t - 10}" r="8.5"/><text class="pkt" x="${x.toFixed(1)}" y="${P.t - 6.5}">${c.cat}</text>`;
@@ -1261,12 +1351,134 @@ function profileSvg(t) {
   const box = h('div', { class: 'psvg' });
   box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Stage profile, ${Math.round(t.km)} km, highest point ${t.top} m"><defs><linearGradient id="pg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="var(--pt-c)" stop-opacity=".55"/><stop offset="1" stop-color="var(--pt-c)" stop-opacity=".06"/></linearGradient></defs>` +
     `<text class="pa" x="${P.l - 6}" y="${(Y(hi) + 4).toFixed(1)}" text-anchor="end">${Math.round(hi)} m</text><text class="pa" x="${P.l - 6}" y="${(Y(lo) + 4).toFixed(1)}" text-anchor="end">${Math.round(lo)} m</text>` +
-    marks + `<path class="pf" d="${line}L${X(n - 1).toFixed(1)} ${H - P.b}L${P.l} ${H - P.b}Z"/><path class="pl" d="${line}"/>` + ticks.join('') + `</svg>`;
+    `<path class="pf" d="${line}L${X(n - 1).toFixed(1)} ${H - P.b}L${P.l} ${H - P.b}Z"/><path class="pl" d="${line}"/>` + marks + ticks.join('') + `</svg>`;
+  if (info && !still) {
+    // hover (or tap / keyboard focus) a ball: a small card with the points by position and who scored
+    const pop = h('div', { class: 'ppop', hidden: true, role: 'tooltip' });
+    box.append(pop);
+    let hideT = null, cur = null;
+    const show = (g) => {
+      clearTimeout(hideT);
+      const k = +g.dataset.i;
+      if (cur !== k) { pop.replaceChildren(evCard(info.items[k])); cur = k; }
+      pop.hidden = false;
+      const bw = box.clientWidth, pw = pop.offsetWidth, cx = (+g.dataset.x / W) * bw;
+      pop.style.left = Math.max(0, Math.min(bw - pw, cx - pw / 2)) + 'px';
+      box.querySelectorAll('.pkg.on').forEach((x) => x.classList.remove('on')); g.classList.add('on');
+    };
+    const hide = () => { hideT = setTimeout(() => { pop.hidden = true; cur = null; box.querySelectorAll('.pkg.on').forEach((x) => x.classList.remove('on')); }, 180); };
+    box.querySelectorAll('.pkg').forEach((g) => {
+      g.addEventListener('mouseenter', () => show(g));
+      g.addEventListener('mouseleave', hide);
+      g.addEventListener('focus', () => show(g));
+      g.addEventListener('blur', hide);
+      g.addEventListener('click', (ev) => { ev.stopPropagation(); if (!pop.hidden && cur === +g.dataset.i) { pop.hidden = true; cur = null; g.classList.remove('on'); } else show(g); });
+    });
+    pop.addEventListener('mouseenter', () => clearTimeout(hideT));
+    pop.addEventListener('mouseleave', hide);
+    const away = (ev) => { if (!box.isConnected) { document.removeEventListener('click', away); return; } if (!box.contains(ev.target)) { pop.hidden = true; cur = null; } };
+    document.addEventListener('click', away);
+    box.querySelector('svg').setAttribute('role', 'group');
+    box.classList.add('live');
+  }
   return box;
 }
 // the stage-type card: badge, key numbers, the drawing (when there is no game screenshot) and the climbs
+// climbs / intermediate sprints of a stage (data/race_points.json, from the game's stage files and points tables)
+const rpOf = (key) => (S.rp && S.rp.stages[key]) || null;
+const CATLAB = { HC: 'HC climb', 1: 'Category 1 climb', 2: 'Category 2 climb', 3: 'Category 3 climb', 4: 'Category 4 climb' };
+// the stage object behind an S1 key and division (to score the finish line from the stage result)
+function stageOfKey(key, div) {
+  const m = /^s1\|(.+)\|(\d+)$/.exec(key || '');
+  if (!m || div == null) return null;
+  const ri = S.s1.races.findIndex((r) => r.name === m[1]);
+  const mm = IX.byRace.get(ri + '|' + div);
+  return mm ? mm.get(+m[2]) || null : null;
+}
+function evItems(key, t, div) {
+  const rp = rpOf(key);
+  if (!rp || !rp.events) return null;
+  const tb = rp.table ? S.rp.tables[rp.table] : null;
+  const res = div != null && rp.results ? rp.results[div] : null;
+  const evs = rp.events.map((e, i) => ({ ...e, i }));
+  const fin = rp.finish;
+  if (fin && fin.type === 'summit') evs.push({ type: 'kom', cat: fin.cat, km: t ? t.km : null, name: fin.name, summit: true });
+  if (fin) evs.push({ type: 'finish', km: t ? t.km : null, name: fin.name, ftype: fin.type === 'summit' ? { HC: 'finish_mountain_hc', 1: 'finish_mountain_1', 2: 'finish_mountain_2', 3: 'finish_mountain_3', 4: 'finish_mountain_4' }[fin.cat] : fin.type });
+  if (!evs.length) return null;
+  const stg = div != null ? stageOfKey(key, div) : null;
+  const items = evs.map((e) => {
+    const spr = e.type === 'sprint', isFin = e.type === 'finish';
+    const pts = !tb ? [] : (spr ? tb.sprint : isFin ? tb.finish[e.ftype] : e.summit ? tb.summit[e.cat] : tb.kom[e.cat]) || [];
+    const secs = !tb ? [] : (spr ? tb.sprintTime : isFin ? (tb.finishTime || {})[e.ftype] : []) || [];
+    let got = null;
+    if (isFin || e.summit) {
+      // finish line (and the mountain points of a summit finish) are scored straight from the stage result
+      const rows = stg && stg.cls.stage ? stg.cls.stage : null;
+      if (rows && pts.length) got = pts.map((p, k) => [rows[k] ? rows[k][1] : null, p]);
+    } else if (res && res[e.type]) got = res[e.type][String(e.i)] || null;
+    return { e, spr, fin: isFin, pts, secs, got, has: div != null && tb && (isFin || e.summit ? !!stg : !!res), ok: res ? res[(spr ? 'sprint' : 'kom') + '_ok'] : false };
+  });
+  return { rp, tb, res, items };
+}
+const evLabel = (e) => (e.type === 'sprint' ? 'Intermediate sprint' : e.type === 'finish' ? 'Finish' : e.summit ? CATLAB[e.cat] + ' · finish' : CATLAB[e.cat]);
+const evBadge = (e) => h('span', { class: 'evb ' + (e.type === 'sprint' ? 'spr' : e.type === 'finish' ? 'fin' : 'k' + e.cat), title: evLabel(e) }, e.type === 'sprint' ? 'S' : e.type === 'finish' ? '🏁' : e.cat);
+// one small card per climb / sprint / finish: coloured by type, podium as a table, "all places" toggle, points scale
+const evColor = (e) => (e.type === 'sprint' ? '#16a34a' : e.type === 'finish' ? 'var(--muted)' : { HC: '#7f1d1d', 1: '#be123c', 2: '#e11d48', 3: '#f43f5e', 4: '#f43f5e' }[e.cat] || '#e11d48');
+function evPlaces(it, all) {
+  const { pts, secs, got } = it;
+  const row = (k, who, p) => h('tr', null,
+    h('td', { class: 'rk' }, k < 3 ? h('span', { class: 'lrk m' + (k + 1) }, k + 1) : h('span', { class: 'lrk' }, k + 1)),
+    h('td', { class: 'rider' }, who),
+    h('td', { class: 'n' }, p),
+    h('td', { class: 'n s' }, secs[k] ? secs[k] + '″' : ''));
+  const blank = (k) => h('tr', { class: 'pad' }, h('td', { class: 'rk' }), h('td', { class: 'rider' }, ' '), h('td', { class: 'n' }), h('td', { class: 'n s' }));
+  const tableOf = (rows) => { const out = rows.slice(); if (!all) while (out.length < 3) out.push(blank(out.length)); return h('table', { class: 'evtab' }, h('tbody', null, out)); };
+  if (it.has) {
+    if (!got || !got.some(([r]) => r != null)) return h('p', { class: 'evunk' }, it.ok ? 'Can’t tell who scored here: the export only gives each rider’s points for the whole day.' : 'Not worked out for this stage.');
+    return tableOf((all ? got : got.slice(0, 3)).map(([r, p], k) => row(k, r != null ? riderLink(r) : h('span', { class: 'mute' }, 'not certain'), p)));
+  }
+  if (!pts.length) return h('p', { class: 'evunk' }, 'No points: one-day races keep no mountains or points classification.');
+  return tableOf((all ? pts : pts.slice(0, 3)).map((p, k) => row(k, h('span', { class: 'mute' }, ORD(k + 1) + ' place'), p)));
+}
+function evRow(it) {
+  const { e, pts, secs, got } = it;
+  const more = (it.has ? (got || []).length : pts.length) > 3;
+  let all = false;
+  const body = h('div', { class: 'evbody' }, evPlaces(it, false));
+  const btn = more ? h('button', { type: 'button', class: 'evmore', 'aria-expanded': 'false', onclick: () => { all = !all; body.replaceChildren(evPlaces(it, all)); btn.textContent = all ? 'Top 3 ▴' : 'All places ▾'; btn.setAttribute('aria-expanded', String(all)); } }, 'All places ▾') : null;
+  const kind = it.spr || it.fin ? 'pts' : 'KOM';
+  const sum = pts.length ? (pts.length === 1 ? pts[0] + ' ' + kind + ' to the winner' : pts.length + ' places · ' + pts[0] + '–' + pts[pts.length - 1] + ' ' + kind) : '';
+  return h('div', { class: 'evtile', style: '--ec:' + evColor(e) },
+    h('div', { class: 'evhd' }, evBadge(e), h('div', { class: 'evn' }, h('b', { title: e.name || '' }, e.name || evLabel(e)), h('small', null, [e.name ? evLabel(e) : '', e.km != null ? 'km ' + Math.round(e.km) : ''].filter(Boolean).join(' · ')))),
+    body,
+    h('div', { class: 'evft' }, h('span', { title: (kind === 'KOM' ? 'Mountains' : 'Points') + ' classification: ' + pts.join(', ') }, sum), secs.length ? h('span', { class: 'evbon', title: 'Bonus seconds for the first ' + secs.length }, '⏱ ' + secs.map((v) => v + '″').join(' ')) : null, btn || h('span')));
+}
+// the hover card: header, then every place with the rider and the points (and bonus seconds) he got
+function evCard(it) {
+  const { e, pts, secs, got } = it;
+  const body = it.has
+    ? (got && got.some(([r]) => r != null)
+      ? h('table', { class: 'evtab' }, h('tbody', null, got.map(([r, p], k) => h('tr', null, h('td', { class: 'rk' }, k < 3 ? h('span', { class: 'lrk m' + (k + 1) }, k + 1) : k + 1), h('td', { class: 'rider' }, r != null ? riderLink(r) : h('span', { class: 'mute' }, 'not certain')), h('td', { class: 'n' }, p + ' pts'), secs.length ? h('td', { class: 'n mute' }, secs[k] ? '−' + secs[k] + '″' : '') : null))))
+      : h('p', { class: 'unk' }, it.ok ? 'Can’t tell who scored here: the export only gives each rider’s points for the whole day.' : 'Not worked out for this stage.'))
+    : pts.length ? h('div', { class: 'evp' }, h('div', { class: 'evpts' }, pts.map((v) => h('span', null, v))), secs.length ? h('div', { class: 'evsec' }, secs.map((v) => h('span', null, v + '″'))) : null) : h('p', { class: 'unk' }, 'One-day race: no points here.');
+  return h('div', { class: 'evcard' }, h('div', { class: 'evch' }, evBadge(e), h('div', { class: 'evn' }, h('b', null, e.name || evLabel(e)), h('small', null, [evLabel(e), e.km != null ? 'km ' + Math.round(e.km) : ''].filter(Boolean).join(' · ')))), body);
+}
+function eventList(key, t, div) {
+  const info = evItems(key, t, div);
+  if (!info) return null;
+  const { rp, tb, res } = info;
+  const note = !tb ? 'One-day race: the game keeps no mountains or points classification, so these climbs and sprints give no points.'
+    : 'Points by position from the game’s ' + (rp.table === 'gt' ? 'Giro' : 'Paris–Nice') + ' points table' + (rp.season2guess ? ', the one Season 1 used for this kind of race (not confirmed for Season 2 yet).' : ', the one the Season 1 results match.')
+      + (res ? ' Who scored on each climb or sprint is worked out from the points every rider gained on the day; a place shows “?” when the totals could be split in more than one way, since the export doesn’t list each climb or sprint.' : '')
+      + (rp.src === 'image' ? ' Climbs read from the markers on the game’s profile image (no names; sprints are not marked there).' : '')
+      + (tb && rp.finish ? ' The finish card is scored straight from the stage result; the last column is the bonus seconds.' : '')
+      + (res && res.sprint_src === 'sheet' ? ' The intermediate sprints of this stage come from a results sheet a league member shared on Discord.' : '')
+      + (rp.src === 'file' ? ' Point at a ball on the profile for the full list.' : '');
+  return h('div', null, h('div', { class: 'evgrid' }, info.items.map((it) => evRow(it))), rp.doubt ? h('p', { class: 'evwarn' }, 'Careful: nobody scored mountain points on this stage, so the game file matched to it may not be the stage that was raced.') : null, h('p', { class: 'evnote' }, note));
+}
 function stageTypeCard(t, opts = {}) {
   if (!t || !t.icon) return null;
+  const evl = opts.key ? eventList(opts.key, t, opts.div) : null;
   const facts = [
     t.ps != null ? ['ProfileScore', psTxt(t)] : null,
     t.vert ? ['Climbing', (t.ps_est ? '≈' : '') + t.vert.toLocaleString('en-GB') + ' m'] : null,
@@ -1278,10 +1490,10 @@ function stageTypeCard(t, opts = {}) {
   return h('section', { class: 'card ptcard pt-' + t.icon },
     h('div', { class: 'ptc-h' }, ptIcon(t.icon, 44), h('div', null, h('div', { class: 'eyebrow' }, 'Stage type'), h('h2', null, t.tt ? 'Time trial · ' + PT[t.icon].long : PT[t.icon].long), h('p', { class: 'sub' }, PT[t.icon].hint + (t.cobbles ? '. Cobbled sectors.' : '.'))),
       facts.length ? h('div', { class: 'ptc-f' }, facts.map(([k, v]) => h('div', null, h('b', null, v), h('span', null, k)))) : null),
-    opts.drawing === false ? null : profileSvg(t),
-    climbs.length ? h('div', { class: 'ptc-cl' }, climbs.map((c) => h('span', { class: 'clb' }, h('i', { class: 'c' + c.cat }, c.cat), h('span', null, h('b', null, c.len != null ? (t.ps_est ? '≈' : '') + c.len + ' km at ' + c.grad + '%' : 'Category ' + c.cat + ' climb'), h('small', null, [c.top != null ? 'top at km ' + Math.round(c.top) : c.to_fin != null ? 'top ' + Math.round(c.to_fin) + ' km from the line' : '', c.alt != null ? c.alt.toLocaleString('en-GB') + ' m' : ''].filter(Boolean).join(' · ')))))) : null,
+    opts.drawing === false ? null : profileSvg(t, opts.key, opts.div),
+    evl ? [h('h3', { class: 'evh' }, opts.div != null && rpOf(opts.key)?.results?.[opts.div] ? 'Climbs and sprints · results' : 'Climbs and sprints'), evl] : climbs.length ? h('div', { class: 'ptc-cl' }, climbs.map((c) => h('span', { class: 'clb' }, h('i', { class: 'c' + c.cat }, c.cat), h('span', null, h('b', null, c.len != null ? (t.ps_est ? '≈' : '') + c.len + ' km at ' + c.grad + '%' : 'Category ' + c.cat + ' climb'), h('small', null, [c.top != null ? 'top at km ' + Math.round(c.top) : c.to_fin != null ? 'top ' + Math.round(c.to_fin) + ' km from the line' : '', c.alt != null ? c.alt.toLocaleString('en-GB') + ' m' : ''].filter(Boolean).join(' · ')))))) : null,
     h('p', { class: 'src' }, t.src === 'stage file'
-      ? 'Worked out from the game’s stage file. ProfileScore uses the ProCyclingStats formula: each climb scores (gradient ÷ 2)² × length, weighted by how close its top is to the finish. Climb categories are estimates from that score.'
+      ? 'Worked out from the game’s stage file. ProfileScore uses the ProCyclingStats formula: each climb scores (gradient ÷ 2)² × length, weighted by how close its top is to the finish.' + (evl && rpOf(opts.key)?.src === 'file' ? ' Climbs, their categories and the sprints are the ones set in the stage file.' : ' Climb categories are estimates from that score.')
       : 'From the profile image: the game’s own stage icon sets flat, hills or mountains, and the end of the profile sets the finish.' + (t.ps_est ? ' ProfileScore (≈) is an estimate: the image is read back into an elevation line at the game’s drawing scale, or, when the game squeezed the drawing, each climb marker counts as a typical climb of its category.' : '')));
 }
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -1356,9 +1568,19 @@ function viewS2Race(i) {
     fig.append(h('figcaption', null, h('span', null, r.list.length > 1 ? 'Stage ' + p.stage : r.race), psBadge(stageTypeOf(s2Key(p)))), h('button', { type: 'button', 'aria-label': 'Enlarge ' + (r.list.length > 1 ? 'stage ' + p.stage : r.race) + ' profile', onclick: () => fig.classList.toggle('zoom') }, h('img', { src: p.img, alt: r.race + (r.list.length > 1 ? ' stage ' + p.stage : '') + ' profile', loading: 'lazy' })));
     grid.append(fig);
   }
-  if (r.list.length === 1) { const tc = stageTypeCard(stageTypeOf(s2Key(r.list[0])), { drawing: false }); if (tc) $view.append(tc); }
+  if (r.list.length === 1) { const tc = stageTypeCard(stageTypeOf(s2Key(r.list[0])), { drawing: false, key: s2Key(r.list[0]) }); if (tc) $view.append(tc); }
   else { const ts = r.list.map((p) => stageTypeOf(s2Key(p))); if (ts.some(Boolean)) $view.append(card('Stage types', null, typeSummary(ts), ptLegend())); }
   $view.append(card('Stage profiles', null, grid));
+  // multi-stage races: climbs and sprints of every stage, folded
+  if (r.list.length > 1) {
+    const parts = r.list.map((p) => {
+      const key = s2Key(p), rp = rpOf(key), evl = rp ? eventList(key, stageTypeOf(key)) : null;
+      if (!evl) return null;
+      const nk = rp.events.filter((e) => e.type === 'kom').length + (rp.finish && rp.finish.type === 'summit' ? 1 : 0), ns = rp.events.filter((e) => e.type === 'sprint').length;
+      return h('details', { class: 'evstage' }, h('summary', null, h('b', null, 'Stage ' + p.stage), ' · ', [nk ? nk + (nk === 1 ? ' climb' : ' climbs') : null, ns ? ns + (ns === 1 ? ' sprint' : ' sprints') : null].filter(Boolean).join(' · ')), evl);
+    }).filter(Boolean);
+    if (parts.length) $view.append(card('Climbs and sprints', null, parts));
+  }
   $view.append(card('Startlist', null, h('p', { class: 'empty' }, 'Startlist not available yet.')));
 }
 function viewRace(ri) {
@@ -1368,11 +1590,11 @@ function viewRace(ri) {
   if (UI.pendingStage != null && UI.pendingStage <= race.stages) { st.stage = UI.pendingStage; UI.pendingStage = null; }
   const dates = IX.dates.get(race.round) || [];
   $view.append(h('div', { class: 'racehead' }, h('div', null, h('div', { class: 'eyebrow' }, 'Season 1 · Round ' + race.round), h('h1', null, race.name, isMonument(race.name) ? [' ', monuBadge()] : null), h('div', { class: 'facts' }, h('span', null, h('b', null, race.stages), race.stages > 1 ? ' stages' : ' one-day race'), dates.length ? h('span', null, dates.map(fdate).join(' · ')) : null)), h('a', { class: 'btn ghost', href: '#races' }, 'All races')));
-  $view.append(h('div', { class: 'chips', role: 'group', 'aria-label': 'Division' }, [1, 2, 3].map((d) => h('button', { class: 'chip' + (IX.byRace.has(ri + '|' + d) ? '' : ' miss'), type: 'button', 'aria-pressed': String(st.div === d), onclick: () => { st.div = d; route(); } }, 'Division ' + d))));
+  $view.append(h('div', { class: 'chips', role: 'group', 'aria-label': 'Division' }, [1, 2, 3].map((d) => h('button', { class: 'chip' + (IX.byRace.has(ri + '|' + d) ? '' : ' miss'), type: 'button', 'aria-pressed': String(st.div === d), onclick: () => { st.div = d; UI.keepScroll = true; route(); } }, 'Division ' + d))));
   const m = IX.byRace.get(ri + '|' + st.div) || new Map();
   if (race.stages > 1) {
-    $view.append(h('div', { class: 'chips', role: 'group', 'aria-label': 'Stage' }, h('button', { class: 'chip', type: 'button', 'aria-pressed': String(st.stage === 0), onclick: () => { st.stage = 0; route(); } }, 'Overview'),
-      Array.from({ length: race.stages }, (_, k) => k + 1).map((s) => h('button', { class: 'chip' + (m.has(s) ? '' : ' miss'), type: 'button', 'aria-pressed': String(st.stage === s), title: m.get(s)?.name || 'Results not available yet', onclick: () => { st.stage = s; route(); } }, stageTypeOf(s1Key(race, s)) ? ptIcon(stageTypeOf(s1Key(race, s)).icon) : null, 'Stage ' + s))));
+    $view.append(h('div', { class: 'chips', role: 'group', 'aria-label': 'Stage' }, h('button', { class: 'chip', type: 'button', 'aria-pressed': String(st.stage === 0), onclick: () => { st.stage = 0; history.replaceState(null, '', '#race-' + ri); UI.keepScroll = true; route(); } }, 'Overview'),
+      Array.from({ length: race.stages }, (_, k) => k + 1).map((s) => h('button', { class: 'chip' + (m.has(s) ? '' : ' miss'), type: 'button', 'aria-pressed': String(st.stage === s), title: m.get(s)?.name || 'Results not available yet', onclick: () => { st.stage = s; history.replaceState(null, '', '#race-' + ri + '-' + s); UI.keepScroll = true; route(); } }, stageTypeOf(s1Key(race, s)) ? ptIcon(stageTypeOf(s1Key(race, s)).icon) : null, 'Stage ' + s))));
   }
   if (!m.size) { $view.append(h('div', { class: 'note' }, 'No results for this race in Division ' + st.div + ' yet.')); return; }
   if (race.stages > 1 && st.stage === 0) return raceOverview(ri, race, m, st);
@@ -1381,10 +1603,10 @@ function viewRace(ri) {
   const avail = CLS.filter((c) => stage.cls[c.key]?.length);
   if (!avail.find((c) => c.key === st.cls)) st.cls = avail[0]?.key || 'stage';
   stageSummary(race, stage);
-  { const hasShot = (S.s1.profiles || []).some((p) => p.race === stage.race && p.stage === stage.stage); const tc = stageTypeCard(stageTypeOf(s1Key(race, st.stage)), { drawing: !hasShot }); if (tc) $view.append(tc); }
+  { const tp = stageTypeOf(s1Key(race, st.stage)), hasShot = (S.s1.profiles || []).some((p) => p.race === stage.race && p.stage === stage.stage); const tc = stageTypeCard(tp, { drawing: !hasShot || !!(tp && tp.curve), key: s1Key(race, st.stage), div: String(st.div) }); if (tc) $view.append(tc); }
   $view.append(h('section', { class: 'card' },
-    h('div', null, h('h2', null, (race.stages > 1 ? 'Stage ' + st.stage + ' · ' : '') + stage.name), h('p', { class: 'sub' }, 'Division ' + st.div + (race.stages > 1 ? ' · stage ' + st.stage + ' of ' + race.stages : '')), stage.shot ? h('p', { class: 'src' }, 'Read from the screenshot posted on Discord (top 20). Names were matched automatically, so small errors are possible.') : null),
-    h('div', { class: 'tabs', role: 'tablist' }, avail.map((c) => h('button', { type: 'button', role: 'tab', 'aria-selected': String(st.cls === c.key), onclick: () => { st.cls = c.key; route(); } }, h('span', { class: 'dot ' + c.j }), c.label))),
+    h('div', null, h('h2', null, (race.stages > 1 ? 'Stage ' + st.stage + ' · ' : '') + stage.name), h('p', { class: 'sub' }, 'Division ' + st.div + (race.stages > 1 ? ' · stage ' + st.stage + ' of ' + race.stages : '')), stage.shot ? h('p', { class: 'src' }, 'Read from the screenshot posted on Discord (top 20). Names were matched automatically, so small errors are possible.') : null, stage.note ? h('p', { class: 'src partial' }, stage.note) : null),
+    h('div', { class: 'tabs', role: 'tablist' }, avail.map((c) => h('button', { type: 'button', role: 'tab', 'aria-selected': String(st.cls === c.key), onclick: () => { st.cls = c.key; UI.keepScroll = true; route(); } }, h('span', { class: 'dot ' + c.j }), c.label))),
     clsTable(stage, st.cls)));
   if (race.stages === 1) { const sl = startlist(ri, st.div); if (sl) $view.append(sl); }
 }
@@ -1399,7 +1621,9 @@ function stageSummary(race, stage) {
   const pod = h('div', { class: 'pod' }, res.slice(0, 3).map((r, k) => h('div', null, h('span', { class: 'p' + (k === 0 ? ' p1' : '') }, k + 1), h('span', null, riderLink(r[1]), h('small', null, tid(r[2]))), h('span', { class: 'num' }, fmtTime(r[3])))));
   $view.append(h('section', { class: 'card' }, h('div', { class: 'stagesum' }, winner, pod)));
   const prof = (S.s1.profiles || []).find((p) => p.race === stage.race && p.stage === stage.stage);
-  if (prof) $view.append(h('section', { class: 'card' }, h('h2', null, 'Stage profile'), h('img', { class: 'stageprof', src: prof.img, alt: (stage.name || 'Stage') + ' profile', loading: 'lazy' })));
+  const drawn = stageTypeOf(s1Key(race, stage.stage))?.curve;
+  if (prof && drawn) $view.append(h('details', { class: 'card shotfold' }, h('summary', null, h('b', null, 'Game screenshot of the profile'), h('span', { class: 'mute' }, ' · the drawing below is built from the same stage file')), h('img', { class: 'stageprof', src: prof.img, alt: (stage.name || 'Stage') + ' profile', loading: 'lazy' })));
+  else if (prof) $view.append(h('section', { class: 'card' }, h('h2', null, 'Stage profile'), h('img', { class: 'stageprof', src: prof.img, alt: (stage.name || 'Stage') + ' profile', loading: 'lazy' })));
   const jer = [['gc', 'Leader', 'j-gc'], ['points', 'Points', 'j-pts'], ['kom', 'Mountains', 'j-kom'], ['young', 'Youth', 'j-young']]
     .filter(([k]) => race.stages > 1 && stage.cls[k]?.length)
     .map(([k, label, j]) => { const r = stage.cls[k][0]; return h('div', { class: 'jer' }, h('span', { class: 'jersey ' + j }), h('div', null, h('div', { class: 'k' }, label), h('div', { class: 'v' }, riderLink(r[1])))); });
@@ -1410,7 +1634,7 @@ function clsTable(stage, key, limit) {
   const rows = stage.cls[key] || [];
   const tall = limit ? { page: limit, step: 10 } : { page: 20 };
   const tblOpts = tall;
-  const tr = (r, cells) => h('tr', { class: r[0] === 1 ? 'p1' : null }, h('td', { class: 'rk' }, r[0]), cells);
+  const tr = (r, cells) => h('tr', { class: r[0] === 1 ? 'p1' : null }, h('td', { class: 'rk' }, r[0] <= 3 ? h('span', { class: 'lrk m' + r[0] }, r[0]) : r[0]), cells);
   if (key === 'teams') return table([{ label: '#' }, { label: 'Team' }, { label: 'Manager' }, { label: 'Time', n: 1 }, { label: 'Overall', n: 1 }], rows.map((r) => tr(r, [h('td', { class: 'rider' }, squadLink(r[1])), h('td', null, teamLink(ownerName(r[1], r[4]))), h('td', { class: 'n' }, r[2]), h('td', { class: 'n mute' }, r[3])])), tblOpts);
   // compact (top-N cards sit two per row): leave out the Team column so the numbers keep their room
   const teamHead = limit ? [] : [{ label: 'Team', hs: 1 }];
@@ -1432,7 +1656,7 @@ function raceOverview(ri, race, m, st) {
   const figs = [];
   for (let s = 1; s <= race.stages; s++) {
     const tp = stageTypeOf(s1Key(race, s));
-    const pic = shots.get(s) ? h('img', { class: 'stageprof', src: shots.get(s), alt: 'Stage ' + s + ' profile', loading: 'lazy' }) : profileSvg(tp);
+    const pic = (tp && tp.curve ? profileSvg(tp, s1Key(race, s), null, true) : null) || (shots.get(s) ? h('img', { class: 'stageprof', src: shots.get(s), alt: 'Stage ' + s + ' profile', loading: 'lazy' }) : null);
     if (!pic) continue;
     figs.push(h('figure', { class: tp ? 'pt-' + tp.icon : null }, h('figcaption', null, h('a', { href: '#race-' + ri + '-' + s }, 'Stage ' + s + ' · ' + ((m.get(s) || {}).name || '')), psBadge(tp)), pic));
   }
@@ -1737,8 +1961,12 @@ function viewRiderPcs(i) {
 }
 
 // ---------- cycling teams ----------
+// Season 1 teams / Season 2 sign-ups switch on the Teams page
+const seasonSeg = (cur) => S.s2signups ? h('div', { class: 'seg season-seg', role: 'group', 'aria-label': 'Season' },
+  h('button', { type: 'button', 'aria-pressed': String(cur === 1), onclick: () => { location.hash = '#squads'; } }, 'Season 1 · teams'),
+  h('button', { type: 'button', 'aria-pressed': String(cur === 2), onclick: () => { location.hash = '#s2teams'; } }, 'Season 2 · sign-ups')) : null;
 function viewSquads() {
-  $view.append(h('div', null, h('div', { class: 'eyebrow' }, 'Season 1 · PCM 26'), h('h1', null, 'Teams'), h('p', { class: 'sub' }, 'Every cycling team that raced in the league, with the managers who ran it and its wins.')));
+  $view.append(h('div', null, h('div', { class: 'eyebrow' }, 'Season 1 · PCM 26'), h('h1', null, 'Teams'), h('p', { class: 'sub' }, 'Every cycling team that raced in the league, with the managers who ran it and its wins.'), seasonSeg(1)));
   const list = [...IX.squad.entries()].sort((a, b) => b[1].wins - a[1].wins || b[1].pod - a[1].pod);
   const grid = h('div', { class: 'squads' }, list.map(([ti, q]) => h('a', { class: 'squadcard', href: '#squad-' + ti }, crest(ti, 52),
     h('div', null, h('b', null, tid(ti)), h('span', null, [...q.mgrs].map(teamOf).filter((v, k, a) => a.indexOf(v) === k).join(', ') || '—'), h('span', { class: 'num' }, q.wins + ' wins · ' + q.riders.size + ' riders')))));
@@ -1756,6 +1984,44 @@ function viewSquad(ti) {
   const roster = h('div', { class: 'roster' }, riders.map(([r, x]) => h('a', { class: 'rostercard', href: '#rider-' + r }, avatar(r, ti, 44), h('div', null, h('b', null, flag(natOf(r)), rid(r)), h('span', null, (x.wins ? x.wins + ' wins · ' : '') + x.days + ' days')))));
   const wins = q.list.slice().sort((a, b) => a.st.race - b.st.race || a.st.stage - b.st.stage).map((e) => { const race = S.s1.races[e.st.race]; return h('tr', null, h('td', { class: 'mute num' }, fshort((IX.dates.get(race.round) || ['2026-01-01'])[0])), h('td', null, h('a', { href: '#race-' + e.st.race, onclick: () => openRace(e.st, 'stage') }, race.name)), h('td', { class: 'mute' }, race.stages > 1 ? 'Stage ' + e.st.stage : ''), h('td', null, h('span', { class: 'flag' + (e.st.div === 1 ? ' d1' : '') }, 'D' + e.st.div)), h('td', { class: 'rider' }, riderLink(e.rider))); });
   $view.append(h('div', { class: 'grid2' }, card('Roster', null, roster), card('Victories', null, wins.length ? table([{ label: 'Date' }, { label: 'Race' }, { label: 'Stage' }, { label: 'Div' }, { label: 'Rider' }], wins, { tall: true }) : h('p', { class: 'empty' }, 'No wins yet.'))));
+}
+
+// ---------- Season 2 sign-ups (from #sign-ups on Discord, data/s2_signups.json) ----------
+function viewS2Teams() {
+  const D = S.s2signups;
+  if (!D) return viewSquads();
+  const teams = D.teams.slice().sort((a, b) => a.posted.localeCompare(b.posted));
+  const back = teams.filter((t) => t.s1), fresh = teams.filter((t) => !t.s1);
+  const days = Math.max(0, Math.round((new Date(D.start + 'T00:00:00Z') - new Date(TODAY + 'T00:00:00Z')) / 864e5));
+  const checked = new Date(D.checked).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+  $view.append(h('div', null, h('div', { class: 'eyebrow' }, 'Season 2 · PCM 26'), h('h1', null, 'Season 2 teams'),
+    h('p', { class: 'sub' }, 'Teams signed up for Season 2 in #sign-ups on the PCM UK Discord, in the order they were posted. Rosters are decided in the auction on pcmmulti.com/ipl; divisions are not set yet.'), seasonSeg(2)));
+  $view.append(h('div', { class: 'kpis' }, kpi('Sign-ups', teams.length, 'teams so far'), kpi('From Season 1', back.length, 'teams run by Season 1 managers'), kpi('New', fresh.length, fresh.length === 1 ? 'manager in the league' : 'managers in the league'), kpi('Season starts', days ? days + ' days' : 'Today', fdate(D.start))));
+  const mgrCell = (t) => t.s1 && IX.teamIds.has(t.s1) ? h('a', { href: '#team-' + encodeTeam(t.s1) }, t.web) : t.web;
+  const s1Teams = (n) => { const t = IX.team.get(n); return t ? [...t.squads].map(tid).filter(Boolean).filter((v, k, a) => a.indexOf(v) === k) : []; };
+  const grid = h('div', { class: 's2grid' }, teams.map((t) => {
+    const was = t.s1 ? s1Teams(t.s1) : [];
+    return h('div', { class: 's2card' },
+      t.jersey ? h('div', { class: 'crest jsy', style: 'width:64px;height:74px' }, h('img', { src: 'img/jerseys/' + t.jersey + '.png', alt: t.team + ' jersey', loading: 'lazy', title: t.jerseyNote || '' }))
+        : h('div', { class: 'crest', style: 'width:64px;height:64px', title: 'No jersey yet' }, (t.team.match(/[A-Za-z0-9]/) || ['?'])[0].toUpperCase()),
+      h('div', { class: 's2body' },
+        h('div', { class: 's2team' }, t.team),
+        h('div', { class: 's2line' }, 'Manager ', h('b', null, mgrCell(t)), t.pcm && t.pcm !== t.web ? ' · in game ' + t.pcm : ''),
+        t.s1 ? h('div', { class: 's2line' }, 'Season 1 ', h('b', null, t.s1), was.length ? ' · ' + was.join(', ') : '') : null,
+        h('div', { class: 's2tags' },
+          t.s1 ? null : h('span', { class: 's2tag new' }, 'New manager'),
+          t.provisional ? h('span', { class: 's2tag prov', title: t.note || '' }, 'Team not final') : null,
+          t.community ? h('span', { class: 's2tag' }, t.community) : null,
+          h('span', { class: 's2tag' }, 'Signed ' + new Date(t.posted.slice(0, 10) + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' })),
+          t.jerseyNote ? h('span', { class: 's2tag prov', title: t.jerseyNote }, 'Jersey approx.') : null)));
+  }));
+  $view.append(card('Signed up', null, grid));
+  // Season 1 managers who have not signed up yet (pairs that split count as signed up)
+  const signed = new Set(teams.map((t) => t.s1).filter(Boolean));
+  const L = leagueRounds(); const fin = new Map(L.out.get(L.orders[L.orders.length - 1]).map((r) => [r.p, r]));
+  const missing = [...IX.team.keys()].filter((n) => !signed.has(n)).sort((a, b) => (fin.get(a)?.rank || 99) - (fin.get(b)?.rank || 99));
+  if (missing.length) $view.append(card('Season 1 managers not signed up yet', null, h('p', { class: 'sub', style: 'margin:0 0 10px' }, 'Ordered by their Season 1 final position.'), h('div', { class: 's2pending' }, missing.map((n) => h('a', { href: '#team-' + encodeTeam(n) }, (fin.get(n) ? '#' + fin.get(n).rank + ' ' : '') + n)))));
+  $view.append(h('p', { class: 'sub', style: 'margin-top:14px' }, 'Checked on Discord ' + checked + '. Jerseys come from the game; the one marked “approx.” is the closest the game has to the team asked for.'));
 }
 
 // ---------- teams ----------
@@ -1793,12 +2059,13 @@ function setupSearch() {
   for (const [ti, q] of IX.squad || new Map()) items.push({ k: 'Team', name: tid(ti), sub: [...q.mgrs].map(teamOf).filter((v, k, a) => a.indexOf(v) === k).join(', '), href: '#squad-' + ti, pts: 500 + q.wins, squad: ti });
   for (const [n, id] of IX.teamIds) items.push({ k: 'Manager', name: n, sub: 'Season 1', href: '#team-' + id, pts: 600 });
   S.s1.races.forEach((r, i) => items.push({ k: 'Race', name: r.name, sub: 'Season 1 · ' + (r.stages > 1 ? r.stages + ' stages' : 'one-day'), href: '#race-' + i, pts: 700 }));
+  for (const t of (S.s2signups && S.s2signups.teams) || []) items.push({ k: 'Team', name: t.team, sub: 'Season 2 · ' + t.web, href: '#s2teams', pts: 520, jersey: t.jersey ? 'img/jerseys/' + t.jersey + '.png' : null });
   IX.s2.forEach((r, i) => items.push({ k: 'Race', name: r.race, sub: 'Season 2 · ' + fdate(r.date), href: '#s2race-' + i, pts: 650 }));
   items.forEach((it) => { it.f = fold(it.name + ' ' + it.sub); it.fn = fold(it.name); });
   let shown = [], sel = 0;
   const icon = (it) => {
     if (it.k === 'Rider') { const p = S.photos ? S.photos[it.name] : (S.photoIndex || {})[it.name] && 'img/r/' + S.photoIndex[it.name]; return h('span', { class: 'gs-ic' }, p ? h('img', { src: p, alt: '', loading: 'lazy' }) : 'R'); }
-    if (it.k === 'Team') { const j = jerseyOf(it.name); return h('span', { class: 'gs-ic jsy' }, j ? h('img', { src: j, alt: '' }) : 'T'); }
+    if (it.k === 'Team') { const j = it.jersey || jerseyOf(it.name); return h('span', { class: 'gs-ic jsy' }, j ? h('img', { src: j, alt: '' }) : 'T'); }
     return h('span', { class: 'gs-ic' }, it.k === 'Race' ? '🏁' : 'M');
   };
   const close = () => { list.hidden = true; input.setAttribute('aria-expanded', 'false'); };
@@ -1834,7 +2101,12 @@ Promise.all(['data/s1.json', 'data/league.json', 'data/profiles.json', 'data/poi
     Object.assign(S, { s1, league, prof, scale, transfers, photoIndex, types, riderdb });
     // the Claude preview can hold at most 512 files, so it keeps every portrait in one file (data/photos.json)
     // instead of the 496 small ones the live site loads one by one
-    if (PREVIEW) return fetch('data/photos.json').then((r) => (r.ok ? r.json() : null)).then((p) => { if (p) S.photos = p; }).catch(() => {});
+    // Season 2 sign-ups are optional: the site works without them
+    const s2 = Promise.all([
+      fetch('data/s2_signups.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.s2signups = d; }).catch(() => {}),
+      fetch('data/race_points.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.rp = d; }).catch(() => {})]);
+    if (PREVIEW) return Promise.all([s2, fetch('data/photos.json').then((r) => (r.ok ? r.json() : null)).then((p) => { if (p) S.photos = p; }).catch(() => {})]);
+    return s2;
   })
   .then(() => {
     buildIndex();

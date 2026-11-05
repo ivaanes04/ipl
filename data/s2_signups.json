@@ -1,0 +1,188 @@
+{
+  "checked": "2026-11-05T22:16",
+  "source": "#sign-ups on the PCM UK Discord, messages after FraBo's separator line (3 Nov 2026)",
+  "start": "2026-11-30",
+  "teams": [
+    {
+      "posted": "2026-11-03T17:49",
+      "discord": "ChuppaSheeps",
+      "pcm": "SheepBoy123",
+      "web": "ChuppaSheeps",
+      "team": "Royal Bank of Scotland",
+      "jersey": "x-rbs",
+      "s1": "SheepBoy123",
+      "team_src": "Royal Bank of Scotland"
+    },
+    {
+      "posted": "2026-11-03T17:55",
+      "discord": "Bouke",
+      "pcm": "Zorkaz",
+      "web": "Bouke",
+      "team": "Rabobank",
+      "jersey": "x-rabobank",
+      "s1": "Bouke",
+      "nation": "Netherlands",
+      "note": "Bankgiroloterij is not in the database",
+      "team_src": "Rabobank | Because Bankgiroloterij isn't in the DB"
+    },
+    {
+      "posted": "2026-11-03T17:56",
+      "discord": "ivanes04",
+      "pcm": "ivanes04",
+      "web": "ivanes04",
+      "team": "Movistar",
+      "jersey": "mov",
+      "s1": "Ivan",
+      "team_src": "Movistar"
+    },
+    {
+      "posted": "2026-11-03T18:01",
+      "discord": "Riverside_ukr",
+      "pcm": "강변ᴿᵛʳ",
+      "web": "Riverside_ukr",
+      "team": "Ukraine Cycling Team",
+      "jersey": "nukr",
+      "s1": "Riverside",
+      "team_src": "Ukraine Cycling Team"
+    },
+    {
+      "posted": "2026-11-03T18:05",
+      "discord": "Hillingz",
+      "pcm": "Hillingz",
+      "web": "Hillingz",
+      "team": "Deceuninck - Quick-Step",
+      "jersey": "deceuninck",
+      "s1": "Hillingz",
+      "community": "PCM UK",
+      "team_src": "Deceuninck - Quick Step"
+    },
+    {
+      "posted": "2026-11-03T18:21",
+      "discord": "TheBigDog",
+      "pcm": "TheBigDog",
+      "web": "TheBigDog",
+      "team": "MEO (Benfica)",
+      "jersey": "x-meo",
+      "s1": "TheBigDog",
+      "team_src": "MEO (Benfica)"
+    },
+    {
+      "posted": "2026-11-03T18:29",
+      "discord": "Joewhiteley0711",
+      "pcm": "Joewhiteley0711",
+      "web": "Joewhiteley0711",
+      "team": "Q36.5",
+      "jersey": "q36",
+      "s1": "Joe",
+      "team_src": "Q36.5"
+    },
+    {
+      "posted": "2026-11-03T18:30",
+      "discord": "Mars",
+      "pcm": "MarsIsCool",
+      "web": "marsiscool",
+      "team": "CSC",
+      "jersey": "x-csc2003",
+      "s1": "Mars + Pan",
+      "community": "Independent",
+      "provisional": true,
+      "note": "Team still to be decided, CSC for now",
+      "team_src": "Tbd (CSC for now)"
+    },
+    {
+      "posted": "2026-11-03T18:33",
+      "discord": "penaguevara2727",
+      "pcm": "El_Bot_Pena",
+      "web": "Pena",
+      "team": "Renova",
+      "jersey": "x-renova",
+      "s1": "Pena",
+      "community": "Sabu76",
+      "team_src": "Renova (its portuguese not french)"
+    },
+    {
+      "posted": "2026-11-03T19:37",
+      "discord": "Leandro",
+      "pcm": "Leandrojx",
+      "web": "Leandrojx",
+      "team": "Liberty Seguros",
+      "jersey": "x-libertyseg",
+      "community": "Sabu76",
+      "team_src": "Liberty Seguros"
+    },
+    {
+      "posted": "2026-11-03T20:01",
+      "discord": "Agap",
+      "pcm": "Agap",
+      "web": "Agap",
+      "team": "Discovery Channel",
+      "jersey": "x-owdiscovery",
+      "s1": "Agap + Ktoto",
+      "jerseyNote": "Closest jersey in the game (OW Discovery)",
+      "team_src": "Discovery Chanel"
+    },
+    {
+      "posted": "2026-11-04T13:26",
+      "discord": "danielmiko",
+      "pcm": "danielmiko",
+      "web": "danielmiko",
+      "team": "Milka",
+      "jersey": "x-milka",
+      "s1": "Benjong + Miko",
+      "community": "NCL",
+      "team_src": "Milka"
+    },
+    {
+      "posted": "2026-11-04T14:21",
+      "discord": "chrisjanssen.",
+      "pcm": "c.janssen1998",
+      "web": "ChrisJanssen",
+      "team": "7-Eleven",
+      "jersey": "7rp",
+      "s1": "ChrisJanssen",
+      "team_src": "7-Eleven"
+    },
+    {
+      "posted": "2026-11-04T15:45",
+      "discord": "benjong",
+      "pcm": "bl2003",
+      "web": "benjong",
+      "team": "Talkwalker",
+      "jersey": "x-talkawalker",
+      "s1": "Benjong + Miko",
+      "community": "NCL",
+      "team_src": "Talkwalker"
+    },
+    {
+      "posted": "2026-11-04T17:45",
+      "discord": "DaaGz",
+      "pcm": "Daagz",
+      "web": "Daagz",
+      "team": "Bahrain Victorious",
+      "jersey": "tbv",
+      "s1": "Tom + Daagz",
+      "team_src": "Bahrain Victorious"
+    },
+    {
+      "posted": "2026-11-04T19:22",
+      "discord": "Tom Bryant",
+      "pcm": "Tom_Bryant",
+      "web": "Tom_Bryant",
+      "team": "B&B Hotels",
+      "jersey": "bbhotels",
+      "s1": "Tom + Daagz",
+      "team_src": "B&B Hotels"
+    },
+    {
+      "posted": "2026-11-05T21:04",
+      "discord": "Grandpa",
+      "pcm": "Grandpa",
+      "web": "Grandpa",
+      "team": "Tudor",
+      "team_src": "Tudor",
+      "jersey": "tud",
+      "s1": "Grandpa",
+      "community": "PCM America Unida"
+    }
+  ]
+}
