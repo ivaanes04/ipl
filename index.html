@@ -1,0 +1,1733 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Results, standings, riders and teams of the International Pro League (PCM UK, Pro Cycling Manager 26).">
+<style>[hidden]{display:none!important}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IPL Results</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+</head>
+<body>
+<style>
+/* Layout: a race-office results site. Sticky dark top bar, content column up to 1200px; home is a 12-column grid of panels. */
+:root {
+  --bg: #f4f3ef; --panel: #ffffff; --ink: #17191e; --muted: #656a74; --line: #e1dfd8; --soft: #efede7;
+  --accent: #d0142c; --accent-ink: #ffffff; --bar: #17191e; --bar-ink: #f4f3ef;
+  --gc: #f2c200; --pts: #2f9e44; --kom: #d7263d; --young: #ffffff; --team: #3a5a9b;
+  --ok: #2f7d3b; --bad: #b42318;
+  --f-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --f-body: "Barlow", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --r: 10px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121418; --panel: #1b1e24; --ink: #ebeae6; --muted: #9ba0aa; --line: #2c3038; --soft: #23272e;
+  --accent: #ff4d60; --accent-ink: #121418; --bar: #0b0c0f; --bar-ink: #ebeae6; --young: #ebeae6; --team: #7d9be0; --ok: #6cc77a; --bad: #ff7a6b; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #121418; --panel: #1b1e24; --ink: #ebeae6; --muted: #9ba0aa; --line: #2c3038; --soft: #23272e;
+  --accent: #ff4d60; --accent-ink: #121418; --bar: #0b0c0f; --bar-ink: #ebeae6; --young: #ebeae6; --team: #7d9be0; --ok: #6cc77a; --bad: #ff7a6b; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.45; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bar); }
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--accent); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.num, td.n, th.n { font-family: var(--f-mono); font-variant-numeric: tabular-nums; font-size: 13px; }
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bar); color: var(--bar-ink); }
+.top-in, .wrap { max-width: 1200px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.top-in { display: flex; align-items: center; gap: 20px; min-height: 56px; flex-wrap: wrap; padding-block: 6px; }
+.brand { font-family: var(--f-display); font-weight: 700; font-size: 24px; letter-spacing: .02em; display: flex; align-items: center; gap: 9px; }
+.brand i { display: inline-block; width: 11px; height: 24px; background: var(--accent); transform: skewX(-14deg); border-radius: 2px; }
+.brand small { font-weight: 500; font-size: 13px; opacity: .6; letter-spacing: .08em; text-transform: uppercase; }
+.nav { display: flex; gap: 2px; flex-wrap: wrap; }
+/* phones: one compact bar (logo + theme), the menu scrolls sideways on its own row, and the bar does not stick so it never covers a third of the screen */
+@media (max-width: 700px) {
+  .top { position: static; }
+  .top-in { gap: 6px 10px; }
+  .brand small { display: none; }
+  .nav { order: 3; width: 100%; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: -4px; }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav a { flex: none; }
+}
+.theme-btn { margin-left: auto; width: 38px; height: 38px; border-radius: 999px; border: 1px solid rgb(127 127 127 / .35); background: transparent; color: inherit; display: grid; place-items: center; cursor: pointer; }
+.theme-btn:hover { background: rgb(127 127 127 / .2); }
+.theme-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.theme-btn svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.theme-btn .i-moon { fill: currentColor; stroke: none; }
+.theme-btn .i-sun, .theme-btn.is-dark .i-moon { display: none; }
+.theme-btn.is-dark .i-sun { display: block; }
+.nav a { font-family: var(--f-display); font-weight: 600; font-size: 17px; letter-spacing: .04em; text-transform: uppercase; padding: 6px 12px; border-radius: 999px; opacity: .75; }
+.nav a:hover { color: inherit; opacity: 1; background: rgb(127 127 127 / .2); }
+.nav a[aria-current="page"] { opacity: 1; background: var(--accent); color: var(--accent-ink); }
+.wrap { padding-block: 24px 40px; display: flex; flex-direction: column; gap: 20px; }
+h1, h2, h3 { font-family: var(--f-display); margin: 0; text-wrap: balance; letter-spacing: .01em; }
+h1 { font-size: clamp(30px, 4.6vw, 44px); font-weight: 700; line-height: 1.02; }
+h2 { font-size: 20px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; }
+h3 { font-size: 18px; font-weight: 600; }
+.eyebrow { font-family: var(--f-display); font-size: 14px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+.sub { color: var(--muted); margin: 6px 0 0; max-width: 75ch; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 18px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.card-h { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.more { font-family: var(--f-display); font-weight: 600; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 20px; }
+.home { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 20px; }
+.c8 { grid-column: span 8; } .c4 { grid-column: span 4; } .c6 { grid-column: span 6; } .c12 { grid-column: span 12; }
+@media (max-width: 920px) { .c8, .c4, .c6 { grid-column: span 12; } }
+.scroll { overflow-x: auto; }
+.tblwrap { min-width: 0; max-width: 100%; display: flex; flex-direction: column; gap: 10px; overflow-x: auto; }
+.tblwrap > table { min-width: 100%; }
+/* wide stats table: keep the rider column in view while scrolling sideways on a phone */
+@media (max-width: 860px) { .stt td.rider, .stt th:nth-child(2) { position: sticky; left: 0; z-index: 1; background: var(--panel, var(--bg)); } }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { padding: 6px 8px; text-align: left; border-bottom: 1px solid var(--soft); vertical-align: baseline; }
+/* names wrap instead of pushing the table wider than its card; numbers stay on one line */
+td { overflow-wrap: break-word; }
+th.n, td.n, td.rk, td.num { white-space: nowrap; }
+td .rl { white-space: normal; }
+/* columns marked hs are secondary: hidden on narrow screens so the table fits its card */
+@media (max-width: 640px) { th.hs, td.hs { display: none; } th, td { padding: 5px 5px; } }
+th { font-family: var(--f-display); font-weight: 600; font-size: 13px; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); background: var(--panel); border-bottom: 1px solid var(--line); white-space: nowrap; }
+.sortbtn { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; font: inherit; letter-spacing: inherit; text-transform: inherit; color: inherit; }
+.sortbtn:hover, .sortbtn.on { color: var(--ink); }
+.sortbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.sortbtn .arr { font-size: 10px; opacity: .55; }
+.sortbtn.on .arr { opacity: 1; color: var(--accent); }
+/* home next-race hero */
+.hero2 { position: relative; overflow: hidden; border-radius: 16px; padding: 24px; color: #f4f3ef; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 24px; align-items: start;
+  background: radial-gradient(120% 140% at 100% 0%, color-mix(in srgb, var(--accent) 35%, transparent), transparent 55%), linear-gradient(135deg, #191c22, #0d0f13); box-shadow: 0 10px 30px rgb(0 0 0 / .18); }
+.hero2 a { color: inherit; }
+.hero2 .eyebrow { color: #ff6b7a; }
+.h2-main { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.h2-main h1 { margin: 0; font-size: clamp(32px, 5vw, 52px); line-height: 1; color: #fff; }
+.h2-tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.h2-tabs button { font-family: var(--f-display); font-weight: 600; font-size: 14px; letter-spacing: .03em; padding: 5px 12px; border-radius: 999px; border: 1px solid rgb(255 255 255 / .18); background: rgb(255 255 255 / .06); color: #e8e7e3; cursor: pointer; }
+.h2-tabs button[aria-selected="true"] { background: #fff; color: #111; border-color: #fff; }
+.h2-tabs button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.h2-meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 14px; color: rgb(244 243 239 / .75); }
+.h2-meta > span { padding: 3px 10px; border-radius: 999px; background: rgb(255 255 255 / .07); }
+.h2-meta .h2-date { background: none; padding-left: 0; color: #fff; font-weight: 600; }
+.h2-kind { --k: #0f8a5f; background: color-mix(in srgb, var(--k) 45%, transparent) !important; color: #fff; }
+.h2-kind.k-gt { --k: #c8102e; } .h2-kind.k-tour { --k: #2563eb; } .h2-kind.k-monument { --k: #b7860b; }
+.cd { display: flex; gap: 10px; }
+.cd-i { display: flex; flex-direction: column; align-items: center; min-width: 74px; padding: 10px 8px; border-radius: 12px; background: rgb(255 255 255 / .07); border: 1px solid rgb(255 255 255 / .1); }
+.cd-i b { font-family: var(--f-display); font-size: 40px; font-weight: 700; line-height: 1; color: #ff6b7a; font-variant-numeric: tabular-nums; }
+.cd-i span { font-family: var(--f-display); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: rgb(244 243 239 / .65); }
+.h2-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.hero2 .btn.ghost { color: #fff; border-color: rgb(255 255 255 / .25); }
+.h2-later { display: flex; flex-direction: column; gap: 2px; margin-top: 4px; padding-top: 10px; border-top: 1px solid rgb(255 255 255 / .1); }
+.h2-l { font-family: var(--f-display); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: rgb(244 243 239 / .55); margin-bottom: 2px; }
+.h2-later a { display: grid; grid-template-columns: 52px minmax(0, 1fr) auto; gap: 10px; align-items: baseline; padding: 5px 6px; border-radius: 8px; }
+.h2-later a:hover { background: rgb(255 255 255 / .06); }
+.h2-later b { font-family: var(--f-mono); font-size: 12px; font-weight: 400; color: rgb(244 243 239 / .6); }
+.h2-later span { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.h2-later small { font-size: 12px; color: rgb(244 243 239 / .55); }
+.h2-side { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.h2-prof { position: relative; display: block; border-radius: 12px; overflow: hidden; border: 1px solid rgb(255 255 255 / .12); background: #fff; }
+.h2-prof img { display: block; width: 100%; height: auto; }
+.h2-prof span, .h2-thumbs span { position: absolute; left: 8px; top: 8px; font-family: var(--f-display); font-weight: 700; font-size: 12px; letter-spacing: .06em; padding: 2px 8px; border-radius: 999px; background: rgb(0 0 0 / .65); color: #fff; }
+.h2-thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 8px; }
+.h2-thumbs a { position: relative; display: block; border-radius: 8px; overflow: hidden; border: 1px solid rgb(255 255 255 / .12); background: #fff; }
+.h2-thumbs a:hover { border-color: #fff; }
+.h2-thumbs img { display: block; width: 100%; height: 52px; object-fit: cover; object-position: left center; }
+.h2-thumbs span { left: 4px; top: 4px; font-size: 10px; padding: 1px 6px; }
+.h2-type { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px; border-radius: 12px; background: rgb(255 255 255 / .06); border: 1px solid rgb(255 255 255 / .1); border-left: 4px solid var(--pt-c); }
+.h2-type b { display: block; font-family: var(--f-display); font-size: 18px; color: #fff; }
+.h2-type > div > span { font-size: 13px; color: rgb(244 243 239 / .7); }
+.h2-tf { display: flex; gap: 6px; }
+.h2-tf > div { display: flex; flex-direction: column; align-items: center; min-width: 64px; padding: 5px 8px; border-radius: 8px; background: rgb(255 255 255 / .07); }
+.h2-tf b { font-size: 16px; } .h2-tf span { font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: rgb(244 243 239 / .6); }
+@media (max-width: 860px) { .h2-type { grid-template-columns: auto minmax(0, 1fr); } .h2-tf { grid-column: 1 / -1; } }
+.h2-thumbs em { position: absolute; right: 4px; top: 4px; } .h2-thumbs em .pti { --s: 18px; }
+.h2-meta .ptb { background: rgb(255 255 255 / .1) !important; color: #fff; padding: 2px 10px 2px 2px; }
+.h2-meta .pts { padding: 0; background: none; }
+@media (max-width: 860px) { .hero2 { grid-template-columns: 1fr; padding: 18px; } .cd-i { min-width: 64px; } .cd-i b { font-size: 32px; } }
+/* stage profile types (PCS-style p1-p5) */
+.pt-p1 { --pt-c: #16a34a; } .pt-p2 { --pt-c: #d99a06; } .pt-p3 { --pt-c: #ea580c; } .pt-p4 { --pt-c: #dc2626; } .pt-p5 { --pt-c: #9d174d; } .pt-tt { --pt-c: #2563eb; } .pt-cob { --pt-c: #78716c; }
+.pti { --s: 22px; display: inline-grid; place-items: center; width: var(--s); height: var(--s); border-radius: 28%; background: var(--pt-c); flex: none; }
+.pti svg { width: 80%; height: 80%; fill: none; stroke: #fff; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.pti svg .fl { fill: #fff; stroke-width: 1.4; }
+.pt-cob svg { stroke-width: 1.8; }
+.ptb { display: inline-flex; align-items: center; gap: 6px; font-family: var(--f-display); font-weight: 600; font-size: 14px; letter-spacing: .02em; padding: 2px 10px 2px 2px; border-radius: 999px; background: color-mix(in srgb, var(--pt-c) 14%, transparent); color: var(--ink); white-space: nowrap; vertical-align: middle; }
+.ptb .pti + .pti { margin-left: -2px; }
+.ptb.sm { font-size: 13px; padding-right: 8px; } .ptb.sm .pti { --s: 18px; }
+.pts { display: inline-flex; flex-wrap: wrap; gap: 3px; vertical-align: middle; }
+.pts .pti { --s: 17px; }
+.pts .pt-none { width: 17px; height: 17px; border-radius: 28%; border: 1px dashed var(--soft); }
+.rc-pt { display: flex; align-items: center; gap: 8px; padding: 8px 14px 0; }
+.rc-pt .pts .pti { --s: 19px; }
+.ptlegend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 4px 0 14px; font-size: 13px; color: var(--muted); }
+.ptlegend span { display: inline-flex; align-items: center; gap: 6px; }
+.ptcard .ptc-h { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 14px; align-items: center; }
+.ptcard .ptc-h h2 { margin: 0; }
+.ptcard .ptc-h .sub { margin: 2px 0 0; }
+.ptc-f { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+.ptc-f > div { display: flex; flex-direction: column; align-items: center; min-width: 78px; padding: 6px 10px; border-radius: 10px; background: color-mix(in srgb, var(--pt-c) 10%, transparent); }
+.ptc-f b { font-family: var(--f-display); font-size: 20px; line-height: 1.1; }
+.ptc-f span { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.psvg { margin-top: 12px; }
+.psvg svg { width: 100%; height: auto; display: block; overflow: visible; }
+.psvg .pf { fill: url(#pg); } .psvg .pl { fill: none; stroke: var(--pt-c); stroke-width: 2; stroke-linejoin: round; }
+.psvg .pc { fill: var(--pt-c); opacity: .05; } .psvg .pm { stroke: #e11d48; stroke-width: 1; stroke-dasharray: 2 2; }
+.psvg .pk { fill: #e11d48; } .psvg .pk.cHC { fill: #7f1d1d; } .psvg .pk.c1 { fill: #be123c; } .psvg .pk.c3, .psvg .pk.c4 { fill: #f43f5e; }
+.psvg .pkt { fill: #fff; font: 700 10px var(--f-display); text-anchor: middle; }
+.psvg .pa { fill: var(--muted); font: 11px var(--f-mono); }
+.ptc-cl { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.clb { display: inline-flex; align-items: center; gap: 8px; padding: 5px 10px 5px 5px; border-radius: 10px; border: 1px solid var(--soft); }
+.clb i { display: grid; place-items: center; min-width: 24px; height: 24px; padding: 0 4px; border-radius: 999px; background: #e11d48; color: #fff; font: 700 11px var(--f-display); font-style: normal; }
+.clb i.cHC { background: #7f1d1d; } .clb i.c1 { background: #be123c; } .clb i.c3, .clb i.c4 { background: #f43f5e; }
+.clb b { display: block; font-size: 13px; } .clb small { font-size: 12px; color: var(--muted); }
+.stg-ptrow { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 6px; }
+.psb { display: inline-flex; align-items: center; gap: 6px; } .psb small { font-family: var(--f-mono); font-size: 11px; color: var(--muted); }
+.chip .pti { --s: 16px; margin-right: 5px; vertical-align: -3px; }
+.profgrid figcaption { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.profgrid .psvg { margin-top: 4px; }
+.prof figcaption { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+@media (max-width: 700px) { .ptcard .ptc-h { grid-template-columns: auto minmax(0, 1fr); } .ptc-f { grid-column: 1 / -1; justify-content: flex-start; } }
+/* rider card: PCM attributes */
+.pcm .pcm-h { display: flex; justify-content: space-between; align-items: flex-end; gap: 14px; flex-wrap: wrap; }
+.pcm .pcm-h h2 { margin: 0; }
+.pcm-f { display: flex; gap: 6px; flex-wrap: wrap; }
+.pcm-f > div { display: flex; flex-direction: column; align-items: center; min-width: 70px; padding: 6px 10px; border-radius: 10px; background: var(--soft); }
+.pcm-f b { font-family: var(--f-display); font-size: 18px; line-height: 1.15; white-space: nowrap; }
+.pcm-f span { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.pcm-f .ov { min-width: 84px; color: #fff; } .pcm-f .ov span { color: rgb(255 255 255 / .8); } .pcm-f .ov b { font-size: 26px; }
+.pcm-f .ov { background: var(--c, var(--soft)); color: #17191e; } .pcm-f .ov span { color: rgb(23 25 30 / .7); }
+.pcm-f .ov.t0 { --c: var(--soft); color: var(--ink); } .pcm-f .ov.t0 span { color: var(--muted); }
+.pcm-f .ov.t4 { color: #fff; } .pcm-f .ov.t4 span { color: rgb(255 255 255 / .8); }
+.pcm-f .ov small.up { color: #06603a; } .pcm-f .ov small.down { color: #8a1c1c; } .pcm-f .ov.t4 small { color: #fff; }
+.pcm-f small.up { color: #b8f5d0; font-size: 12px; } .pcm-f small.down { color: #ffd0d0; font-size: 12px; }
+.pcm-g { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 14px 22px; margin-top: 14px; }
+.pcm-gl { font-family: var(--f-display); font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+.pcm-r { display: grid; grid-template-columns: 112px minmax(0, 1fr) 56px; gap: 8px; align-items: center; padding: 3px 0; }
+.pcm-k { display: flex; align-items: baseline; gap: 6px; min-width: 0; }
+.pcm-k b { font-family: var(--f-display); font-size: 13px; width: 30px; flex: none; }
+.pcm-k span { font-size: 12px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pcm-bar { height: 8px; border-radius: 999px; background: var(--soft); overflow: hidden; }
+.pcm-bar i { display: block; height: 100%; border-radius: inherit; }
+.t1 { --c: #18dc86; } .t2 { --c: #ffe031; } .t3 { --c: #fbb81d; } .t4 { --c: #fd4051; } .pcm-bar i.t0 { --c: #8b919b; }
+.pcm-bar i { background: var(--c); }
+.pcm-v { justify-self: end; display: inline-flex; align-items: baseline; gap: 2px; min-width: 34px; justify-content: center; padding: 1px 6px; border-radius: 4px; font-family: var(--f-display); font-weight: 700; font-size: 16px; background: var(--c); color: #17191e; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pcm-v.t0 { background: none; color: var(--ink); } .pcm-v.t4 { color: #fff; }
+.pcm-v small { font-size: 10px; } .pcm-v small.up { color: #06603a; } .pcm-v small.down { color: #8a1c1c; } .pcm-v.t0 small.up { color: #16a34a; } .pcm-v.t0 small.down { color: #dc2626; } .pcm-v.t4 small { color: #fff; }
+/* riders: season / stats switch and the stats table */
+.rhead-bar { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
+.rhead-bar .seg { margin-bottom: 6px; }
+.stt td.sc { padding: 4px 3px; }
+.stt td.sc .pcm-v { min-width: 30px; font-size: 14px; padding: 2px 4px; }
+.stt td.sc.on { background: color-mix(in srgb, var(--accent) 8%, transparent); }
+.stt td.sc.avg .pcm-v { font-size: 15px; min-width: 34px; }
+.stt th.n { white-space: nowrap; }
+.stt .stt-tm { display: block; font-size: 12px; color: var(--muted); font-weight: 400; }
+/* home: league standings */
+.lg { display: flex; flex-direction: column; gap: 2px; }
+.lg-r { display: grid; grid-template-columns: 36px 30px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 7px 2px; border-bottom: 1px solid var(--soft); }
+.lg-r:last-child { border-bottom: 0; }
+.lg-rk { display: grid; place-items: center; width: 34px; height: 24px; border-radius: 6px; font: 700 13px var(--f-display); color: var(--muted); }
+.lg-rk.m1 { background: #f2c200; color: #17191e; } .lg-rk.m2 { background: #c9ced6; color: #17191e; } .lg-rk.m3 { background: #d39a63; color: #17191e; }
+.lg-j { width: 30px; height: 30px; object-fit: contain; }
+.lg-j.none { border-radius: 50%; background: var(--soft); }
+.lg-m { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.lg-m b { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lg-bar { height: 6px; border-radius: 999px; background: var(--soft); overflow: hidden; }
+.lg-bar i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #d4a017, #f2c200); }
+.lg-p { text-align: right; }
+.lg-p b { display: block; font-family: var(--f-display); font-size: 20px; line-height: 1; font-variant-numeric: tabular-nums; }
+.lg-p small { font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+/* monuments */
+.rc.k-monument, .rr.k-monument, .rr-legend .k-monument, .kr-i.k-monument { --k: #b7860b; }
+.monu { display: inline-flex; align-items: center; gap: 4px; font-family: var(--f-display); font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 2px 9px; border-radius: 999px; background: linear-gradient(135deg, #f7d774, #c9971c); color: #2a1e00; vertical-align: middle; white-space: nowrap; }
+.rc.k-monument .rc-kind::before { content: "★ "; color: #ffd84d; }
+/* startlist */
+.sl-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); gap: 12px; }
+.sl-team { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--panel); }
+.sl-head { display: flex; align-items: center; gap: 10px; padding: 10px 12px; background: var(--soft); border-bottom: 1px solid var(--line); }
+.sl-jsy { width: 40px; height: 40px; object-fit: contain; flex: none; }
+.sl-head > div { min-width: 0; display: flex; flex-direction: column; }
+.sl-name { font-family: var(--f-display); font-size: 17px; font-weight: 700; letter-spacing: .01em; line-height: 1.1; overflow-wrap: break-word; }
+.sl-head small { font-size: 12px; color: var(--muted); }
+.sl-riders { list-style: none; margin: 0; padding: 6px 12px 10px; display: flex; flex-direction: column; }
+.sl-riders li { display: flex; align-items: baseline; gap: 8px; padding: 4px 0; border-bottom: 1px solid var(--soft); font-size: 14px; }
+.sl-riders li:last-child { border-bottom: 0; }
+.sl-rk { flex: none; min-width: 26px; text-align: right; font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
+.sl-rk.pod { color: var(--ink); font-weight: 700; }
+/* managers table */
+.mgrs td, .stand td { vertical-align: middle; }
+.lrk { display: inline-grid; place-items: center; min-width: 28px; height: 24px; border-radius: 6px; background: var(--soft); font-weight: 600; color: var(--ink); }
+.lrk.m1 { background: #f2c200; color: #17191e; } .lrk.m2 { background: #c9ced6; color: #17191e; } .lrk.m3 { background: #d39a63; color: #17191e; }
+.lp { display: inline-flex; flex-direction: column; align-items: flex-end; gap: 3px; min-width: 110px; }
+.lp-n { font-family: var(--f-mono); font-size: 15px; font-weight: 700; }
+.lp-n small { font-size: 11px; font-weight: 400; color: var(--muted); }
+.lp-bar { width: 100%; height: 4px; border-radius: 999px; background: var(--soft); overflow: hidden; }
+.lp-bar i { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+.lp-gap { font-family: var(--f-mono); font-size: 11px; color: var(--muted); }
+.sqlist { display: flex; flex-direction: column; gap: 2px; }
+.rs-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+/* home: each box gets its own accent so the page is not flat */
+.tone { --tc: var(--accent); }
+.t-results { --tc: #e11d48; } .t-transfers { --tc: #7c3aed; } .t-standings { --tc: #d4a017; } .t-next { --tc: #2563eb; } .t-ranking { --tc: #0f8a5f; }
+.tone > .card { height: 100%; border-top: 3px solid var(--tc); background: linear-gradient(180deg, color-mix(in srgb, var(--tc) 8%, var(--panel)), var(--panel) 140px); box-shadow: 0 1px 2px rgb(0 0 0 / .06), 0 6px 18px rgb(0 0 0 / .05); }
+.tone .card-h { padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+.tone .card-h h2 { display: flex; align-items: center; gap: 9px; }
+.tone .card-h h2::before { content: ""; width: 10px; height: 22px; border-radius: 3px; background: var(--tc); transform: skewX(-12deg); }
+.tone .card-h .more { color: var(--tc); }
+.t-results .result { padding: 12px; margin-top: 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.t-results .result:last-child { border-bottom: 1px solid var(--line); }
+.t-results .result-h a { font-family: var(--f-display); font-size: 20px; font-weight: 700; letter-spacing: .01em; }
+.t-results .divres { padding: 8px; border-radius: 10px; background: var(--soft); }
+.divres .flag { align-self: flex-start; }
+.feed .d.med { justify-self: start; display: grid; place-items: center; width: 34px; height: 24px; border-radius: 6px; font-weight: 700; color: #17191e; }
+.feed .d.m1 { background: #f2c200; } .feed .d.m2 { background: #c9ced6; } .feed .d.m3 { background: #d39a63; }
+.tone .feed > a:hover, .tone .feed > div:hover { background: color-mix(in srgb, var(--tc) 7%, transparent); }
+/* rider season results: one-day lines vs stage-race blocks */
+.rr-list { display: flex; flex-direction: column; gap: 8px; }
+.rr { --k: #0f8a5f; border: 1px solid var(--line); border-left: 4px solid var(--k); border-radius: 10px; background: var(--panel); }
+.rr.k-tour, .rr-legend .k-tour { --k: #2563eb; } .rr.k-gt, .rr-legend .k-gt { --k: #c8102e; } .rr-legend .k-oneday { --k: #0f8a5f; }
+.rr-head { display: flex; align-items: center; gap: 10px; padding: 10px 12px; background: color-mix(in srgb, var(--k) 10%, var(--panel)); border-radius: 0 9px 0 0; border-bottom: 1px solid var(--line); }
+.rr-line { display: flex; align-items: center; gap: 10px; padding: 8px 12px; }
+.rr-name { flex: 1; min-width: 0; display: flex; flex-direction: column; overflow-wrap: break-word; }
+.rr-name > a { font-weight: 600; }
+.rr-name small { font-size: 12px; color: var(--muted); }
+.rr-in { position: relative; padding: 4px 0 6px 14px; }
+.rr-in::before { content: ""; position: absolute; left: 22px; top: 0; bottom: 14px; width: 2px; background: color-mix(in srgb, var(--k) 35%, transparent); }
+.rr-in .rr-line { position: relative; padding: 5px 12px 5px 22px; }
+.rr-in .rr-line .rr-name { flex-direction: row; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.rr-in .rr-line.cls .rr-name { font-weight: 600; }
+.rr-st { font-family: var(--f-display); font-weight: 600; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; color: var(--k); white-space: nowrap; }
+.rr-rk { flex: none; min-width: 34px; text-align: center; font-family: var(--f-mono); font-size: 13px; padding: 2px 0; border-radius: 6px; background: var(--soft); color: var(--muted); position: relative; z-index: 1; }
+.rr-rk.win { background: var(--gc); color: #17191e; font-weight: 700; }
+.rr-rk.silver { background: #c9ced6; color: #17191e; font-weight: 700; }
+.rr-rk.bronze { background: #d39a63; color: #17191e; font-weight: 700; }
+.rr-pts { flex: none; font-family: var(--f-mono); font-size: 13px; white-space: nowrap; min-width: 58px; text-align: right; }
+.rr-pts.tot { font-weight: 600; }
+.rr-legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 13px; color: var(--muted); }
+.rr-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.rr-legend i { width: 12px; height: 12px; border-radius: 3px; background: var(--k); }
+.mj { width: 18px; height: 18px; object-fit: contain; vertical-align: -4px; margin-right: 5px; flex: none; }
+a.sq { white-space: normal; }
+.loadmore { align-self: center; font-family: var(--f-display); font-weight: 600; font-size: 15px; letter-spacing: .03em; padding: 7px 18px; border: 1px solid var(--line); border-radius: 999px; background: var(--soft); color: var(--ink); cursor: pointer; }
+.loadmore:hover { border-color: var(--ink); }
+.loadmore:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.loadmore[hidden] { display: none; }
+tr[hidden] { display: none; }
+@media (max-width: 640px) { table { font-size: 13px; } }
+th.n, td.n { text-align: right; }
+td.rk { width: 1%; font-family: var(--f-mono); font-size: 13px; color: var(--muted); text-align: right; }
+tr.p1 td.rk { color: var(--ink); font-weight: 600; }
+tbody tr:hover td { background: var(--soft); }
+td.rider a, .strong { font-weight: 600; }
+td.mute, .mute { color: var(--muted); }
+td.up { color: var(--ok); } td.down { color: var(--bad); }
+td.tot { font-weight: 600; }
+.flag { display: inline-block; font-family: var(--f-display); font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 1px 7px; border-radius: 999px; background: var(--soft); color: var(--muted); }
+.flag.d1 { background: var(--ink); color: var(--bg); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-family: var(--f-display); font-weight: 600; font-size: 15px; letter-spacing: .03em; padding: 5px 12px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 999px; cursor: pointer; }
+.chip:hover { border-color: var(--ink); }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.chip.miss { color: var(--muted); border-style: dashed; }
+.tabs { display: flex; flex-wrap: wrap; border-bottom: 1px solid var(--line); }
+.tabs button { font-family: var(--f-display); font-weight: 600; font-size: 16px; letter-spacing: .04em; text-transform: uppercase; padding: 8px 14px; border: 0; background: none; color: var(--muted); cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -1px; display: flex; align-items: center; gap: 7px; }
+.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.dot, .jersey { display: inline-block; width: 11px; height: 11px; border-radius: 3px; border: 1px solid rgb(0 0 0 / .25); flex: none; }
+.j-gc { background: var(--gc); } .j-pts { background: var(--pts); } .j-young { background: var(--young); }
+.j-kom { background: radial-gradient(circle, var(--kom) 28%, transparent 30%) 0 0 / 5px 5px, #fff; }
+.j-team { background: var(--team); } .j-stage { background: var(--accent); }
+.racehead { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: end; }
+.facts { display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--muted); font-size: 14px; margin-top: 6px; }
+.facts b { color: var(--ink); font-weight: 600; }
+.note { border-left: 3px solid var(--accent); background: var(--soft); padding: 10px 12px; font-size: 14px; border-radius: 0 6px 6px 0; }
+.tools { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+input[type=search], select { font: inherit; padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--panel); color: var(--ink); min-width: 0; }
+input[type=search] { width: min(340px, 100%); }
+.replay { display: grid; grid-template-columns: auto 1fr; gap: 10px 14px; align-items: center; }
+.replay input[type=range] { width: 100%; accent-color: var(--accent); }
+.btn { display: inline-block; font-family: var(--f-display); font-weight: 600; font-size: 16px; letter-spacing: .04em; text-transform: uppercase; padding: 7px 16px; border: 0; border-radius: 999px; background: var(--accent); color: var(--accent-ink); cursor: pointer; }
+.btn:hover { color: var(--accent-ink); filter: brightness(1.08); }
+.btn.ghost { background: none; color: var(--ink); border: 1px solid var(--line); }
+.lbl { font-size: 14px; color: var(--muted); }
+.lbl b { color: var(--ink); }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)); gap: 12px; }
+.kpi { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px; min-width: 0; }
+.kpi .k { font-family: var(--f-display); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.kpi .v { font-family: var(--f-display); font-size: 30px; font-weight: 700; line-height: 1.1; overflow-wrap: anywhere; }
+.kpi .s { font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+.kpi-races { grid-column: span 2; }
+@media (max-width: 640px) { .kpi-races { grid-column: auto; } }
+.kr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 4px; }
+.kr-i { --k: #0f8a5f; display: flex; flex-direction: column; min-width: 0; }
+.kr-i.k-gt { --k: #c8102e; } .kr-i.k-tour { --k: #2563eb; }
+.kr-i b { font-family: var(--f-display); font-size: 30px; font-weight: 700; line-height: 1.1; }
+.kr-i span { display: flex; align-items: center; gap: 5px; font-size: 13px; color: var(--muted); white-space: nowrap; }
+.kr-i i { width: 8px; height: 8px; border-radius: 2px; background: var(--k); flex: none; }
+.chart { position: relative; min-height: 300px; }
+.chart svg text { font-family: var(--f-mono); font-size: 11px; fill: var(--muted); }
+.tip { position: absolute; top: 6px; pointer-events: none; background: var(--panel); border: 1px solid var(--line); box-shadow: 0 8px 22px rgb(0 0 0 / .14); border-radius: 8px; padding: 6px 9px; font-size: 13px; display: none; z-index: 2; white-space: nowrap; }
+.tip .r { display: flex; justify-content: space-between; gap: 14px; }
+.tip i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 5px; }
+.prof { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 14px; }
+.prof figure { margin: 0; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.prof figcaption { font-family: var(--f-display); font-weight: 600; letter-spacing: .03em; }
+.prof button { padding: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #fff; cursor: zoom-in; display: block; width: 100%; }
+.prof img { display: block; width: 100%; height: auto; }
+.prof figure.zoom { grid-column: 1 / -1; }
+.prof figure.zoom button { cursor: zoom-out; }
+/* expandable full results */
+.fr-list { display: flex; flex-direction: column; gap: 8px; }
+.fr { border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
+.fr > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 10px; font-weight: 600; }
+.fr > summary::-webkit-details-marker { display: none; }
+.fr > summary:hover { background: var(--soft); }
+.fr > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.fr-chev { flex: none; width: 8px; height: 8px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(-45deg); transition: transform .15s ease; margin: 0 4px; }
+.fr[open] > summary .fr-chev { transform: rotate(45deg); }
+.fr[open] > summary { border-bottom: 1px solid var(--line); border-radius: 10px 10px 0 0; }
+.fr-body { padding: 12px; display: flex; flex-direction: column; gap: 10px; }
+.fr-sum { display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1; flex-wrap: wrap; }
+.fr-sum b { font-family: var(--f-display); font-size: 17px; letter-spacing: .02em; min-width: 64px; }
+.fr-route { color: var(--muted); font-weight: 400; min-width: 0; flex: 1; }
+.fr-win { display: inline-flex; align-items: center; gap: 6px; margin-left: auto; }
+.fr-win small { font-family: var(--f-mono); font-size: 12px; color: var(--muted); font-weight: 400; }
+.fr.miss .fr-sum { padding: 10px 12px 10px 32px; }
+.card > .fr > summary { font-weight: 600; color: var(--accent); }
+/* races page: cards per race */
+.rc-bar { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: space-between; margin: 18px 0 14px; }
+.seg { display: inline-flex; padding: 3px; border-radius: 999px; background: var(--soft); border: 1px solid var(--line); }
+.seg button { font-family: var(--f-display); font-weight: 600; font-size: 15px; letter-spacing: .03em; border: 0; background: none; color: var(--muted); padding: 6px 14px; border-radius: 999px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.rc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: 16px; }
+.rc { --k: #3a5a9b; display: flex; flex-direction: column; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; color: var(--ink); transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease; }
+.rc:hover { color: var(--ink); transform: translateY(-2px); border-color: var(--k); box-shadow: 0 8px 24px rgb(0 0 0 / .12); }
+.rc:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.rc.k-gt { --k: #c8102e; } .rc.k-tour { --k: #2563eb; } .rc.k-oneday { --k: #0f8a5f; }
+.rc.next { box-shadow: 0 0 0 2px var(--accent); }
+.rc-top { position: relative; display: flex; gap: 12px; align-items: flex-end; min-height: 104px; padding: 14px; color: #fff; background: linear-gradient(135deg, var(--k), color-mix(in srgb, var(--k) 45%, #000)); isolation: isolate; }
+.rc-prof { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center bottom; opacity: .32; mix-blend-mode: luminosity; z-index: -1; }
+.rc-top::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgb(0 0 0 / .45), transparent 70%); z-index: -1; }
+.rc-date { flex: none; display: grid; place-items: center; width: 52px; height: 56px; border-radius: 10px; background: rgb(255 255 255 / .16); backdrop-filter: blur(4px); line-height: 1; }
+.rc-date b { font-family: var(--f-display); font-size: 26px; font-weight: 700; }
+.rc-date span { font-family: var(--f-display); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; opacity: .85; }
+.rc-title { min-width: 0; }
+.rc-kind { font-family: var(--f-display); font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; opacity: .85; }
+.rc-title h3 { margin: 2px 0 0; font-family: var(--f-display); font-size: 24px; font-weight: 700; line-height: 1.05; letter-spacing: .01em; text-shadow: 0 1px 2px rgb(0 0 0 / .3); }
+.rc-body { display: flex; flex-direction: column; padding: 6px 14px 12px; }
+.rc-div { display: grid; grid-template-columns: 30px 30px minmax(0, 1fr) auto; gap: 10px; align-items: center; min-height: 46px; border-bottom: 1px solid var(--line); }
+.rc-div:last-child { border-bottom: 0; }
+.rc-div.none, .rc-div:has(> .mute:nth-child(2)) { grid-template-columns: 30px minmax(0, 1fr) auto; }
+.rc-div .avatar { border-radius: 50%; }
+.rc-win { min-width: 0; display: flex; flex-direction: column; }
+.rc-win > span, .rc-win small { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rc-win > span { font-weight: 600; display: flex; align-items: center; gap: 5px; }
+.rc-win small { font-size: 12px; color: var(--muted); }
+.rc-cov { position: relative; width: 52px; height: 18px; border-radius: 999px; background: var(--soft); overflow: hidden; display: grid; place-items: center; }
+.rc-cov i { position: absolute; inset: 0 auto 0 0; background: color-mix(in srgb, var(--ok) 30%, transparent); }
+.rc-cov em { position: relative; font-style: normal; font-family: var(--f-mono); font-size: 11px; color: var(--ink); }
+@media (prefers-reduced-motion: reduce) { .rc { transition: none; } .rc:hover { transform: none; } }
+.cov { display: inline-block; min-width: 44px; font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
+.cov.full { color: var(--ok); }
+.empty { color: var(--muted); padding: 10px 2px; }
+.foot { font-size: 13px; color: var(--muted); max-width: 80ch; }
+/* home */
+.hero { position: relative; overflow: hidden; background: var(--bar); color: var(--bar-ink); border-radius: var(--r); padding: 22px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 20px; align-items: center; }
+.hero .eyebrow { color: var(--accent); }
+.hero h1 { color: var(--bar-ink); }
+.hero .facts { color: rgb(235 234 230 / .7); }
+.hero .facts b { color: var(--bar-ink); }
+.hero img { width: 100%; border-radius: 8px; background: #fff; display: block; }
+.count { font-family: var(--f-display); font-size: 56px; font-weight: 700; line-height: 1; color: var(--accent); }
+.count small { font-size: 18px; color: rgb(235 234 230 / .7); letter-spacing: .06em; text-transform: uppercase; margin-left: 6px; }
+@media (max-width: 760px) { .hero { grid-template-columns: 1fr; } }
+.feed { display: flex; flex-direction: column; }
+.feed > a, .feed > div { display: grid; grid-template-columns: 54px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 9px 2px; border-bottom: 1px solid var(--soft); }
+.feed > :last-child { border-bottom: 0; }
+.feed .d { font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
+.feed .t { min-width: 0; }
+.feed .t b { font-weight: 600; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.feed .t span { font-size: 13px; color: var(--muted); display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.podium { display: grid; gap: 4px; font-size: 14px; }
+.podium > div { display: grid; grid-template-columns: 20px minmax(0, 1fr) auto; gap: 8px; align-items: baseline; }
+.podium .nm { min-width: 0; }
+.podium .nm > span, .podium .nm small { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.podium .nm small { font-size: 12px; color: var(--muted); line-height: 1.3; }
+.podium .t { font-family: var(--f-mono); font-variant-numeric: tabular-nums; font-size: 12px; color: var(--muted); text-align: right; white-space: nowrap; }
+.podium .t1 { color: var(--ink); font-weight: 600; }
+.podium .p { display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; font: 700 11px var(--f-display); color: #17191e; align-self: center; }
+.podium .p.m1 { background: #f2c200; } .podium .p.m2 { background: #c9ced6; } .podium .p.m3 { background: #d39a63; }
+.podium > div { padding: 3px 6px; border-radius: 8px; }
+.podium > .pr1 { background: color-mix(in srgb, #f2c200 16%, transparent); box-shadow: inset 3px 0 0 #f2c200; }
+.podium > .pr1 .nm > span { font-weight: 700; }
+.podium > .pr2 { background: color-mix(in srgb, #c9ced6 9%, transparent); } .podium > .pr3 { background: color-mix(in srgb, #d39a63 9%, transparent); }
+.podium .m { font-size: 12px; color: var(--muted); }
+.result { display: flex; flex-direction: column; gap: 8px; padding: 12px 0; border-bottom: 1px solid var(--soft); }
+.result:last-child { border-bottom: 0; }
+.rh-n { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.result-h { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.result-h a { font-weight: 600; font-size: 16px; }
+.divs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 10px 18px; }
+.empty-state { display: flex; flex-direction: column; gap: 6px; padding: 14px; border: 1px dashed var(--line); border-radius: 8px; color: var(--muted); font-size: 14px; }
+.empty-state b { color: var(--ink); font-family: var(--f-display); font-size: 17px; letter-spacing: .02em; }
+.fl { display: inline-flex; vertical-align: -1px; margin-right: 6px; }
+.fl svg { border-radius: 2px; box-shadow: 0 0 0 1px rgb(0 0 0 / .15); }
+.rl { white-space: nowrap; }
+.avatar { position: relative; flex: none; border-radius: 50%; overflow: hidden; background: linear-gradient(160deg, var(--a), var(--b)); }
+.avatar svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.avatar span { position: absolute; right: 6%; bottom: 4%; font-family: var(--f-display); font-weight: 700; font-size: 13px; color: #fff; background: rgb(0 0 0 / .35); border-radius: 999px; padding: 0 6px; }
+.stagesum { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 18px; }
+@media (max-width: 760px) { .stagesum { grid-template-columns: 1fr; } }
+.winner { display: flex; gap: 16px; align-items: center; min-width: 0; }
+.winner .who { min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.winner .lab { font-family: var(--f-display); font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+.winner .nm { font-family: var(--f-display); font-size: 28px; font-weight: 700; line-height: 1.05; }
+.winner .nm .fl svg { width: 24px; height: 16px; }
+.winner .tm { color: var(--muted); font-size: 14px; overflow-wrap: anywhere; }
+.winner .time { font-family: var(--f-mono); font-size: 20px; font-weight: 500; }
+.pod { display: flex; flex-direction: column; gap: 6px; }
+.pod div { display: grid; grid-template-columns: 26px minmax(0, 1fr) auto; gap: 8px; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--soft); }
+.pod div:last-child { border-bottom: 0; }
+.pod .p { font-family: var(--f-display); font-size: 20px; font-weight: 700; color: var(--muted); text-align: center; }
+.pod .p1 { color: var(--accent); }
+.pod small { display: block; color: var(--muted); font-size: 12px; }
+.jerseys { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 10px; }
+.jer { display: flex; gap: 10px; align-items: center; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; min-width: 0; }
+.jer .jersey { width: 22px; height: 26px; border-radius: 5px 5px 3px 3px; }
+.jer div { min-width: 0; }
+.jer .k { font-family: var(--f-display); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.jer .v { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.src { font-size: 12px; color: var(--muted); }
+.divres { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 10px; align-items: start; }
+.divres > div { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.sqwrap .avatar { border-radius: 50%; }
+.profgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 12px; }
+.profgrid figure { margin: 0; display: flex; flex-direction: column; gap: 4px; }
+.profgrid figcaption { font-family: var(--f-display); font-weight: 600; font-size: 14px; letter-spacing: .03em; }
+.topres { display: flex; flex-direction: column; gap: 2px; }
+.topres > div { display: grid; grid-template-columns: 46px minmax(0, 1fr); gap: 10px; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--soft); }
+.topres > div:last-child { border-bottom: 0; }
+.topres small { color: var(--muted); font-size: 12px; }
+.medal { font-family: var(--f-display); font-weight: 700; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; text-align: center; border-radius: 999px; padding: 2px 0; background: var(--soft); color: var(--muted); }
+.medal.m1 { background: var(--gc); color: #1b1d22; }
+.medal.m2 { background: #c9ccd3; color: #1b1d22; }
+.medal.m3 { background: #d08a4e; color: #1b1d22; }
+.spec { display: flex; flex-direction: column; gap: 8px; }
+.spec > div { display: grid; grid-template-columns: auto 120px minmax(0, 1fr) 48px; gap: 10px; align-items: center; }
+.spec .lab { font-size: 14px; }
+.spec .barw { height: 8px; background: var(--soft); border-radius: 999px; overflow: hidden; }
+.spec .bar2 { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+.spec b { text-align: right; }
+tr.racerow td { background: var(--soft); font-weight: 600; }
+tr.clsrow td, tr.stgrow td { font-size: 13px; }
+tr.stgrow td:nth-child(3) { padding-left: 20px; }
+tr.clsrow td:nth-child(3) { padding-left: 20px; font-weight: 600; }
+td.rk.win { color: var(--accent); font-weight: 700; }
+.avatar.photo { background: var(--soft); }
+.avatar.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.crest { flex: none; }
+.crest svg { width: 100%; height: 100%; display: block; }
+.crest.jsy { display: grid; place-items: center; padding: 3px; border-radius: 8px; background: color-mix(in srgb, var(--ink) 4%, transparent); border: 1px solid var(--line); box-sizing: border-box; }
+.crest.jsy img { width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; }
+/* rider header */
+.rhead { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 22px; align-items: center; }
+.rhead-ph { padding: 4px; border-radius: 50%; background: conic-gradient(from 200deg, var(--accent), color-mix(in srgb, var(--accent) 30%, transparent), var(--accent)); }
+.rhead-ph .avatar { border: 3px solid var(--bg); }
+.rhead-main { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.rhead-main h1 { margin: 0; line-height: 1; }
+.rinfo { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: 10px; margin-top: 12px; }
+.rinfo-t { display: flex; flex-direction: column; gap: 6px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); min-width: 0; }
+.rinfo-l { font-family: var(--f-display); font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.rinfo-v { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-weight: 600; min-width: 0; overflow-wrap: break-word; }
+.rinfo-flag .fl { margin: 0; }
+.rinfo-flag .fl svg { width: 30px; height: 20px; border-radius: 3px; box-shadow: 0 0 0 1px rgb(0 0 0 / .15); }
+.rinfo-team { display: inline-flex; align-items: center; gap: 8px; min-width: 0; }
+.rinfo-team img { width: 30px; height: 30px; object-fit: contain; flex: none; }
+@media (max-width: 640px) { .rhead { grid-template-columns: auto minmax(0, 1fr); } .rhead > .btn { grid-column: 1 / -1; justify-self: start; } .rhead-ph .avatar { width: 84px !important; height: 84px !important; } }
+.teamhead { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 18px; align-items: center; }
+.teamhead h1 .fl svg { width: 30px; height: 20px; }
+@media (max-width: 640px) { .teamhead { grid-template-columns: auto minmax(0, 1fr); } .teamhead > .btn { grid-column: 1 / -1; justify-self: start; } }
+.stageprof { width: 100%; height: auto; border-radius: 8px; display: block; background: #15171b; }
+.squads { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 12px; }
+.squadcard, .rostercard { display: flex; gap: 12px; align-items: center; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; min-width: 0; }
+.squadcard:hover, .rostercard:hover { border-color: var(--ink); color: inherit; }
+.squadcard div, .rostercard div { display: flex; flex-direction: column; min-width: 0; }
+.squadcard b, .rostercard b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.squadcard span, .rostercard span { font-size: 13px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.roster { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 8px; }
+@media (max-width: 640px) { .racehead { grid-template-columns: 1fr; } .replay { grid-template-columns: 1fr; } th, td { padding: 5px 6px; } }
+@media (prefers-reduced-motion: no-preference) { .view-in { animation: rise .22s ease-out; } @keyframes rise { from { opacity: .5; transform: translateY(4px); } to { opacity: 1; transform: none; } } }
+</style>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#home"><i></i>IPL <small>PCM UK · International Pro League</small></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#races" data-nav="races">Races</a>
+      <a href="#standings" data-nav="standings">Standings</a>
+      <a href="#riders" data-nav="riders">Riders</a>
+      <a href="#squads" data-nav="squads">Teams</a>
+      <a href="#teams" data-nav="teams">Managers</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch to dark mode" title="Light / dark mode">
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+    </button>
+  </div>
+</header>
+<script>
+(() => {
+  const root = document.documentElement, btn = document.getElementById('themeBtn');
+  const sysDark = () => matchMedia('(prefers-color-scheme: dark)').matches;
+  const current = () => root.dataset.theme || (sysDark() ? 'dark' : 'light');
+  const apply = (t) => { if (t) root.dataset.theme = t; const d = current() === 'dark'; btn.classList.toggle('is-dark', d); btn.setAttribute('aria-label', d ? 'Switch to light mode' : 'Switch to dark mode'); };
+  let saved = null; try { saved = localStorage.getItem('ipl-theme'); } catch (e) {}
+  apply(saved === 'light' || saved === 'dark' ? saved : null);
+  btn.addEventListener('click', () => { const t = current() === 'dark' ? 'light' : 'dark'; apply(t); try { localStorage.setItem('ipl-theme', t); } catch (e) {} });
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => apply(null));
+})();
+</script>
+<main class="wrap" id="view"><p class="empty">Loading results…</p></main>
+
+<script>
+(() => {
+'use strict';
+const $view = document.getElementById('view');
+const S = {};
+const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0 };
+const TODAY = new Date().toISOString().slice(0, 10);
+
+// in-game manager name -> league team name (clear matches only)
+const ALIAS = {
+  'joewhiteley0711': 'Joe', 'Agap': 'Agap + Ktoto', 'Αγαπ4ικ': 'Agap + Ktoto', 'IvanEs04': 'Ivan', 'Hübi': 'Hübi + BexX_88',
+  'SheepBoy123': 'SheepBoy123', 'DanielMiko18': 'Benjong + Miko', 'bl2003': 'Benjong + Miko', 'Daagz92': 'Tom + Daagz', 'Tom': 'Tom + Daagz',
+  'c.janssen1998': 'ChrisJanssen', 'frabo03': 'Frabo', '★ El_B0t_Pena ☭⚒ ★': 'Pena', 'firejohn': 'firejohn', 'Hillingz': 'Hillingz',
+  'vadiachamp': 'Vadia', '강변ᴿᵛʳ': 'Riverside', 'leonardi.ismoshi': 'Leo', 'TheBigDog': 'TheBigDog', 'jord_2015_': 'JordanK2406',
+  'Holger': 'Holger', 'TT_Sabu76': 'Sabu76', '.Grandpa': 'Grandpa', 'Marcel Testier': 'MarcelTestier + Imposter', 'MarsIsCool': 'Mars + Pan',
+  'RensD12': 'RensD12', 'John-Gacho': 'Yanou + Gacho',
+  // in-game names matched from #sign-ups and the team each one raced (2026-11-05)
+  'Téodule': 'Frico', 'Zorkaz': 'Bouke', 'ColombianoJG': 'ElPony', 'Gaze': 'Mars + Pan',
+  'TurtleInsideACup': 'Hound', 'Ruined King': 'Hound', 'lukas': 'MarcelTestier + Imposter'
+};
+const DIVF = { 1: 1, 2: 0.95, 3: 0.9 };
+const CLS = [
+  { key: 'stage', label: 'Stage', j: 'j-stage', val: 'Time' },
+  { key: 'gc', label: 'GC', j: 'j-gc', val: 'Time' },
+  { key: 'points', label: 'Points', j: 'j-pts', val: 'Pts' },
+  { key: 'kom', label: 'Mountains', j: 'j-kom', val: 'Pts' },
+  { key: 'young', label: 'Youth', j: 'j-young', val: 'Time' },
+  { key: 'teams', label: 'Teams', j: 'j-team', val: 'Time' }
+];
+const COLORS = ['#d0142c', '#e0a800', '#2f9e44', '#3a5a9b', '#8e44ad', '#e8590c'];
+
+// ---------- helpers ----------
+const h = (tag, attrs, ...kids) => {
+  const e = document.createElement(tag);
+  if (attrs) for (const [k, v] of Object.entries(attrs)) {
+    if (v == null || v === false) continue;
+    if (k === 'class') e.className = v;
+    else if (k.startsWith('on')) e.addEventListener(k.slice(2), v);
+    else e.setAttribute(k, v === true ? '' : v);
+  }
+  for (const k of kids.flat(Infinity)) if (k != null && k !== false) e.append(k instanceof Node ? k : String(k));
+  return e;
+};
+const fmt = (x) => (x == null || x === '' ? '' : (Math.round(+x * 100) / 100).toLocaleString('en-GB', { maximumFractionDigits: 2 }));
+// league points block: whole number bold, decimals small, a bar against the leader and the gap underneath
+function ptsBlock(total, lead) {
+  if (total == null) return h('span', { class: 'mute' }, '—');
+  // whole points on screen (Division 2/3 scaling makes long decimals); the exact value is in the tooltip
+  const gap = lead - total;
+  return h('div', { class: 'lp', title: fmt(total) + ' pts' }, h('span', { class: 'lp-n' }, Math.round(total).toLocaleString('en-GB')),
+    h('span', { class: 'lp-bar' }, h('i', { style: `width:${lead > 0 ? Math.max(0, (100 * total) / lead).toFixed(1) : 0}%` })),
+    h('small', { class: 'lp-gap' }, gap > 0.001 ? '−' + Math.round(gap).toLocaleString('en-GB') + ' to 1st' : 'Leader'));
+}
+const rankChip = (rk) => (rk ? h('span', { class: 'lrk' + (rk <= 3 ? ' m' + rk : '') }, '#' + rk) : '');
+const fdate = (s) => new Date(s + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+const fshort = (s) => new Date(s + 'T00:00:00Z').toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', timeZone: 'UTC' });
+const rid = (i) => S.s1.riders[i] || '—';
+const tid = (i) => S.s1.teams[i] || '';
+const pid = (i) => S.s1.players[i] || '';
+const teamOf = (mi) => (typeof mi === 'string' ? mi : ALIAS[pid(mi)] || pid(mi));
+// a cycling team belongs to one league manager; whoever raced it on the day (a replacement) does not change that
+const ownerName = (ti, mi) => (IX.owner && IX.owner.get(ti)) || teamOf(mi);
+// ---------- flags (simplified, drawn inline so no image files are needed) ----------
+const FLAGS = {
+  it: ['v', '#009246', '#ffffff', '#ce2b37'], fr: ['v', '#0055a4', '#ffffff', '#ef4135'], be: ['v', '#1a1a1a', '#fdda24', '#ef3340'],
+  ie: ['v', '#169b62', '#ffffff', '#ff883e'], mx: ['v', '#006847', '#ffffff', '#ce1126'], ca: ['v', '#d52b1e', '#ffffff', '#ffffff', '#d52b1e'],
+  de: ['h', '#1a1a1a', '#dd0000', '#ffce00'], nl: ['h', '#ae1c28', '#ffffff', '#21468b'], ru: ['h', '#ffffff', '#0039a6', '#d52b1e'],
+  ee: ['h', '#0072ce', '#1a1a1a', '#ffffff'], lu: ['h', '#ed2939', '#ffffff', '#00a1de'], at: ['h', '#ed2939', '#ffffff', '#ed2939'],
+  lv: ['h', '#9e3039', '#9e3039', '#ffffff', '#9e3039', '#9e3039'], ua: ['h', '#0057b7', '#ffd700'], co: ['h', '#fcd116', '#fcd116', '#003893', '#ce1126'],
+  ec: ['h', '#ffdd00', '#ffdd00', '#034ea2', '#ed1c24'], ve: ['h', '#ffcc00', '#00247d', '#cf142b'], si: ['h', '#ffffff', '#005ce5', '#ed1c24'],
+  sk: ['h', '#ffffff', '#0b4ea2', '#ee1c25'], pl: ['h', '#ffffff', '#dc143c'], mc: ['h', '#ce1126', '#ffffff'], ar: ['h', '#74acdf', '#ffffff', '#74acdf'],
+  th: ['h', '#a51931', '#f4f5f8', '#2d2a4a', '#2d2a4a', '#f4f5f8', '#a51931'], es: ['h', '#aa151b', '#f1bf00', '#f1bf00', '#aa151b'],
+  il: ['h', '#ffffff', '#0038b8', '#ffffff', '#ffffff', '#0038b8', '#ffffff'], cy: ['h', '#ffffff'], kz: ['h', '#00afca'], cn: ['h', '#de2910'], tr: ['h', '#e30a17'],
+  dk: ['x', '#c8102e', '#ffffff'], se: ['x', '#006aa7', '#fecc00'], no: ['x', '#ba0c2f', '#ffffff', '#00205b'], fi: ['x', '#ffffff', '#002f6c'],
+  gb: ['gb'], us: ['us'], au: ['au'], nz: ['au'], ch: ['ch'], cz: ['cz'], pt: ['pt'], za: ['za'], er: ['er'], br: ['br'], uy: ['uy'], pr: ['pr'], cl: ['cl'], my: ['my']
+};
+const NATNAME = { it: 'Italy', fr: 'France', be: 'Belgium', nl: 'Netherlands', us: 'United States', de: 'Germany', es: 'Spain', dk: 'Denmark', co: 'Colombia', ee: 'Estonia', kz: 'Kazakhstan', ru: 'Russia', lv: 'Latvia', ch: 'Switzerland', gb: 'Great Britain', lu: 'Luxembourg', au: 'Australia', ca: 'Canada', mx: 'Mexico', cn: 'China', sk: 'Slovakia', si: 'Slovenia', pt: 'Portugal', pl: 'Poland', ie: 'Ireland', se: 'Sweden', cz: 'Czechia', nz: 'New Zealand', no: 'Norway', za: 'South Africa', at: 'Austria', ua: 'Ukraine', er: 'Eritrea', ve: 'Venezuela', ar: 'Argentina', fi: 'Finland', my: 'Malaysia', br: 'Brazil', uy: 'Uruguay', il: 'Israel', tr: 'Türkiye', th: 'Thailand', ec: 'Ecuador', pr: 'Puerto Rico', cy: 'Cyprus', cl: 'Chile', mc: 'Monaco' };
+function flagSvg(cc) {
+  const f = FLAGS[cc]; if (!f) return '';
+  const r = (x, y, w, hh, c) => `<rect x="${x}" y="${y}" width="${w}" height="${hh}" fill="${c}"/>`;
+  let b = '';
+  if (f[0] === 'h') { const c = f.slice(1); c.forEach((col, i) => { b += r(0, (20 / c.length) * i, 30, 20 / c.length + 0.2, col); }); if (cc === 'kz') b += '<circle cx="15" cy="9" r="4" fill="#fec50c"/>'; if (cc === 'cn') b += '<circle cx="6" cy="6" r="3" fill="#ffde00"/>'; if (cc === 'tr') b += '<circle cx="12" cy="10" r="5" fill="#fff"/><circle cx="13.5" cy="10" r="4" fill="#e30a17"/>'; if (cc === 'cy') b += '<rect x="9" y="7" width="12" height="5" rx="2" fill="#d57800"/>'; }
+  else if (f[0] === 'v') { const c = f.slice(1); c.forEach((col, i) => { b += r((30 / c.length) * i, 0, 30 / c.length + 0.2, 20, col); }); }
+  else if (f[0] === 'x') { b += r(0, 0, 30, 20, f[1]) + r(8, 0, 5, 20, f[2]) + r(0, 7.5, 30, 5, f[2]); if (f[3]) b += r(9.5, 0, 2, 20, f[3]) + r(0, 9, 30, 2, f[3]); }
+  else if (cc === 'nz') {
+    const u = '<rect width="30" height="20" fill="#012169"/><path d="M0 0L30 20M30 0L0 20" stroke="#fff" stroke-width="4"/><path d="M0 0L30 20M30 0L0 20" stroke="#c8102e" stroke-width="1.5"/><path d="M15 0V20M0 10H30" stroke="#fff" stroke-width="6"/><path d="M15 0V20M0 10H30" stroke="#c8102e" stroke-width="3.5"/>';
+    const star = (x, y, s) => `<circle cx="${x}" cy="${y}" r="${s + 0.6}" fill="#fff"/><circle cx="${x}" cy="${y}" r="${s}" fill="#c8102e"/>`;
+    b = '<rect width="30" height="20" fill="#012169"/><g transform="scale(.5)">' + u + '</g>' + star(22, 4.5, 1.2) + star(19, 9.5, 1.1) + star(25.5, 8.5, 1.1) + star(22, 16, 1.3);
+  }
+  else if (cc === 'gb' || cc === 'au') {
+    const u = '<rect width="30" height="20" fill="#012169"/><path d="M0 0L30 20M30 0L0 20" stroke="#fff" stroke-width="4"/><path d="M0 0L30 20M30 0L0 20" stroke="#c8102e" stroke-width="1.5"/><path d="M15 0V20M0 10H30" stroke="#fff" stroke-width="6"/><path d="M15 0V20M0 10H30" stroke="#c8102e" stroke-width="3.5"/>';
+    b = cc === 'gb' ? u : '<rect width="30" height="20" fill="#012169"/><g transform="scale(.5)">' + u + '</g><circle cx="22" cy="6" r="1.4" fill="#fff"/><circle cx="25" cy="11" r="1.4" fill="#fff"/><circle cx="21" cy="15" r="1.4" fill="#fff"/><circle cx="8" cy="15" r="2" fill="#fff"/>';
+  }
+  else if (cc === 'us') { for (let i = 0; i < 7; i++) b += r(0, i * 20 / 7, 30, 20 / 14 + 0.1, '#b22234') + r(0, i * 20 / 7 + 20 / 14, 30, 20 / 14 + 0.1, '#fff'); b += r(0, 0, 13, 10.8, '#3c3b6e'); }
+  else if (cc === 'ch') b = r(0, 0, 30, 20, '#da291c') + r(13, 4, 4, 12, '#fff') + r(9, 8, 12, 4, '#fff');
+  else if (cc === 'cz') b = r(0, 0, 30, 10, '#fff') + r(0, 10, 30, 10, '#d7141a') + '<path d="M0 0L14 10L0 20Z" fill="#11457e"/>';
+  else if (cc === 'pt') b = r(0, 0, 12, 20, '#046a38') + r(12, 0, 18, 20, '#da291c') + '<circle cx="12" cy="10" r="3.5" fill="#ffe900"/>';
+  else if (cc === 'za') b = r(0, 0, 30, 20, '#fff') + r(0, 0, 30, 7, '#de3831') + r(0, 13, 30, 7, '#002395') + r(0, 8.2, 30, 3.6, '#007a4d') + '<path d="M0 2L11 10L0 18Z" fill="#000"/>';
+  else if (cc === 'er') b = r(0, 0, 30, 10, '#12ad2b') + r(0, 10, 30, 10, '#4189dd') + '<path d="M0 0L30 10L0 20Z" fill="#ea0437"/>';
+  else if (cc === 'br') b = r(0, 0, 30, 20, '#009c3b') + '<path d="M15 2L28 10L15 18L2 10Z" fill="#ffdf00"/><circle cx="15" cy="10" r="4.2" fill="#002776"/>';
+  else if (cc === 'uy') { for (let i = 0; i < 9; i++) b += r(0, i * 20 / 9, 30, 20 / 9 + 0.1, i % 2 ? '#0038a8' : '#fff'); b += r(0, 0, 12, 11, '#fff') + '<circle cx="6" cy="5.5" r="3" fill="#fcd116"/>'; }
+  else if (cc === 'pr') { for (let i = 0; i < 5; i++) b += r(0, i * 4, 30, 4.1, i % 2 ? '#fff' : '#ed0000'); b += '<path d="M0 0L14 10L0 20Z" fill="#0050f0"/>'; }
+  else if (cc === 'cl') b = r(0, 0, 30, 10, '#fff') + r(0, 10, 30, 10, '#d52b1e') + r(0, 0, 10, 10, '#0039a6') + '<circle cx="5" cy="5" r="1.8" fill="#fff"/>';
+  else if (cc === 'my') { for (let i = 0; i < 7; i++) b += r(0, i * 20 / 7, 30, 20 / 14 + 0.1, '#cc0001') + r(0, i * 20 / 7 + 20 / 14, 30, 20 / 14 + 0.1, '#fff'); b += r(0, 0, 15, 11.4, '#010066') + '<circle cx="6" cy="5.7" r="3" fill="#fc0"/>'; }
+  return `<svg viewBox="0 0 30 20" width="18" height="12" aria-hidden="true">${b}</svg>`;
+}
+const natOf = (i) => (S.s1.nat || [])[i] || '';
+const flag = (cc) => { if (!cc || !FLAGS[cc]) return null; const s = h('span', { class: 'fl', title: NATNAME[cc] || cc.toUpperCase(), role: 'img', 'aria-label': NATNAME[cc] || cc }); s.innerHTML = flagSvg(cc); return s; };
+const riderLink = (i) => h('span', { class: 'rl' }, flag(natOf(i)), h('a', { href: '#rider-' + i }, rid(i)));
+// portrait placeholder until real photos exist: initials over a jersey tint derived from the team
+function avatar(i, ti, size) {
+  const name = rid(i), parts = name.split(/\s+/);
+  const photo = (S.photos || {})[name];
+  if (photo) return h('div', { class: 'avatar photo', style: `width:${size}px;height:${size}px` }, h('img', { src: photo, alt: name, loading: 'lazy' }));
+  const ini = ((parts[0] || '')[0] || '') + ((parts[parts.length - 1] || '')[0] || '');
+  let hsh = 0; for (const ch of tid(ti) || name) hsh = (hsh * 31 + ch.charCodeAt(0)) >>> 0;
+  const hue = hsh % 360;
+  const box = h('div', { class: 'avatar', style: `--a:hsl(${hue} 55% 42%);--b:hsl(${(hue + 30) % 360} 60% 30%);width:${size}px;height:${size}px`, role: 'img', 'aria-label': name });
+  box.innerHTML = `<svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="38" r="20" fill="rgb(255 255 255 / .85)"/><path d="M14 100c2-24 17-36 36-36s34 12 36 36Z" fill="rgb(255 255 255 / .85)"/></svg><span>${ini.toUpperCase()}</span>`;
+  return box;
+}
+// cycling-team crest: an original badge built from the team's initials and a colour derived from its name (no official logos)
+// team mini-jerseys from the PCM 26 workshop pack (Content/MiniJersey/Team), matched by eye
+const JERSEYS = [[/^Team Repsol/, 'repsol'], [/Gazzetta/, 'x-gazzetta'], [/^UAE/, 'uex'], [/^Unibet/, 'urr'], [/^Velo Victory/, 'x-velovictory'], [/^Guinness/, 'x-gui'], [/^Red Bull/, 'rbh'], [/^Telekom/, 'x-tmobile'], [/^EF Education/, 'efe'], [/^Sagres/, 'x-sagres'], [/^Azerion/, 'avv'], [/^Festina/, 'x-festina'], [/^Team Brennan/, 'tbn'], [/^BIKE AID/, 'bai'], [/^W52/, 'x-w52'], [/^Mapei/, 'x-mapei'], [/^Alpecin/, 'apt'], [/^Tudor/, 'tud'], [/^Ukraine/, 'nukr'], [/^Uno-X/, 'uxm'], [/^Pinarello/, 'pqt'], [/^Euskaltel/, 'eus'], [/INEOS/, 'igd'], [/^Tavfer/, 'tav'], [/^Movistar/, 'mov'], [/Astana/, 'xat'], [/Benfica/, 'x-meo'], [/^General Store/, 'gef']];
+const jerseyOf = (name) => { const m = JERSEYS.find(([re]) => re.test(name)); return m ? 'img/jerseys/' + m[1] + '.png' : null; };
+function crest(ti, size) {
+  const name = tid(ti) || '?';
+  const jsy = jerseyOf(name);
+  if (jsy) return h('div', { class: 'crest jsy', style: `width:${size}px;height:${size * 1.15}px` }, h('img', { src: jsy, alt: name + ' jersey', loading: 'lazy' }));
+  const words = name.replace(/[^A-Za-zÀ-ÿ0-9 ]/g, ' ').split(/\s+/).filter((w) => w && !/^(team|cycling|pro|de|la|the|-|\d)$/i.test(w));
+  const ini = (words.slice(0, 2).map((w) => w[0]).join('') || name[0]).toUpperCase();
+  let hsh = 7; for (const ch of name.replace(/\s\d$/, '')) hsh = (hsh * 33 + ch.charCodeAt(0)) >>> 0;
+  const hue = hsh % 360, hue2 = (hue + 150) % 360;
+  const box = h('div', { class: 'crest', style: `width:${size}px;height:${size * 1.15}px`, role: 'img', 'aria-label': name + ' crest' });
+  box.innerHTML = `<svg viewBox="0 0 100 115" aria-hidden="true"><path d="M50 4L94 18V58C94 84 74 102 50 111C26 102 6 84 6 58V18Z" fill="hsl(${hue} 62% 36%)" stroke="hsl(${hue} 70% 22%)" stroke-width="3"/><path d="M6 46H94V58C94 62 93.6 66 92.8 70H7.2C6.4 66 6 62 6 58Z" fill="hsl(${hue2} 75% 55%)"/><text x="50" y="${ini.length > 1 ? 44 : 46}" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="${ini.length > 1 ? 34 : 40}" fill="#fff">${ini}</text></svg>`;
+  return box;
+}
+// small team jersey shown before a team name wherever a cycling team appears
+const miniJersey = (name) => { const src = jerseyOf(name || ''); return src ? h('img', { class: 'mj', src, alt: '', loading: 'lazy', width: 18, height: 18 }) : null; };
+const squadLink = (ti) => (tid(ti) ? h('a', { href: '#squad-' + ti, class: 'sq' }, miniJersey(tid(ti)), tid(ti)) : '');
+const gapOf = (rows, k) => { const v = rows[k]?.[3] || ''; return v; };
+const teamLink = (x) => { const n = teamOf(x); return n && IX.teamIds.has(n) ? h('a', { href: '#team-' + encodeTeam(n) }, n) : (n || ''); };
+const rankNum = (r) => (typeof r === 'number' ? r : parseInt(r, 10) || 999);
+const isGT = (race) => race.stages >= 10;
+const go = (hash) => { if (location.hash === '#' + hash) route(); else location.hash = hash; };
+function encodeTeam(name) { return IX.teamIds.get(name); }
+// tables never scroll: long ones show the first rows and a "Load more" button that reveals the next batch
+const table = (cols, rows, opts = {}) => {
+  const t = h('table');
+  // c.sort = { on, dir, click }: the header becomes a button that sorts by that column
+  const head = (c) => (c.sort ? h('button', { type: 'button', class: 'sortbtn' + (c.sort.on ? ' on' : ''), onclick: c.sort.click }, c.label, h('span', { class: 'arr', 'aria-hidden': 'true' }, c.sort.on ? (c.sort.dir > 0 ? '▲' : '▼') : '↕')) : c.label);
+  t.append(h('thead', null, h('tr', null, cols.map((c) => h('th', { class: [c.n ? 'n' : '', c.hs ? 'hs' : ''].join(' ').trim() || null, scope: 'col', 'aria-sort': c.sort?.on ? (c.sort.dir > 0 ? 'ascending' : 'descending') : null }, head(c))))));
+  const tb = h('tbody', null, rows);
+  t.append(tb);
+  cols.forEach((c, i) => { if (c.hs) for (const tr of tb.children) tr.children[i]?.classList.add('hs'); });
+  const wrap = h('div', { class: 'tblwrap' }, t);
+  const page = opts.page || (opts.tall ? 20 : 0);
+  const all = [...tb.children];
+  if (page && all.length > page) {
+    const step = opts.step || page;
+    let shown = page;
+    const btn = h('button', { type: 'button', class: 'loadmore' });
+    const sync = () => {
+      all.forEach((tr, k) => { tr.hidden = k >= shown; });
+      const left = all.length - shown;
+      btn.textContent = left > 0 ? 'Load ' + Math.min(step, left) + ' more · ' + left + ' left' : '';
+      btn.hidden = left <= 0;
+    };
+    btn.addEventListener('click', () => { shown += step; sync(); });
+    sync();
+    wrap.append(btn);
+  }
+  return wrap;
+};
+const card = (title, more, ...kids) => h('section', { class: 'card' }, h('div', { class: 'card-h' }, h('h2', null, title), more ? h('a', { class: 'more', href: more[1] }, more[0]) : null), kids);
+
+// ---------- indexes ----------
+const IX = {};
+// monuments: the races marked with a star in #ipl-parcours_and_calendar on the PCM UK Discord
+const MONUMENTS = new Set(['Santa Marinella Classic', 'Roubaix Ronde', 'Bedoin Sanremo', 'Milano San Remo', 'Roubaix - Gent', 'Il Lombardia']);
+const isMonument = (name) => MONUMENTS.has(name);
+function scaleFor(race, kind) {
+  if (race.stages === 1) return kind === 'stage' ? (isMonument(race.name) ? 'monument' : 'classic') : null;
+  const p = isGT(race) ? 'gt_' : 'tour_';
+  return { stage: p + 'stage', gc: p + 'gc', points: p + 'spr', kom: p + 'kom' }[kind];
+}
+// "Team X 2" is the second half of a shared squad: show it as "Team X"
+function mergeTeams(s1) {
+  const byName = new Map(s1.teams.map((t, i) => [t, i]));
+  const remap = new Map();
+  s1.teams.forEach((t, i) => { const m = t && t.match(/^(.*)\s2$/); if (m && byName.has(m[1])) remap.set(i, byName.get(m[1])); });
+  if (!remap.size) return;
+  const fix = (v) => (remap.has(v) ? remap.get(v) : v);
+  for (const st of s1.stages) for (const [k, rows] of Object.entries(st.cls)) {
+    const col = k === 'teams' ? 1 : 2;
+    for (const row of rows) row[col] = fix(row[col]);
+  }
+}
+function buildIndex() {
+  const s1 = S.s1;
+  mergeTeams(s1);
+  const scale = new Map(S.scale.map((r) => [r.place, r]));
+  const pts = (race, kind, rank) => { const col = scaleFor(race, kind); const row = scale.get(rank); return col && row ? +row[col] || 0 : 0; };
+  IX.byRace = new Map();
+  for (const st of s1.stages) {
+    const k = st.race + '|' + st.div;
+    if (!IX.byRace.has(k)) IX.byRace.set(k, new Map());
+    IX.byRace.get(k).set(st.stage, st);
+  }
+  IX.dates = new Map();
+  for (const c of S.league.calendar.filter((c) => c.season === 'Season 1')) {
+    if (!IX.dates.has(+c.round)) IX.dates.set(+c.round, []);
+    IX.dates.get(+c.round).push(c.date);
+  }
+  // owner of each cycling team: the league manager who raced it most ("Team X 2" is the second half of "Team X")
+  const base = (ti) => (tid(ti) || '').replace(/\s+2$/, '');
+  const votes = new Map();
+  for (const st of s1.stages) for (const row of (st.cls.stage || [])) {
+    if (!tid(row[2]) || !pid(row[4])) continue;
+    const b = base(row[2]); if (!votes.has(b)) votes.set(b, new Map());
+    const n = teamOf(row[4]); votes.get(b).set(n, (votes.get(b).get(n) || 0) + 1);
+  }
+  IX.owner = new Map();
+  s1.teams.forEach((t, ti) => { const v = votes.get(base(ti)); if (v) IX.owner.set(ti, [...v.entries()].sort((a, b) => b[1] - a[1])[0][0]); });
+  IX.rider = new Map(); IX.team = new Map(); IX.teamIds = new Map();
+  const R = (i) => { if (!IX.rider.has(i)) IX.rider.set(i, { wins: 0, gc: 0, pod: 0, top10: 0, starts: 0, pts: 0, ptsDiv: { 1: 0, 2: 0, 3: 0 }, cat: { oneday: 0, stage: 0, gc: 0, points: 0, kom: 0 }, list: [], teams: new Set(), mgrs: new Set() }); return IX.rider.get(i); };
+  const T = (n, alias, ti) => { if (!n) return null; if (!IX.team.has(n)) { IX.team.set(n, { name: n, aliases: new Set(), subs: new Set(), squads: new Set(), wins: 0, gc: 0, pod: 0, top10: 0, pts: 0, riders: new Map(), list: [] }); IX.teamIds.set(n, IX.teamIds.size); } const t = IX.team.get(n); if (alias) { if ((ALIAS[alias] || alias) === n) t.aliases.add(alias); else t.subs.add(alias); } if (tid(ti)) t.squads.add(ti); return t; };
+  for (const st of s1.stages) {
+    const race = s1.races[st.race];
+    const f = DIVF[st.div];
+    for (const row of (st.cls.stage || [])) {
+      const rk = rankNum(row[0]);
+      const p = pts(race, 'stage', rk) * f;
+      const r = R(row[1]); r.starts++; if (rk === 1) r.wins++; if (rk <= 3) r.pod++; if (rk <= 10) r.top10++; r.pts += p; r.ptsDiv[st.div] += p; r.cat[race.stages === 1 ? 'oneday' : 'stage'] += p;
+      r.teams.add(row[2]); if (ownerName(row[2], row[4])) r.mgrs.add(ownerName(row[2], row[4]));
+      r.list.push({ st, rk, val: row[3], kind: 'stage', p });
+      const t = T(ownerName(row[2], row[4]), pid(row[4]), row[2]);
+      if (t) { if (rk === 1) { t.wins++; t.list.push({ st, rider: row[1], kind: 'stage' }); } if (rk <= 3) t.pod++; if (rk <= 10) t.top10++; t.pts += p; const tr = t.riders.get(row[1]) || { wins: 0, pod: 0, starts: 0, pts: 0 }; tr.starts++; if (rk === 1) tr.wins++; if (rk <= 3) tr.pod++; tr.pts += p; t.riders.set(row[1], tr); }
+    }
+    if (race.stages > 1 && st.stage === race.stages) {
+      for (const kind of ['gc', 'points', 'kom']) {
+        for (const row of (st.cls[kind] || [])) {
+          const rk = rankNum(row[0]);
+          const p = pts(race, kind, rk) * f;
+          const mi = kind === 'gc' ? row[4] : row[5];
+          const r = R(row[1]); r.pts += p; r.ptsDiv[st.div] += p; r.cat[kind] += p;
+          if (kind === 'gc' && rk === 1) r.gc++;
+          r.list.push({ st, rk, val: kind === 'gc' ? row[3] : row[4], kind, p });
+          if (!p && !(kind === 'gc' && rk === 1)) continue;
+          const t = T(ownerName(row[2], mi), pid(mi), row[2]);
+          if (t) { t.pts += p; if (kind === 'gc' && rk === 1) { t.gc++; t.list.push({ st, rider: row[1], kind: 'gc' }); } const tr = t.riders.get(row[1]) || { wins: 0, pod: 0, starts: 0, pts: 0 }; tr.pts += p; t.riders.set(row[1], tr); }
+        }
+      }
+    }
+  }
+  // cycling teams: riders, managers, wins
+  IX.squad = new Map();
+  for (const st of s1.stages) {
+    for (const row of (st.cls.stage || [])) {
+      const ti = row[2]; if (!tid(ti)) continue;
+      if (!IX.squad.has(ti)) IX.squad.set(ti, { riders: new Map(), mgrs: new Set(), wins: 0, pod: 0, days: 0, list: [], divs: new Set() });
+      const q = IX.squad.get(ti); const rk = rankNum(row[0]);
+      q.days++; q.divs.add(st.div); if (ownerName(ti, row[4])) q.mgrs.add(ownerName(ti, row[4]));
+      if (pid(row[4]) && teamOf(row[4]) !== ownerName(ti, row[4])) (q.subs || (q.subs = new Set())).add(pid(row[4]));
+      const r = q.riders.get(row[1]) || { wins: 0, pod: 0, days: 0 }; r.days++; if (rk === 1) r.wins++; if (rk <= 3) r.pod++; q.riders.set(row[1], r);
+      if (rk === 1) { q.wins++; q.list.push({ st, rider: row[1] }); } if (rk <= 3) q.pod++;
+    }
+  }
+  // S2 races grouped from profiles
+  const m = new Map();
+  for (const p of S.prof) { const k = p.race + '|' + p.weeks; if (!m.has(k)) m.set(k, { race: p.race, weeks: p.weeks, list: [] }); m.get(k).list.push(p); }
+  const cal2 = S.league.calendar.filter((c) => c.season === 'Season 2');
+  IX.s2 = [...m.values()].map((r) => { const wk = r.weeks.split(',').map(Number); r.dates = cal2.filter((c) => wk.includes(+c.week)).map((c) => c.date).sort(); r.date = r.dates[0] || ''; return r; });
+}
+
+// ---------- routing ----------
+function route() {
+  stopReplay();
+  const hash = location.hash.slice(1) || 'home';
+  const m = hash.match(/^([a-z0-9]+?)(?:-(\d+))?(?:-(\d+))?$/);
+  UI.pendingStage = m && m[3] != null ? +m[3] : null; // #race-<n>-<stage> opens that stage
+  const name = m ? m[1] : 'home', arg = m && m[2] != null ? +m[2] : null;
+  const section = { home: 'home', races: 'races', race: 'races', s2race: 'races', standings: 'standings', riders: 'riders', riderstats: 'riders', rider: 'riders', teams: 'teams', team: 'teams', squads: 'squads', squad: 'squads' }[name] || 'home';
+  document.querySelectorAll('[data-nav]').forEach((a) => { if (a.dataset.nav === section) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+  $view.replaceChildren();
+  $view.classList.remove('view-in'); void $view.offsetWidth; $view.classList.add('view-in');
+  const views = { home: viewHome, races: viewRaces, race: () => viewRace(arg), s2race: () => viewS2Race(arg), standings: viewStandings, riders: () => { UI.rmode = 'season'; viewRiders(); }, riderstats: () => { UI.rmode = 'stats'; viewRiders(); }, rider: () => viewRiderPcs(arg), teams: viewTeams, team: () => viewTeam(arg), squads: viewSquads, squad: () => viewSquad(arg) };
+  (views[name] || viewHome)();
+  window.scrollTo(0, 0);
+}
+
+// ---------- home ----------
+function podiumOf(ri, div) {
+  const race = S.s1.races[ri];
+  const mm = IX.byRace.get(ri + '|' + div);
+  if (!mm) return null;
+  const st = race.stages === 1 ? mm.get(1) : mm.get(race.stages);
+  const rows = race.stages === 1 ? st?.cls.stage : st?.cls.gc;
+  return rows && rows.length ? rows.slice(0, 3) : null;
+}
+// PCM times: winner "2h13'56" -> "2:13:56"; gaps "+ 12" / "+ 1'05" -> "+0:12" / "+1:05"; "s.t." stays
+function fmtTime(v) {
+  if (!v) return '';
+  const s = String(v).trim().replace(/\s*\(\d+\)$/, ''); // youth rows add the overall GC rank: "+ 4'45 (2)"
+  if (/^s\.?t\.?$/i.test(s)) return 's.t.';
+  const gap = s.startsWith('+');
+  const m = s.replace(/^\+\s*/, '').match(/^(?:(\d+)h)?(?:(\d+)')?(\d+)"?$/);
+  if (!m) return s;
+  const [hh, mm, ss] = [+(m[1] || 0), +(m[2] || 0), +m[3]];
+  const p2 = (n) => String(n).padStart(2, '0');
+  const t = hh ? `${hh}:${p2(mm)}:${p2(ss)}` : `${mm}:${p2(ss)}`;
+  return gap ? '+' + t : t;
+}
+// only trust a podium's times when they look like a PCM export: winner "Hh MM'SS" (or "MM'SS"), then "s.t." / "+ gap"
+const okWinTime = (v) => /^(\d+h)?\d{1,2}'\d{2}$/.test(String(v || '').trim());
+const okGap = (v) => /^(s\.t\.|\+ ?(\d+h)?(\d+')?\d+)$/.test(String(v || '').trim());
+function podiumEl(rows) {
+  // the winner's time and the gaps are checked separately: some screenshots only show one of them
+  const showWin = okWinTime(rows[0]?.[3]);
+  const showGaps = rows.slice(1).every((r) => okGap(r[3]));
+  const shown = (r, k) => ((k ? showGaps : showWin) ? fmtTime(r[3]) : '');
+  return h('div', { class: 'podium' }, rows.map((r, k) => h('div', { class: 'pr' + (k + 1) }, h('span', { class: 'p m' + (k + 1) }, k + 1), h('div', { class: 'nm' }, h('span', null, riderLink(r[1])), ownerName(r[2], r[4]) ? h('small', null, ownerName(r[2], r[4])) : null), h('span', { class: 't' + (k ? '' : ' t1') }, shown(r, k)))));
+}
+// hero: what kind of day it is (stage 1 for stage races), in plain words, with the key numbers
+function heroType(r) {
+  const t = stageTypeOf(s2Key(r.list[0]));
+  if (!t || !t.icon) return null;
+  const facts = [t.km ? [Math.round(t.km) + ' km', 'distance'] : null, t.ps != null ? [psTxt(t), 'ProfileScore'] : null, t.vert ? [(t.ps_est ? '≈' : '') + t.vert.toLocaleString('en-GB') + ' m', 'climbing'] : null].filter(Boolean);
+  return h('div', { class: 'h2-type pt-' + t.icon }, ptIcon(t.icon, 40),
+    h('div', null, h('b', null, (r.list.length > 1 ? 'Stage 1 · ' : '') + (t.tt ? 'Time trial · ' : '') + PT[t.icon].long), h('span', null, PT[t.icon].hint + (t.cobbles ? ', with cobbles' : '') + '.')),
+    facts.length ? h('div', { class: 'h2-tf' }, facts.map(([v, l]) => h('div', null, h('b', null, v), h('span', null, l)))) : null);
+}
+// home hero: every race of the next race day (tabs), live countdown, big profile, stage thumbnails and what comes after
+function nextRaceHero(next) {
+  const day = next[0].date;
+  const today = next.filter((r) => r.date === day);
+  const later = next.filter((r) => r.date !== day).slice(0, 3);
+  UI.hero = Math.min(UI.hero || 0, today.length - 1);
+  const box = h('section', { class: 'hero2 c12' });
+  const timer = h('div', { class: 'cd' });
+  const tick = () => {
+    const ms = Math.max(0, new Date(day + 'T18:00:00Z') - Date.now());
+    const d = Math.floor(ms / 864e5), hh = Math.floor(ms / 36e5) % 24, mm = Math.floor(ms / 6e4) % 60;
+    timer.replaceChildren(...[[d, 'days'], [hh, 'hours'], [mm, 'min']].map(([v, l]) => h('div', { class: 'cd-i' }, h('b', null, String(v).padStart(2, '0')), h('span', null, l))));
+  };
+  const draw = () => {
+    const r = today[UI.hero], idx = IX.s2.indexOf(r), kind = raceKind(r.list.length, r.race);
+    const stages = r.list.length;
+    const thumbs = stages > 1 ? h('div', { class: 'h2-thumbs' }, r.list.slice(0, 8).map((p, k) => h('a', { href: '#s2race-' + idx, title: 'Stage ' + p.stage }, h('img', { src: p.img, alt: 'Stage ' + p.stage + ' profile', loading: 'lazy' }), h('span', null, 'S' + p.stage), stageTypeOf(s2Key(p)) ? h('em', { title: ptTitle(stageTypeOf(s2Key(p))) }, ptIcon(stageTypeOf(s2Key(p)).icon)) : null))) : null;
+    tick();
+    box.replaceChildren(
+      h('div', { class: 'h2-main' },
+        h('div', { class: 'eyebrow' }, 'Next race day · Season 2 · Week ' + r.weeks.replace(/,/g, '–')),
+        today.length > 1 ? h('div', { class: 'h2-tabs', role: 'tablist', 'aria-label': 'Races on ' + fdate(day) }, today.map((x, k) => h('button', { type: 'button', role: 'tab', 'aria-selected': String(k === UI.hero), onclick: () => { UI.hero = k; draw(); } }, isMonument(x.race) ? '★ ' : '', x.race))) : null,
+        h('h1', null, h('a', { href: '#s2race-' + idx }, r.race), isMonument(r.race) ? [' ', monuBadge()] : null),
+        h('div', { class: 'h2-meta' }, h('span', { class: 'h2-date' }, fdate(day)), h('span', { class: 'h2-kind k-' + kind }, KIND_LABEL[kind]), stages > 1 ? h('span', null, stages + ' stages') : null, stages === 1 ? ptBadge(stageTypeOf(s2Key(r.list[0]))) : ptStrip(r.list.map((p) => stageTypeOf(s2Key(p)))), today.length > 1 ? h('span', null, today.length + ' races that day') : null),
+        timer,
+        h('div', { class: 'h2-btns' }, h('a', { class: 'btn', href: '#s2race-' + idx }, stages > 1 ? 'Stage profiles' : 'Race profile'), h('a', { class: 'btn ghost', href: '#races' }, 'Full calendar')),
+        later.length ? h('div', { class: 'h2-later' }, h('span', { class: 'h2-l' }, 'After that'), later.map((x) => h('a', { href: '#s2race-' + IX.s2.indexOf(x) }, h('b', null, fshort(x.date)), h('span', null, isMonument(x.race) ? '★ ' : '', x.race), h('small', null, x.list.length > 1 ? x.list.length + ' stages' : 'One-day')))) : null),
+      h('div', { class: 'h2-side' }, h('a', { class: 'h2-prof', href: '#s2race-' + idx, 'aria-label': 'Open ' + r.race + ' profile' }, h('img', { src: r.list[0].img, alt: r.race + (stages > 1 ? ' stage 1' : '') + ' profile' }), stages > 1 ? h('span', null, 'Stage 1') : null), thumbs, heroType(r)));
+  };
+  draw();
+  clearInterval(UI.heroTimer); UI.heroTimer = setInterval(() => { if (box.isConnected) tick(); else clearInterval(UI.heroTimer); }, 30000);
+  return box;
+}
+function viewHome() {
+  const next = IX.s2.filter((r) => r.date >= TODAY).sort((a, b) => a.date.localeCompare(b.date));
+  const nr = next[0];
+  const homeGrid = h('div', { class: 'home' });
+  if (nr) homeGrid.append(nextRaceHero(next));
+  // latest results
+  const raced = S.s1.races.map((r, i) => ({ r, i, date: (IX.dates.get(r.round) || []).slice(-1)[0] || '' })).filter((x) => [1, 2, 3].some((d) => podiumOf(x.i, d))).sort((a, b) => b.date.localeCompare(a.date) || b.i - a.i).slice(0, 5);
+  homeGrid.append(h('div', { class: 'c8 tone t-results' }, card('Latest results', ['All races', '#races'], h('div', null, raced.map((x) => h('div', { class: 'result' },
+    h('div', { class: 'result-h' }, h('span', { class: 'rh-n' }, h('a', { href: '#race-' + x.i }, x.r.name), isMonument(x.r.name) ? monuBadge() : null, x.r.stages === 1 ? ptBadge(stageTypeOf(s1Key(x.r, 1)), { small: true }) : null), h('span', { class: 'mute' }, fdate(x.date) + ' · ' + (x.r.stages > 1 ? 'final GC' : 'one-day race'))),
+    h('div', { class: 'divs' }, [1, 2, 3].map((d) => { const p = podiumOf(x.i, d); return p ? h('div', { class: 'divres' }, h('a', { href: '#rider-' + p[0][1], class: 'sqwrap', 'aria-label': rid(p[0][1]) }, avatar(p[0][1], p[0][2], 64)), h('div', null, h('span', { class: 'flag' + (d === 1 ? ' d1' : '') }, 'Div ' + d), podiumEl(p))) : null; }))))))));
+  // transfers
+  const tr = S.transfers.slice(-10).reverse();
+  homeGrid.append(h('div', { class: 'c4 tone t-transfers' }, card('Latest transfers', null, tr.length
+    ? h('div', { class: 'feed' }, tr.map((t) => h('div', null, h('span', { class: 'd' }, fshort(t.date)), h('span', { class: 't' }, h('b', null, t.rider), h('span', null, 'to ' + t.team)), h('span', { class: 'num' }, t.price ? t.price + 'M' : ''))))
+    : h('div', { class: 'empty-state' }, h('b', null, 'Auction not open yet'), 'Season 2 signings from the IPL auction on pcmmulti.com/ipl will show here, newest first, with the price paid.'))));
+  // standings snapshot
+  const L = leagueRounds(); const fin = L.out.get(L.orders[L.orders.length - 1]);
+  // whole points (exact value on hover), team jersey, a bar against the leader and the gap to the team above
+  const lead = fin[0]?.total || 1;
+  homeGrid.append(h('div', { class: 'c4 tone t-standings' }, card('League standings', ['Full table', '#standings'], h('div', { class: 'lg' }, fin.slice(0, 10).map((r, k) => {
+    const sq = IX.team.get(r.p)?.squads;
+    const j = sq && sq.size ? jerseyOf(tid([...sq][0])) : null;
+    const above = k ? fin[k - 1].total - r.total : 0;
+    return h('div', { class: 'lg-r' }, h('span', { class: 'lg-rk' + (r.rank <= 3 ? ' m' + r.rank : '') }, '#' + r.rank),
+      j ? h('img', { class: 'lg-j', src: j, alt: '', loading: 'lazy' }) : h('span', { class: 'lg-j none' }),
+      h('span', { class: 'lg-m' }, h('b', null, IX.team.has(r.p) ? h('a', { href: '#team-' + IX.teamIds.get(r.p) }, r.p) : r.p), h('span', { class: 'lg-bar' }, h('i', { style: `width:${Math.max(2, (100 * r.total) / lead).toFixed(1)}%` }))),
+      h('span', { class: 'lg-p', title: fmt(r.total) + ' pts' }, h('b', null, Math.round(r.total).toLocaleString('en-GB')), h('small', null, k ? '−' + Math.round(above).toLocaleString('en-GB') + ' to #' + fin[k - 1].rank : 'pts · leader')));
+  })))));
+  // next races
+  homeGrid.append(h('div', { class: 'c4 tone t-next' }, card('Next races', ['Calendar', '#races'], h('div', { class: 'feed' }, next.slice(0, 8).map((r) => h('a', { href: '#s2race-' + IX.s2.indexOf(r) }, h('span', { class: 'd' }, fshort(r.date)), h('span', { class: 't' }, h('b', null, r.race), h('span', null, r.list.length > 1 ? r.list.length + ' stages' : 'One-day race')), r.list.length === 1 && stageTypeOf(s2Key(r.list[0])) ? h('span', { title: ptTitle(stageTypeOf(s2Key(r.list[0]))) }, ptIcon(stageTypeOf(s2Key(r.list[0])).icon)) : ptStrip(r.list.slice(0, 5).map((p) => stageTypeOf(s2Key(p)))) || h('span', { class: 'mute' }, '›')))))));
+  // top riders
+  const top = [...IX.rider.entries()].sort((a, b) => b[1].pts - a[1].pts).slice(0, 10);
+  homeGrid.append(h('div', { class: 'c4 tone t-ranking' }, card('Rider ranking', ['Ranking', '#standings'], h('div', { class: 'feed' }, top.map(([i, o], k) => h('a', { href: '#rider-' + i }, h('span', { class: 'd' + (k < 3 ? ' med m' + (k + 1) : '') }, '#' + (k + 1)), h('span', { class: 't' }, h('b', null, rid(i)), h('span', null, [...o.mgrs].map(teamOf).filter(Boolean).join(', '))), h('span', { class: 'num' }, Math.round(o.pts))))))));
+  $view.append(homeGrid);
+}
+
+// ---------- standings ----------
+function leagueRounds() {
+  if (IX.league) return IX.league;
+  const res = S.league.results, adj = new Map(S.league.players.map((p) => [p.player, p]));
+  const orders = [...new Set(res.map((r) => +r.order))].sort((a, b) => a - b);
+  const last = orders[orders.length - 1];
+  const names = [...new Set([...res.map((r) => r.player), ...adj.keys()])];
+  const out = new Map(); let prev = new Map();
+  for (const round of orders) {
+    const rows = [];
+    for (const p of names) {
+      const mine = res.filter((r) => r.player === p && +r.order <= round);
+      if (!mine.length) continue;
+      const a = round === last ? adj.get(p) : null;
+      const race = mine.reduce((s, r) => s + +r.points, 0);
+      const today = res.find((r) => r.player === p && +r.order === round);
+      const pen = a ? +a.penalties || 0 : 0, bon = a ? +a.bonuses || 0 : 0;
+      rows.push({ p, race, today: today ? +today.points : null, wins: a ? +a.wins : null, pen, bon, total: race + pen + bon, n: mine.length });
+    }
+    rows.sort((x, y) => y.total - x.total).forEach((r, i) => { r.rank = i + 1; r.move = prev.has(r.p) ? prev.get(r.p) - r.rank : null; });
+    prev = new Map(rows.map((r) => [r.p, r.rank]));
+    out.set(round, rows);
+  }
+  return (IX.league = { orders, out });
+}
+function roundLabel(round) {
+  const cal = S.league.calendar.filter((c) => c.season === 'Season 1' && +c.round === round).sort((a, b) => a.week - b.week);
+  if (!cal.length) return { name: '', date: '' };
+  return { name: [...new Set(cal.map((c) => c.races.replace(/\s*\(day \d+\)/, '')))].join(', '), date: cal.length > 1 ? fshort(cal[0].date) + ' – ' + fdate(cal[cal.length - 1].date) : fdate(cal[0].date) };
+}
+function stopReplay() { if (UI.timer) clearInterval(UI.timer); UI.timer = null; }
+function viewStandings() {
+  const L = leagueRounds();
+  const last = L.orders[L.orders.length - 1];
+  if (UI.round == null || !L.orders.includes(UI.round)) UI.round = last;
+  $view.append(h('div', null, h('div', { class: 'eyebrow' }, 'Season 1 · PCM 26'), h('h1', null, 'Standings'), h('p', { class: 'sub' }, 'The league table from the official IPL sheet, which you can replay round by round, and a rider ranking worked out from the exported results with the IPL points scale.')));
+  const range = h('input', { type: 'range', id: 'round', min: L.orders[0], max: last, step: 1, value: UI.round, 'aria-label': 'Standings after round' });
+  const play = h('button', { class: 'btn', type: 'button' }, 'Play season');
+  const fin = h('button', { class: 'btn ghost', type: 'button' }, 'Final');
+  const lbl = h('div', { class: 'lbl' });
+  const kpis = h('div', { class: 'kpis' }), chart = h('div', { class: 'chart' }), tableBox = h('div', { class: 'stand' });
+  const draw = () => {
+    const rows = L.out.get(UI.round);
+    range.value = UI.round;
+    const rl = roundLabel(UI.round);
+    lbl.replaceChildren('After round ', h('b', null, UI.round), ' of ', last, ' · ', rl.name, ' · ', rl.date);
+    const top = [...rows].sort((a, b) => (b.today ?? -1) - (a.today ?? -1))[0];
+    kpis.replaceChildren(kpi('Leader', rows[0].p, Math.round(rows[0].total).toLocaleString('en-GB') + ' pts'), kpi('Gap to 2nd', Math.round(rows[0].total - (rows[1]?.total || 0)).toLocaleString('en-GB'), 'over ' + (rows[1]?.p || '')), kpi('Top score this round', Math.round(top.today), top.p), kpi('Teams scoring', rows.length, 'so far'));
+    drawChart(chart, L, UI.round);
+    tableBox.replaceChildren(table([{ label: '#' }, { label: '+/-', n: 1, hs: 1 }, { label: 'Manager' }, { label: 'Total', n: 1 }, { label: 'This round', n: 1 }, { label: 'Race pts', n: 1, hs: 1 }, { label: 'Wins', n: 1 }, { label: 'Penalties', n: 1, hs: 1 }, { label: 'Rounds', n: 1, hs: 1 }],
+      rows.map((r) => h('tr', { class: r.rank === 1 ? 'p1' : null }, h('td', { class: 'rk' }, rankChip(r.rank)), h('td', { class: 'n ' + (r.move > 0 ? 'up' : r.move < 0 ? 'down' : 'mute') }, r.move ? (r.move > 0 ? '▲' : '▼') + Math.abs(r.move) : ''),
+        h('td', { class: 'rider' }, IX.team.has(r.p) ? h('a', { href: '#team-' + IX.teamIds.get(r.p) }, r.p) : r.p), h('td', { class: 'n' }, ptsBlock(r.total, rows[0].total)), h('td', { class: 'n' + (r.today ? ' up' : ' mute') }, r.today ? '+' + Math.round(r.today).toLocaleString('en-GB') : r.today == null ? '' : '0'), h('td', { class: 'n mute' }, r.race == null ? '' : Math.round(r.race).toLocaleString('en-GB')),
+        h('td', { class: 'n mute' }, r.wins == null ? '' : r.wins), h('td', { class: 'n ' + (r.pen < 0 ? 'down' : 'mute') }, r.pen ? Math.round(r.pen) : ''), h('td', { class: 'n mute' }, r.n)))));
+  };
+  const reset = () => { stopReplay(); play.textContent = 'Play season'; };
+  range.addEventListener('input', () => { reset(); UI.round = +range.value; draw(); });
+  fin.addEventListener('click', () => { reset(); UI.round = last; draw(); });
+  play.addEventListener('click', () => {
+    if (UI.timer) return reset();
+    if (UI.round === last) UI.round = L.orders[0];
+    play.textContent = 'Pause'; draw();
+    UI.timer = setInterval(() => { const i = L.orders.indexOf(UI.round); if (i >= L.orders.length - 1) return reset(); UI.round = L.orders[i + 1]; draw(); }, matchMedia('(prefers-reduced-motion: reduce)').matches ? 2200 : 1400);
+  });
+  $view.append(h('section', { class: 'card replay', 'aria-label': 'Season replay' }, h('div', { class: 'tools' }, play, fin), h('div', null, range, lbl)), kpis, card('Points race', null, chart), card('League table after the selected round', null, tableBox));
+  // rider ranking
+  const box = h('div');
+  const chips = h('div', { class: 'chips', role: 'group', 'aria-label': 'Division filter' });
+  const drawRank = () => {
+    chips.replaceChildren(...[0, 1, 2, 3].map((d) => h('button', { class: 'chip', type: 'button', 'aria-pressed': String(UI.rankDiv === d), onclick: () => { UI.rankDiv = d; drawRank(); } }, d ? 'Division ' + d : 'All divisions')));
+    const val = (o) => (UI.rankDiv ? o.ptsDiv[UI.rankDiv] : o.pts);
+    const list = [...IX.rider.entries()].filter(([, o]) => val(o) > 0).sort((a, b) => val(b[1]) - val(a[1])).slice(0, 100);
+    box.replaceChildren(table([{ label: '#' }, { label: 'Rider' }, { label: 'Manager' }, { label: 'Points', n: 1 }, { label: 'Wins', n: 1 }, { label: 'GC', n: 1, hs: 1 }, { label: 'Podiums', n: 1, hs: 1 }],
+      list.map(([i, o], k) => h('tr', { class: k === 0 ? 'p1' : null }, h('td', { class: 'rk' }, rankChip(k + 1)), h('td', { class: 'rider' }, riderLink(i)), h('td', null, [...o.mgrs].map((m, j) => [j ? ', ' : '', teamLink(m)])), h('td', { class: 'n tot' }, Math.round(val(o))), h('td', { class: 'n' }, o.wins || ''), h('td', { class: 'n' }, o.gc || ''), h('td', { class: 'n' }, o.pod || ''))), { tall: true }));
+  };
+  $view.append(card('Rider ranking', null, h('p', { class: 'sub' }, 'Stage results score with the classic, monument, tour or Grand Tour scale; final GC, points and mountains add their own scale. Division 2 counts 95% and Division 3 90%. Stages without an export are not counted yet.'), chips, box));
+  draw(); drawRank();
+}
+function kpi(k, v, s) { return h('div', { class: 'kpi' }, h('div', { class: 'k' }, k), h('div', { class: 'v' }, v), h('div', { class: 's' }, s)); }
+function drawChart(box, L, round) {
+  box.replaceChildren();
+  const W = Math.max(300, box.clientWidth || 800), H = 300, T = 10, B = 24;
+  const cum = new Map();
+  for (const r of S.league.results) { if (!cum.has(r.player)) cum.set(r.player, new Map()); cum.get(r.player).set(+r.order, +r.points); }
+  const ranks = new Map(L.out.get(round).map((r) => [r.p, r.rank]));
+  const series = [...cum.entries()].filter(([p]) => ranks.has(p)).map(([p, m]) => { let c = 0; return { p, pts: L.orders.filter((o) => o <= round).map((o) => ({ o, c: (c += (m.get(o) || 0)) })) }; }).sort((a, b) => ranks.get(a.p) - ranks.get(b.p));
+  let max = 0; for (const [, m] of cum) { let c = 0; for (const o of L.orders) c += m.get(o) || 0; max = Math.max(max, c); }
+  max = Math.ceil(max / 500) * 500 || 1;
+  const labW = W < 560 ? 0 : 150, left = 44, right = W - labW - 10;
+  const x = (o) => left + (right - left) * (L.orders.indexOf(o) / Math.max(1, L.orders.length - 1));
+  const y = (v) => H - B - (H - B - T) * (v / max);
+  const ns = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(ns, 'svg'); svg.setAttribute('viewBox', `0 0 ${W} ${H}`); svg.setAttribute('width', '100%');
+  const add = (tag, a, txt) => { const e = document.createElementNS(ns, tag); for (const k in a) e.setAttribute(k, a[k]); if (txt != null) e.textContent = txt; svg.append(e); return e; };
+  for (let v = 0; v <= max; v += max / 5) { add('line', { x1: left, x2: right, y1: y(v), y2: y(v), stroke: 'var(--soft)' }); add('text', { x: left - 6, y: y(v) + 4, 'text-anchor': 'end' }, Math.round(v).toLocaleString('en-GB')); }
+  const step = Math.ceil(L.orders.length / Math.max(2, Math.floor((right - left) / 46)));
+  L.orders.forEach((o, i) => { if ((L.orders.length - 1 - i) % step === 0) add('text', { x: x(o), y: H - 6, 'text-anchor': 'middle' }, 'R' + o); });
+  const path = (pts) => pts.map((d, i) => (i ? 'L' : 'M') + x(d.o).toFixed(1) + ',' + y(d.c).toFixed(1)).join('');
+  series.slice(6).forEach((s) => add('path', { d: path(s.pts), fill: 'none', stroke: 'var(--line)', 'stroke-width': 1.3 }));
+  const top = series.slice(0, 6);
+  top.forEach((s, i) => add('path', { d: path(s.pts), fill: 'none', stroke: COLORS[i], 'stroke-width': 2.4, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' }));
+  top.forEach((s, i) => { const d = s.pts[s.pts.length - 1]; add('circle', { cx: x(d.o), cy: y(d.c), r: 3.2, fill: COLORS[i] }); });
+  if (labW) {
+    const labs = top.map((s, i) => ({ s, i, y: y(s.pts[s.pts.length - 1].c) })).sort((a, b) => a.y - b.y);
+    for (let k = 1; k < labs.length; k++) if (labs[k].y - labs[k - 1].y < 14) labs[k].y = labs[k - 1].y + 14;
+    const lx = Math.min(right + 8, x(round) + 8);
+    labs.forEach((l) => { const t = add('text', { x: lx, y: l.y + 4 }, l.s.p + ' ' + Math.round(l.s.pts[l.s.pts.length - 1].c).toLocaleString('en-GB')); t.style.fill = COLORS[l.i]; });
+  }
+  const tip = h('div', { class: 'tip' });
+  const hit = add('rect', { x: left, y: 0, width: right - left, height: H, fill: 'transparent' });
+  const shown = L.orders.filter((o) => o <= round);
+  hit.addEventListener('pointermove', (ev) => {
+    const r = svg.getBoundingClientRect(); const mx = (ev.clientX - r.left) * (W / r.width);
+    const o = shown.reduce((b, c) => (Math.abs(x(c) - mx) < Math.abs(x(b) - mx) ? c : b), shown[0]);
+    tip.replaceChildren(h('div', { class: 'mute' }, 'Round ' + o + ' · ' + roundLabel(o).name), top.map((s, i) => ({ s, i, v: (s.pts.find((d) => d.o === o) || { c: 0 }).c })).sort((a, b) => b.v - a.v).map((d) => h('div', { class: 'r' }, h('span', null, h('i', { style: 'background:' + COLORS[d.i] }), d.s.p), h('b', { class: 'num' }, Math.round(d.v).toLocaleString('en-GB')))));
+    tip.style.display = 'block';
+    const px = x(o) * (r.width / W); const tw = tip.offsetWidth;
+    tip.style.left = Math.max(0, px + 12 + tw > r.width ? px - tw - 12 : px + 12) + 'px';
+  });
+  hit.addEventListener('pointerleave', () => { tip.style.display = 'none'; });
+  box.append(svg, tip);
+}
+
+// ---------- races ----------
+// race type from its number of stages: grand tour (10+), stage race (2-9) or one-day
+// race type: grand tour (10+ stages), stage race (2-9), monument (starred one-day race) or one-day
+const raceKind = (n, name) => (n >= 10 ? 'gt' : n > 1 ? 'tour' : isMonument(name) ? 'monument' : 'oneday');
+const KIND_LABEL = { gt: 'Grand Tour', tour: 'Stage race', monument: 'Monument', oneday: 'One-day' };
+const monuBadge = () => h('span', { class: 'monu', title: 'Monument' }, '★ Monument');
+
+// ---------- stage profile types, ProCyclingStats style ----------
+// data/stage_types.json comes from tools/stage_types.py: the game's stage files (real elevation) or,
+// when the stage file is missing, the game's own stage icon on the profile image plus its outline.
+const PT = {
+  p1: { label: 'Flat', long: 'Flat', hint: 'A day for the sprinters' },
+  p2: { label: 'Hills', long: 'Hills, flat finish', hint: 'Climbs on the way, flat run-in to the line' },
+  p3: { label: 'Uphill finish', long: 'Hills, uphill finish', hint: 'Short climb to the line: puncheurs' },
+  p4: { label: 'Mountains', long: 'Mountains, flat finish', hint: 'Big climbs, but the line is after a descent or flat' },
+  p5: { label: 'Summit finish', long: 'Mountains, summit finish', hint: 'The stage ends at the top of a mountain' },
+};
+const PT_SVG = {
+  p1: '<path d="M5 20.5H27"/>',
+  p2: '<path d="M4 22c4 0 5-7 9-7s5 7 8 6 4-6 7 1"/>',
+  p3: '<path d="M4 23c3 0 4-6 7-6s4 6 7 5l7-10"/><path class="fl" d="M25 12V5.5l4.5 2-4.5 2"/>',
+  p4: '<path d="M3 24l7-12 5 7 5-10 8 15"/>',
+  p5: '<path d="M3 25l6-10 4 5 6-7 7-6"/><path class="fl" d="M26 7V1.5l4.5 2-4.5 2"/>',
+  tt: '<circle cx="16" cy="18" r="8"/><path d="M16 18v-4.5M13.5 6.5h5M16 6.5V10"/>',
+  cob: '<path d="M6 10h8v6H6zM16 10h10v6H16zM6 18h11v6H6zM19 18h7v6h-7z"/>',
+};
+const psTxt = (t) => (t.ps_est ? '≈' : '') + Math.round(t.ps);
+const psBadge = (t) => (t ? h('span', { class: 'psb' }, ptBadge(t, { small: true }), t.ps != null ? h('small', { title: 'ProfileScore' + (t.ps_est ? ' (estimate)' : '') }, 'PS ' + psTxt(t)) : null) : null);
+const stageTypeOf = (key) => (S.types && S.types[key]) || null;
+const s1Key = (race, stage) => 's1|' + race.name + '|' + stage;
+const s2Key = (p) => 's2|' + p.id;
+function ptIcon(code, size) {
+  const e = h('span', { class: 'pti pt-' + code, 'aria-hidden': 'true', style: size ? `--s:${size}px` : null });
+  e.innerHTML = `<svg viewBox="0 0 32 32">${PT_SVG[code] || ''}</svg>`;
+  return e;
+}
+const ptTitle = (t) => t ? PT[t.icon].long + (t.tt ? ' · time trial' : '') + (t.cobbles ? ' · cobbles' : '') + (t.ps != null ? ' · ProfileScore ' + psTxt(t) : '') + (t.vert ? ' · ' + (t.ps_est ? '≈' : '') + t.vert.toLocaleString('en-GB') + ' m climbing' : '') : '';
+// badge: icon + label (+ time trial / cobbles marks)
+function ptBadge(t, opts = {}) {
+  if (!t || !t.icon) return null;
+  return h('span', { class: 'ptb pt-' + t.icon + (opts.small ? ' sm' : ''), title: ptTitle(t) }, ptIcon(t.icon), opts.icon ? null : h('span', null, t.tt ? 'Time trial' : PT[t.icon].label),
+    t.tt && !opts.icon ? ptIcon('tt') : null, t.cobbles ? ptIcon('cob') : null);
+}
+// one small icon per stage, for stage races
+function ptStrip(types) {
+  if (!types.some(Boolean)) return null;
+  return h('span', { class: 'pts', 'aria-label': 'Stage types' }, types.map((t, k) => t ? h('span', { title: 'Stage ' + (k + 1) + ': ' + ptTitle(t) }, ptIcon(t.icon)) : h('span', { class: 'pt-none', title: 'Stage ' + (k + 1) })));
+}
+// race card row: one-day races get the badge, stage races one icon per stage plus a count of the hard days
+function rcTypes(types) {
+  if (!types.some(Boolean)) return null;
+  if (types.length === 1) return h('div', { class: 'rc-pt' }, ptBadge(types[0], { small: true }));
+  return h('div', { class: 'rc-pt' }, ptStrip(types), h('small', { class: 'mute' }, typeCount(types)));
+}
+function typeCount(types) {
+  const n = (f) => types.filter((t) => t && f(t)).length;
+  const parts = [[n((t) => t.icon === 'p5'), 'summit finish'], [n((t) => t.icon === 'p4'), 'mountain'], [n((t) => t.icon === 'p3'), 'uphill finish'], [n((t) => t.tt), 'TT']]
+    .filter(([k]) => k).map(([k, l]) => k + ' ' + l + (k > 1 && l !== 'TT' ? (l.endsWith('h') ? 'es' : 's') : ''));
+  return parts.join(' · ');
+}
+function typeSummary(types) {
+  return h('div', { class: 'stg-ptrow' }, types.map((t, k) => t ? h('span', { class: 'ptb sm pt-' + t.icon, title: ptTitle(t) }, ptIcon(t.icon), h('span', null, 'S' + (k + 1) + ' · ' + (t.tt ? 'TT' : PT[t.icon].label))) : null));
+}
+const ptLegend = () => h('div', { class: 'ptlegend', 'aria-label': 'Stage type key' }, Object.entries(PT).map(([k, v]) => h('span', { title: v.hint }, ptIcon(k, 18), v.long)), h('span', null, ptIcon('tt', 18), 'Time trial'), h('span', null, ptIcon('cob', 18), 'Cobbles'));
+// elevation drawing from the stage file, with the climbs marked (S1 has almost no profile screenshots)
+function profileSvg(t) {
+  if (!t || !t.curve) return null;
+  const W = 720, H = 190, P = { l: 40, r: 10, t: 26, b: 22 };
+  const ys = t.curve, n = ys.length, lo = Math.min(...ys), hi = Math.max(...ys, lo + 300);
+  const X = (k) => P.l + (k / (n - 1)) * (W - P.l - P.r), Y = (a) => P.t + (1 - (a - lo) / (hi - lo)) * (H - P.t - P.b);
+  const kmX = (km) => P.l + (km / t.km) * (W - P.l - P.r);
+  const line = ys.map((a, k) => (k ? 'L' : 'M') + X(k).toFixed(1) + ' ' + Y(a).toFixed(1)).join('');
+  const climbs = (t.climbs || []).filter((c) => c.score >= 12);
+  const marks = climbs.map((c) => {
+    const x = kmX(c.top), y = Y(Math.min(hi, c.alt));
+    return `<rect class="pc" x="${kmX(c.km).toFixed(1)}" y="${P.t}" width="${(kmX(c.top) - kmX(c.km)).toFixed(1)}" height="${H - P.t - P.b}"/>` +
+      `<line class="pm" x1="${x.toFixed(1)}" x2="${x.toFixed(1)}" y1="${(y - 4).toFixed(1)}" y2="${P.t - 2}"/><circle class="pk c${c.cat}" cx="${x.toFixed(1)}" cy="${P.t - 10}" r="8.5"/><text class="pkt" x="${x.toFixed(1)}" y="${P.t - 6.5}">${c.cat}</text>`;
+  }).join('');
+  const ticks = [];
+  for (let km = 0; km <= t.km * 0.9; km += t.km > 120 ? 50 : 25) ticks.push(`<text class="pa" x="${kmX(km).toFixed(1)}" y="${H - 6}">${km}</text>`);
+  ticks.push(`<text class="pa" x="${(W - P.r).toFixed(1)}" y="${H - 6}" text-anchor="end">${Math.round(t.km)} km</text>`);
+  const box = h('div', { class: 'psvg' });
+  box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Stage profile, ${Math.round(t.km)} km, highest point ${t.top} m"><defs><linearGradient id="pg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="var(--pt-c)" stop-opacity=".55"/><stop offset="1" stop-color="var(--pt-c)" stop-opacity=".06"/></linearGradient></defs>` +
+    `<text class="pa" x="${P.l - 6}" y="${(Y(hi) + 4).toFixed(1)}" text-anchor="end">${Math.round(hi)} m</text><text class="pa" x="${P.l - 6}" y="${(Y(lo) + 4).toFixed(1)}" text-anchor="end">${Math.round(lo)} m</text>` +
+    marks + `<path class="pf" d="${line}L${X(n - 1).toFixed(1)} ${H - P.b}L${P.l} ${H - P.b}Z"/><path class="pl" d="${line}"/>` + ticks.join('') + `</svg>`;
+  return box;
+}
+// the stage-type card: badge, key numbers, the drawing (when there is no game screenshot) and the climbs
+function stageTypeCard(t, opts = {}) {
+  if (!t || !t.icon) return null;
+  const facts = [
+    t.ps != null ? ['ProfileScore', psTxt(t)] : null,
+    t.vert ? ['Climbing', (t.ps_est ? '≈' : '') + t.vert.toLocaleString('en-GB') + ' m'] : null,
+    t.top ? ['Highest point', t.top.toLocaleString('en-GB') + ' m'] : null,
+    t.km ? ['Distance', Math.round(t.km) + ' km'] : null,
+    t.fin_gain_1km != null && t.fin_gain_1km > 15 ? ['Last km', '+' + t.fin_gain_1km + ' m'] : null,
+  ].filter(Boolean);
+  const climbs = (t.climbs || []).filter((c) => c.score >= 12);
+  return h('section', { class: 'card ptcard pt-' + t.icon },
+    h('div', { class: 'ptc-h' }, ptIcon(t.icon, 44), h('div', null, h('div', { class: 'eyebrow' }, 'Stage type'), h('h2', null, t.tt ? 'Time trial · ' + PT[t.icon].long : PT[t.icon].long), h('p', { class: 'sub' }, PT[t.icon].hint + (t.cobbles ? '. Cobbled sectors.' : '.'))),
+      facts.length ? h('div', { class: 'ptc-f' }, facts.map(([k, v]) => h('div', null, h('b', null, v), h('span', null, k)))) : null),
+    opts.drawing === false ? null : profileSvg(t),
+    climbs.length ? h('div', { class: 'ptc-cl' }, climbs.map((c) => h('span', { class: 'clb' }, h('i', { class: 'c' + c.cat }, c.cat), h('span', null, h('b', null, c.len != null ? (t.ps_est ? '≈' : '') + c.len + ' km at ' + c.grad + '%' : 'Category ' + c.cat + ' climb'), h('small', null, [c.top != null ? 'top at km ' + Math.round(c.top) : c.to_fin != null ? 'top ' + Math.round(c.to_fin) + ' km from the line' : '', c.alt != null ? c.alt.toLocaleString('en-GB') + ' m' : ''].filter(Boolean).join(' · ')))))) : null,
+    h('p', { class: 'src' }, t.src === 'stage file'
+      ? 'Worked out from the game’s stage file. ProfileScore uses the ProCyclingStats formula: each climb scores (gradient ÷ 2)² × length, weighted by how close its top is to the finish. Climb categories are estimates from that score.'
+      : 'From the profile image: the game’s own stage icon sets flat, hills or mountains, and the end of the profile sets the finish.' + (t.ps_est ? ' ProfileScore (≈) is an estimate: the image is read back into an elevation line at the game’s drawing scale, or, when the game squeezed the drawing, each climb marker counts as a typical climb of its category.' : '')));
+}
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+function dateBlock(iso) {
+  if (!iso) return h('div', { class: 'rc-date' }, h('b', null, '—'));
+  const d = new Date(iso + 'T00:00:00Z');
+  return h('div', { class: 'rc-date' }, h('b', null, d.getUTCDate()), h('span', null, MONTHS[d.getUTCMonth()]));
+}
+function raceProfile(ri, name) {
+  const p = (S.s1.profiles || []).filter((x) => x.race === ri).sort((a, b) => a.stage - b.stage)[0];
+  if (p) return p.img;
+  const s2 = IX.s2.find((r) => r.race === name && r.list.length);
+  return s2 ? s2.list[0].img : null;
+}
+function viewRaces() {
+  const s1 = S.s1;
+  UI.races = UI.races || { season: IX.s2.some((r) => r.date >= TODAY) && TODAY >= '2026-11-30' ? 2 : 1, kind: 'all' };
+  const st = UI.races;
+  $view.append(h('div', null, h('div', { class: 'eyebrow' }, 'Calendar'), h('h1', null, 'Races'),
+    h('p', { class: 'sub' }, st.season === 1 ? 'Every Season 1 race with the winner of each division (final GC for stage races). The bar shows how many stages have results.' : 'Season 2 starts on 30 November 2026. Open a race to see its stage profiles.')));
+  const tabs = h('div', { class: 'rc-bar' },
+    h('div', { class: 'seg', role: 'group', 'aria-label': 'Season' }, [1, 2].map((n) => h('button', { type: 'button', 'aria-pressed': String(st.season === n), onclick: () => { st.season = n; route(); } }, n === 1 ? 'Season 1 · results' : 'Season 2 · calendar'))),
+    h('div', { class: 'chips', role: 'group', 'aria-label': 'Race type' }, ['all', 'gt', 'tour', 'monument', 'oneday'].map((k) => h('button', { class: 'chip', type: 'button', 'aria-pressed': String(st.kind === k), onclick: () => { st.kind = k; route(); } }, k === 'all' ? 'All' : KIND_LABEL[k] + 's'))));
+  $view.append(tabs, ptLegend());
+  const grid = h('div', { class: 'rc-grid' });
+  if (st.season === 1) {
+    s1.races.forEach((race, ri) => {
+      const kind = raceKind(race.stages, race.name);
+      if (st.kind !== 'all' && st.kind !== kind) return;
+      const dates = IX.dates.get(race.round) || [];
+      const prof = raceProfile(ri, race.name);
+      const divs = [1, 2, 3].map((d) => {
+        const mm = IX.byRace.get(ri + '|' + d);
+        const lab = h('span', { class: 'flag' + (d === 1 ? ' d1' : '') }, 'D' + d);
+        if (!mm) return h('div', { class: 'rc-div none' }, lab, h('span', { class: 'mute' }, 'Not raced'));
+        const p = podiumOf(ri, d);
+        const pct = Math.round((mm.size / race.stages) * 100);
+        const cov = race.stages > 1 ? h('span', { class: 'rc-cov', title: mm.size + ' of ' + race.stages + ' stages with results' }, h('i', { style: `width:${pct}%` }), h('em', null, mm.size + '/' + race.stages)) : null;
+        if (!p) return h('div', { class: 'rc-div' }, lab, h('span', { class: 'mute' }, 'No final GC'), cov);
+        const w = p[0];
+        return h('div', { class: 'rc-div' }, lab, avatar(w[1], w[2], 30), h('span', { class: 'rc-win' }, h('span', null, flag(natOf(w[1])), rid(w[1])), h('small', null, ownerName(w[2], w[4]) || tid(w[2]))), cov);
+      });
+      grid.append(h('a', { class: 'rc k-' + kind, href: '#race-' + ri },
+        h('div', { class: 'rc-top' }, prof ? h('img', { class: 'rc-prof', src: prof, alt: '', loading: 'lazy' }) : null,
+          dateBlock(dates[0]),
+          h('div', { class: 'rc-title' }, h('span', { class: 'rc-kind' }, 'R' + race.round + ' · ' + KIND_LABEL[kind] + (race.stages > 1 ? ' · ' + race.stages + ' stages' : '')), h('h3', null, race.name))),
+        rcTypes(Array.from({ length: race.stages }, (_, k) => stageTypeOf(s1Key(race, k + 1)))),
+        h('div', { class: 'rc-body' }, divs)));
+    });
+  } else {
+    IX.s2.slice().sort((a, b) => a.date.localeCompare(b.date)).forEach((r) => {
+      const kind = raceKind(r.list.length, r.race);
+      if (st.kind !== 'all' && st.kind !== kind) return;
+      const next = r.date >= TODAY && !IX.s2.some((x) => x.date >= TODAY && x.date < r.date);
+      grid.append(h('a', { class: 'rc k-' + kind + (next ? ' next' : ''), href: '#s2race-' + IX.s2.indexOf(r) },
+        h('div', { class: 'rc-top' }, r.list[0] ? h('img', { class: 'rc-prof', src: r.list[0].img, alt: '', loading: 'lazy' }) : null,
+          dateBlock(r.date),
+          h('div', { class: 'rc-title' }, h('span', { class: 'rc-kind' }, (next ? 'Next race · ' : '') + KIND_LABEL[kind] + (r.list.length > 1 ? ' · ' + r.list.length + ' stages' : '')), h('h3', null, r.race))),
+        rcTypes(r.list.map((p) => stageTypeOf(s2Key(p)))),
+        h('div', { class: 'rc-body' }, h('div', { class: 'rc-div' }, h('span', { class: 'mute' }, 'Week ' + r.weeks.replace(/,/g, '–') + (r.dates.length > 1 ? ' · ' + fshort(r.dates[0]) + ' – ' + fshort(r.dates[r.dates.length - 1]) : ''))))));
+    });
+  }
+  $view.append(grid.childNodes.length ? grid : h('p', { class: 'empty' }, 'No races of this type.'));
+}
+function viewS2Race(i) {
+  const r = IX.s2[i];
+  if (!r) return viewRaces();
+  $view.append(h('div', { class: 'racehead' }, h('div', null, h('div', { class: 'eyebrow' }, 'Season 2 · week ' + r.weeks.replace(/,/g, '–')), h('h1', null, r.race, isMonument(r.race) ? [' ', monuBadge()] : null), h('div', { class: 'facts' }, h('span', null, h('b', null, r.list.length), r.list.length > 1 ? ' stages' : ' one-day race'), r.dates.length ? h('span', null, r.dates.map(fdate).join(' · ')) : null, h('span', null, 'Results appear here after the race'))), h('a', { class: 'btn ghost', href: '#races' }, 'All races')));
+  const grid = h('div', { class: 'prof' });
+  for (const p of r.list) {
+    const fig = h('figure');
+    fig.append(h('figcaption', null, h('span', null, r.list.length > 1 ? 'Stage ' + p.stage : r.race), psBadge(stageTypeOf(s2Key(p)))), h('button', { type: 'button', 'aria-label': 'Enlarge ' + (r.list.length > 1 ? 'stage ' + p.stage : r.race) + ' profile', onclick: () => fig.classList.toggle('zoom') }, h('img', { src: p.img, alt: r.race + (r.list.length > 1 ? ' stage ' + p.stage : '') + ' profile', loading: 'lazy' })));
+    grid.append(fig);
+  }
+  if (r.list.length === 1) { const tc = stageTypeCard(stageTypeOf(s2Key(r.list[0])), { drawing: false }); if (tc) $view.append(tc); }
+  else { const ts = r.list.map((p) => stageTypeOf(s2Key(p))); if (ts.some(Boolean)) $view.append(card('Stage types', null, typeSummary(ts), ptLegend())); }
+  $view.append(card('Stage profiles', null, grid));
+  $view.append(card('Startlist', null, h('p', { class: 'empty' }, 'Startlist not available yet.')));
+}
+function viewRace(ri) {
+  const s1 = S.s1, race = s1.races[ri];
+  if (!race) return viewRaces();
+  const st = UI.race[ri] || (UI.race[ri] = { div: [1, 2, 3].find((d) => IX.byRace.has(ri + '|' + d)) || 1, stage: race.stages > 1 ? 0 : 1, cls: 'stage' });
+  if (UI.pendingStage != null && UI.pendingStage <= race.stages) { st.stage = UI.pendingStage; UI.pendingStage = null; }
+  const dates = IX.dates.get(race.round) || [];
+  $view.append(h('div', { class: 'racehead' }, h('div', null, h('div', { class: 'eyebrow' }, 'Season 1 · Round ' + race.round), h('h1', null, race.name, isMonument(race.name) ? [' ', monuBadge()] : null), h('div', { class: 'facts' }, h('span', null, h('b', null, race.stages), race.stages > 1 ? ' stages' : ' one-day race'), dates.length ? h('span', null, dates.map(fdate).join(' · ')) : null)), h('a', { class: 'btn ghost', href: '#races' }, 'All races')));
+  $view.append(h('div', { class: 'chips', role: 'group', 'aria-label': 'Division' }, [1, 2, 3].map((d) => h('button', { class: 'chip' + (IX.byRace.has(ri + '|' + d) ? '' : ' miss'), type: 'button', 'aria-pressed': String(st.div === d), onclick: () => { st.div = d; route(); } }, 'Division ' + d))));
+  const m = IX.byRace.get(ri + '|' + st.div) || new Map();
+  if (race.stages > 1) {
+    $view.append(h('div', { class: 'chips', role: 'group', 'aria-label': 'Stage' }, h('button', { class: 'chip', type: 'button', 'aria-pressed': String(st.stage === 0), onclick: () => { st.stage = 0; route(); } }, 'Overview'),
+      Array.from({ length: race.stages }, (_, k) => k + 1).map((s) => h('button', { class: 'chip' + (m.has(s) ? '' : ' miss'), type: 'button', 'aria-pressed': String(st.stage === s), title: m.get(s)?.name || 'Results not available yet', onclick: () => { st.stage = s; route(); } }, stageTypeOf(s1Key(race, s)) ? ptIcon(stageTypeOf(s1Key(race, s)).icon) : null, 'Stage ' + s))));
+  }
+  if (!m.size) { $view.append(h('div', { class: 'note' }, 'No results for this race in Division ' + st.div + ' yet.')); return; }
+  if (race.stages > 1 && st.stage === 0) return raceOverview(ri, race, m, st);
+  const stage = m.get(st.stage);
+  if (!stage) { $view.append(h('div', { class: 'note' }, 'Results for stage ' + st.stage + ' in Division ' + st.div + ' are not available yet.')); return; }
+  const avail = CLS.filter((c) => stage.cls[c.key]?.length);
+  if (!avail.find((c) => c.key === st.cls)) st.cls = avail[0]?.key || 'stage';
+  stageSummary(race, stage);
+  { const hasShot = (S.s1.profiles || []).some((p) => p.race === stage.race && p.stage === stage.stage); const tc = stageTypeCard(stageTypeOf(s1Key(race, st.stage)), { drawing: !hasShot }); if (tc) $view.append(tc); }
+  $view.append(h('section', { class: 'card' },
+    h('div', null, h('h2', null, (race.stages > 1 ? 'Stage ' + st.stage + ' · ' : '') + stage.name), h('p', { class: 'sub' }, 'Division ' + st.div + (race.stages > 1 ? ' · stage ' + st.stage + ' of ' + race.stages : '')), stage.shot ? h('p', { class: 'src' }, 'Read from the screenshot posted on Discord (top 20). Names were matched automatically, so small errors are possible.') : null),
+    h('div', { class: 'tabs', role: 'tablist' }, avail.map((c) => h('button', { type: 'button', role: 'tab', 'aria-selected': String(st.cls === c.key), onclick: () => { st.cls = c.key; route(); } }, h('span', { class: 'dot ' + c.j }), c.label))),
+    clsTable(stage, st.cls)));
+  if (race.stages === 1) { const sl = startlist(ri, st.div); if (sl) $view.append(sl); }
+}
+// PCS-style stage header: winner portrait, podium with flags and gaps, jersey holders after the stage
+function stageSummary(race, stage) {
+  const res = stage.cls.stage || [];
+  if (!res.length) return;
+  const w = res[0];
+  const winner = h('div', { class: 'winner' }, avatar(w[1], w[2], 96),
+    h('div', { class: 'who' }, h('span', { class: 'lab' }, race.stages > 1 ? 'Stage winner' : 'Winner'), h('div', { class: 'nm' }, riderLink(w[1])),
+      h('span', { class: 'tm' }, squadLink(w[2]), pid(w[4]) ? [' · ', teamLink(ownerName(w[2], w[4]))] : null), w[3] ? h('span', { class: 'time' }, fmtTime(w[3])) : null));
+  const pod = h('div', { class: 'pod' }, res.slice(0, 3).map((r, k) => h('div', null, h('span', { class: 'p' + (k === 0 ? ' p1' : '') }, k + 1), h('span', null, riderLink(r[1]), h('small', null, tid(r[2]))), h('span', { class: 'num' }, fmtTime(r[3])))));
+  $view.append(h('section', { class: 'card' }, h('div', { class: 'stagesum' }, winner, pod)));
+  const prof = (S.s1.profiles || []).find((p) => p.race === stage.race && p.stage === stage.stage);
+  if (prof) $view.append(h('section', { class: 'card' }, h('h2', null, 'Stage profile'), h('img', { class: 'stageprof', src: prof.img, alt: (stage.name || 'Stage') + ' profile', loading: 'lazy' })));
+  const jer = [['gc', 'Leader', 'j-gc'], ['points', 'Points', 'j-pts'], ['kom', 'Mountains', 'j-kom'], ['young', 'Youth', 'j-young']]
+    .filter(([k]) => race.stages > 1 && stage.cls[k]?.length)
+    .map(([k, label, j]) => { const r = stage.cls[k][0]; return h('div', { class: 'jer' }, h('span', { class: 'jersey ' + j }), h('div', null, h('div', { class: 'k' }, label), h('div', { class: 'v' }, riderLink(r[1])))); });
+  if (jer.length) $view.append(h('section', { class: 'card' }, h('h2', null, 'Jerseys after this stage'), h('div', { class: 'jerseys' }, jer)));
+}
+// limit = compact card: start with that many rows (more load on demand) and leave out the Team column
+function clsTable(stage, key, limit) {
+  const rows = stage.cls[key] || [];
+  const tall = limit ? { page: limit, step: 10 } : { page: 20 };
+  const tblOpts = tall;
+  const tr = (r, cells) => h('tr', { class: r[0] === 1 ? 'p1' : null }, h('td', { class: 'rk' }, r[0]), cells);
+  if (key === 'teams') return table([{ label: '#' }, { label: 'Team' }, { label: 'Manager' }, { label: 'Time', n: 1 }, { label: 'Overall', n: 1 }], rows.map((r) => tr(r, [h('td', { class: 'rider' }, squadLink(r[1])), h('td', null, teamLink(ownerName(r[1], r[4]))), h('td', { class: 'n' }, r[2]), h('td', { class: 'n mute' }, r[3])])), tblOpts);
+  // compact (top-N cards sit two per row): leave out the Team column so the numbers keep their room
+  const teamHead = limit ? [] : [{ label: 'Team', hs: 1 }];
+  const teamCell = (r) => (limit ? [] : [h('td', { class: 'mute' }, squadLink(r[2]))]);
+  if (key === 'points' || key === 'kom') return table([{ label: '#' }, { label: 'Rider' }, ...teamHead, { label: 'Manager' }, { label: 'Today', n: 1 }, { label: 'Total', n: 1 }], rows.map((r) => tr(r, [h('td', { class: 'rider' }, riderLink(r[1])), ...teamCell(r), h('td', null, teamLink(ownerName(r[2], r[5]))), h('td', { class: 'n' }, r[3]), h('td', { class: 'n tot' }, r[4])])), tblOpts);
+  if (key === 'young') return table([{ label: '#' }, { label: 'Rider' }, ...teamHead, { label: 'Manager' }, { label: 'Stage', n: 1, hs: 1 }, { label: 'Overall', n: 1 }], rows.map((r) => tr(r, [h('td', { class: 'rider' }, riderLink(r[1])), ...teamCell(r), h('td', null, teamLink(ownerName(r[2], r[5]))), h('td', { class: 'n mute' }, fmtTime(r[3])), h('td', { class: 'n' }, fmtTime(r[4]))])), tblOpts);
+  return table([{ label: '#' }, { label: 'Rider' }, ...teamHead, { label: 'Manager' }, { label: 'Time', n: 1 }], rows.map((r) => tr(r, [h('td', { class: 'rider' }, riderLink(r[1])), ...teamCell(r), h('td', null, teamLink(ownerName(r[2], r[4]))), h('td', { class: 'n' }, fmtTime(r[3]))])), tblOpts);
+}
+function raceOverview(ri, race, m, st) {
+  const rows = [];
+  for (let s = 1; s <= race.stages; s++) {
+    const stg = m.get(s), w = stg?.cls.stage?.[0], leader = stg?.cls.gc?.[0];
+    const tp = stageTypeOf(s1Key(race, s));
+    rows.push(h('tr', null, h('td', { class: 'n mute' }, s), h('td', null, tp ? ptBadge(tp, { small: true }) : ''), h('td', null, stg ? h('a', { href: '#race-' + ri, onclick: (e) => { e.preventDefault(); st.stage = s; route(); } }, stg.name) : h('span', { class: 'mute' }, 'Not available yet')),
+      h('td', { class: 'rider' }, w ? riderLink(w[1]) : ''), h('td', null, w ? teamLink(ownerName(w[2], w[4])) : ''), h('td', null, leader ? h('span', null, h('span', { class: 'jersey j-gc' }), ' ', riderLink(leader[1])) : '')));
+  }
+  // every stage: the game screenshot when there is one, otherwise the drawing from the stage file
+  const shots = new Map((S.s1.profiles || []).filter((p) => p.race === ri).map((p) => [p.stage, p.img]));
+  const figs = [];
+  for (let s = 1; s <= race.stages; s++) {
+    const tp = stageTypeOf(s1Key(race, s));
+    const pic = shots.get(s) ? h('img', { class: 'stageprof', src: shots.get(s), alt: 'Stage ' + s + ' profile', loading: 'lazy' }) : profileSvg(tp);
+    if (!pic) continue;
+    figs.push(h('figure', { class: tp ? 'pt-' + tp.icon : null }, h('figcaption', null, h('a', { href: '#race-' + ri + '-' + s }, 'Stage ' + s + ' · ' + ((m.get(s) || {}).name || '')), psBadge(tp)), pic));
+  }
+  if (figs.length) $view.append(card('Stage profiles', null, ptLegend(), h('div', { class: 'profgrid' }, figs)));
+  $view.append(card('Stage winners · Division ' + st.div, null, table([{ label: 'Stage', n: 1 }, { label: 'Type' }, { label: 'Route' }, { label: 'Winner' }, { label: 'Manager', hs: 1 }, { label: 'GC leader after', hs: 1 }], rows)));
+  const fin = m.get(race.stages);
+  if (!fin) { $view.append(h('div', { class: 'note' }, 'The final stage in Division ' + st.div + ' is not available yet, so the final classifications are missing.')); return; }
+  $view.append(h('div', { class: 'grid2' }, [['gc', 'Final GC'], ['points', 'Points'], ['kom', 'Mountains'], ['young', 'Youth']].filter(([k]) => fin.cls[k]?.length).map(([k, label]) => {
+    const c = CLS.find((x) => x.key === k);
+    return h('section', { class: 'card' }, h('h2', null, h('span', { class: 'jersey ' + c.j }), ' ', label), clsTable(fin, k, 10));
+  })));
+  fullResults(ri, race, m);
+  const sl = startlist(ri, st.div); if (sl) $view.append(sl);
+}
+// startlist of a raced edition: every team with the riders it fielded (seen in any classification of that race and division)
+function startlist(ri, div) {
+  const race = S.s1.races[ri];
+  const m = IX.byRace.get(ri + '|' + div);
+  if (!m || !m.size) return null;
+  const seen = new Map(); // rider -> Map(team -> count)
+  const mgr = new Map();  // team -> Map(player -> count)
+  for (const st of m.values()) for (const [k, rows] of Object.entries(st.cls)) {
+    if (k === 'teams') continue;
+    for (const r of rows) {
+      if (!S.s1.riders[r[1]]) continue;
+      const tm = seen.get(r[1]) || new Map(); tm.set(r[2], (tm.get(r[2]) || 0) + 1); seen.set(r[1], tm);
+      const p = r[r.length - 1];
+      if (typeof p === 'number') { const pm = mgr.get(r[2]) || new Map(); pm.set(p, (pm.get(p) || 0) + 1); mgr.set(r[2], pm); }
+    }
+  }
+  // final place: one-day result, or final GC for stage races
+  const fin = m.get(race.stages);
+  const finRows = race.stages === 1 ? fin?.cls.stage : fin?.cls.gc;
+  const place = new Map((finRows || []).map((r) => [r[1], r[0]]));
+  const teams = new Map();
+  for (const [rider, tm] of seen) {
+    const ti = [...tm.entries()].sort((a, b) => b[1] - a[1])[0][0];
+    if (!teams.has(ti)) teams.set(ti, []);
+    teams.get(ti).push(rider);
+  }
+  const best = (list) => Math.min(...list.map((r) => place.get(r) || 999));
+  const ordered = [...teams.entries()].filter(([ti]) => tid(ti)).sort((a, b) => best(a[1]) - best(b[1]) || tid(a[0]).localeCompare(tid(b[0])));
+  const cards = ordered.map(([ti, riders]) => {
+    const pm = mgr.get(ti); const p = pm ? [...pm.entries()].sort((a, b) => b[1] - a[1])[0][0] : null;
+    riders.sort((a, b) => (place.get(a) || 999) - (place.get(b) || 999) || rid(a).localeCompare(rid(b)));
+    return h('div', { class: 'sl-team' },
+      h('div', { class: 'sl-head' }, miniJersey(tid(ti)) ? h('img', { class: 'sl-jsy', src: jerseyOf(tid(ti)), alt: '' }) : null,
+        h('div', null, h('a', { href: '#squad-' + ti, class: 'sl-name' }, tid(ti)), h('small', null, ownerName(ti, p) || '—'))),
+      h('ol', { class: 'sl-riders' }, riders.map((r) => h('li', null, h('span', { class: 'sl-rk' + ((place.get(r) || 999) <= 3 ? ' pod' : '') }, place.has(r) ? place.get(r) : '–'), riderLink(r)))));
+  });
+  const n = ordered.reduce((s, [, l]) => s + l.length, 0);
+  return h('section', { class: 'card' }, h('div', { class: 'card-h' }, h('h2', null, 'Startlist · Division ' + div), h('span', { class: 'mute' }, ordered.length + ' teams · ' + n + ' riders')),
+    h('p', { class: 'src' }, 'Riders seen in this race\'s results, grouped by team. The number is the ' + (race.stages === 1 ? 'finishing place' : 'final GC place') + ' (– when not in the posted classification).'),
+    h('div', { class: 'sl-grid' }, cards));
+}
+// <details> whose content is built only the first time it is opened (keeps big races light)
+function lazyDetails(label, build, extraClass) {
+  const body = h('div', { class: 'fr-body' });
+  const d = h('details', { class: 'fr' + (extraClass ? ' ' + extraClass : '') }, h('summary', null, h('span', { class: 'fr-chev', 'aria-hidden': 'true' }), label), body);
+  d.addEventListener('toggle', () => { if (d.open && !body.childNodes.length) body.append(build()); });
+  return d;
+}
+// every stage of the race as an expandable block with all its classifications
+function fullResults(ri, race, m) {
+  const list = h('div', { class: 'fr-list' });
+  for (let s = 1; s <= race.stages; s++) {
+    const stg = m.get(s);
+    if (!stg) { list.append(h('div', { class: 'fr miss' }, h('div', { class: 'fr-sum' }, h('b', null, 'Stage ' + s), h('span', { class: 'mute' }, 'Not available yet')))); continue; }
+    const w = stg.cls.stage?.[0];
+    const label = h('span', { class: 'fr-sum' }, h('b', null, 'Stage ' + s), h('span', { class: 'fr-route' }, stg.name || ''), w ? h('span', { class: 'fr-win' }, flag(natOf(w[1])), rid(w[1]), w[3] && okWinTime(w[3]) ? h('small', null, fmtTime(w[3])) : null) : null);
+    list.append(lazyDetails(label, () => {
+      const avail = CLS.filter((c) => stg.cls[c.key]?.length);
+      let cur = avail[0]?.key || 'stage';
+      const box = h('div');
+      const tabs = h('div', { class: 'tabs', role: 'tablist' });
+      const draw = () => {
+        tabs.replaceChildren(...avail.map((c) => h('button', { type: 'button', role: 'tab', 'aria-selected': String(cur === c.key), onclick: () => { cur = c.key; draw(); } }, h('span', { class: 'dot ' + c.j }), c.label)));
+        box.replaceChildren(clsTable(stg, cur));
+      };
+      draw();
+      return h('div', null, tabs, box, stg.shot ? h('p', { class: 'src' }, 'Read from a Discord screenshot (top 20 at most).') : null);
+    }));
+  }
+  $view.append(h('section', { class: 'card' }, h('h2', null, 'Full results · every stage'), h('p', { class: 'sub' }, 'Open a stage to see its complete result and the classifications after it.'), list));
+}
+
+// ---------- riders ----------
+// Riders has two modes: Season (results and ranking points) and Stats (PCM attributes, sortable, game colours)
+function viewRiders() {
+  UI.rmode = UI.rmode || 'season';
+  const stats = UI.rmode === 'stats';
+  $view.append(h('div', { class: 'rhead-bar' }, h('div', null, h('div', { class: 'eyebrow' }, stats ? 'PCM attributes · Season 2 database' : 'Season 1 · PCM 26'), h('h1', null, 'Riders'),
+    h('p', { class: 'sub' }, stats ? 'Every rider with his PCM attributes. Click a column to sort by it; filter by rider type.' : 'Every rider with a result, sorted by ranking points. Search by rider, team or manager.')),
+    h('div', { class: 'seg', role: 'group', 'aria-label': 'Riders view' }, [['season', 'Season'], ['stats', 'Stats']].map(([k, lab]) => h('button', { type: 'button', 'aria-pressed': String(UI.rmode === k), onclick: () => { location.hash = k === 'stats' ? '#riderstats' : '#riders'; } }, lab)))));
+  return stats ? ridersStats() : ridersSeason();
+}
+function ridersStats() {
+  const DB = S.riderdb.riders;
+  const ORDER = ['FL', 'MO', 'MM', 'HIL', 'TT', 'PRL', 'COB', 'SP', 'ACC', 'DH', 'END', 'RES', 'REC', 'ATT'];
+  const q = h('input', { type: 'search', placeholder: 'Search a rider, team or manager', value: UI.q, 'aria-label': 'Search riders' });
+  const all = [...IX.rider.entries()].filter(([i]) => DB[rid(i)]).map(([i, o]) => {
+    const d = DB[rid(i)];
+    return { i, o, d, type: d.type || riderType(d.stats), age: d.born ? Math.floor((new Date(TODAY) - new Date(d.born)) / 31557600000) : null, text: (rid(i) + ' ' + [...o.teams].map(tid).join(' ') + ' ' + [...o.mgrs].map(teamOf).join(' ')).toLowerCase() };
+  });
+  UI.st = UI.st || { key: 'avg', dir: -1, type: 'all' };
+  const st = UI.st;
+  const TYPES = ['all', 'GC rider', 'Climber', 'Puncheur', 'Sprinter', 'Time trialist', 'Classics rider', 'Rouleur', 'Breakaway rider'];
+  const VAL = { name: (r) => rid(r.i), age: (r) => r.age ?? 99, avg: (r) => r.d.avg, ...Object.fromEntries(ORDER.map((k) => [k, (r) => r.d.stats[k]])) };
+  const typeBar = h('div', { class: 'chips', role: 'group', 'aria-label': 'Rider type' });
+  const box = h('div');
+  const cell = (v, extra) => h('td', { class: 'n sc' + (extra ? ' ' + extra : '') }, h('span', { class: 'pcm-v ' + attrTier(v) }, v));
+  const draw = () => {
+    typeBar.replaceChildren(...TYPES.map((k) => h('button', { class: 'chip', type: 'button', 'aria-pressed': String(st.type === k), onclick: () => { st.type = k; draw(); } }, k === 'all' ? 'All types' : k + 's')));
+    const t = UI.q.trim().toLowerCase();
+    let list = all.filter((r) => (!t || r.text.includes(t)) && (st.type === 'all' || r.type === st.type));
+    const f = VAL[st.key];
+    list.sort((a, b) => { const x = f(a), y = f(b); const c = typeof x === 'string' ? x.localeCompare(y) : x - y; return c * st.dir || b.d.avg - a.d.avg; });
+    const col = (label, key, extra = {}) => ({ label, ...extra, sort: { on: st.key === key, dir: st.dir, click: () => { if (st.key === key) st.dir = -st.dir; else { st.key = key; st.dir = key === 'name' || key === 'age' ? 1 : -1; } draw(); } } });
+    box.replaceChildren(h('div', { class: 'stt' }, table([{ label: '#' }, col('Rider', 'name'), { label: 'Type', hs: 1 }, col('Age', 'age', { n: 1, hs: 1 }), col('AVG', 'avg', { n: 1 }), ...ORDER.map((k) => col(k, k, { n: 1 }))],
+      list.slice(0, 300).map((r, k) => h('tr', null, h('td', { class: 'rk' }, '#' + (k + 1)), h('td', { class: 'rider' }, riderLink(r.i), h('small', { class: 'stt-tm' }, [...r.o.teams].filter((ti) => tid(ti)).map(tid).join(', '))),
+        h('td', { class: 'mute' }, r.type), h('td', { class: 'n mute' }, r.age ?? ''), cell(r.d.avg, 'avg'), ...ORDER.map((k) => cell(r.d.stats[k], st.key === k ? 'on' : '')))), { tall: true })),
+      list.length > 300 ? h('p', { class: 'mute' }, 'Showing 300 of ' + list.length + '. Search or filter to narrow down.') : list.length ? '' : h('p', { class: 'empty' }, 'No riders match.'));
+  };
+  q.addEventListener('input', () => { UI.q = q.value; draw(); });
+  $view.append(h('section', { class: 'card' }, h('div', { class: 'tools' }, q), h('div', { class: 'rs-bar' }, h('span', { class: 'mute' }, 'Rider type'), typeBar),
+    h('p', { class: 'src' }, 'FL flat · MO mountain · MM medium mountain · HIL hills · TT time trial · PRL prologue · COB cobbles · SP sprint · ACC acceleration · DH downhill · END stamina · RES resistance · REC recovery · ATT breakaway. Type: what the rider races for in real life for the well-known names, the WorldDB type where it has one, otherwise his strongest attributes.'), box));
+  draw();
+}
+function ridersSeason() {
+  const q = h('input', { type: 'search', id: 'rider-q', placeholder: 'Search a rider, team or manager', value: UI.q, 'aria-label': 'Search riders' });
+  const box = h('div');
+  const all = [...IX.rider.entries()].filter(([i]) => S.s1.riders[i]).map(([i, o]) => ({ i, o, text: (rid(i) + ' ' + [...o.teams].map(tid).join(' ') + ' ' + [...o.mgrs].map(teamOf).join(' ')).toLowerCase() }));
+  // ranking by rider class (PCS-style speciality) and sortable columns
+  const CATS = [['all', 'All points'], ['gc', 'GC'], ['stage', 'Stages'], ['oneday', 'One-day'], ['points', 'Points'], ['kom', 'Mountains']];
+  UI.rs = UI.rs || { cat: 'all', key: 'pts', dir: -1 };
+  const rs = UI.rs;
+  const ptsOf = (o) => (rs.cat === 'all' ? o.pts : o.cat[rs.cat] || 0);
+  const VAL = { name: (r) => rid(r.i), pts: (r) => ptsOf(r.o), wins: (r) => r.o.wins, gc: (r) => r.o.gc, pod: (r) => r.o.pod, days: (r) => r.o.starts };
+  const catBar = h('div', { class: 'chips', role: 'group', 'aria-label': 'Rider class' });
+  const draw = () => {
+    catBar.replaceChildren(...CATS.map(([k, lab]) => h('button', { class: 'chip', type: 'button', 'aria-pressed': String(rs.cat === k), onclick: () => { rs.cat = k; rs.key = 'pts'; rs.dir = -1; draw(); } }, lab)));
+    const t = UI.q.trim().toLowerCase();
+    let list = t ? all.filter((r) => r.text.includes(t)) : all.slice();
+    if (rs.cat !== 'all') list = list.filter((r) => ptsOf(r.o) > 0);
+    const f = VAL[rs.key];
+    list.sort((a, b) => { const x = f(a), y = f(b); const c = typeof x === 'string' ? x.localeCompare(y) : x - y; return c * rs.dir || ptsOf(b.o) - ptsOf(a.o); });
+    const col = (label, key, extra = {}) => ({ label, ...extra, sort: { on: rs.key === key, dir: rs.dir, click: () => { if (rs.key === key) rs.dir = -rs.dir; else { rs.key = key; rs.dir = key === 'name' ? 1 : -1; } draw(); } } });
+    const ptsLabel = rs.cat === 'all' ? 'Points' : CATS.find(([k]) => k === rs.cat)[1] + ' pts';
+    box.replaceChildren(table([{ label: '#' }, col('Rider', 'name'), { label: 'Team', hs: 1 }, { label: 'Manager' }, col(ptsLabel, 'pts', { n: 1 }), col('Wins', 'wins', { n: 1 }), col('GC', 'gc', { n: 1, hs: 1 }), col('Podiums', 'pod', { n: 1, hs: 1 }), col('Days', 'days', { n: 1, hs: 1 })],
+      list.slice(0, 300).map((r, k) => h('tr', null, h('td', { class: 'rk' }, k + 1), h('td', { class: 'rider' }, riderLink(r.i)), h('td', { class: 'mute' }, [...r.o.teams].filter((ti) => tid(ti)).map((ti, j) => [j ? ', ' : '', squadLink(ti)])), h('td', null, [...r.o.mgrs].map((m, j) => [j ? ', ' : '', teamLink(m)])), h('td', { class: 'n tot' }, Math.round(ptsOf(r.o)) || ''), h('td', { class: 'n' }, r.o.wins || ''), h('td', { class: 'n' }, r.o.gc || ''), h('td', { class: 'n' }, r.o.pod || ''), h('td', { class: 'n mute' }, r.o.starts))), { tall: true }),
+      list.length > 300 ? h('p', { class: 'mute' }, 'Showing 300 of ' + list.length + '. Search to narrow down.') : '');
+  };
+  q.addEventListener('input', () => { UI.q = q.value; draw(); });
+  $view.append(h('section', { class: 'card' }, h('div', { class: 'tools' }, q), h('div', { class: 'rs-bar' }, h('span', { class: 'mute' }, 'Rank by class'), catBar), h('p', { class: 'src' }, 'Tip: click a column title to sort by it; click again to reverse.'), box));
+  draw();
+}
+function openRace(st, kind) { const race = S.s1.races[st.race]; UI.race[st.race] = { div: st.div, stage: kind === 'stage' ? (race.stages > 1 ? st.stage : 1) : 0, cls: 'stage' }; }
+function viewRider(i) {
+  const o = IX.rider.get(i);
+  if (!o) return viewRiders();
+  const rank = [...IX.rider.entries()].sort((a, b) => b[1].pts - a[1].pts).findIndex(([k]) => k === i) + 1;
+  $view.append(h('div', { class: 'teamhead' }, avatar(i, [...o.teams][0], 104), h('div', null, h('div', { class: 'eyebrow' }, 'Rider · Season 1'), h('h1', null, flag(natOf(i)), rid(i)),
+    h('div', { class: 'facts' }, natOf(i) ? h('span', null, 'Nationality ', h('b', null, NATNAME[natOf(i)] || '')) : null, h('span', null, 'Team ', [...o.teams].map((t, j) => [j ? ', ' : '', h('b', null, squadLink(t))])), h('span', null, 'Manager ', [...o.mgrs].map((m, j) => [j ? ', ' : '', h('b', null, teamLink(m))])))), h('a', { class: 'btn ghost', href: '#riders' }, 'All riders')));
+  $view.append(h('div', { class: 'kpis' }, kpi('Ranking', '#' + rank, Math.round(o.pts) + ' points'), kpi('Wins', o.wins, 'stage and one-day'), kpi('GC wins', o.gc, 'stage races'), kpi('Podiums', o.pod, 'top 3'), kpi('Race days', o.starts, 'with results')));
+  const label = { stage: '', gc: 'Final GC', points: 'Points classification', kom: 'Mountains classification' };
+  const rows = o.list.slice().sort((a, b) => a.st.race - b.st.race || a.st.stage - b.st.stage || (a.kind !== 'stage') - (b.kind !== 'stage')).map((e) => {
+    const race = S.s1.races[e.st.race];
+    return h('tr', { class: e.rk === 1 ? 'p1' : null }, h('td', { class: 'mute num' }, fshort((IX.dates.get(race.round) || [''])[0] || '2026-01-01')), h('td', null, h('a', { href: '#race-' + e.st.race, onclick: () => openRace(e.st, e.kind) }, race.name)),
+      h('td', { class: 'mute' }, e.kind === 'stage' ? (race.stages > 1 ? 'Stage ' + e.st.stage : '') : label[e.kind]), h('td', null, h('span', { class: 'flag' + (e.st.div === 1 ? ' d1' : '') }, 'D' + e.st.div)), h('td', { class: 'rk' }, e.rk === 999 ? '—' : e.rk), h('td', { class: 'n' }, e.p ? Math.round(e.p) : ''), h('td', { class: 'n mute' }, e.val));
+  });
+  $view.append(card('Season results', null, table([{ label: 'Date' }, { label: 'Race' }, { label: 'Stage' }, { label: 'Div' }, { label: 'Pos', n: 1 }, { label: 'Pts', n: 1 }, { label: 'Time', n: 1 }], rows, { tall: true })));
+}
+
+// ---------- rider profile, PCS mechanics: top results, points by speciality, results grouped per race ----------
+const ORD = (n) => n + (n % 10 === 1 && n % 100 !== 11 ? 'st' : n % 10 === 2 && n % 100 !== 12 ? 'nd' : n % 10 === 3 && n % 100 !== 13 ? 'rd' : 'th');
+// PCM attributes from the league's rider database (the WorldDB export the IPL plays with)
+const ATTR = {
+  groups: [['Climbing', ['MO', 'MM', 'HIL', 'DH']], ['Flat & sprint', ['FL', 'SP', 'ACC', 'COB']], ['Time trial', ['TT', 'PRL']], ['Stamina', ['END', 'RES', 'REC', 'ATT']]],
+  name: { FL: 'Flat', MO: 'Mountain', MM: 'Med. mountain', HIL: 'Hills', TT: 'Time trial', PRL: 'Prologue', COB: 'Cobbles', SP: 'Sprint', ACC: 'Acceleration', DH: 'Downhill', END: 'Stamina', RES: 'Resistance', REC: 'Recovery', ATT: 'Breakaway' },
+};
+// rider type from the strongest attributes, the way PCM players read a rider card
+function riderType(s) {
+  const c = { 'Climber': (s.MO * 2 + s.MM) / 3, 'Puncheur': (s.HIL * 2 + s.ACC) / 3, 'Sprinter': (s.SP * 2 + s.ACC) / 3, 'Time trialist': (s.TT * 2 + s.PRL) / 3, 'Classics rider': (s.COB * 2 + s.FL + s.HIL) / 4, 'Rouleur': (s.FL * 2 + s.TT) / 3, 'Breakaway rider': (s.ATT * 2 + s.RES) / 3 };
+  return Object.entries(c).sort((a, b) => b[1] - a[1])[0][0];
+}
+// PCM 26 colour scale (read from the game's rider tables and race HUD): under 70 no colour,
+// 70-73 green, 74-77 yellow, 78-81 orange, 82 and up red
+const attrTier = (v) => (v >= 82 ? 't4' : v >= 78 ? 't3' : v >= 74 ? 't2' : v >= 70 ? 't1' : 't0');
+function pcmCard(name) {
+  const d = S.riderdb && S.riderdb.riders[name];
+  if (!d) return null;
+  const s = d.stats;
+  const age = d.born ? Math.floor((new Date(TODAY) - new Date(d.born)) / 31557600000) : null;
+  const facts = [['Overall', d.avg + (d.prev_avg && d.prev_avg !== d.avg ? '' : '')], ['Type', d.type || riderType(s)], age ? ['Age', age] : null, d.h ? ['Height', (d.h / 100).toFixed(2) + ' m'] : null, d.w ? ['Weight', d.w + ' kg'] : null].filter(Boolean);
+  const diff = (k) => (d.prev ? s[k] - d.prev[k] : 0);
+  return h('section', { class: 'card pcm' },
+    h('div', { class: 'pcm-h' }, h('div', null, h('div', { class: 'eyebrow' }, 'PCM attributes · Season ' + d.season + ' database'), h('h2', null, 'Rider card')),
+      h('div', { class: 'pcm-f' }, facts.map(([k, v]) => h('div', { class: k === 'Overall' ? 'ov ' + attrTier(d.avg) : null }, h('b', null, v, k === 'Overall' && d.prev_avg && d.prev_avg !== d.avg ? h('small', { class: d.avg > d.prev_avg ? 'up' : 'down' }, (d.avg > d.prev_avg ? ' ▲' : ' ▼') + Math.abs(d.avg - d.prev_avg)) : null), h('span', null, k))))),
+    h('div', { class: 'pcm-g' }, ATTR.groups.map(([g, keys]) => h('div', { class: 'pcm-col' }, h('div', { class: 'pcm-gl' }, g),
+      keys.map((k) => h('div', { class: 'pcm-r', title: ATTR.name[k] + ': ' + s[k] + (diff(k) ? ' (' + (diff(k) > 0 ? '+' : '') + diff(k) + ' since Season 1)' : '') },
+        h('span', { class: 'pcm-k' }, h('b', null, k), h('span', null, ATTR.name[k])),
+        h('span', { class: 'pcm-bar' }, h('i', { class: attrTier(s[k]), style: `width:${Math.max(4, Math.min(100, ((s[k] - 50) / 35) * 100)).toFixed(0)}%` })),
+        h('span', { class: 'pcm-v ' + attrTier(s[k]) }, s[k], diff(k) ? h('small', { class: diff(k) > 0 ? 'up' : 'down' }, (diff(k) > 0 ? '+' : '') + diff(k)) : null)))))),
+    h('p', { class: 'src' }, 'From the IPL rider database (PCM WorldDB). Bars run from 50 to 85; colours as in PCM: green 70–73, yellow 74–77, orange 78–81, red 82 and up.' + (d.prev ? ' Small numbers show the change since the Season 1 database.' : '')));
+}
+function viewRiderPcs(i) {
+  const o = IX.rider.get(i);
+  if (!o) return viewRiders();
+  const ranked = [...IX.rider.entries()].sort((a, b) => b[1].pts - a[1].pts);
+  const rank = ranked.findIndex(([k]) => k === i) + 1;
+  const races = S.s1.races;
+  const teamsOk = [...o.teams].filter((t) => tid(t));
+  // header: portrait, name, then labelled tiles for nationality, team and manager
+  const nat = natOf(i);
+  const tile = (label, ...kids) => h('div', { class: 'rinfo-t' }, h('span', { class: 'rinfo-l' }, label), h('div', { class: 'rinfo-v' }, kids));
+  const mgrs = [...o.mgrs].filter((m) => teamOf(m));
+  $view.append(h('div', { class: 'rhead' },
+    h('div', { class: 'rhead-ph' }, avatar(i, teamsOk[0], 120)),
+    h('div', { class: 'rhead-main' }, h('div', { class: 'eyebrow' }, 'Rider · Season 1'), h('h1', null, rid(i)),
+      h('div', { class: 'rinfo' },
+        tile('Nationality', nat && FLAGS[nat] ? h('span', { class: 'rinfo-flag' }, flag(nat)) : null, h('span', null, NATNAME[nat] || '—')),
+        tile(teamsOk.length > 1 ? 'Teams' : 'Team', teamsOk.length ? teamsOk.map((t) => h('a', { class: 'rinfo-team', href: '#squad-' + t }, jerseyOf(tid(t)) ? h('img', { src: jerseyOf(tid(t)), alt: '' }) : null, h('span', null, tid(t)))) : h('span', null, '—')),
+        tile(mgrs.length > 1 ? 'Managers' : 'Manager', mgrs.length ? mgrs.map((m, j) => [j ? h('span', { class: 'mute' }, ' · ') : null, teamLink(m)]) : h('span', null, '—')))),
+    h('a', { class: 'btn ghost', href: '#riders' }, 'All riders')));
+
+  // key statistics
+  const raceDays = o.list.filter((e) => e.kind === 'stage');
+  // races started by type, in one box
+  const startedOf = (kind) => new Set(raceDays.filter((e) => raceKind(races[e.st.race].stages, races[e.st.race].name) === kind).map((e) => e.st.race + '|' + e.st.div)).size;
+  const raceBox = h('div', { class: 'kpi kpi-races' }, h('div', { class: 'k' }, 'Races started'),
+    h('div', { class: 'kr' }, [['gt', 'Grand Tours'], ['tour', 'Stage races'], ['monument', 'Monuments'], ['oneday', 'One-day']].map(([k, lab]) => h('div', { class: 'kr-i k-' + k }, h('b', null, startedOf(k)), h('span', null, h('i'), lab)))));
+  // podiums: stage results in stage races, one-day races and final GC
+  const podStage = o.list.filter((e) => e.kind === 'stage' && e.rk <= 3 && races[e.st.race].stages > 1).length;
+  const podOne = o.list.filter((e) => e.kind === 'stage' && e.rk <= 3 && races[e.st.race].stages === 1).length;
+  const podGc = o.list.filter((e) => e.kind === 'gc' && e.rk <= 3).length;
+  const podBox = h('div', { class: 'kpi' }, h('div', { class: 'k' }, 'Podiums'), h('div', { class: 'v' }, podStage + podOne + podGc),
+    h('div', { class: 's' }, [podGc + ' GC', podStage + ' stage' + (podStage === 1 ? '' : 's'), podOne + ' one-day'].join(' · ')));
+  $view.append(h('div', { class: 'kpis' }, kpi('IPL ranking', '#' + rank, Math.round(o.pts) + ' points'), kpi('Wins', o.wins + o.gc, o.gc ? o.gc + ' of them GC' : 'stages and one-day races'), podBox, raceBox, kpi('Race days', o.starts, 'with a result')));
+  const attr = pcmCard(rid(i));
+  if (attr) $view.append(attr);
+
+  // top results, grouped like "2x stage Tour de France"
+  const label = (e) => { const r = races[e.st.race]; return e.kind === 'stage' ? (r.stages > 1 ? 'stage ' + r.name : r.name) : (e.kind === 'gc' ? 'GC ' : e.kind === 'points' ? 'Points ' : 'Mountains ') + r.name; };
+  const groups = new Map();
+  for (const e of o.list) {
+    const ok = (e.kind === 'stage' && e.rk <= 3) || (e.kind === 'gc' && e.rk <= 3) || ((e.kind === 'points' || e.kind === 'kom') && e.rk === 1);
+    if (!ok) continue;
+    const k = e.rk + '|' + label(e);
+    if (!groups.has(k)) groups.set(k, { rk: e.rk, label: label(e), kind: e.kind, divs: [], n: 0 });
+    const g = groups.get(k); g.n++; g.divs.push('D' + e.st.div);
+  }
+  const prio = { gc: 0, stage: 1, points: 2, kom: 3 };
+  const top = [...groups.values()].sort((a, b) => a.rk - b.rk || prio[a.kind] - prio[b.kind] || b.n - a.n).slice(0, 10);
+  const topBox = top.length ? h('div', { class: 'topres' }, top.map((g) => h('div', null, h('span', { class: 'medal m' + g.rk }, g.rk === 1 ? 'Win' : ORD(g.rk)), h('span', null, g.n > 1 ? h('b', null, g.n + 'x ') : null, g.label, h('small', null, ' (' + [...new Set(g.divs)].join(', ') + ')'))))) : h('p', { class: 'empty' }, 'No podiums yet.');
+
+  // points by speciality
+  const cats = [['gc', 'GC', 'j-gc'], ['stage', 'Stages', 'j-stage'], ['oneday', 'One-day races', 'j-team'], ['points', 'Points jersey', 'j-pts'], ['kom', 'Mountains', 'j-kom']];
+  const maxc = Math.max(1, ...cats.map(([k]) => o.cat[k]));
+  const spec = h('div', { class: 'spec' }, cats.map(([k, lab, j]) => h('div', null, h('span', { class: 'jersey ' + j }), h('span', { class: 'lab' }, lab), h('span', { class: 'barw' }, h('span', { class: 'bar2', style: 'width:' + (100 * o.cat[k] / maxc).toFixed(1) + '%' })), h('b', { class: 'num' }, Math.round(o.cat[k])))),
+    h('p', { class: 'src' }, 'IPL points scale: classic, monument (starred races), tour and Grand Tour scales for each finish, plus final GC, points and mountains. Division 2 counts 95%, Division 3 90%.'));
+  const byDiv = h('div', { class: 'spec' }, [1, 2, 3].filter((d) => o.ptsDiv[d] > 0).map((d) => h('div', null, h('span', { class: 'flag' + (d === 1 ? ' d1' : '') }, 'D' + d), h('span', { class: 'lab' }, 'Division ' + d), h('span', { class: 'barw' }, h('span', { class: 'bar2', style: 'width:' + (100 * o.ptsDiv[d] / Math.max(1, o.pts)).toFixed(1) + '%' })), h('b', { class: 'num' }, Math.round(o.ptsDiv[d])))));
+  $view.append(h('div', { class: 'grid2' }, card('Top results', null, topBox), card('Points by speciality', null, spec, h('h3', null, 'Points by division'), byDiv)));
+
+  // results grouped per race, newest first, stage races with classifications on top
+  const byRace = new Map();
+  for (const e of o.list) { const k = e.st.race + '|' + e.st.div; if (!byRace.has(k)) byRace.set(k, []); byRace.get(k).push(e); }
+  // one-day races are single lines; stage races are blocks (header + final classifications + their stages, indented)
+  const keys = [...byRace.keys()].sort((a, b) => { const [ra, da] = a.split('|').map(Number), [rb, db] = b.split('|').map(Number); return rb - ra || da - db; });
+  const rkEl = (rk) => h('span', { class: 'rr-rk' + (rk === 1 ? ' win' : rk === 2 ? ' silver' : rk === 3 ? ' bronze' : '') }, rk === 999 ? 'DNF' : rk);
+  const ptsEl = (p) => h('span', { class: 'rr-pts' + (p ? '' : ' mute') }, p ? Math.round(p) + ' pts' : '—');
+  const divEl = (div) => h('span', { class: 'flag' + (div === 1 ? ' d1' : '') }, 'D' + div);
+  const blocks = [];
+  for (const k of keys) {
+    const [ri, div] = k.split('|').map(Number); const race = races[ri]; const list = byRace.get(k);
+    const kind = raceKind(race.stages, race.name);
+    const dates = IX.dates.get(race.round) || [];
+    const dstr = dates.length > 1 ? fshort(dates[0]) + ' – ' + fshort(dates[dates.length - 1]) : dates.length ? fshort(dates[0]) : '';
+    const sum = list.reduce((s, e) => s + (e.p || 0), 0);
+    const link = h('a', { href: '#race-' + ri, onclick: () => { UI.race[ri] = { div, stage: race.stages > 1 ? 0 : 1, cls: 'stage' }; } }, race.name);
+    if (race.stages === 1) {
+      const e = list[0];
+      blocks.push(h('div', { class: 'rr k-' + kind }, h('div', { class: 'rr-line' }, rkEl(e.rk), h('span', { class: 'rr-name' }, link, h('small', null, KIND_LABEL[kind] + ' · ' + dstr)), divEl(div), ptsEl(e.p))));
+      continue;
+    }
+    const inner = [];
+    for (const [kd, lab, j] of [['gc', 'General classification', 'j-gc'], ['points', 'Points classification', 'j-pts'], ['kom', 'Mountains classification', 'j-kom']]) {
+      const e = list.find((x) => x.kind === kd);
+      if (e) inner.push(h('div', { class: 'rr-line cls' }, rkEl(e.rk), h('span', { class: 'rr-name' }, h('span', { class: 'jersey ' + j }), ' ', lab), ptsEl(e.p)));
+    }
+    for (const e of list.filter((x) => x.kind === 'stage').sort((a, b) => b.st.stage - a.st.stage)) {
+      inner.push(h('div', { class: 'rr-line stg' }, rkEl(e.rk), h('span', { class: 'rr-name' }, h('span', { class: 'rr-st' }, 'Stage ' + e.st.stage),
+        h('a', { href: '#race-' + ri, onclick: () => { UI.race[ri] = { div, stage: e.st.stage, cls: 'stage' }; } }, e.st.name || 'Stage ' + e.st.stage)), ptsEl(e.p)));
+    }
+    blocks.push(h('div', { class: 'rr k-' + kind },
+      h('div', { class: 'rr-head' }, h('span', { class: 'rr-name' }, link, h('small', null, KIND_LABEL[kind] + ' · ' + race.stages + ' stages · ' + dstr)), divEl(div), h('span', { class: 'rr-pts tot' }, Math.round(sum) + ' pts')),
+      h('div', { class: 'rr-in' }, inner)));
+  }
+  const totalDays = o.starts;
+  const legend = h('div', { class: 'rr-legend' }, h('span', { class: 'k-oneday' }, h('i'), 'One-day race'), h('span', { class: 'k-monument' }, h('i'), 'Monument'), h('span', { class: 'k-tour' }, h('i'), 'Stage race'), h('span', { class: 'k-gt' }, h('i'), 'Grand Tour'));
+  $view.append(card('Season 1 results', null, legend, h('div', { class: 'rr-list' }, blocks),
+    h('p', { class: 'src' }, totalDays + ' race days · ' + Math.round(o.pts) + ' IPL points · ranked #' + rank + ' of ' + ranked.length)));
+}
+
+// ---------- cycling teams ----------
+function viewSquads() {
+  $view.append(h('div', null, h('div', { class: 'eyebrow' }, 'Season 1 · PCM 26'), h('h1', null, 'Teams'), h('p', { class: 'sub' }, 'Every cycling team that raced in the league, with the managers who ran it and its wins.')));
+  const list = [...IX.squad.entries()].sort((a, b) => b[1].wins - a[1].wins || b[1].pod - a[1].pod);
+  const grid = h('div', { class: 'squads' }, list.map(([ti, q]) => h('a', { class: 'squadcard', href: '#squad-' + ti }, crest(ti, 52),
+    h('div', null, h('b', null, tid(ti)), h('span', null, [...q.mgrs].map(teamOf).filter((v, k, a) => a.indexOf(v) === k).join(', ') || '—'), h('span', { class: 'num' }, q.wins + ' wins · ' + q.riders.size + ' riders')))));
+  $view.append(h('section', { class: 'card' }, grid));
+}
+function viewSquad(ti) {
+  const q = IX.squad.get(ti);
+  if (!q) return viewSquads();
+  const mgrs = [...q.mgrs];
+  $view.append(h('div', { class: 'teamhead' }, crest(ti, 92), h('div', null, h('div', { class: 'eyebrow' }, 'Team · Season 1'), h('h1', null, tid(ti)),
+    h('div', { class: 'facts' }, h('span', null, 'Manager ', mgrs.map((m, j) => [j ? ', ' : '', h('b', null, teamLink(m))])), q.subs ? h('span', null, 'Replacements ', h('b', null, [...q.subs].join(', '))) : null, h('span', null, 'Divisions ', h('b', null, [...q.divs].sort().map((d) => 'D' + d).join(', '))))),
+    h('a', { class: 'btn ghost', href: '#squads' }, 'All teams')));
+  $view.append(h('div', { class: 'kpis' }, kpi('Wins', q.wins, 'stages and one-day races'), kpi('Podiums', q.pod, 'top 3'), kpi('Riders', q.riders.size, 'with results'), kpi('Race days', q.days, 'rider days')));
+  const riders = [...q.riders.entries()].sort((a, b) => b[1].wins - a[1].wins || b[1].pod - a[1].pod || b[1].days - a[1].days);
+  const roster = h('div', { class: 'roster' }, riders.map(([r, x]) => h('a', { class: 'rostercard', href: '#rider-' + r }, avatar(r, ti, 44), h('div', null, h('b', null, flag(natOf(r)), rid(r)), h('span', null, (x.wins ? x.wins + ' wins · ' : '') + x.days + ' days')))));
+  const wins = q.list.slice().sort((a, b) => a.st.race - b.st.race || a.st.stage - b.st.stage).map((e) => { const race = S.s1.races[e.st.race]; return h('tr', null, h('td', { class: 'mute num' }, fshort((IX.dates.get(race.round) || ['2026-01-01'])[0])), h('td', null, h('a', { href: '#race-' + e.st.race, onclick: () => openRace(e.st, 'stage') }, race.name)), h('td', { class: 'mute' }, race.stages > 1 ? 'Stage ' + e.st.stage : ''), h('td', null, h('span', { class: 'flag' + (e.st.div === 1 ? ' d1' : '') }, 'D' + e.st.div)), h('td', { class: 'rider' }, riderLink(e.rider))); });
+  $view.append(h('div', { class: 'grid2' }, card('Roster', null, roster), card('Victories', null, wins.length ? table([{ label: 'Date' }, { label: 'Race' }, { label: 'Stage' }, { label: 'Div' }, { label: 'Rider' }], wins, { tall: true }) : h('p', { class: 'empty' }, 'No wins yet.'))));
+}
+
+// ---------- teams ----------
+function viewTeams() {
+  $view.append(h('div', null, h('div', { class: 'eyebrow' }, 'Season 1 · PCM 26'), h('h1', null, 'Managers'), h('p', { class: 'sub' }, 'Every manager in the league and the in-game names they raced under, with wins and ranking points from the results.')));
+  const L = leagueRounds(); const fin = new Map(L.out.get(L.orders[L.orders.length - 1]).map((r) => [r.p, r]));
+  const list = [...IX.team.values()].sort((a, b) => (fin.get(a.name)?.rank || 99) - (fin.get(b.name)?.rank || 99) || b.pts - a.pts);
+  const lead = Math.max(...[...fin.values()].map((r) => r.total));
+  const ptsBox = (r) => ptsBlock(r ? r.total : null, lead);
+  const rkCell = (rk) => h('td', { class: 'rk' }, rankChip(rk));
+  $view.append(h('section', { class: 'card mgrs' }, table([{ label: '#', n: 1 }, { label: 'Manager' }, { label: 'Team', hs: 1 }, { label: 'In-game names', hs: 1 }, { label: 'League pts', n: 1 }, { label: 'Wins', n: 1 }, { label: 'GC', n: 1, hs: 1 }, { label: 'Podiums', n: 1, hs: 1 }, { label: 'Riders', n: 1, hs: 1 }],
+    list.map((t) => h('tr', null, rkCell(fin.get(t.name)?.rank), h('td', { class: 'rider' }, h('a', { href: '#team-' + IX.teamIds.get(t.name) }, t.name)), h('td', { class: 'mute' }, h('div', { class: 'sqlist' }, [...t.squads].filter((q) => tid(q)).map((q) => squadLink(q)))), h('td', { class: 'mute' }, [...t.aliases].join(', '), t.subs.size ? h('small', null, ' · replaced by ' + [...t.subs].join(', ')) : null), h('td', { class: 'n' }, ptsBox(fin.get(t.name))), h('td', { class: 'n' }, t.wins || ''), h('td', { class: 'n' }, t.gc || ''), h('td', { class: 'n' }, t.pod || ''), h('td', { class: 'n mute' }, t.riders.size))), { page: 60 })));
+}
+function viewTeam(id) {
+  const name = [...IX.teamIds.entries()].find(([, v]) => v === id)?.[0];
+  const t = name && IX.team.get(name);
+  if (!t) return viewTeams();
+  const L = leagueRounds(); const fin = L.out.get(L.orders[L.orders.length - 1]).find((r) => r.p === name);
+  $view.append(h('div', { class: 'racehead' }, h('div', null, h('div', { class: 'eyebrow' }, 'Manager · Season 1'), h('h1', null, t.name), h('div', { class: 'facts' }, h('span', null, 'Team ', [...t.squads].map((q, j) => [j ? ', ' : '', h('b', null, squadLink(q))])), h('span', null, 'Raced as ', h('b', null, [...t.aliases].join(', '))), t.subs.size ? h('span', null, 'Replacements ', h('b', null, [...t.subs].join(', '))) : null)), h('a', { class: 'btn ghost', href: '#teams' }, 'All managers')));
+  $view.append(h('div', { class: 'kpis' }, kpi('League position', fin ? '#' + fin.rank : '—', fin ? fmt(fin.total) + ' pts' : 'not in the sheet'), kpi('Wins', t.wins, 'stage and one-day'), kpi('GC wins', t.gc, 'stage races'), kpi('Podiums', t.pod, 'top 3'), kpi('Riders', t.riders.size, 'with results')));
+  const wins = t.list.slice().sort((a, b) => a.st.race - b.st.race || a.st.stage - b.st.stage).map((e) => { const race = S.s1.races[e.st.race]; return h('tr', null, h('td', { class: 'mute num' }, fshort((IX.dates.get(race.round) || ['2026-01-01'])[0])), h('td', null, h('a', { href: '#race-' + e.st.race, onclick: () => openRace(e.st, e.kind) }, race.name)), h('td', { class: 'mute' }, e.kind === 'gc' ? 'Final GC' : race.stages > 1 ? 'Stage ' + e.st.stage : ''), h('td', null, h('span', { class: 'flag' + (e.st.div === 1 ? ' d1' : '') }, 'D' + e.st.div)), h('td', { class: 'rider' }, riderLink(e.rider))); });
+  const riders = [...t.riders.entries()].sort((a, b) => b[1].pts - a[1].pts);
+  $view.append(h('div', { class: 'grid2' },
+    card('Roster', null, table([{ label: 'Rider' }, { label: 'Points', n: 1 }, { label: 'Wins', n: 1 }, { label: 'Podiums', n: 1 }, { label: 'Days', n: 1 }], riders.map(([r, x]) => h('tr', null, h('td', { class: 'rider' }, riderLink(r)), h('td', { class: 'n tot' }, Math.round(x.pts) || ''), h('td', { class: 'n' }, x.wins || ''), h('td', { class: 'n' }, x.pod || ''), h('td', { class: 'n mute' }, x.starts))), { tall: true })),
+    card('Victories', null, wins.length ? table([{ label: 'Date' }, { label: 'Race' }, { label: 'Stage' }, { label: 'Div' }, { label: 'Rider' }], wins, { tall: true }) : h('p', { class: 'empty' }, 'No wins yet.'))));
+}
+
+// ---------- boot ----------
+Promise.all(['data/s1.json', 'data/league.json', 'data/profiles.json', 'data/points_scale.json', 'data/transfers.json', 'data/photos.json', 'data/stage_types.json', 'data/riderdb.json'].map((u) => fetch(u).then((r) => { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); })))
+  .then(([s1, league, prof, scale, transfers, photos, types, riderdb]) => {
+    Object.assign(S, { s1, league, prof, scale, transfers, photos, types, riderdb });
+    buildIndex();
+    window.addEventListener('hashchange', route);
+    route();
+    document.body.append(h('p', { class: 'foot wrap' }, 'Results come from the PCM exports and the official IPL sheet posted on the PCM UK Discord. Rounds 1–3 were raced in random groups, shown here as divisions. Rider ranking points are worked out on this page with the IPL scale and are not official.'));
+  })
+  .catch((e) => { $view.replaceChildren(h('div', { class: 'note' }, 'Could not load the results data (' + e.message + '). Reload the page to try again.')); });
+})();
+</script>
+
+</body>
+</html>
