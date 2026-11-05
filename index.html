@@ -639,7 +639,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.0.1', updated: '2026-11-05T13:59' };
+const SITE = { version: '1.0.2', updated: '2026-11-05T14:29' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0 };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -656,6 +656,10 @@ const ALIAS = {
   'TurtleInsideACup': 'Hound', 'Ruined King': 'Hound', 'lukas': 'MarcelTestier + Imposter'
 };
 const DIVF = { 1: 1, 2: 0.95, 3: 0.9 };
+// rounds 1-5 were raced in random groups, not divisions: the official sheet scores them at 100 %
+const divFactor = (race, div) => (race.round <= 5 ? 1 : DIVF[div]);
+// official wins per manager (stage and one-day wins) from the IPL sheet
+const sheetWins = (name) => { const p = ((S.league && S.league.players) || []).find((x) => x.player.trim() === name); return p ? p.wins : null; };
 const CLS = [
   { key: 'stage', label: 'Stage', j: 'j-stage', val: 'Time' },
   { key: 'gc', label: 'GC', j: 'j-gc', val: 'Time' },
@@ -865,15 +869,24 @@ function buildIndex() {
   const T = (n, alias, ti) => { if (!n) return null; if (!IX.team.has(n)) { IX.team.set(n, { name: n, aliases: new Set(), subs: new Set(), squads: new Set(), wins: 0, gc: 0, pod: 0, top10: 0, pts: 0, riders: new Map(), list: [] }); IX.teamIds.set(n, IX.teamIds.size); } const t = IX.team.get(n); if (alias) { if ((ALIAS[alias] || alias) === n) t.aliases.add(alias); else t.subs.add(alias); } if (tid(ti)) t.squads.add(ti); return t; };
   for (const st of s1.stages) {
     const race = s1.races[st.race];
-    const f = DIVF[st.div];
+    const f = divFactor(race, st.div);
+    // team time trial: the league scores every team once, by its place (first rider home); each rider gets his team's place
+    const tbase = (ti) => (tid(ti) || '').replace(/ 2$/, '');
+    const ttt = /\bTTT\b/.test(race.name) ? new Map() : null;
+    if (ttt) for (const row of (st.cls.stage || [])) { const b = tbase(row[2]); if (!ttt.has(b)) ttt.set(b, ttt.size + 1); }
+    const tttSeen = new Set();
     for (const row of (st.cls.stage || [])) {
-      const rk = rankNum(row[0]);
+      const tb = ttt ? tbase(row[2]) : null;
+      const rk = ttt ? ttt.get(tb) : rankNum(row[0]);
+      const firstOfTeam = !ttt || !tttSeen.has(tb);
+      if (ttt) tttSeen.add(tb);
       const p = pts(race, 'stage', rk) * f;
       const r = R(row[1]); r.starts++; if (rk === 1) r.wins++; if (rk <= 3) r.pod++; if (rk <= 10) r.top10++; r.pts += p; r.ptsDiv[st.div] += p; r.cat[race.stages === 1 ? 'oneday' : 'stage'] += p;
       r.teams.add(row[2]); if (ownerName(row[2], row[4])) r.mgrs.add(ownerName(row[2], row[4]));
       r.list.push({ st, rk, val: row[3], kind: 'stage', p });
       const t = T(ownerName(row[2], row[4]), pid(row[4]), row[2]);
-      if (t) { if (rk === 1) { t.wins++; t.list.push({ st, rider: row[1], kind: 'stage' }); } if (rk <= 3) t.pod++; if (rk <= 10) t.top10++; t.pts += p; const tr = t.riders.get(row[1]) || { wins: 0, pod: 0, starts: 0, pts: 0 }; tr.starts++; if (rk === 1) tr.wins++; if (rk <= 3) tr.pod++; tr.pts += p; t.riders.set(row[1], tr); }
+      if (t && firstOfTeam) { if (rk === 1) { t.wins++; t.list.push({ st, rider: row[1], kind: 'stage' }); } if (rk <= 3) t.pod++; if (rk <= 10) t.top10++; t.pts += p; }
+      if (t) { const tr = t.riders.get(row[1]) || { wins: 0, pod: 0, starts: 0, pts: 0 }; tr.starts++; if (rk === 1) tr.wins++; if (rk <= 3) tr.pod++; tr.pts += p; t.riders.set(row[1], tr); }
     }
     if (race.stages > 1 && st.stage === race.stages) {
       for (const kind of ['gc', 'points', 'kom']) {
@@ -1116,7 +1129,7 @@ function viewStandings() {
     box.replaceChildren(table([{ label: '#' }, { label: 'Rider' }, { label: 'Manager' }, { label: 'Points', n: 1 }, { label: 'Wins', n: 1 }, { label: 'GC', n: 1, hs: 1 }, { label: 'Podiums', n: 1, hs: 1 }],
       list.map(([i, o], k) => h('tr', { class: k === 0 ? 'p1' : null }, h('td', { class: 'rk' }, rankChip(k + 1)), h('td', { class: 'rider' }, riderLink(i)), h('td', null, [...o.mgrs].map((m, j) => [j ? ', ' : '', teamLink(m)])), h('td', { class: 'n tot' }, Math.round(val(o))), h('td', { class: 'n' }, o.wins || ''), h('td', { class: 'n' }, o.gc || ''), h('td', { class: 'n' }, o.pod || ''))), { tall: true }));
   };
-  $view.append(card('Rider ranking', null, h('p', { class: 'sub' }, 'Stage results score with the classic, monument, tour or Grand Tour scale; final GC, points and mountains add their own scale. Division 2 counts 95% and Division 3 90%. Stages without an export are not counted yet.'), chips, box));
+  $view.append(card('Rider ranking', null, h('p', { class: 'sub' }, 'Stage results score with the classic, monument, tour or Grand Tour scale; final GC, points and mountains add their own scale. Division 2 counts 95% and Division 3 90% (rounds 1–5, raced in random groups, count 100%). The team time trial scores each team once by its place. A few stages have no export or screenshot and are not counted.'), chips, box));
   draw(); drawRank();
 }
 function kpi(k, v, s) { return h('div', { class: 'kpi' }, h('div', { class: 'k' }, k), h('div', { class: 'v' }, v), h('div', { class: 's' }, s)); }
@@ -1679,7 +1692,7 @@ function viewRiderPcs(i) {
   const cats = [['gc', 'GC', 'j-gc'], ['stage', 'Stages', 'j-stage'], ['oneday', 'One-day races', 'j-team'], ['points', 'Points jersey', 'j-pts'], ['kom', 'Mountains', 'j-kom']];
   const maxc = Math.max(1, ...cats.map(([k]) => o.cat[k]));
   const spec = h('div', { class: 'spec' }, cats.map(([k, lab, j]) => h('div', null, h('span', { class: 'jersey ' + j }), h('span', { class: 'lab' }, lab), h('span', { class: 'barw' }, h('span', { class: 'bar2', style: 'width:' + (100 * o.cat[k] / maxc).toFixed(1) + '%' })), h('b', { class: 'num' }, Math.round(o.cat[k])))),
-    h('p', { class: 'src' }, 'IPL points scale: classic, monument (starred races), tour and Grand Tour scales for each finish, plus final GC, points and mountains. Division 2 counts 95%, Division 3 90%.'));
+    h('p', { class: 'src' }, 'IPL points scale: classic, monument (starred races), tour and Grand Tour scales for each finish, plus final GC, points and mountains. Division 2 counts 95%, Division 3 90% (rounds 1–5: 100%). The team time trial scores each team once.'));
   const byDiv = h('div', { class: 'spec' }, [1, 2, 3].filter((d) => o.ptsDiv[d] > 0).map((d) => h('div', null, h('span', { class: 'flag' + (d === 1 ? ' d1' : '') }, 'D' + d), h('span', { class: 'lab' }, 'Division ' + d), h('span', { class: 'barw' }, h('span', { class: 'bar2', style: 'width:' + (100 * o.ptsDiv[d] / Math.max(1, o.pts)).toFixed(1) + '%' })), h('b', { class: 'num' }, Math.round(o.ptsDiv[d])))));
   $view.append(h('div', { class: 'grid2' }, card('Top results', null, topBox), card('Points by speciality', null, spec, h('h3', null, 'Points by division'), byDiv)));
 
@@ -1754,7 +1767,7 @@ function viewTeams() {
   const ptsBox = (r) => ptsBlock(r ? r.total : null, lead);
   const rkCell = (rk) => h('td', { class: 'rk' }, rankChip(rk));
   $view.append(h('section', { class: 'card mgrs' }, table([{ label: '#', n: 1 }, { label: 'Manager' }, { label: 'Team', hs: 1 }, { label: 'In-game names', hs: 1 }, { label: 'League pts', n: 1 }, { label: 'Wins', n: 1 }, { label: 'GC', n: 1, hs: 1 }, { label: 'Podiums', n: 1, hs: 1 }, { label: 'Riders', n: 1, hs: 1 }],
-    list.map((t) => h('tr', null, rkCell(fin.get(t.name)?.rank), h('td', { class: 'rider' }, h('a', { href: '#team-' + IX.teamIds.get(t.name) }, t.name)), h('td', { class: 'mute' }, h('div', { class: 'sqlist' }, [...t.squads].filter((q) => tid(q)).map((q) => squadLink(q)))), h('td', { class: 'mute' }, [...t.aliases].join(', '), t.subs.size ? h('small', null, ' · replaced by ' + [...t.subs].join(', ')) : null), h('td', { class: 'n' }, ptsBox(fin.get(t.name))), h('td', { class: 'n' }, t.wins || ''), h('td', { class: 'n' }, t.gc || ''), h('td', { class: 'n' }, t.pod || ''), h('td', { class: 'n mute' }, t.riders.size))), { page: 60 })));
+    list.map((t) => h('tr', null, rkCell(fin.get(t.name)?.rank), h('td', { class: 'rider' }, h('a', { href: '#team-' + IX.teamIds.get(t.name) }, t.name)), h('td', { class: 'mute' }, h('div', { class: 'sqlist' }, [...t.squads].filter((q) => tid(q)).map((q) => squadLink(q)))), h('td', { class: 'mute' }, [...t.aliases].join(', '), t.subs.size ? h('small', null, ' · replaced by ' + [...t.subs].join(', ')) : null), h('td', { class: 'n' }, ptsBox(fin.get(t.name))), h('td', { class: 'n', title: 'Stage and one-day wins, from the official IPL sheet' }, sheetWins(t.name) ?? (t.wins || '')), h('td', { class: 'n' }, t.gc || ''), h('td', { class: 'n' }, t.pod || ''), h('td', { class: 'n mute' }, t.riders.size))), { page: 60 })));
 }
 function viewTeam(id) {
   const name = [...IX.teamIds.entries()].find(([, v]) => v === id)?.[0];
@@ -1762,7 +1775,7 @@ function viewTeam(id) {
   if (!t) return viewTeams();
   const L = leagueRounds(); const fin = L.out.get(L.orders[L.orders.length - 1]).find((r) => r.p === name);
   $view.append(h('div', { class: 'racehead' }, h('div', null, h('div', { class: 'eyebrow' }, 'Manager · Season 1'), h('h1', null, t.name), h('div', { class: 'facts' }, h('span', null, 'Team ', [...t.squads].map((q, j) => [j ? ', ' : '', h('b', null, squadLink(q))])), h('span', null, 'Raced as ', h('b', null, [...t.aliases].join(', '))), t.subs.size ? h('span', null, 'Replacements ', h('b', null, [...t.subs].join(', '))) : null)), h('a', { class: 'btn ghost', href: '#teams' }, 'All managers')));
-  $view.append(h('div', { class: 'kpis' }, kpi('League position', fin ? '#' + fin.rank : '—', fin ? fmt(fin.total) + ' pts' : 'not in the sheet'), kpi('Wins', t.wins, 'stage and one-day'), kpi('GC wins', t.gc, 'stage races'), kpi('Podiums', t.pod, 'top 3'), kpi('Riders', t.riders.size, 'with results')));
+  $view.append(h('div', { class: 'kpis' }, kpi('League position', fin ? '#' + fin.rank : '—', fin ? fmt(fin.total) + ' pts' : 'not in the sheet'), kpi('Wins', sheetWins(t.name) ?? t.wins, sheetWins(t.name) != null ? 'stage and one-day · official sheet' : 'stage and one-day'), kpi('GC wins', t.gc, 'stage races'), kpi('Podiums', t.pod, 'top 3'), kpi('Riders', t.riders.size, 'with results')));
   const wins = t.list.slice().sort((a, b) => a.st.race - b.st.race || a.st.stage - b.st.stage).map((e) => { const race = S.s1.races[e.st.race]; return h('tr', null, h('td', { class: 'mute num' }, fshort((IX.dates.get(race.round) || ['2026-01-01'])[0])), h('td', null, h('a', { href: '#race-' + e.st.race, onclick: () => openRace(e.st, e.kind) }, race.name)), h('td', { class: 'mute' }, e.kind === 'gc' ? 'Final GC' : race.stages > 1 ? 'Stage ' + e.st.stage : ''), h('td', null, h('span', { class: 'flag' + (e.st.div === 1 ? ' d1' : '') }, 'D' + e.st.div)), h('td', { class: 'rider' }, riderLink(e.rider))); });
   const riders = [...t.riders.entries()].sort((a, b) => b[1].pts - a[1].pts);
   $view.append(h('div', { class: 'grid2' },
