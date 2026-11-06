@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-06T15:25",
+  "checked": "2026-11-06T15:39",
   "source": "#sign-ups on the PCM UK Discord, messages after FraBo's separator line (3 Nov 2026)",
   "start": "2026-11-30",
   "teams": [
@@ -71,10 +71,10 @@
       "discord": "Joewhiteley0711",
       "pcm": "Joewhiteley0711",
       "web": "Joewhiteley0711",
-      "team": "Q36.5",
-      "jersey": "q36",
+      "team": "MTN Qhubeka",
+      "jersey": "x-mtn",
       "s1": "Joe",
-      "team_src": "Q36.5"
+      "team_src": "MTN Qhubeka"
     },
     {
       "posted": "2026-11-03T18:30",
@@ -225,7 +225,8 @@
       "team": "Portugal in 150 Seconds",
       "team_src": "Portugal in 150 Seconds",
       "jersey": null,
-      "community": "Sabu76"
+      "community": "Sabu76",
+      "s1": "Sabu76"
     }
   ]
 }
