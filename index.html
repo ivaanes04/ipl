@@ -459,6 +459,9 @@ input[type=search] { width: min(340px, 100%); }
 .prof img { display: block; width: 100%; height: auto; }
 .prof figure.zoom { grid-column: 1 / -1; }
 .prof figure.zoom button { cursor: zoom-out; }
+.prof .psvg { margin-top: 4px; }
+.pshot summary { cursor: pointer; font-size: 13px; color: var(--muted); }
+.pshot[open] summary { margin-bottom: 6px; }
 /* expandable full results */
 .fr-list { display: flex; flex-direction: column; gap: 8px; }
 .fr { border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
@@ -755,7 +758,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.8.1', updated: '2026-11-06T12:36' };
+const SITE = { version: '1.9.0', updated: '2026-11-06T15:21' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0 };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -1633,15 +1636,24 @@ function viewS2Race(i) {
   const r = IX.s2[i];
   if (!r) return viewRaces();
   $view.append(h('div', { class: 'racehead' }, h('div', null, h('div', { class: 'eyebrow' }, 'Season 2 · week ' + r.weeks.replace(/,/g, '–')), h('h1', null, r.race, isMonument(r.race) ? [' ', monuBadge()] : null), h('div', { class: 'facts' }, h('span', null, h('b', null, r.list.length), r.list.length > 1 ? ' stages' : ' one-day race'), r.dates.length ? h('span', null, r.dates.map(fdate).join(' · ')) : null, h('span', null, 'Results appear here after the race'))), h('a', { class: 'btn ghost', href: '#races' }, 'All races')));
+  // like Season 1: the drawing from the game's stage file when we have that file, otherwise the game's screenshot
   const grid = h('div', { class: 'prof' });
+  const shot = (p, fig) => h('button', { type: 'button', 'aria-label': 'Enlarge ' + (r.list.length > 1 ? 'stage ' + p.stage : r.race) + ' profile', onclick: () => fig.classList.toggle('zoom') }, h('img', { src: p.img, alt: r.race + (r.list.length > 1 ? ' stage ' + p.stage : '') + ' profile', loading: 'lazy' }));
+  let drawn = 0;
   for (const p of r.list) {
-    const fig = h('figure');
-    fig.append(h('figcaption', null, h('span', null, r.list.length > 1 ? 'Stage ' + p.stage : r.race), psBadge(stageTypeOf(s2Key(p)))), h('button', { type: 'button', 'aria-label': 'Enlarge ' + (r.list.length > 1 ? 'stage ' + p.stage : r.race) + ' profile', onclick: () => fig.classList.toggle('zoom') }, h('img', { src: p.img, alt: r.race + (r.list.length > 1 ? ' stage ' + p.stage : '') + ' profile', loading: 'lazy' })));
+    const tp = stageTypeOf(s2Key(p)), pic = tp && tp.curve ? profileSvg(tp, s2Key(p), null, true) : null;
+    const fig = h('figure', { class: pic && tp ? 'pt-' + tp.icon : null });
+    fig.append(h('figcaption', null, h('span', null, r.list.length > 1 ? 'Stage ' + p.stage : r.race), psBadge(tp)));
+    if (pic) { drawn++; fig.append(pic, h('details', { class: 'pshot' }, h('summary', null, 'Game screenshot'), shot(p, fig))); }
+    else fig.append(shot(p, fig));
     grid.append(fig);
   }
-  if (r.list.length === 1) { const tc = stageTypeCard(stageTypeOf(s2Key(r.list[0])), { drawing: false, key: s2Key(r.list[0]) }); if (tc) $view.append(tc); }
+  const one = r.list.length === 1, t0 = one ? stageTypeOf(s2Key(r.list[0])) : null;
+  if (one) { const tc = stageTypeCard(t0, { drawing: !!(t0 && t0.curve), key: s2Key(r.list[0]) }); if (tc) $view.append(tc); }
   else { const ts = r.list.map((p) => stageTypeOf(s2Key(p))); if (ts.some(Boolean)) $view.append(card('Stage types', null, typeSummary(ts), ptLegend())); }
-  $view.append(card('Stage profiles', null, grid));
+  // one-day race drawn in the stage type card: the screenshot folds away, as on Season 1 stages
+  if (one && t0 && t0.curve) $view.append(h('details', { class: 'card shotfold' }, h('summary', null, h('b', null, 'Game screenshot of the profile'), h('span', { class: 'mute' }, ' · the drawing above is built from the game’s stage file')), h('img', { class: 'stageprof', src: r.list[0].img, alt: r.race + ' profile', loading: 'lazy' })));
+  else $view.append(card('Stage profiles', null, grid, drawn && drawn < r.list.length ? h('p', { class: 'src' }, 'Drawn stages come from the game’s stage file; the others are the game’s screenshots, since their stage file isn’t among the game files we have.') : null));
   // multi-stage races: climbs and sprints of every stage, folded
   if (r.list.length > 1) {
     const parts = r.list.map((p) => {
