@@ -1,0 +1,453 @@
+{
+ "source": "#rules (International Pro League) on the PCM UK Discord, posted by Joewhiteley0711",
+ "checked": "2026-11-06T11:50",
+ "updated": "2026-11-06T10:45:00Z",
+ "sections": [
+  {
+   "id": "welcome",
+   "title": "Welcome",
+   "edited": "2025-06-22T19:21:00Z",
+   "text": [
+    "Welcome to the International Pro League (IPL) tournament! The simplest way of explaining this competition is players will pick a team sponsor for their jersey, build a team through an auction system and then play through the parcour trying to score as many points as you can! Any player of any level can play as the main emphasis is on playing for fun, those who want to be extremely competitive can be as we will have a fluid division system, so if you are new to the game or inexperienced in Multi do not worry!"
+   ]
+  },
+  {
+   "id": "racing",
+   "title": "The Racing",
+   "edited": "2026-11-06T10:45:00Z",
+   "items": [
+    "Players will have to send 6 riders to each race",
+    "Each rider cannot exceed the 30 race day limit (This includes DNF's)",
+    "Each stage is a race day (1 classic = 1 day, 1 stage race = 4/5 days etc..)"
+   ],
+   "sub": [
+    {
+     "title": "Breakaway & Train Rules",
+     "items": [
+      "Maximum of 4 riders allowed in a break during the first 50% of the stage",
+      "All riders can be in the break if there has been a split not forced by an attack",
+      "Maximum of 4 riders allowed in a train (this also includes protection rider)",
+      "30km to go, none of the breakaway / train rules rules apply"
+     ]
+    }
+   ],
+   "note": "Any gameplay-related rule will be referred to the WC rulebook of PCM23 for any race infractions. It will serve as a guide for any relative incident that hasn’t been mentioned already",
+   "settings": [
+    {
+     "k": "Falls",
+     "v": "0",
+     "text": "Falls set to 0 and puncture turned off."
+    },
+    {
+     "k": "Punctures",
+     "v": "Off",
+     "text": "Falls set to 0 and puncture turned off."
+    },
+    {
+     "k": "Freshness",
+     "v": "-2.0",
+     "text": "Freshness set to -2.0"
+    },
+    {
+     "k": "Terrain · primary",
+     "v": "2.2",
+     "text": "Terrain multipliers (primary) set to 2.2"
+    },
+    {
+     "k": "Terrain · secondary",
+     "v": "1.4",
+     "text": "Terrain multipliers (secondaries) set to 1.4"
+    },
+    {
+     "k": "Riders",
+     "v": "Cat. B",
+     "text": "All riders will be Category B in Tours and Classics"
+    }
+   ]
+  },
+  {
+   "id": "auction",
+   "title": "Auction",
+   "edited": "2026-11-05T18:36:00Z",
+   "items": [
+    "The IPL auction will take place in #website",
+    "To win a rider on the auction you must have a bid that has lasted for 24hrs (when the website timer counts down exactly 24hrs from the bid it will be valid eg: 17:55 --> 17:55).",
+    "Bids must be done in whole 1 million intervals",
+    "There will be NO draft",
+    "You need to sign a minimum of 24 riders with a maximum of 30."
+   ],
+   "sub": [
+    {
+     "title": "Invalid Bids",
+     "items": [
+      "Invalid bids will work in an accumulation system when talking about penalties. Going over budget or deleting bids will first end up in a warning, then a 1 million fine, then a 2 million fine every time after that. To avoid this please keep track of your finances as well as the website's budget tracker because there will be periods in the auction player's finances might not be 100% updated. If you feel like someone has gone over budget please report it to one of the organisers.",
+      "Invalid bids will be handled how the organisers best see fit within the context"
+     ],
+     "ladder": {
+      "title": "Invalid bids (over budget or deleted bids)",
+      "steps": [
+       "Warning",
+       "1M fine",
+       "2M fine every time after"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "divisions",
+   "title": "Divisions",
+   "edited": "2024-06-11T15:14:00Z",
+   "items": [
+    "Day 1, 2 and 3 will have randomly draw groups (each day a different group) which will then determine on Day 4 who will be in each division.",
+    "Depending on how many people play each day, will determine how many people will be in Div 1, Div 2 etc.",
+    "If for example we have 24 players, you will need to be in the top 8 of that specific Race Day to be in Div 1.",
+    "Division numbers are always subject to change so do not assume you will be in a division just because you were previously.",
+    "The organisers reserve the right to merge divisions if of low numbers",
+    "We will try keep the numbers in each division equal, but in any case, the lower the division the more players."
+   ]
+  },
+  {
+   "id": "teammates",
+   "title": "Teammates and Replacements",
+   "edited": "2024-06-11T15:14:00Z",
+   "items": [
+    "Teams are allowed 1 teammate in which they need to sign up for before the deadline.",
+    "Teams are allowed to split their team into 2 lots of 3 riders in races (For stages with TTT's, the team will state which riders are theirs before, and ride the TTT with the same 6 riders, then on stage 2 abandon the extra riders.)",
+    "IMA points will be assigned to teammates if they reach the race day threshold (check IMA ruling)"
+   ],
+   "sub": [
+    {
+     "title": "Replacements",
+     "items": [
+      "Replacements are allowed for everyone",
+      "Replacements will score 75% of the points in the first 3 occasions in the season, then 50% for the next 7 occasions. A maximum of 10 days are allowed.",
+      "Replacements will score 50% in GT's regardless if it is your first replacement or not. GT's also count as 3 days worth of replacement.",
+      "It must be made clear who is replacing, it is also up to the player to show the replacement which lobby they are in and to contact the organisers if any problems happen, it is your replacement after all."
+     ],
+     "ladder": {
+      "title": "Replacements score",
+      "steps": [
+       "75% · first 3 times",
+       "50% · next 7 times",
+       "Max 10 days"
+      ],
+      "note": "Grand Tours: always 50%, and a GT counts as 3 days."
+     }
+    }
+   ]
+  },
+  {
+   "id": "scoring",
+   "title": "Scoring System",
+   "edited": "2026-11-06T10:37:00Z",
+   "divisions": [
+    [
+     "Division 1",
+     100
+    ],
+    [
+     "Division 2",
+     95
+    ],
+    [
+     "Division 3",
+     90
+    ]
+   ],
+   "tables": [
+    {
+     "title": "Classics",
+     "cols": [
+      "Points"
+     ],
+     "rows": [
+      [
+       85
+      ],
+      [
+       60
+      ],
+      [
+       45
+      ],
+      [
+       35
+      ],
+      [
+       25
+      ],
+      [
+       20
+      ],
+      [
+       15
+      ],
+      [
+       10
+      ],
+      [
+       5
+      ],
+      [
+       2
+      ]
+     ]
+    },
+    {
+     "title": "Monuments",
+     "cols": [
+      "Points"
+     ],
+     "rows": [
+      [
+       140
+      ],
+      [
+       100
+      ],
+      [
+       75
+      ],
+      [
+       60
+      ],
+      [
+       45
+      ],
+      [
+       35
+      ],
+      [
+       25
+      ],
+      [
+       15
+      ],
+      [
+       10
+      ],
+      [
+       5
+      ]
+     ]
+    },
+    {
+     "title": "Tours",
+     "cols": [
+      "GC",
+      "KOM",
+      "SPR",
+      "Stages",
+      "Yellow Jersey"
+     ],
+     "rows": [
+      [
+       125,
+       40,
+       40,
+       25,
+       5
+      ],
+      [
+       90,
+       25,
+       25,
+       15
+      ],
+      [
+       65,
+       15,
+       15,
+       10
+      ],
+      [
+       50,
+       10,
+       10,
+       5
+      ],
+      [
+       40,
+       5,
+       5,
+       2
+      ],
+      [
+       30
+      ],
+      [
+       20
+      ],
+      [
+       15
+      ],
+      [
+       10
+      ],
+      [
+       5
+      ]
+     ]
+    },
+    {
+     "title": "Mini Grand Tours",
+     "cols": [
+      "GC",
+      "KOM",
+      "SPR",
+      "Stages",
+      "Yellow Jersey"
+     ],
+     "rows": [
+      [
+       200,
+       60,
+       80,
+       35,
+       5
+      ],
+      [
+       150,
+       40,
+       60,
+       20
+      ],
+      [
+       120,
+       25,
+       40,
+       15
+      ],
+      [
+       90,
+       15,
+       25,
+       10
+      ],
+      [
+       70,
+       10,
+       15,
+       5
+      ],
+      [
+       50
+      ],
+      [
+       35
+      ],
+      [
+       25
+      ],
+      [
+       20
+      ],
+      [
+       10
+      ]
+     ]
+    },
+    {
+     "title": "Grand Tours",
+     "cols": [
+      "GC",
+      "KOM",
+      "SPR",
+      "Stages",
+      "Yellow Jersey"
+     ],
+     "rows": [
+      [
+       310,
+       90,
+       110,
+       45,
+       10
+      ],
+      [
+       230,
+       60,
+       70,
+       30
+      ],
+      [
+       170,
+       35,
+       45,
+       20
+      ],
+      [
+       130,
+       20,
+       25,
+       10
+      ],
+      [
+       100,
+       10,
+       15,
+       5
+      ],
+      [
+       75
+      ],
+      [
+       55
+      ],
+      [
+       40
+      ],
+      [
+       30
+      ],
+      [
+       20
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "sheet": {
+  "title": "IPL Official Database and Stuff",
+  "url": "https://docs.google.com/spreadsheets/d/1uGIOSQ-MN0eg2gbzQxnCMV-KokzmPU2yrZp-PXz6ai4/edit#gid=1060018693"
+ },
+ "key": [
+  {
+   "v": "6",
+   "k": "Riders per race",
+   "sec": "racing"
+  },
+  {
+   "v": "30",
+   "k": "Race days max",
+   "s": "per rider, DNFs count",
+   "sec": "racing"
+  },
+  {
+   "v": "24–30",
+   "k": "Squad size",
+   "s": "riders signed in the auction",
+   "sec": "auction"
+  },
+  {
+   "v": "24 h",
+   "k": "To win a bid",
+   "s": "the bid must stand 24 hours",
+   "sec": "auction"
+  },
+  {
+   "v": "1M",
+   "k": "Bid steps",
+   "s": "no draft",
+   "sec": "auction"
+  },
+  {
+   "v": "4",
+   "k": "Max in a break / train",
+   "s": "no limits in the last 30 km",
+   "sec": "racing"
+  }
+ ]
+}

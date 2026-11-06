@@ -662,6 +662,50 @@ a.s2card { color: inherit; } a.s2card:hover .s2team { color: var(--accent, inher
 .s2pending { display: flex; flex-wrap: wrap; gap: 8px; }
 .s2pending a, .s2pending span { font-size: 14px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; }
 .roster { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 8px; }
+.rmore { display: none; border: 0; background: none; color: var(--accent); font: inherit; font-weight: 600; padding: 2px 0; cursor: pointer; }
+@media (max-width: 640px) { .rwelcome:not(.open) { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; } .rmore { display: inline-block; } }
+.rmeta { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; font-size: 13px; color: var(--muted); }
+.rsheet { font-weight: 600; }
+.rkey { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); gap: 10px; }
+.rkk { display: block; background: var(--panel); border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: var(--r); padding: 10px 12px; color: inherit; min-width: 0; }
+.rkk:hover { color: inherit; border-color: var(--accent); }
+.rkk .v { font-family: var(--f-display); font-size: 30px; font-weight: 700; line-height: 1.05; }
+.rkk .k { font-family: var(--f-display); font-size: 14px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+.rkk .s { font-size: 12px; color: var(--muted); }
+.rmason { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); gap: 16px; }
+.rcol { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.rcol > .rcard:last-child { flex: 1; }
+.rlist { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 5px; font-size: 15px; }
+.rlist li::marker { color: var(--accent); }
+.rcard h3, .rtab h3 { margin: 4px 0 0; font-family: var(--f-display); font-size: 15px; letter-spacing: .05em; text-transform: uppercase; }
+.rnote { margin: 0; padding: 8px 12px; border-left: 3px solid var(--line); color: var(--muted); font-size: 14px; }
+.redit { font-size: 12px; color: var(--muted); }
+.redit.new { color: var(--accent-ink); background: var(--accent); padding: 2px 8px; border-radius: 999px; font-weight: 600; }
+.rset { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.rset > div { background: var(--soft); border-radius: 10px; padding: 8px 10px; min-width: 0; }
+.rset b { display: block; font-family: var(--f-display); font-size: 22px; line-height: 1.1; }
+.rset span { font-size: 12px; color: var(--muted); }
+.rladder { background: var(--soft); border-radius: 10px; padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; }
+.rl-t { font-size: 13px; font-weight: 600; color: var(--muted); }
+.rsteps { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.rsteps b { font-size: 14px; padding: 4px 10px; border-radius: 999px; background: var(--panel); border: 1px solid var(--line); }
+.rsteps .arr { color: var(--accent); font-weight: 700; }
+.rl-n { font-size: 13px; color: var(--muted); }
+.rdivs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.rdivs > div { position: relative; background: var(--soft); border-radius: 10px; padding: 8px 12px 12px; display: flex; justify-content: space-between; align-items: baseline; gap: 6px; overflow: hidden; }
+.rdivs span { font-size: 13px; color: var(--muted); }
+.rdivs b { font-family: var(--f-display); font-size: 22px; font-variant-numeric: tabular-nums; }
+.rdivs i { position: absolute; left: 0; bottom: 0; height: 4px; width: var(--w); background: var(--accent); }
+.rscore { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 600px); gap: 20px; align-items: start; }
+.rtab { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.rtab-h { display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; align-items: center; }
+.rtab .seg button { font-size: 14px; padding: 5px 12px; }
+.rtab td, .rtab th { padding-block: 4px; }
+.rplc { display: inline-grid; place-items: center; min-width: 24px; height: 24px; border-radius: 999px; font-size: 13px; font-weight: 600; color: var(--muted); }
+.rplc.m1 { background: #f2c200; color: #17191e; } .rplc.m2 { background: #c9ced6; color: #17191e; } .rplc.m3 { background: #d39a63; color: #17191e; }
+.ryj { display: flex; align-items: center; gap: 6px; font-size: 14px; }
+@media (max-width: 760px) { .rscore { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 480px) { .rset { grid-template-columns: repeat(2, minmax(0, 1fr)); } .rdivs { grid-template-columns: minmax(0, 1fr); } .rtab th, .rtab td { padding-inline: 4px; } .rtab .seg button { padding: 5px 9px; font-size: 13px; } .rkey { grid-template-columns: repeat(2, minmax(0, 1fr)); } .rkk .v { font-size: 26px; } }
 @media (max-width: 640px) { .racehead { grid-template-columns: 1fr; } .replay { grid-template-columns: 1fr; } th, td { padding: 5px 6px; } }
 @media (prefers-reduced-motion: no-preference) { .view-in { animation: rise .22s ease-out; } @keyframes rise { from { opacity: .5; transform: translateY(4px); } to { opacity: 1; transform: none; } } }
 </style>
@@ -676,6 +720,7 @@ a.s2card { color: inherit; } a.s2card:hover .s2team { color: var(--accent, inher
       <a href="#riders" data-nav="riders">Riders</a>
       <a href="#squads" data-nav="squads">Teams</a>
       <a href="#teams" data-nav="teams">Managers</a>
+      <a href="#rules" data-nav="rules">Rules</a>
     </nav>
     <div class="gsearch" role="search">
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
@@ -710,7 +755,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.7.2', updated: '2026-11-06T10:47' };
+const SITE = { version: '1.8.1', updated: '2026-11-06T12:36' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0 };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -1004,11 +1049,11 @@ function route() {
   const m = hash.match(/^([a-z0-9]+?)(?:-(\d+))?(?:-(\d+))?$/);
   UI.pendingStage = m && m[3] != null ? +m[3] : null; // #race-<n>-<stage> opens that stage
   const name = m ? m[1] : 'home', arg = m && m[2] != null ? +m[2] : null;
-  const section = { home: 'home', races: 'races', race: 'races', s2race: 'races', standings: 'standings', riders: 'riders', riderstats: 'riders', rider: 'riders', teams: 'teams', team: 'teams', squads: 'squads', squad: 'squads', s2teams: 'squads' }[name] || 'home';
+  const section = { home: 'home', races: 'races', race: 'races', s2race: 'races', standings: 'standings', riders: 'riders', riderstats: 'riders', rider: 'riders', teams: 'teams', team: 'teams', squads: 'squads', squad: 'squads', s2teams: 'squads', rules: 'rules' }[name] || 'home';
   document.querySelectorAll('[data-nav]').forEach((a) => { if (a.dataset.nav === section) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
   $view.replaceChildren();
   $view.classList.remove('view-in'); void $view.offsetWidth; $view.classList.add('view-in');
-  const views = { home: viewHome, races: viewRaces, race: () => viewRace(arg), s2race: () => viewS2Race(arg), standings: viewStandings, riders: () => { UI.rmode = 'season'; viewRiders(); }, riderstats: () => { UI.rmode = 'stats'; viewRiders(); }, rider: () => viewRiderPcs(arg), teams: viewTeams, team: () => viewTeam(arg), squads: viewSquads, squad: () => viewSquad(arg), s2teams: viewS2Teams };
+  const views = { home: viewHome, races: viewRaces, race: () => viewRace(arg), s2race: () => viewS2Race(arg), standings: viewStandings, riders: () => { UI.rmode = 'season'; viewRiders(); }, riderstats: () => { UI.rmode = 'stats'; viewRiders(); }, rider: () => viewRiderPcs(arg), teams: viewTeams, team: () => viewTeam(arg), squads: viewSquads, squad: () => viewSquad(arg), s2teams: viewS2Teams, rules: viewRules };
   (views[name] || viewHome)();
   // tab title: the page's own heading (race, rider, team...) then the site name
   const h1 = $view.querySelector('h1');
@@ -2139,6 +2184,89 @@ function setupSearch() {
   // "/" jumps to the search box from anywhere
   document.addEventListener('keydown', (e) => { if (e.key === '/' && !/input|textarea/i.test(document.activeElement.tagName)) { e.preventDefault(); input.focus(); } });
 }
+// ---------- rules (from #rules on Discord, data/rules.json) ----------
+function viewRules() {
+  const R = S.rules;
+  const by = R ? Object.fromEntries(R.sections.map((s) => [s.id, s])) : {};
+  $view.append(h('div', null, h('div', { class: 'eyebrow' }, 'Season 2 · PCM 26'), h('h1', null, 'Rules'),
+    h('p', { class: 'sub rwelcome' }, by.welcome ? by.welcome.text[0] : 'The league rules as posted in #rules on the PCM UK Discord.'),
+    by.welcome ? h('button', { type: 'button', class: 'rmore', onclick: (e) => { e.target.previousElementSibling.classList.add('open'); e.target.remove(); } }, 'Read more') : null));
+  if (!R) { $view.append(h('p', { class: 'sub' }, 'The rules could not be loaded.')); return; }
+  const when = (s) => new Date(s).toLocaleString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Europe/London' });
+  const fresh = (s) => s && (new Date(R.checked) - new Date(s)) / 864e5 < 14; // edited in the last 2 weeks
+  const jump = (id) => (e) => { e.preventDefault(); const el = document.getElementById('r-' + id); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + scrollY - 80, behavior: 'smooth' }); };
+  $view.append(h('div', { class: 'rmeta' },
+    h('span', null, 'From #rules on the PCM UK Discord · last change ' + when(R.updated) + ' · checked ' + new Date(R.checked).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })),
+    R.sheet ? h('a', { class: 'rsheet', href: R.sheet.url, target: '_blank', rel: 'noopener' }, 'Official sheet ↗') : null));
+  // the numbers people look for first
+  if (R.key) $view.append(h('div', { class: 'rkey' }, R.key.map((k) => h('a', { class: 'rkk', href: '#rules', onclick: jump(k.sec) }, h('div', { class: 'v' }, k.v), h('div', { class: 'k' }, k.k), k.s ? h('div', { class: 's' }, k.s) : null))));
+  const list = (items) => h('ul', { class: 'rlist' }, items.map((x) => h('li', null, x)));
+  const ladder = (l) => h('div', { class: 'rladder' }, h('div', { class: 'rl-t' }, l.title), h('div', { class: 'rsteps' }, l.steps.flatMap((s, i) => (i ? [h('span', { class: 'arr', 'aria-hidden': 'true' }, '→'), h('b', null, s)] : [h('b', null, s)]))), l.note ? h('div', { class: 'rl-n' }, l.note) : null);
+  const head = (s) => h('div', { class: 'card-h' }, h('h2', null, s.title), s.edited ? h('span', { class: 'redit' + (fresh(s.edited) ? ' new' : '') }, (fresh(s.edited) ? 'Updated ' : 'Edited ') + when(s.edited)) : null);
+  const sec = (s) => {
+    const el = h('section', { class: 'card rcard', id: 'r-' + s.id }, head(s));
+    if (s.settings) el.append(h('div', { class: 'rset' }, s.settings.map((x) => h('div', { title: x.text }, h('b', null, x.v), h('span', null, x.k)))));
+    if (s.items && s.items.length) el.append(list(s.items));
+    if (s.ladder) el.append(ladder(s.ladder));
+    (s.sub || []).forEach((b) => el.append(...[h('h3', null, b.title), b.ladder ? ladder(b.ladder) : null, list(b.items)].filter(Boolean)));
+    if (s.note) el.append(h('p', { class: 'rnote' }, s.note));
+    return el;
+  };
+  const known = ['welcome', 'scoring'];
+  // two columns as even as possible (cards keep their order inside each column); the shorter column's last card stretches
+  const cards = R.sections.filter((s) => !known.includes(s.id)).map(sec);
+  const wrap = h('div', { class: 'rmason' });
+  $view.append(wrap);
+  const lay = () => {
+    if (!document.body.contains(wrap)) return;
+    const one = h('div', { class: 'rcol' }, cards);
+    wrap.replaceChildren(one);
+    if (wrap.clientWidth < 780 || cards.length < 2) return;
+    one.style.width = (wrap.clientWidth - 16) / 2 + 'px';
+    const hs = cards.map((c) => c.offsetHeight + 16);
+    one.style.width = '';
+    let best = null;
+    for (let m = 0; m < 1 << cards.length; m++) {
+      const a = hs.reduce((t, x, i) => t + (m >> i & 1 ? 0 : x), 0), b = hs.reduce((t, x, i) => t + (m >> i & 1 ? x : 0), 0);
+      if (m & 1) continue; // the first card always starts the left column
+      if (!best || Math.abs(a - b) < best[0]) best = [Math.abs(a - b), m];
+    }
+    const cols = [h('div', { class: 'rcol' }), h('div', { class: 'rcol' })];
+    cards.forEach((c, i) => cols[best[1] >> i & 1].append(c));
+    wrap.replaceChildren(...cols);
+  };
+  lay();
+  UI.rulesLay = lay;
+  if (!UI.rulesLayOn) { UI.rulesLayOn = true; let tm; window.addEventListener('resize', () => { clearTimeout(tm); tm = setTimeout(() => UI.rulesLay && UI.rulesLay(), 150); }); }
+  // scoring: division factor, one-day races in one table, stage races behind a switch
+  const sc = by.scoring;
+  if (sc) {
+    const el = h('section', { class: 'card', id: 'r-scoring' }, head(sc));
+    if (sc.divisions) el.append(h('div', { class: 'rdivs' }, sc.divisions.map(([d, p]) => h('div', null, h('span', null, d), h('b', null, p + '%'), h('i', { style: '--w:' + p + '%' })))));
+    const T = Object.fromEntries(sc.tables.map((t) => [t.title, t]));
+    const one = sc.tables.filter((t) => t.cols.length === 1), multi = sc.tables.filter((t) => t.cols.length > 1);
+    const plc = (k) => h('td', { class: 'n' }, h('span', { class: 'rplc' + (k < 3 ? ' m' + (k + 1) : '') }, k + 1));
+    const cell = (v) => h('td', { class: 'n' + (v == null ? ' mute' : '') }, v == null ? '–' : v);
+    const boxOne = h('div', { class: 'rtab' }, h('h3', null, 'One-day races'),
+      table([{ label: 'Place', n: 1 }].concat(one.map((t) => ({ label: t.title, n: 1 }))), Array.from({ length: 10 }, (_, k) => h('tr', null, plc(k), one.map((t) => cell(t.rows[k]?.[0]))))));
+    UI.rulesTab = UI.rulesTab && T[UI.rulesTab] ? UI.rulesTab : (multi[multi.length - 1] || {}).title;
+    const boxMulti = h('div', { class: 'rtab' });
+    const drawMulti = () => {
+      const t = T[UI.rulesTab];
+      const yj = t.cols.indexOf('Yellow Jersey');
+      const cols = t.cols.filter((_, j) => j !== yj);
+      boxMulti.replaceChildren(
+        h('div', { class: 'rtab-h' }, h('h3', null, 'Stage races'),
+          h('div', { class: 'seg', role: 'group', 'aria-label': 'Race type' }, multi.map((m) => h('button', { type: 'button', 'aria-pressed': String(m.title === UI.rulesTab), onclick: () => { UI.rulesTab = m.title; drawMulti(); } }, m.title)))),
+        table([{ label: 'Place', n: 1 }].concat(cols.map((c) => ({ label: c === 'Stages' ? 'Stage' : c, n: 1 }))), t.rows.map((r, k) => h('tr', null, plc(k), t.cols.map((_, j) => j === yj ? null : cell(r[j]))))),
+        yj >= 0 && t.rows[0][yj] != null ? h('div', { class: 'ryj' }, h('span', { class: 'dot', style: 'background: var(--gc)' }), 'Yellow Jersey: ', h('b', null, t.rows[0][yj] + ' pts')) : null);
+    };
+    drawMulti();
+    el.append(h('div', { class: 'rscore' }, boxOne, boxMulti));
+    el.append(h('p', { class: 'src' }, 'Season 1 results and rankings on this site keep the points scale used in Season 1.'));
+    $view.append(el);
+  }
+}
 // ---------- boot ----------
 Promise.all(['data/s1.json', 'data/league.json', 'data/profiles.json', 'data/points_scale.json', 'data/transfers.json', 'data/photo_index.json', 'data/stage_types.json', 'data/riderdb.json'].map((u) => fetch(u).then((r) => { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); })))
   .then(([s1, league, prof, scale, transfers, photoIndex, types, riderdb]) => {
@@ -2148,6 +2276,7 @@ Promise.all(['data/s1.json', 'data/league.json', 'data/profiles.json', 'data/poi
     // Season 2 sign-ups are optional: the site works without them
     const s2 = Promise.all([
       fetch('data/s2_signups.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.s2signups = d; }).catch(() => {}),
+      fetch('data/rules.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.rules = d; }).catch(() => {}),
       fetch('data/race_points.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.rp = d; }).catch(() => {})]);
     if (PREVIEW) return Promise.all([s2, fetch('data/photos.json').then((r) => (r.ok ? r.json() : null)).then((p) => { if (p) S.photos = p; }).catch(() => {})]);
     return s2;
