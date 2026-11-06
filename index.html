@@ -20,6 +20,17 @@
 <link rel="icon" href="favicon-48.png" sizes="48x48" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="theme-color" content="#17191e">
+<script>
+// Embed mode for other sites (pcmmulti.com): https://iplmulti.pages.dev/?embed#races
+// hides the top bar, uses ?theme=light|dark (default light) and tells the parent page its height and where to scroll.
+(() => { try {
+  const q = new URLSearchParams(location.search);
+  if (!q.has('embed')) return;
+  window.IPL_EMBED = true;
+  const r = document.documentElement; r.classList.add('embed');
+  r.dataset.theme = q.get('theme') === 'dark' ? 'dark' : 'light';
+} catch (e) {} })();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 </head>
@@ -711,6 +722,11 @@ a.s2card { color: inherit; } a.s2card:hover .s2team { color: var(--accent, inher
 @media (max-width: 480px) { .rset { grid-template-columns: repeat(2, minmax(0, 1fr)); } .rdivs { grid-template-columns: minmax(0, 1fr); } .rtab th, .rtab td { padding-inline: 4px; } .rtab .seg button { padding: 5px 9px; font-size: 13px; } .rkey { grid-template-columns: repeat(2, minmax(0, 1fr)); } .rkk .v { font-size: 26px; } }
 @media (max-width: 640px) { .racehead { grid-template-columns: 1fr; } .replay { grid-template-columns: 1fr; } th, td { padding: 5px 6px; } }
 @media (prefers-reduced-motion: no-preference) { .view-in { animation: rise .22s ease-out; } @keyframes rise { from { opacity: .5; transform: translateY(4px); } to { opacity: 1; transform: none; } } }
+/* embed mode (?embed): no top bar, the parent page scrolls instead of us */
+html.embed .top, html.embed body::before { display: none; }
+html.embed body { margin: 0; }
+html.embed[data-theme="light"] body { background: transparent; } /* blends with the parent page; dark keeps its own background */
+html.embed .wrap { padding-top: 4px; }
 </style>
 
 <header class="top">
@@ -743,6 +759,7 @@ a.s2card { color: inherit; } a.s2card:hover .s2team { color: var(--accent, inher
   const current = () => root.dataset.theme || (sysDark() ? 'dark' : 'light');
   const apply = (t) => { if (t) root.dataset.theme = t; const d = current() === 'dark'; btn.classList.toggle('is-dark', d); btn.setAttribute('aria-label', d ? 'Switch to light mode' : 'Switch to dark mode'); };
   let saved = null; try { saved = localStorage.getItem('ipl-theme'); } catch (e) {}
+  if (window.IPL_EMBED) return;
   apply(saved === 'light' || saved === 'dark' ? saved : null);
   btn.addEventListener('click', () => { const t = current() === 'dark' ? 'light' : 'dark'; apply(t); try { localStorage.setItem('ipl-theme', t); } catch (e) {} });
   matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => apply(null));
@@ -754,11 +771,23 @@ a.s2card { color: inherit; } a.s2card:hover .s2team { color: var(--accent, inher
 (() => {
 'use strict';
 const $view = document.getElementById('view');
+// In embed mode the iframe is as tall as the page, so scrolling is the parent's job: tell it where to go and how tall we are.
+const toParent = (msg) => { try { if (window.parent !== window) window.parent.postMessage(msg, '*'); } catch (e) {} };
+function scrollToY(y, smooth) {
+  if (window.IPL_EMBED) { toParent({ type: 'iplmulti:scroll', y: Math.max(0, Math.round(y)) }); return; }
+  window.scrollTo(smooth ? { top: y, behavior: 'smooth' } : { top: y });
+}
+if (window.IPL_EMBED && 'ResizeObserver' in window) {
+  let last = 0;
+  const send = () => { const hgt = Math.ceil(document.body.getBoundingClientRect().height); if (hgt !== last) { last = hgt; toParent({ type: 'iplmulti:height', height: hgt }); } };
+  new ResizeObserver(send).observe(document.body);
+  addEventListener('load', send);
+}
 const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.9.2', updated: '2026-11-06T18:10' };
+const SITE = { version: '1.10.0', updated: '2026-11-06T19:11' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0 };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -1063,7 +1092,7 @@ function route() {
   const stg = name === 'race' && S.s1.races[arg] && S.s1.races[arg].stages > 1 && UI.race[arg] ? UI.race[arg].stage : 0;
   const head = name === 'home' || !h1 ? '' : h1.textContent.replace(/★\s*Monument/, '').trim() + (stg ? ' · Stage ' + stg : '');
   document.title = head ? head + ' · IPL Multi' : 'IPL Multi · International Pro League';
-  window.scrollTo(0, keepY != null ? keepY : 0);
+  if (keepY != null) window.scrollTo(0, keepY); else scrollToY(0);
   UI.keepScroll = false;
 }
 
@@ -2206,7 +2235,7 @@ function viewRules() {
   if (!R) { $view.append(h('p', { class: 'sub' }, 'The rules could not be loaded.')); return; }
   const when = (s) => new Date(s).toLocaleString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Europe/London' });
   const fresh = (s) => s && (new Date(R.checked) - new Date(s)) / 864e5 < 14; // edited in the last 2 weeks
-  const jump = (id) => (e) => { e.preventDefault(); const el = document.getElementById('r-' + id); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + scrollY - 80, behavior: 'smooth' }); };
+  const jump = (id) => (e) => { e.preventDefault(); const el = document.getElementById('r-' + id); if (el) scrollToY(el.getBoundingClientRect().top + scrollY - (window.IPL_EMBED ? 12 : 80), true); };
   $view.append(h('div', { class: 'rmeta' },
     h('span', null, 'From #rules on the PCM UK Discord · last change ' + when(R.updated) + ' · checked ' + new Date(R.checked).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })),
     R.sheet ? h('a', { class: 'rsheet', href: R.sheet.url, target: '_blank', rel: 'noopener' }, 'Official sheet ↗') : null));
