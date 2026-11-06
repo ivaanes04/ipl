@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-06T20:01",
+  "checked": "2026-11-06T22:14",
   "source": "#sign-ups on the PCM UK Discord, messages after FraBo's separator line (3 Nov 2026)",
   "start": "2026-11-30",
   "teams": [
@@ -220,8 +220,8 @@
     {
       "posted": "2026-11-06T14:22",
       "discord": "Bessa4delas",
-      "pcm": "Bessadelas",
-      "web": "Bessadelas",
+      "pcm": "Bessadelas / Sonecas",
+      "web": "Bessadelas / Sonecas",
       "team": "Portugal in 150 Seconds",
       "team_src": "Portugal in 150 Seconds",
       "jersey": null,
@@ -242,10 +242,20 @@
       "discord": "firejohn",
       "pcm": "firejohn",
       "web": "firejohn",
-      "team": "W52-FC Porto",
-      "team_src": "W52-FC Porto",
-      "jersey": "x-w52",
+      "team": "Unibet Rose Rockets",
+      "team_src": "Unibet Rose Rockets",
+      "jersey": "urr",
       "s1": "firejohn"
+    },
+    {
+      "posted": "2026-11-06T21:05",
+      "discord": "bandalhoquerido",
+      "pcm": "GimmeTheLootFTW",
+      "web": "Joao Negrao",
+      "team": "GI Group Holding Simoldes UDO",
+      "team_src": "GI Group Holding Simoldes UDO",
+      "jersey": "gsu",
+      "community": "Sabu76"
     }
   ]
 }
