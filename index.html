@@ -787,8 +787,8 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.10.2', updated: '2026-11-06T22:14' };
-const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0 };
+const SITE = { version: '1.11.0', updated: '2026-11-07T12:33' };
+const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0, nat: '' };
 const TODAY = new Date().toISOString().slice(0, 10);
 
 // in-game manager name -> league team name (clear matches only)
@@ -1857,11 +1857,22 @@ function fullResults(ri, race, m) {
 
 // ---------- riders ----------
 // Riders has two modes: Season (results and ranking points) and Stats (PCM attributes, sortable, game colours)
+// nationality filter shared by both riders views: countries present, most riders first; UI.nat keeps the choice
+function natSelect(list, onchange) {
+  const n = new Map(); for (const r of list) { const c = natOf(r.i); if (c) n.set(c, (n.get(c) || 0) + 1); }
+  if (UI.nat && !n.has(UI.nat)) UI.nat = '';
+  const opts = [...n.entries()].sort((a, b) => b[1] - a[1] || (NATNAME[a[0]] || a[0]).localeCompare(NATNAME[b[0]] || b[0]));
+  const sel = h('select', { class: 'nat-sel', 'aria-label': 'Filter by nationality', onchange: (e) => { UI.nat = e.target.value; onchange(); } },
+    h('option', { value: '' }, 'All nationalities'), opts.map(([c, k]) => h('option', { value: c }, (NATNAME[c] || c.toUpperCase()) + ' (' + k + ')')));
+  sel.value = UI.nat || '';
+  return sel;
+}
+const natOk = (r) => !UI.nat || natOf(r.i) === UI.nat;
 function viewRiders() {
   UI.rmode = UI.rmode || 'season';
   const stats = UI.rmode === 'stats';
   $view.append(h('div', { class: 'rhead-bar' }, h('div', null, h('div', { class: 'eyebrow' }, stats ? 'PCM attributes · Season 2 database' : 'Season 1 · PCM 26'), h('h1', null, 'Riders'),
-    h('p', { class: 'sub' }, stats ? 'Every rider with his PCM attributes. Click a column to sort by it; filter by rider type.' : 'Every rider with a result, sorted by ranking points. Search by rider, team or manager.')),
+    h('p', { class: 'sub' }, stats ? 'Every rider with his PCM attributes. Click a column to sort by it; filter by rider type or nationality.' : 'Every rider with a result, sorted by ranking points. Search by rider, team or manager, or pick a nationality.')),
     h('div', { class: 'seg', role: 'group', 'aria-label': 'Riders view' }, [['season', 'Season'], ['stats', 'Stats']].map(([k, lab]) => h('button', { type: 'button', 'aria-pressed': String(UI.rmode === k), onclick: () => { location.hash = k === 'stats' ? '#riderstats' : '#riders'; } }, lab)))));
   return stats ? ridersStats() : ridersSeason();
 }
@@ -1883,7 +1894,7 @@ function ridersStats() {
   const draw = () => {
     typeBar.replaceChildren(...TYPES.map((k) => h('button', { class: 'chip', type: 'button', 'aria-pressed': String(st.type === k), onclick: () => { st.type = k; draw(); } }, k === 'all' ? 'All types' : k + 's')));
     const t = UI.q.trim().toLowerCase();
-    let list = all.filter((r) => (!t || r.text.includes(t)) && (st.type === 'all' || r.type === st.type));
+    let list = all.filter((r) => (!t || r.text.includes(t)) && (st.type === 'all' || r.type === st.type) && natOk(r));
     const f = VAL[st.key];
     list.sort((a, b) => { const x = f(a), y = f(b); const c = typeof x === 'string' ? x.localeCompare(y) : x - y; return c * st.dir || b.d.avg - a.d.avg; });
     const col = (label, key, extra = {}) => ({ label, ...extra, sort: { on: st.key === key, dir: st.dir, click: () => { if (st.key === key) st.dir = -st.dir; else { st.key = key; st.dir = key === 'name' || key === 'age' ? 1 : -1; } draw(); } } });
@@ -1893,7 +1904,7 @@ function ridersStats() {
       list.length > 300 ? h('p', { class: 'mute' }, 'Showing 300 of ' + list.length + '. Search or filter to narrow down.') : list.length ? '' : h('p', { class: 'empty' }, 'No riders match.'));
   };
   q.addEventListener('input', () => { UI.q = q.value; draw(); });
-  $view.append(h('section', { class: 'card' }, h('div', { class: 'tools' }, q), h('div', { class: 'rs-bar' }, h('span', { class: 'mute' }, 'Rider type'), typeBar),
+  $view.append(h('section', { class: 'card' }, h('div', { class: 'tools' }, q, natSelect(all, draw)), h('div', { class: 'rs-bar' }, h('span', { class: 'mute' }, 'Rider type'), typeBar),
     h('p', { class: 'src' }, 'FL flat · MO mountain · MM medium mountain · HIL hills · TT time trial · PRL prologue · COB cobbles · SP sprint · ACC acceleration · DH downhill · END stamina · RES resistance · REC recovery · ATT breakaway. Type: what the rider races for in real life for the well-known names, the WorldDB type where it has one, otherwise his strongest attributes.'), box));
   draw();
 }
@@ -1911,7 +1922,7 @@ function ridersSeason() {
   const draw = () => {
     catBar.replaceChildren(...CATS.map(([k, lab]) => h('button', { class: 'chip', type: 'button', 'aria-pressed': String(rs.cat === k), onclick: () => { rs.cat = k; rs.key = 'pts'; rs.dir = -1; draw(); } }, lab)));
     const t = UI.q.trim().toLowerCase();
-    let list = t ? all.filter((r) => r.text.includes(t)) : all.slice();
+    let list = all.filter((r) => (!t || r.text.includes(t)) && natOk(r));
     if (rs.cat !== 'all') list = list.filter((r) => ptsOf(r.o) > 0);
     const f = VAL[rs.key];
     list.sort((a, b) => { const x = f(a), y = f(b); const c = typeof x === 'string' ? x.localeCompare(y) : x - y; return c * rs.dir || ptsOf(b.o) - ptsOf(a.o); });
@@ -1919,10 +1930,10 @@ function ridersSeason() {
     const ptsLabel = rs.cat === 'all' ? 'Points' : CATS.find(([k]) => k === rs.cat)[1] + ' pts';
     box.replaceChildren(table([{ label: '#' }, col('Rider', 'name'), { label: 'Team', hs: 1 }, { label: 'Manager' }, col(ptsLabel, 'pts', { n: 1 }), col('Wins', 'wins', { n: 1 }), col('GC', 'gc', { n: 1, hs: 1 }), col('Podiums', 'pod', { n: 1, hs: 1 }), col('Days', 'days', { n: 1, hs: 1 })],
       list.slice(0, 300).map((r, k) => h('tr', null, h('td', { class: 'rk' }, k + 1), h('td', { class: 'rider' }, riderLink(r.i)), h('td', { class: 'mute' }, [...r.o.teams].filter((ti) => tid(ti)).map((ti, j) => [j ? ', ' : '', squadLink(ti)])), h('td', null, [...r.o.mgrs].map((m, j) => [j ? ', ' : '', teamLink(m)])), h('td', { class: 'n tot' }, Math.round(ptsOf(r.o)) || ''), h('td', { class: 'n' }, r.o.wins || ''), h('td', { class: 'n' }, r.o.gc || ''), h('td', { class: 'n' }, r.o.pod || ''), h('td', { class: 'n mute' }, r.o.starts))), { tall: true }),
-      list.length > 300 ? h('p', { class: 'mute' }, 'Showing 300 of ' + list.length + '. Search to narrow down.') : '');
+      list.length > 300 ? h('p', { class: 'mute' }, 'Showing 300 of ' + list.length + '. Search to narrow down.') : list.length ? '' : h('p', { class: 'empty' }, 'No riders match.'));
   };
   q.addEventListener('input', () => { UI.q = q.value; draw(); });
-  $view.append(h('section', { class: 'card' }, h('div', { class: 'tools' }, q), h('div', { class: 'rs-bar' }, h('span', { class: 'mute' }, 'Rank by class'), catBar), h('p', { class: 'src' }, 'Tip: click a column title to sort by it; click again to reverse.'), box));
+  $view.append(h('section', { class: 'card' }, h('div', { class: 'tools' }, q, natSelect(all, draw)), h('div', { class: 'rs-bar' }, h('span', { class: 'mute' }, 'Rank by class'), catBar), h('p', { class: 'src' }, 'Tip: click a column title to sort by it; click again to reverse.'), box));
   draw();
 }
 function openRace(st, kind) { const race = S.s1.races[st.race]; UI.race[st.race] = { div: st.div, stage: kind === 'stage' ? (race.stages > 1 ? st.stage : 1) : 0, cls: 'stage' }; }
