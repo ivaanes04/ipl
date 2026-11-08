@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-08T12:25",
+  "checked": "2026-11-08T14:42",
   "source": "#sign-ups on the PCM UK Discord, messages after FraBo's separator line (3 Nov 2026)",
   "start": "2026-11-30",
   "teams": [
@@ -275,6 +275,17 @@
       "team_src": "Astana",
       "jersey": "astana",
       "s1": "Frabo"
+    },
+    {
+      "posted": "2026-11-08T13:32",
+      "discord": "Imposter",
+      "pcm": "Marcel Testier / Imposter",
+      "web": "Marcel",
+      "team": "Red Bull",
+      "team_src": "Red Bull",
+      "jersey": "rbh",
+      "s1": "MarcelTestier + Imposter",
+      "community": "PCM Germany / Independant"
     }
   ]
 }
