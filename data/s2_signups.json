@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-07T19:00",
+  "checked": "2026-11-08T12:25",
   "source": "#sign-ups on the PCM UK Discord, messages after FraBo's separator line (3 Nov 2026)",
   "start": "2026-11-30",
   "teams": [
@@ -265,6 +265,16 @@
       "team_src": "NsN",
       "jersey": "nsn",
       "community": "Sabu76"
+    },
+    {
+      "posted": "2026-11-08T11:03",
+      "discord": "FraBo",
+      "pcm": "",
+      "web": "FraBo",
+      "team": "Astana",
+      "team_src": "Astana",
+      "jersey": "astana",
+      "s1": "Frabo"
     }
   ]
 }
