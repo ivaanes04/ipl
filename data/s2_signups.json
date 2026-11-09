@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-09T14:14",
+  "checked": "2026-11-09T16:51",
   "source": "#sign-ups on the PCM UK Discord, messages after FraBo's separator line (3 Nov 2026)",
   "start": "2026-11-30",
   "teams": [
@@ -288,6 +288,17 @@
       "jersey": "rbh",
       "s1": "MarcelTestier + Imposter",
       "community": "PCM Germany / Independant"
+    },
+    {
+      "posted": "2026-11-09T15:33",
+      "discord": "SeanColl",
+      "pcm": "",
+      "web": "seancoll",
+      "team": "Modern Adventure",
+      "team_src": "Modern Adventure",
+      "jersey": "map",
+      "community": "PCM UK",
+      "note": "PCM name to come: he will add it when he buys the game"
     }
   ]
 }
