@@ -673,6 +673,25 @@ a.s2card { color: inherit; } a.s2card:hover .s2team { color: var(--accent, inher
 .s2mgr a { color: inherit; }
 .s2was { font-size: 12px; color: var(--muted); max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .s2new { color: var(--gc); font-weight: 600; }
+.s2layout { display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: 20px; align-items: start; }
+.s2layout > .card { margin: 0; min-width: 0; }
+@media (max-width: 960px) { .s2layout { grid-template-columns: minmax(0, 1fr); } }
+.s2fl { margin-right: 6px; vertical-align: 1px; }
+.s2nat { position: sticky; top: 84px; }
+@media (max-width: 960px) { .s2nat { position: static; } }
+.s2nat-tot { display: flex; align-items: baseline; gap: 10px; margin: 2px 0 12px; }
+.s2nat-tot b { font: 700 44px/1 var(--f-display); }
+.s2nat-tot span { display: flex; flex-direction: column; font-weight: 600; }
+.s2nat-tot small { font-weight: 400; font-size: 12px; color: var(--muted); }
+.s2nat-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.s2nat-row { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+.s2nat-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.s2nat-bar { height: 4px; border-radius: 4px; background: var(--soft); margin: 4px 0 3px; overflow: hidden; }
+.s2nat-bar i { display: block; height: 100%; border-radius: 4px; background: var(--ink); opacity: .55; }
+.s2nat-teams { font-size: 12px; color: var(--muted); line-height: 1.35; overflow-wrap: anywhere; }
+.s2nat-open { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--line); }
+.s2nat-oh { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+.s2nat-src { font-size: 11px; color: var(--muted); margin: 14px 0 0; line-height: 1.4; }
 .s2pending { display: flex; flex-wrap: wrap; gap: 8px; }
 .s2pending a, .s2pending span { font-size: 14px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; }
 .roster { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 8px; }
@@ -787,7 +806,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.11.3', updated: '2026-11-08T14:42' };
+const SITE = { version: '1.12.0', updated: '2026-11-09T12:09' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0, nat: '' };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -861,9 +880,9 @@ const FLAGS = {
   th: ['h', '#a51931', '#f4f5f8', '#2d2a4a', '#2d2a4a', '#f4f5f8', '#a51931'], es: ['h', '#aa151b', '#f1bf00', '#f1bf00', '#aa151b'],
   il: ['h', '#ffffff', '#0038b8', '#ffffff', '#ffffff', '#0038b8', '#ffffff'], cy: ['h', '#ffffff'], kz: ['h', '#00afca'], cn: ['h', '#de2910'], tr: ['h', '#e30a17'],
   dk: ['x', '#c8102e', '#ffffff'], se: ['x', '#006aa7', '#fecc00'], no: ['x', '#ba0c2f', '#ffffff', '#00205b'], fi: ['x', '#ffffff', '#002f6c'],
-  gb: ['gb'], us: ['us'], au: ['au'], nz: ['au'], ch: ['ch'], cz: ['cz'], pt: ['pt'], za: ['za'], er: ['er'], br: ['br'], uy: ['uy'], pr: ['pr'], cl: ['cl'], my: ['my']
+  gb: ['gb'], us: ['us'], au: ['au'], nz: ['au'], ch: ['ch'], cz: ['cz'], pt: ['pt'], za: ['za'], er: ['er'], br: ['br'], uy: ['uy'], pr: ['pr'], cl: ['cl'], my: ['my'], bh: ['bh'], ph: ['ph']
 };
-const NATNAME = { it: 'Italy', fr: 'France', be: 'Belgium', nl: 'Netherlands', us: 'United States', de: 'Germany', es: 'Spain', dk: 'Denmark', co: 'Colombia', ee: 'Estonia', kz: 'Kazakhstan', ru: 'Russia', lv: 'Latvia', ch: 'Switzerland', gb: 'Great Britain', lu: 'Luxembourg', au: 'Australia', ca: 'Canada', mx: 'Mexico', cn: 'China', sk: 'Slovakia', si: 'Slovenia', pt: 'Portugal', pl: 'Poland', ie: 'Ireland', se: 'Sweden', cz: 'Czechia', nz: 'New Zealand', no: 'Norway', za: 'South Africa', at: 'Austria', ua: 'Ukraine', er: 'Eritrea', ve: 'Venezuela', ar: 'Argentina', fi: 'Finland', my: 'Malaysia', br: 'Brazil', uy: 'Uruguay', il: 'Israel', tr: 'Türkiye', th: 'Thailand', ec: 'Ecuador', pr: 'Puerto Rico', cy: 'Cyprus', cl: 'Chile', mc: 'Monaco' };
+const NATNAME = { it: 'Italy', fr: 'France', be: 'Belgium', nl: 'Netherlands', us: 'United States', de: 'Germany', es: 'Spain', dk: 'Denmark', co: 'Colombia', ee: 'Estonia', kz: 'Kazakhstan', ru: 'Russia', lv: 'Latvia', ch: 'Switzerland', gb: 'Great Britain', lu: 'Luxembourg', au: 'Australia', ca: 'Canada', mx: 'Mexico', cn: 'China', sk: 'Slovakia', si: 'Slovenia', pt: 'Portugal', pl: 'Poland', ie: 'Ireland', se: 'Sweden', cz: 'Czechia', nz: 'New Zealand', no: 'Norway', za: 'South Africa', at: 'Austria', ua: 'Ukraine', er: 'Eritrea', ve: 'Venezuela', ar: 'Argentina', fi: 'Finland', my: 'Malaysia', br: 'Brazil', uy: 'Uruguay', il: 'Israel', tr: 'Türkiye', th: 'Thailand', ec: 'Ecuador', pr: 'Puerto Rico', cy: 'Cyprus', cl: 'Chile', mc: 'Monaco', bh: 'Bahrain', ph: 'Philippines' };
 function flagSvg(cc) {
   const f = FLAGS[cc]; if (!f) return '';
   const r = (x, y, w, hh, c) => `<rect x="${x}" y="${y}" width="${w}" height="${hh}" fill="${c}"/>`;
@@ -891,6 +910,8 @@ function flagSvg(cc) {
   else if (cc === 'pr') { for (let i = 0; i < 5; i++) b += r(0, i * 4, 30, 4.1, i % 2 ? '#fff' : '#ed0000'); b += '<path d="M0 0L14 10L0 20Z" fill="#0050f0"/>'; }
   else if (cc === 'cl') b = r(0, 0, 30, 10, '#fff') + r(0, 10, 30, 10, '#d52b1e') + r(0, 0, 10, 10, '#0039a6') + '<circle cx="5" cy="5" r="1.8" fill="#fff"/>';
   else if (cc === 'my') { for (let i = 0; i < 7; i++) b += r(0, i * 20 / 7, 30, 20 / 14 + 0.1, '#cc0001') + r(0, i * 20 / 7 + 20 / 14, 30, 20 / 14 + 0.1, '#fff'); b += r(0, 0, 15, 11.4, '#010066') + '<circle cx="6" cy="5.7" r="3" fill="#fc0"/>'; }
+  else if (cc === 'bh') b = r(0, 0, 30, 20, '#ce1126') + '<path d="M0 0H8L11 2L8 4L11 6L8 8L11 10L8 12L11 14L8 16L11 18L8 20H0Z" fill="#fff"/>';
+  else if (cc === 'ph') b = r(0, 0, 30, 10, '#0038a8') + r(0, 10, 30, 10, '#ce1126') + '<path d="M0 0L17 10L0 20Z" fill="#fff"/><circle cx="5.5" cy="10" r="2.2" fill="#fcd116"/>';
   return `<svg viewBox="0 0 30 20" width="18" height="12" aria-hidden="true">${b}</svg>`;
 }
 const natOf = (i) => (S.s1.nat || [])[i] || '';
@@ -2133,6 +2154,26 @@ function s2Name(t) {
   const part = t.s1.split(/\s*\+\s*/).find((p) => me.some((m) => m && (m.includes(f(p)) || f(p).includes(m))));
   return part || t.web;
 }
+// country of a Season 2 team (data/s2_team_nations.json): from the game database where the team is in it, otherwise its real registration
+const s2Nat = (t) => { const n = S.s2nations && S.s2nations.teams[t.team]; return n && n.cc && FLAGS[n.cc] ? n : null; };
+function s2NationsAside(teams) {
+  if (!S.s2nations) return null;
+  const by = new Map(), open = [];
+  for (const t of teams) { const n = s2Nat(t); if (!n) { open.push(t); continue; } if (!by.has(n.cc)) by.set(n.cc, []); by.get(n.cc).push(t); }
+  const rows = [...by.entries()].sort((a, b) => b[1].length - a[1].length || (NATNAME[a[0]] || a[0]).localeCompare(NATNAME[b[0]] || b[0]));
+  const top = rows.length ? rows[0][1].length : 1;
+  const srcLabel = { game: 'game database', real: 'real-life registration', signup: 'as written in the sign-up' };
+  return h('aside', { class: 'card s2nat' },
+    h('div', { class: 'card-h' }, h('h2', null, 'Team nations')),
+    h('div', { class: 's2nat-tot' }, h('b', null, rows.length), h('span', null, rows.length === 1 ? 'nation' : 'nations', h('small', null, (teams.length - open.length) + ' of ' + teams.length + ' teams confirmed'))),
+    h('ul', { class: 's2nat-list' }, rows.map(([cc, ts]) => h('li', { title: ts.map((t) => t.team + ' (' + srcLabel[S.s2nations.teams[t.team].src] + ')').join('\n') },
+      h('div', { class: 's2nat-row' }, flag(cc), h('span', { class: 's2nat-name' }, NATNAME[cc] || cc.toUpperCase()), h('b', null, ts.length)),
+      h('div', { class: 's2nat-bar' }, h('i', { style: 'width:' + Math.round(ts.length / top * 100) + '%' })),
+      h('div', { class: 's2nat-teams' }, ts.map((t) => t.team).join(' · '))))),
+    open.length ? h('div', { class: 's2nat-open' }, h('div', { class: 's2nat-oh' }, 'Not confirmed (' + open.length + ')'),
+      h('div', { class: 's2nat-teams' }, open.map((t) => h('span', { title: (S.s2nations.teams[t.team] || {}).note || 'not checked yet' }, t.team)).reduce((a, x, i) => (i ? a.concat(' · ', x) : [x]), []))) : null,
+    h('p', { class: 's2nat-src' }, 'From the game database (PCM 26) when the team is in it; otherwise the team’s registration in real life. Checked ' + fdate(S.s2nations.checked) + '.'));
+}
 function viewS2Teams() {
   const D = S.s2signups;
   if (!D) return viewSquads();
@@ -2152,11 +2193,11 @@ function viewS2Teams() {
     const tip = ['Signed up ' + signed, t.pcm && t.pcm !== t.web ? 'in game: ' + t.pcm : '', t.community ? 'community: ' + t.community : '', t.note || '', t.jerseyNote || ''].filter(Boolean).join(' · ');
     return h('div', { class: 's2card', title: tip },
       h('div', { class: 's2jsy' }, t.jersey ? h('img', { src: 'img/jerseys/' + t.jersey + '.png', alt: t.team + ' jersey', loading: 'lazy' }) : h('span', null, (t.team.match(/[A-Za-z0-9]/) || ['?'])[0].toUpperCase())),
-      h('div', { class: 's2team' }, t.team, t.provisional ? h('span', { class: 's2flag', title: t.note || 'Team not final yet' }, 'TBC') : null),
+      h('div', { class: 's2team' }, s2Nat(t) ? h('span', { class: 's2fl' }, flag(s2Nat(t).cc)) : null, t.team, t.provisional ? h('span', { class: 's2flag', title: t.note || 'Team not final yet' }, 'TBC') : null),
       h('div', { class: 's2mgr' }, mgrCell(t)),
       h('div', { class: 's2was' }, t.s1 ? (was.length ? 'S1 · ' + was[0] : 'Raced Season 1') : h('span', { class: 's2new' }, 'New in the IPL')));
   }));
-  $view.append(card('Signed up', null, grid));
+  $view.append(h('div', { class: 's2layout' }, card('Signed up', null, grid), s2NationsAside(teams)));
   // Season 1 managers who have not signed up yet (pairs that split count as signed up)
   const signed = new Set(teams.map((t) => t.s1).filter(Boolean));
   const L = leagueRounds(); const fin = new Map(L.out.get(L.orders[L.orders.length - 1]).map((r) => [r.p, r]));
@@ -2328,6 +2369,7 @@ Promise.all(['data/s1.json', 'data/league.json', 'data/profiles.json', 'data/poi
     // Season 2 sign-ups are optional: the site works without them
     const s2 = Promise.all([
       fetch('data/s2_signups.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.s2signups = d; }).catch(() => {}),
+      fetch('data/s2_team_nations.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.s2nations = d; }).catch(() => {}),
       fetch('data/rules.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.rules = d; }).catch(() => {}),
       fetch('data/race_points.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.rp = d; }).catch(() => {})]);
     if (PREVIEW) return Promise.all([s2, fetch('data/photos.json').then((r) => (r.ok ? r.json() : null)).then((p) => { if (p) S.photos = p; }).catch(() => {})]);
