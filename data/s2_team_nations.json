@@ -1,6 +1,6 @@
 {
   "checked": "2026-11-09",
-  "about": "Country of each Season 2 team, keyed by the team name in s2_signups.json. src game = fkIDcountry of DYN_team in the PCM 26 World DB (workshop 3749668860) or the league mod (3763288588); src real = the team's registration in real life; src signup = what the manager wrote in #sign-ups; src manager = what the manager said later on Discord. Teams without cc could not be confirmed.",
+  "about": "Country of each Season 2 team, keyed by the team name in s2_signups.json. src game = fkIDcountry of DYN_team in the PCM 26 World DB (workshop 3749668860) or the league mod (3763288588); src real = the team's registration in real life; src signup = what the manager wrote in #sign-ups; src manager = what the manager said later on Discord; src general = agreed in #general on Discord. Teams without cc could not be confirmed.",
   "teams": {
     "UnoX": {
       "cc": "no",
@@ -107,13 +107,19 @@
       "as": "the manager wrote: its portuguese not french"
     },
     "Liberty Seguros": {
-      "note": "two real teams had this name: Liberty Seguros-Würth (Spain, 2004-06) and Liberty Seguros (Portugal, today GI Group Holding-Simoldes-UDO)"
+      "cc": "pt",
+      "src": "general",
+      "as": "Portuguese Liberty Seguros (Pena in #general, 9 Nov); set by Ivan"
     },
     "Royal Bank of Scotland": {
-      "note": "no cycling team sponsored by the Royal Bank of Scotland found"
+      "cc": "gb",
+      "src": "general",
+      "as": "Hillingz in #general, 9 Nov: under Great Britain; set by Ivan"
     },
     "Milka": {
-      "note": "the only Milka teams found are mountain bike teams (Milka-Trek, Netherlands; Milka-Superior, Czech Republic)"
+      "cc": "ch",
+      "src": "manager",
+      "as": "benjong and danielmiko (managers) in #general, 9 Nov: Milka is Switzerland"
     },
     "Talkwalker": {
       "cc": "lu",
