@@ -692,6 +692,38 @@ a.s2card { color: inherit; } a.s2card:hover .s2team { color: var(--accent, inher
 .s2nat-open { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--line); }
 .s2nat-oh { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
 .s2nat-src { font-size: 11px; color: var(--muted); margin: 14px 0 0; line-height: 1.4; }
+/* Season 2 sponsor objectives and token store */
+.s2sec { margin-top: 20px; }
+.objhead { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.objhead p { margin: 0; flex: 1 1 320px; color: var(--muted); font-size: 14px; line-height: 1.5; }
+.objhead p b { color: var(--ink); }
+.objgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); gap: 12px; }
+.objteam { border: 1px solid var(--soft); border-radius: 12px; background: var(--bg); padding: 12px 14px 8px; min-width: 0; }
+.objhd { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; min-width: 0; }
+.objhd img, .objnoj { width: 40px; height: 40px; flex: none; object-fit: contain; }
+.objnoj { border-radius: 8px; background: var(--soft); }
+.objhd div { min-width: 0; }
+.objhd b { display: block; font: 700 16px/1.15 var(--f-display); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.objhd small { display: block; font-size: 12px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.objteam ul { list-style: none; margin: 0; padding: 0; }
+.objteam li { display: flex; align-items: center; gap: 8px; padding: 5px 0; border-top: 1px solid var(--soft); font-size: 13.5px; line-height: 1.3; }
+.objteam li.hit { font-weight: 600; }
+.objteam li.dim { opacity: .45; }
+.obj-fl { display: inline-flex; gap: 2px; flex: none; min-width: 18px; }
+.obj-rg { flex: none; width: 18px; text-align: center; font-size: 14px; line-height: 1; }
+.objt { flex: 1; min-width: 0; }
+.tok { flex: none; display: inline-flex; align-items: center; gap: 3px; font: 600 12px var(--f-mono); color: var(--muted); white-space: nowrap; vertical-align: -1px; }
+.tok i { display: inline-block; width: 11px; height: 11px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #ffe58a, #e0a51b 60%, #a8740a); box-shadow: inset 0 0 0 1px rgb(0 0 0 / .18); }
+.objsrc { font-size: 12px; color: var(--muted); margin: 0; line-height: 1.45; }
+.store { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+@media (max-width: 860px) { .store { grid-template-columns: minmax(0, 1fr); } }
+.store ul.rules { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.45; }
+.store td.n { white-space: nowrap; }
+.store pre { margin: 6px 0 0; padding: 10px 12px; border-radius: 10px; background: var(--soft); font: 12.5px/1.5 var(--f-mono); white-space: pre-wrap; overflow-wrap: anywhere; }
+.store h3 { margin: 14px 0 0; font: 600 13px var(--f-display); letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
+.storedl { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+.storedl b { font: 700 24px/1 var(--f-display); }
+.storedl span { font-size: 13px; color: var(--muted); }
 .s2pending { display: flex; flex-wrap: wrap; gap: 8px; }
 .s2pending a, .s2pending span { font-size: 14px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; }
 .roster { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 8px; }
@@ -806,7 +838,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.12.6', updated: '2026-11-09T16:52' };
+const SITE = { version: '1.13.0', updated: '2026-11-09T22:35' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0, nat: '' };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -880,14 +912,15 @@ const FLAGS = {
   th: ['h', '#a51931', '#f4f5f8', '#2d2a4a', '#2d2a4a', '#f4f5f8', '#a51931'], es: ['h', '#aa151b', '#f1bf00', '#f1bf00', '#aa151b'],
   il: ['h', '#ffffff', '#0038b8', '#ffffff', '#ffffff', '#0038b8', '#ffffff'], cy: ['h', '#ffffff'], kz: ['h', '#00afca'], cn: ['h', '#de2910'], tr: ['h', '#e30a17'],
   dk: ['x', '#c8102e', '#ffffff'], se: ['x', '#006aa7', '#fecc00'], no: ['x', '#ba0c2f', '#ffffff', '#00205b'], fi: ['x', '#ffffff', '#002f6c'],
-  gb: ['gb'], us: ['us'], au: ['au'], nz: ['au'], ch: ['ch'], cz: ['cz'], pt: ['pt'], za: ['za'], er: ['er'], br: ['br'], uy: ['uy'], pr: ['pr'], cl: ['cl'], my: ['my'], bh: ['bh'], ph: ['ph']
+  gb: ['gb'], us: ['us'], au: ['au'], nz: ['au'], ch: ['ch'], cz: ['cz'], pt: ['pt'], za: ['za'], er: ['er'], br: ['br'], uy: ['uy'], pr: ['pr'], cl: ['cl'], my: ['my'], bh: ['bh'], ph: ['ph'], sct: ['sct'],
+  lt: ['h', '#fdb913', '#006a44', '#c1272d']
 };
-const NATNAME = { it: 'Italy', fr: 'France', be: 'Belgium', nl: 'Netherlands', us: 'United States', de: 'Germany', es: 'Spain', dk: 'Denmark', co: 'Colombia', ee: 'Estonia', kz: 'Kazakhstan', ru: 'Russia', lv: 'Latvia', ch: 'Switzerland', gb: 'Great Britain', lu: 'Luxembourg', au: 'Australia', ca: 'Canada', mx: 'Mexico', cn: 'China', sk: 'Slovakia', si: 'Slovenia', pt: 'Portugal', pl: 'Poland', ie: 'Ireland', se: 'Sweden', cz: 'Czechia', nz: 'New Zealand', no: 'Norway', za: 'South Africa', at: 'Austria', ua: 'Ukraine', er: 'Eritrea', ve: 'Venezuela', ar: 'Argentina', fi: 'Finland', my: 'Malaysia', br: 'Brazil', uy: 'Uruguay', il: 'Israel', tr: 'Türkiye', th: 'Thailand', ec: 'Ecuador', pr: 'Puerto Rico', cy: 'Cyprus', cl: 'Chile', mc: 'Monaco', bh: 'Bahrain', ph: 'Philippines' };
+const NATNAME = { it: 'Italy', fr: 'France', be: 'Belgium', nl: 'Netherlands', us: 'United States', de: 'Germany', es: 'Spain', dk: 'Denmark', co: 'Colombia', ee: 'Estonia', kz: 'Kazakhstan', ru: 'Russia', lv: 'Latvia', ch: 'Switzerland', gb: 'Great Britain', lu: 'Luxembourg', au: 'Australia', ca: 'Canada', mx: 'Mexico', cn: 'China', sk: 'Slovakia', si: 'Slovenia', pt: 'Portugal', pl: 'Poland', ie: 'Ireland', se: 'Sweden', cz: 'Czechia', nz: 'New Zealand', no: 'Norway', za: 'South Africa', at: 'Austria', ua: 'Ukraine', er: 'Eritrea', ve: 'Venezuela', ar: 'Argentina', fi: 'Finland', my: 'Malaysia', br: 'Brazil', uy: 'Uruguay', il: 'Israel', tr: 'Türkiye', th: 'Thailand', ec: 'Ecuador', pr: 'Puerto Rico', cy: 'Cyprus', cl: 'Chile', mc: 'Monaco', bh: 'Bahrain', ph: 'Philippines', lt: 'Lithuania', sct: 'Scotland' };
 function flagSvg(cc) {
   const f = FLAGS[cc]; if (!f) return '';
   const r = (x, y, w, hh, c) => `<rect x="${x}" y="${y}" width="${w}" height="${hh}" fill="${c}"/>`;
   let b = '';
-  if (f[0] === 'h') { const c = f.slice(1); c.forEach((col, i) => { b += r(0, (20 / c.length) * i, 30, 20 / c.length + 0.2, col); }); if (cc === 'kz') b += '<circle cx="15" cy="9" r="4" fill="#fec50c"/>'; if (cc === 'cn') b += '<circle cx="6" cy="6" r="3" fill="#ffde00"/>'; if (cc === 'tr') b += '<circle cx="12" cy="10" r="5" fill="#fff"/><circle cx="13.5" cy="10" r="4" fill="#e30a17"/>'; if (cc === 'cy') b += '<rect x="9" y="7" width="12" height="5" rx="2" fill="#d57800"/>'; }
+  if (f[0] === 'h') { const c = f.slice(1); c.forEach((col, i) => { b += r(0, (20 / c.length) * i, 30, 20 / c.length + 0.2, col); }); if (cc === 'kz') b += '<circle cx="15" cy="9" r="4" fill="#fec50c"/>'; if (cc === 'cn') b += '<circle cx="6" cy="6" r="3" fill="#ffde00"/>'; if (cc === 'tr') b += '<circle cx="12" cy="10" r="5" fill="#fff"/><circle cx="13.5" cy="10" r="4" fill="#e30a17"/>'; if (cc === 'si') b += '<path d="M6 2.6h5.4v4.6c0 2-1.3 3.2-2.7 3.9C7.3 10.4 6 9.2 6 7.2z" fill="#005ce5" stroke="#ed1c24" stroke-width=".7"/><path d="M6.9 8.2l1.8-2.6 1.8 2.6z" fill="#fff"/>'; if (cc === 'cy') b += '<rect x="9" y="7" width="12" height="5" rx="2" fill="#d57800"/>'; }
   else if (f[0] === 'v') { const c = f.slice(1); c.forEach((col, i) => { b += r((30 / c.length) * i, 0, 30 / c.length + 0.2, 20, col); }); }
   else if (f[0] === 'x') { b += r(0, 0, 30, 20, f[1]) + r(8, 0, 5, 20, f[2]) + r(0, 7.5, 30, 5, f[2]); if (f[3]) b += r(9.5, 0, 2, 20, f[3]) + r(0, 9, 30, 2, f[3]); }
   else if (cc === 'nz') {
@@ -911,6 +944,7 @@ function flagSvg(cc) {
   else if (cc === 'cl') b = r(0, 0, 30, 10, '#fff') + r(0, 10, 30, 10, '#d52b1e') + r(0, 0, 10, 10, '#0039a6') + '<circle cx="5" cy="5" r="1.8" fill="#fff"/>';
   else if (cc === 'my') { for (let i = 0; i < 7; i++) b += r(0, i * 20 / 7, 30, 20 / 14 + 0.1, '#cc0001') + r(0, i * 20 / 7 + 20 / 14, 30, 20 / 14 + 0.1, '#fff'); b += r(0, 0, 15, 11.4, '#010066') + '<circle cx="6" cy="5.7" r="3" fill="#fc0"/>'; }
   else if (cc === 'bh') b = r(0, 0, 30, 20, '#ce1126') + '<path d="M0 0H8L11 2L8 4L11 6L8 8L11 10L8 12L11 14L8 16L11 18L8 20H0Z" fill="#fff"/>';
+  else if (cc === 'sct') b = r(0, 0, 30, 20, '#005eb8') + '<path d="M0 0L30 20M30 0L0 20" stroke="#fff" stroke-width="3.4"/>';
   else if (cc === 'ph') b = r(0, 0, 30, 10, '#0038a8') + r(0, 10, 30, 10, '#ce1126') + '<path d="M0 0L17 10L0 20Z" fill="#fff"/><circle cx="5.5" cy="10" r="2.2" fill="#fcd116"/>';
   return `<svg viewBox="0 0 30 20" width="18" height="12" aria-hidden="true">${b}</svg>`;
 }
@@ -2174,6 +2208,61 @@ function s2NationsAside(teams) {
       h('div', { class: 's2nat-teams' }, open.map((t) => h('span', { title: (S.s2nations.teams[t.team] || {}).note || 'not checked yet' }, t.team)).reduce((a, x, i) => (i ? a.concat(' · ', x) : [x]), []))) : null,
     h('p', { class: 's2nat-src' }, 'From the game database (PCM 26) when the team is in it; otherwise the team’s registration in real life. Checked ' + fdate(S.s2nations.checked) + '.'));
 }
+// ---------- Season 2 sponsor objectives and token store (data/s2_objectives.json, copied from Joe's posts on Discord) ----------
+const OBJ_REGION = { asia: ['🌏', 'Asia'], americas: ['🌎', 'South / Central America'], africa: ['🌍', 'Africa'] };
+const objKeys = (o) => (o.region ? [o.region] : o.cc);
+const objLabel = (k) => (OBJ_REGION[k] ? OBJ_REGION[k][1] : NATNAME[k] || k.toUpperCase());
+const objMark = (o) => (o.region ? h('span', { class: 'obj-rg', title: OBJ_REGION[o.region][1], role: 'img', 'aria-label': OBJ_REGION[o.region][1] }, OBJ_REGION[o.region][0]) : h('span', { class: 'obj-fl' }, o.cc.map(flag)));
+const tokChip = (n) => h('span', { class: 'tok', title: n + (n === 1 ? ' token' : ' tokens') }, n + '×', h('i', { 'aria-hidden': 'true' }));
+const discordWhen = (iso) => new Date(iso).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Madrid' }) + ' CET';
+function s2ObjectivesCard(teams) {
+  const O = S.s2obj && S.s2obj.objectives;
+  if (!O) return null;
+  const sign = new Map(teams.map((t) => [t.team, t]));
+  const count = new Map();
+  for (const t of O.teams) for (const k of new Set(t.objectives.flatMap(objKeys))) count.set(k, (count.get(k) || 0) + 1);
+  if (UI.objNat && !count.has(UI.objNat)) UI.objNat = '';
+  const opts = [...count.entries()].sort((a, b) => b[1] - a[1] || objLabel(a[0]).localeCompare(objLabel(b[0])));
+  const grid = h('div', { class: 'objgrid' });
+  const draw = () => {
+    const k = UI.objNat || '';
+    grid.replaceChildren(...O.teams.filter((t) => !k || t.objectives.some((o) => objKeys(o).includes(k))).map((t) => {
+      const s = sign.get(t.team);
+      const who = s ? [s2Name(s), s.partner ? ' + ' + s.partner : null] : t.manager.replace(/^@/, '');
+      return h('div', { class: 'objteam' },
+        h('div', { class: 'objhd' }, s && s.jersey ? h('img', { src: 'img/jerseys/' + s.jersey + '.png', alt: '', loading: 'lazy' }) : h('span', { class: 'objnoj' }),
+          h('div', null, h('b', { title: t.as ? 'Written “' + t.as + '” in #sponsor-objectives' : t.team }, s2Nat(s || {}) ? h('span', { class: 's2fl' }, flag(s2Nat(s).cc)) : null, t.team), h('small', null, who))),
+        h('ul', null, t.objectives.map((o) => h('li', { class: k ? (objKeys(o).includes(k) ? 'hit' : 'dim') : null }, objMark(o), h('span', { class: 'objt' }, o.text), tokChip(o.tokens)))));
+    }));
+  };
+  const sel = h('select', { class: 'nat-sel', 'aria-label': 'Show the teams with an objective for one nation', onchange: (e) => { UI.objNat = e.target.value; draw(); } },
+    h('option', { value: '' }, 'All teams'), opts.map(([c, n]) => h('option', { value: c }, objLabel(c) + ' (' + n + (n === 1 ? ' team)' : ' teams)'))));
+  sel.value = UI.objNat || '';
+  draw();
+  const per = O.teams[0] ? O.teams[0].objectives.length : 4;
+  const maxTok = Math.max(...O.teams.map((t) => t.objectives.reduce((a, o) => a + o.tokens, 0)));
+  return h('section', { class: 'card s2sec', id: 's2objectives' },
+    h('div', { class: 'card-h' }, h('h2', null, 'Sponsor objectives')),
+    h('div', { class: 'objhead' }, h('p', null, per + ' objectives per team. Every objective completed is worth ', h('b', null, O.points + ' points'), ' at the start of Season 2, plus the tokens shown (', tokChip(2), ' or ', tokChip(3), ', up to ' + maxTok + ' a team) to spend in the token store. A bigger objective also completes the smaller one: sign 9 French riders and “Sign 5” is done too.'), sel),
+    grid,
+    h('p', { class: 'objsrc' }, 'Copied from #sponsor-objectives on the PCM UK Discord (last edited ' + discordWhen(O.edited) + '). Joe: the objectives are 99% set in stone, and they are just for a bit of fun.'));
+}
+function s2StoreCard() {
+  const T = S.s2obj && S.s2obj.store;
+  if (!T) return null;
+  return h('section', { class: 'card s2sec', id: 's2store' },
+    h('div', { class: 'card-h' }, h('h2', null, 'Token store')),
+    h('div', { class: 'store' },
+      h('div', null,
+        h('div', { class: 'storedl' }, h('span', null, 'Spend every token by'), h('b', null, T.deadline)),
+        h('ul', { class: 'rules' }, T.intro.map((x) => h('li', null, x))),
+        h('h3', null, 'Message format'),
+        h('pre', null, T.example.join('\n'))),
+      h('div', null,
+        table([{ label: 'What you buy' }, { label: 'Tokens', n: 1 }], T.options.map((o) => h('tr', null, h('td', null, o.text), h('td', { class: 'n' }, tokChip(o.tokens))))),
+        T.note ? h('p', { class: 'objsrc', style: 'margin-top:10px' }, T.note) : null)),
+    h('p', { class: 'objsrc' }, 'Copied from #token-store on the PCM UK Discord (posted ' + discordWhen(T.posted) + '). Joe: the store is still a work in progress, but the general idea is set.'));
+}
 function viewS2Teams() {
   const D = S.s2signups;
   if (!D) return viewSquads();
@@ -2199,6 +2288,9 @@ function viewS2Teams() {
       h('div', { class: 's2was' }, t.s1 ? (was.length ? 'S1 · ' + was[0] : 'Raced Season 1') : h('span', { class: 's2new' }, 'New in the IPL')));
   }));
   $view.append(h('div', { class: 's2layout' }, card('Signed up', null, grid), s2NationsAside(teams)));
+  const objC = s2ObjectivesCard(teams), storeC = s2StoreCard();
+  if (objC) $view.append(objC);
+  if (storeC) $view.append(storeC);
   // Season 1 managers who have not signed up yet (pairs that split count as signed up)
   const signed = new Set(teams.map((t) => t.s1).filter(Boolean));
   const L = leagueRounds(); const fin = new Map(L.out.get(L.orders[L.orders.length - 1]).map((r) => [r.p, r]));
@@ -2371,6 +2463,7 @@ Promise.all(['data/s1.json', 'data/league.json', 'data/profiles.json', 'data/poi
     const s2 = Promise.all([
       fetch('data/s2_signups.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.s2signups = d; }).catch(() => {}),
       fetch('data/s2_team_nations.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.s2nations = d; }).catch(() => {}),
+      fetch('data/s2_objectives.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.s2obj = d; }).catch(() => {}),
       fetch('data/rules.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.rules = d; }).catch(() => {}),
       fetch('data/race_points.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.rp = d; }).catch(() => {})]);
     if (PREVIEW) return Promise.all([s2, fetch('data/photos.json').then((r) => (r.ok ? r.json() : null)).then((p) => { if (p) S.photos = p; }).catch(() => {})]);

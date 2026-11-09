@@ -1,0 +1,1018 @@
+{
+  "source": "#sponsor-objectives and #token-store (International Pro League) on the PCM UK Discord, posted by Joewhiteley0711; copied as written",
+  "checked": "2026-11-09T22:25",
+  "objectives": {
+    "posted": "2026-11-09T19:59:45Z",
+    "edited": "2026-11-09T20:57:00Z",
+    "points": 100,
+    "intro": [
+      "Each objective completed will earn you points to start the season off with, but also tokens to spend in the token store.",
+      "Every objective completed will earn you 100 points towards the start of season 2.",
+      "Each duplicated objective, such as Sign 5 French Riders and Sign 9 French Riders: if you sign 9 French riders, yes, both will be completed.",
+      "I have tried to balance the objectives out as much as possible depending on the available supply and demand of riders from that nation. For example, Portugal have several teams requiring riders, but each team will only need 2-3 riders because there isn't enough supply of 'decent' Portuguese riders.",
+      "Remember, this is just for a bit of fun, and don't feel constrained by the objectives as only a couple even occupy half the team slots required.",
+      "The objectives are 99% set in stone, however the Token Store is still a work in progress, but the general idea is set in stone."
+    ],
+    "teams": [
+      {
+        "team": "7-Eleven",
+        "manager": "@chrisjanssen.",
+        "objectives": [
+          {
+            "text": "Sign 1 Philippine Rider",
+            "tokens": 2,
+            "cc": [
+              "ph"
+            ]
+          },
+          {
+            "text": "Sign 3 Riders From Asia (including Philippines)",
+            "tokens": 3,
+            "region": "asia"
+          },
+          {
+            "text": "Sign 5 USA Riders",
+            "tokens": 2,
+            "cc": [
+              "us"
+            ]
+          },
+          {
+            "text": "Sign 1 Norwegian Rider",
+            "tokens": 2,
+            "cc": [
+              "no"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "Talkwalker",
+        "manager": "@benjong",
+        "objectives": [
+          {
+            "text": "Sign 1 Luxembourg Rider",
+            "tokens": 2,
+            "cc": [
+              "lu"
+            ]
+          },
+          {
+            "text": "Sign 2 Luxembourg Riders",
+            "tokens": 3,
+            "cc": [
+              "lu"
+            ]
+          },
+          {
+            "text": "Sign 4 Dutch Riders",
+            "tokens": 2,
+            "cc": [
+              "nl"
+            ]
+          },
+          {
+            "text": "Sign 2 Belgian Riders",
+            "tokens": 2,
+            "cc": [
+              "be"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "Bahrain Victorious",
+        "manager": "@DaaGz",
+        "objectives": [
+          {
+            "text": "Sign 1 Rider From Either Bahrain, UAE or Saudi Arabia",
+            "tokens": 2,
+            "region": "asia"
+          },
+          {
+            "text": "Sign 3 Riders From Asia (including those above)",
+            "tokens": 3,
+            "region": "asia"
+          },
+          {
+            "text": "Sign 3 Slovenian Riders",
+            "tokens": 2,
+            "cc": [
+              "si"
+            ]
+          },
+          {
+            "text": "Sign 2 Italian Riders",
+            "tokens": 2,
+            "cc": [
+              "it"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "B&B Hotels",
+        "manager": "@Tom Bryant",
+        "objectives": [
+          {
+            "text": "Sign 5 French Riders",
+            "tokens": 2,
+            "cc": [
+              "fr"
+            ]
+          },
+          {
+            "text": "Sign 9 French Riders",
+            "tokens": 3,
+            "cc": [
+              "fr"
+            ]
+          },
+          {
+            "text": "Sign 3 Belgian Riders",
+            "tokens": 2,
+            "cc": [
+              "be"
+            ]
+          },
+          {
+            "text": "Sign 1 Italian Rider",
+            "tokens": 2,
+            "cc": [
+              "it"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "Tudor",
+        "manager": "@Grandpa",
+        "objectives": [
+          {
+            "text": "Sign 2 Swiss Riders",
+            "tokens": 2,
+            "cc": [
+              "ch"
+            ]
+          },
+          {
+            "text": "Sign 5 Swiss Riders",
+            "tokens": 3,
+            "cc": [
+              "ch"
+            ]
+          },
+          {
+            "text": "Sign 3 German Riders",
+            "tokens": 2,
+            "cc": [
+              "de"
+            ]
+          },
+          {
+            "text": "Sign 2 French Riders",
+            "tokens": 2,
+            "cc": [
+              "fr"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "Biesse - Carrera - Premac",
+        "manager": "@Hubi",
+        "objectives": [
+          {
+            "text": "Sign 4 Italian Riders",
+            "tokens": 2,
+            "cc": [
+              "it"
+            ]
+          },
+          {
+            "text": "Sign 8 Italian Riders",
+            "tokens": 3,
+            "cc": [
+              "it"
+            ]
+          },
+          {
+            "text": "Sign 2 Swiss Riders",
+            "tokens": 2,
+            "cc": [
+              "ch"
+            ]
+          },
+          {
+            "text": "Sign 1 Danish Rider",
+            "tokens": 2,
+            "cc": [
+              "dk"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "Royal Bank of Scotland",
+        "manager": "@ChuppaSheeps",
+        "objectives": [
+          {
+            "text": "Sign 5 British Riders (including Scotland)",
+            "tokens": 2,
+            "cc": [
+              "gb"
+            ]
+          },
+          {
+            "text": "Sign 8 British Riders (including Scotland)",
+            "tokens": 3,
+            "cc": [
+              "gb"
+            ]
+          },
+          {
+            "text": "Sign 2 Scottish Riders",
+            "tokens": 2,
+            "cc": [
+              "sct"
+            ]
+          },
+          {
+            "text": "Sign 2 Irish Riders",
+            "tokens": 2,
+            "cc": [
+              "ie"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "Rabobank",
+        "manager": "@Bouke",
+        "objectives": [
+          {
+            "text": "Sign 5 Dutch Riders",
+            "tokens": 2,
+            "cc": [
+              "nl"
+            ]
+          },
+          {
+            "text": "Sign 8 Dutch Riders",
+            "tokens": 3,
+            "cc": [
+              "nl"
+            ]
+          },
+          {
+            "text": "Sign 3 Belgian Riders",
+            "tokens": 2,
+            "cc": [
+              "be"
+            ]
+          },
+          {
+            "text": "Sign 1 German Rider",
+            "tokens": 2,
+            "cc": [
+              "de"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "UnoX",
+        "manager": "@ivanes04",
+        "objectives": [
+          {
+            "text": "Sign 4 Norwegian Riders",
+            "tokens": 2,
+            "cc": [
+              "no"
+            ]
+          },
+          {
+            "text": "Sign 7 Norwegian Riders",
+            "tokens": 3,
+            "cc": [
+              "no"
+            ]
+          },
+          {
+            "text": "Sign 2 Danish Riders",
+            "tokens": 2,
+            "cc": [
+              "dk"
+            ]
+          },
+          {
+            "text": "Sign 5 Danish Riders",
+            "tokens": 2,
+            "cc": [
+              "dk"
+            ]
+          }
+        ],
+        "as": "Uno-X"
+      },
+      {
+        "team": "Ukraine Cycling Team",
+        "manager": "@Riverside_ukr",
+        "objectives": [
+          {
+            "text": "Sign 1 Ukrainian Rider",
+            "tokens": 2,
+            "cc": [
+              "ua"
+            ]
+          },
+          {
+            "text": "Sign 2 Ukrainian Riders",
+            "tokens": 3,
+            "cc": [
+              "ua"
+            ]
+          },
+          {
+            "text": "Sign 3 Polish Riders",
+            "tokens": 2,
+            "cc": [
+              "pl"
+            ]
+          },
+          {
+            "text": "Sign 2 Baltic Riders",
+            "tokens": 2,
+            "cc": [
+              "lv",
+              "lt",
+              "ee"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "Deceuninck - Quick-Step",
+        "manager": "@Hillingz",
+        "objectives": [
+          {
+            "text": "Sign 5 Belgian Riders",
+            "tokens": 2,
+            "cc": [
+              "be"
+            ]
+          },
+          {
+            "text": "Sign 9 Belgian Riders",
+            "tokens": 3,
+            "cc": [
+              "be"
+            ]
+          },
+          {
+            "text": "Sign 2 French Riders",
+            "tokens": 2,
+            "cc": [
+              "fr"
+            ]
+          },
+          {
+            "text": "Sign 1 Italian Rider",
+            "tokens": 2,
+            "cc": [
+              "it"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "MEO (Benfica)",
+        "manager": "@Shawn Michaels Timms",
+        "objectives": [
+          {
+            "text": "Sign 1 Portuguese Rider",
+            "tokens": 2,
+            "cc": [
+              "pt"
+            ]
+          },
+          {
+            "text": "Sign 2 Portuguese Riders",
+            "tokens": 3,
+            "cc": [
+              "pt"
+            ]
+          },
+          {
+            "text": "Sign 3 Colombian Riders",
+            "tokens": 2,
+            "cc": [
+              "co"
+            ]
+          },
+          {
+            "text": "Sign 5 South / Central American Riders (Including Colombia)",
+            "tokens": 2,
+            "region": "americas"
+          }
+        ],
+        "as": "Benfica"
+      },
+      {
+        "team": "MTN Qhubeka",
+        "manager": "@Joewhiteley0711",
+        "objectives": [
+          {
+            "text": "Sign 2 South African Riders",
+            "tokens": 2,
+            "cc": [
+              "za"
+            ]
+          },
+          {
+            "text": "Sign 5 African Riders (Including South Africa)",
+            "tokens": 3,
+            "region": "africa"
+          },
+          {
+            "text": "Sign 2 Italian Riders",
+            "tokens": 2,
+            "cc": [
+              "it"
+            ]
+          },
+          {
+            "text": "Sign 1 British Rider",
+            "tokens": 2,
+            "cc": [
+              "gb"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "CSC",
+        "manager": "@Mars",
+        "objectives": [
+          {
+            "text": "Sign 5 Danish Riders",
+            "tokens": 2,
+            "cc": [
+              "dk"
+            ]
+          },
+          {
+            "text": "Sign 8 Danish Riders",
+            "tokens": 3,
+            "cc": [
+              "dk"
+            ]
+          },
+          {
+            "text": "Sign 3 Norwegian Riders",
+            "tokens": 2,
+            "cc": [
+              "no"
+            ]
+          },
+          {
+            "text": "Sign 1 Swedish Rider",
+            "tokens": 2,
+            "cc": [
+              "se"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "Renova",
+        "manager": "@penaguevara2727",
+        "objectives": [
+          {
+            "text": "Sign 2 Portuguese Riders",
+            "tokens": 2,
+            "cc": [
+              "pt"
+            ]
+          },
+          {
+            "text": "Sign 3 Portuguese Riders",
+            "tokens": 3,
+            "cc": [
+              "pt"
+            ]
+          },
+          {
+            "text": "Sign 3 French Riders",
+            "tokens": 2,
+            "cc": [
+              "fr"
+            ]
+          },
+          {
+            "text": "Sign 2 Spanish Riders",
+            "tokens": 2,
+            "cc": [
+              "es"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "NsN",
+        "manager": "@AfonsoP1",
+        "objectives": [
+          {
+            "text": "Sign 2 Swiss Riders",
+            "tokens": 2,
+            "cc": [
+              "ch"
+            ]
+          },
+          {
+            "text": "Sign 5 Swiss Riders",
+            "tokens": 3,
+            "cc": [
+              "ch"
+            ]
+          },
+          {
+            "text": "Sign 2 Israeli Riders",
+            "tokens": 2,
+            "cc": [
+              "il"
+            ]
+          },
+          {
+            "text": "Sign 2 Canadian Riders",
+            "tokens": 2,
+            "cc": [
+              "ca"
+            ]
+          }
+        ],
+        "as": "NSN"
+      },
+      {
+        "team": "Astana",
+        "manager": "@FraBo",
+        "objectives": [
+          {
+            "text": "Sign 1 Kazakh Rider",
+            "tokens": 2,
+            "cc": [
+              "kz"
+            ]
+          },
+          {
+            "text": "Sign 2 Kazakh Riders",
+            "tokens": 3,
+            "cc": [
+              "kz"
+            ]
+          },
+          {
+            "text": "Sign 4 Spanish Riders",
+            "tokens": 2,
+            "cc": [
+              "es"
+            ]
+          },
+          {
+            "text": "Sign 4 Italian Riders",
+            "tokens": 2,
+            "cc": [
+              "it"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "Red Bull",
+        "manager": "@MarcelTestier @Imposter",
+        "objectives": [
+          {
+            "text": "Sign 3 German Riders",
+            "tokens": 2,
+            "cc": [
+              "de"
+            ]
+          },
+          {
+            "text": "Sign 6 German Riders",
+            "tokens": 3,
+            "cc": [
+              "de"
+            ]
+          },
+          {
+            "text": "Sign 2 Austrian Riders",
+            "tokens": 2,
+            "cc": [
+              "at"
+            ]
+          },
+          {
+            "text": "Sign 2 Italian Riders",
+            "tokens": 2,
+            "cc": [
+              "it"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "Tavfer-Ovos Matinados-Mortágua",
+        "manager": "@Sabu76",
+        "objectives": [
+          {
+            "text": "Sign 2 Portuguese Riders",
+            "tokens": 2,
+            "cc": [
+              "pt"
+            ]
+          },
+          {
+            "text": "Sign 3 Portuguese Riders",
+            "tokens": 3,
+            "cc": [
+              "pt"
+            ]
+          },
+          {
+            "text": "Sign 3 Spanish Riders",
+            "tokens": 2,
+            "cc": [
+              "es"
+            ]
+          },
+          {
+            "text": "Sign 1 Venezuelan Rider",
+            "tokens": 2,
+            "cc": [
+              "ve"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "Kelme Costa Blanca",
+        "manager": "@JGCol🇨🇴",
+        "objectives": [
+          {
+            "text": "Sign 4 Spanish Riders",
+            "tokens": 2,
+            "cc": [
+              "es"
+            ]
+          },
+          {
+            "text": "Sign 7 Spanish Riders",
+            "tokens": 3,
+            "cc": [
+              "es"
+            ]
+          },
+          {
+            "text": "Sign 2 Colombian Riders",
+            "tokens": 2,
+            "cc": [
+              "co"
+            ]
+          },
+          {
+            "text": "Sign 2 French Riders",
+            "tokens": 2,
+            "cc": [
+              "fr"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "Portugal in 150 Seconds",
+        "manager": "@Bessa4delas",
+        "objectives": [
+          {
+            "text": "Sign 1 Portuguese Riders",
+            "tokens": 2,
+            "cc": [
+              "pt"
+            ]
+          },
+          {
+            "text": "Sign 2 Portuguese Riders",
+            "tokens": 3,
+            "cc": [
+              "pt"
+            ]
+          },
+          {
+            "text": "Sign 4 French Riders",
+            "tokens": 2,
+            "cc": [
+              "fr"
+            ]
+          },
+          {
+            "text": "Sign 3 Spanish or Italian Riders",
+            "tokens": 2,
+            "cc": [
+              "es",
+              "it"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "FEIRENSE - BEECELER",
+        "manager": "@joaoluis0959",
+        "objectives": [
+          {
+            "text": "Sign 2 Portuguese Riders",
+            "tokens": 2,
+            "cc": [
+              "pt"
+            ]
+          },
+          {
+            "text": "Sign 3 Portuguese Riders",
+            "tokens": 3,
+            "cc": [
+              "pt"
+            ]
+          },
+          {
+            "text": "Sign 4 Spanish Riders",
+            "tokens": 2,
+            "cc": [
+              "es"
+            ]
+          },
+          {
+            "text": "Sign 1 South / Central American Rider",
+            "tokens": 2,
+            "region": "americas"
+          }
+        ]
+      },
+      {
+        "team": "Milka",
+        "manager": "@Ligue 1 > Eredivisie",
+        "objectives": [
+          {
+            "text": "Sign 2 Swiss Riders",
+            "tokens": 2,
+            "cc": [
+              "ch"
+            ]
+          },
+          {
+            "text": "Sign 5 Swiss Riders",
+            "tokens": 3,
+            "cc": [
+              "ch"
+            ]
+          },
+          {
+            "text": "Sign 3 German or Austrian Riders (combined)",
+            "tokens": 2,
+            "cc": [
+              "de",
+              "at"
+            ]
+          },
+          {
+            "text": "Sign 2 French Riders",
+            "tokens": 2,
+            "cc": [
+              "fr"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "Unibet Rose Rockets",
+        "manager": "@firejohn",
+        "objectives": [
+          {
+            "text": "Sign 4 Dutch Riders",
+            "tokens": 2,
+            "cc": [
+              "nl"
+            ]
+          },
+          {
+            "text": "Sign 8 Dutch Riders",
+            "tokens": 3,
+            "cc": [
+              "nl"
+            ]
+          },
+          {
+            "text": "Sign 4 French Riders",
+            "tokens": 2,
+            "cc": [
+              "fr"
+            ]
+          },
+          {
+            "text": "Sign 1 Norwegian Rider",
+            "tokens": 2,
+            "cc": [
+              "no"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "GI Group Holding Simoldes UDO",
+        "manager": "@bandalhoquerido",
+        "objectives": [
+          {
+            "text": "Sign 2 Portuguese Riders",
+            "tokens": 2,
+            "cc": [
+              "pt"
+            ]
+          },
+          {
+            "text": "Sign 3 Portuguese Riders",
+            "tokens": 3,
+            "cc": [
+              "pt"
+            ]
+          },
+          {
+            "text": "Sign 3 Spanish Riders",
+            "tokens": 2,
+            "cc": [
+              "es"
+            ]
+          },
+          {
+            "text": "Sign 1 Brazilian Rider",
+            "tokens": 2,
+            "cc": [
+              "br"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "Modern Adventure",
+        "manager": "SeanColl",
+        "objectives": [
+          {
+            "text": "Sign 3 USA Riders",
+            "tokens": 2,
+            "cc": [
+              "us"
+            ]
+          },
+          {
+            "text": "Sign 6 USA Riders",
+            "tokens": 3,
+            "cc": [
+              "us"
+            ]
+          },
+          {
+            "text": "Sign 1 Canadian Rider",
+            "tokens": 2,
+            "cc": [
+              "ca"
+            ]
+          },
+          {
+            "text": "Sign 1 Kiwi Rider",
+            "tokens": 2,
+            "cc": [
+              "nz"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "Liberty Seguros",
+        "manager": "Leandrojx",
+        "objectives": [
+          {
+            "text": "Sign 1 Portuguese Riders",
+            "tokens": 2,
+            "cc": [
+              "pt"
+            ]
+          },
+          {
+            "text": "Sign 2 Portuguese Riders",
+            "tokens": 3,
+            "cc": [
+              "pt"
+            ]
+          },
+          {
+            "text": "Sign 5 Spanish Riders",
+            "tokens": 2,
+            "cc": [
+              "es"
+            ]
+          },
+          {
+            "text": "Sign 1 Colombian Rider",
+            "tokens": 2,
+            "cc": [
+              "co"
+            ]
+          }
+        ]
+      },
+      {
+        "team": "Discovery Channel",
+        "manager": "Agap",
+        "objectives": [
+          {
+            "text": "Sign 3 USA Riders",
+            "tokens": 2,
+            "cc": [
+              "us"
+            ]
+          },
+          {
+            "text": "Sign 6 USA Riders",
+            "tokens": 3,
+            "cc": [
+              "us"
+            ]
+          },
+          {
+            "text": "Sign 3 Belgian Riders",
+            "tokens": 2,
+            "cc": [
+              "be"
+            ]
+          },
+          {
+            "text": "Sign 1 Spanish Rider",
+            "tokens": 2,
+            "cc": [
+              "es"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "store": {
+    "posted": "2026-11-09T20:40:36Z",
+    "edited": "2026-11-09T20:40:00Z",
+    "deadline": "27th November 23:59 CET",
+    "intro": [
+      "Welcome to the IPL Token Store, powered by the Biggest of all Bods @Shawn Michaels Timms. Here you can spend your tokens earned from completing sponsor objectives during the auction.",
+      "You need to spend all the tokens before the deadline of 27th November 23:59 CET by messaging clearly in #token-store in the format below.",
+      "If you complete all of your sponsor objectives, you can receive a total of 9 tokens to spend.",
+      "You can only use 1 option PER rider (for example you can only buy one set of '+2 Race days for rider valued 1-11m', you cannot buy 9x of these)."
+    ],
+    "example": [
+      "Team Name",
+      "Matthew Brennan (Price) - +2 Race days for rider valued 30-39m (4x)",
+      "Ben Healy (Price) - +2 Race days for rider valued 20-29m (3x)",
+      "Ivan Romeo (Price) - +2 Race days for rider valued 12-19m (2x)"
+    ],
+    "options": [
+      {
+        "text": "+2 Race day for rider valued 90m or more",
+        "tokens": 8
+      },
+      {
+        "text": "+2 Race day for rider valued 60-89m",
+        "tokens": 7
+      },
+      {
+        "text": "+2 Race days for rider valued 60-89m",
+        "tokens": 6
+      },
+      {
+        "text": "+2 Race day for rider valued 40-59m",
+        "tokens": 5
+      },
+      {
+        "text": "+2 Race days for rider valued 30-39m",
+        "tokens": 4
+      },
+      {
+        "text": "+2 Race days for rider valued 20-29m",
+        "tokens": 3
+      },
+      {
+        "text": "+2 Race days for rider valued 12-19m",
+        "tokens": 2
+      },
+      {
+        "text": "+2 Race days for rider valued 1-11m",
+        "tokens": 1
+      }
+    ],
+    "note": "The 60-89m band is listed twice in #token-store (7 and 6 tokens), as written by Joe; the store is still a work in progress."
+  }
+}
