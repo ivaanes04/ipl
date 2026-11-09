@@ -2,32 +2,124 @@
   "checked": "2026-11-09",
   "about": "Country of each Season 2 team, keyed by the team name in s2_signups.json. src game = fkIDcountry of DYN_team in the PCM 26 World DB (workshop 3749668860) or the league mod (3763288588); src real = the team's registration in real life; src signup = what the manager wrote in #sign-ups. Teams without cc could not be confirmed.",
   "teams": {
-    "UnoX": { "cc": "no", "src": "game", "as": "Uno-X Mobility" },
-    "7-Eleven": { "cc": "ph", "src": "game", "as": "7Eleven Cliqq Roadbike Philippines (the jersey used)" },
-    "Bahrain Victorious": { "cc": "bh", "src": "game", "as": "Bahrain Victorious" },
-    "Tudor": { "cc": "ch", "src": "game", "as": "Tudor Pro Cycling Team" },
-    "Biesse - Carrera - Premac": { "cc": "it", "src": "game", "as": "Biesse - Carrera - Premac" },
-    "Tavfer-Ovos Matinados-Mortágua": { "cc": "pt", "src": "game", "as": "Tavfer-Ovos Matinados-Mortágua" },
-    "FEIRENSE - BEECELER": { "cc": "pt", "src": "game", "as": "FEIRENSE - BEECELER" },
-    "Unibet Rose Rockets": { "cc": "fr", "src": "game", "as": "Unibet Rose Rockets" },
-    "GI Group Holding Simoldes UDO": { "cc": "pt", "src": "game", "as": "GI Group Holding - Simoldes - UDO" },
-    "NsN": { "cc": "ch", "src": "game", "as": "NSN Cycling Team" },
-    "Red Bull": { "cc": "de", "src": "game", "as": "Red Bull - BORA - hansgrohe" },
-    "MEO (Benfica)": { "cc": "pt", "src": "game", "as": "Sport Lisboa e Benfica (league mod, same jersey)" },
-    "Ukraine Cycling Team": { "cc": "ua", "src": "game", "as": "Ukraine Cycling Team" },
-    "Astana": { "cc": "kz", "src": "game", "as": "XDS Astana Team" },
-    "Deceuninck - Quick-Step": { "cc": "be", "src": "real", "as": "now Soudal Quick-Step, Belgian in the game too" },
-    "Rabobank": { "cc": "nl", "src": "real" },
-    "MTN Qhubeka": { "cc": "za", "src": "real" },
-    "CSC": { "cc": "dk", "src": "real" },
-    "Discovery Channel": { "cc": "us", "src": "real" },
-    "B&B Hotels": { "cc": "fr", "src": "real" },
-    "Kelme Costa Blanca": { "cc": "es", "src": "real" },
-    "Renova": { "cc": "pt", "src": "signup", "as": "the manager wrote: its portuguese not french" },
-    "Liberty Seguros": { "note": "two real teams had this name, one Spanish and one Portuguese" },
-    "Royal Bank of Scotland": { "note": "no real team found" },
-    "Milka": { "note": "no road team found" },
-    "Talkwalker": { "note": "no real team found" },
-    "Portugal in 150 Seconds": { "note": "no real team found" }
+    "UnoX": {
+      "cc": "no",
+      "src": "game",
+      "as": "Uno-X Mobility"
+    },
+    "7-Eleven": {
+      "cc": "ph",
+      "src": "game",
+      "as": "7Eleven Cliqq Roadbike Philippines (the jersey used)"
+    },
+    "Bahrain Victorious": {
+      "cc": "bh",
+      "src": "game",
+      "as": "Bahrain Victorious"
+    },
+    "Tudor": {
+      "cc": "ch",
+      "src": "game",
+      "as": "Tudor Pro Cycling Team"
+    },
+    "Biesse - Carrera - Premac": {
+      "cc": "it",
+      "src": "game",
+      "as": "Biesse - Carrera - Premac"
+    },
+    "Tavfer-Ovos Matinados-Mortágua": {
+      "cc": "pt",
+      "src": "game",
+      "as": "Tavfer-Ovos Matinados-Mortágua"
+    },
+    "FEIRENSE - BEECELER": {
+      "cc": "pt",
+      "src": "game",
+      "as": "FEIRENSE - BEECELER"
+    },
+    "Unibet Rose Rockets": {
+      "cc": "fr",
+      "src": "game",
+      "as": "Unibet Rose Rockets"
+    },
+    "GI Group Holding Simoldes UDO": {
+      "cc": "pt",
+      "src": "game",
+      "as": "GI Group Holding - Simoldes - UDO"
+    },
+    "NsN": {
+      "cc": "ch",
+      "src": "game",
+      "as": "NSN Cycling Team"
+    },
+    "Red Bull": {
+      "cc": "de",
+      "src": "game",
+      "as": "Red Bull - BORA - hansgrohe"
+    },
+    "MEO (Benfica)": {
+      "cc": "pt",
+      "src": "game",
+      "as": "Sport Lisboa e Benfica (league mod, same jersey)"
+    },
+    "Ukraine Cycling Team": {
+      "cc": "ua",
+      "src": "game",
+      "as": "Ukraine Cycling Team"
+    },
+    "Astana": {
+      "cc": "kz",
+      "src": "game",
+      "as": "XDS Astana Team"
+    },
+    "Deceuninck - Quick-Step": {
+      "cc": "be",
+      "src": "real",
+      "as": "now Soudal Quick-Step, Belgian in the game too"
+    },
+    "Rabobank": {
+      "cc": "nl",
+      "src": "real"
+    },
+    "MTN Qhubeka": {
+      "cc": "za",
+      "src": "real"
+    },
+    "CSC": {
+      "cc": "dk",
+      "src": "real"
+    },
+    "Discovery Channel": {
+      "cc": "us",
+      "src": "real"
+    },
+    "B&B Hotels": {
+      "cc": "fr",
+      "src": "real"
+    },
+    "Kelme Costa Blanca": {
+      "cc": "es",
+      "src": "real"
+    },
+    "Renova": {
+      "cc": "pt",
+      "src": "signup",
+      "as": "the manager wrote: its portuguese not french"
+    },
+    "Liberty Seguros": {
+      "note": "two real teams had this name: Liberty Seguros-Würth (Spain, 2004-06) and Liberty Seguros (Portugal, today GI Group Holding-Simoldes-UDO)"
+    },
+    "Royal Bank of Scotland": {
+      "note": "no cycling team sponsored by the Royal Bank of Scotland found"
+    },
+    "Milka": {
+      "note": "the only Milka teams found are mountain bike teams (Milka-Trek, Netherlands; Milka-Superior, Czech Republic)"
+    },
+    "Talkwalker": {
+      "note": "no cycling team found; Talkwalker is a company from Luxembourg"
+    },
+    "Portugal in 150 Seconds": {
+      "note": "no cycling team found; it is a Portuguese travel video channel"
+    }
   }
 }
