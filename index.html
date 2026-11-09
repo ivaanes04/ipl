@@ -806,7 +806,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.12.1', updated: '2026-11-09T12:14' };
+const SITE = { version: '1.12.2', updated: '2026-11-09T12:59' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0, nat: '' };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -2162,7 +2162,7 @@ function s2NationsAside(teams) {
   for (const t of teams) { const n = s2Nat(t); if (!n) { open.push(t); continue; } if (!by.has(n.cc)) by.set(n.cc, []); by.get(n.cc).push(t); }
   const rows = [...by.entries()].sort((a, b) => b[1].length - a[1].length || (NATNAME[a[0]] || a[0]).localeCompare(NATNAME[b[0]] || b[0]));
   const top = rows.length ? rows[0][1].length : 1;
-  const srcLabel = { game: 'game database', real: 'real-life registration', signup: 'as written in the sign-up' };
+  const srcLabel = { game: 'game database', real: 'real-life registration', signup: 'as written in the sign-up', manager: 'as the manager said on Discord' };
   return h('aside', { class: 'card s2nat' },
     h('div', { class: 'card-h' }, h('h2', null, 'Team nations')),
     h('div', { class: 's2nat-tot' }, h('b', null, rows.length), h('span', null, rows.length === 1 ? 'nation' : 'nations', h('small', null, (teams.length - open.length) + ' of ' + teams.length + ' teams confirmed'))),
