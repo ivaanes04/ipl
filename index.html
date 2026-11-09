@@ -838,7 +838,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.13.0', updated: '2026-11-09T22:35' };
+const SITE = { version: '1.13.1', updated: '2026-11-09T22:43' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0, nat: '' };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -2274,7 +2274,7 @@ function viewS2Teams() {
     h('p', { class: 'sub' }, 'Teams signed up for Season 2 in #sign-ups on the PCM UK Discord, in the order they were posted. Rosters are decided in the auction on pcmmulti.com/ipl; divisions are not set yet.'), seasonSeg(2)));
   $view.append(h('div', { class: 'kpis' }, kpi('Sign-ups', teams.length, 'teams so far'), kpi('From Season 1', back.length, 'teams run by Season 1 managers'), kpi('New', fresh.length, fresh.length === 1 ? 'manager in the league' : 'managers in the league'), kpi('Season starts', days ? days + ' days' : 'Today', fdate(D.start))));
   // a co-manager added in Season 2 (t.partner) shows next to the name, like the Season 1 pairs
-  const mgrCell = (t) => [t.s1 && IX.teamIds.has(t.s1) ? h('a', { href: '#team-' + encodeTeam(t.s1) }, s2Name(t)) : s2Name(t), t.partner ? ' + ' + t.partner : null];
+  const mgrCell = (t) => [t.s1 && IX.teamIds.has(t.s1) ? h('a', { href: '#team-' + encodeTeam(t.s1) }, s2Name(t)) : s2Name(t), t.partner ? [' + ', t.partner_s1 && IX.teamIds.has(t.partner_s1) ? h('a', { href: '#team-' + encodeTeam(t.partner_s1) }, t.partner) : t.partner] : null];
   const s1Teams = (n) => { const t = IX.team.get(n); return t ? [...t.squads].map(tid).filter(Boolean).filter((v, k, a) => a.indexOf(v) === k) : []; };
   // one clean card per team: jersey, team, manager (one name), one quiet line; the rest goes in the tooltip
   const grid = h('div', { class: 's2grid' }, teams.map((t) => {
@@ -2292,7 +2292,7 @@ function viewS2Teams() {
   if (objC) $view.append(objC);
   if (storeC) $view.append(storeC);
   // Season 1 managers who have not signed up yet (pairs that split count as signed up)
-  const signed = new Set(teams.map((t) => t.s1).filter(Boolean));
+  const signed = new Set(teams.flatMap((t) => [t.s1, t.partner_s1]).filter(Boolean)); // a Season 1 manager who joined another team as co-manager (partner_s1) counts too
   const L = leagueRounds(); const fin = new Map(L.out.get(L.orders[L.orders.length - 1]).map((r) => [r.p, r]));
   const missing = [...IX.team.keys()].filter((n) => !signed.has(n)).sort((a, b) => (fin.get(a)?.rank || 99) - (fin.get(b)?.rank || 99));
   if (missing.length) $view.append(card('Season 1 managers not signed up yet', null, h('p', { class: 'sub', style: 'margin:0 0 10px' }, 'Ordered by their Season 1 final position.'), h('div', { class: 's2pending' }, missing.map((n) => h('a', { href: '#team-' + encodeTeam(n) }, (fin.get(n) ? '#' + fin.get(n).rank + ' ' : '') + n)))));
