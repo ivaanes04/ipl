@@ -644,6 +644,32 @@
     }
    ]
   },
+  "B&B Hotels": {
+   "player": "Tom_Bryant",
+   "won": 2,
+   "budget": 198,
+   "bids": 46,
+   "riders": [
+    {
+     "name": "Conor Paul",
+     "id": 11406,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-12T22:24:03+00:00",
+     "full": "Paul Conor"
+    },
+    {
+     "name": "Beaune Mavric",
+     "id": 10729,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-12T22:24:39+00:00",
+     "full": "Mavric Beaune"
+    }
+   ]
+  },
   "GI Group Holding Simoldes UDO": {
    "player": "Joao Negrao",
    "won": 2,
@@ -860,23 +886,6 @@
     }
    ]
   },
-  "B&B Hotels": {
-   "player": "Tom_Bryant",
-   "won": 1,
-   "budget": 199,
-   "bids": 47,
-   "riders": [
-    {
-     "name": "Conor Paul",
-     "id": 11406,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-12T22:24:03+00:00",
-     "full": "Paul Conor"
-    }
-   ]
-  },
   "Biesse - Carrera - Premac": {
    "player": "Hübi",
    "won": 1,
@@ -929,5 +938,5 @@
    ]
   }
  },
- "checked": "2026-11-12T22:24Z"
+ "checked": "2026-11-12T22:26Z"
 }

@@ -778,5 +778,15 @@
   "cc": "fr",
   "team": "B&B Hotels",
   "price": 1
+ },
+ {
+  "at": "2026-11-12T22:24:39+00:00",
+  "date": "2026-11-12",
+  "time": "23:24",
+  "rider": "Mavric Beaune",
+  "id": 10729,
+  "cc": "fr",
+  "team": "B&B Hotels",
+  "price": 1
  }
 ]
