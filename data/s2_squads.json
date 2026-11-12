@@ -100,6 +100,59 @@
     }
    ]
   },
+  "Unibet Rose Rockets": {
+   "player": "firejohn",
+   "won": 5,
+   "budget": 99,
+   "bids": 10,
+   "riders": [
+    {
+     "name": "Kopecký Tomáš",
+     "id": 11230,
+     "cc": "cz",
+     "nat": "Czechia",
+     "price": 7,
+     "closed": "2026-11-12T21:18:59+00:00",
+     "full": "Tomáš Kopecký"
+    },
+    {
+     "name": "Dillier Silvan",
+     "id": 3392,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 4,
+     "closed": "2026-11-12T19:45:47+00:00",
+     "full": "Silvan Dillier"
+    },
+    {
+     "name": "Blaise Arthur",
+     "id": 15684,
+     "cc": "fr",
+     "nat": "France",
+     "price": 2,
+     "closed": "2026-11-12T19:45:54+00:00",
+     "full": "Arthur Blaise"
+    },
+    {
+     "name": "Mouris Wessel",
+     "id": 8135,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 6,
+     "closed": "2026-11-12T19:47:18+00:00",
+     "full": "Wessel Mouris"
+    },
+    {
+     "name": "Alaphilippe Julian",
+     "id": 3365,
+     "cc": "fr",
+     "nat": "France",
+     "price": 82,
+     "closed": "2026-11-12T21:00:02+00:00",
+     "full": "Julian Alaphilippe"
+    }
+   ]
+  },
   "Tavfer-Ovos Matinados-Mortágua": {
    "player": "Sabu76",
    "won": 4,
@@ -232,94 +285,6 @@
     }
    ]
   },
-  "Unibet Rose Rockets": {
-   "player": "firejohn",
-   "won": 4,
-   "budget": 106,
-   "bids": 17,
-   "riders": [
-    {
-     "name": "Dillier Silvan",
-     "id": 3392,
-     "cc": "ch",
-     "nat": "Switzerland",
-     "price": 4,
-     "closed": "2026-11-12T19:45:47+00:00",
-     "full": "Silvan Dillier"
-    },
-    {
-     "name": "Blaise Arthur",
-     "id": 15684,
-     "cc": "fr",
-     "nat": "France",
-     "price": 2,
-     "closed": "2026-11-12T19:45:54+00:00",
-     "full": "Arthur Blaise"
-    },
-    {
-     "name": "Mouris Wessel",
-     "id": 8135,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 6,
-     "closed": "2026-11-12T19:47:18+00:00",
-     "full": "Wessel Mouris"
-    },
-    {
-     "name": "Alaphilippe Julian",
-     "id": 3365,
-     "cc": "fr",
-     "nat": "France",
-     "price": 82,
-     "closed": "2026-11-12T21:00:02+00:00",
-     "full": "Julian Alaphilippe"
-    }
-   ]
-  },
-  "Tudor": {
-   "player": "Grandpa",
-   "won": 4,
-   "budget": 170,
-   "bids": 90,
-   "riders": [
-    {
-     "name": "Nordhagen Jørgen",
-     "id": 4918,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 10,
-     "closed": "2026-11-12T19:02:41+00:00",
-     "full": "Jørgen Nordhagen"
-    },
-    {
-     "name": "L'Hôte Antoine",
-     "id": 4934,
-     "cc": "fr",
-     "nat": "France",
-     "price": 7,
-     "closed": "2026-11-12T19:03:11+00:00",
-     "full": "Antoine L'Hôte"
-    },
-    {
-     "name": "Shmidt Artem",
-     "id": 15514,
-     "cc": "us",
-     "nat": "United States",
-     "price": 7,
-     "closed": "2026-11-12T19:03:29+00:00",
-     "full": "Artem Shmidt"
-    },
-    {
-     "name": "Leonard Michael",
-     "id": 15396,
-     "cc": "ca",
-     "nat": "Canada",
-     "price": 6,
-     "closed": "2026-11-12T19:03:54+00:00",
-     "full": "Michael Leonard"
-    }
-   ]
-  },
   "Rabobank": {
    "player": "Bouke",
    "won": 4,
@@ -364,6 +329,85 @@
     }
    ]
   },
+  "Tudor": {
+   "player": "Grandpa",
+   "won": 4,
+   "budget": 170,
+   "bids": 122,
+   "riders": [
+    {
+     "name": "Nordhagen Jørgen",
+     "id": 4918,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 10,
+     "closed": "2026-11-12T19:02:41+00:00",
+     "full": "Jørgen Nordhagen"
+    },
+    {
+     "name": "L'Hôte Antoine",
+     "id": 4934,
+     "cc": "fr",
+     "nat": "France",
+     "price": 7,
+     "closed": "2026-11-12T19:03:11+00:00",
+     "full": "Antoine L'Hôte"
+    },
+    {
+     "name": "Shmidt Artem",
+     "id": 15514,
+     "cc": "us",
+     "nat": "United States",
+     "price": 7,
+     "closed": "2026-11-12T19:03:29+00:00",
+     "full": "Artem Shmidt"
+    },
+    {
+     "name": "Leonard Michael",
+     "id": 15396,
+     "cc": "ca",
+     "nat": "Canada",
+     "price": 6,
+     "closed": "2026-11-12T19:03:54+00:00",
+     "full": "Michael Leonard"
+    }
+   ]
+  },
+  "Talkwalker": {
+   "player": "benjong",
+   "won": 3,
+   "budget": 184,
+   "bids": 21,
+   "riders": [
+    {
+     "name": "Kockelmann Mathieu",
+     "id": 15418,
+     "cc": "lu",
+     "nat": "Luxembourg",
+     "price": 4,
+     "closed": "2026-11-12T18:00:10+00:00",
+     "full": "Mathieu Kockelmann"
+    },
+    {
+     "name": "Wenzel Mats",
+     "id": 7431,
+     "cc": "lu",
+     "nat": "Luxembourg",
+     "price": 6,
+     "closed": "2026-11-12T18:00:31+00:00",
+     "full": "Mats Wenzel"
+    },
+    {
+     "name": "Van Kerckhove Matisse",
+     "id": 11282,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 6,
+     "closed": "2026-11-12T18:01:10+00:00",
+     "full": "Matisse Van Kerckhove"
+    }
+   ]
+  },
   "Bahrain Victorious": {
    "player": "Daagz",
    "won": 3,
@@ -396,41 +440,6 @@
      "price": 3,
      "closed": "2026-11-12T18:08:05+00:00",
      "full": "Fran Miholjevic"
-    }
-   ]
-  },
-  "Talkwalker": {
-   "player": "benjong",
-   "won": 3,
-   "budget": 184,
-   "bids": 45,
-   "riders": [
-    {
-     "name": "Kockelmann Mathieu",
-     "id": 15418,
-     "cc": "lu",
-     "nat": "Luxembourg",
-     "price": 4,
-     "closed": "2026-11-12T18:00:10+00:00",
-     "full": "Mathieu Kockelmann"
-    },
-    {
-     "name": "Wenzel Mats",
-     "id": 7431,
-     "cc": "lu",
-     "nat": "Luxembourg",
-     "price": 6,
-     "closed": "2026-11-12T18:00:31+00:00",
-     "full": "Mats Wenzel"
-    },
-    {
-     "name": "Van Kerckhove Matisse",
-     "id": 11282,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 6,
-     "closed": "2026-11-12T18:01:10+00:00",
-     "full": "Matisse Van Kerckhove"
     }
    ]
   },
@@ -571,32 +580,6 @@
      "price": 100,
      "closed": "2026-11-12T19:36:36+00:00",
      "full": "Sam Brand"
-    }
-   ]
-  },
-  "Kelme Costa Blanca": {
-   "player": "JgCol",
-   "won": 2,
-   "budget": 193,
-   "bids": 25,
-   "riders": [
-    {
-     "name": "Ardila Camilo",
-     "id": 7055,
-     "cc": "co",
-     "nat": "Colombia",
-     "price": 1,
-     "closed": "2026-11-12T18:01:36+00:00",
-     "full": "Camilo Ardila"
-    },
-    {
-     "name": "Rivera Brandon",
-     "id": 7090,
-     "cc": "co",
-     "nat": "Colombia",
-     "price": 6,
-     "closed": "2026-11-12T18:26:23+00:00",
-     "full": "Brandon Rivera"
     }
    ]
   },
@@ -782,6 +765,32 @@
     }
    ]
   },
+  "Kelme Costa Blanca": {
+   "player": "JgCol",
+   "won": 2,
+   "budget": 193,
+   "bids": 68,
+   "riders": [
+    {
+     "name": "Ardila Camilo",
+     "id": 7055,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 1,
+     "closed": "2026-11-12T18:01:36+00:00",
+     "full": "Camilo Ardila"
+    },
+    {
+     "name": "Rivera Brandon",
+     "id": 7090,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 6,
+     "closed": "2026-11-12T18:26:23+00:00",
+     "full": "Brandon Rivera"
+    }
+   ]
+  },
   "Milka": {
    "player": "danielmiko",
    "won": 2,
@@ -805,6 +814,23 @@
      "price": 1,
      "closed": "2026-11-12T18:00:34+00:00",
      "full": "Nils Aebersold"
+    }
+   ]
+  },
+  "FEIRENSE - BEECELER": {
+   "player": "joaozinhoaac",
+   "won": 1,
+   "budget": 194,
+   "bids": 30,
+   "riders": [
+    {
+     "name": "López Juan Pedro",
+     "id": 6971,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 6,
+     "closed": "2026-11-12T18:02:49+00:00",
+     "full": "Juan Pedro López"
     }
    ]
   },
@@ -839,23 +865,6 @@
      "price": 7,
      "closed": "2026-11-12T18:47:42+00:00",
      "full": "Mirco Maestri"
-    }
-   ]
-  },
-  "FEIRENSE - BEECELER": {
-   "player": "joaozinhoaac",
-   "won": 1,
-   "budget": 194,
-   "bids": 60,
-   "riders": [
-    {
-     "name": "López Juan Pedro",
-     "id": 6971,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 6,
-     "closed": "2026-11-12T18:02:49+00:00",
-     "full": "Juan Pedro López"
     }
    ]
   },
@@ -897,9 +906,9 @@
    "player": "Tom_Bryant",
    "won": 0,
    "budget": 200,
-   "bids": 77,
+   "bids": 60,
    "riders": []
   }
  },
- "checked": "2026-11-12T21:09Z"
+ "checked": "2026-11-12T21:19Z"
 }

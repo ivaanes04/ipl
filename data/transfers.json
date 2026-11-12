@@ -748,5 +748,15 @@
   "cc": "pt",
   "team": "Tavfer-Ovos Matinados-Mortágua",
   "price": 1
+ },
+ {
+  "at": "2026-11-12T21:18:59+00:00",
+  "date": "2026-11-12",
+  "time": "22:18",
+  "rider": "Tomáš Kopecký",
+  "id": 11230,
+  "cc": "cz",
+  "team": "Unibet Rose Rockets",
+  "price": 7
  }
 ]
