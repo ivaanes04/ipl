@@ -868,7 +868,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.16.1', updated: '2026-11-12T19:24' };
+const SITE = { version: '1.17.0', updated: '2026-11-12T19:28' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0, nat: '' };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -983,13 +983,13 @@ const natOf = (i) => (S.s1.nat || [])[i] || '';
 const flag = (cc) => { if (!cc || !FLAGS[cc]) return null; const s = h('span', { class: 'fl', title: NATNAME[cc] || cc.toUpperCase(), role: 'img', 'aria-label': NATNAME[cc] || cc }); s.innerHTML = flagSvg(cc); return s; };
 const riderLink = (i) => h('span', { class: 'rl' }, flag(natOf(i)), h('a', { href: '#rider-' + i }, rid(i)));
 // portrait placeholder until real photos exist: initials over a jersey tint derived from the team
-function avatar(i, ti, size) {
-  const name = rid(i), parts = name.split(/\s+/);
+function avatar(i, ti, size, nm) {
+  const name = nm || rid(i), parts = name.split(/\s+/);
   // portraits are one small file each (img/r/), listed in data/photo_index.json: a page only downloads what it shows
   const photo = S.photos ? S.photos[name] : (S.photoIndex || {})[name] && 'img/r/' + S.photoIndex[name];
   if (photo) return h('div', { class: 'avatar photo', style: `width:${size}px;height:${size}px` }, h('img', { src: photo, alt: name, loading: 'lazy', decoding: 'async', width: size, height: size }));
   const ini = ((parts[0] || '')[0] || '') + ((parts[parts.length - 1] || '')[0] || '');
-  let hsh = 0; for (const ch of tid(ti) || name) hsh = (hsh * 31 + ch.charCodeAt(0)) >>> 0;
+  let hsh = 0; for (const ch of (ti != null && tid(ti)) || name) hsh = (hsh * 31 + ch.charCodeAt(0)) >>> 0;
   const hue = hsh % 360;
   const box = h('div', { class: 'avatar', style: `--a:hsl(${hue} 55% 42%);--b:hsl(${(hue + 30) % 360} 60% 30%);width:${size}px;height:${size}px`, role: 'img', 'aria-label': name });
   box.innerHTML = `<svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="38" r="20" fill="rgb(255 255 255 / .85)"/><path d="M14 100c2-24 17-36 36-36s34 12 36 36Z" fill="rgb(255 255 255 / .85)"/></svg><span>${ini.toUpperCase()}</span>`;
@@ -2236,17 +2236,20 @@ function viewS2Rider(id) {
   const sg = s2SignOf(id), r = sg && sg.r;
   const st = S.s2signups && sg && S.s2signups.teams.find((x) => x.team === sg.team);
   const cc = r && r.cc;
-  $view.append(h('div', { class: 'teamhead' },
-    h('div', { class: 's2bigjsy' }, st && st.jersey ? h('img', { src: 'img/jerseys/' + st.jersey + '.png', alt: sg.team + ' jersey' }) : null),
-    h('div', null, h('div', { class: 'eyebrow' }, 'Rider · Season 2'), h('h1', null, cc ? h('span', { class: 's2fl' }, flag(cc)) : null, d.name),
-      h('div', { class: 'facts' }, r && r.nat ? h('span', null, 'Nation ', h('b', null, r.nat)) : null,
-        sg ? h('span', null, 'Team ', h('b', null, s2TeamLink(sg.team))) : null,
-        r && r.price != null ? h('span', null, 'Price ', h('b', null, r.price + ' CR')) : null,
-        r && r.closed ? h('span', null, 'Signed ', h('b', null, fdate(r.closed.slice(0, 10)))) : null)),
-    d.s1 != null && IX.rider.has(d.s1) ? h('a', { class: 'btn ghost', href: '#rider-' + d.s1 }, 'Season 1 results') : (sg ? h('a', { class: 'btn ghost', href: s2TeamHref(sg.team) }, 'Team page') : null)));
+  const s1 = d.s1 != null && IX.rider.has(d.s1) ? d.s1 : null;
+  const tile = (label, ...kids) => h('div', { class: 'rinfo-t' }, h('span', { class: 'rinfo-l' }, label), h('div', { class: 'rinfo-v' }, kids));
+  $view.append(h('div', { class: 'rhead' },
+    h('div', { class: 'rhead-ph' }, avatar(null, null, 120, d.name)),
+    h('div', { class: 'rhead-main' }, h('div', { class: 'eyebrow' }, 'Rider · Season 2'), h('h1', null, d.name),
+      h('div', { class: 'rinfo' },
+        tile('Nationality', cc && FLAGS[cc] ? h('span', { class: 'rinfo-flag' }, flag(cc)) : null, h('span', null, (r && r.nat) || NATNAME[cc] || '—')),
+        tile('Team', sg ? h('a', { class: 'rinfo-team', href: s2TeamHref(sg.team) }, st && st.jersey ? h('img', { src: 'img/jerseys/' + st.jersey + '.png', alt: '' }) : null, h('span', null, sg.team)) : h('span', null, '—')),
+        tile('Manager', st ? h('span', null, s2Name(st), st.partner ? ' + ' + st.partner : '') : h('span', null, '—')),
+        tile('Auction', r ? h('span', null, (r.price != null ? r.price + ' CR' : '—') + (r.closed ? ' · ' + fdate(r.closed.slice(0, 10)) : '')) : h('span', null, '—')),
+        s1 != null ? tile('Season 1', h('a', { href: '#rider-' + s1 }, 'Results and wins')) : null)),
+    h('a', { class: 'btn ghost', href: '#riderstats' }, 'All riders')));
   const pc = pcmCard(d.name, d);
   if (pc) $view.append(pc);
-  $view.append(h('p', { class: 'sub', style: 'margin-top:14px' }, 'Signed in the Season 2 auction on pcmmulti.com/ipl. ' + (d.s1 != null && IX.rider.has(d.s1) ? 'He also raced Season 1: his results are on the Season 1 page.' : 'He did not race in Season 1.')));
 }
 // ---------- one Season 2 team (#s2team-<n>, n = its place in s2_signups.json): manager, riders signed in the auction, sponsor objectives ----------
 const s2TeamIdx = (name) => ((S.s2signups && S.s2signups.teams) || []).findIndex((t) => t.team === name);
@@ -2267,9 +2270,9 @@ function viewS2Team(i) {
   const spent = riders.reduce((a, r) => a + (r.price || 0), 0);
   const nats = new Set(riders.map((r) => r.cc || r.nat).filter(Boolean));
   if (q) $view.append(h('div', { class: 'kpis' }, kpi('Riders', q.won + ' / ' + Q.max, 'signed in the auction'), kpi('Spent', spent + ' CR', 'on riders signed'), kpi('Budget left', q.budget + ' CR', 'on pcmmulti, live bids taken off'), kpi('Nations', nats.size, nats.size === 1 ? 'nation in the squad' : 'nations in the squad')));
-  const rows = riders.map((r) => h('tr', null, h('td', { class: 'rider' }, r.cc ? flag(r.cc) : null, ' ', h('b', null, s2RiderLink(r))), h('td', { class: 'mute' }, r.nat || ''),
-    h('td', { class: 'mute num' }, r.closed ? fshort(r.closed.slice(0, 10)) : ''), h('td', { class: 'num' }, r.price != null ? r.price + ' CR' : '–')));
-  const squad = card('Squad', null, rows.length ? table([{ label: 'Rider' }, { label: 'Nation' }, { label: 'Signed' }, { label: 'Price', n: 1 }], rows, { tall: true })
+  const rosterCard = (r) => { const nm = s2RiderName(r), href = s2RiderHref(r), kids = [avatar(null, null, 44, nm), h('div', null, h('b', null, r.cc ? flag(r.cc) : null, nm), h('span', null, (r.price != null ? r.price + ' CR' : 'Price not seen') + (r.closed ? ' · ' + fshort(r.closed.slice(0, 10)) : '')))];
+    return href ? h('a', { class: 'rostercard', href }, kids) : h('div', { class: 'rostercard' }, kids); };
+  const squad = card('Roster', null, riders.length ? h('div', { class: 'roster' }, riders.map(rosterCard))
     : h('p', { class: 'empty' }, Q ? 'No riders signed yet. Riders join the team when their auction on pcmmulti.com/ipl closes.' : 'The auction on pcmmulti.com/ipl has not started yet.'));
   // sponsor objectives: how many riders of each objective's nations the team has signed so far (the count only, the rules decide what completes)
   const O = S.s2obj && S.s2obj.objectives, ot = O && O.teams.find((x) => x.team === t.team);
