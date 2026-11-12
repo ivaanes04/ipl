@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-09T16:51",
+  "checked": "2026-11-10T23:59",
   "source": "#sign-ups on the PCM UK Discord, messages after FraBo's separator line (3 Nov 2026)",
   "start": "2026-11-30",
   "teams": [
@@ -7,7 +7,7 @@
       "posted": "2026-11-03T17:49",
       "discord": "ChuppaSheeps",
       "pcm": "SheepBoy123",
-      "web": "ChuppaSheeps",
+      "web": "Sheep_Boy123",
       "team": "Royal Bank of Scotland",
       "jersey": "x-rbs",
       "s1": "SheepBoy123",
@@ -293,13 +293,12 @@
     {
       "posted": "2026-11-09T15:33",
       "discord": "SeanColl",
-      "pcm": "",
+      "pcm": "collinss96",
       "web": "seancoll",
       "team": "Modern Adventure",
       "team_src": "Modern Adventure",
       "jersey": "map",
-      "community": "PCM UK",
-      "note": "PCM name to come: he will add it when he buys the game"
+      "community": "PCM UK"
     }
   ]
 }

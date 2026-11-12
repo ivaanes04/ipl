@@ -1,0 +1,528 @@
+{
+ "source": "pcmmulti.com/ipl/classifica (riders won, budget left); prices seen on /ipl/auctions when each auction closed",
+ "max": 30,
+ "teams": {
+  "NsN": {
+   "player": "AfonsoP1",
+   "won": 7,
+   "budget": 0,
+   "riders": [
+    {
+     "name": "Silva Pedro",
+     "id": 7237,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 7,
+     "closed": "2026-11-12T18:02:49+00:00"
+    },
+    {
+     "name": "Carvalho André",
+     "id": 6807,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 8,
+     "closed": "2026-11-12T18:02:18+00:00"
+    },
+    {
+     "name": "Decomble Maxime",
+     "id": null,
+     "cc": null,
+     "nat": null,
+     "price": null,
+     "closed": null
+    },
+    {
+     "name": "Noval Benjamín",
+     "id": 11485,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 10,
+     "closed": "2026-11-12T18:10:04+00:00"
+    },
+    {
+     "name": "Kamp Alexander",
+     "id": 2678,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 5,
+     "closed": "2026-11-12T18:09:31+00:00"
+    },
+    {
+     "name": "Romo Javier",
+     "id": null,
+     "cc": null,
+     "nat": null,
+     "price": null,
+     "closed": null
+    },
+    {
+     "name": "Al Mutaiwei Mohammad",
+     "id": 4742,
+     "cc": "ae",
+     "nat": "United Arab Emirates",
+     "price": 2,
+     "closed": "2026-11-12T18:10:11+00:00"
+    }
+   ]
+  },
+  "Liberty Seguros": {
+   "player": "Leandro_jx_",
+   "won": 4,
+   "budget": 191,
+   "riders": [
+    {
+     "name": "Lastra Jonathan",
+     "id": 5683,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 3,
+     "closed": "2026-11-12T18:03:25+00:00"
+    },
+    {
+     "name": "Samitier Sergio",
+     "id": 6417,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 4,
+     "closed": "2026-11-12T18:04:23+00:00"
+    },
+    {
+     "name": "Rota Raúl",
+     "id": 4171,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 1,
+     "closed": "2026-11-12T18:05:30+00:00"
+    },
+    {
+     "name": "Cañellas Xavier",
+     "id": 6790,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 1,
+     "closed": "2026-11-12T18:07:12+00:00"
+    }
+   ]
+  },
+  "Ukraine Cycling Team": {
+   "player": "Riverside",
+   "won": 4,
+   "budget": 163,
+   "riders": [
+    {
+     "name": "Otruba Jakub",
+     "id": 6643,
+     "cc": "cz",
+     "nat": "Czechia",
+     "price": 2,
+     "closed": "2026-11-12T18:00:16+00:00"
+    },
+    {
+     "name": "Borresch Julian",
+     "id": 14508,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 1,
+     "closed": "2026-11-12T18:00:25+00:00"
+    },
+    {
+     "name": "Geeraerts Ferre",
+     "id": 9803,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 1,
+     "closed": "2026-11-12T18:00:34+00:00"
+    },
+    {
+     "name": "Taillieu Aldo",
+     "id": 10530,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 2,
+     "closed": "2026-11-12T18:04:22+00:00"
+    }
+   ]
+  },
+  "Bahrain Victorious": {
+   "player": "Daagz",
+   "won": 3,
+   "budget": 181,
+   "riders": [
+    {
+     "name": "Widar Jarno",
+     "id": 15499,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 12,
+     "closed": "2026-11-12T18:06:08+00:00"
+    },
+    {
+     "name": "Govekar Matevž",
+     "id": 7469,
+     "cc": "si",
+     "nat": "Slovenia",
+     "price": 4,
+     "closed": "2026-11-12T18:06:56+00:00"
+    },
+    {
+     "name": "Miholjevic Fran",
+     "id": 14248,
+     "cc": "hr",
+     "nat": "Croatia",
+     "price": 3,
+     "closed": "2026-11-12T18:08:05+00:00"
+    }
+   ]
+  },
+  "Talkwalker": {
+   "player": "benjong",
+   "won": 3,
+   "budget": 117,
+   "riders": [
+    {
+     "name": "Kockelmann Mathieu",
+     "id": 15418,
+     "cc": "lu",
+     "nat": "Luxembourg",
+     "price": 4,
+     "closed": "2026-11-12T18:00:10+00:00"
+    },
+    {
+     "name": "Wenzel Mats",
+     "id": 7431,
+     "cc": "lu",
+     "nat": "Luxembourg",
+     "price": 6,
+     "closed": "2026-11-12T18:00:31+00:00"
+    },
+    {
+     "name": "Van Kerckhove Matisse",
+     "id": 11282,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 6,
+     "closed": "2026-11-12T18:01:10+00:00"
+    }
+   ]
+  },
+  "Deceuninck - Quick-Step": {
+   "player": "Hillingz",
+   "won": 3,
+   "budget": 93,
+   "riders": [
+    {
+     "name": "Juul-Jensen Christopher",
+     "id": 2123,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 2,
+     "closed": "2026-11-12T18:00:09+00:00"
+    },
+    {
+     "name": "Moscon Gianni",
+     "id": 5001,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 3,
+     "closed": "2026-11-12T18:00:20+00:00"
+    },
+    {
+     "name": "Cerný Josef",
+     "id": 3088,
+     "cc": "cz",
+     "nat": "Czechia",
+     "price": 1,
+     "closed": "2026-11-12T18:00:29+00:00"
+    }
+   ]
+  },
+  "Renova": {
+   "player": "Pena Guevara",
+   "won": 3,
+   "budget": 87,
+   "riders": [
+    {
+     "name": "Oliveira Rui",
+     "id": 6248,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 10,
+     "closed": "2026-11-12T18:09:33+00:00"
+    },
+    {
+     "name": "Gonçalves Diogo",
+     "id": 9277,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-12T18:01:06+00:00"
+    },
+    {
+     "name": "Oliveira Ivo",
+     "id": 6249,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 10,
+     "closed": "2026-11-12T18:09:44+00:00"
+    }
+   ]
+  },
+  "CSC": {
+   "player": "marsiscool",
+   "won": 2,
+   "budget": 166,
+   "riders": [
+    {
+     "name": "Wändel Elias",
+     "id": 11812,
+     "cc": "se",
+     "nat": "Sweden",
+     "price": 1,
+     "closed": "2026-11-12T18:04:06+00:00"
+    },
+    {
+     "name": "Kaczmarek Jakub",
+     "id": 3790,
+     "cc": "pl",
+     "nat": "Poland",
+     "price": 1,
+     "closed": "2026-11-12T18:04:49+00:00"
+    }
+   ]
+  },
+  "7-Eleven": {
+   "player": "ChrisJanssen",
+   "won": 2,
+   "budget": 159,
+   "riders": [
+    {
+     "name": "Simmons Colby",
+     "id": 15266,
+     "cc": "us",
+     "nat": "United States",
+     "price": 3,
+     "closed": "2026-11-12T18:00:17+00:00"
+    },
+    {
+     "name": "Stites Tyler",
+     "id": 10157,
+     "cc": "us",
+     "nat": "United States",
+     "price": 1,
+     "closed": "2026-11-12T18:00:22+00:00"
+    }
+   ]
+  },
+  "UnoX": {
+   "player": "IvanEs04",
+   "won": 2,
+   "budget": 153,
+   "riders": [
+    {
+     "name": "Larsen Niklas",
+     "id": 5752,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 7,
+     "closed": "2026-11-12T18:05:05+00:00"
+    },
+    {
+     "name": "Dalby Simon",
+     "id": 15284,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 6,
+     "closed": "2026-11-12T18:05:11+00:00"
+    }
+   ]
+  },
+  "Royal Bank of Scotland": {
+   "player": "Sheep_Boy123",
+   "won": 2,
+   "budget": 85,
+   "riders": [
+    {
+     "name": "Rowe Elliot",
+     "id": 9198,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 4,
+     "closed": "2026-11-12T18:05:48+00:00"
+    },
+    {
+     "name": "Flynn Sean",
+     "id": 7523,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 3,
+     "closed": "2026-11-12T18:05:53+00:00"
+    }
+   ]
+  },
+  "Milka": {
+   "player": "danielmiko",
+   "won": 2,
+   "budget": 40,
+   "riders": [
+    {
+     "name": "Barhoumi Ilian",
+     "id": 15555,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 1,
+     "closed": "2026-11-12T18:00:24+00:00"
+    },
+    {
+     "name": "Aebersold Nils",
+     "id": 9891,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 1,
+     "closed": "2026-11-12T18:00:34+00:00"
+    }
+   ]
+  },
+  "Kelme Costa Blanca": {
+   "player": "JgCol",
+   "won": 1,
+   "budget": 193,
+   "riders": [
+    {
+     "name": "Ardila Camilo",
+     "id": 7055,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 1,
+     "closed": "2026-11-12T18:01:36+00:00"
+    }
+   ]
+  },
+  "MTN Qhubeka": {
+   "player": "Joewhiteley0711",
+   "won": 1,
+   "budget": 183,
+   "riders": [
+    {
+     "name": "Konychev Alexander",
+     "id": 7069,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 2,
+     "closed": "2026-11-12T18:00:26+00:00"
+    }
+   ]
+  },
+  "FEIRENSE - BEECELER": {
+   "player": "joaozinhoaac",
+   "won": 1,
+   "budget": 174,
+   "riders": [
+    {
+     "name": "López Juan Pedro",
+     "id": 6971,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 6,
+     "closed": "2026-11-12T18:02:49+00:00"
+    }
+   ]
+  },
+  "GI Group Holding Simoldes UDO": {
+   "player": "Joao Negrao",
+   "won": 1,
+   "budget": 172,
+   "riders": [
+    {
+     "name": "Parra José Félix",
+     "id": 7462,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 6,
+     "closed": "2026-11-12T18:03:42+00:00"
+    }
+   ]
+  },
+  "Portugal in 150 Seconds": {
+   "player": "Bessadelas",
+   "won": 1,
+   "budget": 131,
+   "riders": [
+    {
+     "name": "Pinto Pedro",
+     "id": 10610,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-12T18:00:26+00:00"
+    }
+   ]
+  },
+  "B&B Hotels": {
+   "player": "Tom_Bryant",
+   "won": 0,
+   "budget": 196,
+   "riders": []
+  },
+  "Tavfer-Ovos Matinados-Mortágua": {
+   "player": "Sabu76",
+   "won": 0,
+   "budget": 196,
+   "riders": []
+  },
+  "Red Bull": {
+   "player": "MarcelTestier",
+   "won": 0,
+   "budget": 196,
+   "riders": []
+  },
+  "Discovery Channel": {
+   "player": "Agap",
+   "won": 0,
+   "budget": 193,
+   "riders": []
+  },
+  "Rabobank": {
+   "player": "Bouke",
+   "won": 0,
+   "budget": 166,
+   "riders": []
+  },
+  "Tudor": {
+   "player": "Grandpa",
+   "won": 0,
+   "budget": 162,
+   "riders": []
+  },
+  "Modern Adventure": {
+   "player": "seancoll",
+   "won": 0,
+   "budget": 162,
+   "riders": []
+  },
+  "Biesse - Carrera - Premac": {
+   "player": "Hübi",
+   "won": 0,
+   "budget": 145,
+   "riders": []
+  },
+  "Unibet Rose Rockets": {
+   "player": "firejohn",
+   "won": 0,
+   "budget": 99,
+   "riders": []
+  },
+  "MEO (Benfica)": {
+   "player": "TheBigDog",
+   "won": 0,
+   "budget": 98,
+   "riders": []
+  },
+  "Astana": {
+   "player": "Francesco Bonavita",
+   "won": 0,
+   "budget": 96,
+   "riders": []
+  }
+ },
+ "checked": "2026-11-12T18:11Z"
+}
