@@ -5,7 +5,8 @@
   "NsN": {
    "player": "AfonsoP1",
    "won": 8,
-   "budget": 0,
+   "budget": 26,
+   "bids": 26,
    "riders": [
     {
      "name": "Silva Pedro",
@@ -85,6 +86,7 @@
    "player": "Leandro_jx_",
    "won": 4,
    "budget": 191,
+   "bids": 0,
    "riders": [
     {
      "name": "Lastra Jonathan",
@@ -127,7 +129,8 @@
   "Ukraine Cycling Team": {
    "player": "Riverside",
    "won": 4,
-   "budget": 163,
+   "budget": 194,
+   "bids": 31,
    "riders": [
     {
      "name": "Otruba Jakub",
@@ -170,7 +173,8 @@
   "Rabobank": {
    "player": "Bouke",
    "won": 4,
-   "budget": 122,
+   "budget": 185,
+   "bids": 63,
    "riders": [
     {
      "name": "Doubey Fabien",
@@ -213,7 +217,8 @@
   "Tudor": {
    "player": "Grandpa",
    "won": 4,
-   "budget": 80,
+   "budget": 170,
+   "bids": 90,
    "riders": [
     {
      "name": "Nordhagen Jørgen",
@@ -256,7 +261,8 @@
   "Talkwalker": {
    "player": "benjong",
    "won": 3,
-   "budget": 163,
+   "budget": 184,
+   "bids": 21,
    "riders": [
     {
      "name": "Kockelmann Mathieu",
@@ -290,7 +296,8 @@
   "Bahrain Victorious": {
    "player": "Daagz",
    "won": 3,
-   "budget": 98,
+   "budget": 181,
+   "bids": 83,
    "riders": [
     {
      "name": "Widar Jarno",
@@ -324,7 +331,8 @@
   "Deceuninck - Quick-Step": {
    "player": "Hillingz",
    "won": 3,
-   "budget": 93,
+   "budget": 194,
+   "bids": 101,
    "riders": [
     {
      "name": "Juul-Jensen Christopher",
@@ -358,7 +366,8 @@
   "Renova": {
    "player": "Pena Guevara",
    "won": 3,
-   "budget": 83,
+   "budget": 179,
+   "bids": 96,
    "riders": [
     {
      "name": "Oliveira Rui",
@@ -392,7 +401,8 @@
   "Kelme Costa Blanca": {
    "player": "JgCol",
    "won": 2,
-   "budget": 187,
+   "budget": 193,
+   "bids": 6,
    "riders": [
     {
      "name": "Ardila Camilo",
@@ -417,7 +427,8 @@
   "CSC": {
    "player": "marsiscool",
    "won": 2,
-   "budget": 166,
+   "budget": 198,
+   "bids": 32,
    "riders": [
     {
      "name": "Wändel Elias",
@@ -442,7 +453,8 @@
   "UnoX": {
    "player": "IvanEs04",
    "won": 2,
-   "budget": 153,
+   "budget": 187,
+   "bids": 34,
    "riders": [
     {
      "name": "Larsen Niklas",
@@ -467,7 +479,8 @@
   "GI Group Holding Simoldes UDO": {
    "player": "Joao Negrao",
    "won": 2,
-   "budget": 151,
+   "budget": 189,
+   "bids": 38,
    "riders": [
     {
      "name": "Parra José Félix",
@@ -492,7 +505,8 @@
   "7-Eleven": {
    "player": "ChrisJanssen",
    "won": 2,
-   "budget": 138,
+   "budget": 196,
+   "bids": 58,
    "riders": [
     {
      "name": "Simmons Colby",
@@ -517,7 +531,8 @@
   "Royal Bank of Scotland": {
    "player": "Sheep_Boy123",
    "won": 2,
-   "budget": 125,
+   "budget": 193,
+   "bids": 68,
    "riders": [
     {
      "name": "Rowe Elliot",
@@ -542,7 +557,8 @@
   "Milka": {
    "player": "danielmiko",
    "won": 2,
-   "budget": 56,
+   "budget": 59,
+   "bids": 3,
    "riders": [
     {
      "name": "Barhoumi Ilian",
@@ -567,7 +583,8 @@
   "FEIRENSE - BEECELER": {
    "player": "joaozinhoaac",
    "won": 1,
-   "budget": 171,
+   "budget": 194,
+   "bids": 23,
    "riders": [
     {
      "name": "López Juan Pedro",
@@ -583,7 +600,8 @@
   "MTN Qhubeka": {
    "player": "Joewhiteley0711",
    "won": 1,
-   "budget": 124,
+   "budget": 198,
+   "bids": 74,
    "riders": [
     {
      "name": "Konychev Alexander",
@@ -599,7 +617,8 @@
   "Portugal in 150 Seconds": {
    "player": "Bessadelas",
    "won": 1,
-   "budget": 121,
+   "budget": 199,
+   "bids": 78,
    "riders": [
     {
      "name": "Pinto Pedro",
@@ -615,7 +634,8 @@
   "Biesse - Carrera - Premac": {
    "player": "Hübi",
    "won": 1,
-   "budget": 110,
+   "budget": 193,
+   "bids": 83,
    "riders": [
     {
      "name": "Maestri Mirco",
@@ -631,7 +651,8 @@
   "Astana": {
    "player": "Francesco Bonavita",
    "won": 1,
-   "budget": 96,
+   "budget": 100,
+   "bids": 4,
    "riders": [
     {
      "name": "Vingegaard Jonas",
@@ -647,45 +668,52 @@
   "B&B Hotels": {
    "player": "Tom_Bryant",
    "won": 0,
-   "budget": 196,
+   "budget": 200,
+   "bids": 4,
    "riders": []
   },
   "Tavfer-Ovos Matinados-Mortágua": {
    "player": "Sabu76",
    "won": 0,
-   "budget": 196,
+   "budget": 200,
+   "bids": 4,
    "riders": []
   },
   "Red Bull": {
    "player": "MarcelTestier",
    "won": 0,
-   "budget": 196,
+   "budget": 200,
+   "bids": 4,
    "riders": []
   },
   "Discovery Channel": {
    "player": "Agap",
    "won": 0,
-   "budget": 169,
+   "budget": 200,
+   "bids": 31,
    "riders": []
   },
   "Modern Adventure": {
    "player": "seancoll",
    "won": 0,
-   "budget": 162,
+   "budget": 200,
+   "bids": 38,
    "riders": []
   },
   "Unibet Rose Rockets": {
    "player": "firejohn",
    "won": 0,
-   "budget": 99,
+   "budget": 200,
+   "bids": 101,
    "riders": []
   },
   "MEO (Benfica)": {
    "player": "TheBigDog",
    "won": 0,
-   "budget": 97,
+   "budget": 200,
+   "bids": 103,
    "riders": []
   }
  },
- "checked": "2026-11-12T19:04Z"
+ "checked": "2026-11-12T19:08Z"
 }

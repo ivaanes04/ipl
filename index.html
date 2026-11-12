@@ -871,7 +871,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.18.0', updated: '2026-11-12T19:58' };
+const SITE = { version: '1.18.1', updated: '2026-11-12T20:08' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0, nat: '' };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -2301,7 +2301,7 @@ function viewS2Team(i) {
     h('a', { class: 'btn ghost', href: '#s2teams' }, 'All teams')));
   const spent = riders.reduce((a, r) => a + (r.price || 0), 0);
   const nats = new Set(riders.map((r) => r.cc || r.nat).filter(Boolean));
-  if (q) $view.append(h('div', { class: 'kpis' }, kpi('Riders', q.won + ' / ' + Q.max, 'signed in the auction'), kpi('Spent', spent + ' CR', 'on riders signed'), kpi('Budget left', q.budget + ' CR', 'on pcmmulti, live bids taken off'), kpi('Nations', nats.size, nats.size === 1 ? 'nation in the squad' : 'nations in the squad')));
+  if (q) $view.append(h('div', { class: 'kpis' }, kpi('Riders', q.won + ' / ' + Q.max, 'signed in the auction'), kpi('Spent', spent + ' CR', 'on riders signed'), kpi('Budget left', q.budget + ' CR', q.bids ? q.bids + ' CR in bids it is winning' : 'after the riders signed'), kpi('Nations', nats.size, nats.size === 1 ? 'nation in the squad' : 'nations in the squad')));
   const rosterCard = (r) => { const nm = s2RiderName(r), href = s2RiderHref(r), kids = [avatar(null, null, 44, nm), h('div', null, h('b', null, r.cc ? flag(r.cc) : null, nm), h('span', null, (r.price != null ? r.price + ' CR' : 'Price not seen') + (r.closed ? ' · ' + fshort(r.closed.slice(0, 10)) : '')))];
     return href ? h('a', { class: 'rostercard', href }, kids) : h('div', { class: 'rostercard' }, kids); };
   const squad = card('Roster', null, riders.length ? h('div', { class: 'roster' }, riders.map(rosterCard))
