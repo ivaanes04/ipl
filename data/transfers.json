@@ -678,5 +678,15 @@
   "cc": "ch",
   "team": "NsN",
   "price": 2
+ },
+ {
+  "at": "2026-11-12T20:45:38+00:00",
+  "date": "2026-11-12",
+  "time": "21:45",
+  "rider": "Keegan Swirbul",
+  "id": 3930,
+  "cc": "us",
+  "team": "Discovery Channel",
+  "price": 1
  }
 ]

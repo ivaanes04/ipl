@@ -521,6 +521,32 @@
     }
    ]
   },
+  "Kelme Costa Blanca": {
+   "player": "JgCol",
+   "won": 2,
+   "budget": 193,
+   "bids": 25,
+   "riders": [
+    {
+     "name": "Ardila Camilo",
+     "id": 7055,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 1,
+     "closed": "2026-11-12T18:01:36+00:00",
+     "full": "Camilo Ardila"
+    },
+    {
+     "name": "Rivera Brandon",
+     "id": 7090,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 6,
+     "closed": "2026-11-12T18:26:23+00:00",
+     "full": "Brandon Rivera"
+    }
+   ]
+  },
   "Royal Bank of Scotland": {
    "player": "Sheep_Boy123",
    "won": 2,
@@ -625,29 +651,29 @@
     }
    ]
   },
-  "Kelme Costa Blanca": {
-   "player": "JgCol",
+  "Discovery Channel": {
+   "player": "Agap",
    "won": 2,
    "budget": 193,
-   "bids": 70,
+   "bids": 52,
    "riders": [
     {
-     "name": "Ardila Camilo",
-     "id": 7055,
-     "cc": "co",
-     "nat": "Colombia",
-     "price": 1,
-     "closed": "2026-11-12T18:01:36+00:00",
-     "full": "Camilo Ardila"
+     "name": "Warbasse Larry",
+     "id": 3026,
+     "cc": "us",
+     "nat": "United States",
+     "price": 6,
+     "closed": "2026-11-12T19:46:57+00:00",
+     "full": "Larry Warbasse"
     },
     {
-     "name": "Rivera Brandon",
-     "id": 7090,
-     "cc": "co",
-     "nat": "Colombia",
-     "price": 6,
-     "closed": "2026-11-12T18:26:23+00:00",
-     "full": "Brandon Rivera"
+     "name": "Swirbul Keegan",
+     "id": 3930,
+     "cc": "us",
+     "nat": "United States",
+     "price": 1,
+     "closed": "2026-11-12T20:45:38+00:00",
+     "full": "Keegan Swirbul"
     }
    ]
   },
@@ -737,23 +763,6 @@
     }
    ]
   },
-  "Red Bull": {
-   "player": "MarcelTestier",
-   "won": 1,
-   "budget": 196,
-   "bids": 51,
-   "riders": [
-    {
-     "name": "Kämna Lennard",
-     "id": 3842,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 4,
-     "closed": "2026-11-12T19:44:16+00:00",
-     "full": "Lennard Kämna"
-    }
-   ]
-  },
   "Portugal in 150 Seconds": {
    "player": "Bessadelas",
    "won": 1,
@@ -768,23 +777,6 @@
      "price": 1,
      "closed": "2026-11-12T18:00:26+00:00",
      "full": "Pedro Pinto"
-    }
-   ]
-  },
-  "Discovery Channel": {
-   "player": "Agap",
-   "won": 1,
-   "budget": 194,
-   "bids": 53,
-   "riders": [
-    {
-     "name": "Warbasse Larry",
-     "id": 3026,
-     "cc": "us",
-     "nat": "United States",
-     "price": 6,
-     "closed": "2026-11-12T19:46:57+00:00",
-     "full": "Larry Warbasse"
     }
    ]
   },
@@ -822,6 +814,23 @@
     }
    ]
   },
+  "Red Bull": {
+   "player": "MarcelTestier",
+   "won": 1,
+   "budget": 196,
+   "bids": 131,
+   "riders": [
+    {
+     "name": "Kämna Lennard",
+     "id": 3842,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 4,
+     "closed": "2026-11-12T19:44:16+00:00",
+     "full": "Lennard Kämna"
+    }
+   ]
+  },
   "Tavfer-Ovos Matinados-Mortágua": {
    "player": "Sabu76",
    "won": 0,
@@ -833,9 +842,9 @@
    "player": "Tom_Bryant",
    "won": 0,
    "budget": 200,
-   "bids": 92,
+   "bids": 77,
    "riders": []
   }
  },
- "checked": "2026-11-12T20:43Z"
+ "checked": "2026-11-12T20:45Z"
 }
