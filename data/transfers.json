@@ -548,5 +548,15 @@
   "cc": "ca",
   "team": "Tudor",
   "price": 6
+ },
+ {
+  "at": "2026-11-12T19:33:58+00:00",
+  "date": "2026-11-12",
+  "time": "20:33",
+  "rider": "Abner González",
+  "id": 7391,
+  "cc": "pr",
+  "team": "MEO (Benfica)",
+  "price": 1
  }
 ]

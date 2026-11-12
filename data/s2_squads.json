@@ -218,7 +218,7 @@
    "player": "Grandpa",
    "won": 4,
    "budget": 170,
-   "bids": 90,
+   "bids": 115,
    "riders": [
     {
      "name": "Nordhagen Jørgen",
@@ -262,7 +262,7 @@
    "player": "benjong",
    "won": 3,
    "budget": 184,
-   "bids": 21,
+   "bids": 45,
    "riders": [
     {
      "name": "Kockelmann Mathieu",
@@ -297,7 +297,7 @@
    "player": "Daagz",
    "won": 3,
    "budget": 181,
-   "bids": 83,
+   "bids": 69,
    "riders": [
     {
      "name": "Widar Jarno",
@@ -332,7 +332,7 @@
    "player": "Hillingz",
    "won": 3,
    "budget": 194,
-   "bids": 101,
+   "bids": 85,
    "riders": [
     {
      "name": "Juul-Jensen Christopher",
@@ -398,11 +398,37 @@
     }
    ]
   },
+  "Royal Bank of Scotland": {
+   "player": "Sheep_Boy123",
+   "won": 2,
+   "budget": 193,
+   "bids": 28,
+   "riders": [
+    {
+     "name": "Rowe Elliot",
+     "id": 9198,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 4,
+     "closed": "2026-11-12T18:05:48+00:00",
+     "full": "Elliot Rowe"
+    },
+    {
+     "name": "Flynn Sean",
+     "id": 7523,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 3,
+     "closed": "2026-11-12T18:05:53+00:00",
+     "full": "Sean Flynn"
+    }
+   ]
+  },
   "Kelme Costa Blanca": {
    "player": "JgCol",
    "won": 2,
    "budget": 193,
-   "bids": 6,
+   "bids": 29,
    "riders": [
     {
      "name": "Ardila Camilo",
@@ -424,29 +450,29 @@
     }
    ]
   },
-  "CSC": {
-   "player": "marsiscool",
+  "7-Eleven": {
+   "player": "ChrisJanssen",
    "won": 2,
-   "budget": 198,
-   "bids": 32,
+   "budget": 196,
+   "bids": 37,
    "riders": [
     {
-     "name": "Wändel Elias",
-     "id": 11812,
-     "cc": "se",
-     "nat": "Sweden",
-     "price": 1,
-     "closed": "2026-11-12T18:04:06+00:00",
-     "full": "Elias Wändel"
+     "name": "Simmons Colby",
+     "id": 15266,
+     "cc": "us",
+     "nat": "United States",
+     "price": 3,
+     "closed": "2026-11-12T18:00:17+00:00",
+     "full": "Colby Simmons"
     },
     {
-     "name": "Kaczmarek Jakub",
-     "id": 3790,
-     "cc": "pl",
-     "nat": "Poland",
+     "name": "Stites Tyler",
+     "id": 10157,
+     "cc": "us",
+     "nat": "United States",
      "price": 1,
-     "closed": "2026-11-12T18:04:49+00:00",
-     "full": "Jakub Kaczmarek"
+     "closed": "2026-11-12T18:00:22+00:00",
+     "full": "Tyler Stites"
     }
    ]
   },
@@ -502,55 +528,29 @@
     }
    ]
   },
-  "7-Eleven": {
-   "player": "ChrisJanssen",
+  "CSC": {
+   "player": "marsiscool",
    "won": 2,
-   "budget": 196,
-   "bids": 58,
+   "budget": 198,
+   "bids": 82,
    "riders": [
     {
-     "name": "Simmons Colby",
-     "id": 15266,
-     "cc": "us",
-     "nat": "United States",
-     "price": 3,
-     "closed": "2026-11-12T18:00:17+00:00",
-     "full": "Colby Simmons"
-    },
-    {
-     "name": "Stites Tyler",
-     "id": 10157,
-     "cc": "us",
-     "nat": "United States",
+     "name": "Wändel Elias",
+     "id": 11812,
+     "cc": "se",
+     "nat": "Sweden",
      "price": 1,
-     "closed": "2026-11-12T18:00:22+00:00",
-     "full": "Tyler Stites"
-    }
-   ]
-  },
-  "Royal Bank of Scotland": {
-   "player": "Sheep_Boy123",
-   "won": 2,
-   "budget": 193,
-   "bids": 68,
-   "riders": [
-    {
-     "name": "Rowe Elliot",
-     "id": 9198,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 4,
-     "closed": "2026-11-12T18:05:48+00:00",
-     "full": "Elliot Rowe"
+     "closed": "2026-11-12T18:04:06+00:00",
+     "full": "Elias Wändel"
     },
     {
-     "name": "Flynn Sean",
-     "id": 7523,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 3,
-     "closed": "2026-11-12T18:05:53+00:00",
-     "full": "Sean Flynn"
+     "name": "Kaczmarek Jakub",
+     "id": 3790,
+     "cc": "pl",
+     "nat": "Poland",
+     "price": 1,
+     "closed": "2026-11-12T18:04:49+00:00",
+     "full": "Jakub Kaczmarek"
     }
    ]
   },
@@ -648,6 +648,23 @@
     }
    ]
   },
+  "MEO (Benfica)": {
+   "player": "TheBigDog",
+   "won": 1,
+   "budget": 199,
+   "bids": 102,
+   "riders": [
+    {
+     "name": "González Abner",
+     "id": 7391,
+     "cc": "pr",
+     "nat": "Puerto Rico",
+     "price": 1,
+     "closed": "2026-11-12T19:33:58+00:00",
+     "full": "Abner González"
+    }
+   ]
+  },
   "Astana": {
    "player": "Francesco Bonavita",
    "won": 1,
@@ -665,13 +682,6 @@
     }
    ]
   },
-  "B&B Hotels": {
-   "player": "Tom_Bryant",
-   "won": 0,
-   "budget": 200,
-   "bids": 4,
-   "riders": []
-  },
   "Tavfer-Ovos Matinados-Mortágua": {
    "player": "Sabu76",
    "won": 0,
@@ -686,34 +696,34 @@
    "bids": 4,
    "riders": []
   },
+  "B&B Hotels": {
+   "player": "Tom_Bryant",
+   "won": 0,
+   "budget": 200,
+   "bids": 21,
+   "riders": []
+  },
   "Discovery Channel": {
    "player": "Agap",
    "won": 0,
    "budget": 200,
-   "bids": 31,
+   "bids": 63,
    "riders": []
   },
   "Modern Adventure": {
    "player": "seancoll",
    "won": 0,
    "budget": 200,
-   "bids": 38,
+   "bids": 79,
    "riders": []
   },
   "Unibet Rose Rockets": {
    "player": "firejohn",
    "won": 0,
    "budget": 200,
-   "bids": 101,
-   "riders": []
-  },
-  "MEO (Benfica)": {
-   "player": "TheBigDog",
-   "won": 0,
-   "budget": 200,
-   "bids": 103,
+   "bids": 111,
    "riders": []
   }
  },
- "checked": "2026-11-12T19:08Z"
+ "checked": "2026-11-12T19:34Z"
 }
