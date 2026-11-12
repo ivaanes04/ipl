@@ -543,7 +543,9 @@ input[type=search] { width: min(340px, 100%); }
 .count small { font-size: 18px; color: rgb(235 234 230 / .7); letter-spacing: .06em; text-transform: uppercase; margin-left: 6px; }
 @media (max-width: 760px) { .hero { grid-template-columns: 1fr; } }
 .feed { display: flex; flex-direction: column; }
-.tfeed { max-height: 640px; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; padding-right: 4px; }
+/* Latest transfers: the card takes the height of Latest results and shows the rows that fit (home(): trim) */
+@media (min-width: 921px) { .t-transfers > .card { display: flex; flex-direction: column; } .t-transfers .tfeed { flex: 1 1 0; min-height: 0; overflow: hidden; contain: size; } }
+.feed > [hidden] { display: none; }
 .feed > a, .feed > div { display: grid; grid-template-columns: 54px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 9px 2px; border-bottom: 1px solid var(--soft); }
 .feed > :last-child { border-bottom: 0; }
 .feed .d { font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
@@ -869,7 +871,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.17.1', updated: '2026-11-12T19:50' };
+const SITE = { version: '1.18.0', updated: '2026-11-12T19:58' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0, nat: '' };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -1168,11 +1170,11 @@ function route() {
   const m = hash.match(/^([a-z0-9]+?)(?:-(\d+))?(?:-(\d+))?$/);
   UI.pendingStage = m && m[3] != null ? +m[3] : null; // #race-<n>-<stage> opens that stage
   const name = m ? m[1] : 'home', arg = m && m[2] != null ? +m[2] : null;
-  const section = { home: 'home', races: 'races', race: 'races', s2race: 'races', standings: 'standings', riders: 'riders', riderstats: 'riders', rider: 'riders', teams: 'teams', team: 'teams', squads: 'squads', squad: 'squads', s2teams: 'squads', s2team: 'squads', s2rider: 'riders', rules: 'rules' }[name] || 'home';
+  const section = { home: 'home', races: 'races', race: 'races', s2race: 'races', standings: 'standings', riders: 'riders', riderstats: 'riders', rider: 'riders', teams: 'teams', team: 'teams', squads: 'squads', squad: 'squads', s2teams: 'squads', s2team: 'squads', s2rider: 'riders', transfers: 'squads', rules: 'rules' }[name] || 'home';
   document.querySelectorAll('[data-nav]').forEach((a) => { if (a.dataset.nav === section) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
   $view.replaceChildren();
   $view.classList.remove('view-in'); void $view.offsetWidth; $view.classList.add('view-in');
-  const views = { home: viewHome, races: viewRaces, race: () => viewRace(arg), s2race: () => viewS2Race(arg), standings: viewStandings, riders: () => { UI.rmode = 'season'; viewRiders(); }, riderstats: () => { UI.rmode = 'stats'; viewRiders(); }, rider: () => viewRiderPcs(arg), teams: viewTeams, team: () => viewTeam(arg), squads: viewSquads, squad: () => viewSquad(arg), s2teams: viewS2Teams, s2team: () => viewS2Team(arg), s2rider: () => viewS2Rider(arg), rules: viewRules };
+  const views = { home: viewHome, races: viewRaces, race: () => viewRace(arg), s2race: () => viewS2Race(arg), standings: viewStandings, riders: () => { UI.rmode = 'season'; viewRiders(); }, riderstats: () => { UI.rmode = 'stats'; viewRiders(); }, rider: () => viewRiderPcs(arg), teams: viewTeams, team: () => viewTeam(arg), squads: viewSquads, squad: () => viewSquad(arg), s2teams: viewS2Teams, s2team: () => viewS2Team(arg), s2rider: () => viewS2Rider(arg), transfers: viewTransfers, rules: viewRules };
   (views[name] || viewHome)();
   // tab title: the page's own heading (race, rider, team...) then the site name
   const h1 = $view.querySelector('h1');
@@ -1268,12 +1270,27 @@ function viewHome() {
     h('div', { class: 'result-h' }, h('span', { class: 'rh-n' }, h('a', { href: '#race-' + x.i }, x.r.name), isMonument(x.r.name) ? monuBadge() : null, x.r.stages === 1 ? ptBadge(stageTypeOf(s1Key(x.r, 1)), { small: true }) : null), h('span', { class: 'mute' }, fdate(x.date) + ' · ' + (x.r.stages > 1 ? 'final GC' : 'one-day race'))),
     h('div', { class: 'divs' }, [1, 2, 3].map((d) => { const p = podiumOf(x.i, d); return p ? h('div', { class: 'divres' }, h('a', { href: '#rider-' + p[0][1], class: 'sqwrap', 'aria-label': rid(p[0][1]) }, avatar(p[0][1], p[0][2], 64)), h('div', null, h('span', { class: 'flag' + (d === 1 ? ' d1' : '') }, 'Div ' + d), podiumEl(p))) : null; }))))))));
   // transfers
-  const tr = S.transfers.slice().reverse(); // every signing, newest first; the list scrolls inside the card
+  const tr = S.transfers.slice().reverse(); // newest first: the card shows as many as fit next to Latest results (no scroll); #transfers has them all
   // Season 2 auction (data/transfers.json from tools/update_s2_squads.py): time if it was today (CET), date otherwise
   const todayCET = new Date().toLocaleDateString('en-CA', { timeZone: 'Europe/Madrid' });
-  homeGrid.append(h('div', { class: 'c4 tone t-transfers' }, card('Latest transfers', tr.length ? [tr.length + ' signed · all teams', '#s2teams'] : null, tr.length
-    ? h('div', { class: 'feed tfeed', tabindex: '0', 'aria-label': tr.length + ' signings' }, tr.map((t) => h('div', { title: t.rider + ' to ' + t.team + (t.price != null ? ' for ' + t.price + ' CR' : '') + ' · ' + fshort(t.date) + ' ' + (t.time || '') + ' CET' }, h('span', { class: 'd' }, t.time && t.date === todayCET ? t.time : fshort(t.date)), h('span', { class: 't' }, h('b', null, t.cc ? [flag(t.cc), ' '] : null, s2RiderLink(t)), h('span', null, 'to ', s2TeamLink(t.team))), h('span', { class: 'num' }, t.price != null ? t.price + ' CR' : ''))))
+  homeGrid.append(h('div', { class: 'c4 tone t-transfers' }, card('Latest transfers', tr.length ? ['All ' + tr.length + ' transfers', '#transfers'] : null, tr.length
+    ? h('div', { class: 'feed tfeed' }, tr.map((t) => h('div', { title: t.rider + ' to ' + t.team + (t.price != null ? ' for ' + t.price + ' CR' : '') + ' · ' + fshort(t.date) + ' ' + (t.time || '') + ' CET' }, h('span', { class: 'd' }, t.time && t.date === todayCET ? t.time : fshort(t.date)), h('span', { class: 't' }, h('b', null, t.cc ? [flag(t.cc), ' '] : null, s2RiderLink(t)), h('span', null, 'to ', s2TeamLink(t.team))), h('span', { class: 'num' }, t.price != null ? t.price + ' CR' : ''))))
     : h('div', { class: 'empty-state' }, h('b', null, 'Auction not open yet'), 'Season 2 signings from the IPL auction on pcmmulti.com/ipl will show here, newest first, with the price paid.'))));
+  {
+    const feed = homeGrid.querySelector('.tfeed');
+    if (feed) {
+      const trim = () => {
+        if (!feed.isConnected) { ro.disconnect(); return; }
+        const rows = [...feed.children];
+        rows.forEach((r) => { r.hidden = false; });
+        if (window.innerWidth <= 920) { rows.forEach((r, k) => { r.hidden = k >= 10; }); return; }
+        const bottom = feed.getBoundingClientRect().bottom + 1;
+        rows.forEach((r) => { if (r.getBoundingClientRect().bottom > bottom) r.hidden = true; });
+      };
+      const ro = new ResizeObserver(() => trim());
+      setTimeout(() => { ro.observe(homeGrid); trim(); }, 0); // not requestAnimationFrame: it waits while the tab is in the background
+    }
+  }
   // standings snapshot
   const L = leagueRounds(); const fin = L.out.get(L.orders[L.orders.length - 1]);
   // whole points (exact value on hover), team jersey, a bar against the leader and the gap to the team above
@@ -2251,6 +2268,20 @@ function viewS2Rider(id) {
     h('a', { class: 'btn ghost', href: '#riderstats' }, 'All riders')));
   const pc = pcmCard(d.name, d);
   if (pc) $view.append(pc);
+}
+// ---------- every Season 2 transfer (#transfers, data/transfers.json) ----------
+function viewTransfers() {
+  const tr = (S.transfers || []).slice().reverse();
+  $view.append(h('div', null, h('div', { class: 'eyebrow' }, 'Season 2 · auction'), h('h1', null, 'All transfers'),
+    h('p', { class: 'sub' }, 'Every rider signed in the Season 2 auction on pcmmulti.com/ipl, newest first. A rider is signed when his auction closes, 24 hours after the last bid. Times are CET.'), seasonSeg(2)));
+  if (!tr.length) { $view.append(card('Transfers', null, h('p', { class: 'empty' }, 'No riders signed yet.'))); return; }
+  const spent = tr.reduce((a, t) => a + (t.price || 0), 0);
+  const top = tr.reduce((a, t) => ((t.price || 0) > (a.price || 0) ? t : a), tr[0]);
+  $view.append(h('div', { class: 'kpis' }, kpi('Riders signed', tr.length, 'so far'), kpi('Spent', spent + ' CR', 'by all teams'),
+    kpi('Teams', new Set(tr.map((t) => t.team)).size, 'with at least one rider'), kpi('Biggest signing', top.price + ' CR', s2RiderName(top) + ' · ' + top.team)));
+  const rows = tr.map((t) => h('tr', null, h('td', { class: 'mute num' }, fshort(t.date) + ' ' + (t.time || '')), h('td', { class: 'rider' }, h('span', { class: 'rl' }, t.cc ? flag(t.cc) : null, s2RiderLink(t))),
+    h('td', null, s2TeamLink(t.team)), h('td', { class: 'num' }, t.price != null ? t.price + ' CR' : '–')));
+  $view.append(card('Transfers', ['Teams', '#s2teams'], table([{ label: 'Signed' }, { label: 'Rider' }, { label: 'Team' }, { label: 'Price', n: 1 }], rows, { tall: true })));
 }
 // ---------- one Season 2 team (#s2team-<n>, n = its place in s2_signups.json): manager, riders signed in the auction, sponsor objectives ----------
 const s2TeamIdx = (name) => ((S.s2signups && S.s2signups.teams) || []).findIndex((t) => t.team === name);
