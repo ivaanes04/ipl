@@ -367,7 +367,7 @@
    "player": "TheBigDog",
    "won": 3,
    "budget": 98,
-   "bids": 1,
+   "bids": 2,
    "riders": [
     {
      "name": "González Abner",
@@ -395,6 +395,41 @@
      "price": 100,
      "closed": "2026-11-12T19:36:36+00:00",
      "full": "Sam Brand"
+    }
+   ]
+  },
+  "Unibet Rose Rockets": {
+   "player": "firejohn",
+   "won": 3,
+   "budget": 188,
+   "bids": 99,
+   "riders": [
+    {
+     "name": "Dillier Silvan",
+     "id": 3392,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 4,
+     "closed": "2026-11-12T19:45:47+00:00",
+     "full": "Silvan Dillier"
+    },
+    {
+     "name": "Blaise Arthur",
+     "id": 15684,
+     "cc": "fr",
+     "nat": "France",
+     "price": 2,
+     "closed": "2026-11-12T19:45:54+00:00",
+     "full": "Arthur Blaise"
+    },
+    {
+     "name": "Mouris Wessel",
+     "id": 8135,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 6,
+     "closed": "2026-11-12T19:47:18+00:00",
+     "full": "Wessel Mouris"
     }
    ]
   },
@@ -589,32 +624,6 @@
     }
    ]
   },
-  "Unibet Rose Rockets": {
-   "player": "firejohn",
-   "won": 2,
-   "budget": 194,
-   "bids": 105,
-   "riders": [
-    {
-     "name": "Dillier Silvan",
-     "id": 3392,
-     "cc": "ch",
-     "nat": "Switzerland",
-     "price": 4,
-     "closed": "2026-11-12T19:45:47+00:00",
-     "full": "Silvan Dillier"
-    },
-    {
-     "name": "Blaise Arthur",
-     "id": 15684,
-     "cc": "fr",
-     "nat": "France",
-     "price": 2,
-     "closed": "2026-11-12T19:45:54+00:00",
-     "full": "Arthur Blaise"
-    }
-   ]
-  },
   "Milka": {
    "player": "danielmiko",
    "won": 2,
@@ -792,5 +801,5 @@
    "riders": []
   }
  },
- "checked": "2026-11-12T19:47Z"
+ "checked": "2026-11-12T19:49Z"
 }
