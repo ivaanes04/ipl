@@ -285,6 +285,50 @@
     }
    ]
   },
+  "MTN Qhubeka": {
+   "player": "Joewhiteley0711",
+   "won": 4,
+   "budget": 193,
+   "bids": 79,
+   "riders": [
+    {
+     "name": "Konychev Alexander",
+     "id": 7069,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 2,
+     "closed": "2026-11-12T18:00:26+00:00",
+     "full": "Alexander Konychev"
+    },
+    {
+     "name": "Janse van Rensburg Reinardt",
+     "id": 2658,
+     "cc": "za",
+     "nat": "South Africa",
+     "price": 1,
+     "closed": "2026-11-12T20:02:42+00:00",
+     "full": "Reinardt Janse van Rensburg"
+    },
+    {
+     "name": "Torres Albert",
+     "id": 5844,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 1,
+     "closed": "2026-11-12T20:03:42+00:00",
+     "full": "Albert Torres"
+    },
+    {
+     "name": "Boulahoite Rayan",
+     "id": 8702,
+     "cc": "fr",
+     "nat": "France",
+     "price": 3,
+     "closed": "2026-11-12T21:43:57+00:00",
+     "full": "Rayan Boulahoite"
+    }
+   ]
+  },
   "Rabobank": {
    "player": "Bouke",
    "won": 4,
@@ -440,41 +484,6 @@
      "price": 3,
      "closed": "2026-11-12T18:08:05+00:00",
      "full": "Fran Miholjevic"
-    }
-   ]
-  },
-  "MTN Qhubeka": {
-   "player": "Joewhiteley0711",
-   "won": 3,
-   "budget": 196,
-   "bids": 82,
-   "riders": [
-    {
-     "name": "Konychev Alexander",
-     "id": 7069,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 2,
-     "closed": "2026-11-12T18:00:26+00:00",
-     "full": "Alexander Konychev"
-    },
-    {
-     "name": "Janse van Rensburg Reinardt",
-     "id": 2658,
-     "cc": "za",
-     "nat": "South Africa",
-     "price": 1,
-     "closed": "2026-11-12T20:02:42+00:00",
-     "full": "Reinardt Janse van Rensburg"
-    },
-    {
-     "name": "Torres Albert",
-     "id": 5844,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 1,
-     "closed": "2026-11-12T20:03:42+00:00",
-     "full": "Albert Torres"
     }
    ]
   },
@@ -713,32 +722,6 @@
     }
    ]
   },
-  "7-Eleven": {
-   "player": "ChrisJanssen",
-   "won": 2,
-   "budget": 196,
-   "bids": 63,
-   "riders": [
-    {
-     "name": "Simmons Colby",
-     "id": 15266,
-     "cc": "us",
-     "nat": "United States",
-     "price": 3,
-     "closed": "2026-11-12T18:00:17+00:00",
-     "full": "Colby Simmons"
-    },
-    {
-     "name": "Stites Tyler",
-     "id": 10157,
-     "cc": "us",
-     "nat": "United States",
-     "price": 1,
-     "closed": "2026-11-12T18:00:22+00:00",
-     "full": "Tyler Stites"
-    }
-   ]
-  },
   "CSC": {
    "player": "marsiscool",
    "won": 2,
@@ -788,6 +771,32 @@
      "price": 6,
      "closed": "2026-11-12T18:26:23+00:00",
      "full": "Brandon Rivera"
+    }
+   ]
+  },
+  "7-Eleven": {
+   "player": "ChrisJanssen",
+   "won": 2,
+   "budget": 196,
+   "bids": 79,
+   "riders": [
+    {
+     "name": "Simmons Colby",
+     "id": 15266,
+     "cc": "us",
+     "nat": "United States",
+     "price": 3,
+     "closed": "2026-11-12T18:00:17+00:00",
+     "full": "Colby Simmons"
+    },
+    {
+     "name": "Stites Tyler",
+     "id": 10157,
+     "cc": "us",
+     "nat": "United States",
+     "price": 1,
+     "closed": "2026-11-12T18:00:22+00:00",
+     "full": "Tyler Stites"
     }
    ]
   },
@@ -906,9 +915,9 @@
    "player": "Tom_Bryant",
    "won": 0,
    "budget": 200,
-   "bids": 60,
+   "bids": 48,
    "riders": []
   }
  },
- "checked": "2026-11-12T21:19Z"
+ "checked": "2026-11-12T21:44Z"
 }

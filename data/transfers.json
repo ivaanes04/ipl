@@ -758,5 +758,15 @@
   "cc": "cz",
   "team": "Unibet Rose Rockets",
   "price": 7
+ },
+ {
+  "at": "2026-11-12T21:43:57+00:00",
+  "date": "2026-11-12",
+  "time": "22:43",
+  "rider": "Rayan Boulahoite",
+  "id": 8702,
+  "cc": "fr",
+  "team": "MTN Qhubeka",
+  "price": 3
  }
 ]
