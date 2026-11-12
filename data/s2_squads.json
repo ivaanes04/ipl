@@ -679,7 +679,7 @@
    "player": "MarcelTestier",
    "won": 1,
    "budget": 196,
-   "bids": 45,
+   "bids": 57,
    "riders": [
     {
      "name": "Kämna Lennard",
@@ -689,6 +689,23 @@
      "price": 4,
      "closed": "2026-11-12T19:44:16+00:00",
      "full": "Lennard Kämna"
+    }
+   ]
+  },
+  "Discovery Channel": {
+   "player": "Agap",
+   "won": 1,
+   "budget": 194,
+   "bids": 57,
+   "riders": [
+    {
+     "name": "Warbasse Larry",
+     "id": 3026,
+     "cc": "us",
+     "nat": "United States",
+     "price": 6,
+     "closed": "2026-11-12T19:46:57+00:00",
+     "full": "Larry Warbasse"
     }
    ]
   },
@@ -773,14 +790,7 @@
    "budget": 200,
    "bids": 21,
    "riders": []
-  },
-  "Discovery Channel": {
-   "player": "Agap",
-   "won": 0,
-   "budget": 200,
-   "bids": 63,
-   "riders": []
   }
  },
- "checked": "2026-11-12T19:46Z"
+ "checked": "2026-11-12T19:47Z"
 }

@@ -618,5 +618,15 @@
   "cc": "fr",
   "team": "Unibet Rose Rockets",
   "price": 2
+ },
+ {
+  "at": "2026-11-12T19:46:57+00:00",
+  "date": "2026-11-12",
+  "time": "20:46",
+  "rider": "Larry Warbasse",
+  "id": 3026,
+  "cc": "us",
+  "team": "Discovery Channel",
+  "price": 6
  }
 ]
