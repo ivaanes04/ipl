@@ -363,6 +363,41 @@
     }
    ]
   },
+  "MEO (Benfica)": {
+   "player": "TheBigDog",
+   "won": 3,
+   "budget": 98,
+   "bids": 1,
+   "riders": [
+    {
+     "name": "González Abner",
+     "id": 7391,
+     "cc": "pr",
+     "nat": "Puerto Rico",
+     "price": 1,
+     "closed": "2026-11-12T19:33:58+00:00",
+     "full": "Abner González"
+    },
+    {
+     "name": "Campos Francisco",
+     "id": 6862,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-12T19:34:51+00:00",
+     "full": "Francisco Campos"
+    },
+    {
+     "name": "Froome Chris",
+     "id": 6440,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 100,
+     "closed": "2026-11-12T19:36:36+00:00",
+     "full": "Sam Brand"
+    }
+   ]
+  },
   "Renova": {
    "player": "Pena Guevara",
    "won": 3,
@@ -648,23 +683,6 @@
     }
    ]
   },
-  "MEO (Benfica)": {
-   "player": "TheBigDog",
-   "won": 1,
-   "budget": 199,
-   "bids": 102,
-   "riders": [
-    {
-     "name": "González Abner",
-     "id": 7391,
-     "cc": "pr",
-     "nat": "Puerto Rico",
-     "price": 1,
-     "closed": "2026-11-12T19:33:58+00:00",
-     "full": "Abner González"
-    }
-   ]
-  },
   "Astana": {
    "player": "Francesco Bonavita",
    "won": 1,
@@ -725,5 +743,5 @@
    "riders": []
   }
  },
- "checked": "2026-11-12T19:34Z"
+ "checked": "2026-11-12T19:36Z"
 }
