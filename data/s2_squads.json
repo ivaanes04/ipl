@@ -528,22 +528,6 @@
     }
    ]
   },
-  "Biesse - Carrera - Premac": {
-   "player": "Hübi",
-   "won": 1,
-   "budget": 154,
-   "riders": [
-    {
-     "name": "Maestri Mirco",
-     "id": 5676,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 7,
-     "closed": "2026-11-12T18:47:42+00:00",
-     "full": "Mirco Maestri"
-    }
-   ]
-  },
   "GI Group Holding Simoldes UDO": {
    "player": "Joao Negrao",
    "won": 1,
@@ -557,6 +541,22 @@
      "price": 6,
      "closed": "2026-11-12T18:03:42+00:00",
      "full": "José Félix Parra"
+    }
+   ]
+  },
+  "Biesse - Carrera - Premac": {
+   "player": "Hübi",
+   "won": 1,
+   "budget": 131,
+   "riders": [
+    {
+     "name": "Maestri Mirco",
+     "id": 5676,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 7,
+     "closed": "2026-11-12T18:47:42+00:00",
+     "full": "Mirco Maestri"
     }
    ]
   },
@@ -641,5 +641,5 @@
    "riders": []
   }
  },
- "checked": "2026-11-12T18:47Z"
+ "checked": "2026-11-12T18:52Z"
 }
