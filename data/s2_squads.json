@@ -126,6 +126,50 @@
     }
    ]
   },
+  "Rabobank": {
+   "player": "Bouke",
+   "won": 4,
+   "budget": 185,
+   "bids": 19,
+   "riders": [
+    {
+     "name": "Doubey Fabien",
+     "id": 1380,
+     "cc": "fr",
+     "nat": "France",
+     "price": 3,
+     "closed": "2026-11-12T18:13:57+00:00",
+     "full": "Fabien Doubey"
+    },
+    {
+     "name": "Ronhaar Pim",
+     "id": 12123,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 2,
+     "closed": "2026-11-12T18:17:11+00:00",
+     "full": "Pim Ronhaar"
+    },
+    {
+     "name": "Vader Milan",
+     "id": 15475,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 4,
+     "closed": "2026-11-12T18:18:37+00:00",
+     "full": "Milan Vader"
+    },
+    {
+     "name": "de Vries Hartthijs",
+     "id": 3905,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 6,
+     "closed": "2026-11-12T18:18:42+00:00",
+     "full": "Hartthijs de Vries"
+    }
+   ]
+  },
   "Ukraine Cycling Team": {
    "player": "Riverside",
    "won": 4,
@@ -167,50 +211,6 @@
      "price": 2,
      "closed": "2026-11-12T18:04:22+00:00",
      "full": "Aldo Taillieu"
-    }
-   ]
-  },
-  "Rabobank": {
-   "player": "Bouke",
-   "won": 4,
-   "budget": 185,
-   "bids": 63,
-   "riders": [
-    {
-     "name": "Doubey Fabien",
-     "id": 1380,
-     "cc": "fr",
-     "nat": "France",
-     "price": 3,
-     "closed": "2026-11-12T18:13:57+00:00",
-     "full": "Fabien Doubey"
-    },
-    {
-     "name": "Ronhaar Pim",
-     "id": 12123,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 2,
-     "closed": "2026-11-12T18:17:11+00:00",
-     "full": "Pim Ronhaar"
-    },
-    {
-     "name": "Vader Milan",
-     "id": 15475,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 4,
-     "closed": "2026-11-12T18:18:37+00:00",
-     "full": "Milan Vader"
-    },
-    {
-     "name": "de Vries Hartthijs",
-     "id": 3905,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 6,
-     "closed": "2026-11-12T18:18:42+00:00",
-     "full": "Hartthijs de Vries"
     }
    ]
   },
@@ -589,6 +589,32 @@
     }
    ]
   },
+  "Unibet Rose Rockets": {
+   "player": "firejohn",
+   "won": 2,
+   "budget": 194,
+   "bids": 105,
+   "riders": [
+    {
+     "name": "Dillier Silvan",
+     "id": 3392,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 4,
+     "closed": "2026-11-12T19:45:47+00:00",
+     "full": "Silvan Dillier"
+    },
+    {
+     "name": "Blaise Arthur",
+     "id": 15684,
+     "cc": "fr",
+     "nat": "France",
+     "price": 2,
+     "closed": "2026-11-12T19:45:54+00:00",
+     "full": "Arthur Blaise"
+    }
+   ]
+  },
   "Milka": {
    "player": "danielmiko",
    "won": 2,
@@ -615,23 +641,6 @@
     }
    ]
   },
-  "Red Bull": {
-   "player": "MarcelTestier",
-   "won": 1,
-   "budget": 196,
-   "bids": 0,
-   "riders": [
-    {
-     "name": "Kämna Lennard",
-     "id": 3842,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 4,
-     "closed": "2026-11-12T19:44:16+00:00",
-     "full": "Lennard Kämna"
-    }
-   ]
-  },
   "FEIRENSE - BEECELER": {
    "player": "joaozinhoaac",
    "won": 1,
@@ -646,6 +655,40 @@
      "price": 6,
      "closed": "2026-11-12T18:02:49+00:00",
      "full": "Juan Pedro López"
+    }
+   ]
+  },
+  "Modern Adventure": {
+   "player": "seancoll",
+   "won": 1,
+   "budget": 188,
+   "bids": 26,
+   "riders": [
+    {
+     "name": "Pithie Laurence",
+     "id": 7547,
+     "cc": "nz",
+     "nat": "New Zealand",
+     "price": 12,
+     "closed": "2026-11-12T19:45:48+00:00",
+     "full": "Laurence Pithie"
+    }
+   ]
+  },
+  "Red Bull": {
+   "player": "MarcelTestier",
+   "won": 1,
+   "budget": 196,
+   "bids": 45,
+   "riders": [
+    {
+     "name": "Kämna Lennard",
+     "id": 3842,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 4,
+     "closed": "2026-11-12T19:44:16+00:00",
+     "full": "Lennard Kämna"
     }
    ]
   },
@@ -731,27 +774,13 @@
    "bids": 21,
    "riders": []
   },
-  "Modern Adventure": {
-   "player": "seancoll",
-   "won": 0,
-   "budget": 200,
-   "bids": 38,
-   "riders": []
-  },
   "Discovery Channel": {
    "player": "Agap",
    "won": 0,
    "budget": 200,
    "bids": 63,
    "riders": []
-  },
-  "Unibet Rose Rockets": {
-   "player": "firejohn",
-   "won": 0,
-   "budget": 200,
-   "bids": 111,
-   "riders": []
   }
  },
- "checked": "2026-11-12T19:44Z"
+ "checked": "2026-11-12T19:46Z"
 }
