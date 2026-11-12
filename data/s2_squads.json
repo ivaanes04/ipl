@@ -459,32 +459,6 @@
     }
    ]
   },
-  "Kelme Costa Blanca": {
-   "player": "JgCol",
-   "won": 2,
-   "budget": 193,
-   "bids": 29,
-   "riders": [
-    {
-     "name": "Ardila Camilo",
-     "id": 7055,
-     "cc": "co",
-     "nat": "Colombia",
-     "price": 1,
-     "closed": "2026-11-12T18:01:36+00:00",
-     "full": "Camilo Ardila"
-    },
-    {
-     "name": "Rivera Brandon",
-     "id": 7090,
-     "cc": "co",
-     "nat": "Colombia",
-     "price": 6,
-     "closed": "2026-11-12T18:26:23+00:00",
-     "full": "Brandon Rivera"
-    }
-   ]
-  },
   "7-Eleven": {
    "player": "ChrisJanssen",
    "won": 2,
@@ -563,6 +537,32 @@
     }
    ]
   },
+  "Kelme Costa Blanca": {
+   "player": "JgCol",
+   "won": 2,
+   "budget": 193,
+   "bids": 74,
+   "riders": [
+    {
+     "name": "Ardila Camilo",
+     "id": 7055,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 1,
+     "closed": "2026-11-12T18:01:36+00:00",
+     "full": "Camilo Ardila"
+    },
+    {
+     "name": "Rivera Brandon",
+     "id": 7090,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 6,
+     "closed": "2026-11-12T18:26:23+00:00",
+     "full": "Brandon Rivera"
+    }
+   ]
+  },
   "CSC": {
    "player": "marsiscool",
    "won": 2,
@@ -612,6 +612,23 @@
      "price": 1,
      "closed": "2026-11-12T18:00:34+00:00",
      "full": "Nils Aebersold"
+    }
+   ]
+  },
+  "Red Bull": {
+   "player": "MarcelTestier",
+   "won": 1,
+   "budget": 196,
+   "bids": 0,
+   "riders": [
+    {
+     "name": "Kämna Lennard",
+     "id": 3842,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 4,
+     "closed": "2026-11-12T19:44:16+00:00",
+     "full": "Lennard Kämna"
     }
    ]
   },
@@ -707,13 +724,6 @@
    "bids": 4,
    "riders": []
   },
-  "Red Bull": {
-   "player": "MarcelTestier",
-   "won": 0,
-   "budget": 200,
-   "bids": 4,
-   "riders": []
-  },
   "B&B Hotels": {
    "player": "Tom_Bryant",
    "won": 0,
@@ -721,18 +731,18 @@
    "bids": 21,
    "riders": []
   },
+  "Modern Adventure": {
+   "player": "seancoll",
+   "won": 0,
+   "budget": 200,
+   "bids": 38,
+   "riders": []
+  },
   "Discovery Channel": {
    "player": "Agap",
    "won": 0,
    "budget": 200,
    "bids": 63,
-   "riders": []
-  },
-  "Modern Adventure": {
-   "player": "seancoll",
-   "won": 0,
-   "budget": 200,
-   "bids": 79,
    "riders": []
   },
   "Unibet Rose Rockets": {
@@ -743,5 +753,5 @@
    "riders": []
   }
  },
- "checked": "2026-11-12T19:36Z"
+ "checked": "2026-11-12T19:44Z"
 }

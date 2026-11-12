@@ -578,5 +578,15 @@
   "cc": "gb",
   "team": "MEO (Benfica)",
   "price": 100
+ },
+ {
+  "at": "2026-11-12T19:44:16+00:00",
+  "date": "2026-11-12",
+  "time": "20:44",
+  "rider": "Lennard Kämna",
+  "id": 3842,
+  "cc": "de",
+  "team": "Red Bull",
+  "price": 4
  }
 ]
