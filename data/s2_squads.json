@@ -25,11 +25,11 @@
     },
     {
      "name": "Decomble Maxime",
-     "id": null,
-     "cc": null,
-     "nat": null,
-     "price": null,
-     "closed": null
+     "id": 15747,
+     "cc": "fr",
+     "nat": "France",
+     "price": 7,
+     "closed": "2026-11-12T18:10:35+00:00"
     },
     {
      "name": "Noval Benjamín",
@@ -49,11 +49,11 @@
     },
     {
      "name": "Romo Javier",
-     "id": null,
-     "cc": null,
-     "nat": null,
-     "price": null,
-     "closed": null
+     "id": 7397,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 9,
+     "closed": "2026-11-12T18:10:54+00:00"
     },
     {
      "name": "Al Mutaiwei Mohammad",
@@ -427,10 +427,25 @@
     }
    ]
   },
+  "Rabobank": {
+   "player": "Bouke",
+   "won": 1,
+   "budget": 166,
+   "riders": [
+    {
+     "name": "Doubey Fabien",
+     "id": 1380,
+     "cc": "fr",
+     "nat": "France",
+     "price": 3,
+     "closed": "2026-11-12T18:13:57+00:00"
+    }
+   ]
+  },
   "GI Group Holding Simoldes UDO": {
    "player": "Joao Negrao",
    "won": 1,
-   "budget": 172,
+   "budget": 158,
    "riders": [
     {
      "name": "Parra José Félix",
@@ -445,7 +460,7 @@
   "Portugal in 150 Seconds": {
    "player": "Bessadelas",
    "won": 1,
-   "budget": 131,
+   "budget": 151,
    "riders": [
     {
      "name": "Pinto Pedro",
@@ -481,20 +496,8 @@
    "budget": 193,
    "riders": []
   },
-  "Rabobank": {
-   "player": "Bouke",
-   "won": 0,
-   "budget": 166,
-   "riders": []
-  },
   "Tudor": {
    "player": "Grandpa",
-   "won": 0,
-   "budget": 162,
-   "riders": []
-  },
-  "Modern Adventure": {
-   "player": "seancoll",
    "won": 0,
    "budget": 162,
    "riders": []
@@ -503,6 +506,12 @@
    "player": "Hübi",
    "won": 0,
    "budget": 145,
+   "riders": []
+  },
+  "Modern Adventure": {
+   "player": "seancoll",
+   "won": 0,
+   "budget": 140,
    "riders": []
   },
   "Unibet Rose Rockets": {
@@ -524,5 +533,5 @@
    "riders": []
   }
  },
- "checked": "2026-11-12T18:11Z"
+ "checked": "2026-11-12T18:15Z"
 }
