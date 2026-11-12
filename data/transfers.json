@@ -798,5 +798,15 @@
   "cc": "it",
   "team": "B&B Hotels",
   "price": 1
+ },
+ {
+  "at": "2026-11-12T22:50:44+00:00",
+  "date": "2026-11-12",
+  "time": "23:50",
+  "rider": "Seff Van Kerckhove",
+  "id": 11852,
+  "cc": "be",
+  "team": "B&B Hotels",
+  "price": 1
  }
 ]
