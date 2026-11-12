@@ -692,6 +692,15 @@ a.s2card { color: inherit; } a.s2card:hover .s2team { color: var(--accent, inher
 .s2nat-open { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--line); }
 .s2nat-oh { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
 .s2nat-src { font-size: 11px; color: var(--muted); margin: 14px 0 0; line-height: 1.4; }
+/* Season 2 team page */
+.feed .t b .fl { display: inline-block; vertical-align: -1px; margin-right: 5px; }
+.s2bigjsy { width: 92px; height: 92px; flex: none; }
+.s2bigjsy img { width: 100%; height: 100%; object-fit: contain; }
+.teamhead h1 .s2fl { margin-right: 8px; vertical-align: 3px; }
+ul.s2tobj { list-style: none; margin: 0; padding: 0; }
+ul.s2tobj li { display: flex; align-items: center; gap: 8px; padding: 8px 0; border-top: 1px solid var(--soft); font-size: 14px; line-height: 1.35; }
+ul.s2tobj li:first-child { border-top: 0; }
+.s2tobj-n { flex: none; font: 600 12px var(--f-mono); color: var(--muted); white-space: nowrap; }
 /* Season 2 auction squads */
 .sq-top { display: grid; gap: 12px; margin-bottom: 14px; }
 .sq-latest ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); column-gap: 18px; }
@@ -856,7 +865,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.14.0', updated: '2026-11-12T19:10' };
+const SITE = { version: '1.15.0', updated: '2026-11-12T19:17' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0, nat: '' };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -1155,11 +1164,11 @@ function route() {
   const m = hash.match(/^([a-z0-9]+?)(?:-(\d+))?(?:-(\d+))?$/);
   UI.pendingStage = m && m[3] != null ? +m[3] : null; // #race-<n>-<stage> opens that stage
   const name = m ? m[1] : 'home', arg = m && m[2] != null ? +m[2] : null;
-  const section = { home: 'home', races: 'races', race: 'races', s2race: 'races', standings: 'standings', riders: 'riders', riderstats: 'riders', rider: 'riders', teams: 'teams', team: 'teams', squads: 'squads', squad: 'squads', s2teams: 'squads', rules: 'rules' }[name] || 'home';
+  const section = { home: 'home', races: 'races', race: 'races', s2race: 'races', standings: 'standings', riders: 'riders', riderstats: 'riders', rider: 'riders', teams: 'teams', team: 'teams', squads: 'squads', squad: 'squads', s2teams: 'squads', s2team: 'squads', rules: 'rules' }[name] || 'home';
   document.querySelectorAll('[data-nav]').forEach((a) => { if (a.dataset.nav === section) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
   $view.replaceChildren();
   $view.classList.remove('view-in'); void $view.offsetWidth; $view.classList.add('view-in');
-  const views = { home: viewHome, races: viewRaces, race: () => viewRace(arg), s2race: () => viewS2Race(arg), standings: viewStandings, riders: () => { UI.rmode = 'season'; viewRiders(); }, riderstats: () => { UI.rmode = 'stats'; viewRiders(); }, rider: () => viewRiderPcs(arg), teams: viewTeams, team: () => viewTeam(arg), squads: viewSquads, squad: () => viewSquad(arg), s2teams: viewS2Teams, rules: viewRules };
+  const views = { home: viewHome, races: viewRaces, race: () => viewRace(arg), s2race: () => viewS2Race(arg), standings: viewStandings, riders: () => { UI.rmode = 'season'; viewRiders(); }, riderstats: () => { UI.rmode = 'stats'; viewRiders(); }, rider: () => viewRiderPcs(arg), teams: viewTeams, team: () => viewTeam(arg), squads: viewSquads, squad: () => viewSquad(arg), s2teams: viewS2Teams, s2team: () => viewS2Team(arg), rules: viewRules };
   (views[name] || viewHome)();
   // tab title: the page's own heading (race, rider, team...) then the site name
   const h1 = $view.querySelector('h1');
@@ -1256,8 +1265,10 @@ function viewHome() {
     h('div', { class: 'divs' }, [1, 2, 3].map((d) => { const p = podiumOf(x.i, d); return p ? h('div', { class: 'divres' }, h('a', { href: '#rider-' + p[0][1], class: 'sqwrap', 'aria-label': rid(p[0][1]) }, avatar(p[0][1], p[0][2], 64)), h('div', null, h('span', { class: 'flag' + (d === 1 ? ' d1' : '') }, 'Div ' + d), podiumEl(p))) : null; }))))))));
   // transfers
   const tr = S.transfers.slice(-10).reverse();
-  homeGrid.append(h('div', { class: 'c4 tone t-transfers' }, card('Latest transfers', null, tr.length
-    ? h('div', { class: 'feed' }, tr.map((t) => h('div', null, h('span', { class: 'd' }, fshort(t.date)), h('span', { class: 't' }, h('b', null, t.rider), h('span', null, 'to ' + t.team)), h('span', { class: 'num' }, t.price ? t.price + 'M' : ''))))
+  // Season 2 auction (data/transfers.json from tools/update_s2_squads.py): time if it was today (CET), date otherwise
+  const todayCET = new Date().toLocaleDateString('en-CA', { timeZone: 'Europe/Madrid' });
+  homeGrid.append(h('div', { class: 'c4 tone t-transfers' }, card('Latest transfers', tr.length ? ['All teams', '#s2teams'] : null, tr.length
+    ? h('div', { class: 'feed' }, tr.map((t) => h('a', { href: s2TeamHref(t.team), title: t.rider + ' to ' + t.team + (t.price != null ? ' for ' + t.price + ' CR' : '') + ' · ' + fshort(t.date) + ' ' + (t.time || '') + ' CET' }, h('span', { class: 'd' }, t.time && t.date === todayCET ? t.time : fshort(t.date)), h('span', { class: 't' }, h('b', null, t.cc ? [flag(t.cc), ' '] : null, t.rider), h('span', null, 'to ' + t.team)), h('span', { class: 'num' }, t.price != null ? t.price + ' CR' : ''))))
     : h('div', { class: 'empty-state' }, h('b', null, 'Auction not open yet'), 'Season 2 signings from the IPL auction on pcmmulti.com/ipl will show here, newest first, with the price paid.'))));
   // standings snapshot
   const L = leagueRounds(); const fin = L.out.get(L.orders[L.orders.length - 1]);
@@ -2197,6 +2208,39 @@ function viewSquad(ti) {
   $view.append(h('div', { class: 'grid2' }, card('Roster', null, roster), card('Victories', null, wins.length ? table([{ label: 'Date' }, { label: 'Race' }, { label: 'Stage' }, { label: 'Div' }, { label: 'Rider' }], wins, { tall: true }) : h('p', { class: 'empty' }, 'No wins yet.'))));
 }
 
+// ---------- one Season 2 team (#s2team-<n>, n = its place in s2_signups.json): manager, riders signed in the auction, sponsor objectives ----------
+const s2TeamIdx = (name) => ((S.s2signups && S.s2signups.teams) || []).findIndex((t) => t.team === name);
+const s2TeamHref = (name) => { const i = s2TeamIdx(name); return i < 0 ? '#s2teams' : '#s2team-' + i; };
+function viewS2Team(i) {
+  const t = S.s2signups && S.s2signups.teams[i];
+  if (!t) return viewS2Teams();
+  const Q = S.s2squads, q = Q && Q.teams[t.team];
+  const riders = q ? q.riders.slice().sort((a, b) => (a.closed || '~').localeCompare(b.closed || '~')) : [];
+  const n = s2Nat(t);
+  const mgr = [t.s1 && IX.teamIds.has(t.s1) ? h('a', { href: '#team-' + encodeTeam(t.s1) }, s2Name(t)) : s2Name(t), t.partner ? [' + ', t.partner_s1 && IX.teamIds.has(t.partner_s1) ? h('a', { href: '#team-' + encodeTeam(t.partner_s1) }, t.partner) : t.partner] : null];
+  $view.append(h('div', { class: 'teamhead' },
+    h('div', { class: 's2bigjsy' }, t.jersey ? h('img', { src: 'img/jerseys/' + t.jersey + '.png', alt: t.team + ' jersey' }) : null),
+    h('div', null, h('div', { class: 'eyebrow' }, 'Team · Season 2'), h('h1', null, n ? h('span', { class: 's2fl' }, flag(n.cc)) : null, t.team),
+      h('div', { class: 'facts' }, h('span', null, 'Manager ', h('b', null, mgr)), n ? h('span', null, 'Nation ', h('b', null, NATNAME[n.cc] || n.cc.toUpperCase())) : null,
+        h('span', null, 'Signed up ', h('b', null, fdate(t.posted.slice(0, 10)))))),
+    h('a', { class: 'btn ghost', href: '#s2teams' }, 'All teams')));
+  const spent = riders.reduce((a, r) => a + (r.price || 0), 0);
+  const nats = new Set(riders.map((r) => r.cc || r.nat).filter(Boolean));
+  if (q) $view.append(h('div', { class: 'kpis' }, kpi('Riders', q.won + ' / ' + Q.max, 'signed in the auction'), kpi('Spent', spent + ' CR', 'on riders signed'), kpi('Budget left', q.budget + ' CR', 'on pcmmulti, live bids taken off'), kpi('Nations', nats.size, nats.size === 1 ? 'nation in the squad' : 'nations in the squad')));
+  const rows = riders.map((r) => h('tr', null, h('td', { class: 'rider' }, r.cc ? flag(r.cc) : null, ' ', h('b', null, r.name)), h('td', { class: 'mute' }, r.nat || ''),
+    h('td', { class: 'mute num' }, r.closed ? fshort(r.closed.slice(0, 10)) : ''), h('td', { class: 'num' }, r.price != null ? r.price + ' CR' : '–')));
+  const squad = card('Squad', null, rows.length ? table([{ label: 'Rider' }, { label: 'Nation' }, { label: 'Signed' }, { label: 'Price', n: 1 }], rows, { tall: true })
+    : h('p', { class: 'empty' }, Q ? 'No riders signed yet. Riders join the team when their auction on pcmmulti.com/ipl closes.' : 'The auction on pcmmulti.com/ipl has not started yet.'));
+  // sponsor objectives: how many riders of each objective's nations the team has signed so far (the count only, the rules decide what completes)
+  const O = S.s2obj && S.s2obj.objectives, ot = O && O.teams.find((x) => x.team === t.team);
+  const have = (o) => riders.filter((r) => (o.region ? false : o.cc.includes(r.cc))).length;
+  const obj = ot ? card('Sponsor objectives', ['All teams', '#s2teams'], h('ul', { class: 's2tobj' }, ot.objectives.map((o) => h('li', null, objMark(o), h('span', { class: 'objt' }, o.text),
+    o.region ? null : h('span', { class: 's2tobj-n', title: 'Riders from ' + o.cc.map((c) => NATNAME[c] || c).join(' / ') + ' signed so far' }, have(o) + ' signed'), tokChip(o.tokens)))),
+    h('p', { class: 'objsrc', style: 'margin-top:10px' }, O.points + ' points for every objective completed, plus the tokens. Copied from #sponsor-objectives on Discord.')) : null;
+  $view.append(h('div', { class: 'grid2' }, squad, obj));
+  if (Q) $view.append(h('p', { class: 'sub', style: 'margin-top:14px' }, 'Riders and budget from pcmmulti.com/ipl, updated ' + new Date(Q.checked).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Madrid' }) + ' CET. The price is the last bid seen before the auction closed.'));
+}
+
 // ---------- Season 2 sign-ups (from #sign-ups on Discord, data/s2_signups.json) ----------
 function s2Name(t) {
   // a returning manager keeps his Season 1 name; a Season 1 pair shows only the person who signed up now
@@ -2297,7 +2341,7 @@ function s2SquadsCard(teams) {
   const riderLi = (r) => h('li', null, h('span', { class: 'sq-fl' }, r.cc ? flag(r.cc) : null), h('span', { class: 'sq-n', title: r.nat || '' }, r.name), crChip(r.price));
   const box = ({ team, q, s }) => h('div', { class: 'sq-team' + (q.won ? '' : ' sq-empty') },
     h('div', { class: 'objhd' }, s && s.jersey ? h('img', { src: 'img/jerseys/' + s.jersey + '.png', alt: '', loading: 'lazy' }) : h('span', { class: 'objnoj' }),
-      h('div', null, h('b', null, s && s2Nat(s) ? h('span', { class: 's2fl' }, flag(s2Nat(s).cc)) : null, team), h('small', null, s ? [s2Name(s), s.partner ? ' + ' + s.partner : null] : q.player))),
+      h('div', null, h('b', null, s && s2Nat(s) ? h('span', { class: 's2fl' }, flag(s2Nat(s).cc)) : null, h('a', { href: s2TeamHref(team) }, team)), h('small', null, s ? [s2Name(s), s.partner ? ' + ' + s.partner : null] : q.player))),
     h('div', { class: 'sq-meta' }, h('span', null, h('b', null, q.won), ' / ' + Q.max + ' riders'), h('span', null, h('b', null, q.budget), ' CR left')),
     q.won ? h('ul', null, q.riders.map(riderLi)) : h('p', { class: 'sq-none' }, 'No riders yet'));
   const when = new Date(Q.checked).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Madrid' }) + ' CET';
@@ -2328,7 +2372,7 @@ function viewS2Teams() {
     const was = t.s1 ? s1Teams(t.s1) : [];
     const signed = new Date(t.posted.slice(0, 10) + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' });
     const tip = ['Signed up ' + signed, t.pcm && t.pcm !== t.web ? 'in game: ' + t.pcm : '', t.community ? 'community: ' + t.community : '', t.note || '', t.jerseyNote || ''].filter(Boolean).join(' · ');
-    return h('div', { class: 's2card', title: tip },
+    return h('a', { class: 's2card', title: tip, href: s2TeamHref(t.team) },
       h('div', { class: 's2jsy' }, t.jersey ? h('img', { src: 'img/jerseys/' + t.jersey + '.png', alt: t.team + ' jersey', loading: 'lazy' }) : h('span', null, (t.team.match(/[A-Za-z0-9]/) || ['?'])[0].toUpperCase())),
       h('div', { class: 's2team' }, s2Nat(t) ? h('span', { class: 's2fl' }, flag(s2Nat(t).cc)) : null, t.team, t.provisional ? h('span', { class: 's2flag', title: t.note || 'Team not final yet' }, 'TBC') : null),
       h('div', { class: 's2mgr' }, mgrCell(t)),
@@ -2383,7 +2427,7 @@ function setupSearch() {
   for (const [ti, q] of IX.squad || new Map()) items.push({ k: 'Team', name: tid(ti), sub: [...q.mgrs].map(teamOf).filter((v, k, a) => a.indexOf(v) === k).join(', '), href: '#squad-' + ti, pts: 500 + q.wins, squad: ti });
   for (const [n, id] of IX.teamIds) items.push({ k: 'Manager', name: n, sub: 'Season 1', href: '#team-' + id, pts: 600 });
   S.s1.races.forEach((r, i) => items.push({ k: 'Race', name: r.name, sub: 'Season 1 · ' + (r.stages > 1 ? r.stages + ' stages' : 'one-day'), href: '#race-' + i, pts: 700 }));
-  for (const t of (S.s2signups && S.s2signups.teams) || []) items.push({ k: 'Team', name: t.team, sub: 'Season 2 · ' + s2Name(t) + (t.partner ? ' + ' + t.partner : ''), href: '#s2teams', pts: 520, jersey: t.jersey ? 'img/jerseys/' + t.jersey + '.png' : null });
+  for (const t of (S.s2signups && S.s2signups.teams) || []) items.push({ k: 'Team', name: t.team, sub: 'Season 2 · ' + s2Name(t) + (t.partner ? ' + ' + t.partner : ''), href: s2TeamHref(t.team), pts: 520, jersey: t.jersey ? 'img/jerseys/' + t.jersey + '.png' : null });
   IX.s2.forEach((r, i) => items.push({ k: 'Race', name: r.race, sub: 'Season 2 · ' + fdate(r.date), href: '#s2race-' + i, pts: 650 }));
   items.forEach((it) => { it.f = fold(it.name + ' ' + it.sub); it.fn = fold(it.name); });
   let shown = [], sel = 0;

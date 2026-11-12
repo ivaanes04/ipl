@@ -177,7 +177,7 @@
   "Talkwalker": {
    "player": "benjong",
    "won": 3,
-   "budget": 117,
+   "budget": 123,
    "riders": [
     {
      "name": "Kockelmann Mathieu",
@@ -415,7 +415,7 @@
   "FEIRENSE - BEECELER": {
    "player": "joaozinhoaac",
    "won": 1,
-   "budget": 174,
+   "budget": 171,
    "riders": [
     {
      "name": "López Juan Pedro",
@@ -442,21 +442,6 @@
     }
    ]
   },
-  "GI Group Holding Simoldes UDO": {
-   "player": "Joao Negrao",
-   "won": 1,
-   "budget": 158,
-   "riders": [
-    {
-     "name": "Parra José Félix",
-     "id": 7462,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 6,
-     "closed": "2026-11-12T18:03:42+00:00"
-    }
-   ]
-  },
   "Portugal in 150 Seconds": {
    "player": "Bessadelas",
    "won": 1,
@@ -469,6 +454,21 @@
      "nat": "Portugal",
      "price": 1,
      "closed": "2026-11-12T18:00:26+00:00"
+    }
+   ]
+  },
+  "GI Group Holding Simoldes UDO": {
+   "player": "Joao Negrao",
+   "won": 1,
+   "budget": 151,
+   "riders": [
+    {
+     "name": "Parra José Félix",
+     "id": 7462,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 6,
+     "closed": "2026-11-12T18:03:42+00:00"
     }
    ]
   },
@@ -533,5 +533,5 @@
    "riders": []
   }
  },
- "checked": "2026-11-12T18:15Z"
+ "checked": "2026-11-12T18:16Z"
 }
