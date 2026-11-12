@@ -210,40 +210,6 @@
     }
    ]
   },
-  "Bahrain Victorious": {
-   "player": "Daagz",
-   "won": 3,
-   "budget": 181,
-   "riders": [
-    {
-     "name": "Widar Jarno",
-     "id": 15499,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 12,
-     "closed": "2026-11-12T18:06:08+00:00",
-     "full": "Jarno Widar"
-    },
-    {
-     "name": "Govekar Matevž",
-     "id": 7469,
-     "cc": "si",
-     "nat": "Slovenia",
-     "price": 4,
-     "closed": "2026-11-12T18:06:56+00:00",
-     "full": "Matevž Govekar"
-    },
-    {
-     "name": "Miholjevic Fran",
-     "id": 14248,
-     "cc": "hr",
-     "nat": "Croatia",
-     "price": 3,
-     "closed": "2026-11-12T18:08:05+00:00",
-     "full": "Fran Miholjevic"
-    }
-   ]
-  },
   "Talkwalker": {
    "player": "benjong",
    "won": 3,
@@ -275,6 +241,40 @@
      "price": 6,
      "closed": "2026-11-12T18:01:10+00:00",
      "full": "Matisse Van Kerckhove"
+    }
+   ]
+  },
+  "Bahrain Victorious": {
+   "player": "Daagz",
+   "won": 3,
+   "budget": 148,
+   "riders": [
+    {
+     "name": "Widar Jarno",
+     "id": 15499,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 12,
+     "closed": "2026-11-12T18:06:08+00:00",
+     "full": "Jarno Widar"
+    },
+    {
+     "name": "Govekar Matevž",
+     "id": 7469,
+     "cc": "si",
+     "nat": "Slovenia",
+     "price": 4,
+     "closed": "2026-11-12T18:06:56+00:00",
+     "full": "Matevž Govekar"
+    },
+    {
+     "name": "Miholjevic Fran",
+     "id": 14248,
+     "cc": "hr",
+     "nat": "Croatia",
+     "price": 3,
+     "closed": "2026-11-12T18:08:05+00:00",
+     "full": "Fran Miholjevic"
     }
    ]
   },
@@ -421,6 +421,31 @@
     }
    ]
   },
+  "GI Group Holding Simoldes UDO": {
+   "player": "Joao Negrao",
+   "won": 2,
+   "budget": 151,
+   "riders": [
+    {
+     "name": "Parra José Félix",
+     "id": 7462,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 6,
+     "closed": "2026-11-12T18:03:42+00:00",
+     "full": "José Félix Parra"
+    },
+    {
+     "name": "de Bod Stefan",
+     "id": 6354,
+     "cc": "za",
+     "nat": "South Africa",
+     "price": 5,
+     "closed": "2026-11-12T18:52:03+00:00",
+     "full": "Stefan de Bod"
+    }
+   ]
+  },
   "7-Eleven": {
    "player": "ChrisJanssen",
    "won": 2,
@@ -496,22 +521,6 @@
     }
    ]
   },
-  "MTN Qhubeka": {
-   "player": "Joewhiteley0711",
-   "won": 1,
-   "budget": 179,
-   "riders": [
-    {
-     "name": "Konychev Alexander",
-     "id": 7069,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 2,
-     "closed": "2026-11-12T18:00:26+00:00",
-     "full": "Alexander Konychev"
-    }
-   ]
-  },
   "FEIRENSE - BEECELER": {
    "player": "joaozinhoaac",
    "won": 1,
@@ -528,35 +537,19 @@
     }
    ]
   },
-  "GI Group Holding Simoldes UDO": {
-   "player": "Joao Negrao",
+  "MTN Qhubeka": {
+   "player": "Joewhiteley0711",
    "won": 1,
-   "budget": 151,
+   "budget": 124,
    "riders": [
     {
-     "name": "Parra José Félix",
-     "id": 7462,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 6,
-     "closed": "2026-11-12T18:03:42+00:00",
-     "full": "José Félix Parra"
-    }
-   ]
-  },
-  "Biesse - Carrera - Premac": {
-   "player": "Hübi",
-   "won": 1,
-   "budget": 131,
-   "riders": [
-    {
-     "name": "Maestri Mirco",
-     "id": 5676,
+     "name": "Konychev Alexander",
+     "id": 7069,
      "cc": "it",
      "nat": "Italy",
-     "price": 7,
-     "closed": "2026-11-12T18:47:42+00:00",
-     "full": "Mirco Maestri"
+     "price": 2,
+     "closed": "2026-11-12T18:00:26+00:00",
+     "full": "Alexander Konychev"
     }
    ]
   },
@@ -576,6 +569,22 @@
     }
    ]
   },
+  "Biesse - Carrera - Premac": {
+   "player": "Hübi",
+   "won": 1,
+   "budget": 110,
+   "riders": [
+    {
+     "name": "Maestri Mirco",
+     "id": 5676,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 7,
+     "closed": "2026-11-12T18:47:42+00:00",
+     "full": "Mirco Maestri"
+    }
+   ]
+  },
   "Astana": {
    "player": "Francesco Bonavita",
    "won": 1,
@@ -589,6 +598,22 @@
      "price": 100,
      "closed": "2026-11-12T18:23:52+00:00",
      "full": "Jonas Vingegaard"
+    }
+   ]
+  },
+  "Tudor": {
+   "player": "Grandpa",
+   "won": 1,
+   "budget": 80,
+   "riders": [
+    {
+     "name": "Nordhagen Jørgen",
+     "id": 4918,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 10,
+     "closed": "2026-11-12T19:02:41+00:00",
+     "full": "Jørgen Nordhagen"
     }
    ]
   },
@@ -613,7 +638,7 @@
   "Discovery Channel": {
    "player": "Agap",
    "won": 0,
-   "budget": 193,
+   "budget": 169,
    "riders": []
   },
   "Modern Adventure": {
@@ -633,13 +658,7 @@
    "won": 0,
    "budget": 97,
    "riders": []
-  },
-  "Tudor": {
-   "player": "Grandpa",
-   "won": 0,
-   "budget": 80,
-   "riders": []
   }
  },
- "checked": "2026-11-12T18:52Z"
+ "checked": "2026-11-12T19:02Z"
 }
