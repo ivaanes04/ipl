@@ -100,6 +100,50 @@
     }
    ]
   },
+  "Tavfer-Ovos Matinados-Mortágua": {
+   "player": "Sabu76",
+   "won": 4,
+   "budget": 196,
+   "bids": 0,
+   "riders": [
+    {
+     "name": "Linarez Leangel",
+     "id": 9769,
+     "cc": "ve",
+     "nat": "Venezuela",
+     "price": 1,
+     "closed": "2026-11-12T21:06:13+00:00",
+     "full": "Leangel Linarez"
+    },
+    {
+     "name": "Matias João",
+     "id": 3168,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-12T21:06:31+00:00",
+     "full": "João Matias"
+    },
+    {
+     "name": "Barbas Rafael",
+     "id": 8407,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-12T21:06:44+00:00",
+     "full": "Rafael Barbas"
+    },
+    {
+     "name": "Martingil César",
+     "id": 6967,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-12T21:07:00+00:00",
+     "full": "César Martingil"
+    }
+   ]
+  },
   "Liberty Seguros": {
    "player": "Leandro_jx_",
    "won": 4,
@@ -764,23 +808,6 @@
     }
    ]
   },
-  "Tavfer-Ovos Matinados-Mortágua": {
-   "player": "Sabu76",
-   "won": 1,
-   "budget": 199,
-   "bids": 3,
-   "riders": [
-    {
-     "name": "Linarez Leangel",
-     "id": 9769,
-     "cc": "ve",
-     "nat": "Venezuela",
-     "price": 1,
-     "closed": "2026-11-12T21:06:13+00:00",
-     "full": "Leangel Linarez"
-    }
-   ]
-  },
   "Modern Adventure": {
    "player": "seancoll",
    "won": 1,
@@ -874,5 +901,5 @@
    "riders": []
   }
  },
- "checked": "2026-11-12T21:06Z"
+ "checked": "2026-11-12T21:09Z"
 }

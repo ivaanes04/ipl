@@ -718,5 +718,35 @@
   "cc": "ve",
   "team": "Tavfer-Ovos Matinados-Mortágua",
   "price": 1
+ },
+ {
+  "at": "2026-11-12T21:06:31+00:00",
+  "date": "2026-11-12",
+  "time": "22:06",
+  "rider": "João Matias",
+  "id": 3168,
+  "cc": "pt",
+  "team": "Tavfer-Ovos Matinados-Mortágua",
+  "price": 1
+ },
+ {
+  "at": "2026-11-12T21:06:44+00:00",
+  "date": "2026-11-12",
+  "time": "22:06",
+  "rider": "Rafael Barbas",
+  "id": 8407,
+  "cc": "pt",
+  "team": "Tavfer-Ovos Matinados-Mortágua",
+  "price": 1
+ },
+ {
+  "at": "2026-11-12T21:07:00+00:00",
+  "date": "2026-11-12",
+  "time": "22:07",
+  "rider": "César Martingil",
+  "id": 6967,
+  "cc": "pt",
+  "team": "Tavfer-Ovos Matinados-Mortágua",
+  "price": 1
  }
 ]
