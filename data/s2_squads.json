@@ -634,29 +634,29 @@
     }
    ]
   },
-  "7-Eleven": {
-   "player": "ChrisJanssen",
+  "Portugal in 150 Seconds": {
+   "player": "Bessadelas",
    "won": 2,
-   "budget": 196,
-   "bids": 51,
+   "budget": 191,
+   "bids": 46,
    "riders": [
     {
-     "name": "Simmons Colby",
-     "id": 15266,
-     "cc": "us",
-     "nat": "United States",
-     "price": 3,
-     "closed": "2026-11-12T18:00:17+00:00",
-     "full": "Colby Simmons"
+     "name": "Pinto Pedro",
+     "id": 10610,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-12T18:00:26+00:00",
+     "full": "Pedro Pinto"
     },
     {
-     "name": "Stites Tyler",
-     "id": 10157,
-     "cc": "us",
-     "nat": "United States",
-     "price": 1,
-     "closed": "2026-11-12T18:00:22+00:00",
-     "full": "Tyler Stites"
+     "name": "Kopecký Matyáš",
+     "id": 4139,
+     "cc": "cz",
+     "nat": "Czechia",
+     "price": 8,
+     "closed": "2026-11-12T21:04:23+00:00",
+     "full": "Matyáš Kopecký"
     }
    ]
   },
@@ -686,11 +686,37 @@
     }
    ]
   },
+  "7-Eleven": {
+   "player": "ChrisJanssen",
+   "won": 2,
+   "budget": 196,
+   "bids": 63,
+   "riders": [
+    {
+     "name": "Simmons Colby",
+     "id": 15266,
+     "cc": "us",
+     "nat": "United States",
+     "price": 3,
+     "closed": "2026-11-12T18:00:17+00:00",
+     "full": "Colby Simmons"
+    },
+    {
+     "name": "Stites Tyler",
+     "id": 10157,
+     "cc": "us",
+     "nat": "United States",
+     "price": 1,
+     "closed": "2026-11-12T18:00:22+00:00",
+     "full": "Tyler Stites"
+    }
+   ]
+  },
   "CSC": {
    "player": "marsiscool",
    "won": 2,
    "budget": 198,
-   "bids": 82,
+   "bids": 72,
    "riders": [
     {
      "name": "Wändel Elias",
@@ -755,23 +781,6 @@
     }
    ]
   },
-  "Portugal in 150 Seconds": {
-   "player": "Bessadelas",
-   "won": 1,
-   "budget": 199,
-   "bids": 54,
-   "riders": [
-    {
-     "name": "Pinto Pedro",
-     "id": 10610,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 1,
-     "closed": "2026-11-12T18:00:26+00:00",
-     "full": "Pedro Pinto"
-    }
-   ]
-  },
   "Biesse - Carrera - Premac": {
    "player": "Hübi",
    "won": 1,
@@ -827,7 +836,7 @@
    "player": "MarcelTestier",
    "won": 1,
    "budget": 196,
-   "bids": 171,
+   "bids": 155,
    "riders": [
     {
      "name": "Kämna Lennard",
@@ -851,9 +860,9 @@
    "player": "Tom_Bryant",
    "won": 0,
    "budget": 200,
-   "bids": 60,
+   "bids": 77,
    "riders": []
   }
  },
- "checked": "2026-11-12T21:00Z"
+ "checked": "2026-11-12T21:04Z"
 }

@@ -698,5 +698,15 @@
   "cc": "fr",
   "team": "Unibet Rose Rockets",
   "price": 82
+ },
+ {
+  "at": "2026-11-12T21:04:23+00:00",
+  "date": "2026-11-12",
+  "time": "22:04",
+  "rider": "Matyáš Kopecký",
+  "id": 4139,
+  "cc": "cz",
+  "team": "Portugal in 150 Seconds",
+  "price": 8
  }
 ]
