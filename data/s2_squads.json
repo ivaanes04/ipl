@@ -4,10 +4,19 @@
  "teams": {
   "NsN": {
    "player": "AfonsoP1",
-   "won": 9,
-   "budget": 24,
-   "bids": 24,
+   "won": 10,
+   "budget": 22,
+   "bids": 22,
    "riders": [
+    {
+     "name": "Sommer Jan",
+     "id": 8065,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 2,
+     "closed": "2026-11-12T20:41:11+00:00",
+     "full": "Jan Sommer"
+    },
     {
      "name": "Silva Pedro",
      "id": 7237,
@@ -267,6 +276,41 @@
     }
    ]
   },
+  "Bahrain Victorious": {
+   "player": "Daagz",
+   "won": 3,
+   "budget": 181,
+   "bids": 19,
+   "riders": [
+    {
+     "name": "Widar Jarno",
+     "id": 15499,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 12,
+     "closed": "2026-11-12T18:06:08+00:00",
+     "full": "Jarno Widar"
+    },
+    {
+     "name": "Govekar Matevž",
+     "id": 7469,
+     "cc": "si",
+     "nat": "Slovenia",
+     "price": 4,
+     "closed": "2026-11-12T18:06:56+00:00",
+     "full": "Matevž Govekar"
+    },
+    {
+     "name": "Miholjevic Fran",
+     "id": 14248,
+     "cc": "hr",
+     "nat": "Croatia",
+     "price": 3,
+     "closed": "2026-11-12T18:08:05+00:00",
+     "full": "Fran Miholjevic"
+    }
+   ]
+  },
   "Talkwalker": {
    "player": "benjong",
    "won": 3,
@@ -334,41 +378,6 @@
      "price": 1,
      "closed": "2026-11-12T20:03:42+00:00",
      "full": "Albert Torres"
-    }
-   ]
-  },
-  "Bahrain Victorious": {
-   "player": "Daagz",
-   "won": 3,
-   "budget": 181,
-   "bids": 69,
-   "riders": [
-    {
-     "name": "Widar Jarno",
-     "id": 15499,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 12,
-     "closed": "2026-11-12T18:06:08+00:00",
-     "full": "Jarno Widar"
-    },
-    {
-     "name": "Govekar Matevž",
-     "id": 7469,
-     "cc": "si",
-     "nat": "Slovenia",
-     "price": 4,
-     "closed": "2026-11-12T18:06:56+00:00",
-     "full": "Matevž Govekar"
-    },
-    {
-     "name": "Miholjevic Fran",
-     "id": 14248,
-     "cc": "hr",
-     "nat": "Croatia",
-     "price": 3,
-     "closed": "2026-11-12T18:08:05+00:00",
-     "full": "Fran Miholjevic"
     }
    ]
   },
@@ -694,23 +703,6 @@
     }
    ]
   },
-  "Red Bull": {
-   "player": "MarcelTestier",
-   "won": 1,
-   "budget": 196,
-   "bids": 0,
-   "riders": [
-    {
-     "name": "Kämna Lennard",
-     "id": 3842,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 4,
-     "closed": "2026-11-12T19:44:16+00:00",
-     "full": "Lennard Kämna"
-    }
-   ]
-  },
   "FEIRENSE - BEECELER": {
    "player": "joaozinhoaac",
    "won": 1,
@@ -742,6 +734,23 @@
      "price": 12,
      "closed": "2026-11-12T19:45:48+00:00",
      "full": "Laurence Pithie"
+    }
+   ]
+  },
+  "Red Bull": {
+   "player": "MarcelTestier",
+   "won": 1,
+   "budget": 196,
+   "bids": 51,
+   "riders": [
+    {
+     "name": "Kämna Lennard",
+     "id": 3842,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 4,
+     "closed": "2026-11-12T19:44:16+00:00",
+     "full": "Lennard Kämna"
     }
    ]
   },
@@ -828,5 +837,5 @@
    "riders": []
   }
  },
- "checked": "2026-11-12T20:40Z"
+ "checked": "2026-11-12T20:43Z"
 }

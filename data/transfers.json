@@ -668,5 +668,15 @@
   "cc": "us",
   "team": "NsN",
   "price": 2
+ },
+ {
+  "at": "2026-11-12T20:41:11+00:00",
+  "date": "2026-11-12",
+  "time": "21:41",
+  "rider": "Jan Sommer",
+  "id": 8065,
+  "cc": "ch",
+  "team": "NsN",
+  "price": 2
  }
 ]
