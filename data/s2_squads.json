@@ -126,50 +126,6 @@
     }
    ]
   },
-  "Rabobank": {
-   "player": "Bouke",
-   "won": 4,
-   "budget": 185,
-   "bids": 19,
-   "riders": [
-    {
-     "name": "Doubey Fabien",
-     "id": 1380,
-     "cc": "fr",
-     "nat": "France",
-     "price": 3,
-     "closed": "2026-11-12T18:13:57+00:00",
-     "full": "Fabien Doubey"
-    },
-    {
-     "name": "Ronhaar Pim",
-     "id": 12123,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 2,
-     "closed": "2026-11-12T18:17:11+00:00",
-     "full": "Pim Ronhaar"
-    },
-    {
-     "name": "Vader Milan",
-     "id": 15475,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 4,
-     "closed": "2026-11-12T18:18:37+00:00",
-     "full": "Milan Vader"
-    },
-    {
-     "name": "de Vries Hartthijs",
-     "id": 3905,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 6,
-     "closed": "2026-11-12T18:18:42+00:00",
-     "full": "Hartthijs de Vries"
-    }
-   ]
-  },
   "Ukraine Cycling Team": {
    "player": "Riverside",
    "won": 4,
@@ -211,6 +167,50 @@
      "price": 2,
      "closed": "2026-11-12T18:04:22+00:00",
      "full": "Aldo Taillieu"
+    }
+   ]
+  },
+  "Rabobank": {
+   "player": "Bouke",
+   "won": 4,
+   "budget": 185,
+   "bids": 86,
+   "riders": [
+    {
+     "name": "Doubey Fabien",
+     "id": 1380,
+     "cc": "fr",
+     "nat": "France",
+     "price": 3,
+     "closed": "2026-11-12T18:13:57+00:00",
+     "full": "Fabien Doubey"
+    },
+    {
+     "name": "Ronhaar Pim",
+     "id": 12123,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 2,
+     "closed": "2026-11-12T18:17:11+00:00",
+     "full": "Pim Ronhaar"
+    },
+    {
+     "name": "Vader Milan",
+     "id": 15475,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 4,
+     "closed": "2026-11-12T18:18:37+00:00",
+     "full": "Milan Vader"
+    },
+    {
+     "name": "de Vries Hartthijs",
+     "id": 3905,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 6,
+     "closed": "2026-11-12T18:18:42+00:00",
+     "full": "Hartthijs de Vries"
     }
    ]
   },
@@ -363,41 +363,6 @@
     }
    ]
   },
-  "MEO (Benfica)": {
-   "player": "TheBigDog",
-   "won": 3,
-   "budget": 98,
-   "bids": 2,
-   "riders": [
-    {
-     "name": "González Abner",
-     "id": 7391,
-     "cc": "pr",
-     "nat": "Puerto Rico",
-     "price": 1,
-     "closed": "2026-11-12T19:33:58+00:00",
-     "full": "Abner González"
-    },
-    {
-     "name": "Campos Francisco",
-     "id": 6862,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 1,
-     "closed": "2026-11-12T19:34:51+00:00",
-     "full": "Francisco Campos"
-    },
-    {
-     "name": "Froome Chris",
-     "id": 6440,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 100,
-     "closed": "2026-11-12T19:36:36+00:00",
-     "full": "Sam Brand"
-    }
-   ]
-  },
   "Unibet Rose Rockets": {
    "player": "firejohn",
    "won": 3,
@@ -468,6 +433,41 @@
     }
    ]
   },
+  "MEO (Benfica)": {
+   "player": "TheBigDog",
+   "won": 3,
+   "budget": 98,
+   "bids": 19,
+   "riders": [
+    {
+     "name": "González Abner",
+     "id": 7391,
+     "cc": "pr",
+     "nat": "Puerto Rico",
+     "price": 1,
+     "closed": "2026-11-12T19:33:58+00:00",
+     "full": "Abner González"
+    },
+    {
+     "name": "Campos Francisco",
+     "id": 6862,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-12T19:34:51+00:00",
+     "full": "Francisco Campos"
+    },
+    {
+     "name": "Froome Chris",
+     "id": 6440,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 100,
+     "closed": "2026-11-12T19:36:36+00:00",
+     "full": "Sam Brand"
+    }
+   ]
+  },
   "Royal Bank of Scotland": {
    "player": "Sheep_Boy123",
    "won": 2,
@@ -491,32 +491,6 @@
      "price": 3,
      "closed": "2026-11-12T18:05:53+00:00",
      "full": "Sean Flynn"
-    }
-   ]
-  },
-  "7-Eleven": {
-   "player": "ChrisJanssen",
-   "won": 2,
-   "budget": 196,
-   "bids": 37,
-   "riders": [
-    {
-     "name": "Simmons Colby",
-     "id": 15266,
-     "cc": "us",
-     "nat": "United States",
-     "price": 3,
-     "closed": "2026-11-12T18:00:17+00:00",
-     "full": "Colby Simmons"
-    },
-    {
-     "name": "Stites Tyler",
-     "id": 10157,
-     "cc": "us",
-     "nat": "United States",
-     "price": 1,
-     "closed": "2026-11-12T18:00:22+00:00",
-     "full": "Tyler Stites"
     }
    ]
   },
@@ -572,11 +546,37 @@
     }
    ]
   },
+  "7-Eleven": {
+   "player": "ChrisJanssen",
+   "won": 2,
+   "budget": 196,
+   "bids": 51,
+   "riders": [
+    {
+     "name": "Simmons Colby",
+     "id": 15266,
+     "cc": "us",
+     "nat": "United States",
+     "price": 3,
+     "closed": "2026-11-12T18:00:17+00:00",
+     "full": "Colby Simmons"
+    },
+    {
+     "name": "Stites Tyler",
+     "id": 10157,
+     "cc": "us",
+     "nat": "United States",
+     "price": 1,
+     "closed": "2026-11-12T18:00:22+00:00",
+     "full": "Tyler Stites"
+    }
+   ]
+  },
   "Kelme Costa Blanca": {
    "player": "JgCol",
    "won": 2,
    "budget": 193,
-   "bids": 74,
+   "bids": 68,
    "riders": [
     {
      "name": "Ardila Camilo",
@@ -595,6 +595,32 @@
      "price": 6,
      "closed": "2026-11-12T18:26:23+00:00",
      "full": "Brandon Rivera"
+    }
+   ]
+  },
+  "MTN Qhubeka": {
+   "player": "Joewhiteley0711",
+   "won": 2,
+   "budget": 197,
+   "bids": 73,
+   "riders": [
+    {
+     "name": "Konychev Alexander",
+     "id": 7069,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 2,
+     "closed": "2026-11-12T18:00:26+00:00",
+     "full": "Alexander Konychev"
+    },
+    {
+     "name": "Janse van Rensburg Reinardt",
+     "id": 2658,
+     "cc": "za",
+     "nat": "South Africa",
+     "price": 1,
+     "closed": "2026-11-12T20:02:42+00:00",
+     "full": "Reinardt Janse van Rensburg"
     }
    ]
   },
@@ -650,6 +676,23 @@
     }
    ]
   },
+  "Red Bull": {
+   "player": "MarcelTestier",
+   "won": 1,
+   "budget": 196,
+   "bids": 0,
+   "riders": [
+    {
+     "name": "Kämna Lennard",
+     "id": 3842,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 4,
+     "closed": "2026-11-12T19:44:16+00:00",
+     "full": "Lennard Kämna"
+    }
+   ]
+  },
   "FEIRENSE - BEECELER": {
    "player": "joaozinhoaac",
    "won": 1,
@@ -684,23 +727,6 @@
     }
    ]
   },
-  "Red Bull": {
-   "player": "MarcelTestier",
-   "won": 1,
-   "budget": 196,
-   "bids": 57,
-   "riders": [
-    {
-     "name": "Kämna Lennard",
-     "id": 3842,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 4,
-     "closed": "2026-11-12T19:44:16+00:00",
-     "full": "Lennard Kämna"
-    }
-   ]
-  },
   "Discovery Channel": {
    "player": "Agap",
    "won": 1,
@@ -715,23 +741,6 @@
      "price": 6,
      "closed": "2026-11-12T19:46:57+00:00",
      "full": "Larry Warbasse"
-    }
-   ]
-  },
-  "MTN Qhubeka": {
-   "player": "Joewhiteley0711",
-   "won": 1,
-   "budget": 198,
-   "bids": 74,
-   "riders": [
-    {
-     "name": "Konychev Alexander",
-     "id": 7069,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 2,
-     "closed": "2026-11-12T18:00:26+00:00",
-     "full": "Alexander Konychev"
     }
    ]
   },
@@ -756,7 +765,7 @@
    "player": "Hübi",
    "won": 1,
    "budget": 193,
-   "bids": 83,
+   "bids": 75,
    "riders": [
     {
      "name": "Maestri Mirco",
@@ -797,9 +806,9 @@
    "player": "Tom_Bryant",
    "won": 0,
    "budget": 200,
-   "bids": 21,
+   "bids": 30,
    "riders": []
   }
  },
- "checked": "2026-11-12T19:49Z"
+ "checked": "2026-11-12T20:02Z"
 }
