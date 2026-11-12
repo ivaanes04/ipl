@@ -518,5 +518,35 @@
   "cc": "no",
   "team": "Tudor",
   "price": 10
+ },
+ {
+  "at": "2026-11-12T19:03:11+00:00",
+  "date": "2026-11-12",
+  "time": "20:03",
+  "rider": "Antoine L'Hôte",
+  "id": 4934,
+  "cc": "fr",
+  "team": "Tudor",
+  "price": 7
+ },
+ {
+  "at": "2026-11-12T19:03:29+00:00",
+  "date": "2026-11-12",
+  "time": "20:03",
+  "rider": "Artem Shmidt",
+  "id": 15514,
+  "cc": "us",
+  "team": "Tudor",
+  "price": 7
+ },
+ {
+  "at": "2026-11-12T19:03:54+00:00",
+  "date": "2026-11-12",
+  "time": "20:03",
+  "rider": "Michael Leonard",
+  "id": 15396,
+  "cc": "ca",
+  "team": "Tudor",
+  "price": 6
  }
 ]
