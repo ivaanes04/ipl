@@ -3,7 +3,8 @@
   "at": "2026-11-12T18:00:09+00:00",
   "date": "2026-11-12",
   "time": "19:00",
-  "rider": "Juul-Jensen Christopher",
+  "rider": "Christopher Juul-Jensen",
+  "id": 2123,
   "cc": "dk",
   "team": "Deceuninck - Quick-Step",
   "price": 2
@@ -12,7 +13,8 @@
   "at": "2026-11-12T18:00:10+00:00",
   "date": "2026-11-12",
   "time": "19:00",
-  "rider": "Kockelmann Mathieu",
+  "rider": "Mathieu Kockelmann",
+  "id": 15418,
   "cc": "lu",
   "team": "Talkwalker",
   "price": 4
@@ -21,7 +23,8 @@
   "at": "2026-11-12T18:00:16+00:00",
   "date": "2026-11-12",
   "time": "19:00",
-  "rider": "Otruba Jakub",
+  "rider": "Jakub Otruba",
+  "id": 6643,
   "cc": "cz",
   "team": "Ukraine Cycling Team",
   "price": 2
@@ -30,7 +33,8 @@
   "at": "2026-11-12T18:00:17+00:00",
   "date": "2026-11-12",
   "time": "19:00",
-  "rider": "Simmons Colby",
+  "rider": "Colby Simmons",
+  "id": 15266,
   "cc": "us",
   "team": "7-Eleven",
   "price": 3
@@ -39,7 +43,8 @@
   "at": "2026-11-12T18:00:20+00:00",
   "date": "2026-11-12",
   "time": "19:00",
-  "rider": "Moscon Gianni",
+  "rider": "Gianni Moscon",
+  "id": 5001,
   "cc": "it",
   "team": "Deceuninck - Quick-Step",
   "price": 3
@@ -48,7 +53,8 @@
   "at": "2026-11-12T18:00:22+00:00",
   "date": "2026-11-12",
   "time": "19:00",
-  "rider": "Stites Tyler",
+  "rider": "Tyler Stites",
+  "id": 10157,
   "cc": "us",
   "team": "7-Eleven",
   "price": 1
@@ -57,7 +63,8 @@
   "at": "2026-11-12T18:00:24+00:00",
   "date": "2026-11-12",
   "time": "19:00",
-  "rider": "Barhoumi Ilian",
+  "rider": "Ilian Barhoumi",
+  "id": 15555,
   "cc": "ch",
   "team": "Milka",
   "price": 1
@@ -66,7 +73,8 @@
   "at": "2026-11-12T18:00:25+00:00",
   "date": "2026-11-12",
   "time": "19:00",
-  "rider": "Borresch Julian",
+  "rider": "Julian Borresch",
+  "id": 14508,
   "cc": "de",
   "team": "Ukraine Cycling Team",
   "price": 1
@@ -75,7 +83,8 @@
   "at": "2026-11-12T18:00:26+00:00",
   "date": "2026-11-12",
   "time": "19:00",
-  "rider": "Konychev Alexander",
+  "rider": "Alexander Konychev",
+  "id": 7069,
   "cc": "it",
   "team": "MTN Qhubeka",
   "price": 2
@@ -84,7 +93,8 @@
   "at": "2026-11-12T18:00:26+00:00",
   "date": "2026-11-12",
   "time": "19:00",
-  "rider": "Pinto Pedro",
+  "rider": "Pedro Pinto",
+  "id": 10610,
   "cc": "pt",
   "team": "Portugal in 150 Seconds",
   "price": 1
@@ -93,7 +103,8 @@
   "at": "2026-11-12T18:00:29+00:00",
   "date": "2026-11-12",
   "time": "19:00",
-  "rider": "Cerný Josef",
+  "rider": "Josef Cerný",
+  "id": 3088,
   "cc": "cz",
   "team": "Deceuninck - Quick-Step",
   "price": 1
@@ -102,7 +113,8 @@
   "at": "2026-11-12T18:00:31+00:00",
   "date": "2026-11-12",
   "time": "19:00",
-  "rider": "Wenzel Mats",
+  "rider": "Mats Wenzel",
+  "id": 7431,
   "cc": "lu",
   "team": "Talkwalker",
   "price": 6
@@ -111,7 +123,8 @@
   "at": "2026-11-12T18:00:34+00:00",
   "date": "2026-11-12",
   "time": "19:00",
-  "rider": "Geeraerts Ferre",
+  "rider": "Ferre Geeraerts",
+  "id": 9803,
   "cc": "be",
   "team": "Ukraine Cycling Team",
   "price": 1
@@ -120,7 +133,8 @@
   "at": "2026-11-12T18:00:34+00:00",
   "date": "2026-11-12",
   "time": "19:00",
-  "rider": "Aebersold Nils",
+  "rider": "Nils Aebersold",
+  "id": 9891,
   "cc": "ch",
   "team": "Milka",
   "price": 1
@@ -129,7 +143,8 @@
   "at": "2026-11-12T18:01:06+00:00",
   "date": "2026-11-12",
   "time": "19:01",
-  "rider": "Gonçalves Diogo",
+  "rider": "Diogo Gonçalves",
+  "id": 9277,
   "cc": "pt",
   "team": "Renova",
   "price": 1
@@ -138,7 +153,8 @@
   "at": "2026-11-12T18:01:10+00:00",
   "date": "2026-11-12",
   "time": "19:01",
-  "rider": "Van Kerckhove Matisse",
+  "rider": "Matisse Van Kerckhove",
+  "id": 11282,
   "cc": "be",
   "team": "Talkwalker",
   "price": 6
@@ -147,7 +163,8 @@
   "at": "2026-11-12T18:01:36+00:00",
   "date": "2026-11-12",
   "time": "19:01",
-  "rider": "Ardila Camilo",
+  "rider": "Camilo Ardila",
+  "id": 7055,
   "cc": "co",
   "team": "Kelme Costa Blanca",
   "price": 1
@@ -156,7 +173,8 @@
   "at": "2026-11-12T18:02:18+00:00",
   "date": "2026-11-12",
   "time": "19:02",
-  "rider": "Carvalho André",
+  "rider": "André Carvalho",
+  "id": 6807,
   "cc": "pt",
   "team": "NsN",
   "price": 8
@@ -165,7 +183,8 @@
   "at": "2026-11-12T18:02:49+00:00",
   "date": "2026-11-12",
   "time": "19:02",
-  "rider": "Silva Pedro",
+  "rider": "Pedro Silva",
+  "id": 7237,
   "cc": "pt",
   "team": "NsN",
   "price": 7
@@ -174,7 +193,8 @@
   "at": "2026-11-12T18:02:49+00:00",
   "date": "2026-11-12",
   "time": "19:02",
-  "rider": "López Juan Pedro",
+  "rider": "Juan Pedro López",
+  "id": 6971,
   "cc": "es",
   "team": "FEIRENSE - BEECELER",
   "price": 6
@@ -183,7 +203,8 @@
   "at": "2026-11-12T18:03:25+00:00",
   "date": "2026-11-12",
   "time": "19:03",
-  "rider": "Lastra Jonathan",
+  "rider": "Jonathan Lastra",
+  "id": 5683,
   "cc": "es",
   "team": "Liberty Seguros",
   "price": 3
@@ -192,7 +213,8 @@
   "at": "2026-11-12T18:03:42+00:00",
   "date": "2026-11-12",
   "time": "19:03",
-  "rider": "Parra José Félix",
+  "rider": "José Félix Parra",
+  "id": 7462,
   "cc": "es",
   "team": "GI Group Holding Simoldes UDO",
   "price": 6
@@ -201,7 +223,8 @@
   "at": "2026-11-12T18:04:06+00:00",
   "date": "2026-11-12",
   "time": "19:04",
-  "rider": "Wändel Elias",
+  "rider": "Elias Wändel",
+  "id": 11812,
   "cc": "se",
   "team": "CSC",
   "price": 1
@@ -210,7 +233,8 @@
   "at": "2026-11-12T18:04:22+00:00",
   "date": "2026-11-12",
   "time": "19:04",
-  "rider": "Taillieu Aldo",
+  "rider": "Aldo Taillieu",
+  "id": 10530,
   "cc": "be",
   "team": "Ukraine Cycling Team",
   "price": 2
@@ -219,7 +243,8 @@
   "at": "2026-11-12T18:04:23+00:00",
   "date": "2026-11-12",
   "time": "19:04",
-  "rider": "Samitier Sergio",
+  "rider": "Sergio Samitier",
+  "id": 6417,
   "cc": "es",
   "team": "Liberty Seguros",
   "price": 4
@@ -228,7 +253,8 @@
   "at": "2026-11-12T18:04:49+00:00",
   "date": "2026-11-12",
   "time": "19:04",
-  "rider": "Kaczmarek Jakub",
+  "rider": "Jakub Kaczmarek",
+  "id": 3790,
   "cc": "pl",
   "team": "CSC",
   "price": 1
@@ -237,7 +263,8 @@
   "at": "2026-11-12T18:05:05+00:00",
   "date": "2026-11-12",
   "time": "19:05",
-  "rider": "Larsen Niklas",
+  "rider": "Niklas Larsen",
+  "id": 5752,
   "cc": "dk",
   "team": "UnoX",
   "price": 7
@@ -246,7 +273,8 @@
   "at": "2026-11-12T18:05:11+00:00",
   "date": "2026-11-12",
   "time": "19:05",
-  "rider": "Dalby Simon",
+  "rider": "Simon Dalby",
+  "id": 15284,
   "cc": "dk",
   "team": "UnoX",
   "price": 6
@@ -255,7 +283,8 @@
   "at": "2026-11-12T18:05:30+00:00",
   "date": "2026-11-12",
   "time": "19:05",
-  "rider": "Rota Raúl",
+  "rider": "Raúl Rota",
+  "id": 4171,
   "cc": "es",
   "team": "Liberty Seguros",
   "price": 1
@@ -264,7 +293,8 @@
   "at": "2026-11-12T18:05:48+00:00",
   "date": "2026-11-12",
   "time": "19:05",
-  "rider": "Rowe Elliot",
+  "rider": "Elliot Rowe",
+  "id": 9198,
   "cc": "gb",
   "team": "Royal Bank of Scotland",
   "price": 4
@@ -273,7 +303,8 @@
   "at": "2026-11-12T18:05:53+00:00",
   "date": "2026-11-12",
   "time": "19:05",
-  "rider": "Flynn Sean",
+  "rider": "Sean Flynn",
+  "id": 7523,
   "cc": "gb",
   "team": "Royal Bank of Scotland",
   "price": 3
@@ -282,7 +313,8 @@
   "at": "2026-11-12T18:06:08+00:00",
   "date": "2026-11-12",
   "time": "19:06",
-  "rider": "Widar Jarno",
+  "rider": "Jarno Widar",
+  "id": 15499,
   "cc": "be",
   "team": "Bahrain Victorious",
   "price": 12
@@ -291,7 +323,8 @@
   "at": "2026-11-12T18:06:56+00:00",
   "date": "2026-11-12",
   "time": "19:06",
-  "rider": "Govekar Matevž",
+  "rider": "Matevž Govekar",
+  "id": 7469,
   "cc": "si",
   "team": "Bahrain Victorious",
   "price": 4
@@ -300,7 +333,8 @@
   "at": "2026-11-12T18:07:12+00:00",
   "date": "2026-11-12",
   "time": "19:07",
-  "rider": "Cañellas Xavier",
+  "rider": "Xavier Cañellas",
+  "id": 6790,
   "cc": "es",
   "team": "Liberty Seguros",
   "price": 1
@@ -309,7 +343,8 @@
   "at": "2026-11-12T18:08:05+00:00",
   "date": "2026-11-12",
   "time": "19:08",
-  "rider": "Miholjevic Fran",
+  "rider": "Fran Miholjevic",
+  "id": 14248,
   "cc": "hr",
   "team": "Bahrain Victorious",
   "price": 3
@@ -318,7 +353,8 @@
   "at": "2026-11-12T18:09:31+00:00",
   "date": "2026-11-12",
   "time": "19:09",
-  "rider": "Kamp Alexander",
+  "rider": "Alexander Kamp",
+  "id": 2678,
   "cc": "dk",
   "team": "NsN",
   "price": 5
@@ -327,7 +363,8 @@
   "at": "2026-11-12T18:09:33+00:00",
   "date": "2026-11-12",
   "time": "19:09",
-  "rider": "Oliveira Rui",
+  "rider": "Rui Oliveira",
+  "id": 6248,
   "cc": "pt",
   "team": "Renova",
   "price": 10
@@ -336,7 +373,8 @@
   "at": "2026-11-12T18:09:44+00:00",
   "date": "2026-11-12",
   "time": "19:09",
-  "rider": "Oliveira Ivo",
+  "rider": "Ivo Oliveira",
+  "id": 6249,
   "cc": "pt",
   "team": "Renova",
   "price": 10
@@ -345,7 +383,8 @@
   "at": "2026-11-12T18:10:04+00:00",
   "date": "2026-11-12",
   "time": "19:10",
-  "rider": "Noval Benjamín",
+  "rider": "Benjamín Noval",
+  "id": 11485,
   "cc": "es",
   "team": "NsN",
   "price": 10
@@ -354,7 +393,8 @@
   "at": "2026-11-12T18:10:11+00:00",
   "date": "2026-11-12",
   "time": "19:10",
-  "rider": "Al Mutaiwei Mohammad",
+  "rider": "Mohammad Al Mutaiwei",
+  "id": 4742,
   "cc": "ae",
   "team": "NsN",
   "price": 2
@@ -363,7 +403,8 @@
   "at": "2026-11-12T18:10:35+00:00",
   "date": "2026-11-12",
   "time": "19:10",
-  "rider": "Decomble Maxime",
+  "rider": "Maxime Decomble",
+  "id": 15747,
   "cc": "fr",
   "team": "NsN",
   "price": 7
@@ -372,7 +413,8 @@
   "at": "2026-11-12T18:10:54+00:00",
   "date": "2026-11-12",
   "time": "19:10",
-  "rider": "Romo Javier",
+  "rider": "Javier Romo",
+  "id": 7397,
   "cc": "es",
   "team": "NsN",
   "price": 9
@@ -381,9 +423,60 @@
   "at": "2026-11-12T18:13:57+00:00",
   "date": "2026-11-12",
   "time": "19:13",
-  "rider": "Doubey Fabien",
+  "rider": "Fabien Doubey",
+  "id": 1380,
   "cc": "fr",
   "team": "Rabobank",
   "price": 3
+ },
+ {
+  "at": "2026-11-12T18:17:11+00:00",
+  "date": "2026-11-12",
+  "time": "19:17",
+  "rider": "Pim Ronhaar",
+  "id": 12123,
+  "cc": "nl",
+  "team": "Rabobank",
+  "price": 2
+ },
+ {
+  "at": "2026-11-12T18:18:37+00:00",
+  "date": "2026-11-12",
+  "time": "19:18",
+  "rider": "Milan Vader",
+  "id": 15475,
+  "cc": "nl",
+  "team": "Rabobank",
+  "price": 4
+ },
+ {
+  "at": "2026-11-12T18:18:42+00:00",
+  "date": "2026-11-12",
+  "time": "19:18",
+  "rider": "Hartthijs de Vries",
+  "id": 3905,
+  "cc": "nl",
+  "team": "Rabobank",
+  "price": 6
+ },
+ {
+  "at": "2026-11-12T18:19:19+00:00",
+  "date": "2026-11-12",
+  "time": "19:19",
+  "rider": "Henrique Bravo",
+  "id": 12967,
+  "cc": "br",
+  "team": "NsN",
+  "price": 9
+ },
+ {
+  "at": "2026-11-12T18:23:52+00:00",
+  "date": "2026-11-12",
+  "time": "19:23",
+  "rider": "Jonas Vingegaard",
+  "id": 6195,
+  "cc": "dk",
+  "team": "Astana",
+  "price": 100
  }
 ]
