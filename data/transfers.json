@@ -658,5 +658,15 @@
   "cc": "es",
   "team": "MTN Qhubeka",
   "price": 1
+ },
+ {
+  "at": "2026-11-12T20:40:34+00:00",
+  "date": "2026-11-12",
+  "time": "21:40",
+  "rider": "Robin Carpenter",
+  "id": 6443,
+  "cc": "us",
+  "team": "NsN",
+  "price": 2
  }
 ]

@@ -4,9 +4,9 @@
  "teams": {
   "NsN": {
    "player": "AfonsoP1",
-   "won": 8,
-   "budget": 26,
-   "bids": 26,
+   "won": 9,
+   "budget": 24,
+   "bids": 24,
    "riders": [
     {
      "name": "Silva Pedro",
@@ -79,6 +79,15 @@
      "price": 2,
      "closed": "2026-11-12T18:10:11+00:00",
      "full": "Mohammad Al Mutaiwei"
+    },
+    {
+     "name": "Carpenter Robin",
+     "id": 6443,
+     "cc": "us",
+     "nat": "United States",
+     "price": 2,
+     "closed": "2026-11-12T20:40:34+00:00",
+     "full": "Robin Carpenter"
     }
    ]
   },
@@ -174,7 +183,7 @@
    "player": "Bouke",
    "won": 4,
    "budget": 185,
-   "bids": 86,
+   "bids": 110,
    "riders": [
     {
      "name": "Doubey Fabien",
@@ -297,7 +306,7 @@
    "player": "Joewhiteley0711",
    "won": 3,
    "budget": 196,
-   "bids": 72,
+   "bids": 80,
    "riders": [
     {
      "name": "Konychev Alexander",
@@ -367,7 +376,7 @@
    "player": "Hillingz",
    "won": 3,
    "budget": 194,
-   "bids": 85,
+   "bids": 103,
    "riders": [
     {
      "name": "Juul-Jensen Christopher",
@@ -507,7 +516,7 @@
    "player": "Sheep_Boy123",
    "won": 2,
    "budget": 193,
-   "bids": 28,
+   "bids": 33,
    "riders": [
     {
      "name": "Rowe Elliot",
@@ -611,7 +620,7 @@
    "player": "JgCol",
    "won": 2,
    "budget": 193,
-   "bids": 68,
+   "bids": 70,
    "riders": [
     {
      "name": "Ardila Camilo",
@@ -736,28 +745,11 @@
     }
    ]
   },
-  "Discovery Channel": {
-   "player": "Agap",
-   "won": 1,
-   "budget": 194,
-   "bids": 57,
-   "riders": [
-    {
-     "name": "Warbasse Larry",
-     "id": 3026,
-     "cc": "us",
-     "nat": "United States",
-     "price": 6,
-     "closed": "2026-11-12T19:46:57+00:00",
-     "full": "Larry Warbasse"
-    }
-   ]
-  },
   "Portugal in 150 Seconds": {
    "player": "Bessadelas",
    "won": 1,
    "budget": 199,
-   "bids": 78,
+   "bids": 54,
    "riders": [
     {
      "name": "Pinto Pedro",
@@ -770,11 +762,28 @@
     }
    ]
   },
+  "Discovery Channel": {
+   "player": "Agap",
+   "won": 1,
+   "budget": 194,
+   "bids": 53,
+   "riders": [
+    {
+     "name": "Warbasse Larry",
+     "id": 3026,
+     "cc": "us",
+     "nat": "United States",
+     "price": 6,
+     "closed": "2026-11-12T19:46:57+00:00",
+     "full": "Larry Warbasse"
+    }
+   ]
+  },
   "Biesse - Carrera - Premac": {
    "player": "Hübi",
    "won": 1,
    "budget": 193,
-   "bids": 75,
+   "bids": 54,
    "riders": [
     {
      "name": "Maestri Mirco",
@@ -815,9 +824,9 @@
    "player": "Tom_Bryant",
    "won": 0,
    "budget": 200,
-   "bids": 30,
+   "bids": 92,
    "riders": []
   }
  },
- "checked": "2026-11-12T20:06Z"
+ "checked": "2026-11-12T20:40Z"
 }
