@@ -452,11 +452,46 @@
     }
    ]
   },
+  "B&B Hotels": {
+   "player": "Tom_Bryant",
+   "won": 3,
+   "budget": 197,
+   "bids": 45,
+   "riders": [
+    {
+     "name": "Conor Paul",
+     "id": 11406,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-12T22:24:03+00:00",
+     "full": "Paul Conor"
+    },
+    {
+     "name": "Beaune Mavric",
+     "id": 10729,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-12T22:24:39+00:00",
+     "full": "Mavric Beaune"
+    },
+    {
+     "name": "Bracalente Diego",
+     "id": 8431,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 1,
+     "closed": "2026-11-12T22:48:07+00:00",
+     "full": "Diego Bracalente"
+    }
+   ]
+  },
   "Bahrain Victorious": {
    "player": "Daagz",
    "won": 3,
    "budget": 181,
-   "bids": 19,
+   "bids": 74,
    "riders": [
     {
      "name": "Widar Jarno",
@@ -641,32 +676,6 @@
      "price": 6,
      "closed": "2026-11-12T18:05:11+00:00",
      "full": "Simon Dalby"
-    }
-   ]
-  },
-  "B&B Hotels": {
-   "player": "Tom_Bryant",
-   "won": 2,
-   "budget": 198,
-   "bids": 46,
-   "riders": [
-    {
-     "name": "Conor Paul",
-     "id": 11406,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-12T22:24:03+00:00",
-     "full": "Paul Conor"
-    },
-    {
-     "name": "Beaune Mavric",
-     "id": 10729,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-12T22:24:39+00:00",
-     "full": "Mavric Beaune"
     }
    ]
   },
@@ -907,7 +916,7 @@
    "player": "MarcelTestier",
    "won": 1,
    "budget": 196,
-   "bids": 115,
+   "bids": 64,
    "riders": [
     {
      "name": "Kämna Lennard",
@@ -938,5 +947,5 @@
    ]
   }
  },
- "checked": "2026-11-12T22:26Z"
+ "checked": "2026-11-12T22:48Z"
 }

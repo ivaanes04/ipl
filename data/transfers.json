@@ -788,5 +788,15 @@
   "cc": "fr",
   "team": "B&B Hotels",
   "price": 1
+ },
+ {
+  "at": "2026-11-12T22:48:07+00:00",
+  "date": "2026-11-12",
+  "time": "23:48",
+  "rider": "Diego Bracalente",
+  "id": 8431,
+  "cc": "it",
+  "team": "B&B Hotels",
+  "price": 1
  }
 ]
