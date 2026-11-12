@@ -188,6 +188,94 @@
     }
    ]
   },
+  "Unibet Rose Rockets": {
+   "player": "firejohn",
+   "won": 4,
+   "budget": 106,
+   "bids": 17,
+   "riders": [
+    {
+     "name": "Dillier Silvan",
+     "id": 3392,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 4,
+     "closed": "2026-11-12T19:45:47+00:00",
+     "full": "Silvan Dillier"
+    },
+    {
+     "name": "Blaise Arthur",
+     "id": 15684,
+     "cc": "fr",
+     "nat": "France",
+     "price": 2,
+     "closed": "2026-11-12T19:45:54+00:00",
+     "full": "Arthur Blaise"
+    },
+    {
+     "name": "Mouris Wessel",
+     "id": 8135,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 6,
+     "closed": "2026-11-12T19:47:18+00:00",
+     "full": "Wessel Mouris"
+    },
+    {
+     "name": "Alaphilippe Julian",
+     "id": 3365,
+     "cc": "fr",
+     "nat": "France",
+     "price": 82,
+     "closed": "2026-11-12T21:00:02+00:00",
+     "full": "Julian Alaphilippe"
+    }
+   ]
+  },
+  "Tudor": {
+   "player": "Grandpa",
+   "won": 4,
+   "budget": 170,
+   "bids": 90,
+   "riders": [
+    {
+     "name": "Nordhagen Jørgen",
+     "id": 4918,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 10,
+     "closed": "2026-11-12T19:02:41+00:00",
+     "full": "Jørgen Nordhagen"
+    },
+    {
+     "name": "L'Hôte Antoine",
+     "id": 4934,
+     "cc": "fr",
+     "nat": "France",
+     "price": 7,
+     "closed": "2026-11-12T19:03:11+00:00",
+     "full": "Antoine L'Hôte"
+    },
+    {
+     "name": "Shmidt Artem",
+     "id": 15514,
+     "cc": "us",
+     "nat": "United States",
+     "price": 7,
+     "closed": "2026-11-12T19:03:29+00:00",
+     "full": "Artem Shmidt"
+    },
+    {
+     "name": "Leonard Michael",
+     "id": 15396,
+     "cc": "ca",
+     "nat": "Canada",
+     "price": 6,
+     "closed": "2026-11-12T19:03:54+00:00",
+     "full": "Michael Leonard"
+    }
+   ]
+  },
   "Rabobank": {
    "player": "Bouke",
    "won": 4,
@@ -229,50 +317,6 @@
      "price": 6,
      "closed": "2026-11-12T18:18:42+00:00",
      "full": "Hartthijs de Vries"
-    }
-   ]
-  },
-  "Tudor": {
-   "player": "Grandpa",
-   "won": 4,
-   "budget": 170,
-   "bids": 115,
-   "riders": [
-    {
-     "name": "Nordhagen Jørgen",
-     "id": 4918,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 10,
-     "closed": "2026-11-12T19:02:41+00:00",
-     "full": "Jørgen Nordhagen"
-    },
-    {
-     "name": "L'Hôte Antoine",
-     "id": 4934,
-     "cc": "fr",
-     "nat": "France",
-     "price": 7,
-     "closed": "2026-11-12T19:03:11+00:00",
-     "full": "Antoine L'Hôte"
-    },
-    {
-     "name": "Shmidt Artem",
-     "id": 15514,
-     "cc": "us",
-     "nat": "United States",
-     "price": 7,
-     "closed": "2026-11-12T19:03:29+00:00",
-     "full": "Artem Shmidt"
-    },
-    {
-     "name": "Leonard Michael",
-     "id": 15396,
-     "cc": "ca",
-     "nat": "Canada",
-     "price": 6,
-     "closed": "2026-11-12T19:03:54+00:00",
-     "full": "Michael Leonard"
     }
    ]
   },
@@ -350,7 +394,7 @@
    "player": "Joewhiteley0711",
    "won": 3,
    "budget": 196,
-   "bids": 80,
+   "bids": 82,
    "riders": [
     {
      "name": "Konychev Alexander",
@@ -385,7 +429,7 @@
    "player": "Hillingz",
    "won": 3,
    "budget": 194,
-   "bids": 103,
+   "bids": 95,
    "riders": [
     {
      "name": "Juul-Jensen Christopher",
@@ -413,41 +457,6 @@
      "price": 1,
      "closed": "2026-11-12T18:00:29+00:00",
      "full": "Josef Cerný"
-    }
-   ]
-  },
-  "Unibet Rose Rockets": {
-   "player": "firejohn",
-   "won": 3,
-   "budget": 188,
-   "bids": 99,
-   "riders": [
-    {
-     "name": "Dillier Silvan",
-     "id": 3392,
-     "cc": "ch",
-     "nat": "Switzerland",
-     "price": 4,
-     "closed": "2026-11-12T19:45:47+00:00",
-     "full": "Silvan Dillier"
-    },
-    {
-     "name": "Blaise Arthur",
-     "id": 15684,
-     "cc": "fr",
-     "nat": "France",
-     "price": 2,
-     "closed": "2026-11-12T19:45:54+00:00",
-     "full": "Arthur Blaise"
-    },
-    {
-     "name": "Mouris Wessel",
-     "id": 8135,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 6,
-     "closed": "2026-11-12T19:47:18+00:00",
-     "full": "Wessel Mouris"
     }
    ]
   },
@@ -729,23 +738,6 @@
     }
    ]
   },
-  "FEIRENSE - BEECELER": {
-   "player": "joaozinhoaac",
-   "won": 1,
-   "budget": 194,
-   "bids": 23,
-   "riders": [
-    {
-     "name": "López Juan Pedro",
-     "id": 6971,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 6,
-     "closed": "2026-11-12T18:02:49+00:00",
-     "full": "Juan Pedro López"
-    }
-   ]
-  },
   "Modern Adventure": {
    "player": "seancoll",
    "won": 1,
@@ -797,11 +789,28 @@
     }
    ]
   },
+  "FEIRENSE - BEECELER": {
+   "player": "joaozinhoaac",
+   "won": 1,
+   "budget": 194,
+   "bids": 60,
+   "riders": [
+    {
+     "name": "López Juan Pedro",
+     "id": 6971,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 6,
+     "closed": "2026-11-12T18:02:49+00:00",
+     "full": "Juan Pedro López"
+    }
+   ]
+  },
   "Astana": {
    "player": "Francesco Bonavita",
    "won": 1,
    "budget": 100,
-   "bids": 4,
+   "bids": 31,
    "riders": [
     {
      "name": "Vingegaard Jonas",
@@ -818,7 +827,7 @@
    "player": "MarcelTestier",
    "won": 1,
    "budget": 196,
-   "bids": 131,
+   "bids": 171,
    "riders": [
     {
      "name": "Kämna Lennard",
@@ -842,9 +851,9 @@
    "player": "Tom_Bryant",
    "won": 0,
    "budget": 200,
-   "bids": 77,
+   "bids": 60,
    "riders": []
   }
  },
- "checked": "2026-11-12T20:45Z"
+ "checked": "2026-11-12T21:00Z"
 }

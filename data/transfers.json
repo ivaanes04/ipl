@@ -688,5 +688,15 @@
   "cc": "us",
   "team": "Discovery Channel",
   "price": 1
+ },
+ {
+  "at": "2026-11-12T21:00:02+00:00",
+  "date": "2026-11-12",
+  "time": "22:00",
+  "rider": "Julian Alaphilippe",
+  "id": 3365,
+  "cc": "fr",
+  "team": "Unibet Rose Rockets",
+  "price": 82
  }
 ]
