@@ -293,6 +293,41 @@
     }
    ]
   },
+  "MTN Qhubeka": {
+   "player": "Joewhiteley0711",
+   "won": 3,
+   "budget": 196,
+   "bids": 72,
+   "riders": [
+    {
+     "name": "Konychev Alexander",
+     "id": 7069,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 2,
+     "closed": "2026-11-12T18:00:26+00:00",
+     "full": "Alexander Konychev"
+    },
+    {
+     "name": "Janse van Rensburg Reinardt",
+     "id": 2658,
+     "cc": "za",
+     "nat": "South Africa",
+     "price": 1,
+     "closed": "2026-11-12T20:02:42+00:00",
+     "full": "Reinardt Janse van Rensburg"
+    },
+    {
+     "name": "Torres Albert",
+     "id": 5844,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 1,
+     "closed": "2026-11-12T20:03:42+00:00",
+     "full": "Albert Torres"
+    }
+   ]
+  },
   "Bahrain Victorious": {
    "player": "Daagz",
    "won": 3,
@@ -598,32 +633,6 @@
     }
    ]
   },
-  "MTN Qhubeka": {
-   "player": "Joewhiteley0711",
-   "won": 2,
-   "budget": 197,
-   "bids": 73,
-   "riders": [
-    {
-     "name": "Konychev Alexander",
-     "id": 7069,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 2,
-     "closed": "2026-11-12T18:00:26+00:00",
-     "full": "Alexander Konychev"
-    },
-    {
-     "name": "Janse van Rensburg Reinardt",
-     "id": 2658,
-     "cc": "za",
-     "nat": "South Africa",
-     "price": 1,
-     "closed": "2026-11-12T20:02:42+00:00",
-     "full": "Reinardt Janse van Rensburg"
-    }
-   ]
-  },
   "CSC": {
    "player": "marsiscool",
    "won": 2,
@@ -810,5 +819,5 @@
    "riders": []
   }
  },
- "checked": "2026-11-12T20:02Z"
+ "checked": "2026-11-12T20:06Z"
 }

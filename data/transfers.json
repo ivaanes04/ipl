@@ -648,5 +648,15 @@
   "cc": "za",
   "team": "MTN Qhubeka",
   "price": 1
+ },
+ {
+  "at": "2026-11-12T20:03:42+00:00",
+  "date": "2026-11-12",
+  "time": "21:03",
+  "rider": "Albert Torres",
+  "id": 5844,
+  "cc": "es",
+  "team": "MTN Qhubeka",
+  "price": 1
  }
 ]
