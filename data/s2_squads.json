@@ -124,49 +124,6 @@
     }
    ]
   },
-  "Rabobank": {
-   "player": "Bouke",
-   "won": 4,
-   "budget": 166,
-   "riders": [
-    {
-     "name": "Doubey Fabien",
-     "id": 1380,
-     "cc": "fr",
-     "nat": "France",
-     "price": 3,
-     "closed": "2026-11-12T18:13:57+00:00",
-     "full": "Fabien Doubey"
-    },
-    {
-     "name": "Ronhaar Pim",
-     "id": 12123,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 2,
-     "closed": "2026-11-12T18:17:11+00:00",
-     "full": "Pim Ronhaar"
-    },
-    {
-     "name": "Vader Milan",
-     "id": 15475,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 4,
-     "closed": "2026-11-12T18:18:37+00:00",
-     "full": "Milan Vader"
-    },
-    {
-     "name": "de Vries Hartthijs",
-     "id": 3905,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 6,
-     "closed": "2026-11-12T18:18:42+00:00",
-     "full": "Hartthijs de Vries"
-    }
-   ]
-  },
   "Ukraine Cycling Team": {
    "player": "Riverside",
    "won": 4,
@@ -210,6 +167,49 @@
     }
    ]
   },
+  "Rabobank": {
+   "player": "Bouke",
+   "won": 4,
+   "budget": 122,
+   "riders": [
+    {
+     "name": "Doubey Fabien",
+     "id": 1380,
+     "cc": "fr",
+     "nat": "France",
+     "price": 3,
+     "closed": "2026-11-12T18:13:57+00:00",
+     "full": "Fabien Doubey"
+    },
+    {
+     "name": "Ronhaar Pim",
+     "id": 12123,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 2,
+     "closed": "2026-11-12T18:17:11+00:00",
+     "full": "Pim Ronhaar"
+    },
+    {
+     "name": "Vader Milan",
+     "id": 15475,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 4,
+     "closed": "2026-11-12T18:18:37+00:00",
+     "full": "Milan Vader"
+    },
+    {
+     "name": "de Vries Hartthijs",
+     "id": 3905,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 6,
+     "closed": "2026-11-12T18:18:42+00:00",
+     "full": "Hartthijs de Vries"
+    }
+   ]
+  },
   "Bahrain Victorious": {
    "player": "Daagz",
    "won": 3,
@@ -247,7 +247,7 @@
   "Talkwalker": {
    "player": "benjong",
    "won": 3,
-   "budget": 123,
+   "budget": 163,
    "riders": [
     {
      "name": "Kockelmann Mathieu",
@@ -315,7 +315,7 @@
   "Renova": {
    "player": "Pena Guevara",
    "won": 3,
-   "budget": 87,
+   "budget": 83,
    "riders": [
     {
      "name": "Oliveira Rui",
@@ -346,6 +346,31 @@
     }
    ]
   },
+  "Kelme Costa Blanca": {
+   "player": "JgCol",
+   "won": 2,
+   "budget": 193,
+   "riders": [
+    {
+     "name": "Ardila Camilo",
+     "id": 7055,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 1,
+     "closed": "2026-11-12T18:01:36+00:00",
+     "full": "Camilo Ardila"
+    },
+    {
+     "name": "Rivera Brandon",
+     "id": 7090,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 6,
+     "closed": "2026-11-12T18:26:23+00:00",
+     "full": "Brandon Rivera"
+    }
+   ]
+  },
   "CSC": {
    "player": "marsiscool",
    "won": 2,
@@ -371,31 +396,6 @@
     }
    ]
   },
-  "7-Eleven": {
-   "player": "ChrisJanssen",
-   "won": 2,
-   "budget": 159,
-   "riders": [
-    {
-     "name": "Simmons Colby",
-     "id": 15266,
-     "cc": "us",
-     "nat": "United States",
-     "price": 3,
-     "closed": "2026-11-12T18:00:17+00:00",
-     "full": "Colby Simmons"
-    },
-    {
-     "name": "Stites Tyler",
-     "id": 10157,
-     "cc": "us",
-     "nat": "United States",
-     "price": 1,
-     "closed": "2026-11-12T18:00:22+00:00",
-     "full": "Tyler Stites"
-    }
-   ]
-  },
   "UnoX": {
    "player": "IvanEs04",
    "won": 2,
@@ -418,6 +418,31 @@
      "price": 6,
      "closed": "2026-11-12T18:05:11+00:00",
      "full": "Simon Dalby"
+    }
+   ]
+  },
+  "7-Eleven": {
+   "player": "ChrisJanssen",
+   "won": 2,
+   "budget": 138,
+   "riders": [
+    {
+     "name": "Simmons Colby",
+     "id": 15266,
+     "cc": "us",
+     "nat": "United States",
+     "price": 3,
+     "closed": "2026-11-12T18:00:17+00:00",
+     "full": "Colby Simmons"
+    },
+    {
+     "name": "Stites Tyler",
+     "id": 10157,
+     "cc": "us",
+     "nat": "United States",
+     "price": 1,
+     "closed": "2026-11-12T18:00:22+00:00",
+     "full": "Tyler Stites"
     }
    ]
   },
@@ -449,7 +474,7 @@
   "Milka": {
    "player": "danielmiko",
    "won": 2,
-   "budget": 40,
+   "budget": 56,
    "riders": [
     {
      "name": "Barhoumi Ilian",
@@ -471,26 +496,10 @@
     }
    ]
   },
-  "Kelme Costa Blanca": {
-   "player": "JgCol",
-   "won": 1,
-   "budget": 193,
-   "riders": [
-    {
-     "name": "Ardila Camilo",
-     "id": 7055,
-     "cc": "co",
-     "nat": "Colombia",
-     "price": 1,
-     "closed": "2026-11-12T18:01:36+00:00",
-     "full": "Camilo Ardila"
-    }
-   ]
-  },
   "MTN Qhubeka": {
    "player": "Joewhiteley0711",
    "won": 1,
-   "budget": 183,
+   "budget": 179,
    "riders": [
     {
      "name": "Konychev Alexander",
@@ -519,6 +528,22 @@
     }
    ]
   },
+  "Biesse - Carrera - Premac": {
+   "player": "Hübi",
+   "won": 1,
+   "budget": 154,
+   "riders": [
+    {
+     "name": "Maestri Mirco",
+     "id": 5676,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 7,
+     "closed": "2026-11-12T18:47:42+00:00",
+     "full": "Mirco Maestri"
+    }
+   ]
+  },
   "GI Group Holding Simoldes UDO": {
    "player": "Joao Negrao",
    "won": 1,
@@ -538,7 +563,7 @@
   "Portugal in 150 Seconds": {
    "player": "Bessadelas",
    "won": 1,
-   "budget": 128,
+   "budget": 121,
    "riders": [
     {
      "name": "Pinto Pedro",
@@ -591,22 +616,10 @@
    "budget": 193,
    "riders": []
   },
-  "Tudor": {
-   "player": "Grandpa",
-   "won": 0,
-   "budget": 162,
-   "riders": []
-  },
   "Modern Adventure": {
    "player": "seancoll",
    "won": 0,
    "budget": 162,
-   "riders": []
-  },
-  "Biesse - Carrera - Premac": {
-   "player": "Hübi",
-   "won": 0,
-   "budget": 145,
    "riders": []
   },
   "Unibet Rose Rockets": {
@@ -618,9 +631,15 @@
   "MEO (Benfica)": {
    "player": "TheBigDog",
    "won": 0,
-   "budget": 98,
+   "budget": 97,
+   "riders": []
+  },
+  "Tudor": {
+   "player": "Grandpa",
+   "won": 0,
+   "budget": 80,
    "riders": []
   }
  },
- "checked": "2026-11-12T18:25Z"
+ "checked": "2026-11-12T18:47Z"
 }

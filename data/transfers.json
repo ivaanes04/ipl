@@ -478,5 +478,25 @@
   "cc": "dk",
   "team": "Astana",
   "price": 100
+ },
+ {
+  "at": "2026-11-12T18:26:23+00:00",
+  "date": "2026-11-12",
+  "time": "19:26",
+  "rider": "Brandon Rivera",
+  "id": 7090,
+  "cc": "co",
+  "team": "Kelme Costa Blanca",
+  "price": 6
+ },
+ {
+  "at": "2026-11-12T18:47:42+00:00",
+  "date": "2026-11-12",
+  "time": "19:47",
+  "rider": "Mirco Maestri",
+  "id": 5676,
+  "cc": "it",
+  "team": "Biesse - Carrera - Premac",
+  "price": 7
  }
 ]
