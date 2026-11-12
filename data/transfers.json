@@ -768,5 +768,15 @@
   "cc": "fr",
   "team": "MTN Qhubeka",
   "price": 3
+ },
+ {
+  "at": "2026-11-12T22:24:03+00:00",
+  "date": "2026-11-12",
+  "time": "23:24",
+  "rider": "Paul Conor",
+  "id": 11406,
+  "cc": "fr",
+  "team": "B&B Hotels",
+  "price": 1
  }
 ]
