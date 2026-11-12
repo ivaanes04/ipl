@@ -708,5 +708,15 @@
   "cc": "cz",
   "team": "Portugal in 150 Seconds",
   "price": 8
+ },
+ {
+  "at": "2026-11-12T21:06:13+00:00",
+  "date": "2026-11-12",
+  "time": "22:06",
+  "rider": "Leangel Linarez",
+  "id": 9769,
+  "cc": "ve",
+  "team": "Tavfer-Ovos Matinados-Mortágua",
+  "price": 1
  }
 ]

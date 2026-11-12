@@ -764,6 +764,23 @@
     }
    ]
   },
+  "Tavfer-Ovos Matinados-Mortágua": {
+   "player": "Sabu76",
+   "won": 1,
+   "budget": 199,
+   "bids": 3,
+   "riders": [
+    {
+     "name": "Linarez Leangel",
+     "id": 9769,
+     "cc": "ve",
+     "nat": "Venezuela",
+     "price": 1,
+     "closed": "2026-11-12T21:06:13+00:00",
+     "full": "Leangel Linarez"
+    }
+   ]
+  },
   "Modern Adventure": {
    "player": "seancoll",
    "won": 1,
@@ -849,13 +866,6 @@
     }
    ]
   },
-  "Tavfer-Ovos Matinados-Mortágua": {
-   "player": "Sabu76",
-   "won": 0,
-   "budget": 200,
-   "bids": 4,
-   "riders": []
-  },
   "B&B Hotels": {
    "player": "Tom_Bryant",
    "won": 0,
@@ -864,5 +874,5 @@
    "riders": []
   }
  },
- "checked": "2026-11-12T21:04Z"
+ "checked": "2026-11-12T21:06Z"
 }
