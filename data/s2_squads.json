@@ -376,6 +376,77 @@
     }
    ]
   },
+  "GI Group Holding Simoldes UDO": {
+   "player": "Joao Negrao",
+   "won": 7,
+   "budget": 158,
+   "bids": 61,
+   "riders": [
+    {
+     "name": "Parra José Félix",
+     "id": 7462,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 6,
+     "closed": "2026-11-12T18:03:42+00:00",
+     "full": "José Félix Parra"
+    },
+    {
+     "name": "de Bod Stefan",
+     "id": 6354,
+     "cc": "za",
+     "nat": "South Africa",
+     "price": 5,
+     "closed": "2026-11-12T18:52:03+00:00",
+     "full": "Stefan de Bod"
+    },
+    {
+     "name": "Romeo Iván",
+     "id": 15283,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 13,
+     "closed": "2026-11-13T14:53:03+00:00",
+     "full": "Iván Romeo"
+    },
+    {
+     "name": "Avancini Henrique",
+     "id": 11494,
+     "cc": "br",
+     "nat": "Brazil",
+     "price": 1,
+     "closed": "2026-11-13T18:04:05+00:00",
+     "full": "Henrique Avancini"
+    },
+    {
+     "name": "Reis Rafael",
+     "id": 3271,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 3,
+     "closed": "2026-11-13T18:04:28+00:00",
+     "full": "Rafael Reis"
+    },
+    {
+     "name": "Bizkarra Mikel",
+     "id": 2515,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 6,
+     "closed": "2026-11-13T18:13:14+00:00",
+     "full": "Mikel Bizkarra"
+    },
+    {
+     "name": "Soler Marc",
+     "id": 3700,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 8,
+     "closed": "2026-11-13T18:13:20+00:00",
+     "full": "Marc Soler"
+    }
+   ]
+  },
   "7-Eleven": {
    "player": "ChrisJanssen",
    "won": 7,
@@ -575,7 +646,7 @@
    "player": "benjong",
    "won": 6,
    "budget": 174,
-   "bids": 52,
+   "bids": 70,
    "riders": [
     {
      "name": "Kockelmann Mathieu",
@@ -745,59 +816,6 @@
      "price": 5,
      "closed": "2026-11-13T18:07:13+00:00",
      "full": "Riley Pickrell"
-    }
-   ]
-  },
-  "GI Group Holding Simoldes UDO": {
-   "player": "Joao Negrao",
-   "won": 5,
-   "budget": 172,
-   "bids": 75,
-   "riders": [
-    {
-     "name": "Parra José Félix",
-     "id": 7462,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 6,
-     "closed": "2026-11-12T18:03:42+00:00",
-     "full": "José Félix Parra"
-    },
-    {
-     "name": "de Bod Stefan",
-     "id": 6354,
-     "cc": "za",
-     "nat": "South Africa",
-     "price": 5,
-     "closed": "2026-11-12T18:52:03+00:00",
-     "full": "Stefan de Bod"
-    },
-    {
-     "name": "Romeo Iván",
-     "id": 15283,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 13,
-     "closed": "2026-11-13T14:53:03+00:00",
-     "full": "Iván Romeo"
-    },
-    {
-     "name": "Avancini Henrique",
-     "id": 11494,
-     "cc": "br",
-     "nat": "Brazil",
-     "price": 1,
-     "closed": "2026-11-13T18:04:05+00:00",
-     "full": "Henrique Avancini"
-    },
-    {
-     "name": "Reis Rafael",
-     "id": 3271,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 3,
-     "closed": "2026-11-13T18:04:28+00:00",
-     "full": "Rafael Reis"
     }
    ]
   },
@@ -1193,7 +1211,7 @@
    "player": "Tom_Bryant",
    "won": 4,
    "budget": 196,
-   "bids": 96,
+   "bids": 80,
    "riders": [
     {
      "name": "Conor Paul",
@@ -1469,5 +1487,5 @@
    ]
   }
  },
- "checked": "2026-11-13T18:11Z"
+ "checked": "2026-11-13T18:13Z"
 }

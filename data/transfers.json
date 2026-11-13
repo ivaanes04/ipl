@@ -1378,5 +1378,25 @@
   "cc": "pt",
   "team": "Portugal in 150 Seconds",
   "price": 8
+ },
+ {
+  "at": "2026-11-13T18:13:14+00:00",
+  "date": "2026-11-13",
+  "time": "19:13",
+  "rider": "Mikel Bizkarra",
+  "id": 2515,
+  "cc": "es",
+  "team": "GI Group Holding Simoldes UDO",
+  "price": 6
+ },
+ {
+  "at": "2026-11-13T18:13:20+00:00",
+  "date": "2026-11-13",
+  "time": "19:13",
+  "rider": "Marc Soler",
+  "id": 3700,
+  "cc": "es",
+  "team": "GI Group Holding Simoldes UDO",
+  "price": 8
  }
 ]
