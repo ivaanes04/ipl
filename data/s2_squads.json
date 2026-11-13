@@ -153,6 +153,59 @@
     }
    ]
   },
+  "Tudor": {
+   "player": "Grandpa",
+   "won": 5,
+   "budget": 162,
+   "bids": 119,
+   "riders": [
+    {
+     "name": "Nordhagen Jørgen",
+     "id": 4918,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 10,
+     "closed": "2026-11-12T19:02:41+00:00",
+     "full": "Jørgen Nordhagen"
+    },
+    {
+     "name": "L'Hôte Antoine",
+     "id": 4934,
+     "cc": "fr",
+     "nat": "France",
+     "price": 7,
+     "closed": "2026-11-12T19:03:11+00:00",
+     "full": "Antoine L'Hôte"
+    },
+    {
+     "name": "Shmidt Artem",
+     "id": 15514,
+     "cc": "us",
+     "nat": "United States",
+     "price": 7,
+     "closed": "2026-11-12T19:03:29+00:00",
+     "full": "Artem Shmidt"
+    },
+    {
+     "name": "Leonard Michael",
+     "id": 15396,
+     "cc": "ca",
+     "nat": "Canada",
+     "price": 6,
+     "closed": "2026-11-12T19:03:54+00:00",
+     "full": "Michael Leonard"
+    },
+    {
+     "name": "August Andrew",
+     "id": 4957,
+     "cc": "us",
+     "nat": "United States",
+     "price": 8,
+     "closed": "2026-11-13T11:07:01+00:00",
+     "full": "Andrew August"
+    }
+   ]
+  },
   "Tavfer-Ovos Matinados-Mortágua": {
    "player": "Sabu76",
    "won": 4,
@@ -377,7 +430,7 @@
    "player": "Riverside",
    "won": 4,
    "budget": 194,
-   "bids": 113,
+   "bids": 112,
    "riders": [
     {
      "name": "Otruba Jakub",
@@ -458,85 +511,6 @@
      "price": 6,
      "closed": "2026-11-12T18:18:42+00:00",
      "full": "Hartthijs de Vries"
-    }
-   ]
-  },
-  "Tudor": {
-   "player": "Grandpa",
-   "won": 4,
-   "budget": 170,
-   "bids": 127,
-   "riders": [
-    {
-     "name": "Nordhagen Jørgen",
-     "id": 4918,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 10,
-     "closed": "2026-11-12T19:02:41+00:00",
-     "full": "Jørgen Nordhagen"
-    },
-    {
-     "name": "L'Hôte Antoine",
-     "id": 4934,
-     "cc": "fr",
-     "nat": "France",
-     "price": 7,
-     "closed": "2026-11-12T19:03:11+00:00",
-     "full": "Antoine L'Hôte"
-    },
-    {
-     "name": "Shmidt Artem",
-     "id": 15514,
-     "cc": "us",
-     "nat": "United States",
-     "price": 7,
-     "closed": "2026-11-12T19:03:29+00:00",
-     "full": "Artem Shmidt"
-    },
-    {
-     "name": "Leonard Michael",
-     "id": 15396,
-     "cc": "ca",
-     "nat": "Canada",
-     "price": 6,
-     "closed": "2026-11-12T19:03:54+00:00",
-     "full": "Michael Leonard"
-    }
-   ]
-  },
-  "Bahrain Victorious": {
-   "player": "Daagz",
-   "won": 3,
-   "budget": 181,
-   "bids": 9,
-   "riders": [
-    {
-     "name": "Widar Jarno",
-     "id": 15499,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 12,
-     "closed": "2026-11-12T18:06:08+00:00",
-     "full": "Jarno Widar"
-    },
-    {
-     "name": "Govekar Matevž",
-     "id": 7469,
-     "cc": "si",
-     "nat": "Slovenia",
-     "price": 4,
-     "closed": "2026-11-12T18:06:56+00:00",
-     "full": "Matevž Govekar"
-    },
-    {
-     "name": "Miholjevic Fran",
-     "id": 14248,
-     "cc": "hr",
-     "nat": "Croatia",
-     "price": 3,
-     "closed": "2026-11-12T18:08:05+00:00",
-     "full": "Fran Miholjevic"
     }
    ]
   },
@@ -677,6 +651,41 @@
      "price": 1,
      "closed": "2026-11-12T18:00:29+00:00",
      "full": "Josef Cerný"
+    }
+   ]
+  },
+  "Bahrain Victorious": {
+   "player": "Daagz",
+   "won": 3,
+   "budget": 181,
+   "bids": 82,
+   "riders": [
+    {
+     "name": "Widar Jarno",
+     "id": 15499,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 12,
+     "closed": "2026-11-12T18:06:08+00:00",
+     "full": "Jarno Widar"
+    },
+    {
+     "name": "Govekar Matevž",
+     "id": 7469,
+     "cc": "si",
+     "nat": "Slovenia",
+     "price": 4,
+     "closed": "2026-11-12T18:06:56+00:00",
+     "full": "Matevž Govekar"
+    },
+    {
+     "name": "Miholjevic Fran",
+     "id": 14248,
+     "cc": "hr",
+     "nat": "Croatia",
+     "price": 3,
+     "closed": "2026-11-12T18:08:05+00:00",
+     "full": "Fran Miholjevic"
     }
    ]
   },
@@ -901,7 +910,7 @@
    "player": "Hübi",
    "won": 2,
    "budget": 188,
-   "bids": 67,
+   "bids": 55,
    "riders": [
     {
      "name": "Covi Alessandro",
@@ -953,7 +962,7 @@
    "player": "MarcelTestier",
    "won": 1,
    "budget": 196,
-   "bids": 50,
+   "bids": 0,
    "riders": [
     {
      "name": "Kämna Lennard",
@@ -1001,5 +1010,5 @@
    ]
   }
  },
- "checked": "2026-11-13T10:18Z"
+ "checked": "2026-11-13T11:07Z"
 }

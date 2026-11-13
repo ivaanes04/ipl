@@ -858,5 +858,15 @@
   "cc": "pt",
   "team": "Renova",
   "price": 24
+ },
+ {
+  "at": "2026-11-13T11:07:01+00:00",
+  "date": "2026-11-13",
+  "time": "12:07",
+  "rider": "Andrew August",
+  "id": 4957,
+  "cc": "us",
+  "team": "Tudor",
+  "price": 8
  }
 ]
