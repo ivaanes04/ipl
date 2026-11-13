@@ -1572,9 +1572,9 @@
   },
   "Kelme Costa Blanca": {
    "player": "JgCol",
-   "won": 2,
-   "budget": 193,
-   "bids": 36,
+   "won": 3,
+   "budget": 186,
+   "bids": 29,
    "riders": [
     {
      "name": "Ardila Camilo",
@@ -1593,6 +1593,15 @@
      "price": 6,
      "closed": "2026-11-12T18:26:23+00:00",
      "full": "Brandon Rivera"
+    },
+    {
+     "name": "Coquard Bryan",
+     "id": 3060,
+     "cc": "fr",
+     "nat": "France",
+     "price": 7,
+     "closed": "2026-11-13T19:17:55+00:00",
+     "full": "Bryan Coquard"
     }
    ]
   },
@@ -1640,5 +1649,5 @@
    ]
   }
  },
- "checked": "2026-11-13T19:14Z"
+ "checked": "2026-11-13T19:18Z"
 }

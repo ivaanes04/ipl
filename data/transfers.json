@@ -1568,5 +1568,15 @@
   "cc": "dk",
   "team": "CSC",
   "price": 10
+ },
+ {
+  "at": "2026-11-13T19:17:55+00:00",
+  "date": "2026-11-13",
+  "time": "20:17",
+  "rider": "Bryan Coquard",
+  "id": 3060,
+  "cc": "fr",
+  "team": "Kelme Costa Blanca",
+  "price": 7
  }
 ]
