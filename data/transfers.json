@@ -1578,5 +1578,15 @@
   "cc": "fr",
   "team": "Kelme Costa Blanca",
   "price": 7
+ },
+ {
+  "at": "2026-11-13T19:25:13+00:00",
+  "date": "2026-11-13",
+  "time": "20:25",
+  "rider": "Owen Geleijn",
+  "id": 7301,
+  "cc": "nl",
+  "team": "Unibet Rose Rockets",
+  "price": 1
  }
 ]
