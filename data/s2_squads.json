@@ -140,7 +140,7 @@
    "player": "Joao Negrao",
    "won": 8,
    "budget": 151,
-   "bids": 54,
+   "bids": 44,
    "riders": [
     {
      "name": "Parra José Félix",
@@ -611,7 +611,7 @@
    "player": "Bessadelas",
    "won": 6,
    "budget": 175,
-   "bids": 10,
+   "bids": 35,
    "riders": [
     {
      "name": "Pinto Pedro",
@@ -965,7 +965,7 @@
    "player": "firejohn",
    "won": 5,
    "budget": 99,
-   "bids": 10,
+   "bids": 35,
    "riders": [
     {
      "name": "Kopecký Tomáš",
@@ -1208,50 +1208,6 @@
     }
    ]
   },
-  "CSC": {
-   "player": "marsiscool",
-   "won": 4,
-   "budget": 166,
-   "bids": 40,
-   "riders": [
-    {
-     "name": "Withen Philipsen Albert",
-     "id": 9391,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 20,
-     "closed": "2026-11-13T15:17:17+00:00",
-     "full": "Albert Withen Philipsen"
-    },
-    {
-     "name": "Wändel Elias",
-     "id": 11812,
-     "cc": "se",
-     "nat": "Sweden",
-     "price": 1,
-     "closed": "2026-11-12T18:04:06+00:00",
-     "full": "Elias Wändel"
-    },
-    {
-     "name": "Kaczmarek Jakub",
-     "id": 3790,
-     "cc": "pl",
-     "nat": "Poland",
-     "price": 1,
-     "closed": "2026-11-12T18:04:49+00:00",
-     "full": "Jakub Kaczmarek"
-    },
-    {
-     "name": "Silva Thomas",
-     "id": 7798,
-     "cc": "uy",
-     "nat": "Uruguay",
-     "price": 12,
-     "closed": "2026-11-13T07:11:33+00:00",
-     "full": "Thomas Silva"
-    }
-   ]
-  },
   "MTN Qhubeka": {
    "player": "Joewhiteley0711",
    "won": 4,
@@ -1384,6 +1340,94 @@
     }
    ]
   },
+  "CSC": {
+   "player": "marsiscool",
+   "won": 4,
+   "budget": 166,
+   "bids": 62,
+   "riders": [
+    {
+     "name": "Withen Philipsen Albert",
+     "id": 9391,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 20,
+     "closed": "2026-11-13T15:17:17+00:00",
+     "full": "Albert Withen Philipsen"
+    },
+    {
+     "name": "Wändel Elias",
+     "id": 11812,
+     "cc": "se",
+     "nat": "Sweden",
+     "price": 1,
+     "closed": "2026-11-12T18:04:06+00:00",
+     "full": "Elias Wändel"
+    },
+    {
+     "name": "Kaczmarek Jakub",
+     "id": 3790,
+     "cc": "pl",
+     "nat": "Poland",
+     "price": 1,
+     "closed": "2026-11-12T18:04:49+00:00",
+     "full": "Jakub Kaczmarek"
+    },
+    {
+     "name": "Silva Thomas",
+     "id": 7798,
+     "cc": "uy",
+     "nat": "Uruguay",
+     "price": 12,
+     "closed": "2026-11-13T07:11:33+00:00",
+     "full": "Thomas Silva"
+    }
+   ]
+  },
+  "MEO (Benfica)": {
+   "player": "TheBigDog",
+   "won": 4,
+   "budget": 97,
+   "bids": 60,
+   "riders": [
+    {
+     "name": "González Abner",
+     "id": 7391,
+     "cc": "pr",
+     "nat": "Puerto Rico",
+     "price": 1,
+     "closed": "2026-11-12T19:33:58+00:00",
+     "full": "Abner González"
+    },
+    {
+     "name": "Campos Francisco",
+     "id": 6862,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-12T19:34:51+00:00",
+     "full": "Francisco Campos"
+    },
+    {
+     "name": "Froome Chris",
+     "id": 6440,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 100,
+     "closed": "2026-11-12T19:36:36+00:00",
+     "full": "Sam Brand"
+    },
+    {
+     "name": "Silva Joaquim",
+     "id": 5865,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-13T18:34:52+00:00",
+     "full": "Joaquim Silva"
+    }
+   ]
+  },
   "Bahrain Victorious": {
    "player": "Daagz",
    "won": 3,
@@ -1419,41 +1463,6 @@
     }
    ]
   },
-  "MEO (Benfica)": {
-   "player": "TheBigDog",
-   "won": 3,
-   "budget": 98,
-   "bids": 61,
-   "riders": [
-    {
-     "name": "González Abner",
-     "id": 7391,
-     "cc": "pr",
-     "nat": "Puerto Rico",
-     "price": 1,
-     "closed": "2026-11-12T19:33:58+00:00",
-     "full": "Abner González"
-    },
-    {
-     "name": "Campos Francisco",
-     "id": 6862,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 1,
-     "closed": "2026-11-12T19:34:51+00:00",
-     "full": "Francisco Campos"
-    },
-    {
-     "name": "Froome Chris",
-     "id": 6440,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 100,
-     "closed": "2026-11-12T19:36:36+00:00",
-     "full": "Sam Brand"
-    }
-   ]
-  },
   "Kelme Costa Blanca": {
    "player": "JgCol",
    "won": 2,
@@ -1477,6 +1486,32 @@
      "price": 6,
      "closed": "2026-11-12T18:26:23+00:00",
      "full": "Brandon Rivera"
+    }
+   ]
+  },
+  "Discovery Channel": {
+   "player": "Agap",
+   "won": 2,
+   "budget": 193,
+   "bids": 55,
+   "riders": [
+    {
+     "name": "Warbasse Larry",
+     "id": 3026,
+     "cc": "us",
+     "nat": "United States",
+     "price": 6,
+     "closed": "2026-11-12T19:46:57+00:00",
+     "full": "Larry Warbasse"
+    },
+    {
+     "name": "Swirbul Keegan",
+     "id": 3930,
+     "cc": "us",
+     "nat": "United States",
+     "price": 1,
+     "closed": "2026-11-12T20:45:38+00:00",
+     "full": "Keegan Swirbul"
     }
    ]
   },
@@ -1506,32 +1541,6 @@
     }
    ]
   },
-  "Discovery Channel": {
-   "player": "Agap",
-   "won": 2,
-   "budget": 193,
-   "bids": 77,
-   "riders": [
-    {
-     "name": "Warbasse Larry",
-     "id": 3026,
-     "cc": "us",
-     "nat": "United States",
-     "price": 6,
-     "closed": "2026-11-12T19:46:57+00:00",
-     "full": "Larry Warbasse"
-    },
-    {
-     "name": "Swirbul Keegan",
-     "id": 3930,
-     "cc": "us",
-     "nat": "United States",
-     "price": 1,
-     "closed": "2026-11-12T20:45:38+00:00",
-     "full": "Keegan Swirbul"
-    }
-   ]
-  },
   "Red Bull": {
    "player": "MarcelTestier",
    "won": 1,
@@ -1550,5 +1559,5 @@
    ]
   }
  },
- "checked": "2026-11-13T18:29Z"
+ "checked": "2026-11-13T18:35Z"
 }
