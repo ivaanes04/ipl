@@ -1418,5 +1418,25 @@
   "cc": "pt",
   "team": "FEIRENSE - BEECELER",
   "price": 1
+ },
+ {
+  "at": "2026-11-13T18:15:51+00:00",
+  "date": "2026-11-13",
+  "time": "19:15",
+  "rider": "Xabier Isasa",
+  "id": 14922,
+  "cc": "es",
+  "team": "FEIRENSE - BEECELER",
+  "price": 1
+ },
+ {
+  "at": "2026-11-13T18:16:12+00:00",
+  "date": "2026-11-13",
+  "time": "19:16",
+  "rider": "Rui Carvalho",
+  "id": 14560,
+  "cc": "pt",
+  "team": "FEIRENSE - BEECELER",
+  "price": 1
  }
 ]
