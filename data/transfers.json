@@ -1488,5 +1488,15 @@
   "cc": "es",
   "team": "MTN Qhubeka",
   "price": 4
+ },
+ {
+  "at": "2026-11-13T18:46:55+00:00",
+  "date": "2026-11-13",
+  "time": "19:46",
+  "rider": "Lukas Nerurkar",
+  "id": 4307,
+  "cc": "gb",
+  "team": "Tudor",
+  "price": 15
  }
 ]
