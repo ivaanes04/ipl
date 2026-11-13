@@ -496,6 +496,41 @@
     }
    ]
   },
+  "7-Eleven": {
+   "player": "ChrisJanssen",
+   "won": 3,
+   "budget": 176,
+   "bids": 49,
+   "riders": [
+    {
+     "name": "Simmons Colby",
+     "id": 15266,
+     "cc": "us",
+     "nat": "United States",
+     "price": 3,
+     "closed": "2026-11-12T18:00:17+00:00",
+     "full": "Colby Simmons"
+    },
+    {
+     "name": "Stites Tyler",
+     "id": 10157,
+     "cc": "us",
+     "nat": "United States",
+     "price": 1,
+     "closed": "2026-11-12T18:00:22+00:00",
+     "full": "Tyler Stites"
+    },
+    {
+     "name": "Gee-West Derek",
+     "id": 12986,
+     "cc": "ca",
+     "nat": "Canada",
+     "price": 20,
+     "closed": "2026-11-13T00:15:41+00:00",
+     "full": "Derek Gee-West"
+    }
+   ]
+  },
   "Deceuninck - Quick-Step": {
    "player": "Hillingz",
    "won": 3,
@@ -528,41 +563,6 @@
      "price": 1,
      "closed": "2026-11-12T18:00:29+00:00",
      "full": "Josef Cerný"
-    }
-   ]
-  },
-  "7-Eleven": {
-   "player": "ChrisJanssen",
-   "won": 3,
-   "budget": 176,
-   "bids": 59,
-   "riders": [
-    {
-     "name": "Simmons Colby",
-     "id": 15266,
-     "cc": "us",
-     "nat": "United States",
-     "price": 3,
-     "closed": "2026-11-12T18:00:17+00:00",
-     "full": "Colby Simmons"
-    },
-    {
-     "name": "Stites Tyler",
-     "id": 10157,
-     "cc": "us",
-     "nat": "United States",
-     "price": 1,
-     "closed": "2026-11-12T18:00:22+00:00",
-     "full": "Tyler Stites"
-    },
-    {
-     "name": "Gee-West Derek",
-     "id": 12986,
-     "cc": "ca",
-     "nat": "Canada",
-     "price": 20,
-     "closed": "2026-11-13T00:15:41+00:00",
-     "full": "Derek Gee-West"
     }
    ]
   },
@@ -671,6 +671,32 @@
     }
    ]
   },
+  "FEIRENSE - BEECELER": {
+   "player": "joaozinhoaac",
+   "won": 2,
+   "budget": 174,
+   "bids": 10,
+   "riders": [
+    {
+     "name": "van Dijke Tim",
+     "id": 7308,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 20,
+     "closed": "2026-11-13T01:31:36+00:00",
+     "full": "Tim van Dijke"
+    },
+    {
+     "name": "López Juan Pedro",
+     "id": 6971,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 6,
+     "closed": "2026-11-12T18:02:49+00:00",
+     "full": "Juan Pedro López"
+    }
+   ]
+  },
   "Royal Bank of Scotland": {
    "player": "Sheep_Boy123",
    "won": 2,
@@ -697,32 +723,6 @@
     }
    ]
   },
-  "UnoX": {
-   "player": "IvanEs04",
-   "won": 2,
-   "budget": 187,
-   "bids": 34,
-   "riders": [
-    {
-     "name": "Larsen Niklas",
-     "id": 5752,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 7,
-     "closed": "2026-11-12T18:05:05+00:00",
-     "full": "Niklas Larsen"
-    },
-    {
-     "name": "Dalby Simon",
-     "id": 15284,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 6,
-     "closed": "2026-11-12T18:05:11+00:00",
-     "full": "Simon Dalby"
-    }
-   ]
-  },
   "GI Group Holding Simoldes UDO": {
    "player": "Joao Negrao",
    "won": 2,
@@ -746,6 +746,32 @@
      "price": 5,
      "closed": "2026-11-12T18:52:03+00:00",
      "full": "Stefan de Bod"
+    }
+   ]
+  },
+  "CSC": {
+   "player": "marsiscool",
+   "won": 2,
+   "budget": 198,
+   "bids": 52,
+   "riders": [
+    {
+     "name": "Wändel Elias",
+     "id": 11812,
+     "cc": "se",
+     "nat": "Sweden",
+     "price": 1,
+     "closed": "2026-11-12T18:04:06+00:00",
+     "full": "Elias Wändel"
+    },
+    {
+     "name": "Kaczmarek Jakub",
+     "id": 3790,
+     "cc": "pl",
+     "nat": "Poland",
+     "price": 1,
+     "closed": "2026-11-12T18:04:49+00:00",
+     "full": "Jakub Kaczmarek"
     }
    ]
   },
@@ -827,29 +853,29 @@
     }
    ]
   },
-  "CSC": {
-   "player": "marsiscool",
+  "UnoX": {
+   "player": "IvanEs04",
    "won": 2,
-   "budget": 198,
-   "bids": 72,
+   "budget": 187,
+   "bids": 73,
    "riders": [
     {
-     "name": "Wändel Elias",
-     "id": 11812,
-     "cc": "se",
-     "nat": "Sweden",
-     "price": 1,
-     "closed": "2026-11-12T18:04:06+00:00",
-     "full": "Elias Wändel"
+     "name": "Larsen Niklas",
+     "id": 5752,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 7,
+     "closed": "2026-11-12T18:05:05+00:00",
+     "full": "Niklas Larsen"
     },
     {
-     "name": "Kaczmarek Jakub",
-     "id": 3790,
-     "cc": "pl",
-     "nat": "Poland",
-     "price": 1,
-     "closed": "2026-11-12T18:04:49+00:00",
-     "full": "Jakub Kaczmarek"
+     "name": "Dalby Simon",
+     "id": 15284,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 6,
+     "closed": "2026-11-12T18:05:11+00:00",
+     "full": "Simon Dalby"
     }
    ]
   },
@@ -876,23 +902,6 @@
      "price": 1,
      "closed": "2026-11-12T18:00:34+00:00",
      "full": "Nils Aebersold"
-    }
-   ]
-  },
-  "FEIRENSE - BEECELER": {
-   "player": "joaozinhoaac",
-   "won": 1,
-   "budget": 194,
-   "bids": 30,
-   "riders": [
-    {
-     "name": "López Juan Pedro",
-     "id": 6971,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 6,
-     "closed": "2026-11-12T18:02:49+00:00",
-     "full": "Juan Pedro López"
     }
    ]
   },
@@ -965,5 +974,5 @@
    ]
   }
  },
- "checked": "2026-11-13T00:15Z"
+ "checked": "2026-11-13T01:31Z"
 }
