@@ -378,9 +378,9 @@
   },
   "7-Eleven": {
    "player": "ChrisJanssen",
-   "won": 6,
-   "budget": 167,
-   "bids": 36,
+   "won": 7,
+   "budget": 159,
+   "bids": 28,
    "riders": [
     {
      "name": "Simmons Colby",
@@ -435,14 +435,23 @@
      "price": 4,
      "closed": "2026-11-13T18:00:18+00:00",
      "full": "Vegard Stake Laengen"
+    },
+    {
+     "name": "Powless Neilson",
+     "id": 5793,
+     "cc": "us",
+     "nat": "United States",
+     "price": 8,
+     "closed": "2026-11-13T18:01:42+00:00",
+     "full": "Neilson Powless"
     }
    ]
   },
   "Talkwalker": {
    "player": "benjong",
-   "won": 5,
-   "budget": 179,
-   "bids": 56,
+   "won": 6,
+   "budget": 174,
+   "bids": 51,
    "riders": [
     {
      "name": "Kockelmann Mathieu",
@@ -488,6 +497,130 @@
      "price": 4,
      "closed": "2026-11-13T18:00:54+00:00",
      "full": "Mathis Le Berre"
+    },
+    {
+     "name": "Malucelli Matteo",
+     "id": 4038,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 5,
+     "closed": "2026-11-13T18:02:11+00:00",
+     "full": "Matteo Malucelli"
+    }
+   ]
+  },
+  "Deceuninck - Quick-Step": {
+   "player": "Hillingz",
+   "won": 6,
+   "budget": 135,
+   "bids": 18,
+   "riders": [
+    {
+     "name": "Juul-Jensen Christopher",
+     "id": 2123,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 2,
+     "closed": "2026-11-12T18:00:09+00:00",
+     "full": "Christopher Juul-Jensen"
+    },
+    {
+     "name": "Moscon Gianni",
+     "id": 5001,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 3,
+     "closed": "2026-11-12T18:00:20+00:00",
+     "full": "Gianni Moscon"
+    },
+    {
+     "name": "Cerný Josef",
+     "id": 3088,
+     "cc": "cz",
+     "nat": "Czechia",
+     "price": 1,
+     "closed": "2026-11-12T18:00:29+00:00",
+     "full": "Josef Cerný"
+    },
+    {
+     "name": "Stuyven Jasper",
+     "id": 3388,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 19,
+     "closed": "2026-11-13T18:02:02+00:00",
+     "full": "Jasper Stuyven"
+    },
+    {
+     "name": "Ganna Filippo",
+     "id": 5943,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 28,
+     "closed": "2026-11-13T18:01:19+00:00",
+     "full": "Filippo Ganna"
+    },
+    {
+     "name": "Vermeersch Florian",
+     "id": 7037,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 12,
+     "closed": "2026-11-13T18:02:11+00:00",
+     "full": "Florian Vermeersch"
+    }
+   ]
+  },
+  "Portugal in 150 Seconds": {
+   "player": "Bessadelas",
+   "won": 5,
+   "budget": 183,
+   "bids": 18,
+   "riders": [
+    {
+     "name": "Pinto Pedro",
+     "id": 10610,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-12T18:00:26+00:00",
+     "full": "Pedro Pinto"
+    },
+    {
+     "name": "Kopecký Matyáš",
+     "id": 4139,
+     "cc": "cz",
+     "nat": "Czechia",
+     "price": 8,
+     "closed": "2026-11-12T21:04:23+00:00",
+     "full": "Matyáš Kopecký"
+    },
+    {
+     "name": "Moreira Daniel",
+     "id": 10065,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-13T18:00:22+00:00",
+     "full": "Daniel Moreira"
+    },
+    {
+     "name": "Peña Jesús David",
+     "id": 7086,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 4,
+     "closed": "2026-11-13T18:01:02+00:00",
+     "full": "Jesús David Peña"
+    },
+    {
+     "name": "Iacomoni Federico",
+     "id": 14368,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 3,
+     "closed": "2026-11-13T18:02:01+00:00",
+     "full": "Federico Iacomoni"
     }
    ]
   },
@@ -654,7 +787,7 @@
    "player": "Grandpa",
    "won": 5,
    "budget": 162,
-   "bids": 146,
+   "bids": 147,
    "riders": [
     {
      "name": "Nordhagen Jørgen",
@@ -791,47 +924,47 @@
     }
    ]
   },
-  "Portugal in 150 Seconds": {
-   "player": "Bessadelas",
+  "UnoX": {
+   "player": "IvanEs04",
    "won": 4,
-   "budget": 186,
-   "bids": 17,
+   "budget": 171,
+   "bids": 25,
    "riders": [
     {
-     "name": "Pinto Pedro",
-     "id": 10610,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 1,
-     "closed": "2026-11-12T18:00:26+00:00",
-     "full": "Pedro Pinto"
+     "name": "Halland Johannessen Anders",
+     "id": 13451,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 10,
+     "closed": "2026-11-13T15:00:20+00:00",
+     "full": "Anders Halland Johannessen"
     },
     {
-     "name": "Kopecký Matyáš",
-     "id": 4139,
-     "cc": "cz",
-     "nat": "Czechia",
-     "price": 8,
-     "closed": "2026-11-12T21:04:23+00:00",
-     "full": "Matyáš Kopecký"
+     "name": "Larsen Niklas",
+     "id": 5752,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 7,
+     "closed": "2026-11-12T18:05:05+00:00",
+     "full": "Niklas Larsen"
     },
     {
-     "name": "Moreira Daniel",
-     "id": 10065,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 1,
-     "closed": "2026-11-13T18:00:22+00:00",
-     "full": "Daniel Moreira"
+     "name": "Dalby Simon",
+     "id": 15284,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 6,
+     "closed": "2026-11-12T18:05:11+00:00",
+     "full": "Simon Dalby"
     },
     {
-     "name": "Peña Jesús David",
-     "id": 7086,
-     "cc": "co",
-     "nat": "Colombia",
-     "price": 4,
-     "closed": "2026-11-13T18:01:02+00:00",
-     "full": "Jesús David Peña"
+     "name": "Søjberg Pedersen Rasmus",
+     "id": 15360,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 6,
+     "closed": "2026-11-13T18:02:41+00:00",
+     "full": "Rasmus Søjberg Pedersen"
     }
    ]
   },
@@ -967,50 +1100,6 @@
     }
    ]
   },
-  "Deceuninck - Quick-Step": {
-   "player": "Hillingz",
-   "won": 4,
-   "budget": 166,
-   "bids": 49,
-   "riders": [
-    {
-     "name": "Juul-Jensen Christopher",
-     "id": 2123,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 2,
-     "closed": "2026-11-12T18:00:09+00:00",
-     "full": "Christopher Juul-Jensen"
-    },
-    {
-     "name": "Moscon Gianni",
-     "id": 5001,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 3,
-     "closed": "2026-11-12T18:00:20+00:00",
-     "full": "Gianni Moscon"
-    },
-    {
-     "name": "Cerný Josef",
-     "id": 3088,
-     "cc": "cz",
-     "nat": "Czechia",
-     "price": 1,
-     "closed": "2026-11-12T18:00:29+00:00",
-     "full": "Josef Cerný"
-    },
-    {
-     "name": "Ganna Filippo",
-     "id": 5943,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 28,
-     "closed": "2026-11-13T18:01:19+00:00",
-     "full": "Filippo Ganna"
-    }
-   ]
-  },
   "Biesse - Carrera - Premac": {
    "player": "Hübi",
    "won": 4,
@@ -1052,41 +1141,6 @@
      "price": 7,
      "closed": "2026-11-12T18:47:42+00:00",
      "full": "Mirco Maestri"
-    }
-   ]
-  },
-  "UnoX": {
-   "player": "IvanEs04",
-   "won": 3,
-   "budget": 177,
-   "bids": 31,
-   "riders": [
-    {
-     "name": "Halland Johannessen Anders",
-     "id": 13451,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 10,
-     "closed": "2026-11-13T15:00:20+00:00",
-     "full": "Anders Halland Johannessen"
-    },
-    {
-     "name": "Larsen Niklas",
-     "id": 5752,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 7,
-     "closed": "2026-11-12T18:05:05+00:00",
-     "full": "Niklas Larsen"
-    },
-    {
-     "name": "Dalby Simon",
-     "id": 15284,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 6,
-     "closed": "2026-11-12T18:05:11+00:00",
-     "full": "Simon Dalby"
     }
    ]
   },
@@ -1251,7 +1305,7 @@
    "player": "Sheep_Boy123",
    "won": 2,
    "budget": 193,
-   "bids": 63,
+   "bids": 77,
    "riders": [
     {
      "name": "Rowe Elliot",
@@ -1343,5 +1397,5 @@
    ]
   }
  },
- "checked": "2026-11-13T18:01Z"
+ "checked": "2026-11-13T18:02Z"
 }

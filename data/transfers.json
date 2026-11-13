@@ -1238,5 +1238,65 @@
   "cc": "it",
   "team": "Deceuninck - Quick-Step",
   "price": 28
+ },
+ {
+  "at": "2026-11-13T18:01:42+00:00",
+  "date": "2026-11-13",
+  "time": "19:01",
+  "rider": "Neilson Powless",
+  "id": 5793,
+  "cc": "us",
+  "team": "7-Eleven",
+  "price": 8
+ },
+ {
+  "at": "2026-11-13T18:02:01+00:00",
+  "date": "2026-11-13",
+  "time": "19:02",
+  "rider": "Federico Iacomoni",
+  "id": 14368,
+  "cc": "it",
+  "team": "Portugal in 150 Seconds",
+  "price": 3
+ },
+ {
+  "at": "2026-11-13T18:02:02+00:00",
+  "date": "2026-11-13",
+  "time": "19:02",
+  "rider": "Jasper Stuyven",
+  "id": 3388,
+  "cc": "be",
+  "team": "Deceuninck - Quick-Step",
+  "price": 19
+ },
+ {
+  "at": "2026-11-13T18:02:11+00:00",
+  "date": "2026-11-13",
+  "time": "19:02",
+  "rider": "Matteo Malucelli",
+  "id": 4038,
+  "cc": "it",
+  "team": "Talkwalker",
+  "price": 5
+ },
+ {
+  "at": "2026-11-13T18:02:11+00:00",
+  "date": "2026-11-13",
+  "time": "19:02",
+  "rider": "Florian Vermeersch",
+  "id": 7037,
+  "cc": "be",
+  "team": "Deceuninck - Quick-Step",
+  "price": 12
+ },
+ {
+  "at": "2026-11-13T18:02:41+00:00",
+  "date": "2026-11-13",
+  "time": "19:02",
+  "rider": "Rasmus Søjberg Pedersen",
+  "id": 15360,
+  "cc": "dk",
+  "team": "UnoX",
+  "price": 6
  }
 ]
