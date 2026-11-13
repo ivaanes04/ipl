@@ -1538,5 +1538,15 @@
   "cc": "gb",
   "team": "MTN Qhubeka",
   "price": 55
+ },
+ {
+  "at": "2026-11-13T19:09:27+00:00",
+  "date": "2026-11-13",
+  "time": "20:09",
+  "rider": "Sepp Kuss",
+  "id": 6253,
+  "cc": "us",
+  "team": "Discovery Channel",
+  "price": 18
  }
 ]
