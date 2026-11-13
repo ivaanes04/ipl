@@ -314,6 +314,86 @@
     }
    ]
   },
+  "Ukraine Cycling Team": {
+   "player": "Riverside",
+   "won": 8,
+   "budget": 182,
+   "bids": 59,
+   "riders": [
+    {
+     "name": "Otruba Jakub",
+     "id": 6643,
+     "cc": "cz",
+     "nat": "Czechia",
+     "price": 2,
+     "closed": "2026-11-12T18:00:16+00:00",
+     "full": "Jakub Otruba"
+    },
+    {
+     "name": "Borresch Julian",
+     "id": 14508,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 1,
+     "closed": "2026-11-12T18:00:25+00:00",
+     "full": "Julian Borresch"
+    },
+    {
+     "name": "Geeraerts Ferre",
+     "id": 9803,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 1,
+     "closed": "2026-11-12T18:00:34+00:00",
+     "full": "Ferre Geeraerts"
+    },
+    {
+     "name": "Taillieu Aldo",
+     "id": 10530,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 2,
+     "closed": "2026-11-12T18:04:22+00:00",
+     "full": "Aldo Taillieu"
+    },
+    {
+     "name": "Kluckers Arthur",
+     "id": 6879,
+     "cc": "lu",
+     "nat": "Luxembourg",
+     "price": 4,
+     "closed": "2026-11-13T18:00:07+00:00",
+     "full": "Arthur Kluckers"
+    },
+    {
+     "name": "Geoghegan Hart Tao",
+     "id": 3924,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 4,
+     "closed": "2026-11-13T18:00:20+00:00",
+     "full": "Tao Geoghegan Hart"
+    },
+    {
+     "name": "Taaramäe Rein",
+     "id": 178,
+     "cc": "ee",
+     "nat": "Estonia",
+     "price": 2,
+     "closed": "2026-11-13T18:00:31+00:00",
+     "full": "Rein Taaramäe"
+    },
+    {
+     "name": "Boguslawski Marceli",
+     "id": 7329,
+     "cc": "pl",
+     "nat": "Poland",
+     "price": 2,
+     "closed": "2026-11-13T18:00:45+00:00",
+     "full": "Marceli Boguslawski"
+    }
+   ]
+  },
   "GI Group Holding Simoldes UDO": {
    "player": "Joao Negrao",
    "won": 8,
@@ -398,7 +478,7 @@
    "player": "Bouke",
    "won": 8,
    "budget": 181,
-   "bids": 94,
+   "bids": 75,
    "riders": [
     {
      "name": "Doubey Fabien",
@@ -471,86 +551,6 @@
      "price": 1,
      "closed": "2026-11-13T18:01:17+00:00",
      "full": "Otto van Zanden"
-    }
-   ]
-  },
-  "Ukraine Cycling Team": {
-   "player": "Riverside",
-   "won": 8,
-   "budget": 182,
-   "bids": 106,
-   "riders": [
-    {
-     "name": "Otruba Jakub",
-     "id": 6643,
-     "cc": "cz",
-     "nat": "Czechia",
-     "price": 2,
-     "closed": "2026-11-12T18:00:16+00:00",
-     "full": "Jakub Otruba"
-    },
-    {
-     "name": "Borresch Julian",
-     "id": 14508,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 1,
-     "closed": "2026-11-12T18:00:25+00:00",
-     "full": "Julian Borresch"
-    },
-    {
-     "name": "Geeraerts Ferre",
-     "id": 9803,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 1,
-     "closed": "2026-11-12T18:00:34+00:00",
-     "full": "Ferre Geeraerts"
-    },
-    {
-     "name": "Taillieu Aldo",
-     "id": 10530,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 2,
-     "closed": "2026-11-12T18:04:22+00:00",
-     "full": "Aldo Taillieu"
-    },
-    {
-     "name": "Kluckers Arthur",
-     "id": 6879,
-     "cc": "lu",
-     "nat": "Luxembourg",
-     "price": 4,
-     "closed": "2026-11-13T18:00:07+00:00",
-     "full": "Arthur Kluckers"
-    },
-    {
-     "name": "Geoghegan Hart Tao",
-     "id": 3924,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 4,
-     "closed": "2026-11-13T18:00:20+00:00",
-     "full": "Tao Geoghegan Hart"
-    },
-    {
-     "name": "Taaramäe Rein",
-     "id": 178,
-     "cc": "ee",
-     "nat": "Estonia",
-     "price": 2,
-     "closed": "2026-11-13T18:00:31+00:00",
-     "full": "Rein Taaramäe"
-    },
-    {
-     "name": "Boguslawski Marceli",
-     "id": 7329,
-     "cc": "pl",
-     "nat": "Poland",
-     "price": 2,
-     "closed": "2026-11-13T18:00:45+00:00",
-     "full": "Marceli Boguslawski"
     }
    ]
   },
@@ -833,7 +833,7 @@
    "player": "benjong",
    "won": 6,
    "budget": 174,
-   "bids": 52,
+   "bids": 66,
    "riders": [
     {
      "name": "Kockelmann Mathieu",
@@ -895,7 +895,7 @@
    "player": "IvanEs04",
    "won": 6,
    "budget": 161,
-   "bids": 64,
+   "bids": 77,
    "riders": [
     {
      "name": "Halland Johannessen Anders",
@@ -1015,64 +1015,11 @@
     }
    ]
   },
-  "FEIRENSE - BEECELER": {
-   "player": "joaozinhoaac",
-   "won": 5,
-   "budget": 171,
-   "bids": 42,
-   "riders": [
-    {
-     "name": "van Dijke Tim",
-     "id": 7308,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 20,
-     "closed": "2026-11-13T01:31:36+00:00",
-     "full": "Tim van Dijke"
-    },
-    {
-     "name": "López Juan Pedro",
-     "id": 6971,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 6,
-     "closed": "2026-11-12T18:02:49+00:00",
-     "full": "Juan Pedro López"
-    },
-    {
-     "name": "Barbosa Diogo",
-     "id": 7433,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 1,
-     "closed": "2026-11-13T18:15:28+00:00",
-     "full": "Diogo Barbosa"
-    },
-    {
-     "name": "Isasa Xabier",
-     "id": 14922,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 1,
-     "closed": "2026-11-13T18:15:51+00:00",
-     "full": "Xabier Isasa"
-    },
-    {
-     "name": "Carvalho Rui",
-     "id": 14560,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 1,
-     "closed": "2026-11-13T18:16:12+00:00",
-     "full": "Rui Carvalho"
-    }
-   ]
-  },
   "CSC": {
    "player": "marsiscool",
    "won": 5,
    "budget": 156,
-   "bids": 34,
+   "bids": 18,
    "riders": [
     {
      "name": "Withen Philipsen Albert",
@@ -1118,6 +1065,59 @@
      "price": 10,
      "closed": "2026-11-13T19:14:08+00:00",
      "full": "Andreas Kron"
+    }
+   ]
+  },
+  "FEIRENSE - BEECELER": {
+   "player": "joaozinhoaac",
+   "won": 5,
+   "budget": 171,
+   "bids": 50,
+   "riders": [
+    {
+     "name": "van Dijke Tim",
+     "id": 7308,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 20,
+     "closed": "2026-11-13T01:31:36+00:00",
+     "full": "Tim van Dijke"
+    },
+    {
+     "name": "López Juan Pedro",
+     "id": 6971,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 6,
+     "closed": "2026-11-12T18:02:49+00:00",
+     "full": "Juan Pedro López"
+    },
+    {
+     "name": "Barbosa Diogo",
+     "id": 7433,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-13T18:15:28+00:00",
+     "full": "Diogo Barbosa"
+    },
+    {
+     "name": "Isasa Xabier",
+     "id": 14922,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 1,
+     "closed": "2026-11-13T18:15:51+00:00",
+     "full": "Xabier Isasa"
+    },
+    {
+     "name": "Carvalho Rui",
+     "id": 14560,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-13T18:16:12+00:00",
+     "full": "Rui Carvalho"
     }
    ]
   },
@@ -1280,56 +1280,56 @@
     }
    ]
   },
-  "Biesse - Carrera - Premac": {
-   "player": "Hübi",
+  "MEO (Benfica)": {
+   "player": "TheBigDog",
    "won": 5,
-   "budget": 166,
-   "bids": 115,
+   "budget": 96,
+   "bids": 48,
    "riders": [
     {
-     "name": "Isidore Noa",
-     "id": 15416,
-     "cc": "fr",
-     "nat": "France",
-     "price": 8,
-     "closed": "2026-11-13T14:34:54+00:00",
-     "full": "Noa Isidore"
+     "name": "González Abner",
+     "id": 7391,
+     "cc": "pr",
+     "nat": "Puerto Rico",
+     "price": 1,
+     "closed": "2026-11-12T19:33:58+00:00",
+     "full": "Abner González"
     },
     {
-     "name": "Covi Alessandro",
-     "id": 7093,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 5,
-     "closed": "2026-11-13T05:21:20+00:00",
-     "full": "Alessandro Covi"
+     "name": "Campos Francisco",
+     "id": 6862,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-12T19:34:51+00:00",
+     "full": "Francisco Campos"
     },
     {
-     "name": "Sparfel Aubin",
-     "id": 9427,
-     "cc": "fr",
-     "nat": "France",
-     "price": 9,
-     "closed": "2026-11-13T14:37:03+00:00",
-     "full": "Aubin Sparfel"
+     "name": "Froome Chris",
+     "id": 6440,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 100,
+     "closed": "2026-11-12T19:36:36+00:00",
+     "full": "Sam Brand"
     },
     {
-     "name": "Maestri Mirco",
-     "id": 5676,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 7,
-     "closed": "2026-11-12T18:47:42+00:00",
-     "full": "Mirco Maestri"
+     "name": "Silva Joaquim",
+     "id": 5865,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-13T18:34:52+00:00",
+     "full": "Joaquim Silva"
     },
     {
-     "name": "Magagnotti Alessio",
-     "id": 5538,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 5,
-     "closed": "2026-11-13T18:50:29+00:00",
-     "full": "Alessio Magagnotti"
+     "name": "Callejas Edinson Alejandro",
+     "id": 15707,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 1,
+     "closed": "2026-11-13T19:49:13+00:00",
+     "full": "Edinson Alejandro Callejas"
     }
    ]
   },
@@ -1386,6 +1386,59 @@
     }
    ]
   },
+  "Biesse - Carrera - Premac": {
+   "player": "Hübi",
+   "won": 5,
+   "budget": 166,
+   "bids": 144,
+   "riders": [
+    {
+     "name": "Isidore Noa",
+     "id": 15416,
+     "cc": "fr",
+     "nat": "France",
+     "price": 8,
+     "closed": "2026-11-13T14:34:54+00:00",
+     "full": "Noa Isidore"
+    },
+    {
+     "name": "Covi Alessandro",
+     "id": 7093,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 5,
+     "closed": "2026-11-13T05:21:20+00:00",
+     "full": "Alessandro Covi"
+    },
+    {
+     "name": "Sparfel Aubin",
+     "id": 9427,
+     "cc": "fr",
+     "nat": "France",
+     "price": 9,
+     "closed": "2026-11-13T14:37:03+00:00",
+     "full": "Aubin Sparfel"
+    },
+    {
+     "name": "Maestri Mirco",
+     "id": 5676,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 7,
+     "closed": "2026-11-12T18:47:42+00:00",
+     "full": "Mirco Maestri"
+    },
+    {
+     "name": "Magagnotti Alessio",
+     "id": 5538,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 5,
+     "closed": "2026-11-13T18:50:29+00:00",
+     "full": "Alessio Magagnotti"
+    }
+   ]
+  },
   "Tavfer-Ovos Matinados-Mortágua": {
    "player": "Sabu76",
    "won": 4,
@@ -1434,7 +1487,7 @@
    "player": "Leandro_jx_",
    "won": 4,
    "budget": 191,
-   "bids": 0,
+   "bids": 69,
    "riders": [
     {
      "name": "Lastra Jonathan",
@@ -1562,50 +1615,6 @@
     }
    ]
   },
-  "MEO (Benfica)": {
-   "player": "TheBigDog",
-   "won": 4,
-   "budget": 97,
-   "bids": 49,
-   "riders": [
-    {
-     "name": "González Abner",
-     "id": 7391,
-     "cc": "pr",
-     "nat": "Puerto Rico",
-     "price": 1,
-     "closed": "2026-11-12T19:33:58+00:00",
-     "full": "Abner González"
-    },
-    {
-     "name": "Campos Francisco",
-     "id": 6862,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 1,
-     "closed": "2026-11-12T19:34:51+00:00",
-     "full": "Francisco Campos"
-    },
-    {
-     "name": "Froome Chris",
-     "id": 6440,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 100,
-     "closed": "2026-11-12T19:36:36+00:00",
-     "full": "Sam Brand"
-    },
-    {
-     "name": "Silva Joaquim",
-     "id": 5865,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 1,
-     "closed": "2026-11-13T18:34:52+00:00",
-     "full": "Joaquim Silva"
-    }
-   ]
-  },
   "Kelme Costa Blanca": {
    "player": "JgCol",
    "won": 3,
@@ -1645,7 +1654,7 @@
    "player": "Sheep_Boy123",
    "won": 2,
    "budget": 193,
-   "bids": 63,
+   "bids": 67,
    "riders": [
     {
      "name": "Rowe Elliot",
@@ -1685,5 +1694,5 @@
    ]
   }
  },
- "checked": "2026-11-13T19:32Z"
+ "checked": "2026-11-13T19:49Z"
 }
