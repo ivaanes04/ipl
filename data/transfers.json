@@ -1328,5 +1328,15 @@
   "cc": "pt",
   "team": "GI Group Holding Simoldes UDO",
   "price": 3
+ },
+ {
+  "at": "2026-11-13T18:06:27+00:00",
+  "date": "2026-11-13",
+  "time": "19:06",
+  "rider": "Enzo Hincapie",
+  "id": 17209,
+  "cc": "us",
+  "team": "Modern Adventure",
+  "price": 1
  }
 ]

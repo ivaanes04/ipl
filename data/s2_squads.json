@@ -300,7 +300,7 @@
    "player": "Pena Guevara",
    "won": 8,
    "budget": 114,
-   "bids": 58,
+   "bids": 46,
    "riders": [
     {
      "name": "Oliveira Rui",
@@ -1118,50 +1118,6 @@
     }
    ]
   },
-  "B&B Hotels": {
-   "player": "Tom_Bryant",
-   "won": 4,
-   "budget": 196,
-   "bids": 96,
-   "riders": [
-    {
-     "name": "Conor Paul",
-     "id": 11406,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-12T22:24:03+00:00",
-     "full": "Paul Conor"
-    },
-    {
-     "name": "Beaune Mavric",
-     "id": 10729,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-12T22:24:39+00:00",
-     "full": "Mavric Beaune"
-    },
-    {
-     "name": "Bracalente Diego",
-     "id": 8431,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 1,
-     "closed": "2026-11-12T22:48:07+00:00",
-     "full": "Diego Bracalente"
-    },
-    {
-     "name": "Van Kerckhove Seff",
-     "id": 11852,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 1,
-     "closed": "2026-11-12T22:50:44+00:00",
-     "full": "Seff Van Kerckhove"
-    }
-   ]
-  },
   "Biesse - Carrera - Premac": {
    "player": "Hübi",
    "won": 4,
@@ -1203,6 +1159,85 @@
      "price": 7,
      "closed": "2026-11-12T18:47:42+00:00",
      "full": "Mirco Maestri"
+    }
+   ]
+  },
+  "B&B Hotels": {
+   "player": "Tom_Bryant",
+   "won": 4,
+   "budget": 196,
+   "bids": 109,
+   "riders": [
+    {
+     "name": "Conor Paul",
+     "id": 11406,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-12T22:24:03+00:00",
+     "full": "Paul Conor"
+    },
+    {
+     "name": "Beaune Mavric",
+     "id": 10729,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-12T22:24:39+00:00",
+     "full": "Mavric Beaune"
+    },
+    {
+     "name": "Bracalente Diego",
+     "id": 8431,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 1,
+     "closed": "2026-11-12T22:48:07+00:00",
+     "full": "Diego Bracalente"
+    },
+    {
+     "name": "Van Kerckhove Seff",
+     "id": 11852,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 1,
+     "closed": "2026-11-12T22:50:44+00:00",
+     "full": "Seff Van Kerckhove"
+    }
+   ]
+  },
+  "Modern Adventure": {
+   "player": "seancoll",
+   "won": 3,
+   "budget": 175,
+   "bids": 61,
+   "riders": [
+    {
+     "name": "Sheffield Magnus",
+     "id": 15048,
+     "cc": "us",
+     "nat": "United States",
+     "price": 12,
+     "closed": "2026-11-13T17:41:14+00:00",
+     "full": "Magnus Sheffield"
+    },
+    {
+     "name": "Pithie Laurence",
+     "id": 7547,
+     "cc": "nz",
+     "nat": "New Zealand",
+     "price": 12,
+     "closed": "2026-11-12T19:45:48+00:00",
+     "full": "Laurence Pithie"
+    },
+    {
+     "name": "Hincapie Enzo",
+     "id": 17209,
+     "cc": "us",
+     "nat": "United States",
+     "price": 1,
+     "closed": "2026-11-13T18:06:27+00:00",
+     "full": "Enzo Hincapie"
     }
    ]
   },
@@ -1354,32 +1389,6 @@
     }
    ]
   },
-  "Modern Adventure": {
-   "player": "seancoll",
-   "won": 2,
-   "budget": 176,
-   "bids": 62,
-   "riders": [
-    {
-     "name": "Sheffield Magnus",
-     "id": 15048,
-     "cc": "us",
-     "nat": "United States",
-     "price": 12,
-     "closed": "2026-11-13T17:41:14+00:00",
-     "full": "Magnus Sheffield"
-    },
-    {
-     "name": "Pithie Laurence",
-     "id": 7547,
-     "cc": "nz",
-     "nat": "New Zealand",
-     "price": 12,
-     "closed": "2026-11-12T19:45:48+00:00",
-     "full": "Laurence Pithie"
-    }
-   ]
-  },
   "Discovery Channel": {
    "player": "Agap",
    "won": 2,
@@ -1424,5 +1433,5 @@
    ]
   }
  },
- "checked": "2026-11-13T18:04Z"
+ "checked": "2026-11-13T18:06Z"
 }
