@@ -300,7 +300,7 @@
    "player": "Pena Guevara",
    "won": 8,
    "budget": 114,
-   "bids": 46,
+   "bids": 60,
    "riders": [
     {
      "name": "Oliveira Rui",
@@ -1189,6 +1189,50 @@
     }
    ]
   },
+  "B&B Hotels": {
+   "player": "Tom_Bryant",
+   "won": 4,
+   "budget": 196,
+   "bids": 96,
+   "riders": [
+    {
+     "name": "Conor Paul",
+     "id": 11406,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-12T22:24:03+00:00",
+     "full": "Paul Conor"
+    },
+    {
+     "name": "Beaune Mavric",
+     "id": 10729,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-12T22:24:39+00:00",
+     "full": "Mavric Beaune"
+    },
+    {
+     "name": "Bracalente Diego",
+     "id": 8431,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 1,
+     "closed": "2026-11-12T22:48:07+00:00",
+     "full": "Diego Bracalente"
+    },
+    {
+     "name": "Van Kerckhove Seff",
+     "id": 11852,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 1,
+     "closed": "2026-11-12T22:50:44+00:00",
+     "full": "Seff Van Kerckhove"
+    }
+   ]
+  },
   "Biesse - Carrera - Premac": {
    "player": "Hübi",
    "won": 4,
@@ -1230,50 +1274,6 @@
      "price": 7,
      "closed": "2026-11-12T18:47:42+00:00",
      "full": "Mirco Maestri"
-    }
-   ]
-  },
-  "B&B Hotels": {
-   "player": "Tom_Bryant",
-   "won": 4,
-   "budget": 196,
-   "bids": 109,
-   "riders": [
-    {
-     "name": "Conor Paul",
-     "id": 11406,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-12T22:24:03+00:00",
-     "full": "Paul Conor"
-    },
-    {
-     "name": "Beaune Mavric",
-     "id": 10729,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-12T22:24:39+00:00",
-     "full": "Mavric Beaune"
-    },
-    {
-     "name": "Bracalente Diego",
-     "id": 8431,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 1,
-     "closed": "2026-11-12T22:48:07+00:00",
-     "full": "Diego Bracalente"
-    },
-    {
-     "name": "Van Kerckhove Seff",
-     "id": 11852,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 1,
-     "closed": "2026-11-12T22:50:44+00:00",
-     "full": "Seff Van Kerckhove"
     }
    ]
   },
@@ -1469,5 +1469,5 @@
    ]
   }
  },
- "checked": "2026-11-13T18:09Z"
+ "checked": "2026-11-13T18:11Z"
 }
