@@ -1338,5 +1338,35 @@
   "cc": "us",
   "team": "Modern Adventure",
   "price": 1
+ },
+ {
+  "at": "2026-11-13T18:07:06+00:00",
+  "date": "2026-11-13",
+  "time": "19:07",
+  "rider": "Riley Sheehan",
+  "id": 12991,
+  "cc": "us",
+  "team": "Modern Adventure",
+  "price": 8
+ },
+ {
+  "at": "2026-11-13T18:07:13+00:00",
+  "date": "2026-11-13",
+  "time": "19:07",
+  "rider": "Riley Pickrell",
+  "id": 7560,
+  "cc": "ca",
+  "team": "Modern Adventure",
+  "price": 5
+ },
+ {
+  "at": "2026-11-13T18:07:29+00:00",
+  "date": "2026-11-13",
+  "time": "19:07",
+  "rider": "Ådne Holter",
+  "id": 7219,
+  "cc": "no",
+  "team": "UnoX",
+  "price": 6
  }
 ]

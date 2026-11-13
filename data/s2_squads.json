@@ -380,7 +380,7 @@
    "player": "ChrisJanssen",
    "won": 7,
    "budget": 159,
-   "bids": 28,
+   "bids": 78,
    "riders": [
     {
      "name": "Simmons Colby",
@@ -444,6 +444,68 @@
      "price": 8,
      "closed": "2026-11-13T18:01:42+00:00",
      "full": "Neilson Powless"
+    }
+   ]
+  },
+  "UnoX": {
+   "player": "IvanEs04",
+   "won": 6,
+   "budget": 161,
+   "bids": 15,
+   "riders": [
+    {
+     "name": "Halland Johannessen Anders",
+     "id": 13451,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 10,
+     "closed": "2026-11-13T15:00:20+00:00",
+     "full": "Anders Halland Johannessen"
+    },
+    {
+     "name": "Larsen Niklas",
+     "id": 5752,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 7,
+     "closed": "2026-11-12T18:05:05+00:00",
+     "full": "Niklas Larsen"
+    },
+    {
+     "name": "Dalby Simon",
+     "id": 15284,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 6,
+     "closed": "2026-11-12T18:05:11+00:00",
+     "full": "Simon Dalby"
+    },
+    {
+     "name": "Søjberg Pedersen Rasmus",
+     "id": 15360,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 6,
+     "closed": "2026-11-13T18:02:41+00:00",
+     "full": "Rasmus Søjberg Pedersen"
+    },
+    {
+     "name": "Haugland Kasper",
+     "id": 9397,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 4,
+     "closed": "2026-11-13T18:03:16+00:00",
+     "full": "Kasper Haugland"
+    },
+    {
+     "name": "Holter Ådne",
+     "id": 7219,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 6,
+     "closed": "2026-11-13T18:07:29+00:00",
+     "full": "Ådne Holter"
     }
    ]
   },
@@ -624,56 +686,56 @@
     }
    ]
   },
-  "UnoX": {
-   "player": "IvanEs04",
+  "Modern Adventure": {
+   "player": "seancoll",
    "won": 5,
-   "budget": 167,
-   "bids": 21,
+   "budget": 162,
+   "bids": 48,
    "riders": [
     {
-     "name": "Halland Johannessen Anders",
-     "id": 13451,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 10,
-     "closed": "2026-11-13T15:00:20+00:00",
-     "full": "Anders Halland Johannessen"
+     "name": "Sheffield Magnus",
+     "id": 15048,
+     "cc": "us",
+     "nat": "United States",
+     "price": 12,
+     "closed": "2026-11-13T17:41:14+00:00",
+     "full": "Magnus Sheffield"
     },
     {
-     "name": "Larsen Niklas",
-     "id": 5752,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 7,
-     "closed": "2026-11-12T18:05:05+00:00",
-     "full": "Niklas Larsen"
+     "name": "Pithie Laurence",
+     "id": 7547,
+     "cc": "nz",
+     "nat": "New Zealand",
+     "price": 12,
+     "closed": "2026-11-12T19:45:48+00:00",
+     "full": "Laurence Pithie"
     },
     {
-     "name": "Dalby Simon",
-     "id": 15284,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 6,
-     "closed": "2026-11-12T18:05:11+00:00",
-     "full": "Simon Dalby"
+     "name": "Hincapie Enzo",
+     "id": 17209,
+     "cc": "us",
+     "nat": "United States",
+     "price": 1,
+     "closed": "2026-11-13T18:06:27+00:00",
+     "full": "Enzo Hincapie"
     },
     {
-     "name": "Søjberg Pedersen Rasmus",
-     "id": 15360,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 6,
-     "closed": "2026-11-13T18:02:41+00:00",
-     "full": "Rasmus Søjberg Pedersen"
+     "name": "Sheehan Riley",
+     "id": 12991,
+     "cc": "us",
+     "nat": "United States",
+     "price": 8,
+     "closed": "2026-11-13T18:07:06+00:00",
+     "full": "Riley Sheehan"
     },
     {
-     "name": "Haugland Kasper",
-     "id": 9397,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 4,
-     "closed": "2026-11-13T18:03:16+00:00",
-     "full": "Kasper Haugland"
+     "name": "Pickrell Riley",
+     "id": 7560,
+     "cc": "ca",
+     "nat": "Canada",
+     "price": 5,
+     "closed": "2026-11-13T18:07:13+00:00",
+     "full": "Riley Pickrell"
     }
    ]
   },
@@ -1206,41 +1268,6 @@
     }
    ]
   },
-  "Modern Adventure": {
-   "player": "seancoll",
-   "won": 3,
-   "budget": 175,
-   "bids": 61,
-   "riders": [
-    {
-     "name": "Sheffield Magnus",
-     "id": 15048,
-     "cc": "us",
-     "nat": "United States",
-     "price": 12,
-     "closed": "2026-11-13T17:41:14+00:00",
-     "full": "Magnus Sheffield"
-    },
-    {
-     "name": "Pithie Laurence",
-     "id": 7547,
-     "cc": "nz",
-     "nat": "New Zealand",
-     "price": 12,
-     "closed": "2026-11-12T19:45:48+00:00",
-     "full": "Laurence Pithie"
-    },
-    {
-     "name": "Hincapie Enzo",
-     "id": 17209,
-     "cc": "us",
-     "nat": "United States",
-     "price": 1,
-     "closed": "2026-11-13T18:06:27+00:00",
-     "full": "Enzo Hincapie"
-    }
-   ]
-  },
   "Bahrain Victorious": {
    "player": "Daagz",
    "won": 3,
@@ -1433,5 +1460,5 @@
    ]
   }
  },
- "checked": "2026-11-13T18:06Z"
+ "checked": "2026-11-13T18:07Z"
 }
