@@ -1658,5 +1658,15 @@
   "cc": "it",
   "team": "B&B Hotels",
   "price": 9
+ },
+ {
+  "at": "2026-11-13T20:16:28+00:00",
+  "date": "2026-11-13",
+  "time": "21:16",
+  "rider": "Damiano Caruso",
+  "id": 1033,
+  "cc": "it",
+  "team": "Rabobank",
+  "price": 24
  }
 ]

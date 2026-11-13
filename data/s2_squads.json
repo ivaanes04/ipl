@@ -136,6 +136,95 @@
     }
    ]
   },
+  "Rabobank": {
+   "player": "Bouke",
+   "won": 9,
+   "budget": 157,
+   "bids": 12,
+   "riders": [
+    {
+     "name": "Doubey Fabien",
+     "id": 1380,
+     "cc": "fr",
+     "nat": "France",
+     "price": 3,
+     "closed": "2026-11-12T18:13:57+00:00",
+     "full": "Fabien Doubey"
+    },
+    {
+     "name": "Ronhaar Pim",
+     "id": 12123,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 2,
+     "closed": "2026-11-12T18:17:11+00:00",
+     "full": "Pim Ronhaar"
+    },
+    {
+     "name": "Vader Milan",
+     "id": 15475,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 4,
+     "closed": "2026-11-12T18:18:37+00:00",
+     "full": "Milan Vader"
+    },
+    {
+     "name": "de Vries Hartthijs",
+     "id": 3905,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 6,
+     "closed": "2026-11-12T18:18:42+00:00",
+     "full": "Hartthijs de Vries"
+    },
+    {
+     "name": "Henao Sergio",
+     "id": 16039,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 1,
+     "closed": "2026-11-13T18:00:22+00:00",
+     "full": "Sergio Henao"
+    },
+    {
+     "name": "Sinschek Nils",
+     "id": 7026,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 1,
+     "closed": "2026-11-13T18:00:57+00:00",
+     "full": "Nils Sinschek"
+    },
+    {
+     "name": "Schoonvelde Gijs",
+     "id": 10045,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 1,
+     "closed": "2026-11-13T18:01:08+00:00",
+     "full": "Gijs Schoonvelde"
+    },
+    {
+     "name": "van Zanden Otto",
+     "id": 8651,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 1,
+     "closed": "2026-11-13T18:01:17+00:00",
+     "full": "Otto van Zanden"
+    },
+    {
+     "name": "Caruso Damiano",
+     "id": 1033,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 24,
+     "closed": "2026-11-13T20:16:28+00:00",
+     "full": "Damiano Caruso"
+    }
+   ]
+  },
   "Unibet Rose Rockets": {
    "player": "firejohn",
    "won": 9,
@@ -311,86 +400,6 @@
      "price": 12,
      "closed": "2026-11-13T18:28:51+00:00",
      "full": "Madis Mihkels"
-    }
-   ]
-  },
-  "Rabobank": {
-   "player": "Bouke",
-   "won": 8,
-   "budget": 181,
-   "bids": 36,
-   "riders": [
-    {
-     "name": "Doubey Fabien",
-     "id": 1380,
-     "cc": "fr",
-     "nat": "France",
-     "price": 3,
-     "closed": "2026-11-12T18:13:57+00:00",
-     "full": "Fabien Doubey"
-    },
-    {
-     "name": "Ronhaar Pim",
-     "id": 12123,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 2,
-     "closed": "2026-11-12T18:17:11+00:00",
-     "full": "Pim Ronhaar"
-    },
-    {
-     "name": "Vader Milan",
-     "id": 15475,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 4,
-     "closed": "2026-11-12T18:18:37+00:00",
-     "full": "Milan Vader"
-    },
-    {
-     "name": "de Vries Hartthijs",
-     "id": 3905,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 6,
-     "closed": "2026-11-12T18:18:42+00:00",
-     "full": "Hartthijs de Vries"
-    },
-    {
-     "name": "Henao Sergio",
-     "id": 16039,
-     "cc": "co",
-     "nat": "Colombia",
-     "price": 1,
-     "closed": "2026-11-13T18:00:22+00:00",
-     "full": "Sergio Henao"
-    },
-    {
-     "name": "Sinschek Nils",
-     "id": 7026,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 1,
-     "closed": "2026-11-13T18:00:57+00:00",
-     "full": "Nils Sinschek"
-    },
-    {
-     "name": "Schoonvelde Gijs",
-     "id": 10045,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 1,
-     "closed": "2026-11-13T18:01:08+00:00",
-     "full": "Gijs Schoonvelde"
-    },
-    {
-     "name": "van Zanden Otto",
-     "id": 8651,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 1,
-     "closed": "2026-11-13T18:01:17+00:00",
-     "full": "Otto van Zanden"
     }
    ]
   },
@@ -904,7 +913,7 @@
    "player": "benjong",
    "won": 6,
    "budget": 174,
-   "bids": 86,
+   "bids": 66,
    "riders": [
     {
      "name": "Kockelmann Mathieu",
@@ -1245,59 +1254,6 @@
     }
    ]
   },
-  "B&B Hotels": {
-   "player": "Tom_Bryant",
-   "won": 5,
-   "budget": 187,
-   "bids": 94,
-   "riders": [
-    {
-     "name": "Conor Paul",
-     "id": 11406,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-12T22:24:03+00:00",
-     "full": "Paul Conor"
-    },
-    {
-     "name": "Beaune Mavric",
-     "id": 10729,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-12T22:24:39+00:00",
-     "full": "Mavric Beaune"
-    },
-    {
-     "name": "Bracalente Diego",
-     "id": 8431,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 1,
-     "closed": "2026-11-12T22:48:07+00:00",
-     "full": "Diego Bracalente"
-    },
-    {
-     "name": "Van Kerckhove Seff",
-     "id": 11852,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 1,
-     "closed": "2026-11-12T22:50:44+00:00",
-     "full": "Seff Van Kerckhove"
-    },
-    {
-     "name": "Raccagni Noviero Andrea",
-     "id": 8455,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 9,
-     "closed": "2026-11-13T20:00:13+00:00",
-     "full": "Andrea Raccagni Noviero"
-    }
-   ]
-  },
   "Bahrain Victorious": {
    "player": "Daagz",
    "won": 5,
@@ -1348,6 +1304,59 @@
      "price": 8,
      "closed": "2026-11-13T18:53:22+00:00",
      "full": "Luka Mezgec"
+    }
+   ]
+  },
+  "B&B Hotels": {
+   "player": "Tom_Bryant",
+   "won": 5,
+   "budget": 187,
+   "bids": 115,
+   "riders": [
+    {
+     "name": "Conor Paul",
+     "id": 11406,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-12T22:24:03+00:00",
+     "full": "Paul Conor"
+    },
+    {
+     "name": "Beaune Mavric",
+     "id": 10729,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-12T22:24:39+00:00",
+     "full": "Mavric Beaune"
+    },
+    {
+     "name": "Bracalente Diego",
+     "id": 8431,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 1,
+     "closed": "2026-11-12T22:48:07+00:00",
+     "full": "Diego Bracalente"
+    },
+    {
+     "name": "Van Kerckhove Seff",
+     "id": 11852,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 1,
+     "closed": "2026-11-12T22:50:44+00:00",
+     "full": "Seff Van Kerckhove"
+    },
+    {
+     "name": "Raccagni Noviero Andrea",
+     "id": 8455,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 9,
+     "closed": "2026-11-13T20:00:13+00:00",
+     "full": "Andrea Raccagni Noviero"
     }
    ]
   },
@@ -1721,5 +1730,5 @@
    ]
   }
  },
- "checked": "2026-11-13T20:00Z"
+ "checked": "2026-11-13T20:16Z"
 }
