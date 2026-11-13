@@ -1438,5 +1438,15 @@
   "cc": "pt",
   "team": "FEIRENSE - BEECELER",
   "price": 1
+ },
+ {
+  "at": "2026-11-13T18:27:36+00:00",
+  "date": "2026-11-13",
+  "time": "19:27",
+  "rider": "Jakob Omrzel",
+  "id": 9231,
+  "cc": "si",
+  "team": "Tudor",
+  "price": 15
  }
 ]

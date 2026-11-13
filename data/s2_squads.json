@@ -589,68 +589,6 @@
     }
    ]
   },
-  "UnoX": {
-   "player": "IvanEs04",
-   "won": 6,
-   "budget": 161,
-   "bids": 31,
-   "riders": [
-    {
-     "name": "Halland Johannessen Anders",
-     "id": 13451,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 10,
-     "closed": "2026-11-13T15:00:20+00:00",
-     "full": "Anders Halland Johannessen"
-    },
-    {
-     "name": "Larsen Niklas",
-     "id": 5752,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 7,
-     "closed": "2026-11-12T18:05:05+00:00",
-     "full": "Niklas Larsen"
-    },
-    {
-     "name": "Dalby Simon",
-     "id": 15284,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 6,
-     "closed": "2026-11-12T18:05:11+00:00",
-     "full": "Simon Dalby"
-    },
-    {
-     "name": "Søjberg Pedersen Rasmus",
-     "id": 15360,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 6,
-     "closed": "2026-11-13T18:02:41+00:00",
-     "full": "Rasmus Søjberg Pedersen"
-    },
-    {
-     "name": "Haugland Kasper",
-     "id": 9397,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 4,
-     "closed": "2026-11-13T18:03:16+00:00",
-     "full": "Kasper Haugland"
-    },
-    {
-     "name": "Holter Ådne",
-     "id": 7219,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 6,
-     "closed": "2026-11-13T18:07:29+00:00",
-     "full": "Ådne Holter"
-    }
-   ]
-  },
   "Talkwalker": {
    "player": "benjong",
    "won": 6,
@@ -713,6 +651,68 @@
     }
    ]
   },
+  "UnoX": {
+   "player": "IvanEs04",
+   "won": 6,
+   "budget": 161,
+   "bids": 72,
+   "riders": [
+    {
+     "name": "Halland Johannessen Anders",
+     "id": 13451,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 10,
+     "closed": "2026-11-13T15:00:20+00:00",
+     "full": "Anders Halland Johannessen"
+    },
+    {
+     "name": "Larsen Niklas",
+     "id": 5752,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 7,
+     "closed": "2026-11-12T18:05:05+00:00",
+     "full": "Niklas Larsen"
+    },
+    {
+     "name": "Dalby Simon",
+     "id": 15284,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 6,
+     "closed": "2026-11-12T18:05:11+00:00",
+     "full": "Simon Dalby"
+    },
+    {
+     "name": "Søjberg Pedersen Rasmus",
+     "id": 15360,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 6,
+     "closed": "2026-11-13T18:02:41+00:00",
+     "full": "Rasmus Søjberg Pedersen"
+    },
+    {
+     "name": "Haugland Kasper",
+     "id": 9397,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 4,
+     "closed": "2026-11-13T18:03:16+00:00",
+     "full": "Kasper Haugland"
+    },
+    {
+     "name": "Holter Ådne",
+     "id": 7219,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 6,
+     "closed": "2026-11-13T18:07:29+00:00",
+     "full": "Ådne Holter"
+    }
+   ]
+  },
   "Deceuninck - Quick-Step": {
    "player": "Hillingz",
    "won": 6,
@@ -772,6 +772,68 @@
      "price": 12,
      "closed": "2026-11-13T18:02:11+00:00",
      "full": "Florian Vermeersch"
+    }
+   ]
+  },
+  "Tudor": {
+   "player": "Grandpa",
+   "won": 6,
+   "budget": 147,
+   "bids": 132,
+   "riders": [
+    {
+     "name": "Nordhagen Jørgen",
+     "id": 4918,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 10,
+     "closed": "2026-11-12T19:02:41+00:00",
+     "full": "Jørgen Nordhagen"
+    },
+    {
+     "name": "L'Hôte Antoine",
+     "id": 4934,
+     "cc": "fr",
+     "nat": "France",
+     "price": 7,
+     "closed": "2026-11-12T19:03:11+00:00",
+     "full": "Antoine L'Hôte"
+    },
+    {
+     "name": "Shmidt Artem",
+     "id": 15514,
+     "cc": "us",
+     "nat": "United States",
+     "price": 7,
+     "closed": "2026-11-12T19:03:29+00:00",
+     "full": "Artem Shmidt"
+    },
+    {
+     "name": "Leonard Michael",
+     "id": 15396,
+     "cc": "ca",
+     "nat": "Canada",
+     "price": 6,
+     "closed": "2026-11-12T19:03:54+00:00",
+     "full": "Michael Leonard"
+    },
+    {
+     "name": "August Andrew",
+     "id": 4957,
+     "cc": "us",
+     "nat": "United States",
+     "price": 8,
+     "closed": "2026-11-13T11:07:01+00:00",
+     "full": "Andrew August"
+    },
+    {
+     "name": "Omrzel Jakob",
+     "id": 9231,
+     "cc": "si",
+     "nat": "Slovenia",
+     "price": 15,
+     "closed": "2026-11-13T18:27:36+00:00",
+     "full": "Jakob Omrzel"
     }
    ]
   },
@@ -1037,59 +1099,6 @@
      "price": 1,
      "closed": "2026-11-13T18:01:06+00:00",
      "full": "Nils Brun"
-    }
-   ]
-  },
-  "Tudor": {
-   "player": "Grandpa",
-   "won": 5,
-   "budget": 162,
-   "bids": 147,
-   "riders": [
-    {
-     "name": "Nordhagen Jørgen",
-     "id": 4918,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 10,
-     "closed": "2026-11-12T19:02:41+00:00",
-     "full": "Jørgen Nordhagen"
-    },
-    {
-     "name": "L'Hôte Antoine",
-     "id": 4934,
-     "cc": "fr",
-     "nat": "France",
-     "price": 7,
-     "closed": "2026-11-12T19:03:11+00:00",
-     "full": "Antoine L'Hôte"
-    },
-    {
-     "name": "Shmidt Artem",
-     "id": 15514,
-     "cc": "us",
-     "nat": "United States",
-     "price": 7,
-     "closed": "2026-11-12T19:03:29+00:00",
-     "full": "Artem Shmidt"
-    },
-    {
-     "name": "Leonard Michael",
-     "id": 15396,
-     "cc": "ca",
-     "nat": "Canada",
-     "price": 6,
-     "closed": "2026-11-12T19:03:54+00:00",
-     "full": "Michael Leonard"
-    },
-    {
-     "name": "August Andrew",
-     "id": 4957,
-     "cc": "us",
-     "nat": "United States",
-     "price": 8,
-     "closed": "2026-11-13T11:07:01+00:00",
-     "full": "Andrew August"
     }
    ]
   },
@@ -1396,7 +1405,7 @@
    "player": "TheBigDog",
    "won": 3,
    "budget": 98,
-   "bids": 58,
+   "bids": 61,
    "riders": [
     {
      "name": "González Abner",
@@ -1483,7 +1492,7 @@
    "player": "Agap",
    "won": 2,
    "budget": 193,
-   "bids": 103,
+   "bids": 77,
    "riders": [
     {
      "name": "Warbasse Larry",
@@ -1523,5 +1532,5 @@
    ]
   }
  },
- "checked": "2026-11-13T18:18Z"
+ "checked": "2026-11-13T18:27Z"
 }
