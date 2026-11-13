@@ -4,9 +4,9 @@
  "teams": {
   "NsN": {
    "player": "AfonsoP1",
-   "won": 10,
-   "budget": 22,
-   "bids": 22,
+   "won": 11,
+   "budget": 17,
+   "bids": 17,
    "riders": [
     {
      "name": "Sommer Jan",
@@ -61,6 +61,15 @@
      "price": 10,
      "closed": "2026-11-12T18:10:04+00:00",
      "full": "Benjamín Noval"
+    },
+    {
+     "name": "Rex Tim",
+     "id": 8452,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 5,
+     "closed": "2026-11-13T11:45:19+00:00",
+     "full": "Tim Rex"
     },
     {
      "name": "Kamp Alexander",
@@ -342,7 +351,7 @@
    "player": "Tom_Bryant",
    "won": 4,
    "budget": 196,
-   "bids": 100,
+   "bids": 81,
    "riders": [
     {
      "name": "Conor Paul",
@@ -750,37 +759,11 @@
     }
    ]
   },
-  "Kelme Costa Blanca": {
-   "player": "JgCol",
-   "won": 2,
-   "budget": 193,
-   "bids": 32,
-   "riders": [
-    {
-     "name": "Ardila Camilo",
-     "id": 7055,
-     "cc": "co",
-     "nat": "Colombia",
-     "price": 1,
-     "closed": "2026-11-12T18:01:36+00:00",
-     "full": "Camilo Ardila"
-    },
-    {
-     "name": "Rivera Brandon",
-     "id": 7090,
-     "cc": "co",
-     "nat": "Colombia",
-     "price": 6,
-     "closed": "2026-11-12T18:26:23+00:00",
-     "full": "Brandon Rivera"
-    }
-   ]
-  },
   "Royal Bank of Scotland": {
    "player": "Sheep_Boy123",
    "won": 2,
    "budget": 193,
-   "bids": 33,
+   "bids": 19,
    "riders": [
     {
      "name": "Rowe Elliot",
@@ -932,6 +915,32 @@
     }
    ]
   },
+  "Kelme Costa Blanca": {
+   "player": "JgCol",
+   "won": 2,
+   "budget": 193,
+   "bids": 68,
+   "riders": [
+    {
+     "name": "Ardila Camilo",
+     "id": 7055,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 1,
+     "closed": "2026-11-12T18:01:36+00:00",
+     "full": "Camilo Ardila"
+    },
+    {
+     "name": "Rivera Brandon",
+     "id": 7090,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 6,
+     "closed": "2026-11-12T18:26:23+00:00",
+     "full": "Brandon Rivera"
+    }
+   ]
+  },
   "Milka": {
    "player": "danielmiko",
    "won": 2,
@@ -1010,5 +1019,5 @@
    ]
   }
  },
- "checked": "2026-11-13T11:07Z"
+ "checked": "2026-11-13T11:45Z"
 }
