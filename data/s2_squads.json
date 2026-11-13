@@ -998,6 +998,68 @@
     }
    ]
   },
+  "FEIRENSE - BEECELER": {
+   "player": "joaozinhoaac",
+   "won": 6,
+   "budget": 164,
+   "bids": 43,
+   "riders": [
+    {
+     "name": "van Dijke Tim",
+     "id": 7308,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 20,
+     "closed": "2026-11-13T01:31:36+00:00",
+     "full": "Tim van Dijke"
+    },
+    {
+     "name": "López Juan Pedro",
+     "id": 6971,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 6,
+     "closed": "2026-11-12T18:02:49+00:00",
+     "full": "Juan Pedro López"
+    },
+    {
+     "name": "Barbosa Diogo",
+     "id": 7433,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-13T18:15:28+00:00",
+     "full": "Diogo Barbosa"
+    },
+    {
+     "name": "Isasa Xabier",
+     "id": 14922,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 1,
+     "closed": "2026-11-13T18:15:51+00:00",
+     "full": "Xabier Isasa"
+    },
+    {
+     "name": "Carvalho Rui",
+     "id": 14560,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-13T18:16:12+00:00",
+     "full": "Rui Carvalho"
+    },
+    {
+     "name": "Miquel Pau",
+     "id": 14953,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 7,
+     "closed": "2026-11-13T20:52:50+00:00",
+     "full": "Pau Miquel"
+    }
+   ]
+  },
   "Talkwalker": {
    "player": "benjong",
    "won": 6,
@@ -1057,68 +1119,6 @@
      "price": 5,
      "closed": "2026-11-13T18:02:11+00:00",
      "full": "Matteo Malucelli"
-    }
-   ]
-  },
-  "B&B Hotels": {
-   "player": "Tom_Bryant",
-   "won": 6,
-   "budget": 162,
-   "bids": 73,
-   "riders": [
-    {
-     "name": "Schmid Mauro",
-     "id": 7193,
-     "cc": "ch",
-     "nat": "Switzerland",
-     "price": 25,
-     "closed": "2026-11-13T20:37:24+00:00",
-     "full": "Mauro Schmid"
-    },
-    {
-     "name": "Conor Paul",
-     "id": 11406,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-12T22:24:03+00:00",
-     "full": "Paul Conor"
-    },
-    {
-     "name": "Beaune Mavric",
-     "id": 10729,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-12T22:24:39+00:00",
-     "full": "Mavric Beaune"
-    },
-    {
-     "name": "Bracalente Diego",
-     "id": 8431,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 1,
-     "closed": "2026-11-12T22:48:07+00:00",
-     "full": "Diego Bracalente"
-    },
-    {
-     "name": "Van Kerckhove Seff",
-     "id": 11852,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 1,
-     "closed": "2026-11-12T22:50:44+00:00",
-     "full": "Seff Van Kerckhove"
-    },
-    {
-     "name": "Raccagni Noviero Andrea",
-     "id": 8455,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 9,
-     "closed": "2026-11-13T20:00:13+00:00",
-     "full": "Andrea Raccagni Noviero"
     }
    ]
   },
@@ -1184,6 +1184,68 @@
     }
    ]
   },
+  "B&B Hotels": {
+   "player": "Tom_Bryant",
+   "won": 6,
+   "budget": 162,
+   "bids": 93,
+   "riders": [
+    {
+     "name": "Schmid Mauro",
+     "id": 7193,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 25,
+     "closed": "2026-11-13T20:37:24+00:00",
+     "full": "Mauro Schmid"
+    },
+    {
+     "name": "Conor Paul",
+     "id": 11406,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-12T22:24:03+00:00",
+     "full": "Paul Conor"
+    },
+    {
+     "name": "Beaune Mavric",
+     "id": 10729,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-12T22:24:39+00:00",
+     "full": "Mavric Beaune"
+    },
+    {
+     "name": "Bracalente Diego",
+     "id": 8431,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 1,
+     "closed": "2026-11-12T22:48:07+00:00",
+     "full": "Diego Bracalente"
+    },
+    {
+     "name": "Van Kerckhove Seff",
+     "id": 11852,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 1,
+     "closed": "2026-11-12T22:50:44+00:00",
+     "full": "Seff Van Kerckhove"
+    },
+    {
+     "name": "Raccagni Noviero Andrea",
+     "id": 8455,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 9,
+     "closed": "2026-11-13T20:00:13+00:00",
+     "full": "Andrea Raccagni Noviero"
+    }
+   ]
+  },
   "CSC": {
    "player": "marsiscool",
    "won": 5,
@@ -1234,59 +1296,6 @@
      "price": 10,
      "closed": "2026-11-13T19:14:08+00:00",
      "full": "Andreas Kron"
-    }
-   ]
-  },
-  "FEIRENSE - BEECELER": {
-   "player": "joaozinhoaac",
-   "won": 5,
-   "budget": 171,
-   "bids": 50,
-   "riders": [
-    {
-     "name": "van Dijke Tim",
-     "id": 7308,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 20,
-     "closed": "2026-11-13T01:31:36+00:00",
-     "full": "Tim van Dijke"
-    },
-    {
-     "name": "López Juan Pedro",
-     "id": 6971,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 6,
-     "closed": "2026-11-12T18:02:49+00:00",
-     "full": "Juan Pedro López"
-    },
-    {
-     "name": "Barbosa Diogo",
-     "id": 7433,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 1,
-     "closed": "2026-11-13T18:15:28+00:00",
-     "full": "Diogo Barbosa"
-    },
-    {
-     "name": "Isasa Xabier",
-     "id": 14922,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 1,
-     "closed": "2026-11-13T18:15:51+00:00",
-     "full": "Xabier Isasa"
-    },
-    {
-     "name": "Carvalho Rui",
-     "id": 14560,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 1,
-     "closed": "2026-11-13T18:16:12+00:00",
-     "full": "Rui Carvalho"
     }
    ]
   },
@@ -1770,7 +1779,7 @@
    "player": "MarcelTestier",
    "won": 1,
    "budget": 196,
-   "bids": 113,
+   "bids": 95,
    "riders": [
     {
      "name": "Kämna Lennard",
@@ -1784,5 +1793,5 @@
    ]
   }
  },
- "checked": "2026-11-13T20:37Z"
+ "checked": "2026-11-13T20:53Z"
 }

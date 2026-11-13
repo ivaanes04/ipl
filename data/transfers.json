@@ -1728,5 +1728,15 @@
   "cc": "ch",
   "team": "B&B Hotels",
   "price": 25
+ },
+ {
+  "at": "2026-11-13T20:52:50+00:00",
+  "date": "2026-11-13",
+  "time": "21:52",
+  "rider": "Pau Miquel",
+  "id": 14953,
+  "cc": "es",
+  "team": "FEIRENSE - BEECELER",
+  "price": 7
  }
 ]
