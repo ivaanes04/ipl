@@ -1558,5 +1558,15 @@
   "cc": "be",
   "team": "Discovery Channel",
   "price": 14
+ },
+ {
+  "at": "2026-11-13T19:14:08+00:00",
+  "date": "2026-11-13",
+  "time": "20:14",
+  "rider": "Andreas Kron",
+  "id": 6201,
+  "cc": "dk",
+  "team": "CSC",
+  "price": 10
  }
 ]
