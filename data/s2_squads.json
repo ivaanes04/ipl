@@ -616,6 +616,77 @@
     }
    ]
   },
+  "Unibet Rose Rockets": {
+   "player": "firejohn",
+   "won": 7,
+   "budget": 92,
+   "bids": 31,
+   "riders": [
+    {
+     "name": "Kopecký Tomáš",
+     "id": 11230,
+     "cc": "cz",
+     "nat": "Czechia",
+     "price": 7,
+     "closed": "2026-11-12T21:18:59+00:00",
+     "full": "Tomáš Kopecký"
+    },
+    {
+     "name": "Dillier Silvan",
+     "id": 3392,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 4,
+     "closed": "2026-11-12T19:45:47+00:00",
+     "full": "Silvan Dillier"
+    },
+    {
+     "name": "Blaise Arthur",
+     "id": 15684,
+     "cc": "fr",
+     "nat": "France",
+     "price": 2,
+     "closed": "2026-11-12T19:45:54+00:00",
+     "full": "Arthur Blaise"
+    },
+    {
+     "name": "Mouris Wessel",
+     "id": 8135,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 6,
+     "closed": "2026-11-12T19:47:18+00:00",
+     "full": "Wessel Mouris"
+    },
+    {
+     "name": "Alaphilippe Julian",
+     "id": 3365,
+     "cc": "fr",
+     "nat": "France",
+     "price": 82,
+     "closed": "2026-11-12T21:00:02+00:00",
+     "full": "Julian Alaphilippe"
+    },
+    {
+     "name": "Geleijn Owen",
+     "id": 7301,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 1,
+     "closed": "2026-11-13T19:25:13+00:00",
+     "full": "Owen Geleijn"
+    },
+    {
+     "name": "Uhlig Henri",
+     "id": 7206,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 6,
+     "closed": "2026-11-13T19:26:04+00:00",
+     "full": "Henri Uhlig"
+    }
+   ]
+  },
   "Portugal in 150 Seconds": {
    "player": "Bessadelas",
    "won": 6,
@@ -861,68 +932,6 @@
      "price": 6,
      "closed": "2026-11-13T18:07:29+00:00",
      "full": "Ådne Holter"
-    }
-   ]
-  },
-  "Unibet Rose Rockets": {
-   "player": "firejohn",
-   "won": 6,
-   "budget": 98,
-   "bids": 37,
-   "riders": [
-    {
-     "name": "Kopecký Tomáš",
-     "id": 11230,
-     "cc": "cz",
-     "nat": "Czechia",
-     "price": 7,
-     "closed": "2026-11-12T21:18:59+00:00",
-     "full": "Tomáš Kopecký"
-    },
-    {
-     "name": "Dillier Silvan",
-     "id": 3392,
-     "cc": "ch",
-     "nat": "Switzerland",
-     "price": 4,
-     "closed": "2026-11-12T19:45:47+00:00",
-     "full": "Silvan Dillier"
-    },
-    {
-     "name": "Blaise Arthur",
-     "id": 15684,
-     "cc": "fr",
-     "nat": "France",
-     "price": 2,
-     "closed": "2026-11-12T19:45:54+00:00",
-     "full": "Arthur Blaise"
-    },
-    {
-     "name": "Mouris Wessel",
-     "id": 8135,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 6,
-     "closed": "2026-11-12T19:47:18+00:00",
-     "full": "Wessel Mouris"
-    },
-    {
-     "name": "Alaphilippe Julian",
-     "id": 3365,
-     "cc": "fr",
-     "nat": "France",
-     "price": 82,
-     "closed": "2026-11-12T21:00:02+00:00",
-     "full": "Julian Alaphilippe"
-    },
-    {
-     "name": "Geleijn Owen",
-     "id": 7301,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 1,
-     "closed": "2026-11-13T19:25:13+00:00",
-     "full": "Owen Geleijn"
     }
    ]
   },
@@ -1658,5 +1667,5 @@
    ]
   }
  },
- "checked": "2026-11-13T19:25Z"
+ "checked": "2026-11-13T19:28Z"
 }
