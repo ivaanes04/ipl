@@ -1698,5 +1698,15 @@
   "cc": "gb",
   "team": "Royal Bank of Scotland",
   "price": 19
+ },
+ {
+  "at": "2026-11-13T20:29:55+00:00",
+  "date": "2026-11-13",
+  "time": "21:29",
+  "rider": "Henok Mulubrhan",
+  "id": 7370,
+  "cc": "er",
+  "team": "Kelme Costa Blanca",
+  "price": 6
  }
 ]

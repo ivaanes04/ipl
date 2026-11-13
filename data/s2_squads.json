@@ -1581,6 +1581,50 @@
     }
    ]
   },
+  "Kelme Costa Blanca": {
+   "player": "JgCol",
+   "won": 4,
+   "budget": 180,
+   "bids": 23,
+   "riders": [
+    {
+     "name": "Ardila Camilo",
+     "id": 7055,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 1,
+     "closed": "2026-11-12T18:01:36+00:00",
+     "full": "Camilo Ardila"
+    },
+    {
+     "name": "Rivera Brandon",
+     "id": 7090,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 6,
+     "closed": "2026-11-12T18:26:23+00:00",
+     "full": "Brandon Rivera"
+    },
+    {
+     "name": "Coquard Bryan",
+     "id": 3060,
+     "cc": "fr",
+     "nat": "France",
+     "price": 7,
+     "closed": "2026-11-13T19:17:55+00:00",
+     "full": "Bryan Coquard"
+    },
+    {
+     "name": "Mulubrhan Henok",
+     "id": 7370,
+     "cc": "er",
+     "nat": "Eritrea",
+     "price": 6,
+     "closed": "2026-11-13T20:29:55+00:00",
+     "full": "Henok Mulubrhan"
+    }
+   ]
+  },
   "Liberty Seguros": {
    "player": "Leandro_jx_",
    "won": 4,
@@ -1669,41 +1713,6 @@
     }
    ]
   },
-  "Kelme Costa Blanca": {
-   "player": "JgCol",
-   "won": 3,
-   "budget": 186,
-   "bids": 29,
-   "riders": [
-    {
-     "name": "Ardila Camilo",
-     "id": 7055,
-     "cc": "co",
-     "nat": "Colombia",
-     "price": 1,
-     "closed": "2026-11-12T18:01:36+00:00",
-     "full": "Camilo Ardila"
-    },
-    {
-     "name": "Rivera Brandon",
-     "id": 7090,
-     "cc": "co",
-     "nat": "Colombia",
-     "price": 6,
-     "closed": "2026-11-12T18:26:23+00:00",
-     "full": "Brandon Rivera"
-    },
-    {
-     "name": "Coquard Bryan",
-     "id": 3060,
-     "cc": "fr",
-     "nat": "France",
-     "price": 7,
-     "closed": "2026-11-13T19:17:55+00:00",
-     "full": "Bryan Coquard"
-    }
-   ]
-  },
   "Royal Bank of Scotland": {
    "player": "Sheep_Boy123",
    "won": 3,
@@ -1757,5 +1766,5 @@
    ]
   }
  },
- "checked": "2026-11-13T20:29Z"
+ "checked": "2026-11-13T20:30Z"
 }
