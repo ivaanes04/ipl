@@ -524,6 +524,50 @@
     }
    ]
   },
+  "CSC": {
+   "player": "marsiscool",
+   "won": 4,
+   "budget": 166,
+   "bids": 63,
+   "riders": [
+    {
+     "name": "Withen Philipsen Albert",
+     "id": 9391,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 20,
+     "closed": "2026-11-13T15:17:17+00:00",
+     "full": "Albert Withen Philipsen"
+    },
+    {
+     "name": "Wändel Elias",
+     "id": 11812,
+     "cc": "se",
+     "nat": "Sweden",
+     "price": 1,
+     "closed": "2026-11-12T18:04:06+00:00",
+     "full": "Elias Wändel"
+    },
+    {
+     "name": "Kaczmarek Jakub",
+     "id": 3790,
+     "cc": "pl",
+     "nat": "Poland",
+     "price": 1,
+     "closed": "2026-11-12T18:04:49+00:00",
+     "full": "Jakub Kaczmarek"
+    },
+    {
+     "name": "Silva Thomas",
+     "id": 7798,
+     "cc": "uy",
+     "nat": "Uruguay",
+     "price": 12,
+     "closed": "2026-11-13T07:11:33+00:00",
+     "full": "Thomas Silva"
+    }
+   ]
+  },
   "B&B Hotels": {
    "player": "Tom_Bryant",
    "won": 4,
@@ -831,41 +875,6 @@
     }
    ]
   },
-  "CSC": {
-   "player": "marsiscool",
-   "won": 3,
-   "budget": 186,
-   "bids": 83,
-   "riders": [
-    {
-     "name": "Wändel Elias",
-     "id": 11812,
-     "cc": "se",
-     "nat": "Sweden",
-     "price": 1,
-     "closed": "2026-11-12T18:04:06+00:00",
-     "full": "Elias Wändel"
-    },
-    {
-     "name": "Kaczmarek Jakub",
-     "id": 3790,
-     "cc": "pl",
-     "nat": "Poland",
-     "price": 1,
-     "closed": "2026-11-12T18:04:49+00:00",
-     "full": "Jakub Kaczmarek"
-    },
-    {
-     "name": "Silva Thomas",
-     "id": 7798,
-     "cc": "uy",
-     "nat": "Uruguay",
-     "price": 12,
-     "closed": "2026-11-13T07:11:33+00:00",
-     "full": "Thomas Silva"
-    }
-   ]
-  },
   "Bahrain Victorious": {
    "player": "Daagz",
    "won": 3,
@@ -1127,5 +1136,5 @@
    ]
   }
  },
- "checked": "2026-11-13T15:15Z"
+ "checked": "2026-11-13T15:17Z"
 }

@@ -998,5 +998,15 @@
   "cc": "lu",
   "team": "Renova",
   "price": 23
+ },
+ {
+  "at": "2026-11-13T15:17:17+00:00",
+  "date": "2026-11-13",
+  "time": "16:17",
+  "rider": "Albert Withen Philipsen",
+  "id": 9391,
+  "cc": "dk",
+  "team": "CSC",
+  "price": 20
  }
 ]
