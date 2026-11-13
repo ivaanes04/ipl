@@ -139,8 +139,8 @@
   "Tudor": {
    "player": "Grandpa",
    "won": 9,
-   "budget": 145,
-   "bids": 90,
+   "budget": 105,
+   "bids": 92,
    "riders": [
     {
      "name": "Nerurkar Lukas",
@@ -864,6 +864,59 @@
     }
    ]
   },
+  "FEIRENSE - BEECELER": {
+   "player": "joaozinhoaac",
+   "won": 5,
+   "budget": 171,
+   "bids": 30,
+   "riders": [
+    {
+     "name": "van Dijke Tim",
+     "id": 7308,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 20,
+     "closed": "2026-11-13T01:31:36+00:00",
+     "full": "Tim van Dijke"
+    },
+    {
+     "name": "López Juan Pedro",
+     "id": 6971,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 6,
+     "closed": "2026-11-12T18:02:49+00:00",
+     "full": "Juan Pedro López"
+    },
+    {
+     "name": "Barbosa Diogo",
+     "id": 7433,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-13T18:15:28+00:00",
+     "full": "Diogo Barbosa"
+    },
+    {
+     "name": "Isasa Xabier",
+     "id": 14922,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 1,
+     "closed": "2026-11-13T18:15:51+00:00",
+     "full": "Xabier Isasa"
+    },
+    {
+     "name": "Carvalho Rui",
+     "id": 14560,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-13T18:16:12+00:00",
+     "full": "Rui Carvalho"
+    }
+   ]
+  },
   "MTN Qhubeka": {
    "player": "Joewhiteley0711",
    "won": 5,
@@ -967,59 +1020,6 @@
      "price": 5,
      "closed": "2026-11-13T18:07:13+00:00",
      "full": "Riley Pickrell"
-    }
-   ]
-  },
-  "FEIRENSE - BEECELER": {
-   "player": "joaozinhoaac",
-   "won": 5,
-   "budget": 130,
-   "bids": 30,
-   "riders": [
-    {
-     "name": "van Dijke Tim",
-     "id": 7308,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 20,
-     "closed": "2026-11-13T01:31:36+00:00",
-     "full": "Tim van Dijke"
-    },
-    {
-     "name": "López Juan Pedro",
-     "id": 6971,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 6,
-     "closed": "2026-11-12T18:02:49+00:00",
-     "full": "Juan Pedro López"
-    },
-    {
-     "name": "Barbosa Diogo",
-     "id": 7433,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 1,
-     "closed": "2026-11-13T18:15:28+00:00",
-     "full": "Diogo Barbosa"
-    },
-    {
-     "name": "Isasa Xabier",
-     "id": 14922,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 1,
-     "closed": "2026-11-13T18:15:51+00:00",
-     "full": "Xabier Isasa"
-    },
-    {
-     "name": "Carvalho Rui",
-     "id": 14560,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 1,
-     "closed": "2026-11-13T18:16:12+00:00",
-     "full": "Rui Carvalho"
     }
    ]
   },
@@ -1362,7 +1362,7 @@
    "player": "Tom_Bryant",
    "won": 4,
    "budget": 196,
-   "bids": 99,
+   "bids": 105,
    "riders": [
     {
      "name": "Conor Paul",
@@ -1577,5 +1577,5 @@
    ]
   }
  },
- "checked": "2026-11-13T18:47Z"
+ "checked": "2026-11-13T18:49Z"
 }
