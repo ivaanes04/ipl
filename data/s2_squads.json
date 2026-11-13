@@ -300,7 +300,7 @@
    "player": "Pena Guevara",
    "won": 8,
    "budget": 114,
-   "bids": 52,
+   "bids": 58,
    "riders": [
     {
      "name": "Oliveira Rui",
@@ -451,7 +451,7 @@
    "player": "benjong",
    "won": 6,
    "budget": 174,
-   "bids": 51,
+   "bids": 52,
    "riders": [
     {
      "name": "Kockelmann Mathieu",
@@ -621,6 +621,59 @@
      "price": 3,
      "closed": "2026-11-13T18:02:01+00:00",
      "full": "Federico Iacomoni"
+    }
+   ]
+  },
+  "UnoX": {
+   "player": "IvanEs04",
+   "won": 5,
+   "budget": 167,
+   "bids": 21,
+   "riders": [
+    {
+     "name": "Halland Johannessen Anders",
+     "id": 13451,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 10,
+     "closed": "2026-11-13T15:00:20+00:00",
+     "full": "Anders Halland Johannessen"
+    },
+    {
+     "name": "Larsen Niklas",
+     "id": 5752,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 7,
+     "closed": "2026-11-12T18:05:05+00:00",
+     "full": "Niklas Larsen"
+    },
+    {
+     "name": "Dalby Simon",
+     "id": 15284,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 6,
+     "closed": "2026-11-12T18:05:11+00:00",
+     "full": "Simon Dalby"
+    },
+    {
+     "name": "Søjberg Pedersen Rasmus",
+     "id": 15360,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 6,
+     "closed": "2026-11-13T18:02:41+00:00",
+     "full": "Rasmus Søjberg Pedersen"
+    },
+    {
+     "name": "Haugland Kasper",
+     "id": 9397,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 4,
+     "closed": "2026-11-13T18:03:16+00:00",
+     "full": "Kasper Haugland"
     }
    ]
   },
@@ -924,50 +977,6 @@
     }
    ]
   },
-  "UnoX": {
-   "player": "IvanEs04",
-   "won": 4,
-   "budget": 171,
-   "bids": 25,
-   "riders": [
-    {
-     "name": "Halland Johannessen Anders",
-     "id": 13451,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 10,
-     "closed": "2026-11-13T15:00:20+00:00",
-     "full": "Anders Halland Johannessen"
-    },
-    {
-     "name": "Larsen Niklas",
-     "id": 5752,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 7,
-     "closed": "2026-11-12T18:05:05+00:00",
-     "full": "Niklas Larsen"
-    },
-    {
-     "name": "Dalby Simon",
-     "id": 15284,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 6,
-     "closed": "2026-11-12T18:05:11+00:00",
-     "full": "Simon Dalby"
-    },
-    {
-     "name": "Søjberg Pedersen Rasmus",
-     "id": 15360,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 6,
-     "closed": "2026-11-13T18:02:41+00:00",
-     "full": "Rasmus Søjberg Pedersen"
-    }
-   ]
-  },
   "CSC": {
    "player": "marsiscool",
    "won": 4,
@@ -1060,7 +1069,7 @@
    "player": "Tom_Bryant",
    "won": 4,
    "budget": 196,
-   "bids": 76,
+   "bids": 77,
    "riders": [
     {
      "name": "Conor Paul",
@@ -1148,7 +1157,7 @@
    "player": "Joao Negrao",
    "won": 3,
    "budget": 176,
-   "bids": 50,
+   "bids": 58,
    "riders": [
     {
      "name": "Parra José Félix",
@@ -1357,7 +1366,7 @@
    "player": "Agap",
    "won": 2,
    "budget": 193,
-   "bids": 81,
+   "bids": 103,
    "riders": [
     {
      "name": "Warbasse Larry",
@@ -1397,5 +1406,5 @@
    ]
   }
  },
- "checked": "2026-11-13T18:02Z"
+ "checked": "2026-11-13T18:03Z"
 }

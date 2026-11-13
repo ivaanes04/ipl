@@ -1298,5 +1298,15 @@
   "cc": "dk",
   "team": "UnoX",
   "price": 6
+ },
+ {
+  "at": "2026-11-13T18:03:16+00:00",
+  "date": "2026-11-13",
+  "time": "19:03",
+  "rider": "Kasper Haugland",
+  "id": 9397,
+  "cc": "no",
+  "team": "UnoX",
+  "price": 4
  }
 ]
