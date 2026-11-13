@@ -1448,5 +1448,25 @@
   "cc": "si",
   "team": "Tudor",
   "price": 15
+ },
+ {
+  "at": "2026-11-13T18:28:06+00:00",
+  "date": "2026-11-13",
+  "time": "19:28",
+  "rider": "Tibor del Grosso",
+  "id": 15381,
+  "cc": "nl",
+  "team": "Tudor",
+  "price": 15
+ },
+ {
+  "at": "2026-11-13T18:28:51+00:00",
+  "date": "2026-11-13",
+  "time": "19:28",
+  "rider": "Madis Mihkels",
+  "id": 14392,
+  "cc": "ee",
+  "team": "Tudor",
+  "price": 12
  }
 ]
