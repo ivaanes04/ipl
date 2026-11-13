@@ -136,6 +136,95 @@
     }
    ]
   },
+  "Unibet Rose Rockets": {
+   "player": "firejohn",
+   "won": 9,
+   "budget": 89,
+   "bids": 28,
+   "riders": [
+    {
+     "name": "Kopecký Tomáš",
+     "id": 11230,
+     "cc": "cz",
+     "nat": "Czechia",
+     "price": 7,
+     "closed": "2026-11-12T21:18:59+00:00",
+     "full": "Tomáš Kopecký"
+    },
+    {
+     "name": "Dillier Silvan",
+     "id": 3392,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 4,
+     "closed": "2026-11-12T19:45:47+00:00",
+     "full": "Silvan Dillier"
+    },
+    {
+     "name": "Blaise Arthur",
+     "id": 15684,
+     "cc": "fr",
+     "nat": "France",
+     "price": 2,
+     "closed": "2026-11-12T19:45:54+00:00",
+     "full": "Arthur Blaise"
+    },
+    {
+     "name": "Mouris Wessel",
+     "id": 8135,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 6,
+     "closed": "2026-11-12T19:47:18+00:00",
+     "full": "Wessel Mouris"
+    },
+    {
+     "name": "Alaphilippe Julian",
+     "id": 3365,
+     "cc": "fr",
+     "nat": "France",
+     "price": 82,
+     "closed": "2026-11-12T21:00:02+00:00",
+     "full": "Julian Alaphilippe"
+    },
+    {
+     "name": "Geleijn Owen",
+     "id": 7301,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 1,
+     "closed": "2026-11-13T19:25:13+00:00",
+     "full": "Owen Geleijn"
+    },
+    {
+     "name": "Uhlig Henri",
+     "id": 7206,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 6,
+     "closed": "2026-11-13T19:26:04+00:00",
+     "full": "Henri Uhlig"
+    },
+    {
+     "name": "Kretschy Moritz",
+     "id": 7577,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 1,
+     "closed": "2026-11-13T19:29:18+00:00",
+     "full": "Moritz Kretschy"
+    },
+    {
+     "name": "Gal Ryan",
+     "id": 9252,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 2,
+     "closed": "2026-11-13T19:30:22+00:00",
+     "full": "Ryan Gal"
+    }
+   ]
+  },
   "Tudor": {
    "player": "Grandpa",
    "won": 9,
@@ -462,86 +551,6 @@
      "price": 2,
      "closed": "2026-11-13T18:00:45+00:00",
      "full": "Marceli Boguslawski"
-    }
-   ]
-  },
-  "Unibet Rose Rockets": {
-   "player": "firejohn",
-   "won": 8,
-   "budget": 91,
-   "bids": 30,
-   "riders": [
-    {
-     "name": "Kopecký Tomáš",
-     "id": 11230,
-     "cc": "cz",
-     "nat": "Czechia",
-     "price": 7,
-     "closed": "2026-11-12T21:18:59+00:00",
-     "full": "Tomáš Kopecký"
-    },
-    {
-     "name": "Dillier Silvan",
-     "id": 3392,
-     "cc": "ch",
-     "nat": "Switzerland",
-     "price": 4,
-     "closed": "2026-11-12T19:45:47+00:00",
-     "full": "Silvan Dillier"
-    },
-    {
-     "name": "Blaise Arthur",
-     "id": 15684,
-     "cc": "fr",
-     "nat": "France",
-     "price": 2,
-     "closed": "2026-11-12T19:45:54+00:00",
-     "full": "Arthur Blaise"
-    },
-    {
-     "name": "Mouris Wessel",
-     "id": 8135,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 6,
-     "closed": "2026-11-12T19:47:18+00:00",
-     "full": "Wessel Mouris"
-    },
-    {
-     "name": "Alaphilippe Julian",
-     "id": 3365,
-     "cc": "fr",
-     "nat": "France",
-     "price": 82,
-     "closed": "2026-11-12T21:00:02+00:00",
-     "full": "Julian Alaphilippe"
-    },
-    {
-     "name": "Geleijn Owen",
-     "id": 7301,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 1,
-     "closed": "2026-11-13T19:25:13+00:00",
-     "full": "Owen Geleijn"
-    },
-    {
-     "name": "Uhlig Henri",
-     "id": 7206,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 6,
-     "closed": "2026-11-13T19:26:04+00:00",
-     "full": "Henri Uhlig"
-    },
-    {
-     "name": "Kretschy Moritz",
-     "id": 7577,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 1,
-     "closed": "2026-11-13T19:29:18+00:00",
-     "full": "Moritz Kretschy"
     }
    ]
   },
@@ -1059,6 +1068,59 @@
     }
    ]
   },
+  "CSC": {
+   "player": "marsiscool",
+   "won": 5,
+   "budget": 156,
+   "bids": 34,
+   "riders": [
+    {
+     "name": "Withen Philipsen Albert",
+     "id": 9391,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 20,
+     "closed": "2026-11-13T15:17:17+00:00",
+     "full": "Albert Withen Philipsen"
+    },
+    {
+     "name": "Wändel Elias",
+     "id": 11812,
+     "cc": "se",
+     "nat": "Sweden",
+     "price": 1,
+     "closed": "2026-11-12T18:04:06+00:00",
+     "full": "Elias Wändel"
+    },
+    {
+     "name": "Kaczmarek Jakub",
+     "id": 3790,
+     "cc": "pl",
+     "nat": "Poland",
+     "price": 1,
+     "closed": "2026-11-12T18:04:49+00:00",
+     "full": "Jakub Kaczmarek"
+    },
+    {
+     "name": "Silva Thomas",
+     "id": 7798,
+     "cc": "uy",
+     "nat": "Uruguay",
+     "price": 12,
+     "closed": "2026-11-13T07:11:33+00:00",
+     "full": "Thomas Silva"
+    },
+    {
+     "name": "Kron Andreas",
+     "id": 6201,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 10,
+     "closed": "2026-11-13T19:14:08+00:00",
+     "full": "Andreas Kron"
+    }
+   ]
+  },
   "Modern Adventure": {
    "player": "seancoll",
    "won": 5,
@@ -1109,112 +1171,6 @@
      "price": 5,
      "closed": "2026-11-13T18:07:13+00:00",
      "full": "Riley Pickrell"
-    }
-   ]
-  },
-  "CSC": {
-   "player": "marsiscool",
-   "won": 5,
-   "budget": 156,
-   "bids": 52,
-   "riders": [
-    {
-     "name": "Withen Philipsen Albert",
-     "id": 9391,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 20,
-     "closed": "2026-11-13T15:17:17+00:00",
-     "full": "Albert Withen Philipsen"
-    },
-    {
-     "name": "Wändel Elias",
-     "id": 11812,
-     "cc": "se",
-     "nat": "Sweden",
-     "price": 1,
-     "closed": "2026-11-12T18:04:06+00:00",
-     "full": "Elias Wändel"
-    },
-    {
-     "name": "Kaczmarek Jakub",
-     "id": 3790,
-     "cc": "pl",
-     "nat": "Poland",
-     "price": 1,
-     "closed": "2026-11-12T18:04:49+00:00",
-     "full": "Jakub Kaczmarek"
-    },
-    {
-     "name": "Silva Thomas",
-     "id": 7798,
-     "cc": "uy",
-     "nat": "Uruguay",
-     "price": 12,
-     "closed": "2026-11-13T07:11:33+00:00",
-     "full": "Thomas Silva"
-    },
-    {
-     "name": "Kron Andreas",
-     "id": 6201,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 10,
-     "closed": "2026-11-13T19:14:08+00:00",
-     "full": "Andreas Kron"
-    }
-   ]
-  },
-  "Biesse - Carrera - Premac": {
-   "player": "Hübi",
-   "won": 5,
-   "budget": 166,
-   "bids": 71,
-   "riders": [
-    {
-     "name": "Isidore Noa",
-     "id": 15416,
-     "cc": "fr",
-     "nat": "France",
-     "price": 8,
-     "closed": "2026-11-13T14:34:54+00:00",
-     "full": "Noa Isidore"
-    },
-    {
-     "name": "Covi Alessandro",
-     "id": 7093,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 5,
-     "closed": "2026-11-13T05:21:20+00:00",
-     "full": "Alessandro Covi"
-    },
-    {
-     "name": "Sparfel Aubin",
-     "id": 9427,
-     "cc": "fr",
-     "nat": "France",
-     "price": 9,
-     "closed": "2026-11-13T14:37:03+00:00",
-     "full": "Aubin Sparfel"
-    },
-    {
-     "name": "Maestri Mirco",
-     "id": 5676,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 7,
-     "closed": "2026-11-12T18:47:42+00:00",
-     "full": "Mirco Maestri"
-    },
-    {
-     "name": "Magagnotti Alessio",
-     "id": 5538,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 5,
-     "closed": "2026-11-13T18:50:29+00:00",
-     "full": "Alessio Magagnotti"
     }
    ]
   },
@@ -1321,6 +1277,59 @@
      "price": 1,
      "closed": "2026-11-13T14:41:02+00:00",
      "full": "Jesús del Pino"
+    }
+   ]
+  },
+  "Biesse - Carrera - Premac": {
+   "player": "Hübi",
+   "won": 5,
+   "budget": 166,
+   "bids": 115,
+   "riders": [
+    {
+     "name": "Isidore Noa",
+     "id": 15416,
+     "cc": "fr",
+     "nat": "France",
+     "price": 8,
+     "closed": "2026-11-13T14:34:54+00:00",
+     "full": "Noa Isidore"
+    },
+    {
+     "name": "Covi Alessandro",
+     "id": 7093,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 5,
+     "closed": "2026-11-13T05:21:20+00:00",
+     "full": "Alessandro Covi"
+    },
+    {
+     "name": "Sparfel Aubin",
+     "id": 9427,
+     "cc": "fr",
+     "nat": "France",
+     "price": 9,
+     "closed": "2026-11-13T14:37:03+00:00",
+     "full": "Aubin Sparfel"
+    },
+    {
+     "name": "Maestri Mirco",
+     "id": 5676,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 7,
+     "closed": "2026-11-12T18:47:42+00:00",
+     "full": "Mirco Maestri"
+    },
+    {
+     "name": "Magagnotti Alessio",
+     "id": 5538,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 5,
+     "closed": "2026-11-13T18:50:29+00:00",
+     "full": "Alessio Magagnotti"
     }
    ]
   },
@@ -1557,7 +1566,7 @@
    "player": "TheBigDog",
    "won": 4,
    "budget": 97,
-   "bids": 60,
+   "bids": 49,
    "riders": [
     {
      "name": "González Abner",
@@ -1676,5 +1685,5 @@
    ]
   }
  },
- "checked": "2026-11-13T19:29Z"
+ "checked": "2026-11-13T19:32Z"
 }

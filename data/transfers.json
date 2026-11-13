@@ -883,21 +883,21 @@
   "at": "2026-11-13T14:34:54+00:00",
   "date": "2026-11-13",
   "time": "15:34",
-  "rider": "Noa Isidore",
-  "id": 15416,
-  "cc": "fr",
-  "team": "Biesse - Carrera - Premac",
-  "price": 8
- },
- {
-  "at": "2026-11-13T14:34:54+00:00",
-  "date": "2026-11-13",
-  "time": "15:34",
   "rider": "Vadim Pronskiy",
   "id": 7052,
   "cc": "kz",
   "team": "Astana",
   "price": 1
+ },
+ {
+  "at": "2026-11-13T14:34:54+00:00",
+  "date": "2026-11-13",
+  "time": "15:34",
+  "rider": "Noa Isidore",
+  "id": 15416,
+  "cc": "fr",
+  "team": "Biesse - Carrera - Premac",
+  "price": 8
  },
  {
   "at": "2026-11-13T14:36:21+00:00",
@@ -1608,5 +1608,15 @@
   "cc": "de",
   "team": "Unibet Rose Rockets",
   "price": 1
+ },
+ {
+  "at": "2026-11-13T19:30:22+00:00",
+  "date": "2026-11-13",
+  "time": "20:30",
+  "rider": "Ryan Gal",
+  "id": 9252,
+  "cc": "nl",
+  "team": "Unibet Rose Rockets",
+  "price": 2
  }
 ]
