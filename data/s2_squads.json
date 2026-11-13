@@ -620,7 +620,7 @@
    "player": "Bessadelas",
    "won": 6,
    "budget": 175,
-   "bids": 45,
+   "bids": 20,
    "riders": [
     {
      "name": "Pinto Pedro",
@@ -1543,32 +1543,6 @@
     }
    ]
   },
-  "Discovery Channel": {
-   "player": "Agap",
-   "won": 2,
-   "budget": 193,
-   "bids": 55,
-   "riders": [
-    {
-     "name": "Warbasse Larry",
-     "id": 3026,
-     "cc": "us",
-     "nat": "United States",
-     "price": 6,
-     "closed": "2026-11-12T19:46:57+00:00",
-     "full": "Larry Warbasse"
-    },
-    {
-     "name": "Swirbul Keegan",
-     "id": 3930,
-     "cc": "us",
-     "nat": "United States",
-     "price": 1,
-     "closed": "2026-11-12T20:45:38+00:00",
-     "full": "Keegan Swirbul"
-    }
-   ]
-  },
   "Royal Bank of Scotland": {
    "player": "Sheep_Boy123",
    "won": 2,
@@ -1595,6 +1569,32 @@
     }
    ]
   },
+  "Discovery Channel": {
+   "player": "Agap",
+   "won": 2,
+   "budget": 193,
+   "bids": 99,
+   "riders": [
+    {
+     "name": "Warbasse Larry",
+     "id": 3026,
+     "cc": "us",
+     "nat": "United States",
+     "price": 6,
+     "closed": "2026-11-12T19:46:57+00:00",
+     "full": "Larry Warbasse"
+    },
+    {
+     "name": "Swirbul Keegan",
+     "id": 3930,
+     "cc": "us",
+     "nat": "United States",
+     "price": 1,
+     "closed": "2026-11-12T20:45:38+00:00",
+     "full": "Keegan Swirbul"
+    }
+   ]
+  },
   "Red Bull": {
    "player": "MarcelTestier",
    "won": 1,
@@ -1613,5 +1613,5 @@
    ]
   }
  },
- "checked": "2026-11-13T18:54Z"
+ "checked": "2026-11-13T18:56Z"
 }
