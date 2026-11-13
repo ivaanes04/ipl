@@ -1273,21 +1273,21 @@
   "at": "2026-11-13T18:02:11+00:00",
   "date": "2026-11-13",
   "time": "19:02",
-  "rider": "Matteo Malucelli",
-  "id": 4038,
-  "cc": "it",
-  "team": "Talkwalker",
-  "price": 5
- },
- {
-  "at": "2026-11-13T18:02:11+00:00",
-  "date": "2026-11-13",
-  "time": "19:02",
   "rider": "Florian Vermeersch",
   "id": 7037,
   "cc": "be",
   "team": "Deceuninck - Quick-Step",
   "price": 12
+ },
+ {
+  "at": "2026-11-13T18:02:11+00:00",
+  "date": "2026-11-13",
+  "time": "19:02",
+  "rider": "Matteo Malucelli",
+  "id": 4038,
+  "cc": "it",
+  "team": "Talkwalker",
+  "price": 5
  },
  {
   "at": "2026-11-13T18:02:41+00:00",
@@ -1708,5 +1708,25 @@
   "cc": "er",
   "team": "Kelme Costa Blanca",
   "price": 6
+ },
+ {
+  "at": "2026-11-13T20:32:16+00:00",
+  "date": "2026-11-13",
+  "time": "21:32",
+  "rider": "Quinn Simmons",
+  "id": 7076,
+  "cc": "us",
+  "team": "Deceuninck - Quick-Step",
+  "price": 18
+ },
+ {
+  "at": "2026-11-13T20:37:24+00:00",
+  "date": "2026-11-13",
+  "time": "21:37",
+  "rider": "Mauro Schmid",
+  "id": 7193,
+  "cc": "ch",
+  "team": "B&B Hotels",
+  "price": 25
  }
 ]
