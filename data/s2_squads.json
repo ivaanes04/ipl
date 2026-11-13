@@ -140,7 +140,7 @@
    "player": "Bouke",
    "won": 9,
    "budget": 157,
-   "bids": 12,
+   "bids": 40,
    "riders": [
     {
      "name": "Doubey Fabien",
@@ -851,7 +851,7 @@
    "player": "Joewhiteley0711",
    "won": 6,
    "budget": 134,
-   "bids": 10,
+   "bids": 14,
    "riders": [
     {
      "name": "Konychev Alexander",
@@ -1254,6 +1254,59 @@
     }
    ]
   },
+  "Astana": {
+   "player": "Francesco Bonavita",
+   "won": 5,
+   "budget": 96,
+   "bids": 7,
+   "riders": [
+    {
+     "name": "Vingegaard Jonas",
+     "id": 6195,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 100,
+     "closed": "2026-11-12T18:23:52+00:00",
+     "full": "Jonas Vingegaard"
+    },
+    {
+     "name": "Pronskiy Vadim",
+     "id": 7052,
+     "cc": "kz",
+     "nat": "Kazakhstan",
+     "price": 1,
+     "closed": "2026-11-13T14:34:54+00:00",
+     "full": "Vadim Pronskiy"
+    },
+    {
+     "name": "Remkhi Rudolf",
+     "id": 4482,
+     "cc": "kz",
+     "nat": "Kazakhstan",
+     "price": 1,
+     "closed": "2026-11-13T14:36:21+00:00",
+     "full": "Rudolf Remkhi"
+    },
+    {
+     "name": "Bagnara Luca",
+     "id": 8744,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 1,
+     "closed": "2026-11-13T14:38:09+00:00",
+     "full": "Luca Bagnara"
+    },
+    {
+     "name": "del Pino Jesús",
+     "id": 3227,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 1,
+     "closed": "2026-11-13T14:41:02+00:00",
+     "full": "Jesús del Pino"
+    }
+   ]
+  },
   "Bahrain Victorious": {
    "player": "Daagz",
    "won": 5,
@@ -1357,59 +1410,6 @@
      "price": 9,
      "closed": "2026-11-13T20:00:13+00:00",
      "full": "Andrea Raccagni Noviero"
-    }
-   ]
-  },
-  "Astana": {
-   "player": "Francesco Bonavita",
-   "won": 5,
-   "budget": 96,
-   "bids": 34,
-   "riders": [
-    {
-     "name": "Vingegaard Jonas",
-     "id": 6195,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 100,
-     "closed": "2026-11-12T18:23:52+00:00",
-     "full": "Jonas Vingegaard"
-    },
-    {
-     "name": "Pronskiy Vadim",
-     "id": 7052,
-     "cc": "kz",
-     "nat": "Kazakhstan",
-     "price": 1,
-     "closed": "2026-11-13T14:34:54+00:00",
-     "full": "Vadim Pronskiy"
-    },
-    {
-     "name": "Remkhi Rudolf",
-     "id": 4482,
-     "cc": "kz",
-     "nat": "Kazakhstan",
-     "price": 1,
-     "closed": "2026-11-13T14:36:21+00:00",
-     "full": "Rudolf Remkhi"
-    },
-    {
-     "name": "Bagnara Luca",
-     "id": 8744,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 1,
-     "closed": "2026-11-13T14:38:09+00:00",
-     "full": "Luca Bagnara"
-    },
-    {
-     "name": "del Pino Jesús",
-     "id": 3227,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 1,
-     "closed": "2026-11-13T14:41:02+00:00",
-     "full": "Jesús del Pino"
     }
    ]
   },
@@ -1730,5 +1730,5 @@
    ]
   }
  },
- "checked": "2026-11-13T20:16Z"
+ "checked": "2026-11-13T20:18Z"
 }
