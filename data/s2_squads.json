@@ -140,7 +140,7 @@
    "player": "Bouke",
    "won": 9,
    "budget": 157,
-   "bids": 40,
+   "bids": 31,
    "riders": [
     {
      "name": "Doubey Fabien",
@@ -318,7 +318,7 @@
    "player": "Grandpa",
    "won": 9,
    "budget": 105,
-   "bids": 84,
+   "bids": 94,
    "riders": [
     {
      "name": "Nerurkar Lukas",
@@ -400,6 +400,86 @@
      "price": 12,
      "closed": "2026-11-13T18:28:51+00:00",
      "full": "Madis Mihkels"
+    }
+   ]
+  },
+  "Ukraine Cycling Team": {
+   "player": "Riverside",
+   "won": 8,
+   "budget": 182,
+   "bids": 54,
+   "riders": [
+    {
+     "name": "Otruba Jakub",
+     "id": 6643,
+     "cc": "cz",
+     "nat": "Czechia",
+     "price": 2,
+     "closed": "2026-11-12T18:00:16+00:00",
+     "full": "Jakub Otruba"
+    },
+    {
+     "name": "Borresch Julian",
+     "id": 14508,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 1,
+     "closed": "2026-11-12T18:00:25+00:00",
+     "full": "Julian Borresch"
+    },
+    {
+     "name": "Geeraerts Ferre",
+     "id": 9803,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 1,
+     "closed": "2026-11-12T18:00:34+00:00",
+     "full": "Ferre Geeraerts"
+    },
+    {
+     "name": "Taillieu Aldo",
+     "id": 10530,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 2,
+     "closed": "2026-11-12T18:04:22+00:00",
+     "full": "Aldo Taillieu"
+    },
+    {
+     "name": "Kluckers Arthur",
+     "id": 6879,
+     "cc": "lu",
+     "nat": "Luxembourg",
+     "price": 4,
+     "closed": "2026-11-13T18:00:07+00:00",
+     "full": "Arthur Kluckers"
+    },
+    {
+     "name": "Geoghegan Hart Tao",
+     "id": 3924,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 4,
+     "closed": "2026-11-13T18:00:20+00:00",
+     "full": "Tao Geoghegan Hart"
+    },
+    {
+     "name": "Taaramäe Rein",
+     "id": 178,
+     "cc": "ee",
+     "nat": "Estonia",
+     "price": 2,
+     "closed": "2026-11-13T18:00:31+00:00",
+     "full": "Rein Taaramäe"
+    },
+    {
+     "name": "Boguslawski Marceli",
+     "id": 7329,
+     "cc": "pl",
+     "nat": "Poland",
+     "price": 2,
+     "closed": "2026-11-13T18:00:45+00:00",
+     "full": "Marceli Boguslawski"
     }
    ]
   },
@@ -560,86 +640,6 @@
      "price": 8,
      "closed": "2026-11-13T18:13:20+00:00",
      "full": "Marc Soler"
-    }
-   ]
-  },
-  "Ukraine Cycling Team": {
-   "player": "Riverside",
-   "won": 8,
-   "budget": 182,
-   "bids": 109,
-   "riders": [
-    {
-     "name": "Otruba Jakub",
-     "id": 6643,
-     "cc": "cz",
-     "nat": "Czechia",
-     "price": 2,
-     "closed": "2026-11-12T18:00:16+00:00",
-     "full": "Jakub Otruba"
-    },
-    {
-     "name": "Borresch Julian",
-     "id": 14508,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 1,
-     "closed": "2026-11-12T18:00:25+00:00",
-     "full": "Julian Borresch"
-    },
-    {
-     "name": "Geeraerts Ferre",
-     "id": 9803,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 1,
-     "closed": "2026-11-12T18:00:34+00:00",
-     "full": "Ferre Geeraerts"
-    },
-    {
-     "name": "Taillieu Aldo",
-     "id": 10530,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 2,
-     "closed": "2026-11-12T18:04:22+00:00",
-     "full": "Aldo Taillieu"
-    },
-    {
-     "name": "Kluckers Arthur",
-     "id": 6879,
-     "cc": "lu",
-     "nat": "Luxembourg",
-     "price": 4,
-     "closed": "2026-11-13T18:00:07+00:00",
-     "full": "Arthur Kluckers"
-    },
-    {
-     "name": "Geoghegan Hart Tao",
-     "id": 3924,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 4,
-     "closed": "2026-11-13T18:00:20+00:00",
-     "full": "Tao Geoghegan Hart"
-    },
-    {
-     "name": "Taaramäe Rein",
-     "id": 178,
-     "cc": "ee",
-     "nat": "Estonia",
-     "price": 2,
-     "closed": "2026-11-13T18:00:31+00:00",
-     "full": "Rein Taaramäe"
-    },
-    {
-     "name": "Boguslawski Marceli",
-     "id": 7329,
-     "cc": "pl",
-     "nat": "Poland",
-     "price": 2,
-     "closed": "2026-11-13T18:00:45+00:00",
-     "full": "Marceli Boguslawski"
     }
    ]
   },
@@ -1054,8 +1054,8 @@
   "Deceuninck - Quick-Step": {
    "player": "Hillingz",
    "won": 6,
-   "budget": 135,
-   "bids": 80,
+   "budget": 117,
+   "bids": 62,
    "riders": [
     {
      "name": "Juul-Jensen Christopher",
@@ -1752,7 +1752,7 @@
    "player": "MarcelTestier",
    "won": 1,
    "budget": 196,
-   "bids": 0,
+   "bids": 56,
    "riders": [
     {
      "name": "Kämna Lennard",
@@ -1766,5 +1766,5 @@
    ]
   }
  },
- "checked": "2026-11-13T20:30Z"
+ "checked": "2026-11-13T20:32Z"
 }
