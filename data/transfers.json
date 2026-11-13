@@ -1548,5 +1548,15 @@
   "cc": "us",
   "team": "Discovery Channel",
   "price": 18
+ },
+ {
+  "at": "2026-11-13T19:12:40+00:00",
+  "date": "2026-11-13",
+  "time": "20:12",
+  "rider": "Dylan Teuns",
+  "id": 3685,
+  "cc": "be",
+  "team": "Discovery Channel",
+  "price": 14
  }
 ]
