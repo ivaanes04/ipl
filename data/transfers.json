@@ -1308,5 +1308,25 @@
   "cc": "no",
   "team": "UnoX",
   "price": 4
+ },
+ {
+  "at": "2026-11-13T18:04:05+00:00",
+  "date": "2026-11-13",
+  "time": "19:04",
+  "rider": "Henrique Avancini",
+  "id": 11494,
+  "cc": "br",
+  "team": "GI Group Holding Simoldes UDO",
+  "price": 1
+ },
+ {
+  "at": "2026-11-13T18:04:28+00:00",
+  "date": "2026-11-13",
+  "time": "19:04",
+  "rider": "Rafael Reis",
+  "id": 3271,
+  "cc": "pt",
+  "team": "GI Group Holding Simoldes UDO",
+  "price": 3
  }
 ]
