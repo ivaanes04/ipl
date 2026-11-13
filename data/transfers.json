@@ -1688,5 +1688,15 @@
   "cc": "er",
   "team": "MTN Qhubeka",
   "price": 3
+ },
+ {
+  "at": "2026-11-13T20:28:49+00:00",
+  "date": "2026-11-13",
+  "time": "21:28",
+  "rider": "Adam Yates",
+  "id": 3367,
+  "cc": "gb",
+  "team": "Royal Bank of Scotland",
+  "price": 19
  }
 ]
