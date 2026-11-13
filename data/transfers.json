@@ -83,21 +83,21 @@
   "at": "2026-11-12T18:00:26+00:00",
   "date": "2026-11-12",
   "time": "19:00",
-  "rider": "Pedro Pinto",
-  "id": 10610,
-  "cc": "pt",
-  "team": "Portugal in 150 Seconds",
-  "price": 1
- },
- {
-  "at": "2026-11-12T18:00:26+00:00",
-  "date": "2026-11-12",
-  "time": "19:00",
   "rider": "Alexander Konychev",
   "id": 7069,
   "cc": "it",
   "team": "MTN Qhubeka",
   "price": 2
+ },
+ {
+  "at": "2026-11-12T18:00:26+00:00",
+  "date": "2026-11-12",
+  "time": "19:00",
+  "rider": "Pedro Pinto",
+  "id": 10610,
+  "cc": "pt",
+  "team": "Portugal in 150 Seconds",
+  "price": 1
  },
  {
   "at": "2026-11-12T18:00:29+00:00",
@@ -1668,5 +1668,25 @@
   "cc": "it",
   "team": "Rabobank",
   "price": 24
+ },
+ {
+  "at": "2026-11-13T20:24:37+00:00",
+  "date": "2026-11-13",
+  "time": "21:24",
+  "rider": "Amanuel Ghebreigzabhier",
+  "id": 6357,
+  "cc": "er",
+  "team": "MTN Qhubeka",
+  "price": 5
+ },
+ {
+  "at": "2026-11-13T20:25:46+00:00",
+  "date": "2026-11-13",
+  "time": "21:25",
+  "rider": "Merhawi Kudus",
+  "id": 3466,
+  "cc": "er",
+  "team": "MTN Qhubeka",
+  "price": 3
  }
 ]
