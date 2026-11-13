@@ -1018,5 +1018,55 @@
   "cc": "us",
   "team": "Modern Adventure",
   "price": 12
+ },
+ {
+  "at": "2026-11-13T18:00:07+00:00",
+  "date": "2026-11-13",
+  "time": "19:00",
+  "rider": "Cole Kessler",
+  "id": 15380,
+  "cc": "us",
+  "team": "7-Eleven",
+  "price": 1
+ },
+ {
+  "at": "2026-11-13T18:00:07+00:00",
+  "date": "2026-11-13",
+  "time": "19:00",
+  "rider": "Arthur Kluckers",
+  "id": 6879,
+  "cc": "lu",
+  "team": "Ukraine Cycling Team",
+  "price": 4
+ },
+ {
+  "at": "2026-11-13T18:00:07+00:00",
+  "date": "2026-11-13",
+  "time": "19:00",
+  "rider": "Alexy Faure-Prost",
+  "id": 15749,
+  "cc": "fr",
+  "team": "Milka",
+  "price": 1
+ },
+ {
+  "at": "2026-11-13T18:00:14+00:00",
+  "date": "2026-11-13",
+  "time": "19:00",
+  "rider": "Nicolas Vinokurov",
+  "id": 14309,
+  "cc": "kz",
+  "team": "7-Eleven",
+  "price": 4
+ },
+ {
+  "at": "2026-11-13T18:00:18+00:00",
+  "date": "2026-11-13",
+  "time": "19:00",
+  "rider": "Vegard Stake Laengen",
+  "id": 2800,
+  "cc": "no",
+  "team": "7-Eleven",
+  "price": 4
  }
 ]
