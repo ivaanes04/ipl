@@ -1828,5 +1828,15 @@
   "cc": "fr",
   "team": "Renova",
   "price": 22
+ },
+ {
+  "at": "2026-11-14T11:27:13+00:00",
+  "date": "2026-11-14",
+  "time": "12:27",
+  "rider": "Jesús Herrada",
+  "id": 2303,
+  "cc": "es",
+  "team": "Kelme Costa Blanca",
+  "price": 16
  }
 ]
