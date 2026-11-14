@@ -2278,5 +2278,15 @@
   "cc": "dk",
   "team": "UnoX",
   "price": 9
+ },
+ {
+  "at": "2026-11-14T18:22:01+00:00",
+  "date": "2026-11-14",
+  "time": "19:22",
+  "rider": "Pierre Thierry",
+  "id": 15398,
+  "cc": "fr",
+  "team": "MEO (Benfica)",
+  "price": 3
  }
 ]
