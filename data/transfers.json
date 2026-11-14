@@ -83,21 +83,21 @@
   "at": "2026-11-12T18:00:26+00:00",
   "date": "2026-11-12",
   "time": "19:00",
-  "rider": "Alexander Konychev",
-  "id": 7069,
-  "cc": "it",
-  "team": "MTN Qhubeka",
-  "price": 2
- },
- {
-  "at": "2026-11-12T18:00:26+00:00",
-  "date": "2026-11-12",
-  "time": "19:00",
   "rider": "Pedro Pinto",
   "id": 10610,
   "cc": "pt",
   "team": "Portugal in 150 Seconds",
   "price": 1
+ },
+ {
+  "at": "2026-11-12T18:00:26+00:00",
+  "date": "2026-11-12",
+  "time": "19:00",
+  "rider": "Alexander Konychev",
+  "id": 7069,
+  "cc": "it",
+  "team": "MTN Qhubeka",
+  "price": 2
  },
  {
   "at": "2026-11-12T18:00:29+00:00",
@@ -2248,5 +2248,15 @@
   "cc": "no",
   "team": "UnoX",
   "price": 8
+ },
+ {
+  "at": "2026-11-14T18:18:39+00:00",
+  "date": "2026-11-14",
+  "time": "19:18",
+  "rider": "Tobias Halland Johannessen",
+  "id": 13452,
+  "cc": "no",
+  "team": "UnoX",
+  "price": 28
  }
 ]
