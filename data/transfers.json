@@ -1203,21 +1203,21 @@
   "at": "2026-11-13T18:01:08+00:00",
   "date": "2026-11-13",
   "time": "19:01",
-  "rider": "Gijs Schoonvelde",
-  "id": 10045,
-  "cc": "nl",
-  "team": "Rabobank",
-  "price": 1
- },
- {
-  "at": "2026-11-13T18:01:08+00:00",
-  "date": "2026-11-13",
-  "time": "19:01",
   "rider": "Nolann Mahoudo",
   "id": 15471,
   "cc": "fr",
   "team": "Renova",
   "price": 2
+ },
+ {
+  "at": "2026-11-13T18:01:08+00:00",
+  "date": "2026-11-13",
+  "time": "19:01",
+  "rider": "Gijs Schoonvelde",
+  "id": 10045,
+  "cc": "nl",
+  "team": "Rabobank",
+  "price": 1
  },
  {
   "at": "2026-11-13T18:01:17+00:00",
@@ -1273,21 +1273,21 @@
   "at": "2026-11-13T18:02:11+00:00",
   "date": "2026-11-13",
   "time": "19:02",
-  "rider": "Florian Vermeersch",
-  "id": 7037,
-  "cc": "be",
-  "team": "Deceuninck - Quick-Step",
-  "price": 12
- },
- {
-  "at": "2026-11-13T18:02:11+00:00",
-  "date": "2026-11-13",
-  "time": "19:02",
   "rider": "Matteo Malucelli",
   "id": 4038,
   "cc": "it",
   "team": "Talkwalker",
   "price": 5
+ },
+ {
+  "at": "2026-11-13T18:02:11+00:00",
+  "date": "2026-11-13",
+  "time": "19:02",
+  "rider": "Florian Vermeersch",
+  "id": 7037,
+  "cc": "be",
+  "team": "Deceuninck - Quick-Step",
+  "price": 12
  },
  {
   "at": "2026-11-13T18:02:41+00:00",
@@ -1878,5 +1878,365 @@
   "cc": "it",
   "team": "Astana",
   "price": 1
+ },
+ {
+  "at": "2026-11-14T16:28:09+00:00",
+  "date": "2026-11-14",
+  "time": "17:28",
+  "rider": "Matteo Jorgenson",
+  "id": 7032,
+  "cc": "us",
+  "team": "Talkwalker",
+  "price": 42
+ },
+ {
+  "at": "2026-11-14T16:46:03+00:00",
+  "date": "2026-11-14",
+  "time": "17:46",
+  "rider": "Giulio Pellizzari",
+  "id": 15392,
+  "cc": "it",
+  "team": "Tudor",
+  "price": 34
+ },
+ {
+  "at": "2026-11-14T17:33:43+00:00",
+  "date": "2026-11-14",
+  "time": "18:33",
+  "rider": "Giulio Ciccone",
+  "id": 5675,
+  "cc": "it",
+  "team": "Modern Adventure",
+  "price": 34
+ },
+ {
+  "at": "2026-11-14T18:00:02+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Jasper Schoofs",
+  "id": 9237,
+  "cc": "be",
+  "team": "7-Eleven",
+  "price": 3
+ },
+ {
+  "at": "2026-11-14T18:00:07+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Filip Gruszczynski",
+  "id": 15609,
+  "cc": "pl",
+  "team": "Ukraine Cycling Team",
+  "price": 1
+ },
+ {
+  "at": "2026-11-14T18:00:08+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Florian Samuel Kajamini",
+  "id": 4157,
+  "cc": "it",
+  "team": "7-Eleven",
+  "price": 3
+ },
+ {
+  "at": "2026-11-14T18:00:13+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Tomáš Pridal",
+  "id": 8499,
+  "cc": "cz",
+  "team": "7-Eleven",
+  "price": 2
+ },
+ {
+  "at": "2026-11-14T18:00:20+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Michal Pomorski",
+  "id": 4202,
+  "cc": "pl",
+  "team": "Ukraine Cycling Team",
+  "price": 1
+ },
+ {
+  "at": "2026-11-14T18:00:20+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Tiago Antunes",
+  "id": 6892,
+  "cc": "pt",
+  "team": "Portugal in 150 Seconds",
+  "price": 4
+ },
+ {
+  "at": "2026-11-14T18:00:24+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Sander De Pestel",
+  "id": 6309,
+  "cc": "be",
+  "team": "MEO (Benfica)",
+  "price": 6
+ },
+ {
+  "at": "2026-11-14T18:00:26+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Louis Leidert",
+  "id": 15810,
+  "cc": "de",
+  "team": "Milka",
+  "price": 1
+ },
+ {
+  "at": "2026-11-14T18:00:32+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Maksym Bilyi",
+  "id": 7594,
+  "cc": "ua",
+  "team": "Ukraine Cycling Team",
+  "price": 1
+ },
+ {
+  "at": "2026-11-14T18:00:33+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Juan Felipe Rodriguez",
+  "id": 8673,
+  "cc": "co",
+  "team": "Tudor",
+  "price": 6
+ },
+ {
+  "at": "2026-11-14T18:00:33+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Lorrenzo Manzin",
+  "id": 3694,
+  "cc": "fr",
+  "team": "Milka",
+  "price": 4
+ },
+ {
+  "at": "2026-11-14T18:00:37+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Txomin Juaristi",
+  "id": 6538,
+  "cc": "es",
+  "team": "MEO (Benfica)",
+  "price": 4
+ },
+ {
+  "at": "2026-11-14T18:00:40+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Serhii Sydor",
+  "id": 14383,
+  "cc": "ua",
+  "team": "Ukraine Cycling Team",
+  "price": 1
+ },
+ {
+  "at": "2026-11-14T18:00:40+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Afonso Eulálio",
+  "id": 7667,
+  "cc": "pt",
+  "team": "FEIRENSE - BEECELER",
+  "price": 12
+ },
+ {
+  "at": "2026-11-14T18:00:41+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Mattéo Vercher",
+  "id": 15345,
+  "cc": "fr",
+  "team": "Talkwalker",
+  "price": 7
+ },
+ {
+  "at": "2026-11-14T18:00:41+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Lucas Lopes",
+  "id": 15378,
+  "cc": "pt",
+  "team": "Portugal in 150 Seconds",
+  "price": 2
+ },
+ {
+  "at": "2026-11-14T18:00:45+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Tomás Contte",
+  "id": 12276,
+  "cc": "ar",
+  "team": "FEIRENSE - BEECELER",
+  "price": 1
+ },
+ {
+  "at": "2026-11-14T18:01:11+00:00",
+  "date": "2026-11-14",
+  "time": "19:01",
+  "rider": "Axel Zingle",
+  "id": 7423,
+  "cc": "fr",
+  "team": "Renova",
+  "price": 8
+ },
+ {
+  "at": "2026-11-14T18:01:15+00:00",
+  "date": "2026-11-14",
+  "time": "19:01",
+  "rider": "Jean-Loup Fayolle",
+  "id": 15676,
+  "cc": "fr",
+  "team": "Tudor",
+  "price": 1
+ },
+ {
+  "at": "2026-11-14T18:01:15+00:00",
+  "date": "2026-11-14",
+  "time": "19:01",
+  "rider": "Mats Vanden Eynde",
+  "id": 15901,
+  "cc": "be",
+  "team": "Talkwalker",
+  "price": 2
+ },
+ {
+  "at": "2026-11-14T18:02:10+00:00",
+  "date": "2026-11-14",
+  "time": "19:02",
+  "rider": "Hans Rullier",
+  "id": 4894,
+  "cc": "fr",
+  "team": "Tudor",
+  "price": 1
+ },
+ {
+  "at": "2026-11-14T18:02:47+00:00",
+  "date": "2026-11-14",
+  "time": "19:02",
+  "rider": "Aivaras Mikutis",
+  "id": 13757,
+  "cc": "lt",
+  "team": "Portugal in 150 Seconds",
+  "price": 4
+ },
+ {
+  "at": "2026-11-14T18:03:05+00:00",
+  "date": "2026-11-14",
+  "time": "19:03",
+  "rider": "Ibon Ruiz",
+  "id": 7464,
+  "cc": "es",
+  "team": "Renova",
+  "price": 6
+ },
+ {
+  "at": "2026-11-14T18:03:07+00:00",
+  "date": "2026-11-14",
+  "time": "19:03",
+  "rider": "Matthew Wilson",
+  "id": 15842,
+  "cc": "nz",
+  "team": "Talkwalker",
+  "price": 1
+ },
+ {
+  "at": "2026-11-14T18:03:13+00:00",
+  "date": "2026-11-14",
+  "time": "19:03",
+  "rider": "Lénaïc Langella",
+  "id": 15613,
+  "cc": "fr",
+  "team": "B&B Hotels",
+  "price": 1
+ },
+ {
+  "at": "2026-11-14T18:03:32+00:00",
+  "date": "2026-11-14",
+  "time": "19:03",
+  "rider": "Duarte Marivoet",
+  "id": 15539,
+  "cc": "be",
+  "team": "B&B Hotels",
+  "price": 1
+ },
+ {
+  "at": "2026-11-14T18:03:38+00:00",
+  "date": "2026-11-14",
+  "time": "19:03",
+  "rider": "Paul Ourselin",
+  "id": 5613,
+  "cc": "fr",
+  "team": "B&B Hotels",
+  "price": 2
+ },
+ {
+  "at": "2026-11-14T18:03:38+00:00",
+  "date": "2026-11-14",
+  "time": "19:03",
+  "rider": "Louis Vervaeke",
+  "id": 3714,
+  "cc": "be",
+  "team": "Deceuninck - Quick-Step",
+  "price": 6
+ },
+ {
+  "at": "2026-11-14T18:03:50+00:00",
+  "date": "2026-11-14",
+  "time": "19:03",
+  "rider": "Lennert Van Eetvelt",
+  "id": 7382,
+  "cc": "be",
+  "team": "Deceuninck - Quick-Step",
+  "price": 14
+ },
+ {
+  "at": "2026-11-14T18:04:17+00:00",
+  "date": "2026-11-14",
+  "time": "19:04",
+  "rider": "Vlad Van Mechelen",
+  "id": 15279,
+  "cc": "be",
+  "team": "Deceuninck - Quick-Step",
+  "price": 6
+ },
+ {
+  "at": "2026-11-14T18:04:35+00:00",
+  "date": "2026-11-14",
+  "time": "19:04",
+  "rider": "Giacomo Villa",
+  "id": 7535,
+  "cc": "it",
+  "team": "Rabobank",
+  "price": 2
+ },
+ {
+  "at": "2026-11-14T18:08:21+00:00",
+  "date": "2026-11-14",
+  "time": "19:08",
+  "rider": "José Neves",
+  "id": 17727,
+  "cc": "pt",
+  "team": "GI Group Holding Simoldes UDO",
+  "price": 3
+ },
+ {
+  "at": "2026-11-14T18:10:34+00:00",
+  "date": "2026-11-14",
+  "time": "19:10",
+  "rider": "Jordan Jegat",
+  "id": 4275,
+  "cc": "fr",
+  "team": "Renova",
+  "price": 14
  }
 ]
