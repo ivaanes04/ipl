@@ -1868,5 +1868,15 @@
   "cc": "es",
   "team": "Astana",
   "price": 2
+ },
+ {
+  "at": "2026-11-14T13:58:05+00:00",
+  "date": "2026-11-14",
+  "time": "14:58",
+  "rider": "Giosuè Epis",
+  "id": 14317,
+  "cc": "it",
+  "team": "Astana",
+  "price": 1
  }
 ]
