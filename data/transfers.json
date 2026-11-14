@@ -2258,5 +2258,25 @@
   "cc": "no",
   "team": "UnoX",
   "price": 28
+ },
+ {
+  "at": "2026-11-14T18:21:09+00:00",
+  "date": "2026-11-14",
+  "time": "19:21",
+  "rider": "Cedrik Christophersen",
+  "id": 8550,
+  "cc": "no",
+  "team": "UnoX",
+  "price": 4
+ },
+ {
+  "at": "2026-11-14T18:21:14+00:00",
+  "date": "2026-11-14",
+  "time": "19:21",
+  "rider": "Kasper Asgreen",
+  "id": 5750,
+  "cc": "dk",
+  "team": "UnoX",
+  "price": 9
  }
 ]
