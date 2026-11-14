@@ -1838,5 +1838,25 @@
   "cc": "es",
   "team": "Kelme Costa Blanca",
   "price": 16
+ },
+ {
+  "at": "2026-11-14T13:47:37+00:00",
+  "date": "2026-11-14",
+  "time": "14:47",
+  "rider": "Paul Magnier",
+  "id": 15675,
+  "cc": "fr",
+  "team": "B&B Hotels",
+  "price": 21
+ },
+ {
+  "at": "2026-11-14T13:47:45+00:00",
+  "date": "2026-11-14",
+  "time": "14:47",
+  "rider": "Tim Wellens",
+  "id": 3030,
+  "cc": "be",
+  "team": "B&B Hotels",
+  "price": 21
  }
 ]

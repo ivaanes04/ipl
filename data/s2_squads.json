@@ -585,7 +585,7 @@
    "player": "Riverside",
    "won": 8,
    "budget": 182,
-   "bids": 59,
+   "bids": 78,
    "riders": [
     {
      "name": "Otruba Jakub",
@@ -665,7 +665,7 @@
    "player": "Joao Negrao",
    "won": 8,
    "budget": 151,
-   "bids": 51,
+   "bids": 64,
    "riders": [
     {
      "name": "Parra José Félix",
@@ -741,11 +741,91 @@
     }
    ]
   },
+  "B&B Hotels": {
+   "player": "Tom_Bryant",
+   "won": 8,
+   "budget": 120,
+   "bids": 47,
+   "riders": [
+    {
+     "name": "Schmid Mauro",
+     "id": 7193,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 25,
+     "closed": "2026-11-13T20:37:24+00:00",
+     "full": "Mauro Schmid"
+    },
+    {
+     "name": "Conor Paul",
+     "id": 11406,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-12T22:24:03+00:00",
+     "full": "Paul Conor"
+    },
+    {
+     "name": "Beaune Mavric",
+     "id": 10729,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-12T22:24:39+00:00",
+     "full": "Mavric Beaune"
+    },
+    {
+     "name": "Bracalente Diego",
+     "id": 8431,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 1,
+     "closed": "2026-11-12T22:48:07+00:00",
+     "full": "Diego Bracalente"
+    },
+    {
+     "name": "Van Kerckhove Seff",
+     "id": 11852,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 1,
+     "closed": "2026-11-12T22:50:44+00:00",
+     "full": "Seff Van Kerckhove"
+    },
+    {
+     "name": "Magnier Paul",
+     "id": 15675,
+     "cc": "fr",
+     "nat": "France",
+     "price": 21,
+     "closed": "2026-11-14T13:47:37+00:00",
+     "full": "Paul Magnier"
+    },
+    {
+     "name": "Raccagni Noviero Andrea",
+     "id": 8455,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 9,
+     "closed": "2026-11-13T20:00:13+00:00",
+     "full": "Andrea Raccagni Noviero"
+    },
+    {
+     "name": "Wellens Tim",
+     "id": 3030,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 21,
+     "closed": "2026-11-14T13:47:45+00:00",
+     "full": "Tim Wellens"
+    }
+   ]
+  },
   "7-Eleven": {
    "player": "ChrisJanssen",
    "won": 8,
    "budget": 139,
-   "bids": 67,
+   "bids": 86,
    "riders": [
     {
      "name": "Simmons Colby",
@@ -1038,7 +1118,7 @@
    "player": "Hübi",
    "won": 7,
    "budget": 143,
-   "bids": 119,
+   "bids": 101,
    "riders": [
     {
      "name": "Isidore Noa",
@@ -1109,7 +1189,7 @@
    "player": "Bessadelas",
    "won": 6,
    "budget": 175,
-   "bids": 45,
+   "bids": 20,
    "riders": [
     {
      "name": "Pinto Pedro",
@@ -1164,68 +1244,6 @@
      "price": 8,
      "closed": "2026-11-13T18:09:00+00:00",
      "full": "Nélson Oliveira"
-    }
-   ]
-  },
-  "Kelme Costa Blanca": {
-   "player": "JgCol",
-   "won": 6,
-   "budget": 157,
-   "bids": 38,
-   "riders": [
-    {
-     "name": "Ardila Camilo",
-     "id": 7055,
-     "cc": "co",
-     "nat": "Colombia",
-     "price": 1,
-     "closed": "2026-11-12T18:01:36+00:00",
-     "full": "Camilo Ardila"
-    },
-    {
-     "name": "Herrada Jesús",
-     "id": 2303,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 16,
-     "closed": "2026-11-14T11:27:13+00:00",
-     "full": "Jesús Herrada"
-    },
-    {
-     "name": "Rivera Brandon",
-     "id": 7090,
-     "cc": "co",
-     "nat": "Colombia",
-     "price": 6,
-     "closed": "2026-11-12T18:26:23+00:00",
-     "full": "Brandon Rivera"
-    },
-    {
-     "name": "Coquard Bryan",
-     "id": 3060,
-     "cc": "fr",
-     "nat": "France",
-     "price": 7,
-     "closed": "2026-11-13T19:17:55+00:00",
-     "full": "Bryan Coquard"
-    },
-    {
-     "name": "Mulubrhan Henok",
-     "id": 7370,
-     "cc": "er",
-     "nat": "Eritrea",
-     "price": 6,
-     "closed": "2026-11-13T20:29:55+00:00",
-     "full": "Henok Mulubrhan"
-    },
-    {
-     "name": "Barrenetxea Jon",
-     "id": 7442,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 7,
-     "closed": "2026-11-14T04:44:36+00:00",
-     "full": "Jon Barrenetxea"
     }
    ]
   },
@@ -1288,6 +1306,68 @@
      "price": 12,
      "closed": "2026-11-14T07:09:54+00:00",
      "full": "Michael Valgren"
+    }
+   ]
+  },
+  "Kelme Costa Blanca": {
+   "player": "JgCol",
+   "won": 6,
+   "budget": 157,
+   "bids": 54,
+   "riders": [
+    {
+     "name": "Ardila Camilo",
+     "id": 7055,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 1,
+     "closed": "2026-11-12T18:01:36+00:00",
+     "full": "Camilo Ardila"
+    },
+    {
+     "name": "Herrada Jesús",
+     "id": 2303,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 16,
+     "closed": "2026-11-14T11:27:13+00:00",
+     "full": "Jesús Herrada"
+    },
+    {
+     "name": "Rivera Brandon",
+     "id": 7090,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 6,
+     "closed": "2026-11-12T18:26:23+00:00",
+     "full": "Brandon Rivera"
+    },
+    {
+     "name": "Coquard Bryan",
+     "id": 3060,
+     "cc": "fr",
+     "nat": "France",
+     "price": 7,
+     "closed": "2026-11-13T19:17:55+00:00",
+     "full": "Bryan Coquard"
+    },
+    {
+     "name": "Mulubrhan Henok",
+     "id": 7370,
+     "cc": "er",
+     "nat": "Eritrea",
+     "price": 6,
+     "closed": "2026-11-13T20:29:55+00:00",
+     "full": "Henok Mulubrhan"
+    },
+    {
+     "name": "Barrenetxea Jon",
+     "id": 7442,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 7,
+     "closed": "2026-11-14T04:44:36+00:00",
+     "full": "Jon Barrenetxea"
     }
    ]
   },
@@ -1415,68 +1495,6 @@
     }
    ]
   },
-  "B&B Hotels": {
-   "player": "Tom_Bryant",
-   "won": 6,
-   "budget": 162,
-   "bids": 89,
-   "riders": [
-    {
-     "name": "Schmid Mauro",
-     "id": 7193,
-     "cc": "ch",
-     "nat": "Switzerland",
-     "price": 25,
-     "closed": "2026-11-13T20:37:24+00:00",
-     "full": "Mauro Schmid"
-    },
-    {
-     "name": "Conor Paul",
-     "id": 11406,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-12T22:24:03+00:00",
-     "full": "Paul Conor"
-    },
-    {
-     "name": "Beaune Mavric",
-     "id": 10729,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-12T22:24:39+00:00",
-     "full": "Mavric Beaune"
-    },
-    {
-     "name": "Bracalente Diego",
-     "id": 8431,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 1,
-     "closed": "2026-11-12T22:48:07+00:00",
-     "full": "Diego Bracalente"
-    },
-    {
-     "name": "Van Kerckhove Seff",
-     "id": 11852,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 1,
-     "closed": "2026-11-12T22:50:44+00:00",
-     "full": "Seff Van Kerckhove"
-    },
-    {
-     "name": "Raccagni Noviero Andrea",
-     "id": 8455,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 9,
-     "closed": "2026-11-13T20:00:13+00:00",
-     "full": "Andrea Raccagni Noviero"
-    }
-   ]
-  },
   "FEIRENSE - BEECELER": {
    "player": "joaozinhoaac",
    "won": 6,
@@ -1543,7 +1561,7 @@
    "player": "seancoll",
    "won": 5,
    "budget": 162,
-   "bids": 63,
+   "bids": 51,
    "riders": [
     {
      "name": "Sheffield Magnus",
@@ -1834,7 +1852,7 @@
    "player": "Sheep_Boy123",
    "won": 3,
    "budget": 174,
-   "bids": 48,
+   "bids": 50,
    "riders": [
     {
      "name": "Rowe Elliot",
@@ -1869,7 +1887,7 @@
    "player": "MarcelTestier",
    "won": 1,
    "budget": 196,
-   "bids": 125,
+   "bids": 151,
    "riders": [
     {
      "name": "Kämna Lennard",
@@ -1883,5 +1901,5 @@
    ]
   }
  },
- "checked": "2026-11-14T11:27Z"
+ "checked": "2026-11-14T13:47Z"
 }
