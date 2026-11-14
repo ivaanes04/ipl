@@ -2238,5 +2238,15 @@
   "cc": "fr",
   "team": "Renova",
   "price": 14
+ },
+ {
+  "at": "2026-11-14T18:15:48+00:00",
+  "date": "2026-11-14",
+  "time": "19:15",
+  "rider": "Odd Christian Eiking",
+  "id": 3586,
+  "cc": "no",
+  "team": "UnoX",
+  "price": 8
  }
 ]

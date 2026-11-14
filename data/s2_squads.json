@@ -1615,6 +1615,77 @@
     }
    ]
   },
+  "UnoX": {
+   "player": "IvanEs04",
+   "won": 7,
+   "budget": 153,
+   "bids": 66,
+   "riders": [
+    {
+     "name": "Halland Johannessen Anders",
+     "id": 13451,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 10,
+     "closed": "2026-11-13T15:00:20+00:00",
+     "full": "Anders Halland Johannessen"
+    },
+    {
+     "name": "Larsen Niklas",
+     "id": 5752,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 7,
+     "closed": "2026-11-12T18:05:05+00:00",
+     "full": "Niklas Larsen"
+    },
+    {
+     "name": "Dalby Simon",
+     "id": 15284,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 6,
+     "closed": "2026-11-12T18:05:11+00:00",
+     "full": "Simon Dalby"
+    },
+    {
+     "name": "Søjberg Pedersen Rasmus",
+     "id": 15360,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 6,
+     "closed": "2026-11-13T18:02:41+00:00",
+     "full": "Rasmus Søjberg Pedersen"
+    },
+    {
+     "name": "Haugland Kasper",
+     "id": 9397,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 4,
+     "closed": "2026-11-13T18:03:16+00:00",
+     "full": "Kasper Haugland"
+    },
+    {
+     "name": "Holter Ådne",
+     "id": 7219,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 6,
+     "closed": "2026-11-13T18:07:29+00:00",
+     "full": "Ådne Holter"
+    },
+    {
+     "name": "Eiking Odd Christian",
+     "id": 3586,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 8,
+     "closed": "2026-11-14T18:15:48+00:00",
+     "full": "Odd Christian Eiking"
+    }
+   ]
+  },
   "Biesse - Carrera - Premac": {
    "player": "Hübi",
    "won": 7,
@@ -1816,68 +1887,6 @@
      "price": 5,
      "closed": "2026-11-13T18:07:13+00:00",
      "full": "Riley Pickrell"
-    }
-   ]
-  },
-  "UnoX": {
-   "player": "IvanEs04",
-   "won": 6,
-   "budget": 161,
-   "bids": 74,
-   "riders": [
-    {
-     "name": "Halland Johannessen Anders",
-     "id": 13451,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 10,
-     "closed": "2026-11-13T15:00:20+00:00",
-     "full": "Anders Halland Johannessen"
-    },
-    {
-     "name": "Larsen Niklas",
-     "id": 5752,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 7,
-     "closed": "2026-11-12T18:05:05+00:00",
-     "full": "Niklas Larsen"
-    },
-    {
-     "name": "Dalby Simon",
-     "id": 15284,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 6,
-     "closed": "2026-11-12T18:05:11+00:00",
-     "full": "Simon Dalby"
-    },
-    {
-     "name": "Søjberg Pedersen Rasmus",
-     "id": 15360,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 6,
-     "closed": "2026-11-13T18:02:41+00:00",
-     "full": "Rasmus Søjberg Pedersen"
-    },
-    {
-     "name": "Haugland Kasper",
-     "id": 9397,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 4,
-     "closed": "2026-11-13T18:03:16+00:00",
-     "full": "Kasper Haugland"
-    },
-    {
-     "name": "Holter Ådne",
-     "id": 7219,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 6,
-     "closed": "2026-11-13T18:07:29+00:00",
-     "full": "Ådne Holter"
     }
    ]
   },
@@ -2243,5 +2252,5 @@
    ]
   }
  },
- "checked": "2026-11-14T18:15Z"
+ "checked": "2026-11-14T18:16Z"
 }
