@@ -1748,5 +1748,85 @@
   "cc": "gb",
   "team": "MTN Qhubeka",
   "price": 2
+ },
+ {
+  "at": "2026-11-14T01:01:38+00:00",
+  "date": "2026-11-14",
+  "time": "02:01",
+  "rider": "Brandon McNulty",
+  "id": 6252,
+  "cc": "us",
+  "team": "7-Eleven",
+  "price": 20
+ },
+ {
+  "at": "2026-11-14T04:44:36+00:00",
+  "date": "2026-11-14",
+  "time": "05:44",
+  "rider": "Jon Barrenetxea",
+  "id": 7442,
+  "cc": "es",
+  "team": "Kelme Costa Blanca",
+  "price": 7
+ },
+ {
+  "at": "2026-11-14T05:33:07+00:00",
+  "date": "2026-11-14",
+  "time": "06:33",
+  "rider": "Matteo Sobrero",
+  "id": 6739,
+  "cc": "it",
+  "team": "Biesse - Carrera - Premac",
+  "price": 12
+ },
+ {
+  "at": "2026-11-14T05:38:27+00:00",
+  "date": "2026-11-14",
+  "time": "06:38",
+  "rider": "Ludovico Crescioli",
+  "id": 15386,
+  "cc": "it",
+  "team": "Biesse - Carrera - Premac",
+  "price": 11
+ },
+ {
+  "at": "2026-11-14T07:09:54+00:00",
+  "date": "2026-11-14",
+  "time": "08:09",
+  "rider": "Michael Valgren",
+  "id": 2505,
+  "cc": "dk",
+  "team": "CSC",
+  "price": 12
+ },
+ {
+  "at": "2026-11-14T09:02:27+00:00",
+  "date": "2026-11-14",
+  "time": "10:02",
+  "rider": "Nicolò Buratti",
+  "id": 14536,
+  "cc": "it",
+  "team": "Astana",
+  "price": 3
+ },
+ {
+  "at": "2026-11-14T09:12:51+00:00",
+  "date": "2026-11-14",
+  "time": "10:12",
+  "rider": "Nicolás Alustiza",
+  "id": 4321,
+  "cc": "es",
+  "team": "Astana",
+  "price": 1
+ },
+ {
+  "at": "2026-11-14T09:42:03+00:00",
+  "date": "2026-11-14",
+  "time": "10:42",
+  "rider": "Lenny Martinez",
+  "id": 15354,
+  "cc": "fr",
+  "team": "Renova",
+  "price": 22
  }
 ]
