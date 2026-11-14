@@ -1858,5 +1858,15 @@
   "cc": "be",
   "team": "B&B Hotels",
   "price": 21
+ },
+ {
+  "at": "2026-11-14T13:56:07+00:00",
+  "date": "2026-11-14",
+  "time": "14:56",
+  "rider": "David Delgado",
+  "id": 8223,
+  "cc": "es",
+  "team": "Astana",
+  "price": 2
  }
 ]
