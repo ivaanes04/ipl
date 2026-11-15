@@ -3318,5 +3318,15 @@
   "cc": null,
   "team": "Bahrain Victorious",
   "price": 1
+ },
+ {
+  "at": "2026-11-15T18:37:07+00:00",
+  "date": "2026-11-15",
+  "time": "19:37",
+  "rider": "Milan Lanhove",
+  "id": 10064,
+  "cc": "be",
+  "team": "Biesse - Carrera - Premac",
+  "price": 4
  }
 ]
