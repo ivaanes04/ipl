@@ -1103,20 +1103,20 @@
   "at": "2026-11-13T18:00:22+00:00",
   "date": "2026-11-13",
   "time": "19:00",
-  "rider": "Sergio Henao",
-  "id": 16039,
-  "cc": "co",
-  "team": "Rabobank",
+  "rider": "Daniel Moreira",
+  "id": 10065,
+  "cc": "pt",
+  "team": "Portugal in 150 Seconds",
   "price": 1
  },
  {
   "at": "2026-11-13T18:00:22+00:00",
   "date": "2026-11-13",
   "time": "19:00",
-  "rider": "Daniel Moreira",
-  "id": 10065,
-  "cc": "pt",
-  "team": "Portugal in 150 Seconds",
+  "rider": "Sergio Henao",
+  "id": 16039,
+  "cc": "co",
+  "team": "Rabobank",
   "price": 1
  },
  {
@@ -2938,5 +2938,35 @@
   "cc": "be",
   "team": "GI Group Holding Simoldes UDO",
   "price": 16
+ },
+ {
+  "at": "2026-11-15T18:00:02+00:00",
+  "date": "2026-11-15",
+  "time": "19:00",
+  "rider": "Fabian Lienhard",
+  "id": 6200,
+  "cc": "ch",
+  "team": "Milka",
+  "price": 1
+ },
+ {
+  "at": "2026-11-15T18:00:10+00:00",
+  "date": "2026-11-15",
+  "time": "19:00",
+  "rider": "Michal Kwiatkowski",
+  "id": 1981,
+  "cc": "pl",
+  "team": "Portugal in 150 Seconds",
+  "price": 8
+ },
+ {
+  "at": "2026-11-15T18:00:14+00:00",
+  "date": "2026-11-15",
+  "time": "19:00",
+  "rider": "Toms Skujins",
+  "id": 2346,
+  "cc": "lv",
+  "team": "Ukraine Cycling Team",
+  "price": 10
  }
 ]
