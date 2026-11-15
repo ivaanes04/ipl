@@ -2890,9 +2890,9 @@
   },
   "Discovery Channel": {
    "player": "Agap",
-   "won": 10,
-   "budget": 120,
-   "bids": 43,
+   "won": 11,
+   "budget": 119,
+   "bids": 42,
    "riders": [
     {
      "name": "Warbasse Larry",
@@ -2983,6 +2983,15 @@
      "price": 2,
      "closed": "2026-11-15T20:42:05+00:00",
      "full": "Guus van den Eijnden"
+    },
+    {
+     "name": "McGill Scott",
+     "id": 11801,
+     "cc": "us",
+     "nat": "United States",
+     "price": 1,
+     "closed": "2026-11-15T20:48:00+00:00",
+     "full": "Scott McGill"
     }
    ]
   },
@@ -3476,5 +3485,5 @@
    ]
   }
  },
- "checked": "2026-11-15T20:44Z"
+ "checked": "2026-11-15T20:48Z"
 }
