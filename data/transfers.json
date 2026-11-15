@@ -1273,21 +1273,21 @@
   "at": "2026-11-13T18:02:11+00:00",
   "date": "2026-11-13",
   "time": "19:02",
-  "rider": "Florian Vermeersch",
-  "id": 7037,
-  "cc": "be",
-  "team": "Deceuninck - Quick-Step",
-  "price": 12
- },
- {
-  "at": "2026-11-13T18:02:11+00:00",
-  "date": "2026-11-13",
-  "time": "19:02",
   "rider": "Matteo Malucelli",
   "id": 4038,
   "cc": "it",
   "team": "Talkwalker",
   "price": 5
+ },
+ {
+  "at": "2026-11-13T18:02:11+00:00",
+  "date": "2026-11-13",
+  "time": "19:02",
+  "rider": "Florian Vermeersch",
+  "id": 7037,
+  "cc": "be",
+  "team": "Deceuninck - Quick-Step",
+  "price": 12
  },
  {
   "at": "2026-11-13T18:02:41+00:00",
@@ -3358,5 +3358,15 @@
   "cc": "fr",
   "team": "Talkwalker",
   "price": 4
+ },
+ {
+  "at": "2026-11-15T18:45:15+00:00",
+  "date": "2026-11-15",
+  "time": "19:45",
+  "rider": "Mathias Bregnhøj",
+  "id": 6852,
+  "cc": "dk",
+  "team": "Talkwalker",
+  "price": 3
  }
 ]
