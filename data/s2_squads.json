@@ -1038,6 +1038,131 @@
     }
    ]
   },
+  "Renova": {
+   "player": "Pena Guevara",
+   "won": 13,
+   "budget": 56,
+   "bids": 41,
+   "riders": [
+    {
+     "name": "Oliveira Rui",
+     "id": 6248,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 10,
+     "closed": "2026-11-12T18:09:33+00:00",
+     "full": "Rui Oliveira"
+    },
+    {
+     "name": "Gonçalves Diogo",
+     "id": 9277,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-12T18:01:06+00:00",
+     "full": "Diogo Gonçalves"
+    },
+    {
+     "name": "Jungels Bob",
+     "id": 3041,
+     "cc": "lu",
+     "nat": "Luxembourg",
+     "price": 23,
+     "closed": "2026-11-13T15:00:49+00:00",
+     "full": "Bob Jungels"
+    },
+    {
+     "name": "Oliveira Ivo",
+     "id": 6249,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 10,
+     "closed": "2026-11-12T18:09:44+00:00",
+     "full": "Ivo Oliveira"
+    },
+    {
+     "name": "Almeida João",
+     "id": 6088,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 24,
+     "closed": "2026-11-13T09:38:30+00:00",
+     "full": "João Almeida"
+    },
+    {
+     "name": "Martinez Lenny",
+     "id": 15354,
+     "cc": "fr",
+     "nat": "France",
+     "price": 22,
+     "closed": "2026-11-14T09:42:03+00:00",
+     "full": "Lenny Martinez"
+    },
+    {
+     "name": "Martin-Guyonnet Guillaume",
+     "id": 5633,
+     "cc": "fr",
+     "nat": "France",
+     "price": 6,
+     "closed": "2026-11-13T18:00:38+00:00",
+     "full": "Guillaume Martin-Guyonnet"
+    },
+    {
+     "name": "Paret-Peintre Aurélien",
+     "id": 6688,
+     "cc": "fr",
+     "nat": "France",
+     "price": 10,
+     "closed": "2026-11-13T18:00:49+00:00",
+     "full": "Aurélien Paret-Peintre"
+    },
+    {
+     "name": "Mahoudo Nolann",
+     "id": 15471,
+     "cc": "fr",
+     "nat": "France",
+     "price": 2,
+     "closed": "2026-11-13T18:01:08+00:00",
+     "full": "Nolann Mahoudo"
+    },
+    {
+     "name": "Jegat Jordan",
+     "id": 4275,
+     "cc": "fr",
+     "nat": "France",
+     "price": 14,
+     "closed": "2026-11-14T18:10:34+00:00",
+     "full": "Jordan Jegat"
+    },
+    {
+     "name": "Zingle Axel",
+     "id": 7423,
+     "cc": "fr",
+     "nat": "France",
+     "price": 8,
+     "closed": "2026-11-14T18:01:11+00:00",
+     "full": "Axel Zingle"
+    },
+    {
+     "name": "Ruiz Ibon",
+     "id": 7464,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 6,
+     "closed": "2026-11-14T18:03:05+00:00",
+     "full": "Ibon Ruiz"
+    },
+    {
+     "name": "Reguigui Youcef",
+     "id": 3068,
+     "cc": null,
+     "nat": "Algeria",
+     "price": 8,
+     "closed": "2026-11-15T16:20:58+00:00",
+     "full": "Youcef Reguigui"
+    }
+   ]
+  },
   "Rabobank": {
    "player": "Bouke",
    "won": 12,
@@ -1151,122 +1276,6 @@
      "price": 44,
      "closed": "2026-11-15T09:27:17+00:00",
      "full": "Mads Pedersen"
-    }
-   ]
-  },
-  "Renova": {
-   "player": "Pena Guevara",
-   "won": 12,
-   "budget": 64,
-   "bids": 49,
-   "riders": [
-    {
-     "name": "Oliveira Rui",
-     "id": 6248,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 10,
-     "closed": "2026-11-12T18:09:33+00:00",
-     "full": "Rui Oliveira"
-    },
-    {
-     "name": "Gonçalves Diogo",
-     "id": 9277,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 1,
-     "closed": "2026-11-12T18:01:06+00:00",
-     "full": "Diogo Gonçalves"
-    },
-    {
-     "name": "Jungels Bob",
-     "id": 3041,
-     "cc": "lu",
-     "nat": "Luxembourg",
-     "price": 23,
-     "closed": "2026-11-13T15:00:49+00:00",
-     "full": "Bob Jungels"
-    },
-    {
-     "name": "Oliveira Ivo",
-     "id": 6249,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 10,
-     "closed": "2026-11-12T18:09:44+00:00",
-     "full": "Ivo Oliveira"
-    },
-    {
-     "name": "Almeida João",
-     "id": 6088,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 24,
-     "closed": "2026-11-13T09:38:30+00:00",
-     "full": "João Almeida"
-    },
-    {
-     "name": "Martinez Lenny",
-     "id": 15354,
-     "cc": "fr",
-     "nat": "France",
-     "price": 22,
-     "closed": "2026-11-14T09:42:03+00:00",
-     "full": "Lenny Martinez"
-    },
-    {
-     "name": "Martin-Guyonnet Guillaume",
-     "id": 5633,
-     "cc": "fr",
-     "nat": "France",
-     "price": 6,
-     "closed": "2026-11-13T18:00:38+00:00",
-     "full": "Guillaume Martin-Guyonnet"
-    },
-    {
-     "name": "Paret-Peintre Aurélien",
-     "id": 6688,
-     "cc": "fr",
-     "nat": "France",
-     "price": 10,
-     "closed": "2026-11-13T18:00:49+00:00",
-     "full": "Aurélien Paret-Peintre"
-    },
-    {
-     "name": "Mahoudo Nolann",
-     "id": 15471,
-     "cc": "fr",
-     "nat": "France",
-     "price": 2,
-     "closed": "2026-11-13T18:01:08+00:00",
-     "full": "Nolann Mahoudo"
-    },
-    {
-     "name": "Jegat Jordan",
-     "id": 4275,
-     "cc": "fr",
-     "nat": "France",
-     "price": 14,
-     "closed": "2026-11-14T18:10:34+00:00",
-     "full": "Jordan Jegat"
-    },
-    {
-     "name": "Zingle Axel",
-     "id": 7423,
-     "cc": "fr",
-     "nat": "France",
-     "price": 8,
-     "closed": "2026-11-14T18:01:11+00:00",
-     "full": "Axel Zingle"
-    },
-    {
-     "name": "Ruiz Ibon",
-     "id": 7464,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 6,
-     "closed": "2026-11-14T18:03:05+00:00",
-     "full": "Ibon Ruiz"
     }
    ]
   },
@@ -2855,5 +2864,5 @@
    ]
   }
  },
- "checked": "2026-11-15T15:51Z"
+ "checked": "2026-11-15T16:21Z"
 }
