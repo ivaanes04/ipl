@@ -2280,6 +2280,122 @@
     }
    ]
   },
+  "Talkwalker": {
+   "player": "benjong",
+   "won": 12,
+   "budget": 95,
+   "bids": 67,
+   "riders": [
+    {
+     "name": "Kockelmann Mathieu",
+     "id": 15418,
+     "cc": "lu",
+     "nat": "Luxembourg",
+     "price": 4,
+     "closed": "2026-11-12T18:00:10+00:00",
+     "full": "Mathieu Kockelmann"
+    },
+    {
+     "name": "Wenzel Mats",
+     "id": 7431,
+     "cc": "lu",
+     "nat": "Luxembourg",
+     "price": 6,
+     "closed": "2026-11-12T18:00:31+00:00",
+     "full": "Mats Wenzel"
+    },
+    {
+     "name": "Van Kerckhove Matisse",
+     "id": 11282,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 6,
+     "closed": "2026-11-12T18:01:10+00:00",
+     "full": "Matisse Van Kerckhove"
+    },
+    {
+     "name": "Boldyrev Matvey",
+     "id": 12378,
+     "cc": "ru",
+     "nat": "Russia",
+     "price": 1,
+     "closed": "2026-11-13T18:00:20+00:00",
+     "full": "Matvey Boldyrev"
+    },
+    {
+     "name": "Le Berre Mathis",
+     "id": 15301,
+     "cc": "fr",
+     "nat": "France",
+     "price": 4,
+     "closed": "2026-11-13T18:00:54+00:00",
+     "full": "Mathis Le Berre"
+    },
+    {
+     "name": "Malucelli Matteo",
+     "id": 4038,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 5,
+     "closed": "2026-11-13T18:02:11+00:00",
+     "full": "Matteo Malucelli"
+    },
+    {
+     "name": "Jorgenson Matteo",
+     "id": 7032,
+     "cc": "us",
+     "nat": "United States",
+     "price": 42,
+     "closed": "2026-11-14T16:28:09+00:00",
+     "full": "Matteo Jorgenson"
+    },
+    {
+     "name": "Brennan Matthew",
+     "id": 15556,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 23,
+     "closed": "2026-11-14T21:20:11+00:00",
+     "full": "Matthew Brennan"
+    },
+    {
+     "name": "Vercher Mattéo",
+     "id": 15345,
+     "cc": "fr",
+     "nat": "France",
+     "price": 7,
+     "closed": "2026-11-14T18:00:41+00:00",
+     "full": "Mattéo Vercher"
+    },
+    {
+     "name": "Vanden Eynde Mats",
+     "id": 15901,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 2,
+     "closed": "2026-11-14T18:01:15+00:00",
+     "full": "Mats Vanden Eynde"
+    },
+    {
+     "name": "Wilson Matthew",
+     "id": 15842,
+     "cc": "nz",
+     "nat": "New Zealand",
+     "price": 1,
+     "closed": "2026-11-14T18:03:07+00:00",
+     "full": "Matthew Wilson"
+    },
+    {
+     "name": "Louvel Matîs",
+     "id": 7100,
+     "cc": "fr",
+     "nat": "France",
+     "price": 4,
+     "closed": "2026-11-15T18:42:05+00:00",
+     "full": "Matîs Louvel"
+    }
+   ]
+  },
   "Rabobank": {
    "player": "Bouke",
    "won": 12,
@@ -2393,113 +2509,6 @@
      "price": 44,
      "closed": "2026-11-15T09:27:17+00:00",
      "full": "Mads Pedersen"
-    }
-   ]
-  },
-  "Talkwalker": {
-   "player": "benjong",
-   "won": 11,
-   "budget": 99,
-   "bids": 71,
-   "riders": [
-    {
-     "name": "Kockelmann Mathieu",
-     "id": 15418,
-     "cc": "lu",
-     "nat": "Luxembourg",
-     "price": 4,
-     "closed": "2026-11-12T18:00:10+00:00",
-     "full": "Mathieu Kockelmann"
-    },
-    {
-     "name": "Wenzel Mats",
-     "id": 7431,
-     "cc": "lu",
-     "nat": "Luxembourg",
-     "price": 6,
-     "closed": "2026-11-12T18:00:31+00:00",
-     "full": "Mats Wenzel"
-    },
-    {
-     "name": "Van Kerckhove Matisse",
-     "id": 11282,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 6,
-     "closed": "2026-11-12T18:01:10+00:00",
-     "full": "Matisse Van Kerckhove"
-    },
-    {
-     "name": "Boldyrev Matvey",
-     "id": 12378,
-     "cc": "ru",
-     "nat": "Russia",
-     "price": 1,
-     "closed": "2026-11-13T18:00:20+00:00",
-     "full": "Matvey Boldyrev"
-    },
-    {
-     "name": "Le Berre Mathis",
-     "id": 15301,
-     "cc": "fr",
-     "nat": "France",
-     "price": 4,
-     "closed": "2026-11-13T18:00:54+00:00",
-     "full": "Mathis Le Berre"
-    },
-    {
-     "name": "Malucelli Matteo",
-     "id": 4038,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 5,
-     "closed": "2026-11-13T18:02:11+00:00",
-     "full": "Matteo Malucelli"
-    },
-    {
-     "name": "Jorgenson Matteo",
-     "id": 7032,
-     "cc": "us",
-     "nat": "United States",
-     "price": 42,
-     "closed": "2026-11-14T16:28:09+00:00",
-     "full": "Matteo Jorgenson"
-    },
-    {
-     "name": "Brennan Matthew",
-     "id": 15556,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 23,
-     "closed": "2026-11-14T21:20:11+00:00",
-     "full": "Matthew Brennan"
-    },
-    {
-     "name": "Vercher Mattéo",
-     "id": 15345,
-     "cc": "fr",
-     "nat": "France",
-     "price": 7,
-     "closed": "2026-11-14T18:00:41+00:00",
-     "full": "Mattéo Vercher"
-    },
-    {
-     "name": "Vanden Eynde Mats",
-     "id": 15901,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 2,
-     "closed": "2026-11-14T18:01:15+00:00",
-     "full": "Mats Vanden Eynde"
-    },
-    {
-     "name": "Wilson Matthew",
-     "id": 15842,
-     "cc": "nz",
-     "nat": "New Zealand",
-     "price": 1,
-     "closed": "2026-11-14T18:03:07+00:00",
-     "full": "Matthew Wilson"
     }
    ]
   },
@@ -3242,5 +3251,5 @@
    ]
   }
  },
- "checked": "2026-11-15T18:40Z"
+ "checked": "2026-11-15T18:42Z"
 }

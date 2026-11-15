@@ -3348,5 +3348,15 @@
   "cc": "it",
   "team": "Biesse - Carrera - Premac",
   "price": 1
+ },
+ {
+  "at": "2026-11-15T18:42:05+00:00",
+  "date": "2026-11-15",
+  "time": "19:42",
+  "rider": "Matîs Louvel",
+  "id": 7100,
+  "cc": "fr",
+  "team": "Talkwalker",
+  "price": 4
  }
 ]
