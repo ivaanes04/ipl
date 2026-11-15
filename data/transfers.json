@@ -3228,5 +3228,35 @@
   "cc": "it",
   "team": "MEO (Benfica)",
   "price": 8
+ },
+ {
+  "at": "2026-11-15T18:23:01+00:00",
+  "date": "2026-11-15",
+  "time": "19:23",
+  "rider": "James Shaw",
+  "id": 5966,
+  "cc": "gb",
+  "team": "Royal Bank of Scotland",
+  "price": 7
+ },
+ {
+  "at": "2026-11-15T18:23:05+00:00",
+  "date": "2026-11-15",
+  "time": "19:23",
+  "rider": "Roberto González",
+  "id": 6802,
+  "cc": null,
+  "team": "MEO (Benfica)",
+  "price": 1
+ },
+ {
+  "at": "2026-11-15T18:24:35+00:00",
+  "date": "2026-11-15",
+  "time": "19:24",
+  "rider": "Nicolas Milesi",
+  "id": 15526,
+  "cc": "it",
+  "team": "MEO (Benfica)",
+  "price": 3
  }
 ]
