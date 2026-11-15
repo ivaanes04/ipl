@@ -3448,5 +3448,15 @@
   "cc": "dk",
   "team": "Talkwalker",
   "price": 2
+ },
+ {
+  "at": "2026-11-15T19:16:00+00:00",
+  "date": "2026-11-15",
+  "time": "20:16",
+  "rider": "Simone Velasco",
+  "id": 5677,
+  "cc": "it",
+  "team": "7-Eleven",
+  "price": 6
  }
 ]
