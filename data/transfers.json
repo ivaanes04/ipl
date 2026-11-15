@@ -3538,5 +3538,15 @@
   "cc": "be",
   "team": "GI Group Holding Simoldes UDO",
   "price": 12
+ },
+ {
+  "at": "2026-11-15T20:28:12+00:00",
+  "date": "2026-11-15",
+  "time": "21:28",
+  "rider": "Wilco Kelderman",
+  "id": 2554,
+  "cc": "nl",
+  "team": "GI Group Holding Simoldes UDO",
+  "price": 11
  }
 ]
