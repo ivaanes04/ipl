@@ -3378,5 +3378,35 @@
   "cc": "ar",
   "team": "Tudor",
   "price": 1
+ },
+ {
+  "at": "2026-11-15T18:50:39+00:00",
+  "date": "2026-11-15",
+  "time": "19:50",
+  "rider": "Jan Huber",
+  "id": 11831,
+  "cc": "ch",
+  "team": "Tudor",
+  "price": 1
+ },
+ {
+  "at": "2026-11-15T18:51:40+00:00",
+  "date": "2026-11-15",
+  "time": "19:51",
+  "rider": "Ben Felix Jochum",
+  "id": 15599,
+  "cc": "de",
+  "team": "Tudor",
+  "price": 1
+ },
+ {
+  "at": "2026-11-15T18:51:41+00:00",
+  "date": "2026-11-15",
+  "time": "19:51",
+  "rider": "Sébastien Grignard",
+  "id": 6743,
+  "cc": "be",
+  "team": "B&B Hotels",
+  "price": 4
  }
 ]
