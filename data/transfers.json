@@ -2053,21 +2053,21 @@
   "at": "2026-11-14T18:00:41+00:00",
   "date": "2026-11-14",
   "time": "19:00",
-  "rider": "Lucas Lopes",
-  "id": 15378,
-  "cc": "pt",
-  "team": "Portugal in 150 Seconds",
-  "price": 2
- },
- {
-  "at": "2026-11-14T18:00:41+00:00",
-  "date": "2026-11-14",
-  "time": "19:00",
   "rider": "Mattéo Vercher",
   "id": 15345,
   "cc": "fr",
   "team": "Talkwalker",
   "price": 7
+ },
+ {
+  "at": "2026-11-14T18:00:41+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Lucas Lopes",
+  "id": 15378,
+  "cc": "pt",
+  "team": "Portugal in 150 Seconds",
+  "price": 2
  },
  {
   "at": "2026-11-14T18:00:45+00:00",
@@ -3438,5 +3438,15 @@
   "cc": "it",
   "team": "Talkwalker",
   "price": 8
+ },
+ {
+  "at": "2026-11-15T19:09:06+00:00",
+  "date": "2026-11-15",
+  "time": "20:09",
+  "rider": "Mads Landbo",
+  "id": 8501,
+  "cc": "dk",
+  "team": "Talkwalker",
+  "price": 2
  }
 ]
