@@ -333,158 +333,6 @@
     }
    ]
   },
-  "7-Eleven": {
-   "player": "ChrisJanssen",
-   "won": 16,
-   "budget": 32,
-   "bids": 1,
-   "riders": [
-    {
-     "name": "Simmons Colby",
-     "id": 15266,
-     "cc": "us",
-     "nat": "United States",
-     "price": 3,
-     "closed": "2026-11-12T18:00:17+00:00",
-     "full": "Colby Simmons"
-    },
-    {
-     "name": "Stites Tyler",
-     "id": 10157,
-     "cc": "us",
-     "nat": "United States",
-     "price": 1,
-     "closed": "2026-11-12T18:00:22+00:00",
-     "full": "Tyler Stites"
-    },
-    {
-     "name": "Gee-West Derek",
-     "id": 12986,
-     "cc": "ca",
-     "nat": "Canada",
-     "price": 20,
-     "closed": "2026-11-13T00:15:41+00:00",
-     "full": "Derek Gee-West"
-    },
-    {
-     "name": "Kessler Cole",
-     "id": 15380,
-     "cc": "us",
-     "nat": "United States",
-     "price": 1,
-     "closed": "2026-11-13T18:00:07+00:00",
-     "full": "Cole Kessler"
-    },
-    {
-     "name": "Vinokurov Nicolas",
-     "id": 14309,
-     "cc": "kz",
-     "nat": "Kazakhstan",
-     "price": 4,
-     "closed": "2026-11-13T18:00:14+00:00",
-     "full": "Nicolas Vinokurov"
-    },
-    {
-     "name": "Stake Laengen Vegard",
-     "id": 2800,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 4,
-     "closed": "2026-11-13T18:00:18+00:00",
-     "full": "Vegard Stake Laengen"
-    },
-    {
-     "name": "Powless Neilson",
-     "id": 5793,
-     "cc": "us",
-     "nat": "United States",
-     "price": 8,
-     "closed": "2026-11-13T18:01:42+00:00",
-     "full": "Neilson Powless"
-    },
-    {
-     "name": "Lutsenko Alexey",
-     "id": 3044,
-     "cc": "kz",
-     "nat": "Kazakhstan",
-     "price": 19,
-     "closed": "2026-11-15T11:53:14+00:00",
-     "full": "Alexey Lutsenko"
-    },
-    {
-     "name": "McNulty Brandon",
-     "id": 6252,
-     "cc": "us",
-     "nat": "United States",
-     "price": 20,
-     "closed": "2026-11-14T01:01:38+00:00",
-     "full": "Brandon McNulty"
-    },
-    {
-     "name": "Schoofs Jasper",
-     "id": 9237,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 3,
-     "closed": "2026-11-14T18:00:02+00:00",
-     "full": "Jasper Schoofs"
-    },
-    {
-     "name": "Kajamini Florian Samuel",
-     "id": 4157,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 3,
-     "closed": "2026-11-14T18:00:08+00:00",
-     "full": "Florian Samuel Kajamini"
-    },
-    {
-     "name": "Pridal Tomáš",
-     "id": 8499,
-     "cc": "cz",
-     "nat": "Czechia",
-     "price": 2,
-     "closed": "2026-11-14T18:00:13+00:00",
-     "full": "Tomáš Pridal"
-    },
-    {
-     "name": "van Aert Wout",
-     "id": 5978,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 59,
-     "closed": "2026-11-14T22:02:07+00:00",
-     "full": "Wout van Aert"
-    },
-    {
-     "name": "Ballerini Davide",
-     "id": 3931,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 8,
-     "closed": "2026-11-15T18:01:41+00:00",
-     "full": "Davide Ballerini"
-    },
-    {
-     "name": "Fedorov Yevgeniy",
-     "id": 7465,
-     "cc": "kz",
-     "nat": "Kazakhstan",
-     "price": 7,
-     "closed": "2026-11-15T18:01:53+00:00",
-     "full": "Yevgeniy Fedorov"
-    },
-    {
-     "name": "Velasco Simone",
-     "id": 5677,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 6,
-     "closed": "2026-11-15T19:16:00+00:00",
-     "full": "Simone Velasco"
-    }
-   ]
-  },
   "Biesse - Carrera - Premac": {
    "player": "Hübi",
    "won": 16,
@@ -634,6 +482,158 @@
      "price": 1,
      "closed": "2026-11-15T18:37:51+00:00",
      "full": "Mattia Agostinacchio"
+    }
+   ]
+  },
+  "7-Eleven": {
+   "player": "ChrisJanssen",
+   "won": 16,
+   "budget": 32,
+   "bids": 15,
+   "riders": [
+    {
+     "name": "Simmons Colby",
+     "id": 15266,
+     "cc": "us",
+     "nat": "United States",
+     "price": 3,
+     "closed": "2026-11-12T18:00:17+00:00",
+     "full": "Colby Simmons"
+    },
+    {
+     "name": "Stites Tyler",
+     "id": 10157,
+     "cc": "us",
+     "nat": "United States",
+     "price": 1,
+     "closed": "2026-11-12T18:00:22+00:00",
+     "full": "Tyler Stites"
+    },
+    {
+     "name": "Gee-West Derek",
+     "id": 12986,
+     "cc": "ca",
+     "nat": "Canada",
+     "price": 20,
+     "closed": "2026-11-13T00:15:41+00:00",
+     "full": "Derek Gee-West"
+    },
+    {
+     "name": "Kessler Cole",
+     "id": 15380,
+     "cc": "us",
+     "nat": "United States",
+     "price": 1,
+     "closed": "2026-11-13T18:00:07+00:00",
+     "full": "Cole Kessler"
+    },
+    {
+     "name": "Vinokurov Nicolas",
+     "id": 14309,
+     "cc": "kz",
+     "nat": "Kazakhstan",
+     "price": 4,
+     "closed": "2026-11-13T18:00:14+00:00",
+     "full": "Nicolas Vinokurov"
+    },
+    {
+     "name": "Stake Laengen Vegard",
+     "id": 2800,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 4,
+     "closed": "2026-11-13T18:00:18+00:00",
+     "full": "Vegard Stake Laengen"
+    },
+    {
+     "name": "Powless Neilson",
+     "id": 5793,
+     "cc": "us",
+     "nat": "United States",
+     "price": 8,
+     "closed": "2026-11-13T18:01:42+00:00",
+     "full": "Neilson Powless"
+    },
+    {
+     "name": "Lutsenko Alexey",
+     "id": 3044,
+     "cc": "kz",
+     "nat": "Kazakhstan",
+     "price": 19,
+     "closed": "2026-11-15T11:53:14+00:00",
+     "full": "Alexey Lutsenko"
+    },
+    {
+     "name": "McNulty Brandon",
+     "id": 6252,
+     "cc": "us",
+     "nat": "United States",
+     "price": 20,
+     "closed": "2026-11-14T01:01:38+00:00",
+     "full": "Brandon McNulty"
+    },
+    {
+     "name": "Schoofs Jasper",
+     "id": 9237,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 3,
+     "closed": "2026-11-14T18:00:02+00:00",
+     "full": "Jasper Schoofs"
+    },
+    {
+     "name": "Kajamini Florian Samuel",
+     "id": 4157,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 3,
+     "closed": "2026-11-14T18:00:08+00:00",
+     "full": "Florian Samuel Kajamini"
+    },
+    {
+     "name": "Pridal Tomáš",
+     "id": 8499,
+     "cc": "cz",
+     "nat": "Czechia",
+     "price": 2,
+     "closed": "2026-11-14T18:00:13+00:00",
+     "full": "Tomáš Pridal"
+    },
+    {
+     "name": "van Aert Wout",
+     "id": 5978,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 59,
+     "closed": "2026-11-14T22:02:07+00:00",
+     "full": "Wout van Aert"
+    },
+    {
+     "name": "Ballerini Davide",
+     "id": 3931,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 8,
+     "closed": "2026-11-15T18:01:41+00:00",
+     "full": "Davide Ballerini"
+    },
+    {
+     "name": "Fedorov Yevgeniy",
+     "id": 7465,
+     "cc": "kz",
+     "nat": "Kazakhstan",
+     "price": 7,
+     "closed": "2026-11-15T18:01:53+00:00",
+     "full": "Yevgeniy Fedorov"
+    },
+    {
+     "name": "Velasco Simone",
+     "id": 5677,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 6,
+     "closed": "2026-11-15T19:16:00+00:00",
+     "full": "Simone Velasco"
     }
    ]
   },
@@ -1754,6 +1754,131 @@
     }
    ]
   },
+  "UnoX": {
+   "player": "IvanEs04",
+   "won": 13,
+   "budget": 107,
+   "bids": 54,
+   "riders": [
+    {
+     "name": "Halland Johannessen Anders",
+     "id": 13451,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 10,
+     "closed": "2026-11-13T15:00:20+00:00",
+     "full": "Anders Halland Johannessen"
+    },
+    {
+     "name": "Larsen Niklas",
+     "id": 5752,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 7,
+     "closed": "2026-11-12T18:05:05+00:00",
+     "full": "Niklas Larsen"
+    },
+    {
+     "name": "Dalby Simon",
+     "id": 15284,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 6,
+     "closed": "2026-11-12T18:05:11+00:00",
+     "full": "Simon Dalby"
+    },
+    {
+     "name": "Søjberg Pedersen Rasmus",
+     "id": 15360,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 6,
+     "closed": "2026-11-13T18:02:41+00:00",
+     "full": "Rasmus Søjberg Pedersen"
+    },
+    {
+     "name": "Haugland Kasper",
+     "id": 9397,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 4,
+     "closed": "2026-11-13T18:03:16+00:00",
+     "full": "Kasper Haugland"
+    },
+    {
+     "name": "Holter Ådne",
+     "id": 7219,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 6,
+     "closed": "2026-11-13T18:07:29+00:00",
+     "full": "Ådne Holter"
+    },
+    {
+     "name": "Halland Johannessen Tobias",
+     "id": 13452,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 28,
+     "closed": "2026-11-14T18:18:39+00:00",
+     "full": "Tobias Halland Johannessen"
+    },
+    {
+     "name": "Eiking Odd Christian",
+     "id": 3586,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 8,
+     "closed": "2026-11-14T18:15:48+00:00",
+     "full": "Odd Christian Eiking"
+    },
+    {
+     "name": "Christophersen Cedrik",
+     "id": 8550,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 4,
+     "closed": "2026-11-14T18:21:09+00:00",
+     "full": "Cedrik Christophersen"
+    },
+    {
+     "name": "Asgreen Kasper",
+     "id": 5750,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 9,
+     "closed": "2026-11-14T18:21:14+00:00",
+     "full": "Kasper Asgreen"
+    },
+    {
+     "name": "Heidemann Miguel",
+     "id": 7197,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 3,
+     "closed": "2026-11-15T18:16:30+00:00",
+     "full": "Miguel Heidemann"
+    },
+    {
+     "name": "Hettegger Michael",
+     "id": 17434,
+     "cc": "at",
+     "nat": "Austria",
+     "price": 1,
+     "closed": "2026-11-15T18:17:22+00:00",
+     "full": "Michael Hettegger"
+    },
+    {
+     "name": "Rydningen Martinsen Georg",
+     "id": 5250,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 1,
+     "closed": "2026-11-15T18:17:57+00:00",
+     "full": "Georg Rydningen Martinsen"
+    }
+   ]
+  },
   "MEO (Benfica)": {
    "player": "TheBigDog",
    "won": 13,
@@ -1876,131 +2001,6 @@
      "price": 3,
      "closed": "2026-11-15T18:24:35+00:00",
      "full": "Nicolas Milesi"
-    }
-   ]
-  },
-  "UnoX": {
-   "player": "IvanEs04",
-   "won": 13,
-   "budget": 107,
-   "bids": 67,
-   "riders": [
-    {
-     "name": "Halland Johannessen Anders",
-     "id": 13451,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 10,
-     "closed": "2026-11-13T15:00:20+00:00",
-     "full": "Anders Halland Johannessen"
-    },
-    {
-     "name": "Larsen Niklas",
-     "id": 5752,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 7,
-     "closed": "2026-11-12T18:05:05+00:00",
-     "full": "Niklas Larsen"
-    },
-    {
-     "name": "Dalby Simon",
-     "id": 15284,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 6,
-     "closed": "2026-11-12T18:05:11+00:00",
-     "full": "Simon Dalby"
-    },
-    {
-     "name": "Søjberg Pedersen Rasmus",
-     "id": 15360,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 6,
-     "closed": "2026-11-13T18:02:41+00:00",
-     "full": "Rasmus Søjberg Pedersen"
-    },
-    {
-     "name": "Haugland Kasper",
-     "id": 9397,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 4,
-     "closed": "2026-11-13T18:03:16+00:00",
-     "full": "Kasper Haugland"
-    },
-    {
-     "name": "Holter Ådne",
-     "id": 7219,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 6,
-     "closed": "2026-11-13T18:07:29+00:00",
-     "full": "Ådne Holter"
-    },
-    {
-     "name": "Halland Johannessen Tobias",
-     "id": 13452,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 28,
-     "closed": "2026-11-14T18:18:39+00:00",
-     "full": "Tobias Halland Johannessen"
-    },
-    {
-     "name": "Eiking Odd Christian",
-     "id": 3586,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 8,
-     "closed": "2026-11-14T18:15:48+00:00",
-     "full": "Odd Christian Eiking"
-    },
-    {
-     "name": "Christophersen Cedrik",
-     "id": 8550,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 4,
-     "closed": "2026-11-14T18:21:09+00:00",
-     "full": "Cedrik Christophersen"
-    },
-    {
-     "name": "Asgreen Kasper",
-     "id": 5750,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 9,
-     "closed": "2026-11-14T18:21:14+00:00",
-     "full": "Kasper Asgreen"
-    },
-    {
-     "name": "Heidemann Miguel",
-     "id": 7197,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 3,
-     "closed": "2026-11-15T18:16:30+00:00",
-     "full": "Miguel Heidemann"
-    },
-    {
-     "name": "Hettegger Michael",
-     "id": 17434,
-     "cc": "at",
-     "nat": "Austria",
-     "price": 1,
-     "closed": "2026-11-15T18:17:22+00:00",
-     "full": "Michael Hettegger"
-    },
-    {
-     "name": "Rydningen Martinsen Georg",
-     "id": 5250,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 1,
-     "closed": "2026-11-15T18:17:57+00:00",
-     "full": "Georg Rydningen Martinsen"
     }
    ]
   },
@@ -2720,9 +2720,9 @@
   },
   "CSC": {
    "player": "marsiscool",
-   "won": 11,
-   "budget": 99,
-   "bids": 81,
+   "won": 12,
+   "budget": 91,
+   "bids": 73,
    "riders": [
     {
      "name": "Withen Philipsen Albert",
@@ -2822,6 +2822,15 @@
      "price": 1,
      "closed": "2026-11-15T19:56:17+00:00",
      "full": "Noah Lindholm Møller"
+    },
+    {
+     "name": "Álvarez Héctor",
+     "id": 9234,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 8,
+     "closed": "2026-11-15T20:00:13+00:00",
+     "full": "Héctor Álvarez"
     }
    ]
   },
@@ -3395,5 +3404,5 @@
    ]
   }
  },
- "checked": "2026-11-15T19:58Z"
+ "checked": "2026-11-15T20:00Z"
 }

@@ -3518,5 +3518,15 @@
   "cc": "dk",
   "team": "CSC",
   "price": 1
+ },
+ {
+  "at": "2026-11-15T20:00:13+00:00",
+  "date": "2026-11-15",
+  "time": "21:00",
+  "rider": "Héctor Álvarez",
+  "id": 9234,
+  "cc": "es",
+  "team": "CSC",
+  "price": 8
  }
 ]
