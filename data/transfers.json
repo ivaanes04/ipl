@@ -3488,5 +3488,35 @@
   "cc": "gb",
   "team": "Royal Bank of Scotland",
   "price": 9
+ },
+ {
+  "at": "2026-11-15T19:56:00+00:00",
+  "date": "2026-11-15",
+  "time": "20:56",
+  "rider": "Peter Øxenberg",
+  "id": 9429,
+  "cc": "dk",
+  "team": "CSC",
+  "price": 4
+ },
+ {
+  "at": "2026-11-15T19:56:09+00:00",
+  "date": "2026-11-15",
+  "time": "20:56",
+  "rider": "Jakob Söderqvist",
+  "id": 8365,
+  "cc": "se",
+  "team": "CSC",
+  "price": 12
+ },
+ {
+  "at": "2026-11-15T19:56:17+00:00",
+  "date": "2026-11-15",
+  "time": "20:56",
+  "rider": "Noah Lindholm Møller",
+  "id": 5541,
+  "cc": "dk",
+  "team": "CSC",
+  "price": 1
  }
 ]
