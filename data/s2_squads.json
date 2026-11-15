@@ -2,6 +2,158 @@
  "source": "pcmmulti.com/ipl/classifica (riders won, budget left); prices seen on /ipl/auctions when each auction closed",
  "max": 30,
  "teams": {
+  "Biesse - Carrera - Premac": {
+   "player": "Hübi",
+   "won": 16,
+   "budget": 34,
+   "bids": 3,
+   "riders": [
+    {
+     "name": "Isidore Noa",
+     "id": 15416,
+     "cc": "fr",
+     "nat": "France",
+     "price": 8,
+     "closed": "2026-11-13T14:34:54+00:00",
+     "full": "Noa Isidore"
+    },
+    {
+     "name": "Covi Alessandro",
+     "id": 7093,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 5,
+     "closed": "2026-11-13T05:21:20+00:00",
+     "full": "Alessandro Covi"
+    },
+    {
+     "name": "Sparfel Aubin",
+     "id": 9427,
+     "cc": "fr",
+     "nat": "France",
+     "price": 9,
+     "closed": "2026-11-13T14:37:03+00:00",
+     "full": "Aubin Sparfel"
+    },
+    {
+     "name": "Crescioli Ludovico",
+     "id": 15386,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 11,
+     "closed": "2026-11-14T05:38:27+00:00",
+     "full": "Ludovico Crescioli"
+    },
+    {
+     "name": "Maestri Mirco",
+     "id": 5676,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 7,
+     "closed": "2026-11-12T18:47:42+00:00",
+     "full": "Mirco Maestri"
+    },
+    {
+     "name": "Sobrero Matteo",
+     "id": 6739,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 12,
+     "closed": "2026-11-14T05:33:07+00:00",
+     "full": "Matteo Sobrero"
+    },
+    {
+     "name": "Scaroni Christian",
+     "id": 7107,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 22,
+     "closed": "2026-11-14T19:29:24+00:00",
+     "full": "Christian Scaroni"
+    },
+    {
+     "name": "Magagnotti Alessio",
+     "id": 5538,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 5,
+     "closed": "2026-11-13T18:50:29+00:00",
+     "full": "Alessio Magagnotti"
+    },
+    {
+     "name": "Frigo Marco",
+     "id": 7126,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 12,
+     "closed": "2026-11-14T19:31:30+00:00",
+     "full": "Marco Frigo"
+    },
+    {
+     "name": "Piganzoli Davide",
+     "id": 14431,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 26,
+     "closed": "2026-11-14T19:28:25+00:00",
+     "full": "Davide Piganzoli"
+    },
+    {
+     "name": "Voisard Yannis",
+     "id": 6618,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 12,
+     "closed": "2026-11-14T19:32:13+00:00",
+     "full": "Yannis Voisard"
+    },
+    {
+     "name": "Mohoric Matej",
+     "id": 3360,
+     "cc": "si",
+     "nat": "Slovenia",
+     "price": 9,
+     "closed": "2026-11-14T19:32:53+00:00",
+     "full": "Matej Mohoric"
+    },
+    {
+     "name": "Vacek Mathias",
+     "id": 7425,
+     "cc": "cz",
+     "nat": "Czechia",
+     "price": 20,
+     "closed": "2026-11-14T19:34:30+00:00",
+     "full": "Mathias Vacek"
+    },
+    {
+     "name": "Lanhove Milan",
+     "id": 10064,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 4,
+     "closed": "2026-11-15T18:37:07+00:00",
+     "full": "Milan Lanhove"
+    },
+    {
+     "name": "De Cassan Davide",
+     "id": 14320,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 3,
+     "closed": "2026-11-15T18:37:29+00:00",
+     "full": "Davide De Cassan"
+    },
+    {
+     "name": "Agostinacchio Mattia",
+     "id": 12368,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 1,
+     "closed": "2026-11-15T18:37:51+00:00",
+     "full": "Mattia Agostinacchio"
+    }
+   ]
+  },
   "GI Group Holding Simoldes UDO": {
    "player": "Joao Negrao",
    "won": 16,
@@ -991,140 +1143,6 @@
      "price": 6,
      "closed": "2026-11-14T18:48:58+00:00",
      "full": "Sandy Dujardin"
-    }
-   ]
-  },
-  "Biesse - Carrera - Premac": {
-   "player": "Hübi",
-   "won": 14,
-   "budget": 38,
-   "bids": 7,
-   "riders": [
-    {
-     "name": "Isidore Noa",
-     "id": 15416,
-     "cc": "fr",
-     "nat": "France",
-     "price": 8,
-     "closed": "2026-11-13T14:34:54+00:00",
-     "full": "Noa Isidore"
-    },
-    {
-     "name": "Covi Alessandro",
-     "id": 7093,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 5,
-     "closed": "2026-11-13T05:21:20+00:00",
-     "full": "Alessandro Covi"
-    },
-    {
-     "name": "Sparfel Aubin",
-     "id": 9427,
-     "cc": "fr",
-     "nat": "France",
-     "price": 9,
-     "closed": "2026-11-13T14:37:03+00:00",
-     "full": "Aubin Sparfel"
-    },
-    {
-     "name": "Crescioli Ludovico",
-     "id": 15386,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 11,
-     "closed": "2026-11-14T05:38:27+00:00",
-     "full": "Ludovico Crescioli"
-    },
-    {
-     "name": "Maestri Mirco",
-     "id": 5676,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 7,
-     "closed": "2026-11-12T18:47:42+00:00",
-     "full": "Mirco Maestri"
-    },
-    {
-     "name": "Sobrero Matteo",
-     "id": 6739,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 12,
-     "closed": "2026-11-14T05:33:07+00:00",
-     "full": "Matteo Sobrero"
-    },
-    {
-     "name": "Scaroni Christian",
-     "id": 7107,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 22,
-     "closed": "2026-11-14T19:29:24+00:00",
-     "full": "Christian Scaroni"
-    },
-    {
-     "name": "Magagnotti Alessio",
-     "id": 5538,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 5,
-     "closed": "2026-11-13T18:50:29+00:00",
-     "full": "Alessio Magagnotti"
-    },
-    {
-     "name": "Frigo Marco",
-     "id": 7126,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 12,
-     "closed": "2026-11-14T19:31:30+00:00",
-     "full": "Marco Frigo"
-    },
-    {
-     "name": "Piganzoli Davide",
-     "id": 14431,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 26,
-     "closed": "2026-11-14T19:28:25+00:00",
-     "full": "Davide Piganzoli"
-    },
-    {
-     "name": "Voisard Yannis",
-     "id": 6618,
-     "cc": "ch",
-     "nat": "Switzerland",
-     "price": 12,
-     "closed": "2026-11-14T19:32:13+00:00",
-     "full": "Yannis Voisard"
-    },
-    {
-     "name": "Mohoric Matej",
-     "id": 3360,
-     "cc": "si",
-     "nat": "Slovenia",
-     "price": 9,
-     "closed": "2026-11-14T19:32:53+00:00",
-     "full": "Matej Mohoric"
-    },
-    {
-     "name": "Vacek Mathias",
-     "id": 7425,
-     "cc": "cz",
-     "nat": "Czechia",
-     "price": 20,
-     "closed": "2026-11-14T19:34:30+00:00",
-     "full": "Mathias Vacek"
-    },
-    {
-     "name": "Lanhove Milan",
-     "id": 10064,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 4,
-     "closed": "2026-11-15T18:37:07+00:00",
-     "full": "Milan Lanhove"
     }
    ]
   },
@@ -3224,5 +3242,5 @@
    ]
   }
  },
- "checked": "2026-11-15T18:37Z"
+ "checked": "2026-11-15T18:40Z"
 }

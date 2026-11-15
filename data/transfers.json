@@ -3328,5 +3328,25 @@
   "cc": "be",
   "team": "Biesse - Carrera - Premac",
   "price": 4
+ },
+ {
+  "at": "2026-11-15T18:37:29+00:00",
+  "date": "2026-11-15",
+  "time": "19:37",
+  "rider": "Davide De Cassan",
+  "id": 14320,
+  "cc": "it",
+  "team": "Biesse - Carrera - Premac",
+  "price": 3
+ },
+ {
+  "at": "2026-11-15T18:37:51+00:00",
+  "date": "2026-11-15",
+  "time": "19:37",
+  "rider": "Mattia Agostinacchio",
+  "id": 12368,
+  "cc": "it",
+  "team": "Biesse - Carrera - Premac",
+  "price": 1
  }
 ]
