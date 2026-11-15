@@ -3418,5 +3418,15 @@
   "cc": "fr",
   "team": "B&B Hotels",
   "price": 1
+ },
+ {
+  "at": "2026-11-15T18:56:11+00:00",
+  "date": "2026-11-15",
+  "time": "19:56",
+  "rider": "Miká Heming",
+  "id": 7649,
+  "cc": "de",
+  "team": "Tudor",
+  "price": 1
  }
 ]

@@ -4,8 +4,8 @@
  "teams": {
   "Tudor": {
    "player": "Grandpa",
-   "won": 18,
-   "budget": 8,
+   "won": 19,
+   "budget": 7,
    "bids": 1,
    "riders": [
     {
@@ -169,6 +169,15 @@
      "price": 1,
      "closed": "2026-11-15T18:51:40+00:00",
      "full": "Ben Felix Jochum"
+    },
+    {
+     "name": "Heming Miká",
+     "id": 7649,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 1,
+     "closed": "2026-11-15T18:56:11+00:00",
+     "full": "Miká Heming"
     }
    ]
   },
@@ -328,7 +337,7 @@
    "player": "Hübi",
    "won": 16,
    "budget": 34,
-   "bids": 3,
+   "bids": 4,
    "riders": [
     {
      "name": "Isidore Noa",
@@ -3305,5 +3314,5 @@
    ]
   }
  },
- "checked": "2026-11-15T18:54Z"
+ "checked": "2026-11-15T18:56Z"
 }
