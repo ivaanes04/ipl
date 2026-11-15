@@ -1023,21 +1023,21 @@
   "at": "2026-11-13T18:00:07+00:00",
   "date": "2026-11-13",
   "time": "19:00",
-  "rider": "Arthur Kluckers",
-  "id": 6879,
-  "cc": "lu",
-  "team": "Ukraine Cycling Team",
-  "price": 4
- },
- {
-  "at": "2026-11-13T18:00:07+00:00",
-  "date": "2026-11-13",
-  "time": "19:00",
   "rider": "Cole Kessler",
   "id": 15380,
   "cc": "us",
   "team": "7-Eleven",
   "price": 1
+ },
+ {
+  "at": "2026-11-13T18:00:07+00:00",
+  "date": "2026-11-13",
+  "time": "19:00",
+  "rider": "Arthur Kluckers",
+  "id": 6879,
+  "cc": "lu",
+  "team": "Ukraine Cycling Team",
+  "price": 4
  },
  {
   "at": "2026-11-13T18:00:07+00:00",
@@ -1953,21 +1953,21 @@
   "at": "2026-11-14T18:00:20+00:00",
   "date": "2026-11-14",
   "time": "19:00",
-  "rider": "Michal Pomorski",
-  "id": 4202,
-  "cc": "pl",
-  "team": "Ukraine Cycling Team",
-  "price": 1
- },
- {
-  "at": "2026-11-14T18:00:20+00:00",
-  "date": "2026-11-14",
-  "time": "19:00",
   "rider": "Tiago Antunes",
   "id": 6892,
   "cc": "pt",
   "team": "Portugal in 150 Seconds",
   "price": 4
+ },
+ {
+  "at": "2026-11-14T18:00:20+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Michal Pomorski",
+  "id": 4202,
+  "cc": "pl",
+  "team": "Ukraine Cycling Team",
+  "price": 1
  },
  {
   "at": "2026-11-14T18:00:24+00:00",
@@ -2968,5 +2968,125 @@
   "cc": "lv",
   "team": "Ukraine Cycling Team",
   "price": 10
+ },
+ {
+  "at": "2026-11-15T18:00:16+00:00",
+  "date": "2026-11-15",
+  "time": "19:00",
+  "rider": "Daan Hoole",
+  "id": 6567,
+  "cc": "nl",
+  "team": "FEIRENSE - BEECELER",
+  "price": 10
+ },
+ {
+  "at": "2026-11-15T18:00:16+00:00",
+  "date": "2026-11-15",
+  "time": "19:00",
+  "rider": "Jonathan Malte Rottmann",
+  "id": 8439,
+  "cc": "de",
+  "team": "Milka",
+  "price": 1
+ },
+ {
+  "at": "2026-11-15T18:00:17+00:00",
+  "date": "2026-11-15",
+  "time": "19:00",
+  "rider": "Jan Tratnik",
+  "id": 2268,
+  "cc": "si",
+  "team": "Portugal in 150 Seconds",
+  "price": 8
+ },
+ {
+  "at": "2026-11-15T18:00:21+00:00",
+  "date": "2026-11-15",
+  "time": "19:00",
+  "rider": "Kasper Borremans",
+  "id": 9425,
+  "cc": "fi",
+  "team": "GI Group Holding Simoldes UDO",
+  "price": 4
+ },
+ {
+  "at": "2026-11-15T18:00:23+00:00",
+  "date": "2026-11-15",
+  "time": "19:00",
+  "rider": "Eddie Dunbar",
+  "id": 5789,
+  "cc": "ie",
+  "team": "FEIRENSE - BEECELER",
+  "price": 6
+ },
+ {
+  "at": "2026-11-15T18:00:28+00:00",
+  "date": "2026-11-15",
+  "time": "19:00",
+  "rider": "Andrea Mifsud",
+  "id": 14447,
+  "cc": null,
+  "team": "GI Group Holding Simoldes UDO",
+  "price": 4
+ },
+ {
+  "at": "2026-11-15T18:00:30+00:00",
+  "date": "2026-11-15",
+  "time": "19:00",
+  "rider": "Iván García Cortina",
+  "id": 5106,
+  "cc": "es",
+  "team": "Renova",
+  "price": 10
+ },
+ {
+  "at": "2026-11-15T18:00:47+00:00",
+  "date": "2026-11-15",
+  "time": "19:00",
+  "rider": "Benjamí Prades",
+  "id": 6565,
+  "cc": "es",
+  "team": "FEIRENSE - BEECELER",
+  "price": 2
+ },
+ {
+  "at": "2026-11-15T18:01:06+00:00",
+  "date": "2026-11-15",
+  "time": "19:01",
+  "rider": "Thomas Gachignard",
+  "id": 15315,
+  "cc": "fr",
+  "team": "Portugal in 150 Seconds",
+  "price": 6
+ },
+ {
+  "at": "2026-11-15T18:01:20+00:00",
+  "date": "2026-11-15",
+  "time": "19:01",
+  "rider": "Aleksandr Vlasov",
+  "id": 6419,
+  "cc": "ru",
+  "team": "Portugal in 150 Seconds",
+  "price": 10
+ },
+ {
+  "at": "2026-11-15T18:01:41+00:00",
+  "date": "2026-11-15",
+  "time": "19:01",
+  "rider": "Davide Ballerini",
+  "id": 3931,
+  "cc": "it",
+  "team": "7-Eleven",
+  "price": 8
+ },
+ {
+  "at": "2026-11-15T18:01:53+00:00",
+  "date": "2026-11-15",
+  "time": "19:01",
+  "rider": "Yevgeniy Fedorov",
+  "id": 7465,
+  "cc": "kz",
+  "team": "7-Eleven",
+  "price": 7
  }
 ]
