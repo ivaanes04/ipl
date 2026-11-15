@@ -3088,5 +3088,25 @@
   "cc": "kz",
   "team": "7-Eleven",
   "price": 7
+ },
+ {
+  "at": "2026-11-15T18:02:33+00:00",
+  "date": "2026-11-15",
+  "time": "19:02",
+  "rider": "Hamish McKenzie",
+  "id": 15607,
+  "cc": "au",
+  "team": "Deceuninck - Quick-Step",
+  "price": 1
+ },
+ {
+  "at": "2026-11-15T18:03:07+00:00",
+  "date": "2026-11-15",
+  "time": "19:03",
+  "rider": "Domenico Pozzovivo",
+  "id": 576,
+  "cc": "it",
+  "team": "GI Group Holding Simoldes UDO",
+  "price": 6
  }
 ]
