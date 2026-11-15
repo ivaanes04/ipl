@@ -846,7 +846,7 @@
    "player": "Pena Guevara",
    "won": 14,
    "budget": 46,
-   "bids": 33,
+   "bids": 36,
    "riders": [
     {
      "name": "Oliveira Rui",
@@ -1935,7 +1935,7 @@
    "player": "Hillingz",
    "won": 11,
    "budget": 90,
-   "bids": 71,
+   "bids": 72,
    "riders": [
     {
      "name": "Juul-Jensen Christopher",
@@ -2042,7 +2042,7 @@
    "player": "Joewhiteley0711",
    "won": 10,
    "budget": 118,
-   "bids": 62,
+   "bids": 66,
    "riders": [
     {
      "name": "Konychev Alexander",
@@ -2688,6 +2688,86 @@
     }
    ]
   },
+  "Royal Bank of Scotland": {
+   "player": "Sheep_Boy123",
+   "won": 8,
+   "budget": 147,
+   "bids": 72,
+   "riders": [
+    {
+     "name": "Rowe Elliot",
+     "id": 9198,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 4,
+     "closed": "2026-11-12T18:05:48+00:00",
+     "full": "Elliot Rowe"
+    },
+    {
+     "name": "Flynn Sean",
+     "id": 7523,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 3,
+     "closed": "2026-11-12T18:05:53+00:00",
+     "full": "Sean Flynn"
+    },
+    {
+     "name": "Yates Adam",
+     "id": 3367,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 19,
+     "closed": "2026-11-13T20:28:49+00:00",
+     "full": "Adam Yates"
+    },
+    {
+     "name": "Tarling Joshua",
+     "id": 15278,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 16,
+     "closed": "2026-11-14T22:37:18+00:00",
+     "full": "Joshua Tarling"
+    },
+    {
+     "name": "Walker Max",
+     "id": 14574,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 3,
+     "closed": "2026-11-15T18:03:27+00:00",
+     "full": "Max Walker"
+    },
+    {
+     "name": "Kyffin Zeb",
+     "id": 15121,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 1,
+     "closed": "2026-11-15T18:03:41+00:00",
+     "full": "Zeb Kyffin"
+    },
+    {
+     "name": "Golliker Joshua",
+     "id": 8470,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 1,
+     "closed": "2026-11-15T18:03:46+00:00",
+     "full": "Joshua Golliker"
+    },
+    {
+     "name": "Donaldson Robert",
+     "id": 15011,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 6,
+     "closed": "2026-11-15T18:03:54+00:00",
+     "full": "Robert Donaldson"
+    }
+   ]
+  },
   "Discovery Channel": {
    "player": "Agap",
    "won": 8,
@@ -2980,51 +3060,7 @@
      "full": "Hugo Nunes"
     }
    ]
-  },
-  "Royal Bank of Scotland": {
-   "player": "Sheep_Boy123",
-   "won": 4,
-   "budget": 158,
-   "bids": 83,
-   "riders": [
-    {
-     "name": "Rowe Elliot",
-     "id": 9198,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 4,
-     "closed": "2026-11-12T18:05:48+00:00",
-     "full": "Elliot Rowe"
-    },
-    {
-     "name": "Flynn Sean",
-     "id": 7523,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 3,
-     "closed": "2026-11-12T18:05:53+00:00",
-     "full": "Sean Flynn"
-    },
-    {
-     "name": "Yates Adam",
-     "id": 3367,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 19,
-     "closed": "2026-11-13T20:28:49+00:00",
-     "full": "Adam Yates"
-    },
-    {
-     "name": "Tarling Joshua",
-     "id": 15278,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 16,
-     "closed": "2026-11-14T22:37:18+00:00",
-     "full": "Joshua Tarling"
-    }
-   ]
   }
  },
- "checked": "2026-11-15T18:03Z"
+ "checked": "2026-11-15T18:06Z"
 }
