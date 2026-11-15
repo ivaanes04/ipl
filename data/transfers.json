@@ -3578,5 +3578,35 @@
   "cc": "nl",
   "team": "Discovery Channel",
   "price": 2
+ },
+ {
+  "at": "2026-11-15T20:42:23+00:00",
+  "date": "2026-11-15",
+  "time": "21:42",
+  "rider": "Pavel Bittner",
+  "id": 7495,
+  "cc": "cz",
+  "team": "Bahrain Victorious",
+  "price": 14
+ },
+ {
+  "at": "2026-11-15T20:42:39+00:00",
+  "date": "2026-11-15",
+  "time": "21:42",
+  "rider": "Max van der Meulen",
+  "id": 4945,
+  "cc": "nl",
+  "team": "Unibet Rose Rockets",
+  "price": 2
+ },
+ {
+  "at": "2026-11-15T20:44:36+00:00",
+  "date": "2026-11-15",
+  "time": "21:44",
+  "rider": "Sjoerd Bax",
+  "id": 3901,
+  "cc": "nl",
+  "team": "Unibet Rose Rockets",
+  "price": 4
  }
 ]
