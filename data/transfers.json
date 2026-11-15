@@ -3218,5 +3218,15 @@
   "cc": "no",
   "team": "UnoX",
   "price": 1
+ },
+ {
+  "at": "2026-11-15T18:22:33+00:00",
+  "date": "2026-11-15",
+  "time": "19:22",
+  "rider": "Lorenzo Milesi",
+  "id": 14247,
+  "cc": "it",
+  "team": "MEO (Benfica)",
+  "price": 8
  }
 ]
