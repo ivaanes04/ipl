@@ -1273,21 +1273,21 @@
   "at": "2026-11-13T18:02:11+00:00",
   "date": "2026-11-13",
   "time": "19:02",
-  "rider": "Matteo Malucelli",
-  "id": 4038,
-  "cc": "it",
-  "team": "Talkwalker",
-  "price": 5
- },
- {
-  "at": "2026-11-13T18:02:11+00:00",
-  "date": "2026-11-13",
-  "time": "19:02",
   "rider": "Florian Vermeersch",
   "id": 7037,
   "cc": "be",
   "team": "Deceuninck - Quick-Step",
   "price": 12
+ },
+ {
+  "at": "2026-11-13T18:02:11+00:00",
+  "date": "2026-11-13",
+  "time": "19:02",
+  "rider": "Matteo Malucelli",
+  "id": 4038,
+  "cc": "it",
+  "team": "Talkwalker",
+  "price": 5
  },
  {
   "at": "2026-11-13T18:02:41+00:00",
@@ -3258,5 +3258,15 @@
   "cc": "it",
   "team": "MEO (Benfica)",
   "price": 3
+ },
+ {
+  "at": "2026-11-15T18:26:35+00:00",
+  "date": "2026-11-15",
+  "time": "19:26",
+  "rider": "Martin Marcellusi",
+  "id": 14216,
+  "cc": "it",
+  "team": "MTN Qhubeka",
+  "price": 4
  }
 ]
