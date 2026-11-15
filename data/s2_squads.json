@@ -2,6 +2,158 @@
  "source": "pcmmulti.com/ipl/classifica (riders won, budget left); prices seen on /ipl/auctions when each auction closed",
  "max": 30,
  "teams": {
+  "GI Group Holding Simoldes UDO": {
+   "player": "Joao Negrao",
+   "won": 16,
+   "budget": 101,
+   "bids": 93,
+   "riders": [
+    {
+     "name": "Parra José Félix",
+     "id": 7462,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 6,
+     "closed": "2026-11-12T18:03:42+00:00",
+     "full": "José Félix Parra"
+    },
+    {
+     "name": "de Bod Stefan",
+     "id": 6354,
+     "cc": "za",
+     "nat": "South Africa",
+     "price": 5,
+     "closed": "2026-11-12T18:52:03+00:00",
+     "full": "Stefan de Bod"
+    },
+    {
+     "name": "Romeo Iván",
+     "id": 15283,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 13,
+     "closed": "2026-11-13T14:53:03+00:00",
+     "full": "Iván Romeo"
+    },
+    {
+     "name": "Bais Mattia",
+     "id": 7094,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 7,
+     "closed": "2026-11-13T18:15:23+00:00",
+     "full": "Mattia Bais"
+    },
+    {
+     "name": "Avancini Henrique",
+     "id": 11494,
+     "cc": "br",
+     "nat": "Brazil",
+     "price": 1,
+     "closed": "2026-11-13T18:04:05+00:00",
+     "full": "Henrique Avancini"
+    },
+    {
+     "name": "Reis Rafael",
+     "id": 3271,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 3,
+     "closed": "2026-11-13T18:04:28+00:00",
+     "full": "Rafael Reis"
+    },
+    {
+     "name": "García Pierna Raúl",
+     "id": 7454,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 10,
+     "closed": "2026-11-14T21:17:22+00:00",
+     "full": "Raúl García Pierna"
+    },
+    {
+     "name": "Bizkarra Mikel",
+     "id": 2515,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 6,
+     "closed": "2026-11-13T18:13:14+00:00",
+     "full": "Mikel Bizkarra"
+    },
+    {
+     "name": "Soler Marc",
+     "id": 3700,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 8,
+     "closed": "2026-11-13T18:13:20+00:00",
+     "full": "Marc Soler"
+    },
+    {
+     "name": "Rafferty Adam",
+     "id": 9438,
+     "cc": "ie",
+     "nat": "Ireland",
+     "price": 3,
+     "closed": "2026-11-15T01:21:44+00:00",
+     "full": "Adam Rafferty"
+    },
+    {
+     "name": "Van Wilder Ilan",
+     "id": 7092,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 16,
+     "closed": "2026-11-15T17:10:35+00:00",
+     "full": "Ilan Van Wilder"
+    },
+    {
+     "name": "Neves José",
+     "id": 17727,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 3,
+     "closed": "2026-11-14T18:08:21+00:00",
+     "full": "José Neves"
+    },
+    {
+     "name": "Borremans Kasper",
+     "id": 9425,
+     "cc": "fi",
+     "nat": "Finland",
+     "price": 4,
+     "closed": "2026-11-15T18:00:21+00:00",
+     "full": "Kasper Borremans"
+    },
+    {
+     "name": "Mifsud Andrea",
+     "id": 14447,
+     "cc": null,
+     "nat": "Malta",
+     "price": 4,
+     "closed": "2026-11-15T18:00:28+00:00",
+     "full": "Andrea Mifsud"
+    },
+    {
+     "name": "Pozzovivo Domenico",
+     "id": 576,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 6,
+     "closed": "2026-11-15T18:03:07+00:00",
+     "full": "Domenico Pozzovivo"
+    },
+    {
+     "name": "Guglielmi Simon",
+     "id": 7067,
+     "cc": "fr",
+     "nat": "France",
+     "price": 4,
+     "closed": "2026-11-15T18:06:10+00:00",
+     "full": "Simon Guglielmi"
+    }
+   ]
+  },
   "Portugal in 150 Seconds": {
    "player": "Bessadelas",
    "won": 15,
@@ -288,149 +440,6 @@
     }
    ]
   },
-  "GI Group Holding Simoldes UDO": {
-   "player": "Joao Negrao",
-   "won": 15,
-   "budget": 105,
-   "bids": 97,
-   "riders": [
-    {
-     "name": "Parra José Félix",
-     "id": 7462,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 6,
-     "closed": "2026-11-12T18:03:42+00:00",
-     "full": "José Félix Parra"
-    },
-    {
-     "name": "de Bod Stefan",
-     "id": 6354,
-     "cc": "za",
-     "nat": "South Africa",
-     "price": 5,
-     "closed": "2026-11-12T18:52:03+00:00",
-     "full": "Stefan de Bod"
-    },
-    {
-     "name": "Romeo Iván",
-     "id": 15283,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 13,
-     "closed": "2026-11-13T14:53:03+00:00",
-     "full": "Iván Romeo"
-    },
-    {
-     "name": "Bais Mattia",
-     "id": 7094,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 7,
-     "closed": "2026-11-13T18:15:23+00:00",
-     "full": "Mattia Bais"
-    },
-    {
-     "name": "Avancini Henrique",
-     "id": 11494,
-     "cc": "br",
-     "nat": "Brazil",
-     "price": 1,
-     "closed": "2026-11-13T18:04:05+00:00",
-     "full": "Henrique Avancini"
-    },
-    {
-     "name": "Reis Rafael",
-     "id": 3271,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 3,
-     "closed": "2026-11-13T18:04:28+00:00",
-     "full": "Rafael Reis"
-    },
-    {
-     "name": "García Pierna Raúl",
-     "id": 7454,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 10,
-     "closed": "2026-11-14T21:17:22+00:00",
-     "full": "Raúl García Pierna"
-    },
-    {
-     "name": "Bizkarra Mikel",
-     "id": 2515,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 6,
-     "closed": "2026-11-13T18:13:14+00:00",
-     "full": "Mikel Bizkarra"
-    },
-    {
-     "name": "Soler Marc",
-     "id": 3700,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 8,
-     "closed": "2026-11-13T18:13:20+00:00",
-     "full": "Marc Soler"
-    },
-    {
-     "name": "Rafferty Adam",
-     "id": 9438,
-     "cc": "ie",
-     "nat": "Ireland",
-     "price": 3,
-     "closed": "2026-11-15T01:21:44+00:00",
-     "full": "Adam Rafferty"
-    },
-    {
-     "name": "Van Wilder Ilan",
-     "id": 7092,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 16,
-     "closed": "2026-11-15T17:10:35+00:00",
-     "full": "Ilan Van Wilder"
-    },
-    {
-     "name": "Neves José",
-     "id": 17727,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 3,
-     "closed": "2026-11-14T18:08:21+00:00",
-     "full": "José Neves"
-    },
-    {
-     "name": "Borremans Kasper",
-     "id": 9425,
-     "cc": "fi",
-     "nat": "Finland",
-     "price": 4,
-     "closed": "2026-11-15T18:00:21+00:00",
-     "full": "Kasper Borremans"
-    },
-    {
-     "name": "Mifsud Andrea",
-     "id": 14447,
-     "cc": null,
-     "nat": "Malta",
-     "price": 4,
-     "closed": "2026-11-15T18:00:28+00:00",
-     "full": "Andrea Mifsud"
-    },
-    {
-     "name": "Pozzovivo Domenico",
-     "id": 576,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 6,
-     "closed": "2026-11-15T18:03:07+00:00",
-     "full": "Domenico Pozzovivo"
-    }
-   ]
-  },
   "Tudor": {
    "player": "Grandpa",
    "won": 15,
@@ -712,7 +721,7 @@
    "player": "Riverside",
    "won": 14,
    "budget": 113,
-   "bids": 70,
+   "bids": 72,
    "riders": [
     {
      "name": "Otruba Jakub",
@@ -3062,5 +3071,5 @@
    ]
   }
  },
- "checked": "2026-11-15T18:06Z"
+ "checked": "2026-11-15T18:08Z"
 }

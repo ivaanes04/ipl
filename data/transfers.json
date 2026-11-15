@@ -3148,5 +3148,15 @@
   "cc": "gb",
   "team": "Royal Bank of Scotland",
   "price": 6
+ },
+ {
+  "at": "2026-11-15T18:06:10+00:00",
+  "date": "2026-11-15",
+  "time": "19:06",
+  "rider": "Simon Guglielmi",
+  "id": 7067,
+  "cc": "fr",
+  "team": "GI Group Holding Simoldes UDO",
+  "price": 4
  }
 ]
