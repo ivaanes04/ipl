@@ -1244,6 +1244,256 @@
     }
    ]
   },
+  "UnoX": {
+   "player": "IvanEs04",
+   "won": 13,
+   "budget": 107,
+   "bids": 54,
+   "riders": [
+    {
+     "name": "Halland Johannessen Anders",
+     "id": 13451,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 10,
+     "closed": "2026-11-13T15:00:20+00:00",
+     "full": "Anders Halland Johannessen"
+    },
+    {
+     "name": "Larsen Niklas",
+     "id": 5752,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 7,
+     "closed": "2026-11-12T18:05:05+00:00",
+     "full": "Niklas Larsen"
+    },
+    {
+     "name": "Dalby Simon",
+     "id": 15284,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 6,
+     "closed": "2026-11-12T18:05:11+00:00",
+     "full": "Simon Dalby"
+    },
+    {
+     "name": "Søjberg Pedersen Rasmus",
+     "id": 15360,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 6,
+     "closed": "2026-11-13T18:02:41+00:00",
+     "full": "Rasmus Søjberg Pedersen"
+    },
+    {
+     "name": "Haugland Kasper",
+     "id": 9397,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 4,
+     "closed": "2026-11-13T18:03:16+00:00",
+     "full": "Kasper Haugland"
+    },
+    {
+     "name": "Holter Ådne",
+     "id": 7219,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 6,
+     "closed": "2026-11-13T18:07:29+00:00",
+     "full": "Ådne Holter"
+    },
+    {
+     "name": "Halland Johannessen Tobias",
+     "id": 13452,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 28,
+     "closed": "2026-11-14T18:18:39+00:00",
+     "full": "Tobias Halland Johannessen"
+    },
+    {
+     "name": "Eiking Odd Christian",
+     "id": 3586,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 8,
+     "closed": "2026-11-14T18:15:48+00:00",
+     "full": "Odd Christian Eiking"
+    },
+    {
+     "name": "Christophersen Cedrik",
+     "id": 8550,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 4,
+     "closed": "2026-11-14T18:21:09+00:00",
+     "full": "Cedrik Christophersen"
+    },
+    {
+     "name": "Asgreen Kasper",
+     "id": 5750,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 9,
+     "closed": "2026-11-14T18:21:14+00:00",
+     "full": "Kasper Asgreen"
+    },
+    {
+     "name": "Heidemann Miguel",
+     "id": 7197,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 3,
+     "closed": "2026-11-15T18:16:30+00:00",
+     "full": "Miguel Heidemann"
+    },
+    {
+     "name": "Hettegger Michael",
+     "id": 17434,
+     "cc": "at",
+     "nat": "Austria",
+     "price": 1,
+     "closed": "2026-11-15T18:17:22+00:00",
+     "full": "Michael Hettegger"
+    },
+    {
+     "name": "Rydningen Martinsen Georg",
+     "id": 5250,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 1,
+     "closed": "2026-11-15T18:17:57+00:00",
+     "full": "Georg Rydningen Martinsen"
+    }
+   ]
+  },
+  "MTN Qhubeka": {
+   "player": "Joewhiteley0711",
+   "won": 13,
+   "budget": 80,
+   "bids": 28,
+   "riders": [
+    {
+     "name": "Konychev Alexander",
+     "id": 7069,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 2,
+     "closed": "2026-11-12T18:00:26+00:00",
+     "full": "Alexander Konychev"
+    },
+    {
+     "name": "Janse van Rensburg Reinardt",
+     "id": 2658,
+     "cc": "za",
+     "nat": "South Africa",
+     "price": 1,
+     "closed": "2026-11-12T20:02:42+00:00",
+     "full": "Reinardt Janse van Rensburg"
+    },
+    {
+     "name": "Torres Albert",
+     "id": 5844,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 1,
+     "closed": "2026-11-12T20:03:42+00:00",
+     "full": "Albert Torres"
+    },
+    {
+     "name": "Boulahoite Rayan",
+     "id": 8702,
+     "cc": "fr",
+     "nat": "France",
+     "price": 3,
+     "closed": "2026-11-12T21:43:57+00:00",
+     "full": "Rayan Boulahoite"
+    },
+    {
+     "name": "González David",
+     "id": 6791,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 4,
+     "closed": "2026-11-13T18:37:14+00:00",
+     "full": "David González"
+    },
+    {
+     "name": "Pidcock Tom",
+     "id": 6501,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 55,
+     "closed": "2026-11-13T18:54:07+00:00",
+     "full": "Tom Pidcock"
+    },
+    {
+     "name": "Ghebreigzabhier Amanuel",
+     "id": 6357,
+     "cc": "er",
+     "nat": "Eritrea",
+     "price": 5,
+     "closed": "2026-11-13T20:24:37+00:00",
+     "full": "Amanuel Ghebreigzabhier"
+    },
+    {
+     "name": "Kudus Merhawi",
+     "id": 3466,
+     "cc": "er",
+     "nat": "Eritrea",
+     "price": 3,
+     "closed": "2026-11-13T20:25:46+00:00",
+     "full": "Merhawi Kudus"
+    },
+    {
+     "name": "Pidcock Joe",
+     "id": 7546,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 2,
+     "closed": "2026-11-13T20:59:53+00:00",
+     "full": "Joe Pidcock"
+    },
+    {
+     "name": "Azparren Xabier Mikel",
+     "id": 7445,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 6,
+     "closed": "2026-11-14T20:19:13+00:00",
+     "full": "Xabier Mikel Azparren"
+    },
+    {
+     "name": "Swift Ben",
+     "id": 797,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 27,
+     "closed": "2026-11-15T18:17:51+00:00",
+     "full": "Ben Swift"
+    },
+    {
+     "name": "Munton Byron",
+     "id": 13948,
+     "cc": "za",
+     "nat": "South Africa",
+     "price": 8,
+     "closed": "2026-11-15T18:13:19+00:00",
+     "full": "Byron Munton"
+    },
+    {
+     "name": "O'Brien Kelland",
+     "id": 14302,
+     "cc": "au",
+     "nat": "Australia",
+     "price": 3,
+     "closed": "2026-11-15T18:14:55+00:00",
+     "full": "Kelland O'Brien"
+    }
+   ]
+  },
   "Unibet Rose Rockets": {
    "player": "firejohn",
    "won": 13,
@@ -1494,243 +1744,11 @@
     }
    ]
   },
-  "UnoX": {
-   "player": "IvanEs04",
-   "won": 12,
-   "budget": 108,
-   "bids": 55,
-   "riders": [
-    {
-     "name": "Halland Johannessen Anders",
-     "id": 13451,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 10,
-     "closed": "2026-11-13T15:00:20+00:00",
-     "full": "Anders Halland Johannessen"
-    },
-    {
-     "name": "Larsen Niklas",
-     "id": 5752,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 7,
-     "closed": "2026-11-12T18:05:05+00:00",
-     "full": "Niklas Larsen"
-    },
-    {
-     "name": "Dalby Simon",
-     "id": 15284,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 6,
-     "closed": "2026-11-12T18:05:11+00:00",
-     "full": "Simon Dalby"
-    },
-    {
-     "name": "Søjberg Pedersen Rasmus",
-     "id": 15360,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 6,
-     "closed": "2026-11-13T18:02:41+00:00",
-     "full": "Rasmus Søjberg Pedersen"
-    },
-    {
-     "name": "Haugland Kasper",
-     "id": 9397,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 4,
-     "closed": "2026-11-13T18:03:16+00:00",
-     "full": "Kasper Haugland"
-    },
-    {
-     "name": "Holter Ådne",
-     "id": 7219,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 6,
-     "closed": "2026-11-13T18:07:29+00:00",
-     "full": "Ådne Holter"
-    },
-    {
-     "name": "Halland Johannessen Tobias",
-     "id": 13452,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 28,
-     "closed": "2026-11-14T18:18:39+00:00",
-     "full": "Tobias Halland Johannessen"
-    },
-    {
-     "name": "Eiking Odd Christian",
-     "id": 3586,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 8,
-     "closed": "2026-11-14T18:15:48+00:00",
-     "full": "Odd Christian Eiking"
-    },
-    {
-     "name": "Christophersen Cedrik",
-     "id": 8550,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 4,
-     "closed": "2026-11-14T18:21:09+00:00",
-     "full": "Cedrik Christophersen"
-    },
-    {
-     "name": "Asgreen Kasper",
-     "id": 5750,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 9,
-     "closed": "2026-11-14T18:21:14+00:00",
-     "full": "Kasper Asgreen"
-    },
-    {
-     "name": "Heidemann Miguel",
-     "id": 7197,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 3,
-     "closed": "2026-11-15T18:16:30+00:00",
-     "full": "Miguel Heidemann"
-    },
-    {
-     "name": "Hettegger Michael",
-     "id": 17434,
-     "cc": "at",
-     "nat": "Austria",
-     "price": 1,
-     "closed": "2026-11-15T18:17:22+00:00",
-     "full": "Michael Hettegger"
-    }
-   ]
-  },
-  "MTN Qhubeka": {
-   "player": "Joewhiteley0711",
-   "won": 12,
-   "budget": 107,
-   "bids": 55,
-   "riders": [
-    {
-     "name": "Konychev Alexander",
-     "id": 7069,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 2,
-     "closed": "2026-11-12T18:00:26+00:00",
-     "full": "Alexander Konychev"
-    },
-    {
-     "name": "Janse van Rensburg Reinardt",
-     "id": 2658,
-     "cc": "za",
-     "nat": "South Africa",
-     "price": 1,
-     "closed": "2026-11-12T20:02:42+00:00",
-     "full": "Reinardt Janse van Rensburg"
-    },
-    {
-     "name": "Torres Albert",
-     "id": 5844,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 1,
-     "closed": "2026-11-12T20:03:42+00:00",
-     "full": "Albert Torres"
-    },
-    {
-     "name": "Boulahoite Rayan",
-     "id": 8702,
-     "cc": "fr",
-     "nat": "France",
-     "price": 3,
-     "closed": "2026-11-12T21:43:57+00:00",
-     "full": "Rayan Boulahoite"
-    },
-    {
-     "name": "González David",
-     "id": 6791,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 4,
-     "closed": "2026-11-13T18:37:14+00:00",
-     "full": "David González"
-    },
-    {
-     "name": "Pidcock Tom",
-     "id": 6501,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 55,
-     "closed": "2026-11-13T18:54:07+00:00",
-     "full": "Tom Pidcock"
-    },
-    {
-     "name": "Ghebreigzabhier Amanuel",
-     "id": 6357,
-     "cc": "er",
-     "nat": "Eritrea",
-     "price": 5,
-     "closed": "2026-11-13T20:24:37+00:00",
-     "full": "Amanuel Ghebreigzabhier"
-    },
-    {
-     "name": "Kudus Merhawi",
-     "id": 3466,
-     "cc": "er",
-     "nat": "Eritrea",
-     "price": 3,
-     "closed": "2026-11-13T20:25:46+00:00",
-     "full": "Merhawi Kudus"
-    },
-    {
-     "name": "Pidcock Joe",
-     "id": 7546,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 2,
-     "closed": "2026-11-13T20:59:53+00:00",
-     "full": "Joe Pidcock"
-    },
-    {
-     "name": "Azparren Xabier Mikel",
-     "id": 7445,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 6,
-     "closed": "2026-11-14T20:19:13+00:00",
-     "full": "Xabier Mikel Azparren"
-    },
-    {
-     "name": "Munton Byron",
-     "id": 13948,
-     "cc": "za",
-     "nat": "South Africa",
-     "price": 8,
-     "closed": "2026-11-15T18:13:19+00:00",
-     "full": "Byron Munton"
-    },
-    {
-     "name": "O'Brien Kelland",
-     "id": 14302,
-     "cc": "au",
-     "nat": "Australia",
-     "price": 3,
-     "closed": "2026-11-15T18:14:55+00:00",
-     "full": "Kelland O'Brien"
-    }
-   ]
-  },
   "FEIRENSE - BEECELER": {
    "player": "joaozinhoaac",
    "won": 12,
    "budget": 121,
-   "bids": 72,
+   "bids": 53,
    "riders": [
     {
      "name": "van Dijke Tim",
@@ -2733,86 +2751,6 @@
     }
    ]
   },
-  "Royal Bank of Scotland": {
-   "player": "Sheep_Boy123",
-   "won": 8,
-   "budget": 147,
-   "bids": 80,
-   "riders": [
-    {
-     "name": "Rowe Elliot",
-     "id": 9198,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 4,
-     "closed": "2026-11-12T18:05:48+00:00",
-     "full": "Elliot Rowe"
-    },
-    {
-     "name": "Flynn Sean",
-     "id": 7523,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 3,
-     "closed": "2026-11-12T18:05:53+00:00",
-     "full": "Sean Flynn"
-    },
-    {
-     "name": "Yates Adam",
-     "id": 3367,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 19,
-     "closed": "2026-11-13T20:28:49+00:00",
-     "full": "Adam Yates"
-    },
-    {
-     "name": "Tarling Joshua",
-     "id": 15278,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 16,
-     "closed": "2026-11-14T22:37:18+00:00",
-     "full": "Joshua Tarling"
-    },
-    {
-     "name": "Walker Max",
-     "id": 14574,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 3,
-     "closed": "2026-11-15T18:03:27+00:00",
-     "full": "Max Walker"
-    },
-    {
-     "name": "Kyffin Zeb",
-     "id": 15121,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 1,
-     "closed": "2026-11-15T18:03:41+00:00",
-     "full": "Zeb Kyffin"
-    },
-    {
-     "name": "Golliker Joshua",
-     "id": 8470,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 1,
-     "closed": "2026-11-15T18:03:46+00:00",
-     "full": "Joshua Golliker"
-    },
-    {
-     "name": "Donaldson Robert",
-     "id": 15011,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 6,
-     "closed": "2026-11-15T18:03:54+00:00",
-     "full": "Robert Donaldson"
-    }
-   ]
-  },
   "Discovery Channel": {
    "player": "Agap",
    "won": 8,
@@ -2890,6 +2828,86 @@
      "price": 7,
      "closed": "2026-11-14T19:06:02+00:00",
      "full": "Jordi Meeus"
+    }
+   ]
+  },
+  "Royal Bank of Scotland": {
+   "player": "Sheep_Boy123",
+   "won": 8,
+   "budget": 147,
+   "bids": 100,
+   "riders": [
+    {
+     "name": "Rowe Elliot",
+     "id": 9198,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 4,
+     "closed": "2026-11-12T18:05:48+00:00",
+     "full": "Elliot Rowe"
+    },
+    {
+     "name": "Flynn Sean",
+     "id": 7523,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 3,
+     "closed": "2026-11-12T18:05:53+00:00",
+     "full": "Sean Flynn"
+    },
+    {
+     "name": "Yates Adam",
+     "id": 3367,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 19,
+     "closed": "2026-11-13T20:28:49+00:00",
+     "full": "Adam Yates"
+    },
+    {
+     "name": "Tarling Joshua",
+     "id": 15278,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 16,
+     "closed": "2026-11-14T22:37:18+00:00",
+     "full": "Joshua Tarling"
+    },
+    {
+     "name": "Walker Max",
+     "id": 14574,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 3,
+     "closed": "2026-11-15T18:03:27+00:00",
+     "full": "Max Walker"
+    },
+    {
+     "name": "Kyffin Zeb",
+     "id": 15121,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 1,
+     "closed": "2026-11-15T18:03:41+00:00",
+     "full": "Zeb Kyffin"
+    },
+    {
+     "name": "Golliker Joshua",
+     "id": 8470,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 1,
+     "closed": "2026-11-15T18:03:46+00:00",
+     "full": "Joshua Golliker"
+    },
+    {
+     "name": "Donaldson Robert",
+     "id": 15011,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 6,
+     "closed": "2026-11-15T18:03:54+00:00",
+     "full": "Robert Donaldson"
     }
    ]
   },
@@ -3107,5 +3125,5 @@
    ]
   }
  },
- "checked": "2026-11-15T18:17Z"
+ "checked": "2026-11-15T18:18Z"
 }
