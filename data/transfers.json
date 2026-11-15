@@ -1073,21 +1073,21 @@
   "at": "2026-11-13T18:00:20+00:00",
   "date": "2026-11-13",
   "time": "19:00",
-  "rider": "Tao Geoghegan Hart",
-  "id": 3924,
-  "cc": "gb",
-  "team": "Ukraine Cycling Team",
-  "price": 4
- },
- {
-  "at": "2026-11-13T18:00:20+00:00",
-  "date": "2026-11-13",
-  "time": "19:00",
   "rider": "Matvey Boldyrev",
   "id": 12378,
   "cc": "ru",
   "team": "Talkwalker",
   "price": 1
+ },
+ {
+  "at": "2026-11-13T18:00:20+00:00",
+  "date": "2026-11-13",
+  "time": "19:00",
+  "rider": "Tao Geoghegan Hart",
+  "id": 3924,
+  "cc": "gb",
+  "team": "Ukraine Cycling Team",
+  "price": 4
  },
  {
   "at": "2026-11-13T18:00:21+00:00",
@@ -3428,5 +3428,15 @@
   "cc": "de",
   "team": "Tudor",
   "price": 1
+ },
+ {
+  "at": "2026-11-15T18:57:07+00:00",
+  "date": "2026-11-15",
+  "time": "19:57",
+  "rider": "Mattia Cattaneo",
+  "id": 3048,
+  "cc": "it",
+  "team": "Talkwalker",
+  "price": 8
  }
 ]
