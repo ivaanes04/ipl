@@ -3178,5 +3178,15 @@
   "cc": "au",
   "team": "MTN Qhubeka",
   "price": 3
+ },
+ {
+  "at": "2026-11-15T18:16:30+00:00",
+  "date": "2026-11-15",
+  "time": "19:16",
+  "rider": "Miguel Heidemann",
+  "id": 7197,
+  "cc": "de",
+  "team": "UnoX",
+  "price": 3
  }
 ]
