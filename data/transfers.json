@@ -3408,5 +3408,15 @@
   "cc": "be",
   "team": "B&B Hotels",
   "price": 4
+ },
+ {
+  "at": "2026-11-15T18:52:00+00:00",
+  "date": "2026-11-15",
+  "time": "19:52",
+  "rider": "Timothée Coudière-Cantin",
+  "id": 17612,
+  "cc": "fr",
+  "team": "B&B Hotels",
+  "price": 1
  }
 ]

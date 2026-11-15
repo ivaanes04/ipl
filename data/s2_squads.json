@@ -172,6 +172,158 @@
     }
    ]
   },
+  "B&B Hotels": {
+   "player": "Tom_Bryant",
+   "won": 16,
+   "budget": 74,
+   "bids": 29,
+   "riders": [
+    {
+     "name": "Schmid Mauro",
+     "id": 7193,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 25,
+     "closed": "2026-11-13T20:37:24+00:00",
+     "full": "Mauro Schmid"
+    },
+    {
+     "name": "Conor Paul",
+     "id": 11406,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-12T22:24:03+00:00",
+     "full": "Paul Conor"
+    },
+    {
+     "name": "Beaune Mavric",
+     "id": 10729,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-12T22:24:39+00:00",
+     "full": "Mavric Beaune"
+    },
+    {
+     "name": "Bracalente Diego",
+     "id": 8431,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 1,
+     "closed": "2026-11-12T22:48:07+00:00",
+     "full": "Diego Bracalente"
+    },
+    {
+     "name": "Van Kerckhove Seff",
+     "id": 11852,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 1,
+     "closed": "2026-11-12T22:50:44+00:00",
+     "full": "Seff Van Kerckhove"
+    },
+    {
+     "name": "Magnier Paul",
+     "id": 15675,
+     "cc": "fr",
+     "nat": "France",
+     "price": 21,
+     "closed": "2026-11-14T13:47:37+00:00",
+     "full": "Paul Magnier"
+    },
+    {
+     "name": "Raccagni Noviero Andrea",
+     "id": 8455,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 9,
+     "closed": "2026-11-13T20:00:13+00:00",
+     "full": "Andrea Raccagni Noviero"
+    },
+    {
+     "name": "Wellens Tim",
+     "id": 3030,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 21,
+     "closed": "2026-11-14T13:47:45+00:00",
+     "full": "Tim Wellens"
+    },
+    {
+     "name": "Grégoire Romain",
+     "id": 14395,
+     "cc": "fr",
+     "nat": "France",
+     "price": 20,
+     "closed": "2026-11-14T20:41:03+00:00",
+     "full": "Romain Grégoire"
+    },
+    {
+     "name": "Sivakov Pavel",
+     "id": 6327,
+     "cc": "fr",
+     "nat": "France",
+     "price": 11,
+     "closed": "2026-11-15T15:20:17+00:00",
+     "full": "Pavel Sivakov"
+    },
+    {
+     "name": "Langella Lénaïc",
+     "id": 15613,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-14T18:03:13+00:00",
+     "full": "Lénaïc Langella"
+    },
+    {
+     "name": "Marivoet Duarte",
+     "id": 15539,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 1,
+     "closed": "2026-11-14T18:03:32+00:00",
+     "full": "Duarte Marivoet"
+    },
+    {
+     "name": "Ourselin Paul",
+     "id": 5613,
+     "cc": "fr",
+     "nat": "France",
+     "price": 2,
+     "closed": "2026-11-14T18:03:38+00:00",
+     "full": "Paul Ourselin"
+    },
+    {
+     "name": "Dujardin Sandy",
+     "id": 7045,
+     "cc": "fr",
+     "nat": "France",
+     "price": 6,
+     "closed": "2026-11-14T18:48:58+00:00",
+     "full": "Sandy Dujardin"
+    },
+    {
+     "name": "Grignard Sébastien",
+     "id": 6743,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 4,
+     "closed": "2026-11-15T18:51:41+00:00",
+     "full": "Sébastien Grignard"
+    },
+    {
+     "name": "Coudière-Cantin Timothée",
+     "id": 17612,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-15T18:52:00+00:00",
+     "full": "Timothée Coudière-Cantin"
+    }
+   ]
+  },
   "Biesse - Carrera - Premac": {
    "player": "Hübi",
    "won": 16,
@@ -473,149 +625,6 @@
      "price": 4,
      "closed": "2026-11-15T18:06:10+00:00",
      "full": "Simon Guglielmi"
-    }
-   ]
-  },
-  "B&B Hotels": {
-   "player": "Tom_Bryant",
-   "won": 15,
-   "budget": 75,
-   "bids": 30,
-   "riders": [
-    {
-     "name": "Schmid Mauro",
-     "id": 7193,
-     "cc": "ch",
-     "nat": "Switzerland",
-     "price": 25,
-     "closed": "2026-11-13T20:37:24+00:00",
-     "full": "Mauro Schmid"
-    },
-    {
-     "name": "Conor Paul",
-     "id": 11406,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-12T22:24:03+00:00",
-     "full": "Paul Conor"
-    },
-    {
-     "name": "Beaune Mavric",
-     "id": 10729,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-12T22:24:39+00:00",
-     "full": "Mavric Beaune"
-    },
-    {
-     "name": "Bracalente Diego",
-     "id": 8431,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 1,
-     "closed": "2026-11-12T22:48:07+00:00",
-     "full": "Diego Bracalente"
-    },
-    {
-     "name": "Van Kerckhove Seff",
-     "id": 11852,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 1,
-     "closed": "2026-11-12T22:50:44+00:00",
-     "full": "Seff Van Kerckhove"
-    },
-    {
-     "name": "Magnier Paul",
-     "id": 15675,
-     "cc": "fr",
-     "nat": "France",
-     "price": 21,
-     "closed": "2026-11-14T13:47:37+00:00",
-     "full": "Paul Magnier"
-    },
-    {
-     "name": "Raccagni Noviero Andrea",
-     "id": 8455,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 9,
-     "closed": "2026-11-13T20:00:13+00:00",
-     "full": "Andrea Raccagni Noviero"
-    },
-    {
-     "name": "Wellens Tim",
-     "id": 3030,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 21,
-     "closed": "2026-11-14T13:47:45+00:00",
-     "full": "Tim Wellens"
-    },
-    {
-     "name": "Grégoire Romain",
-     "id": 14395,
-     "cc": "fr",
-     "nat": "France",
-     "price": 20,
-     "closed": "2026-11-14T20:41:03+00:00",
-     "full": "Romain Grégoire"
-    },
-    {
-     "name": "Sivakov Pavel",
-     "id": 6327,
-     "cc": "fr",
-     "nat": "France",
-     "price": 11,
-     "closed": "2026-11-15T15:20:17+00:00",
-     "full": "Pavel Sivakov"
-    },
-    {
-     "name": "Langella Lénaïc",
-     "id": 15613,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-14T18:03:13+00:00",
-     "full": "Lénaïc Langella"
-    },
-    {
-     "name": "Marivoet Duarte",
-     "id": 15539,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 1,
-     "closed": "2026-11-14T18:03:32+00:00",
-     "full": "Duarte Marivoet"
-    },
-    {
-     "name": "Ourselin Paul",
-     "id": 5613,
-     "cc": "fr",
-     "nat": "France",
-     "price": 2,
-     "closed": "2026-11-14T18:03:38+00:00",
-     "full": "Paul Ourselin"
-    },
-    {
-     "name": "Dujardin Sandy",
-     "id": 7045,
-     "cc": "fr",
-     "nat": "France",
-     "price": 6,
-     "closed": "2026-11-14T18:48:58+00:00",
-     "full": "Sandy Dujardin"
-    },
-    {
-     "name": "Grignard Sébastien",
-     "id": 6743,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 4,
-     "closed": "2026-11-15T18:51:41+00:00",
-     "full": "Sébastien Grignard"
     }
    ]
   },
@@ -3296,5 +3305,5 @@
    ]
   }
  },
- "checked": "2026-11-15T18:51Z"
+ "checked": "2026-11-15T18:54Z"
 }
