@@ -3458,5 +3458,15 @@
   "cc": "it",
   "team": "7-Eleven",
   "price": 6
+ },
+ {
+  "at": "2026-11-15T19:53:26+00:00",
+  "date": "2026-11-15",
+  "time": "20:53",
+  "rider": "Tuur Verbeeck",
+  "id": 11719,
+  "cc": "be",
+  "team": "Astana",
+  "price": 1
  }
 ]
