@@ -3468,5 +3468,25 @@
   "cc": "be",
   "team": "Astana",
   "price": 1
+ },
+ {
+  "at": "2026-11-15T19:55:24+00:00",
+  "date": "2026-11-15",
+  "time": "20:55",
+  "rider": "Manuel Oioli",
+  "id": 15414,
+  "cc": "it",
+  "team": "Astana",
+  "price": 1
+ },
+ {
+  "at": "2026-11-15T19:55:27+00:00",
+  "date": "2026-11-15",
+  "time": "20:55",
+  "rider": "Ben Turner",
+  "id": 14573,
+  "cc": "gb",
+  "team": "Royal Bank of Scotland",
+  "price": 9
  }
 ]
