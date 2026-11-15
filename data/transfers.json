@@ -2928,5 +2928,15 @@
   "cc": null,
   "team": "Renova",
   "price": 8
+ },
+ {
+  "at": "2026-11-15T17:10:35+00:00",
+  "date": "2026-11-15",
+  "time": "18:10",
+  "rider": "Ilan Van Wilder",
+  "id": 7092,
+  "cc": "be",
+  "team": "GI Group Holding Simoldes UDO",
+  "price": 16
  }
 ]
