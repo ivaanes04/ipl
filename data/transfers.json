@@ -3278,5 +3278,35 @@
   "cc": "it",
   "team": "Bahrain Victorious",
   "price": 6
+ },
+ {
+  "at": "2026-11-15T18:28:19+00:00",
+  "date": "2026-11-15",
+  "time": "19:28",
+  "rider": "Alec Segaert",
+  "id": 14393,
+  "cc": "be",
+  "team": "Bahrain Victorious",
+  "price": 10
+ },
+ {
+  "at": "2026-11-15T18:28:51+00:00",
+  "date": "2026-11-15",
+  "time": "19:28",
+  "rider": "Tommaso Dati",
+  "id": 9221,
+  "cc": "it",
+  "team": "Deceuninck - Quick-Step",
+  "price": 6
+ },
+ {
+  "at": "2026-11-15T18:29:12+00:00",
+  "date": "2026-11-15",
+  "time": "19:29",
+  "rider": "Oliver Stockwell",
+  "id": 14397,
+  "cc": "gb",
+  "team": "Bahrain Victorious",
+  "price": 1
  }
 ]
