@@ -2861,6 +2861,104 @@
     }
    ]
   },
+  "Discovery Channel": {
+   "player": "Agap",
+   "won": 10,
+   "budget": 120,
+   "bids": 43,
+   "riders": [
+    {
+     "name": "Warbasse Larry",
+     "id": 3026,
+     "cc": "us",
+     "nat": "United States",
+     "price": 6,
+     "closed": "2026-11-12T19:46:57+00:00",
+     "full": "Larry Warbasse"
+    },
+    {
+     "name": "Swirbul Keegan",
+     "id": 3930,
+     "cc": "us",
+     "nat": "United States",
+     "price": 1,
+     "closed": "2026-11-12T20:45:38+00:00",
+     "full": "Keegan Swirbul"
+    },
+    {
+     "name": "De Lie Arnaud",
+     "id": 15205,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 13,
+     "closed": "2026-11-14T19:05:11+00:00",
+     "full": "Arnaud De Lie"
+    },
+    {
+     "name": "Kuss Sepp",
+     "id": 6253,
+     "cc": "us",
+     "nat": "United States",
+     "price": 18,
+     "closed": "2026-11-13T19:09:27+00:00",
+     "full": "Sepp Kuss"
+    },
+    {
+     "name": "Teuns Dylan",
+     "id": 3685,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 14,
+     "closed": "2026-11-13T19:12:40+00:00",
+     "full": "Dylan Teuns"
+    },
+    {
+     "name": "Madouas Valentin",
+     "id": 4,
+     "cc": "fr",
+     "nat": "France",
+     "price": 9,
+     "closed": "2026-11-14T18:59:25+00:00",
+     "full": "Valentin Madouas"
+    },
+    {
+     "name": "Vermaerke Kevin",
+     "id": 6811,
+     "cc": "us",
+     "nat": "United States",
+     "price": 8,
+     "closed": "2026-11-14T18:56:45+00:00",
+     "full": "Kevin Vermaerke"
+    },
+    {
+     "name": "Meeus Jordi",
+     "id": 6570,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 7,
+     "closed": "2026-11-14T19:06:02+00:00",
+     "full": "Jordi Meeus"
+    },
+    {
+     "name": "Orins Robin",
+     "id": 15228,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 2,
+     "closed": "2026-11-15T20:40:44+00:00",
+     "full": "Robin Orins"
+    },
+    {
+     "name": "van den Eijnden Guus",
+     "id": 9590,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 2,
+     "closed": "2026-11-15T20:42:05+00:00",
+     "full": "Guus van den Eijnden"
+    }
+   ]
+  },
   "Royal Bank of Scotland": {
    "player": "Sheep_Boy123",
    "won": 10,
@@ -2956,95 +3054,6 @@
      "price": 9,
      "closed": "2026-11-15T19:55:27+00:00",
      "full": "Ben Turner"
-    }
-   ]
-  },
-  "Discovery Channel": {
-   "player": "Agap",
-   "won": 9,
-   "budget": 122,
-   "bids": 45,
-   "riders": [
-    {
-     "name": "Warbasse Larry",
-     "id": 3026,
-     "cc": "us",
-     "nat": "United States",
-     "price": 6,
-     "closed": "2026-11-12T19:46:57+00:00",
-     "full": "Larry Warbasse"
-    },
-    {
-     "name": "Swirbul Keegan",
-     "id": 3930,
-     "cc": "us",
-     "nat": "United States",
-     "price": 1,
-     "closed": "2026-11-12T20:45:38+00:00",
-     "full": "Keegan Swirbul"
-    },
-    {
-     "name": "De Lie Arnaud",
-     "id": 15205,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 13,
-     "closed": "2026-11-14T19:05:11+00:00",
-     "full": "Arnaud De Lie"
-    },
-    {
-     "name": "Kuss Sepp",
-     "id": 6253,
-     "cc": "us",
-     "nat": "United States",
-     "price": 18,
-     "closed": "2026-11-13T19:09:27+00:00",
-     "full": "Sepp Kuss"
-    },
-    {
-     "name": "Teuns Dylan",
-     "id": 3685,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 14,
-     "closed": "2026-11-13T19:12:40+00:00",
-     "full": "Dylan Teuns"
-    },
-    {
-     "name": "Madouas Valentin",
-     "id": 4,
-     "cc": "fr",
-     "nat": "France",
-     "price": 9,
-     "closed": "2026-11-14T18:59:25+00:00",
-     "full": "Valentin Madouas"
-    },
-    {
-     "name": "Vermaerke Kevin",
-     "id": 6811,
-     "cc": "us",
-     "nat": "United States",
-     "price": 8,
-     "closed": "2026-11-14T18:56:45+00:00",
-     "full": "Kevin Vermaerke"
-    },
-    {
-     "name": "Meeus Jordi",
-     "id": 6570,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 7,
-     "closed": "2026-11-14T19:06:02+00:00",
-     "full": "Jordi Meeus"
-    },
-    {
-     "name": "Orins Robin",
-     "id": 15228,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 2,
-     "closed": "2026-11-15T20:40:44+00:00",
-     "full": "Robin Orins"
     }
    ]
   },
@@ -3440,5 +3449,5 @@
    ]
   }
  },
- "checked": "2026-11-15T20:41Z"
+ "checked": "2026-11-15T20:42Z"
 }

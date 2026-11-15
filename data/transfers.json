@@ -3568,5 +3568,15 @@
   "cc": "be",
   "team": "Discovery Channel",
   "price": 2
+ },
+ {
+  "at": "2026-11-15T20:42:05+00:00",
+  "date": "2026-11-15",
+  "time": "21:42",
+  "rider": "Guus van den Eijnden",
+  "id": 9590,
+  "cc": "nl",
+  "team": "Discovery Channel",
+  "price": 2
  }
 ]
