@@ -3618,5 +3618,15 @@
   "cc": "us",
   "team": "Discovery Channel",
   "price": 1
+ },
+ {
+  "at": "2026-11-15T21:03:35+00:00",
+  "date": "2026-11-15",
+  "time": "22:03",
+  "rider": "Guillaume Boivin",
+  "id": 2386,
+  "cc": "ca",
+  "team": "Milka",
+  "price": 10
  }
 ]

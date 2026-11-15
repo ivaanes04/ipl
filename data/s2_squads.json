@@ -3093,6 +3093,104 @@
     }
    ]
   },
+  "Milka": {
+   "player": "danielmiko",
+   "won": 10,
+   "budget": 38,
+   "bids": 28,
+   "riders": [
+    {
+     "name": "Barhoumi Ilian",
+     "id": 15555,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 1,
+     "closed": "2026-11-12T18:00:24+00:00",
+     "full": "Ilian Barhoumi"
+    },
+    {
+     "name": "Aebersold Nils",
+     "id": 9891,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 1,
+     "closed": "2026-11-12T18:00:34+00:00",
+     "full": "Nils Aebersold"
+    },
+    {
+     "name": "Faure-Prost Alexy",
+     "id": 15749,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-13T18:00:07+00:00",
+     "full": "Alexy Faure-Prost"
+    },
+    {
+     "name": "Hue Antoine",
+     "id": 9350,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-13T18:00:21+00:00",
+     "full": "Antoine Hue"
+    },
+    {
+     "name": "Brun Nils",
+     "id": 15341,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 1,
+     "closed": "2026-11-13T18:01:06+00:00",
+     "full": "Nils Brun"
+    },
+    {
+     "name": "Boivin Guillaume",
+     "id": 2386,
+     "cc": "ca",
+     "nat": "Canada",
+     "price": 10,
+     "closed": "2026-11-15T21:03:35+00:00",
+     "full": "Guillaume Boivin"
+    },
+    {
+     "name": "Leidert Louis",
+     "id": 15810,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 1,
+     "closed": "2026-11-14T18:00:26+00:00",
+     "full": "Louis Leidert"
+    },
+    {
+     "name": "Manzin Lorrenzo",
+     "id": 3694,
+     "cc": "fr",
+     "nat": "France",
+     "price": 4,
+     "closed": "2026-11-14T18:00:33+00:00",
+     "full": "Lorrenzo Manzin"
+    },
+    {
+     "name": "Lienhard Fabian",
+     "id": 6200,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 1,
+     "closed": "2026-11-15T18:00:02+00:00",
+     "full": "Fabian Lienhard"
+    },
+    {
+     "name": "Rottmann Jonathan Malte",
+     "id": 8439,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 1,
+     "closed": "2026-11-15T18:00:16+00:00",
+     "full": "Jonathan Malte Rottmann"
+    }
+   ]
+  },
   "Kelme Costa Blanca": {
    "player": "JgCol",
    "won": 9,
@@ -3179,95 +3277,6 @@
      "price": 7,
      "closed": "2026-11-14T22:44:25+00:00",
      "full": "Clément Russo"
-    }
-   ]
-  },
-  "Milka": {
-   "player": "danielmiko",
-   "won": 9,
-   "budget": 48,
-   "bids": 38,
-   "riders": [
-    {
-     "name": "Barhoumi Ilian",
-     "id": 15555,
-     "cc": "ch",
-     "nat": "Switzerland",
-     "price": 1,
-     "closed": "2026-11-12T18:00:24+00:00",
-     "full": "Ilian Barhoumi"
-    },
-    {
-     "name": "Aebersold Nils",
-     "id": 9891,
-     "cc": "ch",
-     "nat": "Switzerland",
-     "price": 1,
-     "closed": "2026-11-12T18:00:34+00:00",
-     "full": "Nils Aebersold"
-    },
-    {
-     "name": "Faure-Prost Alexy",
-     "id": 15749,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-13T18:00:07+00:00",
-     "full": "Alexy Faure-Prost"
-    },
-    {
-     "name": "Hue Antoine",
-     "id": 9350,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-13T18:00:21+00:00",
-     "full": "Antoine Hue"
-    },
-    {
-     "name": "Brun Nils",
-     "id": 15341,
-     "cc": "ch",
-     "nat": "Switzerland",
-     "price": 1,
-     "closed": "2026-11-13T18:01:06+00:00",
-     "full": "Nils Brun"
-    },
-    {
-     "name": "Leidert Louis",
-     "id": 15810,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 1,
-     "closed": "2026-11-14T18:00:26+00:00",
-     "full": "Louis Leidert"
-    },
-    {
-     "name": "Manzin Lorrenzo",
-     "id": 3694,
-     "cc": "fr",
-     "nat": "France",
-     "price": 4,
-     "closed": "2026-11-14T18:00:33+00:00",
-     "full": "Lorrenzo Manzin"
-    },
-    {
-     "name": "Lienhard Fabian",
-     "id": 6200,
-     "cc": "ch",
-     "nat": "Switzerland",
-     "price": 1,
-     "closed": "2026-11-15T18:00:02+00:00",
-     "full": "Fabian Lienhard"
-    },
-    {
-     "name": "Rottmann Jonathan Malte",
-     "id": 8439,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 1,
-     "closed": "2026-11-15T18:00:16+00:00",
-     "full": "Jonathan Malte Rottmann"
     }
    ]
   },
@@ -3485,5 +3494,5 @@
    ]
   }
  },
- "checked": "2026-11-15T20:48Z"
+ "checked": "2026-11-15T21:03Z"
 }
