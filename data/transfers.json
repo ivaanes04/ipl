@@ -1103,20 +1103,20 @@
   "at": "2026-11-13T18:00:22+00:00",
   "date": "2026-11-13",
   "time": "19:00",
-  "rider": "Daniel Moreira",
-  "id": 10065,
-  "cc": "pt",
-  "team": "Portugal in 150 Seconds",
+  "rider": "Sergio Henao",
+  "id": 16039,
+  "cc": "co",
+  "team": "Rabobank",
   "price": 1
  },
  {
   "at": "2026-11-13T18:00:22+00:00",
   "date": "2026-11-13",
   "time": "19:00",
-  "rider": "Sergio Henao",
-  "id": 16039,
-  "cc": "co",
-  "team": "Rabobank",
+  "rider": "Daniel Moreira",
+  "id": 10065,
+  "cc": "pt",
+  "team": "Portugal in 150 Seconds",
   "price": 1
  },
  {
@@ -1203,21 +1203,21 @@
   "at": "2026-11-13T18:01:08+00:00",
   "date": "2026-11-13",
   "time": "19:01",
-  "rider": "Nolann Mahoudo",
-  "id": 15471,
-  "cc": "fr",
-  "team": "Renova",
-  "price": 2
- },
- {
-  "at": "2026-11-13T18:01:08+00:00",
-  "date": "2026-11-13",
-  "time": "19:01",
   "rider": "Gijs Schoonvelde",
   "id": 10045,
   "cc": "nl",
   "team": "Rabobank",
   "price": 1
+ },
+ {
+  "at": "2026-11-13T18:01:08+00:00",
+  "date": "2026-11-13",
+  "time": "19:01",
+  "rider": "Nolann Mahoudo",
+  "id": 15471,
+  "cc": "fr",
+  "team": "Renova",
+  "price": 2
  },
  {
   "at": "2026-11-13T18:01:17+00:00",
@@ -2093,21 +2093,21 @@
   "at": "2026-11-14T18:01:15+00:00",
   "date": "2026-11-14",
   "time": "19:01",
-  "rider": "Mats Vanden Eynde",
-  "id": 15901,
-  "cc": "be",
-  "team": "Talkwalker",
-  "price": 2
- },
- {
-  "at": "2026-11-14T18:01:15+00:00",
-  "date": "2026-11-14",
-  "time": "19:01",
   "rider": "Jean-Loup Fayolle",
   "id": 15676,
   "cc": "fr",
   "team": "Tudor",
   "price": 1
+ },
+ {
+  "at": "2026-11-14T18:01:15+00:00",
+  "date": "2026-11-14",
+  "time": "19:01",
+  "rider": "Mats Vanden Eynde",
+  "id": 15901,
+  "cc": "be",
+  "team": "Talkwalker",
+  "price": 2
  },
  {
   "at": "2026-11-14T18:02:10+00:00",
@@ -2173,21 +2173,21 @@
   "at": "2026-11-14T18:03:38+00:00",
   "date": "2026-11-14",
   "time": "19:03",
-  "rider": "Paul Ourselin",
-  "id": 5613,
-  "cc": "fr",
-  "team": "B&B Hotels",
-  "price": 2
- },
- {
-  "at": "2026-11-14T18:03:38+00:00",
-  "date": "2026-11-14",
-  "time": "19:03",
   "rider": "Louis Vervaeke",
   "id": 3714,
   "cc": "be",
   "team": "Deceuninck - Quick-Step",
   "price": 6
+ },
+ {
+  "at": "2026-11-14T18:03:38+00:00",
+  "date": "2026-11-14",
+  "time": "19:03",
+  "rider": "Paul Ourselin",
+  "id": 5613,
+  "cc": "fr",
+  "team": "B&B Hotels",
+  "price": 2
  },
  {
   "at": "2026-11-14T18:03:50+00:00",
@@ -4368,5 +4368,485 @@
   "cc": "de",
   "team": "UnoX",
   "price": 5
+ },
+ {
+  "at": "2026-11-16T18:17:27+00:00",
+  "date": "2026-11-16",
+  "time": "19:17",
+  "rider": "Lorenzo Nespoli",
+  "id": 8433,
+  "cc": "it",
+  "team": "Milka",
+  "price": 2
+ },
+ {
+  "at": "2026-11-16T18:18:02+00:00",
+  "date": "2026-11-16",
+  "time": "19:18",
+  "rider": "Ben Healy",
+  "id": 13438,
+  "cc": "ie",
+  "team": "Royal Bank of Scotland",
+  "price": 20
+ },
+ {
+  "at": "2026-11-16T18:18:32+00:00",
+  "date": "2026-11-16",
+  "time": "19:18",
+  "rider": "Louka Lesueur",
+  "id": 4892,
+  "cc": "fr",
+  "team": "Renova",
+  "price": 1
+ },
+ {
+  "at": "2026-11-16T18:18:59+00:00",
+  "date": "2026-11-16",
+  "time": "19:18",
+  "rider": "Dylan Vandenstorme",
+  "id": 8059,
+  "cc": "be",
+  "team": "Deceuninck - Quick-Step",
+  "price": 2
+ },
+ {
+  "at": "2026-11-16T18:25:10+00:00",
+  "date": "2026-11-16",
+  "time": "19:25",
+  "rider": "Jhonatan Narváez",
+  "id": 6247,
+  "cc": "ec",
+  "team": "FEIRENSE - BEECELER",
+  "price": 22
+ },
+ {
+  "at": "2026-11-16T18:27:02+00:00",
+  "date": "2026-11-16",
+  "time": "19:27",
+  "rider": "Tommaso Bambagioni",
+  "id": 9821,
+  "cc": "it",
+  "team": "Biesse - Carrera - Premac",
+  "price": 1
+ },
+ {
+  "at": "2026-11-16T18:29:25+00:00",
+  "date": "2026-11-16",
+  "time": "19:29",
+  "rider": "Roman Ermakov",
+  "id": 9253,
+  "cc": "si",
+  "team": "Biesse - Carrera - Premac",
+  "price": 2
+ },
+ {
+  "at": "2026-11-16T18:42:42+00:00",
+  "date": "2026-11-16",
+  "time": "19:42",
+  "rider": "Anders Foldager",
+  "id": 15359,
+  "cc": "dk",
+  "team": "CSC",
+  "price": 6
+ },
+ {
+  "at": "2026-11-16T18:42:58+00:00",
+  "date": "2026-11-16",
+  "time": "19:42",
+  "rider": "Tim Torn Teutenberg",
+  "id": 7441,
+  "cc": "de",
+  "team": "CSC",
+  "price": 6
+ },
+ {
+  "at": "2026-11-16T18:43:07+00:00",
+  "date": "2026-11-16",
+  "time": "19:43",
+  "rider": "Henrik Pedersen",
+  "id": 15528,
+  "cc": "dk",
+  "team": "CSC",
+  "price": 4
+ },
+ {
+  "at": "2026-11-16T18:44:08+00:00",
+  "date": "2026-11-16",
+  "time": "19:44",
+  "rider": "Per Strand Hagenes",
+  "id": 15277,
+  "cc": "no",
+  "team": "CSC",
+  "price": 12
+ },
+ {
+  "at": "2026-11-16T18:49:37+00:00",
+  "date": "2026-11-16",
+  "time": "19:49",
+  "rider": "Arvid de Kleijn",
+  "id": 3866,
+  "cc": "nl",
+  "team": "Unibet Rose Rockets",
+  "price": 5
+ },
+ {
+  "at": "2026-11-16T18:49:45+00:00",
+  "date": "2026-11-16",
+  "time": "19:49",
+  "rider": "Axel Mariault",
+  "id": 4276,
+  "cc": "fr",
+  "team": "Unibet Rose Rockets",
+  "price": 7
+ },
+ {
+  "at": "2026-11-16T18:56:01+00:00",
+  "date": "2026-11-16",
+  "time": "19:56",
+  "rider": "Melk Zumstein",
+  "id": 17497,
+  "cc": "ch",
+  "team": "Tudor",
+  "price": 1
+ },
+ {
+  "at": "2026-11-16T18:56:17+00:00",
+  "date": "2026-11-16",
+  "time": "19:56",
+  "rider": "Nicola Zumsteg",
+  "id": 11413,
+  "cc": "ch",
+  "team": "Biesse - Carrera - Premac",
+  "price": 1
+ },
+ {
+  "at": "2026-11-16T18:58:23+00:00",
+  "date": "2026-11-16",
+  "time": "19:58",
+  "rider": "Kasper Andersen",
+  "id": 7531,
+  "cc": "dk",
+  "team": "Biesse - Carrera - Premac",
+  "price": 2
+ },
+ {
+  "at": "2026-11-16T18:58:54+00:00",
+  "date": "2026-11-16",
+  "time": "19:58",
+  "rider": "Livio Stefani",
+  "id": 18525,
+  "cc": "ch",
+  "team": "Tudor",
+  "price": 1
+ },
+ {
+  "at": "2026-11-16T19:00:00+00:00",
+  "date": "2026-11-16",
+  "time": "20:00",
+  "rider": "Robin Donzé",
+  "id": 15389,
+  "cc": "ch",
+  "team": "Tudor",
+  "price": 3
+ },
+ {
+  "at": "2026-11-16T19:00:40+00:00",
+  "date": "2026-11-16",
+  "time": "20:00",
+  "rider": "Mauro Dürr",
+  "id": 18644,
+  "cc": "ch",
+  "team": "Tudor",
+  "price": 1
+ },
+ {
+  "at": "2026-11-16T19:06:48+00:00",
+  "date": "2026-11-16",
+  "time": "20:06",
+  "rider": "Warren Barguil",
+  "id": 3022,
+  "cc": "fr",
+  "team": "Portugal in 150 Seconds",
+  "price": 6
+ },
+ {
+  "at": "2026-11-16T19:15:17+00:00",
+  "date": "2026-11-16",
+  "time": "20:15",
+  "rider": "David de la Cruz",
+  "id": 1978,
+  "cc": "es",
+  "team": "MTN Qhubeka",
+  "price": 12
+ },
+ {
+  "at": "2026-11-16T19:22:59+00:00",
+  "date": "2026-11-16",
+  "time": "20:22",
+  "rider": "Wouter Toussaint",
+  "id": 8596,
+  "cc": "nl",
+  "team": "Unibet Rose Rockets",
+  "price": 1
+ },
+ {
+  "at": "2026-11-16T19:23:20+00:00",
+  "date": "2026-11-16",
+  "time": "20:23",
+  "rider": "Martijn Rasenberg",
+  "id": 8462,
+  "cc": "nl",
+  "team": "Unibet Rose Rockets",
+  "price": 3
+ },
+ {
+  "at": "2026-11-16T19:25:04+00:00",
+  "date": "2026-11-16",
+  "time": "20:25",
+  "rider": "Oscar Chamberlain",
+  "id": 15554,
+  "cc": "au",
+  "team": "Discovery Channel",
+  "price": 4
+ },
+ {
+  "at": "2026-11-16T19:26:48+00:00",
+  "date": "2026-11-16",
+  "time": "20:26",
+  "rider": "Max Walscheid",
+  "id": 3630,
+  "cc": "de",
+  "team": "Rabobank",
+  "price": 8
+ },
+ {
+  "at": "2026-11-16T19:30:15+00:00",
+  "date": "2026-11-16",
+  "time": "20:30",
+  "rider": "Alexander Cepeda",
+  "id": 7095,
+  "cc": "ec",
+  "team": "Discovery Channel",
+  "price": 6
+ },
+ {
+  "at": "2026-11-16T19:31:16+00:00",
+  "date": "2026-11-16",
+  "time": "20:31",
+  "rider": "David Gaudu",
+  "id": 5962,
+  "cc": "fr",
+  "team": "Discovery Channel",
+  "price": 6
+ },
+ {
+  "at": "2026-11-16T19:32:45+00:00",
+  "date": "2026-11-16",
+  "time": "20:32",
+  "rider": "Bruno Kessler",
+  "id": 4954,
+  "cc": "de",
+  "team": "Rabobank",
+  "price": 1
+ },
+ {
+  "at": "2026-11-16T19:33:04+00:00",
+  "date": "2026-11-16",
+  "time": "20:33",
+  "rider": "Chris Hamilton",
+  "id": 5897,
+  "cc": "au",
+  "team": "Discovery Channel",
+  "price": 4
+ },
+ {
+  "at": "2026-11-16T19:43:30+00:00",
+  "date": "2026-11-16",
+  "time": "20:43",
+  "rider": "António Morgado",
+  "id": 15245,
+  "cc": "pt",
+  "team": "Tavfer-Ovos Matinados-Mortágua",
+  "price": 18
+ },
+ {
+  "at": "2026-11-16T19:45:35+00:00",
+  "date": "2026-11-16",
+  "time": "20:45",
+  "rider": "Ángel Sánchez",
+  "id": 5862,
+  "cc": "es",
+  "team": "Tavfer-Ovos Matinados-Mortágua",
+  "price": 1
+ },
+ {
+  "at": "2026-11-16T19:45:44+00:00",
+  "date": "2026-11-16",
+  "time": "20:45",
+  "rider": "Simão Lucas",
+  "id": 17841,
+  "cc": "pt",
+  "team": "Tavfer-Ovos Matinados-Mortágua",
+  "price": 1
+ },
+ {
+  "at": "2026-11-16T19:49:14+00:00",
+  "date": "2026-11-16",
+  "time": "20:49",
+  "rider": "Lorenzo Fortunato",
+  "id": 6799,
+  "cc": "it",
+  "team": "Tavfer-Ovos Matinados-Mortágua",
+  "price": 10
+ },
+ {
+  "at": "2026-11-16T19:51:53+00:00",
+  "date": "2026-11-16",
+  "time": "20:51",
+  "rider": "John Degenkolb",
+  "id": 1269,
+  "cc": "de",
+  "team": "Tavfer-Ovos Matinados-Mortágua",
+  "price": 6
+ },
+ {
+  "at": "2026-11-16T19:57:23+00:00",
+  "date": "2026-11-16",
+  "time": "20:57",
+  "rider": "Alex Aranburu",
+  "id": 5984,
+  "cc": "es",
+  "team": "Rabobank",
+  "price": 14
+ },
+ {
+  "at": "2026-11-16T20:00:10+00:00",
+  "date": "2026-11-16",
+  "time": "21:00",
+  "rider": "Andrea Vendrame",
+  "id": 6001,
+  "cc": "it",
+  "team": "7-Eleven",
+  "price": 14
+ },
+ {
+  "at": "2026-11-16T20:00:43+00:00",
+  "date": "2026-11-16",
+  "time": "21:00",
+  "rider": "Max Kanter",
+  "id": 5744,
+  "cc": "de",
+  "team": "7-Eleven",
+  "price": 7
+ },
+ {
+  "at": "2026-11-16T20:09:48+00:00",
+  "date": "2026-11-16",
+  "time": "21:09",
+  "rider": "Alastair Mackellar",
+  "id": 7555,
+  "cc": "au",
+  "team": "7-Eleven",
+  "price": 1
+ },
+ {
+  "at": "2026-11-16T20:10:44+00:00",
+  "date": "2026-11-16",
+  "time": "21:10",
+  "rider": "Erlend Blikra",
+  "id": 6136,
+  "cc": "no",
+  "team": "Modern Adventure",
+  "price": 4
+ },
+ {
+  "at": "2026-11-16T20:12:40+00:00",
+  "date": "2026-11-16",
+  "time": "21:12",
+  "rider": "Clément Venturini",
+  "id": 3406,
+  "cc": "fr",
+  "team": "Modern Adventure",
+  "price": 6
+ },
+ {
+  "at": "2026-11-16T20:12:48+00:00",
+  "date": "2026-11-16",
+  "time": "21:12",
+  "rider": "Milan Fretin",
+  "id": 7602,
+  "cc": "be",
+  "team": "Modern Adventure",
+  "price": 7
+ },
+ {
+  "at": "2026-11-16T20:13:17+00:00",
+  "date": "2026-11-16",
+  "time": "21:13",
+  "rider": "Maximilian Schachmann",
+  "id": 3257,
+  "cc": "de",
+  "team": "Modern Adventure",
+  "price": 10
+ },
+ {
+  "at": "2026-11-16T20:13:29+00:00",
+  "date": "2026-11-16",
+  "time": "21:13",
+  "rider": "Matthew Riccitello",
+  "id": 7436,
+  "cc": "us",
+  "team": "Talkwalker",
+  "price": 17
+ },
+ {
+  "at": "2026-11-16T20:13:46+00:00",
+  "date": "2026-11-16",
+  "time": "21:13",
+  "rider": "Bruno Armirail",
+  "id": 3957,
+  "cc": "fr",
+  "team": "Modern Adventure",
+  "price": 12
+ },
+ {
+  "at": "2026-11-16T20:16:44+00:00",
+  "date": "2026-11-16",
+  "time": "21:16",
+  "rider": "Lewis Askey",
+  "id": 7278,
+  "cc": "gb",
+  "team": "Liberty Seguros",
+  "price": 10
+ },
+ {
+  "at": "2026-11-16T20:17:03+00:00",
+  "date": "2026-11-16",
+  "time": "21:17",
+  "rider": "Egan Bernal",
+  "id": 5672,
+  "cc": "co",
+  "team": "Liberty Seguros",
+  "price": 16
+ },
+ {
+  "at": "2026-11-16T20:18:33+00:00",
+  "date": "2026-11-16",
+  "time": "21:18",
+  "rider": "Gianni Vermeersch",
+  "id": 6766,
+  "cc": "be",
+  "team": "Liberty Seguros",
+  "price": 13
+ },
+ {
+  "at": "2026-11-16T20:32:08+00:00",
+  "date": "2026-11-16",
+  "time": "21:32",
+  "rider": "Juan Ayuso",
+  "id": 7399,
+  "cc": "es",
+  "team": "Kelme Costa Blanca",
+  "price": 36
  }
 ]
