@@ -3948,5 +3948,15 @@
   "cc": "nl",
   "team": "Rabobank",
   "price": 44
+ },
+ {
+  "at": "2026-11-16T13:56:21+00:00",
+  "date": "2026-11-16",
+  "time": "14:56",
+  "rider": "George Bennett",
+  "id": 2523,
+  "cc": "nz",
+  "team": "Red Bull",
+  "price": 6
  }
 ]
