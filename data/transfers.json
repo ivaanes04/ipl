@@ -3938,5 +3938,15 @@
   "cc": "fr",
   "team": "Deceuninck - Quick-Step",
   "price": 15
+ },
+ {
+  "at": "2026-11-16T13:33:08+00:00",
+  "date": "2026-11-16",
+  "time": "14:33",
+  "rider": "Bauke Mollema",
+  "id": 16,
+  "cc": "nl",
+  "team": "Rabobank",
+  "price": 44
  }
 ]
