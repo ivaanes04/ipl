@@ -4033,21 +4033,21 @@
   "at": "2026-11-16T18:00:08+00:00",
   "date": "2026-11-16",
   "time": "19:00",
-  "rider": "Mikel Landa",
-  "id": 1992,
-  "cc": "es",
-  "team": "Portugal in 150 Seconds",
-  "price": 12
- },
- {
-  "at": "2026-11-16T18:00:08+00:00",
-  "date": "2026-11-16",
-  "time": "19:00",
   "rider": "Lorenz Van de Wynkele",
   "id": 4125,
   "cc": "be",
   "team": "Renova",
   "price": 1
+ },
+ {
+  "at": "2026-11-16T18:00:08+00:00",
+  "date": "2026-11-16",
+  "time": "19:00",
+  "rider": "Mikel Landa",
+  "id": 1992,
+  "cc": "es",
+  "team": "Portugal in 150 Seconds",
+  "price": 12
  },
  {
   "at": "2026-11-16T18:00:10+00:00",
@@ -4848,5 +4848,15 @@
   "cc": "es",
   "team": "Kelme Costa Blanca",
   "price": 36
+ },
+ {
+  "at": "2026-11-16T21:12:54+00:00",
+  "date": "2026-11-16",
+  "time": "22:12",
+  "rider": "Richard Carapaz",
+  "id": 5957,
+  "cc": "ec",
+  "team": "Discovery Channel",
+  "price": 30
  }
 ]
