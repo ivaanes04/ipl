@@ -3628,5 +3628,125 @@
   "cc": "ca",
   "team": "Milka",
   "price": 10
+ },
+ {
+  "at": "2026-11-15T21:35:21+00:00",
+  "date": "2026-11-15",
+  "time": "22:35",
+  "rider": "Marcel Camprubí",
+  "id": 4310,
+  "cc": "es",
+  "team": "MTN Qhubeka",
+  "price": 10
+ },
+ {
+  "at": "2026-11-15T21:44:23+00:00",
+  "date": "2026-11-15",
+  "time": "22:44",
+  "rider": "Xandro Meurisse",
+  "id": 3803,
+  "cc": "be",
+  "team": "Rabobank",
+  "price": 8
+ },
+ {
+  "at": "2026-11-15T22:49:53+00:00",
+  "date": "2026-11-15",
+  "time": "23:49",
+  "rider": "Mikkel Bjerg",
+  "id": 6390,
+  "cc": "dk",
+  "team": "Red Bull",
+  "price": 10
+ },
+ {
+  "at": "2026-11-15T23:16:46+00:00",
+  "date": "2026-11-16",
+  "time": "00:16",
+  "rider": "Stefan Küng",
+  "id": 3708,
+  "cc": "ch",
+  "team": "Modern Adventure",
+  "price": 14
+ },
+ {
+  "at": "2026-11-15T23:19:15+00:00",
+  "date": "2026-11-16",
+  "time": "00:19",
+  "rider": "Ben Tulett",
+  "id": 7065,
+  "cc": "gb",
+  "team": "Royal Bank of Scotland",
+  "price": 15
+ },
+ {
+  "at": "2026-11-15T23:21:22+00:00",
+  "date": "2026-11-16",
+  "time": "00:21",
+  "rider": "Gregor Mühlberger",
+  "id": 3197,
+  "cc": "at",
+  "team": "Modern Adventure",
+  "price": 12
+ },
+ {
+  "at": "2026-11-15T23:23:13+00:00",
+  "date": "2026-11-16",
+  "time": "00:23",
+  "rider": "Zac Marriage",
+  "id": 4452,
+  "cc": "au",
+  "team": "Modern Adventure",
+  "price": 1
+ },
+ {
+  "at": "2026-11-15T23:46:00+00:00",
+  "date": "2026-11-16",
+  "time": "00:46",
+  "rider": "Francisco Morais",
+  "id": 14562,
+  "cc": "pt",
+  "team": "Tavfer-Ovos Matinados-Mortágua",
+  "price": 1
+ },
+ {
+  "at": "2026-11-15T23:46:11+00:00",
+  "date": "2026-11-16",
+  "time": "00:46",
+  "rider": "Bruno Silva",
+  "id": 2893,
+  "cc": "pt",
+  "team": "Tavfer-Ovos Matinados-Mortágua",
+  "price": 1
+ },
+ {
+  "at": "2026-11-16T00:03:05+00:00",
+  "date": "2026-11-16",
+  "time": "01:03",
+  "rider": "Samuel Watson",
+  "id": 14264,
+  "cc": "gb",
+  "team": "Royal Bank of Scotland",
+  "price": 10
+ },
+ {
+  "at": "2026-11-16T00:07:07+00:00",
+  "date": "2026-11-16",
+  "time": "01:07",
+  "rider": "Jonas Høydahl",
+  "id": 9410,
+  "cc": "no",
+  "team": "B&B Hotels",
+  "price": 1
+ },
+ {
+  "at": "2026-11-16T07:17:55+00:00",
+  "date": "2026-11-16",
+  "time": "08:17",
+  "rider": "Maxim Van Gils",
+  "id": 6750,
+  "cc": "be",
+  "team": "Deceuninck - Quick-Step",
+  "price": 16
  }
 ]
