@@ -2478,6 +2478,131 @@
     }
    ]
   },
+  "Astana": {
+   "player": "Francesco Bonavita",
+   "won": 13,
+   "budget": 63,
+   "bids": 38,
+   "riders": [
+    {
+     "name": "Vingegaard Jonas",
+     "id": 6195,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 100,
+     "closed": "2026-11-12T18:23:52+00:00",
+     "full": "Jonas Vingegaard"
+    },
+    {
+     "name": "Pronskiy Vadim",
+     "id": 7052,
+     "cc": "kz",
+     "nat": "Kazakhstan",
+     "price": 1,
+     "closed": "2026-11-13T14:34:54+00:00",
+     "full": "Vadim Pronskiy"
+    },
+    {
+     "name": "Remkhi Rudolf",
+     "id": 4482,
+     "cc": "kz",
+     "nat": "Kazakhstan",
+     "price": 1,
+     "closed": "2026-11-13T14:36:21+00:00",
+     "full": "Rudolf Remkhi"
+    },
+    {
+     "name": "Bagnara Luca",
+     "id": 8744,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 1,
+     "closed": "2026-11-13T14:38:09+00:00",
+     "full": "Luca Bagnara"
+    },
+    {
+     "name": "del Pino Jesús",
+     "id": 3227,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 1,
+     "closed": "2026-11-13T14:41:02+00:00",
+     "full": "Jesús del Pino"
+    },
+    {
+     "name": "Buratti Nicolò",
+     "id": 14536,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 3,
+     "closed": "2026-11-14T09:02:27+00:00",
+     "full": "Nicolò Buratti"
+    },
+    {
+     "name": "Alustiza Nicolás",
+     "id": 4321,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 1,
+     "closed": "2026-11-14T09:12:51+00:00",
+     "full": "Nicolás Alustiza"
+    },
+    {
+     "name": "Delgado David",
+     "id": 8223,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 2,
+     "closed": "2026-11-14T13:56:07+00:00",
+     "full": "David Delgado"
+    },
+    {
+     "name": "Epis Giosuè",
+     "id": 14317,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 1,
+     "closed": "2026-11-14T13:58:05+00:00",
+     "full": "Giosuè Epis"
+    },
+    {
+     "name": "Træen Torstein",
+     "id": 6517,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 9,
+     "closed": "2026-11-15T10:56:16+00:00",
+     "full": "Torstein Træen"
+    },
+    {
+     "name": "Politt Nils",
+     "id": 3628,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 15,
+     "closed": "2026-11-16T11:23:15+00:00",
+     "full": "Nils Politt"
+    },
+    {
+     "name": "Verbeeck Tuur",
+     "id": 11719,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 1,
+     "closed": "2026-11-15T19:53:26+00:00",
+     "full": "Tuur Verbeeck"
+    },
+    {
+     "name": "Oioli Manuel",
+     "id": 15414,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 1,
+     "closed": "2026-11-15T19:55:24+00:00",
+     "full": "Manuel Oioli"
+    }
+   ]
+  },
   "Rabobank": {
    "player": "Bouke",
    "won": 13,
@@ -2957,122 +3082,6 @@
      "price": 2,
      "closed": "2026-11-15T18:00:47+00:00",
      "full": "Benjamí Prades"
-    }
-   ]
-  },
-  "Astana": {
-   "player": "Francesco Bonavita",
-   "won": 12,
-   "budget": 78,
-   "bids": 53,
-   "riders": [
-    {
-     "name": "Vingegaard Jonas",
-     "id": 6195,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 100,
-     "closed": "2026-11-12T18:23:52+00:00",
-     "full": "Jonas Vingegaard"
-    },
-    {
-     "name": "Pronskiy Vadim",
-     "id": 7052,
-     "cc": "kz",
-     "nat": "Kazakhstan",
-     "price": 1,
-     "closed": "2026-11-13T14:34:54+00:00",
-     "full": "Vadim Pronskiy"
-    },
-    {
-     "name": "Remkhi Rudolf",
-     "id": 4482,
-     "cc": "kz",
-     "nat": "Kazakhstan",
-     "price": 1,
-     "closed": "2026-11-13T14:36:21+00:00",
-     "full": "Rudolf Remkhi"
-    },
-    {
-     "name": "Bagnara Luca",
-     "id": 8744,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 1,
-     "closed": "2026-11-13T14:38:09+00:00",
-     "full": "Luca Bagnara"
-    },
-    {
-     "name": "del Pino Jesús",
-     "id": 3227,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 1,
-     "closed": "2026-11-13T14:41:02+00:00",
-     "full": "Jesús del Pino"
-    },
-    {
-     "name": "Buratti Nicolò",
-     "id": 14536,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 3,
-     "closed": "2026-11-14T09:02:27+00:00",
-     "full": "Nicolò Buratti"
-    },
-    {
-     "name": "Alustiza Nicolás",
-     "id": 4321,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 1,
-     "closed": "2026-11-14T09:12:51+00:00",
-     "full": "Nicolás Alustiza"
-    },
-    {
-     "name": "Delgado David",
-     "id": 8223,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 2,
-     "closed": "2026-11-14T13:56:07+00:00",
-     "full": "David Delgado"
-    },
-    {
-     "name": "Epis Giosuè",
-     "id": 14317,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 1,
-     "closed": "2026-11-14T13:58:05+00:00",
-     "full": "Giosuè Epis"
-    },
-    {
-     "name": "Træen Torstein",
-     "id": 6517,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 9,
-     "closed": "2026-11-15T10:56:16+00:00",
-     "full": "Torstein Træen"
-    },
-    {
-     "name": "Verbeeck Tuur",
-     "id": 11719,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 1,
-     "closed": "2026-11-15T19:53:26+00:00",
-     "full": "Tuur Verbeeck"
-    },
-    {
-     "name": "Oioli Manuel",
-     "id": 15414,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 1,
-     "closed": "2026-11-15T19:55:24+00:00",
-     "full": "Manuel Oioli"
     }
    ]
   },
@@ -3647,5 +3656,5 @@
    ]
   }
  },
- "checked": "2026-11-16T11:12Z"
+ "checked": "2026-11-16T11:23Z"
 }
