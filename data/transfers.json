@@ -4868,5 +4868,15 @@
   "cc": "si",
   "team": "FEIRENSE - BEECELER",
   "price": 36
+ },
+ {
+  "at": "2026-11-16T22:01:03+00:00",
+  "date": "2026-11-16",
+  "time": "23:01",
+  "rider": "Enric Mas",
+  "id": 5955,
+  "cc": "es",
+  "team": "GI Group Holding Simoldes UDO",
+  "price": 29
  }
 ]
