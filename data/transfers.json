@@ -3968,5 +3968,15 @@
   "cc": "nl",
   "team": "Rabobank",
   "price": 6
+ },
+ {
+  "at": "2026-11-16T14:56:55+00:00",
+  "date": "2026-11-16",
+  "time": "15:56",
+  "rider": "Biniam Girmay",
+  "id": 7110,
+  "cc": "er",
+  "team": "FEIRENSE - BEECELER",
+  "price": 18
  }
 ]
