@@ -3978,5 +3978,15 @@
   "cc": "er",
   "team": "FEIRENSE - BEECELER",
   "price": 18
+ },
+ {
+  "at": "2026-11-16T15:20:35+00:00",
+  "date": "2026-11-16",
+  "time": "16:20",
+  "rider": "Jaakko Hänninen",
+  "id": 7072,
+  "cc": "fi",
+  "team": "Rabobank",
+  "price": 1
  }
 ]
