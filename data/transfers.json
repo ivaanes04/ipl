@@ -3808,5 +3808,15 @@
   "cc": "de",
   "team": "Astana",
   "price": 15
+ },
+ {
+  "at": "2026-11-16T11:46:44+00:00",
+  "date": "2026-11-16",
+  "time": "12:46",
+  "rider": "Steven Kruijswijk",
+  "id": 1936,
+  "cc": "nl",
+  "team": "Unibet Rose Rockets",
+  "price": 20
  }
 ]
