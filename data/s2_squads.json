@@ -1853,6 +1853,140 @@
     }
    ]
   },
+  "Deceuninck - Quick-Step": {
+   "player": "Hillingz",
+   "won": 14,
+   "budget": 53,
+   "bids": 18,
+   "riders": [
+    {
+     "name": "Juul-Jensen Christopher",
+     "id": 2123,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 2,
+     "closed": "2026-11-12T18:00:09+00:00",
+     "full": "Christopher Juul-Jensen"
+    },
+    {
+     "name": "Moscon Gianni",
+     "id": 5001,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 3,
+     "closed": "2026-11-12T18:00:20+00:00",
+     "full": "Gianni Moscon"
+    },
+    {
+     "name": "Cerný Josef",
+     "id": 3088,
+     "cc": "cz",
+     "nat": "Czechia",
+     "price": 1,
+     "closed": "2026-11-12T18:00:29+00:00",
+     "full": "Josef Cerný"
+    },
+    {
+     "name": "Stuyven Jasper",
+     "id": 3388,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 19,
+     "closed": "2026-11-13T18:02:02+00:00",
+     "full": "Jasper Stuyven"
+    },
+    {
+     "name": "Ganna Filippo",
+     "id": 5943,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 28,
+     "closed": "2026-11-13T18:01:19+00:00",
+     "full": "Filippo Ganna"
+    },
+    {
+     "name": "Vermeersch Florian",
+     "id": 7037,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 12,
+     "closed": "2026-11-13T18:02:11+00:00",
+     "full": "Florian Vermeersch"
+    },
+    {
+     "name": "Simmons Quinn",
+     "id": 7076,
+     "cc": "us",
+     "nat": "United States",
+     "price": 18,
+     "closed": "2026-11-13T20:32:16+00:00",
+     "full": "Quinn Simmons"
+    },
+    {
+     "name": "Vervaeke Louis",
+     "id": 3714,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 6,
+     "closed": "2026-11-14T18:03:38+00:00",
+     "full": "Louis Vervaeke"
+    },
+    {
+     "name": "Van Eetvelt Lennert",
+     "id": 7382,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 14,
+     "closed": "2026-11-14T18:03:50+00:00",
+     "full": "Lennert Van Eetvelt"
+    },
+    {
+     "name": "Van Mechelen Vlad",
+     "id": 15279,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 6,
+     "closed": "2026-11-14T18:04:17+00:00",
+     "full": "Vlad Van Mechelen"
+    },
+    {
+     "name": "McKenzie Hamish",
+     "id": 15607,
+     "cc": "au",
+     "nat": "Australia",
+     "price": 1,
+     "closed": "2026-11-15T18:02:33+00:00",
+     "full": "Hamish McKenzie"
+    },
+    {
+     "name": "Dati Tommaso",
+     "id": 9221,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 6,
+     "closed": "2026-11-15T18:28:51+00:00",
+     "full": "Tommaso Dati"
+    },
+    {
+     "name": "Godon Dorian",
+     "id": 5958,
+     "cc": "fr",
+     "nat": "France",
+     "price": 15,
+     "closed": "2026-11-16T13:08:26+00:00",
+     "full": "Dorian Godon"
+    },
+    {
+     "name": "Van Gils Maxim",
+     "id": 6750,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 16,
+     "closed": "2026-11-16T07:17:55+00:00",
+     "full": "Maxim Van Gils"
+    }
+   ]
+  },
   "UnoX": {
    "player": "IvanEs04",
    "won": 14,
@@ -2645,131 +2779,6 @@
      "price": 3,
      "closed": "2026-11-15T18:24:35+00:00",
      "full": "Nicolas Milesi"
-    }
-   ]
-  },
-  "Deceuninck - Quick-Step": {
-   "player": "Hillingz",
-   "won": 13,
-   "budget": 68,
-   "bids": 33,
-   "riders": [
-    {
-     "name": "Juul-Jensen Christopher",
-     "id": 2123,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 2,
-     "closed": "2026-11-12T18:00:09+00:00",
-     "full": "Christopher Juul-Jensen"
-    },
-    {
-     "name": "Moscon Gianni",
-     "id": 5001,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 3,
-     "closed": "2026-11-12T18:00:20+00:00",
-     "full": "Gianni Moscon"
-    },
-    {
-     "name": "Cerný Josef",
-     "id": 3088,
-     "cc": "cz",
-     "nat": "Czechia",
-     "price": 1,
-     "closed": "2026-11-12T18:00:29+00:00",
-     "full": "Josef Cerný"
-    },
-    {
-     "name": "Stuyven Jasper",
-     "id": 3388,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 19,
-     "closed": "2026-11-13T18:02:02+00:00",
-     "full": "Jasper Stuyven"
-    },
-    {
-     "name": "Ganna Filippo",
-     "id": 5943,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 28,
-     "closed": "2026-11-13T18:01:19+00:00",
-     "full": "Filippo Ganna"
-    },
-    {
-     "name": "Vermeersch Florian",
-     "id": 7037,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 12,
-     "closed": "2026-11-13T18:02:11+00:00",
-     "full": "Florian Vermeersch"
-    },
-    {
-     "name": "Simmons Quinn",
-     "id": 7076,
-     "cc": "us",
-     "nat": "United States",
-     "price": 18,
-     "closed": "2026-11-13T20:32:16+00:00",
-     "full": "Quinn Simmons"
-    },
-    {
-     "name": "Vervaeke Louis",
-     "id": 3714,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 6,
-     "closed": "2026-11-14T18:03:38+00:00",
-     "full": "Louis Vervaeke"
-    },
-    {
-     "name": "Van Eetvelt Lennert",
-     "id": 7382,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 14,
-     "closed": "2026-11-14T18:03:50+00:00",
-     "full": "Lennert Van Eetvelt"
-    },
-    {
-     "name": "Van Mechelen Vlad",
-     "id": 15279,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 6,
-     "closed": "2026-11-14T18:04:17+00:00",
-     "full": "Vlad Van Mechelen"
-    },
-    {
-     "name": "McKenzie Hamish",
-     "id": 15607,
-     "cc": "au",
-     "nat": "Australia",
-     "price": 1,
-     "closed": "2026-11-15T18:02:33+00:00",
-     "full": "Hamish McKenzie"
-    },
-    {
-     "name": "Dati Tommaso",
-     "id": 9221,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 6,
-     "closed": "2026-11-15T18:28:51+00:00",
-     "full": "Tommaso Dati"
-    },
-    {
-     "name": "Van Gils Maxim",
-     "id": 6750,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 16,
-     "closed": "2026-11-16T07:17:55+00:00",
-     "full": "Maxim Van Gils"
     }
    ]
   },
@@ -3764,5 +3773,5 @@
    ]
   }
  },
- "checked": "2026-11-16T12:56Z"
+ "checked": "2026-11-16T13:08Z"
 }

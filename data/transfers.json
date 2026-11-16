@@ -3928,5 +3928,15 @@
   "cc": "dk",
   "team": "UnoX",
   "price": 27
+ },
+ {
+  "at": "2026-11-16T13:08:26+00:00",
+  "date": "2026-11-16",
+  "time": "14:08",
+  "rider": "Dorian Godon",
+  "id": 5958,
+  "cc": "fr",
+  "team": "Deceuninck - Quick-Step",
+  "price": 15
  }
 ]
