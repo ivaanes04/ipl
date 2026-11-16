@@ -4348,5 +4348,25 @@
   "cc": "be",
   "team": "UnoX",
   "price": 1
+ },
+ {
+  "at": "2026-11-16T18:14:01+00:00",
+  "date": "2026-11-16",
+  "time": "19:14",
+  "rider": "Martin Solhaug Hansen",
+  "id": 8366,
+  "cc": "no",
+  "team": "UnoX",
+  "price": 1
+ },
+ {
+  "at": "2026-11-16T18:14:15+00:00",
+  "date": "2026-11-16",
+  "time": "19:14",
+  "rider": "Max Bock",
+  "id": 8239,
+  "cc": "de",
+  "team": "UnoX",
+  "price": 5
  }
 ]
