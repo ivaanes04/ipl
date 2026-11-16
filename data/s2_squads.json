@@ -968,6 +968,158 @@
     }
    ]
   },
+  "Bahrain Victorious": {
+   "player": "Daagz",
+   "won": 16,
+   "budget": 41,
+   "bids": 22,
+   "riders": [
+    {
+     "name": "Widar Jarno",
+     "id": 15499,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 12,
+     "closed": "2026-11-12T18:06:08+00:00",
+     "full": "Jarno Widar"
+    },
+    {
+     "name": "Govekar Matevž",
+     "id": 7469,
+     "cc": "si",
+     "nat": "Slovenia",
+     "price": 4,
+     "closed": "2026-11-12T18:06:56+00:00",
+     "full": "Matevž Govekar"
+    },
+    {
+     "name": "Miholjevic Fran",
+     "id": 14248,
+     "cc": "hr",
+     "nat": "Croatia",
+     "price": 3,
+     "closed": "2026-11-12T18:08:05+00:00",
+     "full": "Fran Miholjevic"
+    },
+    {
+     "name": "Seixas Paul",
+     "id": 9396,
+     "cc": "fr",
+     "nat": "France",
+     "price": 70,
+     "closed": "2026-11-14T23:20:45+00:00",
+     "full": "Paul Seixas"
+    },
+    {
+     "name": "Mernik Sven",
+     "id": 11249,
+     "cc": "si",
+     "nat": "Slovenia",
+     "price": 1,
+     "closed": "2026-11-13T18:52:40+00:00",
+     "full": "Sven Mernik"
+    },
+    {
+     "name": "Mezgec Luka",
+     "id": 3024,
+     "cc": "si",
+     "nat": "Slovenia",
+     "price": 8,
+     "closed": "2026-11-13T18:53:22+00:00",
+     "full": "Luka Mezgec"
+    },
+    {
+     "name": "Tiberi Antonio",
+     "id": 7394,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 16,
+     "closed": "2026-11-14T19:00:38+00:00",
+     "full": "Antonio Tiberi"
+    },
+    {
+     "name": "Jasim Al-Ali Abdulla",
+     "id": 9050,
+     "cc": "ae",
+     "nat": "United Arab Emirates",
+     "price": 1,
+     "closed": "2026-11-14T19:01:54+00:00",
+     "full": "Abdulla Jasim Al-Ali"
+    },
+    {
+     "name": "Paasschens Mathijs",
+     "id": 6792,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 3,
+     "closed": "2026-11-14T19:02:53+00:00",
+     "full": "Mathijs Paasschens"
+    },
+    {
+     "name": "Stannard Robert",
+     "id": 6773,
+     "cc": "au",
+     "nat": "Australia",
+     "price": 4,
+     "closed": "2026-11-14T19:03:12+00:00",
+     "full": "Robert Stannard"
+    },
+    {
+     "name": "Eržen Žak",
+     "id": 15523,
+     "cc": "si",
+     "nat": "Slovenia",
+     "price": 4,
+     "closed": "2026-11-14T19:04:12+00:00",
+     "full": "Žak Eržen"
+    },
+    {
+     "name": "Bittner Pavel",
+     "id": 7495,
+     "cc": "cz",
+     "nat": "Czechia",
+     "price": 14,
+     "closed": "2026-11-15T20:42:23+00:00",
+     "full": "Pavel Bittner"
+    },
+    {
+     "name": "Borgo Alessandro",
+     "id": 10120,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 6,
+     "closed": "2026-11-15T18:27:54+00:00",
+     "full": "Alessandro Borgo"
+    },
+    {
+     "name": "Segaert Alec",
+     "id": 14393,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 10,
+     "closed": "2026-11-15T18:28:19+00:00",
+     "full": "Alec Segaert"
+    },
+    {
+     "name": "Stockwell Oliver",
+     "id": 14397,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 1,
+     "closed": "2026-11-15T18:29:12+00:00",
+     "full": "Oliver Stockwell"
+    },
+    {
+     "name": "Arashiro Yukiya",
+     "id": 1820,
+     "cc": null,
+     "nat": "Japan",
+     "price": 1,
+     "closed": "2026-11-15T18:31:09+00:00",
+     "full": "Yukiya Arashiro"
+    }
+   ]
+  },
   "7-Eleven": {
    "player": "ChrisJanssen",
    "won": 16,
@@ -1117,158 +1269,6 @@
      "price": 6,
      "closed": "2026-11-15T19:16:00+00:00",
      "full": "Simone Velasco"
-    }
-   ]
-  },
-  "Bahrain Victorious": {
-   "player": "Daagz",
-   "won": 16,
-   "budget": 41,
-   "bids": 34,
-   "riders": [
-    {
-     "name": "Widar Jarno",
-     "id": 15499,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 12,
-     "closed": "2026-11-12T18:06:08+00:00",
-     "full": "Jarno Widar"
-    },
-    {
-     "name": "Govekar Matevž",
-     "id": 7469,
-     "cc": "si",
-     "nat": "Slovenia",
-     "price": 4,
-     "closed": "2026-11-12T18:06:56+00:00",
-     "full": "Matevž Govekar"
-    },
-    {
-     "name": "Miholjevic Fran",
-     "id": 14248,
-     "cc": "hr",
-     "nat": "Croatia",
-     "price": 3,
-     "closed": "2026-11-12T18:08:05+00:00",
-     "full": "Fran Miholjevic"
-    },
-    {
-     "name": "Seixas Paul",
-     "id": 9396,
-     "cc": "fr",
-     "nat": "France",
-     "price": 70,
-     "closed": "2026-11-14T23:20:45+00:00",
-     "full": "Paul Seixas"
-    },
-    {
-     "name": "Mernik Sven",
-     "id": 11249,
-     "cc": "si",
-     "nat": "Slovenia",
-     "price": 1,
-     "closed": "2026-11-13T18:52:40+00:00",
-     "full": "Sven Mernik"
-    },
-    {
-     "name": "Mezgec Luka",
-     "id": 3024,
-     "cc": "si",
-     "nat": "Slovenia",
-     "price": 8,
-     "closed": "2026-11-13T18:53:22+00:00",
-     "full": "Luka Mezgec"
-    },
-    {
-     "name": "Tiberi Antonio",
-     "id": 7394,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 16,
-     "closed": "2026-11-14T19:00:38+00:00",
-     "full": "Antonio Tiberi"
-    },
-    {
-     "name": "Jasim Al-Ali Abdulla",
-     "id": 9050,
-     "cc": "ae",
-     "nat": "United Arab Emirates",
-     "price": 1,
-     "closed": "2026-11-14T19:01:54+00:00",
-     "full": "Abdulla Jasim Al-Ali"
-    },
-    {
-     "name": "Paasschens Mathijs",
-     "id": 6792,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 3,
-     "closed": "2026-11-14T19:02:53+00:00",
-     "full": "Mathijs Paasschens"
-    },
-    {
-     "name": "Stannard Robert",
-     "id": 6773,
-     "cc": "au",
-     "nat": "Australia",
-     "price": 4,
-     "closed": "2026-11-14T19:03:12+00:00",
-     "full": "Robert Stannard"
-    },
-    {
-     "name": "Eržen Žak",
-     "id": 15523,
-     "cc": "si",
-     "nat": "Slovenia",
-     "price": 4,
-     "closed": "2026-11-14T19:04:12+00:00",
-     "full": "Žak Eržen"
-    },
-    {
-     "name": "Bittner Pavel",
-     "id": 7495,
-     "cc": "cz",
-     "nat": "Czechia",
-     "price": 14,
-     "closed": "2026-11-15T20:42:23+00:00",
-     "full": "Pavel Bittner"
-    },
-    {
-     "name": "Borgo Alessandro",
-     "id": 10120,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 6,
-     "closed": "2026-11-15T18:27:54+00:00",
-     "full": "Alessandro Borgo"
-    },
-    {
-     "name": "Segaert Alec",
-     "id": 14393,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 10,
-     "closed": "2026-11-15T18:28:19+00:00",
-     "full": "Alec Segaert"
-    },
-    {
-     "name": "Stockwell Oliver",
-     "id": 14397,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 1,
-     "closed": "2026-11-15T18:29:12+00:00",
-     "full": "Oliver Stockwell"
-    },
-    {
-     "name": "Arashiro Yukiya",
-     "id": 1820,
-     "cc": null,
-     "nat": "Japan",
-     "price": 1,
-     "closed": "2026-11-15T18:31:09+00:00",
-     "full": "Yukiya Arashiro"
     }
    ]
   },
@@ -1705,7 +1705,7 @@
    "player": "Riverside",
    "won": 14,
    "budget": 113,
-   "bids": 80,
+   "bids": 64,
    "riders": [
     {
      "name": "Otruba Jakub",
@@ -2107,7 +2107,7 @@
    "player": "IvanEs04",
    "won": 13,
    "budget": 107,
-   "bids": 35,
+   "bids": 52,
    "riders": [
     {
      "name": "Halland Johannessen Anders",
@@ -2853,122 +2853,6 @@
     }
    ]
   },
-  "Royal Bank of Scotland": {
-   "player": "Sheep_Boy123",
-   "won": 12,
-   "budget": 106,
-   "bids": 62,
-   "riders": [
-    {
-     "name": "Rowe Elliot",
-     "id": 9198,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 4,
-     "closed": "2026-11-12T18:05:48+00:00",
-     "full": "Elliot Rowe"
-    },
-    {
-     "name": "Flynn Sean",
-     "id": 7523,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 3,
-     "closed": "2026-11-12T18:05:53+00:00",
-     "full": "Sean Flynn"
-    },
-    {
-     "name": "Yates Adam",
-     "id": 3367,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 19,
-     "closed": "2026-11-13T20:28:49+00:00",
-     "full": "Adam Yates"
-    },
-    {
-     "name": "Tarling Joshua",
-     "id": 15278,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 16,
-     "closed": "2026-11-14T22:37:18+00:00",
-     "full": "Joshua Tarling"
-    },
-    {
-     "name": "Walker Max",
-     "id": 14574,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 3,
-     "closed": "2026-11-15T18:03:27+00:00",
-     "full": "Max Walker"
-    },
-    {
-     "name": "Kyffin Zeb",
-     "id": 15121,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 1,
-     "closed": "2026-11-15T18:03:41+00:00",
-     "full": "Zeb Kyffin"
-    },
-    {
-     "name": "Golliker Joshua",
-     "id": 8470,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 1,
-     "closed": "2026-11-15T18:03:46+00:00",
-     "full": "Joshua Golliker"
-    },
-    {
-     "name": "Donaldson Robert",
-     "id": 15011,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 6,
-     "closed": "2026-11-15T18:03:54+00:00",
-     "full": "Robert Donaldson"
-    },
-    {
-     "name": "Shaw James",
-     "id": 5966,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 7,
-     "closed": "2026-11-15T18:23:01+00:00",
-     "full": "James Shaw"
-    },
-    {
-     "name": "Tulett Ben",
-     "id": 7065,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 15,
-     "closed": "2026-11-15T23:19:15+00:00",
-     "full": "Ben Tulett"
-    },
-    {
-     "name": "Turner Ben",
-     "id": 14573,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 9,
-     "closed": "2026-11-15T19:55:27+00:00",
-     "full": "Ben Turner"
-    },
-    {
-     "name": "Watson Samuel",
-     "id": 14264,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 10,
-     "closed": "2026-11-16T00:03:05+00:00",
-     "full": "Samuel Watson"
-    }
-   ]
-  },
   "FEIRENSE - BEECELER": {
    "player": "joaozinhoaac",
    "won": 12,
@@ -3082,6 +2966,122 @@
      "price": 2,
      "closed": "2026-11-15T18:00:47+00:00",
      "full": "Benjamí Prades"
+    }
+   ]
+  },
+  "Royal Bank of Scotland": {
+   "player": "Sheep_Boy123",
+   "won": 12,
+   "budget": 106,
+   "bids": 75,
+   "riders": [
+    {
+     "name": "Rowe Elliot",
+     "id": 9198,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 4,
+     "closed": "2026-11-12T18:05:48+00:00",
+     "full": "Elliot Rowe"
+    },
+    {
+     "name": "Flynn Sean",
+     "id": 7523,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 3,
+     "closed": "2026-11-12T18:05:53+00:00",
+     "full": "Sean Flynn"
+    },
+    {
+     "name": "Yates Adam",
+     "id": 3367,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 19,
+     "closed": "2026-11-13T20:28:49+00:00",
+     "full": "Adam Yates"
+    },
+    {
+     "name": "Tarling Joshua",
+     "id": 15278,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 16,
+     "closed": "2026-11-14T22:37:18+00:00",
+     "full": "Joshua Tarling"
+    },
+    {
+     "name": "Walker Max",
+     "id": 14574,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 3,
+     "closed": "2026-11-15T18:03:27+00:00",
+     "full": "Max Walker"
+    },
+    {
+     "name": "Kyffin Zeb",
+     "id": 15121,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 1,
+     "closed": "2026-11-15T18:03:41+00:00",
+     "full": "Zeb Kyffin"
+    },
+    {
+     "name": "Golliker Joshua",
+     "id": 8470,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 1,
+     "closed": "2026-11-15T18:03:46+00:00",
+     "full": "Joshua Golliker"
+    },
+    {
+     "name": "Donaldson Robert",
+     "id": 15011,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 6,
+     "closed": "2026-11-15T18:03:54+00:00",
+     "full": "Robert Donaldson"
+    },
+    {
+     "name": "Shaw James",
+     "id": 5966,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 7,
+     "closed": "2026-11-15T18:23:01+00:00",
+     "full": "James Shaw"
+    },
+    {
+     "name": "Tulett Ben",
+     "id": 7065,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 15,
+     "closed": "2026-11-15T23:19:15+00:00",
+     "full": "Ben Tulett"
+    },
+    {
+     "name": "Turner Ben",
+     "id": 14573,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 9,
+     "closed": "2026-11-15T19:55:27+00:00",
+     "full": "Ben Turner"
+    },
+    {
+     "name": "Watson Samuel",
+     "id": 14264,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 10,
+     "closed": "2026-11-16T00:03:05+00:00",
+     "full": "Samuel Watson"
     }
    ]
   },
@@ -3656,5 +3656,5 @@
    ]
   }
  },
- "checked": "2026-11-16T11:23Z"
+ "checked": "2026-11-16T11:25Z"
 }
