@@ -3788,5 +3788,15 @@
   "cc": "co",
   "team": "Red Bull",
   "price": 1
+ },
+ {
+  "at": "2026-11-16T11:12:16+00:00",
+  "date": "2026-11-16",
+  "time": "12:12",
+  "rider": "Lukáš Kubiš",
+  "id": 12431,
+  "cc": "sk",
+  "team": "Unibet Rose Rockets",
+  "price": 12
  }
 ]
