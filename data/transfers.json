@@ -3768,5 +3768,25 @@
   "cc": "fr",
   "team": "Red Bull",
   "price": 4
+ },
+ {
+  "at": "2026-11-16T10:09:32+00:00",
+  "date": "2026-11-16",
+  "time": "11:09",
+  "rider": "Lennert Belmans",
+  "id": 14664,
+  "cc": "be",
+  "team": "Red Bull",
+  "price": 1
+ },
+ {
+  "at": "2026-11-16T10:10:13+00:00",
+  "date": "2026-11-16",
+  "time": "11:10",
+  "rider": "Yeison Reyes",
+  "id": 10440,
+  "cc": "co",
+  "team": "Red Bull",
+  "price": 1
  }
 ]
