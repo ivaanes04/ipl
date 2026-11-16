@@ -3838,5 +3838,25 @@
   "cc": "es",
   "team": "Liberty Seguros",
   "price": 40
+ },
+ {
+  "at": "2026-11-16T12:22:46+00:00",
+  "date": "2026-11-16",
+  "time": "13:22",
+  "rider": "Tom Crabbe",
+  "id": 9431,
+  "cc": "be",
+  "team": "Liberty Seguros",
+  "price": 4
+ },
+ {
+  "at": "2026-11-16T12:23:35+00:00",
+  "date": "2026-11-16",
+  "time": "13:23",
+  "rider": "Danny van Poppel",
+  "id": 3028,
+  "cc": "nl",
+  "team": "Liberty Seguros",
+  "price": 8
  }
 ]

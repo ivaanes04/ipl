@@ -3622,9 +3622,9 @@
   },
   "Liberty Seguros": {
    "player": "Leandro_jx_",
-   "won": 6,
-   "budget": 150,
-   "bids": 103,
+   "won": 8,
+   "budget": 138,
+   "bids": 91,
    "riders": [
     {
      "name": "Lastra Jonathan",
@@ -3679,9 +3679,27 @@
      "price": 40,
      "closed": "2026-11-16T12:21:44+00:00",
      "full": "Pello Bilbao"
+    },
+    {
+     "name": "Crabbe Tom",
+     "id": 9431,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 4,
+     "closed": "2026-11-16T12:22:46+00:00",
+     "full": "Tom Crabbe"
+    },
+    {
+     "name": "van Poppel Danny",
+     "id": 3028,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 8,
+     "closed": "2026-11-16T12:23:35+00:00",
+     "full": "Danny van Poppel"
     }
    ]
   }
  },
- "checked": "2026-11-16T12:22Z"
+ "checked": "2026-11-16T12:23Z"
 }
