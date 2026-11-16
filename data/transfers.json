@@ -3748,5 +3748,15 @@
   "cc": "be",
   "team": "Deceuninck - Quick-Step",
   "price": 16
+ },
+ {
+  "at": "2026-11-16T09:33:03+00:00",
+  "date": "2026-11-16",
+  "time": "10:33",
+  "rider": "Rainer Kepplinger",
+  "id": 15233,
+  "cc": "at",
+  "team": "Red Bull",
+  "price": 3
  }
 ]
