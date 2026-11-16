@@ -1853,6 +1853,140 @@
     }
    ]
   },
+  "UnoX": {
+   "player": "IvanEs04",
+   "won": 14,
+   "budget": 80,
+   "bids": 46,
+   "riders": [
+    {
+     "name": "Halland Johannessen Anders",
+     "id": 13451,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 10,
+     "closed": "2026-11-13T15:00:20+00:00",
+     "full": "Anders Halland Johannessen"
+    },
+    {
+     "name": "Larsen Niklas",
+     "id": 5752,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 7,
+     "closed": "2026-11-12T18:05:05+00:00",
+     "full": "Niklas Larsen"
+    },
+    {
+     "name": "Dalby Simon",
+     "id": 15284,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 6,
+     "closed": "2026-11-12T18:05:11+00:00",
+     "full": "Simon Dalby"
+    },
+    {
+     "name": "Søjberg Pedersen Rasmus",
+     "id": 15360,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 6,
+     "closed": "2026-11-13T18:02:41+00:00",
+     "full": "Rasmus Søjberg Pedersen"
+    },
+    {
+     "name": "Haugland Kasper",
+     "id": 9397,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 4,
+     "closed": "2026-11-13T18:03:16+00:00",
+     "full": "Kasper Haugland"
+    },
+    {
+     "name": "Holter Ådne",
+     "id": 7219,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 6,
+     "closed": "2026-11-13T18:07:29+00:00",
+     "full": "Ådne Holter"
+    },
+    {
+     "name": "Halland Johannessen Tobias",
+     "id": 13452,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 28,
+     "closed": "2026-11-14T18:18:39+00:00",
+     "full": "Tobias Halland Johannessen"
+    },
+    {
+     "name": "Eiking Odd Christian",
+     "id": 3586,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 8,
+     "closed": "2026-11-14T18:15:48+00:00",
+     "full": "Odd Christian Eiking"
+    },
+    {
+     "name": "Christophersen Cedrik",
+     "id": 8550,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 4,
+     "closed": "2026-11-14T18:21:09+00:00",
+     "full": "Cedrik Christophersen"
+    },
+    {
+     "name": "Asgreen Kasper",
+     "id": 5750,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 9,
+     "closed": "2026-11-14T18:21:14+00:00",
+     "full": "Kasper Asgreen"
+    },
+    {
+     "name": "Cort Nielsen Magnus",
+     "id": 3011,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 27,
+     "closed": "2026-11-16T12:56:33+00:00",
+     "full": "Magnus Cort Nielsen"
+    },
+    {
+     "name": "Heidemann Miguel",
+     "id": 7197,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 3,
+     "closed": "2026-11-15T18:16:30+00:00",
+     "full": "Miguel Heidemann"
+    },
+    {
+     "name": "Hettegger Michael",
+     "id": 17434,
+     "cc": "at",
+     "nat": "Austria",
+     "price": 1,
+     "closed": "2026-11-15T18:17:22+00:00",
+     "full": "Michael Hettegger"
+    },
+    {
+     "name": "Rydningen Martinsen Georg",
+     "id": 5250,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 1,
+     "closed": "2026-11-15T18:17:57+00:00",
+     "full": "Georg Rydningen Martinsen"
+    }
+   ]
+  },
   "Rabobank": {
    "player": "Bouke",
    "won": 14,
@@ -2636,131 +2770,6 @@
      "price": 16,
      "closed": "2026-11-16T07:17:55+00:00",
      "full": "Maxim Van Gils"
-    }
-   ]
-  },
-  "UnoX": {
-   "player": "IvanEs04",
-   "won": 13,
-   "budget": 107,
-   "bids": 73,
-   "riders": [
-    {
-     "name": "Halland Johannessen Anders",
-     "id": 13451,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 10,
-     "closed": "2026-11-13T15:00:20+00:00",
-     "full": "Anders Halland Johannessen"
-    },
-    {
-     "name": "Larsen Niklas",
-     "id": 5752,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 7,
-     "closed": "2026-11-12T18:05:05+00:00",
-     "full": "Niklas Larsen"
-    },
-    {
-     "name": "Dalby Simon",
-     "id": 15284,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 6,
-     "closed": "2026-11-12T18:05:11+00:00",
-     "full": "Simon Dalby"
-    },
-    {
-     "name": "Søjberg Pedersen Rasmus",
-     "id": 15360,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 6,
-     "closed": "2026-11-13T18:02:41+00:00",
-     "full": "Rasmus Søjberg Pedersen"
-    },
-    {
-     "name": "Haugland Kasper",
-     "id": 9397,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 4,
-     "closed": "2026-11-13T18:03:16+00:00",
-     "full": "Kasper Haugland"
-    },
-    {
-     "name": "Holter Ådne",
-     "id": 7219,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 6,
-     "closed": "2026-11-13T18:07:29+00:00",
-     "full": "Ådne Holter"
-    },
-    {
-     "name": "Halland Johannessen Tobias",
-     "id": 13452,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 28,
-     "closed": "2026-11-14T18:18:39+00:00",
-     "full": "Tobias Halland Johannessen"
-    },
-    {
-     "name": "Eiking Odd Christian",
-     "id": 3586,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 8,
-     "closed": "2026-11-14T18:15:48+00:00",
-     "full": "Odd Christian Eiking"
-    },
-    {
-     "name": "Christophersen Cedrik",
-     "id": 8550,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 4,
-     "closed": "2026-11-14T18:21:09+00:00",
-     "full": "Cedrik Christophersen"
-    },
-    {
-     "name": "Asgreen Kasper",
-     "id": 5750,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 9,
-     "closed": "2026-11-14T18:21:14+00:00",
-     "full": "Kasper Asgreen"
-    },
-    {
-     "name": "Heidemann Miguel",
-     "id": 7197,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 3,
-     "closed": "2026-11-15T18:16:30+00:00",
-     "full": "Miguel Heidemann"
-    },
-    {
-     "name": "Hettegger Michael",
-     "id": 17434,
-     "cc": "at",
-     "nat": "Austria",
-     "price": 1,
-     "closed": "2026-11-15T18:17:22+00:00",
-     "full": "Michael Hettegger"
-    },
-    {
-     "name": "Rydningen Martinsen Georg",
-     "id": 5250,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 1,
-     "closed": "2026-11-15T18:17:57+00:00",
-     "full": "Georg Rydningen Martinsen"
     }
    ]
   },

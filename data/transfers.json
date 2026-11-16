@@ -3918,5 +3918,15 @@
   "cc": "nl",
   "team": "Astana",
   "price": 8
+ },
+ {
+  "at": "2026-11-16T12:56:33+00:00",
+  "date": "2026-11-16",
+  "time": "13:56",
+  "rider": "Magnus Cort Nielsen",
+  "id": 3011,
+  "cc": "dk",
+  "team": "UnoX",
+  "price": 27
  }
 ]
