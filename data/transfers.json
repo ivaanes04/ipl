@@ -3828,5 +3828,15 @@
   "cc": "it",
   "team": "Talkwalker",
   "price": 18
+ },
+ {
+  "at": "2026-11-16T12:21:44+00:00",
+  "date": "2026-11-16",
+  "time": "13:21",
+  "rider": "Pello Bilbao",
+  "id": 2422,
+  "cc": "es",
+  "team": "Liberty Seguros",
+  "price": 40
  }
 ]
