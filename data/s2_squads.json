@@ -3622,9 +3622,9 @@
   },
   "Liberty Seguros": {
    "player": "Leandro_jx_",
-   "won": 8,
-   "budget": 138,
-   "bids": 91,
+   "won": 9,
+   "budget": 128,
+   "bids": 81,
    "riders": [
     {
      "name": "Lastra Jonathan",
@@ -3697,9 +3697,18 @@
      "price": 8,
      "closed": "2026-11-16T12:23:35+00:00",
      "full": "Danny van Poppel"
+    },
+    {
+     "name": "Rodríguez Carlos",
+     "id": 7091,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 10,
+     "closed": "2026-11-16T12:29:58+00:00",
+     "full": "Carlos Rodríguez"
     }
    ]
   }
  },
- "checked": "2026-11-16T12:23Z"
+ "checked": "2026-11-16T12:30Z"
 }

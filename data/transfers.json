@@ -3858,5 +3858,15 @@
   "cc": "nl",
   "team": "Liberty Seguros",
   "price": 8
+ },
+ {
+  "at": "2026-11-16T12:29:58+00:00",
+  "date": "2026-11-16",
+  "time": "13:29",
+  "rider": "Carlos Rodríguez",
+  "id": 7091,
+  "cc": "es",
+  "team": "Liberty Seguros",
+  "price": 10
  }
 ]
