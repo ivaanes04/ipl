@@ -1103,20 +1103,20 @@
   "at": "2026-11-13T18:00:22+00:00",
   "date": "2026-11-13",
   "time": "19:00",
-  "rider": "Daniel Moreira",
-  "id": 10065,
-  "cc": "pt",
-  "team": "Portugal in 150 Seconds",
+  "rider": "Sergio Henao",
+  "id": 16039,
+  "cc": "co",
+  "team": "Rabobank",
   "price": 1
  },
  {
   "at": "2026-11-13T18:00:22+00:00",
   "date": "2026-11-13",
   "time": "19:00",
-  "rider": "Sergio Henao",
-  "id": 16039,
-  "cc": "co",
-  "team": "Rabobank",
+  "rider": "Daniel Moreira",
+  "id": 10065,
+  "cc": "pt",
+  "team": "Portugal in 150 Seconds",
   "price": 1
  },
  {
@@ -3957,6 +3957,16 @@
   "id": 2523,
   "cc": "nz",
   "team": "Red Bull",
+  "price": 6
+ },
+ {
+  "at": "2026-11-16T14:06:56+00:00",
+  "date": "2026-11-16",
+  "time": "15:06",
+  "rider": "Alex Molenaar",
+  "id": 6446,
+  "cc": "nl",
+  "team": "Rabobank",
   "price": 6
  }
 ]
