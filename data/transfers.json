@@ -3758,5 +3758,15 @@
   "cc": "at",
   "team": "Red Bull",
   "price": 3
+ },
+ {
+  "at": "2026-11-16T10:07:29+00:00",
+  "date": "2026-11-16",
+  "time": "11:07",
+  "rider": "Thibault Guernalec",
+  "id": 6395,
+  "cc": "fr",
+  "team": "Red Bull",
+  "price": 4
  }
 ]

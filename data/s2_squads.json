@@ -355,7 +355,7 @@
    "player": "Tom_Bryant",
    "won": 17,
    "budget": 73,
-   "bids": 34,
+   "bids": 20,
    "riders": [
     {
      "name": "Schmid Mauro",
@@ -2594,122 +2594,6 @@
     }
    ]
   },
-  "Royal Bank of Scotland": {
-   "player": "Sheep_Boy123",
-   "won": 12,
-   "budget": 106,
-   "bids": 59,
-   "riders": [
-    {
-     "name": "Rowe Elliot",
-     "id": 9198,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 4,
-     "closed": "2026-11-12T18:05:48+00:00",
-     "full": "Elliot Rowe"
-    },
-    {
-     "name": "Flynn Sean",
-     "id": 7523,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 3,
-     "closed": "2026-11-12T18:05:53+00:00",
-     "full": "Sean Flynn"
-    },
-    {
-     "name": "Yates Adam",
-     "id": 3367,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 19,
-     "closed": "2026-11-13T20:28:49+00:00",
-     "full": "Adam Yates"
-    },
-    {
-     "name": "Tarling Joshua",
-     "id": 15278,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 16,
-     "closed": "2026-11-14T22:37:18+00:00",
-     "full": "Joshua Tarling"
-    },
-    {
-     "name": "Walker Max",
-     "id": 14574,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 3,
-     "closed": "2026-11-15T18:03:27+00:00",
-     "full": "Max Walker"
-    },
-    {
-     "name": "Kyffin Zeb",
-     "id": 15121,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 1,
-     "closed": "2026-11-15T18:03:41+00:00",
-     "full": "Zeb Kyffin"
-    },
-    {
-     "name": "Golliker Joshua",
-     "id": 8470,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 1,
-     "closed": "2026-11-15T18:03:46+00:00",
-     "full": "Joshua Golliker"
-    },
-    {
-     "name": "Donaldson Robert",
-     "id": 15011,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 6,
-     "closed": "2026-11-15T18:03:54+00:00",
-     "full": "Robert Donaldson"
-    },
-    {
-     "name": "Shaw James",
-     "id": 5966,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 7,
-     "closed": "2026-11-15T18:23:01+00:00",
-     "full": "James Shaw"
-    },
-    {
-     "name": "Tulett Ben",
-     "id": 7065,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 15,
-     "closed": "2026-11-15T23:19:15+00:00",
-     "full": "Ben Tulett"
-    },
-    {
-     "name": "Turner Ben",
-     "id": 14573,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 9,
-     "closed": "2026-11-15T19:55:27+00:00",
-     "full": "Ben Turner"
-    },
-    {
-     "name": "Watson Samuel",
-     "id": 14264,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 10,
-     "closed": "2026-11-16T00:03:05+00:00",
-     "full": "Samuel Watson"
-    }
-   ]
-  },
   "FEIRENSE - BEECELER": {
    "player": "joaozinhoaac",
    "won": 12,
@@ -2823,6 +2707,122 @@
      "price": 2,
      "closed": "2026-11-15T18:00:47+00:00",
      "full": "Benjamí Prades"
+    }
+   ]
+  },
+  "Royal Bank of Scotland": {
+   "player": "Sheep_Boy123",
+   "won": 12,
+   "budget": 106,
+   "bids": 70,
+   "riders": [
+    {
+     "name": "Rowe Elliot",
+     "id": 9198,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 4,
+     "closed": "2026-11-12T18:05:48+00:00",
+     "full": "Elliot Rowe"
+    },
+    {
+     "name": "Flynn Sean",
+     "id": 7523,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 3,
+     "closed": "2026-11-12T18:05:53+00:00",
+     "full": "Sean Flynn"
+    },
+    {
+     "name": "Yates Adam",
+     "id": 3367,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 19,
+     "closed": "2026-11-13T20:28:49+00:00",
+     "full": "Adam Yates"
+    },
+    {
+     "name": "Tarling Joshua",
+     "id": 15278,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 16,
+     "closed": "2026-11-14T22:37:18+00:00",
+     "full": "Joshua Tarling"
+    },
+    {
+     "name": "Walker Max",
+     "id": 14574,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 3,
+     "closed": "2026-11-15T18:03:27+00:00",
+     "full": "Max Walker"
+    },
+    {
+     "name": "Kyffin Zeb",
+     "id": 15121,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 1,
+     "closed": "2026-11-15T18:03:41+00:00",
+     "full": "Zeb Kyffin"
+    },
+    {
+     "name": "Golliker Joshua",
+     "id": 8470,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 1,
+     "closed": "2026-11-15T18:03:46+00:00",
+     "full": "Joshua Golliker"
+    },
+    {
+     "name": "Donaldson Robert",
+     "id": 15011,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 6,
+     "closed": "2026-11-15T18:03:54+00:00",
+     "full": "Robert Donaldson"
+    },
+    {
+     "name": "Shaw James",
+     "id": 5966,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 7,
+     "closed": "2026-11-15T18:23:01+00:00",
+     "full": "James Shaw"
+    },
+    {
+     "name": "Tulett Ben",
+     "id": 7065,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 15,
+     "closed": "2026-11-15T23:19:15+00:00",
+     "full": "Ben Tulett"
+    },
+    {
+     "name": "Turner Ben",
+     "id": 14573,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 9,
+     "closed": "2026-11-15T19:55:27+00:00",
+     "full": "Ben Turner"
+    },
+    {
+     "name": "Watson Samuel",
+     "id": 14264,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 10,
+     "closed": "2026-11-16T00:03:05+00:00",
+     "full": "Samuel Watson"
     }
    ]
   },
@@ -3062,7 +3062,7 @@
    "player": "Agap",
    "won": 11,
    "budget": 119,
-   "bids": 72,
+   "bids": 87,
    "riders": [
     {
      "name": "Warbasse Larry",
@@ -3162,6 +3162,113 @@
      "price": 1,
      "closed": "2026-11-15T20:48:00+00:00",
      "full": "Scott McGill"
+    }
+   ]
+  },
+  "Red Bull": {
+   "player": "MarcelTestier",
+   "won": 11,
+   "budget": 64,
+   "bids": 45,
+   "riders": [
+    {
+     "name": "Kämna Lennard",
+     "id": 3842,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 4,
+     "closed": "2026-11-12T19:44:16+00:00",
+     "full": "Lennard Kämna"
+    },
+    {
+     "name": "Philipsen Jasper",
+     "id": 6324,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 29,
+     "closed": "2026-11-14T20:34:54+00:00",
+     "full": "Jasper Philipsen"
+    },
+    {
+     "name": "del Toro Isaac",
+     "id": 4967,
+     "cc": "mx",
+     "nat": "Mexico",
+     "price": 63,
+     "closed": "2026-11-14T21:42:21+00:00",
+     "full": "Isaac del Toro"
+    },
+    {
+     "name": "Bjerg Mikkel",
+     "id": 6390,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 10,
+     "closed": "2026-11-15T22:49:53+00:00",
+     "full": "Mikkel Bjerg"
+    },
+    {
+     "name": "Plapp Luke",
+     "id": 14249,
+     "cc": "au",
+     "nat": "Australia",
+     "price": 10,
+     "closed": "2026-11-14T20:33:34+00:00",
+     "full": "Luke Plapp"
+    },
+    {
+     "name": "Hatherly Alan",
+     "id": 8627,
+     "cc": "za",
+     "nat": "South Africa",
+     "price": 5,
+     "closed": "2026-11-15T10:42:27+00:00",
+     "full": "Alan Hatherly"
+    },
+    {
+     "name": "Zijlaard Maikel",
+     "id": 6422,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 6,
+     "closed": "2026-11-15T08:35:49+00:00",
+     "full": "Maikel Zijlaard"
+    },
+    {
+     "name": "Appelbaum Henri-Johannes",
+     "id": 15591,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 1,
+     "closed": "2026-11-15T08:39:10+00:00",
+     "full": "Henri-Johannes Appelbaum"
+    },
+    {
+     "name": "Bodet Vincent",
+     "id": 9421,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-15T08:42:20+00:00",
+     "full": "Vincent Bodet"
+    },
+    {
+     "name": "Guernalec Thibault",
+     "id": 6395,
+     "cc": "fr",
+     "nat": "France",
+     "price": 4,
+     "closed": "2026-11-16T10:07:29+00:00",
+     "full": "Thibault Guernalec"
+    },
+    {
+     "name": "Kepplinger Rainer",
+     "id": 15233,
+     "cc": "at",
+     "nat": "Austria",
+     "price": 3,
+     "closed": "2026-11-16T09:33:03+00:00",
+     "full": "Rainer Kepplinger"
     }
    ]
   },
@@ -3272,104 +3379,6 @@
     }
    ]
   },
-  "Red Bull": {
-   "player": "MarcelTestier",
-   "won": 10,
-   "budget": 68,
-   "bids": 49,
-   "riders": [
-    {
-     "name": "Kämna Lennard",
-     "id": 3842,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 4,
-     "closed": "2026-11-12T19:44:16+00:00",
-     "full": "Lennard Kämna"
-    },
-    {
-     "name": "Philipsen Jasper",
-     "id": 6324,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 29,
-     "closed": "2026-11-14T20:34:54+00:00",
-     "full": "Jasper Philipsen"
-    },
-    {
-     "name": "del Toro Isaac",
-     "id": 4967,
-     "cc": "mx",
-     "nat": "Mexico",
-     "price": 63,
-     "closed": "2026-11-14T21:42:21+00:00",
-     "full": "Isaac del Toro"
-    },
-    {
-     "name": "Bjerg Mikkel",
-     "id": 6390,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 10,
-     "closed": "2026-11-15T22:49:53+00:00",
-     "full": "Mikkel Bjerg"
-    },
-    {
-     "name": "Plapp Luke",
-     "id": 14249,
-     "cc": "au",
-     "nat": "Australia",
-     "price": 10,
-     "closed": "2026-11-14T20:33:34+00:00",
-     "full": "Luke Plapp"
-    },
-    {
-     "name": "Hatherly Alan",
-     "id": 8627,
-     "cc": "za",
-     "nat": "South Africa",
-     "price": 5,
-     "closed": "2026-11-15T10:42:27+00:00",
-     "full": "Alan Hatherly"
-    },
-    {
-     "name": "Zijlaard Maikel",
-     "id": 6422,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 6,
-     "closed": "2026-11-15T08:35:49+00:00",
-     "full": "Maikel Zijlaard"
-    },
-    {
-     "name": "Appelbaum Henri-Johannes",
-     "id": 15591,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 1,
-     "closed": "2026-11-15T08:39:10+00:00",
-     "full": "Henri-Johannes Appelbaum"
-    },
-    {
-     "name": "Bodet Vincent",
-     "id": 9421,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-15T08:42:20+00:00",
-     "full": "Vincent Bodet"
-    },
-    {
-     "name": "Kepplinger Rainer",
-     "id": 15233,
-     "cc": "at",
-     "nat": "Austria",
-     "price": 3,
-     "closed": "2026-11-16T09:33:03+00:00",
-     "full": "Rainer Kepplinger"
-    }
-   ]
-  },
   "Milka": {
    "player": "danielmiko",
    "won": 10,
@@ -3472,7 +3481,7 @@
    "player": "JgCol",
    "won": 9,
    "budget": 128,
-   "bids": 64,
+   "bids": 55,
    "riders": [
     {
      "name": "Ardila Camilo",
@@ -3611,5 +3620,5 @@
    ]
   }
  },
- "checked": "2026-11-16T09:33Z"
+ "checked": "2026-11-16T10:07Z"
 }
