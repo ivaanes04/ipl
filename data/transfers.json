@@ -4338,5 +4338,15 @@
   "cc": "no",
   "team": "UnoX",
   "price": 1
+ },
+ {
+  "at": "2026-11-16T18:13:19+00:00",
+  "date": "2026-11-16",
+  "time": "19:13",
+  "rider": "Jelle Vermoote",
+  "id": 4961,
+  "cc": "be",
+  "team": "UnoX",
+  "price": 1
  }
 ]
