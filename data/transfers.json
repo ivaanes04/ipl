@@ -2033,21 +2033,21 @@
   "at": "2026-11-14T18:00:40+00:00",
   "date": "2026-11-14",
   "time": "19:00",
-  "rider": "Serhii Sydor",
-  "id": 14383,
-  "cc": "ua",
-  "team": "Ukraine Cycling Team",
-  "price": 1
- },
- {
-  "at": "2026-11-14T18:00:40+00:00",
-  "date": "2026-11-14",
-  "time": "19:00",
   "rider": "Afonso Eulálio",
   "id": 7667,
   "cc": "pt",
   "team": "FEIRENSE - BEECELER",
   "price": 12
+ },
+ {
+  "at": "2026-11-14T18:00:40+00:00",
+  "date": "2026-11-14",
+  "time": "19:00",
+  "rider": "Serhii Sydor",
+  "id": 14383,
+  "cc": "ua",
+  "team": "Ukraine Cycling Team",
+  "price": 1
  },
  {
   "at": "2026-11-14T18:00:41+00:00",
@@ -4858,5 +4858,15 @@
   "cc": "ec",
   "team": "Discovery Channel",
   "price": 30
+ },
+ {
+  "at": "2026-11-16T21:42:43+00:00",
+  "date": "2026-11-16",
+  "time": "22:42",
+  "rider": "Primož Roglic",
+  "id": 3280,
+  "cc": "si",
+  "team": "FEIRENSE - BEECELER",
+  "price": 36
  }
 ]
