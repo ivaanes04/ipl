@@ -3219,6 +3219,113 @@
     }
    ]
   },
+  "Liberty Seguros": {
+   "player": "Leandro_jx_",
+   "won": 11,
+   "budget": 114,
+   "bids": 67,
+   "riders": [
+    {
+     "name": "Lastra Jonathan",
+     "id": 5683,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 3,
+     "closed": "2026-11-12T18:03:25+00:00",
+     "full": "Jonathan Lastra"
+    },
+    {
+     "name": "Samitier Sergio",
+     "id": 6417,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 4,
+     "closed": "2026-11-12T18:04:23+00:00",
+     "full": "Sergio Samitier"
+    },
+    {
+     "name": "Rota Raúl",
+     "id": 4171,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 1,
+     "closed": "2026-11-12T18:05:30+00:00",
+     "full": "Raúl Rota"
+    },
+    {
+     "name": "Cañellas Xavier",
+     "id": 6790,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 1,
+     "closed": "2026-11-12T18:07:12+00:00",
+     "full": "Xavier Cañellas"
+    },
+    {
+     "name": "Nunes Hugo",
+     "id": 6907,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-14T19:35:30+00:00",
+     "full": "Hugo Nunes"
+    },
+    {
+     "name": "Bilbao Pello",
+     "id": 2422,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 40,
+     "closed": "2026-11-16T12:21:44+00:00",
+     "full": "Pello Bilbao"
+    },
+    {
+     "name": "Crabbe Tom",
+     "id": 9431,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 4,
+     "closed": "2026-11-16T12:22:46+00:00",
+     "full": "Tom Crabbe"
+    },
+    {
+     "name": "van Poppel Danny",
+     "id": 3028,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 8,
+     "closed": "2026-11-16T12:23:35+00:00",
+     "full": "Danny van Poppel"
+    },
+    {
+     "name": "Rodríguez Carlos",
+     "id": 7091,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 10,
+     "closed": "2026-11-16T12:29:58+00:00",
+     "full": "Carlos Rodríguez"
+    },
+    {
+     "name": "Berrade Urko",
+     "id": 6793,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 8,
+     "closed": "2026-11-16T12:30:31+00:00",
+     "full": "Urko Berrade"
+    },
+    {
+     "name": "Nicolau Joel",
+     "id": 7119,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 6,
+     "closed": "2026-11-16T12:31:42+00:00",
+     "full": "Joel Nicolau"
+    }
+   ]
+  },
   "Discovery Channel": {
    "player": "Agap",
    "won": 11,
@@ -3619,96 +3726,7 @@
      "full": "Clément Russo"
     }
    ]
-  },
-  "Liberty Seguros": {
-   "player": "Leandro_jx_",
-   "won": 9,
-   "budget": 128,
-   "bids": 81,
-   "riders": [
-    {
-     "name": "Lastra Jonathan",
-     "id": 5683,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 3,
-     "closed": "2026-11-12T18:03:25+00:00",
-     "full": "Jonathan Lastra"
-    },
-    {
-     "name": "Samitier Sergio",
-     "id": 6417,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 4,
-     "closed": "2026-11-12T18:04:23+00:00",
-     "full": "Sergio Samitier"
-    },
-    {
-     "name": "Rota Raúl",
-     "id": 4171,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 1,
-     "closed": "2026-11-12T18:05:30+00:00",
-     "full": "Raúl Rota"
-    },
-    {
-     "name": "Cañellas Xavier",
-     "id": 6790,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 1,
-     "closed": "2026-11-12T18:07:12+00:00",
-     "full": "Xavier Cañellas"
-    },
-    {
-     "name": "Nunes Hugo",
-     "id": 6907,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 1,
-     "closed": "2026-11-14T19:35:30+00:00",
-     "full": "Hugo Nunes"
-    },
-    {
-     "name": "Bilbao Pello",
-     "id": 2422,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 40,
-     "closed": "2026-11-16T12:21:44+00:00",
-     "full": "Pello Bilbao"
-    },
-    {
-     "name": "Crabbe Tom",
-     "id": 9431,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 4,
-     "closed": "2026-11-16T12:22:46+00:00",
-     "full": "Tom Crabbe"
-    },
-    {
-     "name": "van Poppel Danny",
-     "id": 3028,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 8,
-     "closed": "2026-11-16T12:23:35+00:00",
-     "full": "Danny van Poppel"
-    },
-    {
-     "name": "Rodríguez Carlos",
-     "id": 7091,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 10,
-     "closed": "2026-11-16T12:29:58+00:00",
-     "full": "Carlos Rodríguez"
-    }
-   ]
   }
  },
- "checked": "2026-11-16T12:30Z"
+ "checked": "2026-11-16T12:31Z"
 }

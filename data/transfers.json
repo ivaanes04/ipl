@@ -3868,5 +3868,25 @@
   "cc": "es",
   "team": "Liberty Seguros",
   "price": 10
+ },
+ {
+  "at": "2026-11-16T12:30:31+00:00",
+  "date": "2026-11-16",
+  "time": "13:30",
+  "rider": "Urko Berrade",
+  "id": 6793,
+  "cc": "es",
+  "team": "Liberty Seguros",
+  "price": 8
+ },
+ {
+  "at": "2026-11-16T12:31:42+00:00",
+  "date": "2026-11-16",
+  "time": "13:31",
+  "rider": "Joel Nicolau",
+  "id": 7119,
+  "cc": "es",
+  "team": "Liberty Seguros",
+  "price": 6
  }
 ]
