@@ -5048,5 +5048,25 @@
   "cc": "gb",
   "team": "Royal Bank of Scotland",
   "price": 13
+ },
+ {
+  "at": "2026-11-17T11:23:41+00:00",
+  "date": "2026-11-17",
+  "time": "12:23",
+  "rider": "Callum Thornley",
+  "id": 8590,
+  "cc": "gb",
+  "team": "Royal Bank of Scotland",
+  "price": 13
+ },
+ {
+  "at": "2026-11-17T11:56:06+00:00",
+  "date": "2026-11-17",
+  "time": "12:56",
+  "rider": "Ethan Vernon",
+  "id": 14256,
+  "cc": "gb",
+  "team": "Royal Bank of Scotland",
+  "price": 11
  }
 ]

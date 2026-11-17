@@ -1945,6 +1945,185 @@
     }
    ]
   },
+  "Royal Bank of Scotland": {
+   "player": "Sheep_Boy123",
+   "won": 19,
+   "budget": 28,
+   "bids": 17,
+   "riders": [
+    {
+     "name": "Rowe Elliot",
+     "id": 9198,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 4,
+     "closed": "2026-11-12T18:05:48+00:00",
+     "full": "Elliot Rowe"
+    },
+    {
+     "name": "Flynn Sean",
+     "id": 7523,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 3,
+     "closed": "2026-11-12T18:05:53+00:00",
+     "full": "Sean Flynn"
+    },
+    {
+     "name": "Yates Adam",
+     "id": 3367,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 19,
+     "closed": "2026-11-13T20:28:49+00:00",
+     "full": "Adam Yates"
+    },
+    {
+     "name": "Healy Ben",
+     "id": 13438,
+     "cc": "ie",
+     "nat": "Ireland",
+     "price": 20,
+     "closed": "2026-11-16T18:18:02+00:00",
+     "full": "Ben Healy"
+    },
+    {
+     "name": "Tarling Joshua",
+     "id": 15278,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 16,
+     "closed": "2026-11-14T22:37:18+00:00",
+     "full": "Joshua Tarling"
+    },
+    {
+     "name": "Walker Max",
+     "id": 14574,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 3,
+     "closed": "2026-11-15T18:03:27+00:00",
+     "full": "Max Walker"
+    },
+    {
+     "name": "Kyffin Zeb",
+     "id": 15121,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 1,
+     "closed": "2026-11-15T18:03:41+00:00",
+     "full": "Zeb Kyffin"
+    },
+    {
+     "name": "Golliker Joshua",
+     "id": 8470,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 1,
+     "closed": "2026-11-15T18:03:46+00:00",
+     "full": "Joshua Golliker"
+    },
+    {
+     "name": "Donaldson Robert",
+     "id": 15011,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 6,
+     "closed": "2026-11-15T18:03:54+00:00",
+     "full": "Robert Donaldson"
+    },
+    {
+     "name": "Shaw James",
+     "id": 5966,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 7,
+     "closed": "2026-11-15T18:23:01+00:00",
+     "full": "James Shaw"
+    },
+    {
+     "name": "Tulett Ben",
+     "id": 7065,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 15,
+     "closed": "2026-11-15T23:19:15+00:00",
+     "full": "Ben Tulett"
+    },
+    {
+     "name": "Turner Ben",
+     "id": 14573,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 9,
+     "closed": "2026-11-15T19:55:27+00:00",
+     "full": "Ben Turner"
+    },
+    {
+     "name": "Watson Samuel",
+     "id": 14264,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 10,
+     "closed": "2026-11-16T00:03:05+00:00",
+     "full": "Samuel Watson"
+    },
+    {
+     "name": "Donovan Mark",
+     "id": 6494,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 7,
+     "closed": "2026-11-16T18:00:10+00:00",
+     "full": "Mark Donovan"
+    },
+    {
+     "name": "Vernon Ethan",
+     "id": 14256,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 11,
+     "closed": "2026-11-17T11:56:06+00:00",
+     "full": "Ethan Vernon"
+    },
+    {
+     "name": "Rafferty Darren",
+     "id": 15390,
+     "cc": "ie",
+     "nat": "Ireland",
+     "price": 6,
+     "closed": "2026-11-16T18:00:40+00:00",
+     "full": "Darren Rafferty"
+    },
+    {
+     "name": "Thornley Callum",
+     "id": 8590,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 13,
+     "closed": "2026-11-17T11:23:41+00:00",
+     "full": "Callum Thornley"
+    },
+    {
+     "name": "Hayter Ethan",
+     "id": 7089,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 8,
+     "closed": "2026-11-16T18:01:31+00:00",
+     "full": "Ethan Hayter"
+    },
+    {
+     "name": "Wright Fred",
+     "id": 7088,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 13,
+     "closed": "2026-11-17T10:42:17+00:00",
+     "full": "Fred Wright"
+    }
+   ]
+  },
   "Bahrain Victorious": {
    "player": "Daagz",
    "won": 19,
@@ -3940,167 +4119,6 @@
     }
    ]
   },
-  "Royal Bank of Scotland": {
-   "player": "Sheep_Boy123",
-   "won": 17,
-   "budget": 52,
-   "bids": 41,
-   "riders": [
-    {
-     "name": "Rowe Elliot",
-     "id": 9198,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 4,
-     "closed": "2026-11-12T18:05:48+00:00",
-     "full": "Elliot Rowe"
-    },
-    {
-     "name": "Flynn Sean",
-     "id": 7523,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 3,
-     "closed": "2026-11-12T18:05:53+00:00",
-     "full": "Sean Flynn"
-    },
-    {
-     "name": "Yates Adam",
-     "id": 3367,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 19,
-     "closed": "2026-11-13T20:28:49+00:00",
-     "full": "Adam Yates"
-    },
-    {
-     "name": "Healy Ben",
-     "id": 13438,
-     "cc": "ie",
-     "nat": "Ireland",
-     "price": 20,
-     "closed": "2026-11-16T18:18:02+00:00",
-     "full": "Ben Healy"
-    },
-    {
-     "name": "Tarling Joshua",
-     "id": 15278,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 16,
-     "closed": "2026-11-14T22:37:18+00:00",
-     "full": "Joshua Tarling"
-    },
-    {
-     "name": "Walker Max",
-     "id": 14574,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 3,
-     "closed": "2026-11-15T18:03:27+00:00",
-     "full": "Max Walker"
-    },
-    {
-     "name": "Kyffin Zeb",
-     "id": 15121,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 1,
-     "closed": "2026-11-15T18:03:41+00:00",
-     "full": "Zeb Kyffin"
-    },
-    {
-     "name": "Golliker Joshua",
-     "id": 8470,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 1,
-     "closed": "2026-11-15T18:03:46+00:00",
-     "full": "Joshua Golliker"
-    },
-    {
-     "name": "Donaldson Robert",
-     "id": 15011,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 6,
-     "closed": "2026-11-15T18:03:54+00:00",
-     "full": "Robert Donaldson"
-    },
-    {
-     "name": "Shaw James",
-     "id": 5966,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 7,
-     "closed": "2026-11-15T18:23:01+00:00",
-     "full": "James Shaw"
-    },
-    {
-     "name": "Tulett Ben",
-     "id": 7065,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 15,
-     "closed": "2026-11-15T23:19:15+00:00",
-     "full": "Ben Tulett"
-    },
-    {
-     "name": "Turner Ben",
-     "id": 14573,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 9,
-     "closed": "2026-11-15T19:55:27+00:00",
-     "full": "Ben Turner"
-    },
-    {
-     "name": "Watson Samuel",
-     "id": 14264,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 10,
-     "closed": "2026-11-16T00:03:05+00:00",
-     "full": "Samuel Watson"
-    },
-    {
-     "name": "Donovan Mark",
-     "id": 6494,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 7,
-     "closed": "2026-11-16T18:00:10+00:00",
-     "full": "Mark Donovan"
-    },
-    {
-     "name": "Rafferty Darren",
-     "id": 15390,
-     "cc": "ie",
-     "nat": "Ireland",
-     "price": 6,
-     "closed": "2026-11-16T18:00:40+00:00",
-     "full": "Darren Rafferty"
-    },
-    {
-     "name": "Hayter Ethan",
-     "id": 7089,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 8,
-     "closed": "2026-11-16T18:01:31+00:00",
-     "full": "Ethan Hayter"
-    },
-    {
-     "name": "Wright Fred",
-     "id": 7088,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 13,
-     "closed": "2026-11-17T10:42:17+00:00",
-     "full": "Fred Wright"
-    }
-   ]
-  },
   "Liberty Seguros": {
    "player": "Leandro_jx_",
    "won": 15,
@@ -4248,7 +4266,7 @@
    "player": "Francesco Bonavita",
    "won": 15,
    "budget": 25,
-   "bids": 8,
+   "bids": 25,
    "riders": [
     {
      "name": "Vingegaard Jonas",
@@ -4772,5 +4790,5 @@
    ]
   }
  },
- "checked": "2026-11-17T10:42Z"
+ "checked": "2026-11-17T11:56Z"
 }
