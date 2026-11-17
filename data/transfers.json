@@ -2173,21 +2173,21 @@
   "at": "2026-11-14T18:03:38+00:00",
   "date": "2026-11-14",
   "time": "19:03",
-  "rider": "Louis Vervaeke",
-  "id": 3714,
-  "cc": "be",
-  "team": "Deceuninck - Quick-Step",
-  "price": 6
- },
- {
-  "at": "2026-11-14T18:03:38+00:00",
-  "date": "2026-11-14",
-  "time": "19:03",
   "rider": "Paul Ourselin",
   "id": 5613,
   "cc": "fr",
   "team": "B&B Hotels",
   "price": 2
+ },
+ {
+  "at": "2026-11-14T18:03:38+00:00",
+  "date": "2026-11-14",
+  "time": "19:03",
+  "rider": "Louis Vervaeke",
+  "id": 3714,
+  "cc": "be",
+  "team": "Deceuninck - Quick-Step",
+  "price": 6
  },
  {
   "at": "2026-11-14T18:03:50+00:00",
@@ -4878,5 +4878,155 @@
   "cc": "es",
   "team": "GI Group Holding Simoldes UDO",
   "price": 29
+ },
+ {
+  "at": "2026-11-16T22:17:30+00:00",
+  "date": "2026-11-16",
+  "time": "23:17",
+  "rider": "Thibau Nys",
+  "id": 13165,
+  "cc": "be",
+  "team": "Red Bull",
+  "price": 12
+ },
+ {
+  "at": "2026-11-16T22:19:59+00:00",
+  "date": "2026-11-16",
+  "time": "23:19",
+  "rider": "Valentin Paret-Peintre",
+  "id": 7386,
+  "cc": "fr",
+  "team": "Red Bull",
+  "price": 20
+ },
+ {
+  "at": "2026-11-16T22:22:55+00:00",
+  "date": "2026-11-16",
+  "time": "23:22",
+  "rider": "Jai Hindley",
+  "id": 6392,
+  "cc": "au",
+  "team": "Astana",
+  "price": 30
+ },
+ {
+  "at": "2026-11-16T22:24:29+00:00",
+  "date": "2026-11-16",
+  "time": "23:24",
+  "rider": "Philipp Hofbauer",
+  "id": 14462,
+  "cc": "at",
+  "team": "Red Bull",
+  "price": 3
+ },
+ {
+  "at": "2026-11-16T22:24:59+00:00",
+  "date": "2026-11-16",
+  "time": "23:24",
+  "rider": "Václav Ježek",
+  "id": 10981,
+  "cc": "cz",
+  "team": "Red Bull",
+  "price": 2
+ },
+ {
+  "at": "2026-11-16T23:45:01+00:00",
+  "date": "2026-11-17",
+  "time": "00:45",
+  "rider": "Tommaso Anastasia",
+  "id": 15941,
+  "cc": "it",
+  "team": "7-Eleven",
+  "price": 1
+ },
+ {
+  "at": "2026-11-17T00:02:52+00:00",
+  "date": "2026-11-17",
+  "time": "01:02",
+  "rider": "Timo Kielich",
+  "id": 14183,
+  "cc": "be",
+  "team": "B&B Hotels",
+  "price": 6
+ },
+ {
+  "at": "2026-11-17T00:10:31+00:00",
+  "date": "2026-11-17",
+  "time": "01:10",
+  "rider": "Fausto Masnada",
+  "id": 5999,
+  "cc": "it",
+  "team": "Bahrain Victorious",
+  "price": 6
+ },
+ {
+  "at": "2026-11-17T00:12:41+00:00",
+  "date": "2026-11-17",
+  "time": "01:12",
+  "rider": "Benjamin Thomas",
+  "id": 3984,
+  "cc": "fr",
+  "team": "Bahrain Victorious",
+  "price": 6
+ },
+ {
+  "at": "2026-11-17T03:36:46+00:00",
+  "date": "2026-11-17",
+  "time": "04:36",
+  "rider": "Christophe Laporte",
+  "id": 3404,
+  "cc": "fr",
+  "team": "Renova",
+  "price": 21
+ },
+ {
+  "at": "2026-11-17T04:10:04+00:00",
+  "date": "2026-11-17",
+  "time": "05:10",
+  "rider": "Jay Vine",
+  "id": 7424,
+  "cc": "au",
+  "team": "Modern Adventure",
+  "price": 20
+ },
+ {
+  "at": "2026-11-17T05:03:45+00:00",
+  "date": "2026-11-17",
+  "time": "06:03",
+  "rider": "Javier Ibáñez",
+  "id": 4869,
+  "cc": "es",
+  "team": "Kelme Costa Blanca",
+  "price": 1
+ },
+ {
+  "at": "2026-11-17T05:07:44+00:00",
+  "date": "2026-11-17",
+  "time": "06:07",
+  "rider": "Iker Gómez Lopez",
+  "id": 9830,
+  "cc": "es",
+  "team": "Kelme Costa Blanca",
+  "price": 1
+ },
+ {
+  "at": "2026-11-17T05:09:27+00:00",
+  "date": "2026-11-17",
+  "time": "06:09",
+  "rider": "Eñaut Urkaregi",
+  "id": 12426,
+  "cc": "es",
+  "team": "Kelme Costa Blanca",
+  "price": 1
+ },
+ {
+  "at": "2026-11-17T08:11:02+00:00",
+  "date": "2026-11-17",
+  "time": "09:11",
+  "rider": "Nairo Quintana",
+  "id": 2046,
+  "cc": "co",
+  "team": "Ukraine Cycling Team",
+  "price": 48
  }
 ]
