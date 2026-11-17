@@ -5038,5 +5038,15 @@
   "cc": "nl",
   "team": "Bahrain Victorious",
   "price": 10
+ },
+ {
+  "at": "2026-11-17T10:42:17+00:00",
+  "date": "2026-11-17",
+  "time": "11:42",
+  "rider": "Fred Wright",
+  "id": 7088,
+  "cc": "gb",
+  "team": "Royal Bank of Scotland",
+  "price": 13
  }
 ]
