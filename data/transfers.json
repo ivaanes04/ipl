@@ -5028,5 +5028,15 @@
   "cc": "co",
   "team": "Ukraine Cycling Team",
   "price": 48
+ },
+ {
+  "at": "2026-11-17T09:37:47+00:00",
+  "date": "2026-11-17",
+  "time": "10:37",
+  "rider": "Dylan van Baarle",
+  "id": 3382,
+  "cc": "nl",
+  "team": "Bahrain Victorious",
+  "price": 10
  }
 ]
