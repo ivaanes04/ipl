@@ -6328,5 +6328,15 @@
   "cc": "fr",
   "team": "Portugal in 150 Seconds",
   "price": 1
+ },
+ {
+  "at": "2026-11-18T23:13:11+00:00",
+  "date": "2026-11-19",
+  "time": "00:13",
+  "rider": "Savva Novikov",
+  "id": 7378,
+  "cc": "ru",
+  "team": "Portugal in 150 Seconds",
+  "price": 1
  }
 ]
