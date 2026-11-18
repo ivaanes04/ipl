@@ -6278,5 +6278,15 @@
   "cc": "be",
   "team": "MTN Qhubeka",
   "price": 6
+ },
+ {
+  "at": "2026-11-18T21:45:30+00:00",
+  "date": "2026-11-18",
+  "time": "22:45",
+  "rider": "Colin Savioz",
+  "id": 8471,
+  "cc": "fr",
+  "team": "Unibet Rose Rockets",
+  "price": 1
  }
 ]
