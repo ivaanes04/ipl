@@ -2923,6 +2923,221 @@
     }
    ]
   },
+  "Modern Adventure": {
+   "player": "seancoll",
+   "won": 23,
+   "budget": 12,
+   "bids": 0,
+   "riders": [
+    {
+     "name": "Sheffield Magnus",
+     "id": 15048,
+     "cc": "us",
+     "nat": "United States",
+     "price": 12,
+     "closed": "2026-11-13T17:41:14+00:00",
+     "full": "Magnus Sheffield"
+    },
+    {
+     "name": "Pithie Laurence",
+     "id": 7547,
+     "cc": "nz",
+     "nat": "New Zealand",
+     "price": 12,
+     "closed": "2026-11-12T19:45:48+00:00",
+     "full": "Laurence Pithie"
+    },
+    {
+     "name": "Hincapie Enzo",
+     "id": 17209,
+     "cc": "us",
+     "nat": "United States",
+     "price": 1,
+     "closed": "2026-11-13T18:06:27+00:00",
+     "full": "Enzo Hincapie"
+    },
+    {
+     "name": "Ciccone Giulio",
+     "id": 5675,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 34,
+     "closed": "2026-11-14T17:33:43+00:00",
+     "full": "Giulio Ciccone"
+    },
+    {
+     "name": "Sheehan Riley",
+     "id": 12991,
+     "cc": "us",
+     "nat": "United States",
+     "price": 8,
+     "closed": "2026-11-13T18:07:06+00:00",
+     "full": "Riley Sheehan"
+    },
+    {
+     "name": "Pickrell Riley",
+     "id": 7560,
+     "cc": "ca",
+     "nat": "Canada",
+     "price": 5,
+     "closed": "2026-11-13T18:07:13+00:00",
+     "full": "Riley Pickrell"
+    },
+    {
+     "name": "Vine Jay",
+     "id": 7424,
+     "cc": "au",
+     "nat": "Australia",
+     "price": 20,
+     "closed": "2026-11-17T04:10:04+00:00",
+     "full": "Jay Vine"
+    },
+    {
+     "name": "Shelton Marcis",
+     "id": 11464,
+     "cc": "us",
+     "nat": "United States",
+     "price": 1,
+     "closed": "2026-11-15T02:07:47+00:00",
+     "full": "Marcis Shelton"
+    },
+    {
+     "name": "Lamperti Luke",
+     "id": 12774,
+     "cc": "us",
+     "nat": "United States",
+     "price": 6,
+     "closed": "2026-11-15T02:10:26+00:00",
+     "full": "Luke Lamperti"
+    },
+    {
+     "name": "Armirail Bruno",
+     "id": 3957,
+     "cc": "fr",
+     "nat": "France",
+     "price": 12,
+     "closed": "2026-11-16T20:13:46+00:00",
+     "full": "Bruno Armirail"
+    },
+    {
+     "name": "Küng Stefan",
+     "id": 3708,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 14,
+     "closed": "2026-11-15T23:16:46+00:00",
+     "full": "Stefan Küng"
+    },
+    {
+     "name": "Mühlberger Gregor",
+     "id": 3197,
+     "cc": "at",
+     "nat": "Austria",
+     "price": 12,
+     "closed": "2026-11-15T23:21:22+00:00",
+     "full": "Gregor Mühlberger"
+    },
+    {
+     "name": "Marriage Zac",
+     "id": 4452,
+     "cc": "au",
+     "nat": "Australia",
+     "price": 1,
+     "closed": "2026-11-15T23:23:13+00:00",
+     "full": "Zac Marriage"
+    },
+    {
+     "name": "Blikra Erlend",
+     "id": 6136,
+     "cc": "no",
+     "nat": "Norway",
+     "price": 4,
+     "closed": "2026-11-16T20:10:44+00:00",
+     "full": "Erlend Blikra"
+    },
+    {
+     "name": "Venturini Clément",
+     "id": 3406,
+     "cc": "fr",
+     "nat": "France",
+     "price": 6,
+     "closed": "2026-11-16T20:12:40+00:00",
+     "full": "Clément Venturini"
+    },
+    {
+     "name": "Fretin Milan",
+     "id": 7602,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 7,
+     "closed": "2026-11-16T20:12:48+00:00",
+     "full": "Milan Fretin"
+    },
+    {
+     "name": "Schachmann Maximilian",
+     "id": 3257,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 10,
+     "closed": "2026-11-16T20:13:17+00:00",
+     "full": "Maximilian Schachmann"
+    },
+    {
+     "name": "Burnett Josh",
+     "id": 4434,
+     "cc": "nz",
+     "nat": "New Zealand",
+     "price": 3,
+     "closed": "2026-11-17T20:23:53+00:00",
+     "full": "Josh Burnett"
+    },
+    {
+     "name": "Kench Joshua",
+     "id": 15137,
+     "cc": "nz",
+     "nat": "New Zealand",
+     "price": 3,
+     "closed": "2026-11-17T20:47:00+00:00",
+     "full": "Joshua Kench"
+    },
+    {
+     "name": "Smith Dion",
+     "id": 5711,
+     "cc": "nz",
+     "nat": "New Zealand",
+     "price": 3,
+     "closed": "2026-11-17T20:53:38+00:00",
+     "full": "Dion Smith"
+    },
+    {
+     "name": "Rodríguez Cristián",
+     "id": 5658,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 12,
+     "closed": "2026-11-18T19:08:51+00:00",
+     "full": "Cristián Rodríguez"
+    },
+    {
+     "name": "Sainbayar Jambaljamts",
+     "id": 11707,
+     "cc": null,
+     "nat": "Mongolia",
+     "price": 1,
+     "closed": "2026-11-18T19:23:02+00:00",
+     "full": "Jambaljamts Sainbayar"
+    },
+    {
+     "name": "Gillet Baptiste",
+     "id": 15748,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-18T19:26:11+00:00",
+     "full": "Baptiste Gillet"
+    }
+   ]
+  },
   "Bahrain Victorious": {
    "player": "Daagz",
    "won": 23,
@@ -3568,212 +3783,6 @@
     }
    ]
   },
-  "Modern Adventure": {
-   "player": "seancoll",
-   "won": 22,
-   "budget": 13,
-   "bids": 1,
-   "riders": [
-    {
-     "name": "Sheffield Magnus",
-     "id": 15048,
-     "cc": "us",
-     "nat": "United States",
-     "price": 12,
-     "closed": "2026-11-13T17:41:14+00:00",
-     "full": "Magnus Sheffield"
-    },
-    {
-     "name": "Pithie Laurence",
-     "id": 7547,
-     "cc": "nz",
-     "nat": "New Zealand",
-     "price": 12,
-     "closed": "2026-11-12T19:45:48+00:00",
-     "full": "Laurence Pithie"
-    },
-    {
-     "name": "Hincapie Enzo",
-     "id": 17209,
-     "cc": "us",
-     "nat": "United States",
-     "price": 1,
-     "closed": "2026-11-13T18:06:27+00:00",
-     "full": "Enzo Hincapie"
-    },
-    {
-     "name": "Ciccone Giulio",
-     "id": 5675,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 34,
-     "closed": "2026-11-14T17:33:43+00:00",
-     "full": "Giulio Ciccone"
-    },
-    {
-     "name": "Sheehan Riley",
-     "id": 12991,
-     "cc": "us",
-     "nat": "United States",
-     "price": 8,
-     "closed": "2026-11-13T18:07:06+00:00",
-     "full": "Riley Sheehan"
-    },
-    {
-     "name": "Pickrell Riley",
-     "id": 7560,
-     "cc": "ca",
-     "nat": "Canada",
-     "price": 5,
-     "closed": "2026-11-13T18:07:13+00:00",
-     "full": "Riley Pickrell"
-    },
-    {
-     "name": "Vine Jay",
-     "id": 7424,
-     "cc": "au",
-     "nat": "Australia",
-     "price": 20,
-     "closed": "2026-11-17T04:10:04+00:00",
-     "full": "Jay Vine"
-    },
-    {
-     "name": "Shelton Marcis",
-     "id": 11464,
-     "cc": "us",
-     "nat": "United States",
-     "price": 1,
-     "closed": "2026-11-15T02:07:47+00:00",
-     "full": "Marcis Shelton"
-    },
-    {
-     "name": "Lamperti Luke",
-     "id": 12774,
-     "cc": "us",
-     "nat": "United States",
-     "price": 6,
-     "closed": "2026-11-15T02:10:26+00:00",
-     "full": "Luke Lamperti"
-    },
-    {
-     "name": "Armirail Bruno",
-     "id": 3957,
-     "cc": "fr",
-     "nat": "France",
-     "price": 12,
-     "closed": "2026-11-16T20:13:46+00:00",
-     "full": "Bruno Armirail"
-    },
-    {
-     "name": "Küng Stefan",
-     "id": 3708,
-     "cc": "ch",
-     "nat": "Switzerland",
-     "price": 14,
-     "closed": "2026-11-15T23:16:46+00:00",
-     "full": "Stefan Küng"
-    },
-    {
-     "name": "Mühlberger Gregor",
-     "id": 3197,
-     "cc": "at",
-     "nat": "Austria",
-     "price": 12,
-     "closed": "2026-11-15T23:21:22+00:00",
-     "full": "Gregor Mühlberger"
-    },
-    {
-     "name": "Marriage Zac",
-     "id": 4452,
-     "cc": "au",
-     "nat": "Australia",
-     "price": 1,
-     "closed": "2026-11-15T23:23:13+00:00",
-     "full": "Zac Marriage"
-    },
-    {
-     "name": "Blikra Erlend",
-     "id": 6136,
-     "cc": "no",
-     "nat": "Norway",
-     "price": 4,
-     "closed": "2026-11-16T20:10:44+00:00",
-     "full": "Erlend Blikra"
-    },
-    {
-     "name": "Venturini Clément",
-     "id": 3406,
-     "cc": "fr",
-     "nat": "France",
-     "price": 6,
-     "closed": "2026-11-16T20:12:40+00:00",
-     "full": "Clément Venturini"
-    },
-    {
-     "name": "Fretin Milan",
-     "id": 7602,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 7,
-     "closed": "2026-11-16T20:12:48+00:00",
-     "full": "Milan Fretin"
-    },
-    {
-     "name": "Schachmann Maximilian",
-     "id": 3257,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 10,
-     "closed": "2026-11-16T20:13:17+00:00",
-     "full": "Maximilian Schachmann"
-    },
-    {
-     "name": "Burnett Josh",
-     "id": 4434,
-     "cc": "nz",
-     "nat": "New Zealand",
-     "price": 3,
-     "closed": "2026-11-17T20:23:53+00:00",
-     "full": "Josh Burnett"
-    },
-    {
-     "name": "Kench Joshua",
-     "id": 15137,
-     "cc": "nz",
-     "nat": "New Zealand",
-     "price": 3,
-     "closed": "2026-11-17T20:47:00+00:00",
-     "full": "Joshua Kench"
-    },
-    {
-     "name": "Smith Dion",
-     "id": 5711,
-     "cc": "nz",
-     "nat": "New Zealand",
-     "price": 3,
-     "closed": "2026-11-17T20:53:38+00:00",
-     "full": "Dion Smith"
-    },
-    {
-     "name": "Rodríguez Cristián",
-     "id": 5658,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 12,
-     "closed": "2026-11-18T19:08:51+00:00",
-     "full": "Cristián Rodríguez"
-    },
-    {
-     "name": "Sainbayar Jambaljamts",
-     "id": 11707,
-     "cc": null,
-     "nat": "Mongolia",
-     "price": 1,
-     "closed": "2026-11-18T19:23:02+00:00",
-     "full": "Jambaljamts Sainbayar"
-    }
-   ]
-  },
   "MEO (Benfica)": {
    "player": "TheBigDog",
    "won": 22,
@@ -4186,6 +4195,212 @@
     }
    ]
   },
+  "MTN Qhubeka": {
+   "player": "Joewhiteley0711",
+   "won": 22,
+   "budget": 14,
+   "bids": 14,
+   "riders": [
+    {
+     "name": "Konychev Alexander",
+     "id": 7069,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 2,
+     "closed": "2026-11-12T18:00:26+00:00",
+     "full": "Alexander Konychev"
+    },
+    {
+     "name": "Janse van Rensburg Reinardt",
+     "id": 2658,
+     "cc": "za",
+     "nat": "South Africa",
+     "price": 1,
+     "closed": "2026-11-12T20:02:42+00:00",
+     "full": "Reinardt Janse van Rensburg"
+    },
+    {
+     "name": "Torres Albert",
+     "id": 5844,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 1,
+     "closed": "2026-11-12T20:03:42+00:00",
+     "full": "Albert Torres"
+    },
+    {
+     "name": "Boulahoite Rayan",
+     "id": 8702,
+     "cc": "fr",
+     "nat": "France",
+     "price": 3,
+     "closed": "2026-11-12T21:43:57+00:00",
+     "full": "Rayan Boulahoite"
+    },
+    {
+     "name": "González David",
+     "id": 6791,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 4,
+     "closed": "2026-11-13T18:37:14+00:00",
+     "full": "David González"
+    },
+    {
+     "name": "Pidcock Tom",
+     "id": 6501,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 55,
+     "closed": "2026-11-13T18:54:07+00:00",
+     "full": "Tom Pidcock"
+    },
+    {
+     "name": "Ghebreigzabhier Amanuel",
+     "id": 6357,
+     "cc": "er",
+     "nat": "Eritrea",
+     "price": 5,
+     "closed": "2026-11-13T20:24:37+00:00",
+     "full": "Amanuel Ghebreigzabhier"
+    },
+    {
+     "name": "Kudus Merhawi",
+     "id": 3466,
+     "cc": "er",
+     "nat": "Eritrea",
+     "price": 3,
+     "closed": "2026-11-13T20:25:46+00:00",
+     "full": "Merhawi Kudus"
+    },
+    {
+     "name": "Pidcock Joe",
+     "id": 7546,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 2,
+     "closed": "2026-11-13T20:59:53+00:00",
+     "full": "Joe Pidcock"
+    },
+    {
+     "name": "Azparren Xabier Mikel",
+     "id": 7445,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 6,
+     "closed": "2026-11-14T20:19:13+00:00",
+     "full": "Xabier Mikel Azparren"
+    },
+    {
+     "name": "Swift Ben",
+     "id": 797,
+     "cc": "gb",
+     "nat": "Great Britain",
+     "price": 27,
+     "closed": "2026-11-15T18:17:51+00:00",
+     "full": "Ben Swift"
+    },
+    {
+     "name": "Munton Byron",
+     "id": 13948,
+     "cc": "za",
+     "nat": "South Africa",
+     "price": 8,
+     "closed": "2026-11-15T18:13:19+00:00",
+     "full": "Byron Munton"
+    },
+    {
+     "name": "O'Brien Kelland",
+     "id": 14302,
+     "cc": "au",
+     "nat": "Australia",
+     "price": 3,
+     "closed": "2026-11-15T18:14:55+00:00",
+     "full": "Kelland O'Brien"
+    },
+    {
+     "name": "Marcellusi Martin",
+     "id": 14216,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 4,
+     "closed": "2026-11-15T18:26:35+00:00",
+     "full": "Martin Marcellusi"
+    },
+    {
+     "name": "Fiorelli Filippo",
+     "id": 7062,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 6,
+     "closed": "2026-11-15T20:33:47+00:00",
+     "full": "Filippo Fiorelli"
+    },
+    {
+     "name": "Camprubí Marcel",
+     "id": 4310,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 10,
+     "closed": "2026-11-15T21:35:21+00:00",
+     "full": "Marcel Camprubí"
+    },
+    {
+     "name": "Oliver Ben",
+     "id": 4439,
+     "cc": "nz",
+     "nat": "New Zealand",
+     "price": 4,
+     "closed": "2026-11-16T18:02:52+00:00",
+     "full": "Ben Oliver"
+    },
+    {
+     "name": "Germani Lorenzo",
+     "id": 7548,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 4,
+     "closed": "2026-11-16T18:04:19+00:00",
+     "full": "Lorenzo Germani"
+    },
+    {
+     "name": "de la Cruz David",
+     "id": 1978,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 12,
+     "closed": "2026-11-16T19:15:17+00:00",
+     "full": "David de la Cruz"
+    },
+    {
+     "name": "Debruyne Ramses",
+     "id": 15206,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 11,
+     "closed": "2026-11-17T21:40:17+00:00",
+     "full": "Ramses Debruyne"
+    },
+    {
+     "name": "Howson Damien",
+     "id": 3386,
+     "cc": "au",
+     "nat": "Australia",
+     "price": 12,
+     "closed": "2026-11-17T21:42:09+00:00",
+     "full": "Damien Howson"
+    },
+    {
+     "name": "Zerai Nahom",
+     "id": 15000,
+     "cc": "er",
+     "nat": "Eritrea",
+     "price": 3,
+     "closed": "2026-11-18T19:51:03+00:00",
+     "full": "Nahom Zerai"
+    }
+   ]
+  },
   "B&B Hotels": {
    "player": "Tom_Bryant",
    "won": 21,
@@ -4577,203 +4792,6 @@
      "price": 10,
      "closed": "2026-11-18T04:27:04+00:00",
      "full": "Chris Harper"
-    }
-   ]
-  },
-  "MTN Qhubeka": {
-   "player": "Joewhiteley0711",
-   "won": 21,
-   "budget": 17,
-   "bids": 17,
-   "riders": [
-    {
-     "name": "Konychev Alexander",
-     "id": 7069,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 2,
-     "closed": "2026-11-12T18:00:26+00:00",
-     "full": "Alexander Konychev"
-    },
-    {
-     "name": "Janse van Rensburg Reinardt",
-     "id": 2658,
-     "cc": "za",
-     "nat": "South Africa",
-     "price": 1,
-     "closed": "2026-11-12T20:02:42+00:00",
-     "full": "Reinardt Janse van Rensburg"
-    },
-    {
-     "name": "Torres Albert",
-     "id": 5844,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 1,
-     "closed": "2026-11-12T20:03:42+00:00",
-     "full": "Albert Torres"
-    },
-    {
-     "name": "Boulahoite Rayan",
-     "id": 8702,
-     "cc": "fr",
-     "nat": "France",
-     "price": 3,
-     "closed": "2026-11-12T21:43:57+00:00",
-     "full": "Rayan Boulahoite"
-    },
-    {
-     "name": "González David",
-     "id": 6791,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 4,
-     "closed": "2026-11-13T18:37:14+00:00",
-     "full": "David González"
-    },
-    {
-     "name": "Pidcock Tom",
-     "id": 6501,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 55,
-     "closed": "2026-11-13T18:54:07+00:00",
-     "full": "Tom Pidcock"
-    },
-    {
-     "name": "Ghebreigzabhier Amanuel",
-     "id": 6357,
-     "cc": "er",
-     "nat": "Eritrea",
-     "price": 5,
-     "closed": "2026-11-13T20:24:37+00:00",
-     "full": "Amanuel Ghebreigzabhier"
-    },
-    {
-     "name": "Kudus Merhawi",
-     "id": 3466,
-     "cc": "er",
-     "nat": "Eritrea",
-     "price": 3,
-     "closed": "2026-11-13T20:25:46+00:00",
-     "full": "Merhawi Kudus"
-    },
-    {
-     "name": "Pidcock Joe",
-     "id": 7546,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 2,
-     "closed": "2026-11-13T20:59:53+00:00",
-     "full": "Joe Pidcock"
-    },
-    {
-     "name": "Azparren Xabier Mikel",
-     "id": 7445,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 6,
-     "closed": "2026-11-14T20:19:13+00:00",
-     "full": "Xabier Mikel Azparren"
-    },
-    {
-     "name": "Swift Ben",
-     "id": 797,
-     "cc": "gb",
-     "nat": "Great Britain",
-     "price": 27,
-     "closed": "2026-11-15T18:17:51+00:00",
-     "full": "Ben Swift"
-    },
-    {
-     "name": "Munton Byron",
-     "id": 13948,
-     "cc": "za",
-     "nat": "South Africa",
-     "price": 8,
-     "closed": "2026-11-15T18:13:19+00:00",
-     "full": "Byron Munton"
-    },
-    {
-     "name": "O'Brien Kelland",
-     "id": 14302,
-     "cc": "au",
-     "nat": "Australia",
-     "price": 3,
-     "closed": "2026-11-15T18:14:55+00:00",
-     "full": "Kelland O'Brien"
-    },
-    {
-     "name": "Marcellusi Martin",
-     "id": 14216,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 4,
-     "closed": "2026-11-15T18:26:35+00:00",
-     "full": "Martin Marcellusi"
-    },
-    {
-     "name": "Fiorelli Filippo",
-     "id": 7062,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 6,
-     "closed": "2026-11-15T20:33:47+00:00",
-     "full": "Filippo Fiorelli"
-    },
-    {
-     "name": "Camprubí Marcel",
-     "id": 4310,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 10,
-     "closed": "2026-11-15T21:35:21+00:00",
-     "full": "Marcel Camprubí"
-    },
-    {
-     "name": "Oliver Ben",
-     "id": 4439,
-     "cc": "nz",
-     "nat": "New Zealand",
-     "price": 4,
-     "closed": "2026-11-16T18:02:52+00:00",
-     "full": "Ben Oliver"
-    },
-    {
-     "name": "Germani Lorenzo",
-     "id": 7548,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 4,
-     "closed": "2026-11-16T18:04:19+00:00",
-     "full": "Lorenzo Germani"
-    },
-    {
-     "name": "de la Cruz David",
-     "id": 1978,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 12,
-     "closed": "2026-11-16T19:15:17+00:00",
-     "full": "David de la Cruz"
-    },
-    {
-     "name": "Debruyne Ramses",
-     "id": 15206,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 11,
-     "closed": "2026-11-17T21:40:17+00:00",
-     "full": "Ramses Debruyne"
-    },
-    {
-     "name": "Howson Damien",
-     "id": 3386,
-     "cc": "au",
-     "nat": "Australia",
-     "price": 12,
-     "closed": "2026-11-17T21:42:09+00:00",
-     "full": "Damien Howson"
     }
    ]
   },
@@ -5807,5 +5825,5 @@
    ]
   }
  },
- "checked": "2026-11-18T19:23Z"
+ "checked": "2026-11-18T19:51Z"
 }
