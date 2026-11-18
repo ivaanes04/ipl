@@ -6308,5 +6308,15 @@
   "cc": "it",
   "team": "Kelme Costa Blanca",
   "price": 5
+ },
+ {
+  "at": "2026-11-18T22:37:03+00:00",
+  "date": "2026-11-18",
+  "time": "23:37",
+  "rider": "Stefan Bissegger",
+  "id": 6609,
+  "cc": "ch",
+  "team": "Kelme Costa Blanca",
+  "price": 10
  }
 ]

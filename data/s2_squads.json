@@ -5612,9 +5612,9 @@
   },
   "Kelme Costa Blanca": {
    "player": "JgCol",
-   "won": 17,
-   "budget": 38,
-   "bids": 32,
+   "won": 18,
+   "budget": 28,
+   "bids": 22,
    "riders": [
     {
      "name": "Ardila Camilo",
@@ -5768,6 +5768,15 @@
      "price": 5,
      "closed": "2026-11-18T22:33:53+00:00",
      "full": "Matteo Moschetti"
+    },
+    {
+     "name": "Bissegger Stefan",
+     "id": 6609,
+     "cc": "ch",
+     "nat": "Switzerland",
+     "price": 10,
+     "closed": "2026-11-18T22:37:03+00:00",
+     "full": "Stefan Bissegger"
     }
    ]
   },
@@ -5906,5 +5915,5 @@
    ]
   }
  },
- "checked": "2026-11-18T22:34Z"
+ "checked": "2026-11-18T22:37Z"
 }
