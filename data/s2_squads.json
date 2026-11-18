@@ -5639,9 +5639,9 @@
   },
   "Kelme Costa Blanca": {
    "player": "JgCol",
-   "won": 18,
-   "budget": 28,
-   "bids": 22,
+   "won": 19,
+   "budget": 16,
+   "bids": 10,
    "riders": [
     {
      "name": "Ardila Camilo",
@@ -5804,6 +5804,15 @@
      "price": 10,
      "closed": "2026-11-18T22:37:03+00:00",
      "full": "Stefan Bissegger"
+    },
+    {
+     "name": "Campenaerts Victor",
+     "id": 3442,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 12,
+     "closed": "2026-11-18T23:20:55+00:00",
+     "full": "Victor Campenaerts"
     }
    ]
   },
@@ -5942,5 +5951,5 @@
    ]
   }
  },
- "checked": "2026-11-18T23:15Z"
+ "checked": "2026-11-18T23:21Z"
 }

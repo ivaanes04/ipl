@@ -6348,5 +6348,15 @@
   "cc": "er",
   "team": "Portugal in 150 Seconds",
   "price": 1
+ },
+ {
+  "at": "2026-11-18T23:20:55+00:00",
+  "date": "2026-11-19",
+  "time": "00:20",
+  "rider": "Victor Campenaerts",
+  "id": 3442,
+  "cc": "be",
+  "team": "Kelme Costa Blanca",
+  "price": 12
  }
 ]
