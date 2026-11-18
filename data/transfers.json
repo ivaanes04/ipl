@@ -6228,5 +6228,25 @@
   "cc": "fr",
   "team": "Liberty Seguros",
   "price": 1
+ },
+ {
+  "at": "2026-11-18T20:52:27+00:00",
+  "date": "2026-11-18",
+  "time": "21:52",
+  "rider": "Jesse Kramer",
+  "id": 4262,
+  "cc": "nl",
+  "team": "Liberty Seguros",
+  "price": 1
+ },
+ {
+  "at": "2026-11-18T21:08:37+00:00",
+  "date": "2026-11-18",
+  "time": "22:08",
+  "rider": "Jonas Rapp",
+  "id": 7324,
+  "cc": "de",
+  "team": "Red Bull",
+  "price": 2
  }
 ]
