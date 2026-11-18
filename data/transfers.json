@@ -6258,5 +6258,15 @@
   "cc": "nz",
   "team": "Red Bull",
   "price": 1
+ },
+ {
+  "at": "2026-11-18T21:40:43+00:00",
+  "date": "2026-11-18",
+  "time": "22:40",
+  "rider": "Sean Quinn",
+  "id": 6809,
+  "cc": "us",
+  "team": "MTN Qhubeka",
+  "price": 8
  }
 ]
