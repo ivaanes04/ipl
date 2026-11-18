@@ -6138,5 +6138,25 @@
   "cc": "au",
   "team": "CSC",
   "price": 3
+ },
+ {
+  "at": "2026-11-18T18:13:32+00:00",
+  "date": "2026-11-18",
+  "time": "19:13",
+  "rider": "Filippo Zana",
+  "id": 6713,
+  "cc": "it",
+  "team": "UnoX",
+  "price": 8
+ },
+ {
+  "at": "2026-11-18T18:14:09+00:00",
+  "date": "2026-11-18",
+  "time": "19:14",
+  "rider": "Dries De Bondt",
+  "id": 3820,
+  "cc": "be",
+  "team": "UnoX",
+  "price": 7
  }
 ]
