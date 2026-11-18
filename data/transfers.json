@@ -5143,21 +5143,21 @@
   "at": "2026-11-17T18:00:29+00:00",
   "date": "2026-11-17",
   "time": "19:00",
-  "rider": "Thibaud Gruel",
-  "id": 15510,
-  "cc": "fr",
-  "team": "FEIRENSE - BEECELER",
-  "price": 6
- },
- {
-  "at": "2026-11-17T18:00:29+00:00",
-  "date": "2026-11-17",
-  "time": "19:00",
   "rider": "Jasha Sütterlin",
   "id": 2510,
   "cc": "de",
   "team": "Deceuninck - Quick-Step",
   "price": 8
+ },
+ {
+  "at": "2026-11-17T18:00:29+00:00",
+  "date": "2026-11-17",
+  "time": "19:00",
+  "rider": "Thibaud Gruel",
+  "id": 15510,
+  "cc": "fr",
+  "team": "FEIRENSE - BEECELER",
+  "price": 6
  },
  {
   "at": "2026-11-17T18:00:30+00:00",
@@ -6117,6 +6117,26 @@
   "id": 9712,
   "cc": "ie",
   "team": "Royal Bank of Scotland",
+  "price": 3
+ },
+ {
+  "at": "2026-11-18T18:02:33+00:00",
+  "date": "2026-11-18",
+  "time": "19:02",
+  "rider": "Tom Lambert-Wetzel",
+  "id": 10041,
+  "cc": "fr",
+  "team": "Deceuninck - Quick-Step",
+  "price": 1
+ },
+ {
+  "at": "2026-11-18T18:03:57+00:00",
+  "date": "2026-11-18",
+  "time": "19:03",
+  "rider": "Cameron Rogers",
+  "id": 4973,
+  "cc": "au",
+  "team": "CSC",
   "price": 3
  }
 ]
