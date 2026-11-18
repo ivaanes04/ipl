@@ -468,6 +468,239 @@
     }
    ]
   },
+  "Portugal in 150 Seconds": {
+   "player": "Bessadelas",
+   "won": 25,
+   "budget": 2,
+   "bids": 2,
+   "riders": [
+    {
+     "name": "Pinto Pedro",
+     "id": 10610,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-12T18:00:26+00:00",
+     "full": "Pedro Pinto"
+    },
+    {
+     "name": "Kopecký Matyáš",
+     "id": 4139,
+     "cc": "cz",
+     "nat": "Czechia",
+     "price": 8,
+     "closed": "2026-11-12T21:04:23+00:00",
+     "full": "Matyáš Kopecký"
+    },
+    {
+     "name": "Moreira Daniel",
+     "id": 10065,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-13T18:00:22+00:00",
+     "full": "Daniel Moreira"
+    },
+    {
+     "name": "Peña Jesús David",
+     "id": 7086,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 4,
+     "closed": "2026-11-13T18:01:02+00:00",
+     "full": "Jesús David Peña"
+    },
+    {
+     "name": "Iacomoni Federico",
+     "id": 14368,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 3,
+     "closed": "2026-11-13T18:02:01+00:00",
+     "full": "Federico Iacomoni"
+    },
+    {
+     "name": "Oliveira Nélson",
+     "id": 1975,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 8,
+     "closed": "2026-11-13T18:09:00+00:00",
+     "full": "Nélson Oliveira"
+    },
+    {
+     "name": "Antunes Tiago",
+     "id": 6892,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 4,
+     "closed": "2026-11-14T18:00:20+00:00",
+     "full": "Tiago Antunes"
+    },
+    {
+     "name": "Lopes Lucas",
+     "id": 15378,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 2,
+     "closed": "2026-11-14T18:00:41+00:00",
+     "full": "Lucas Lopes"
+    },
+    {
+     "name": "Mikutis Aivaras",
+     "id": 13757,
+     "cc": "lt",
+     "nat": "Lithuania",
+     "price": 4,
+     "closed": "2026-11-14T18:02:47+00:00",
+     "full": "Aivaras Mikutis"
+    },
+    {
+     "name": "Milan Jonathan",
+     "id": 7406,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 25,
+     "closed": "2026-11-16T16:40:02+00:00",
+     "full": "Jonathan Milan"
+    },
+    {
+     "name": "Teunissen Mike",
+     "id": 3699,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 10,
+     "closed": "2026-11-14T18:35:18+00:00",
+     "full": "Mike Teunissen"
+    },
+    {
+     "name": "Izagirre Ion",
+     "id": 1991,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 27,
+     "closed": "2026-11-15T15:50:51+00:00",
+     "full": "Ion Izagirre"
+    },
+    {
+     "name": "Kwiatkowski Michal",
+     "id": 1981,
+     "cc": "pl",
+     "nat": "Poland",
+     "price": 8,
+     "closed": "2026-11-15T18:00:10+00:00",
+     "full": "Michal Kwiatkowski"
+    },
+    {
+     "name": "Tratnik Jan",
+     "id": 2268,
+     "cc": "si",
+     "nat": "Slovenia",
+     "price": 8,
+     "closed": "2026-11-15T18:00:17+00:00",
+     "full": "Jan Tratnik"
+    },
+    {
+     "name": "Gachignard Thomas",
+     "id": 15315,
+     "cc": "fr",
+     "nat": "France",
+     "price": 6,
+     "closed": "2026-11-15T18:01:06+00:00",
+     "full": "Thomas Gachignard"
+    },
+    {
+     "name": "Vlasov Aleksandr",
+     "id": 6419,
+     "cc": "ru",
+     "nat": "Russia",
+     "price": 10,
+     "closed": "2026-11-15T18:01:20+00:00",
+     "full": "Aleksandr Vlasov"
+    },
+    {
+     "name": "Landa Mikel",
+     "id": 1992,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 12,
+     "closed": "2026-11-16T18:00:08+00:00",
+     "full": "Mikel Landa"
+    },
+    {
+     "name": "Prodhomme Nicolas",
+     "id": 7392,
+     "cc": "fr",
+     "nat": "France",
+     "price": 16,
+     "closed": "2026-11-17T21:07:48+00:00",
+     "full": "Nicolas Prodhomme"
+    },
+    {
+     "name": "Barguil Warren",
+     "id": 3022,
+     "cc": "fr",
+     "nat": "France",
+     "price": 6,
+     "closed": "2026-11-16T19:06:48+00:00",
+     "full": "Warren Barguil"
+    },
+    {
+     "name": "Adrià Roger",
+     "id": 7449,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 10,
+     "closed": "2026-11-17T18:33:58+00:00",
+     "full": "Roger Adrià"
+    },
+    {
+     "name": "Costa Gonçalo",
+     "id": 17503,
+     "cc": "pt",
+     "nat": "Portugal",
+     "price": 1,
+     "closed": "2026-11-17T18:35:08+00:00",
+     "full": "Gonçalo Costa"
+    },
+    {
+     "name": "Verona Carlos",
+     "id": 2853,
+     "cc": "es",
+     "nat": "Spain",
+     "price": 7,
+     "closed": "2026-11-17T18:39:18+00:00",
+     "full": "Carlos Verona"
+    },
+    {
+     "name": "Ackermann Pascal",
+     "id": 5939,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 6,
+     "closed": "2026-11-17T18:47:43+00:00",
+     "full": "Pascal Ackermann"
+    },
+    {
+     "name": "Poels Wout",
+     "id": 754,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 10,
+     "closed": "2026-11-18T18:00:11+00:00",
+     "full": "Wout Poels"
+    },
+    {
+     "name": "Huyet Baptiste",
+     "id": 7759,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-18T23:04:54+00:00",
+     "full": "Baptiste Huyet"
+    }
+   ]
+  },
   "Renova": {
    "player": "Pena Guevara",
    "won": 24,
@@ -2481,230 +2714,6 @@
      "price": 1,
      "closed": "2026-11-17T19:10:24+00:00",
      "full": "Mirko Bozzola"
-    }
-   ]
-  },
-  "Portugal in 150 Seconds": {
-   "player": "Bessadelas",
-   "won": 24,
-   "budget": 3,
-   "bids": 3,
-   "riders": [
-    {
-     "name": "Pinto Pedro",
-     "id": 10610,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 1,
-     "closed": "2026-11-12T18:00:26+00:00",
-     "full": "Pedro Pinto"
-    },
-    {
-     "name": "Kopecký Matyáš",
-     "id": 4139,
-     "cc": "cz",
-     "nat": "Czechia",
-     "price": 8,
-     "closed": "2026-11-12T21:04:23+00:00",
-     "full": "Matyáš Kopecký"
-    },
-    {
-     "name": "Moreira Daniel",
-     "id": 10065,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 1,
-     "closed": "2026-11-13T18:00:22+00:00",
-     "full": "Daniel Moreira"
-    },
-    {
-     "name": "Peña Jesús David",
-     "id": 7086,
-     "cc": "co",
-     "nat": "Colombia",
-     "price": 4,
-     "closed": "2026-11-13T18:01:02+00:00",
-     "full": "Jesús David Peña"
-    },
-    {
-     "name": "Iacomoni Federico",
-     "id": 14368,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 3,
-     "closed": "2026-11-13T18:02:01+00:00",
-     "full": "Federico Iacomoni"
-    },
-    {
-     "name": "Oliveira Nélson",
-     "id": 1975,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 8,
-     "closed": "2026-11-13T18:09:00+00:00",
-     "full": "Nélson Oliveira"
-    },
-    {
-     "name": "Antunes Tiago",
-     "id": 6892,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 4,
-     "closed": "2026-11-14T18:00:20+00:00",
-     "full": "Tiago Antunes"
-    },
-    {
-     "name": "Lopes Lucas",
-     "id": 15378,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 2,
-     "closed": "2026-11-14T18:00:41+00:00",
-     "full": "Lucas Lopes"
-    },
-    {
-     "name": "Mikutis Aivaras",
-     "id": 13757,
-     "cc": "lt",
-     "nat": "Lithuania",
-     "price": 4,
-     "closed": "2026-11-14T18:02:47+00:00",
-     "full": "Aivaras Mikutis"
-    },
-    {
-     "name": "Milan Jonathan",
-     "id": 7406,
-     "cc": "it",
-     "nat": "Italy",
-     "price": 25,
-     "closed": "2026-11-16T16:40:02+00:00",
-     "full": "Jonathan Milan"
-    },
-    {
-     "name": "Teunissen Mike",
-     "id": 3699,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 10,
-     "closed": "2026-11-14T18:35:18+00:00",
-     "full": "Mike Teunissen"
-    },
-    {
-     "name": "Izagirre Ion",
-     "id": 1991,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 27,
-     "closed": "2026-11-15T15:50:51+00:00",
-     "full": "Ion Izagirre"
-    },
-    {
-     "name": "Kwiatkowski Michal",
-     "id": 1981,
-     "cc": "pl",
-     "nat": "Poland",
-     "price": 8,
-     "closed": "2026-11-15T18:00:10+00:00",
-     "full": "Michal Kwiatkowski"
-    },
-    {
-     "name": "Tratnik Jan",
-     "id": 2268,
-     "cc": "si",
-     "nat": "Slovenia",
-     "price": 8,
-     "closed": "2026-11-15T18:00:17+00:00",
-     "full": "Jan Tratnik"
-    },
-    {
-     "name": "Gachignard Thomas",
-     "id": 15315,
-     "cc": "fr",
-     "nat": "France",
-     "price": 6,
-     "closed": "2026-11-15T18:01:06+00:00",
-     "full": "Thomas Gachignard"
-    },
-    {
-     "name": "Vlasov Aleksandr",
-     "id": 6419,
-     "cc": "ru",
-     "nat": "Russia",
-     "price": 10,
-     "closed": "2026-11-15T18:01:20+00:00",
-     "full": "Aleksandr Vlasov"
-    },
-    {
-     "name": "Landa Mikel",
-     "id": 1992,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 12,
-     "closed": "2026-11-16T18:00:08+00:00",
-     "full": "Mikel Landa"
-    },
-    {
-     "name": "Prodhomme Nicolas",
-     "id": 7392,
-     "cc": "fr",
-     "nat": "France",
-     "price": 16,
-     "closed": "2026-11-17T21:07:48+00:00",
-     "full": "Nicolas Prodhomme"
-    },
-    {
-     "name": "Barguil Warren",
-     "id": 3022,
-     "cc": "fr",
-     "nat": "France",
-     "price": 6,
-     "closed": "2026-11-16T19:06:48+00:00",
-     "full": "Warren Barguil"
-    },
-    {
-     "name": "Adrià Roger",
-     "id": 7449,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 10,
-     "closed": "2026-11-17T18:33:58+00:00",
-     "full": "Roger Adrià"
-    },
-    {
-     "name": "Costa Gonçalo",
-     "id": 17503,
-     "cc": "pt",
-     "nat": "Portugal",
-     "price": 1,
-     "closed": "2026-11-17T18:35:08+00:00",
-     "full": "Gonçalo Costa"
-    },
-    {
-     "name": "Verona Carlos",
-     "id": 2853,
-     "cc": "es",
-     "nat": "Spain",
-     "price": 7,
-     "closed": "2026-11-17T18:39:18+00:00",
-     "full": "Carlos Verona"
-    },
-    {
-     "name": "Ackermann Pascal",
-     "id": 5939,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 6,
-     "closed": "2026-11-17T18:47:43+00:00",
-     "full": "Pascal Ackermann"
-    },
-    {
-     "name": "Poels Wout",
-     "id": 754,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 10,
-     "closed": "2026-11-18T18:00:11+00:00",
-     "full": "Wout Poels"
     }
    ]
   },
@@ -5915,5 +5924,5 @@
    ]
   }
  },
- "checked": "2026-11-18T22:37Z"
+ "checked": "2026-11-18T23:05Z"
 }

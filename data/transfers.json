@@ -83,21 +83,21 @@
   "at": "2026-11-12T18:00:26+00:00",
   "date": "2026-11-12",
   "time": "19:00",
-  "rider": "Alexander Konychev",
-  "id": 7069,
-  "cc": "it",
-  "team": "MTN Qhubeka",
-  "price": 2
- },
- {
-  "at": "2026-11-12T18:00:26+00:00",
-  "date": "2026-11-12",
-  "time": "19:00",
   "rider": "Pedro Pinto",
   "id": 10610,
   "cc": "pt",
   "team": "Portugal in 150 Seconds",
   "price": 1
+ },
+ {
+  "at": "2026-11-12T18:00:26+00:00",
+  "date": "2026-11-12",
+  "time": "19:00",
+  "rider": "Alexander Konychev",
+  "id": 7069,
+  "cc": "it",
+  "team": "MTN Qhubeka",
+  "price": 2
  },
  {
   "at": "2026-11-12T18:00:29+00:00",
@@ -1103,20 +1103,20 @@
   "at": "2026-11-13T18:00:22+00:00",
   "date": "2026-11-13",
   "time": "19:00",
-  "rider": "Sergio Henao",
-  "id": 16039,
-  "cc": "co",
-  "team": "Rabobank",
+  "rider": "Daniel Moreira",
+  "id": 10065,
+  "cc": "pt",
+  "team": "Portugal in 150 Seconds",
   "price": 1
  },
  {
   "at": "2026-11-13T18:00:22+00:00",
   "date": "2026-11-13",
   "time": "19:00",
-  "rider": "Daniel Moreira",
-  "id": 10065,
-  "cc": "pt",
-  "team": "Portugal in 150 Seconds",
+  "rider": "Sergio Henao",
+  "id": 16039,
+  "cc": "co",
+  "team": "Rabobank",
   "price": 1
  },
  {
@@ -4033,21 +4033,21 @@
   "at": "2026-11-16T18:00:08+00:00",
   "date": "2026-11-16",
   "time": "19:00",
-  "rider": "Lorenz Van de Wynkele",
-  "id": 4125,
-  "cc": "be",
-  "team": "Renova",
-  "price": 1
- },
- {
-  "at": "2026-11-16T18:00:08+00:00",
-  "date": "2026-11-16",
-  "time": "19:00",
   "rider": "Mikel Landa",
   "id": 1992,
   "cc": "es",
   "team": "Portugal in 150 Seconds",
   "price": 12
+ },
+ {
+  "at": "2026-11-16T18:00:08+00:00",
+  "date": "2026-11-16",
+  "time": "19:00",
+  "rider": "Lorenz Van de Wynkele",
+  "id": 4125,
+  "cc": "be",
+  "team": "Renova",
+  "price": 1
  },
  {
   "at": "2026-11-16T18:00:10+00:00",
@@ -6318,5 +6318,15 @@
   "cc": "ch",
   "team": "Kelme Costa Blanca",
   "price": 10
+ },
+ {
+  "at": "2026-11-18T23:04:54+00:00",
+  "date": "2026-11-19",
+  "time": "00:04",
+  "rider": "Baptiste Huyet",
+  "id": 7759,
+  "cc": "fr",
+  "team": "Portugal in 150 Seconds",
+  "price": 1
  }
 ]
