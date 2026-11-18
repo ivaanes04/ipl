@@ -6218,5 +6218,15 @@
   "cc": "er",
   "team": "MTN Qhubeka",
   "price": 3
+ },
+ {
+  "at": "2026-11-18T20:49:11+00:00",
+  "date": "2026-11-18",
+  "time": "21:49",
+  "rider": "Damien Touzé",
+  "id": 6188,
+  "cc": "fr",
+  "team": "Liberty Seguros",
+  "price": 1
  }
 ]
