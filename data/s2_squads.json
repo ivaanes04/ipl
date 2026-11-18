@@ -5612,9 +5612,9 @@
   },
   "Kelme Costa Blanca": {
    "player": "JgCol",
-   "won": 16,
-   "budget": 43,
-   "bids": 37,
+   "won": 17,
+   "budget": 38,
+   "bids": 32,
    "riders": [
     {
      "name": "Ardila Camilo",
@@ -5759,6 +5759,15 @@
      "price": 12,
      "closed": "2026-11-17T13:23:25+00:00",
      "full": "Jan Christen"
+    },
+    {
+     "name": "Moschetti Matteo",
+     "id": 6548,
+     "cc": "it",
+     "nat": "Italy",
+     "price": 5,
+     "closed": "2026-11-18T22:33:53+00:00",
+     "full": "Matteo Moschetti"
     }
    ]
   },
@@ -5897,5 +5906,5 @@
    ]
   }
  },
- "checked": "2026-11-18T22:14Z"
+ "checked": "2026-11-18T22:34Z"
 }
