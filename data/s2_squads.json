@@ -4992,6 +4992,203 @@
     }
    ]
   },
+  "Red Bull": {
+   "player": "MarcelTestier",
+   "won": 21,
+   "budget": 5,
+   "bids": 5,
+   "riders": [
+    {
+     "name": "Kämna Lennard",
+     "id": 3842,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 4,
+     "closed": "2026-11-12T19:44:16+00:00",
+     "full": "Lennard Kämna"
+    },
+    {
+     "name": "Philipsen Jasper",
+     "id": 6324,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 29,
+     "closed": "2026-11-14T20:34:54+00:00",
+     "full": "Jasper Philipsen"
+    },
+    {
+     "name": "del Toro Isaac",
+     "id": 4967,
+     "cc": "mx",
+     "nat": "Mexico",
+     "price": 63,
+     "closed": "2026-11-14T21:42:21+00:00",
+     "full": "Isaac del Toro"
+    },
+    {
+     "name": "Bjerg Mikkel",
+     "id": 6390,
+     "cc": "dk",
+     "nat": "Denmark",
+     "price": 10,
+     "closed": "2026-11-15T22:49:53+00:00",
+     "full": "Mikkel Bjerg"
+    },
+    {
+     "name": "Plapp Luke",
+     "id": 14249,
+     "cc": "au",
+     "nat": "Australia",
+     "price": 10,
+     "closed": "2026-11-14T20:33:34+00:00",
+     "full": "Luke Plapp"
+    },
+    {
+     "name": "Hatherly Alan",
+     "id": 8627,
+     "cc": "za",
+     "nat": "South Africa",
+     "price": 5,
+     "closed": "2026-11-15T10:42:27+00:00",
+     "full": "Alan Hatherly"
+    },
+    {
+     "name": "Zijlaard Maikel",
+     "id": 6422,
+     "cc": "nl",
+     "nat": "Netherlands",
+     "price": 6,
+     "closed": "2026-11-15T08:35:49+00:00",
+     "full": "Maikel Zijlaard"
+    },
+    {
+     "name": "Appelbaum Henri-Johannes",
+     "id": 15591,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 1,
+     "closed": "2026-11-15T08:39:10+00:00",
+     "full": "Henri-Johannes Appelbaum"
+    },
+    {
+     "name": "Bodet Vincent",
+     "id": 9421,
+     "cc": "fr",
+     "nat": "France",
+     "price": 1,
+     "closed": "2026-11-15T08:42:20+00:00",
+     "full": "Vincent Bodet"
+    },
+    {
+     "name": "Paret-Peintre Valentin",
+     "id": 7386,
+     "cc": "fr",
+     "nat": "France",
+     "price": 20,
+     "closed": "2026-11-16T22:19:59+00:00",
+     "full": "Valentin Paret-Peintre"
+    },
+    {
+     "name": "Guernalec Thibault",
+     "id": 6395,
+     "cc": "fr",
+     "nat": "France",
+     "price": 4,
+     "closed": "2026-11-16T10:07:29+00:00",
+     "full": "Thibault Guernalec"
+    },
+    {
+     "name": "Kepplinger Rainer",
+     "id": 15233,
+     "cc": "at",
+     "nat": "Austria",
+     "price": 3,
+     "closed": "2026-11-16T09:33:03+00:00",
+     "full": "Rainer Kepplinger"
+    },
+    {
+     "name": "Belmans Lennert",
+     "id": 14664,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 1,
+     "closed": "2026-11-16T10:09:32+00:00",
+     "full": "Lennert Belmans"
+    },
+    {
+     "name": "Reyes Yeison",
+     "id": 10440,
+     "cc": "co",
+     "nat": "Colombia",
+     "price": 1,
+     "closed": "2026-11-16T10:10:13+00:00",
+     "full": "Yeison Reyes"
+    },
+    {
+     "name": "Bennett George",
+     "id": 2523,
+     "cc": "nz",
+     "nat": "New Zealand",
+     "price": 6,
+     "closed": "2026-11-16T13:56:21+00:00",
+     "full": "George Bennett"
+    },
+    {
+     "name": "Nys Thibau",
+     "id": 13165,
+     "cc": "be",
+     "nat": "Belgium",
+     "price": 12,
+     "closed": "2026-11-16T22:17:30+00:00",
+     "full": "Thibau Nys"
+    },
+    {
+     "name": "Hofbauer Philipp",
+     "id": 14462,
+     "cc": "at",
+     "nat": "Austria",
+     "price": 3,
+     "closed": "2026-11-16T22:24:29+00:00",
+     "full": "Philipp Hofbauer"
+    },
+    {
+     "name": "Ježek Václav",
+     "id": 10981,
+     "cc": "cz",
+     "nat": "Czechia",
+     "price": 2,
+     "closed": "2026-11-16T22:24:59+00:00",
+     "full": "Václav Ježek"
+    },
+    {
+     "name": "Brenner Marco",
+     "id": 7398,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 11,
+     "closed": "2026-11-17T22:34:59+00:00",
+     "full": "Marco Brenner"
+    },
+    {
+     "name": "Rapp Jonas",
+     "id": 7324,
+     "cc": "de",
+     "nat": "Germany",
+     "price": 2,
+     "closed": "2026-11-18T21:08:37+00:00",
+     "full": "Jonas Rapp"
+    },
+    {
+     "name": "Sexton Tom",
+     "id": 14945,
+     "cc": "nz",
+     "nat": "New Zealand",
+     "price": 1,
+     "closed": "2026-11-18T21:11:38+00:00",
+     "full": "Tom Sexton"
+    }
+   ]
+  },
   "Talkwalker": {
    "player": "benjong",
    "won": 21,
@@ -5377,194 +5574,6 @@
     }
    ]
   },
-  "Red Bull": {
-   "player": "MarcelTestier",
-   "won": 20,
-   "budget": 6,
-   "bids": 6,
-   "riders": [
-    {
-     "name": "Kämna Lennard",
-     "id": 3842,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 4,
-     "closed": "2026-11-12T19:44:16+00:00",
-     "full": "Lennard Kämna"
-    },
-    {
-     "name": "Philipsen Jasper",
-     "id": 6324,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 29,
-     "closed": "2026-11-14T20:34:54+00:00",
-     "full": "Jasper Philipsen"
-    },
-    {
-     "name": "del Toro Isaac",
-     "id": 4967,
-     "cc": "mx",
-     "nat": "Mexico",
-     "price": 63,
-     "closed": "2026-11-14T21:42:21+00:00",
-     "full": "Isaac del Toro"
-    },
-    {
-     "name": "Bjerg Mikkel",
-     "id": 6390,
-     "cc": "dk",
-     "nat": "Denmark",
-     "price": 10,
-     "closed": "2026-11-15T22:49:53+00:00",
-     "full": "Mikkel Bjerg"
-    },
-    {
-     "name": "Plapp Luke",
-     "id": 14249,
-     "cc": "au",
-     "nat": "Australia",
-     "price": 10,
-     "closed": "2026-11-14T20:33:34+00:00",
-     "full": "Luke Plapp"
-    },
-    {
-     "name": "Hatherly Alan",
-     "id": 8627,
-     "cc": "za",
-     "nat": "South Africa",
-     "price": 5,
-     "closed": "2026-11-15T10:42:27+00:00",
-     "full": "Alan Hatherly"
-    },
-    {
-     "name": "Zijlaard Maikel",
-     "id": 6422,
-     "cc": "nl",
-     "nat": "Netherlands",
-     "price": 6,
-     "closed": "2026-11-15T08:35:49+00:00",
-     "full": "Maikel Zijlaard"
-    },
-    {
-     "name": "Appelbaum Henri-Johannes",
-     "id": 15591,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 1,
-     "closed": "2026-11-15T08:39:10+00:00",
-     "full": "Henri-Johannes Appelbaum"
-    },
-    {
-     "name": "Bodet Vincent",
-     "id": 9421,
-     "cc": "fr",
-     "nat": "France",
-     "price": 1,
-     "closed": "2026-11-15T08:42:20+00:00",
-     "full": "Vincent Bodet"
-    },
-    {
-     "name": "Paret-Peintre Valentin",
-     "id": 7386,
-     "cc": "fr",
-     "nat": "France",
-     "price": 20,
-     "closed": "2026-11-16T22:19:59+00:00",
-     "full": "Valentin Paret-Peintre"
-    },
-    {
-     "name": "Guernalec Thibault",
-     "id": 6395,
-     "cc": "fr",
-     "nat": "France",
-     "price": 4,
-     "closed": "2026-11-16T10:07:29+00:00",
-     "full": "Thibault Guernalec"
-    },
-    {
-     "name": "Kepplinger Rainer",
-     "id": 15233,
-     "cc": "at",
-     "nat": "Austria",
-     "price": 3,
-     "closed": "2026-11-16T09:33:03+00:00",
-     "full": "Rainer Kepplinger"
-    },
-    {
-     "name": "Belmans Lennert",
-     "id": 14664,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 1,
-     "closed": "2026-11-16T10:09:32+00:00",
-     "full": "Lennert Belmans"
-    },
-    {
-     "name": "Reyes Yeison",
-     "id": 10440,
-     "cc": "co",
-     "nat": "Colombia",
-     "price": 1,
-     "closed": "2026-11-16T10:10:13+00:00",
-     "full": "Yeison Reyes"
-    },
-    {
-     "name": "Bennett George",
-     "id": 2523,
-     "cc": "nz",
-     "nat": "New Zealand",
-     "price": 6,
-     "closed": "2026-11-16T13:56:21+00:00",
-     "full": "George Bennett"
-    },
-    {
-     "name": "Nys Thibau",
-     "id": 13165,
-     "cc": "be",
-     "nat": "Belgium",
-     "price": 12,
-     "closed": "2026-11-16T22:17:30+00:00",
-     "full": "Thibau Nys"
-    },
-    {
-     "name": "Hofbauer Philipp",
-     "id": 14462,
-     "cc": "at",
-     "nat": "Austria",
-     "price": 3,
-     "closed": "2026-11-16T22:24:29+00:00",
-     "full": "Philipp Hofbauer"
-    },
-    {
-     "name": "Ježek Václav",
-     "id": 10981,
-     "cc": "cz",
-     "nat": "Czechia",
-     "price": 2,
-     "closed": "2026-11-16T22:24:59+00:00",
-     "full": "Václav Ježek"
-    },
-    {
-     "name": "Brenner Marco",
-     "id": 7398,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 11,
-     "closed": "2026-11-17T22:34:59+00:00",
-     "full": "Marco Brenner"
-    },
-    {
-     "name": "Rapp Jonas",
-     "id": 7324,
-     "cc": "de",
-     "nat": "Germany",
-     "price": 2,
-     "closed": "2026-11-18T21:08:37+00:00",
-     "full": "Jonas Rapp"
-    }
-   ]
-  },
   "Kelme Costa Blanca": {
    "player": "JgCol",
    "won": 16,
@@ -5852,5 +5861,5 @@
    ]
   }
  },
- "checked": "2026-11-18T21:08Z"
+ "checked": "2026-11-18T21:11Z"
 }

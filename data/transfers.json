@@ -6248,5 +6248,15 @@
   "cc": "de",
   "team": "Red Bull",
   "price": 2
+ },
+ {
+  "at": "2026-11-18T21:11:38+00:00",
+  "date": "2026-11-18",
+  "time": "22:11",
+  "rider": "Tom Sexton",
+  "id": 14945,
+  "cc": "nz",
+  "team": "Red Bull",
+  "price": 1
  }
 ]
