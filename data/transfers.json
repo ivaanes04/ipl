@@ -6338,5 +6338,15 @@
   "cc": "ru",
   "team": "Portugal in 150 Seconds",
   "price": 1
+ },
+ {
+  "at": "2026-11-18T23:14:52+00:00",
+  "date": "2026-11-19",
+  "time": "00:14",
+  "rider": "Dawit Yemane",
+  "id": 13164,
+  "cc": "er",
+  "team": "Portugal in 150 Seconds",
+  "price": 1
  }
 ]
