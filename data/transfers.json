@@ -6158,5 +6158,15 @@
   "cc": "be",
   "team": "UnoX",
   "price": 7
+ },
+ {
+  "at": "2026-11-18T18:58:09+00:00",
+  "date": "2026-11-18",
+  "time": "19:58",
+  "rider": "Pablo Castrillo",
+  "id": 4839,
+  "cc": "es",
+  "team": "MEO (Benfica)",
+  "price": 13
  }
 ]
