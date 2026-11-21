@@ -342,8 +342,8 @@ th { font-family: var(--f-display); font-weight: 600; font-size: 13px; letter-sp
 .sl-riders li:last-child { border-bottom: 0; }
 .sl-rk { flex: none; min-width: 26px; text-align: right; font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
 .sl-rk.pod { color: var(--ink); font-weight: 700; }
-.sl-squad summary { cursor: pointer; padding: 8px 12px; font-size: 13px; color: var(--muted); }
-.sl-squad .sl-riders li { gap: 6px; }
+.sl-none { margin: 0; padding: 12px; font-size: 13px; color: var(--muted); font-style: italic; }
+.sl-team.wait { opacity: .7; }
 /* managers table */
 .mgrs td, .stand td { vertical-align: middle; }
 .lrk { display: inline-grid; place-items: center; min-width: 28px; height: 24px; border-radius: 6px; background: var(--soft); font-weight: 600; color: var(--ink); }
@@ -873,7 +873,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.20.0', updated: '2026-11-21T12:53' };
+const SITE = { version: '1.20.1', updated: '2026-11-21T13:22' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0, nat: '' };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -1803,8 +1803,8 @@ function viewS2Race(i) {
   }
   $view.append(s2Startlist(r));
 }
-// Season 2 startlist before the race: the group draw (data/s2_groups.json, tools/make_s2_groups.py). Days 1-6 race in
-// seeded random groups; each team card shows the squad, since the manager picks who starts in the game
+// Season 2 startlist before the race: the group draw (data/s2_groups.json, tools/make_s2_groups.py) and, for each team,
+// the six riders its manager posted for this race in his group's channel (data/s2_startlists.json, tools/make_s2_startlists.py)
 function s2Startlist(r) {
   const G = S.s2groups, wk = r.weeks;
   const d = G && G.days.find((x) => x.weeks.join(',') === wk);
@@ -1812,18 +1812,29 @@ function s2Startlist(r) {
   const keys = Object.keys(d.groups);
   if (!keys.includes(UI.s2grp)) UI.s2grp = keys[0];
   const T = (S.s2signups && S.s2signups.teams) || [], Q = S.s2squads;
+  const posts = ((S.s2start && S.s2start.posts) || []).filter((p) => p.day === d.day && p.races[r.race]);
   const list = d.groups[UI.s2grp];
+  let sent = 0, riders = 0;
   const cards = list.map((e) => {
-    const i = T.findIndex((x) => x.team === e.team), t = T[i], q = Q && Q.teams[e.team];
-    const riders = q ? q.riders.slice().sort((a, b) => s2RiderName(a).localeCompare(s2RiderName(b))) : [];
-    return h('div', { class: 'sl-team' },
+    const i = T.findIndex((x) => x.team === e.team), t = T[i];
+    const post = posts.find((p) => p.team === e.team && p.group === UI.s2grp);
+    const sq = new Map(((Q && Q.teams[e.team] && Q.teams[e.team].riders) || []).map((x) => [x.id, x]));
+    let body;
+    if (post) {
+      sent++; riders += post.races[r.race].length;
+      body = h('ol', { class: 'sl-riders' }, post.races[r.race].map((x, k) => {
+        const sr = x.id != null ? sq.get(x.id) : null, href = sr ? s2RiderHref(sr) : null, nm = sr ? s2RiderName(sr) : x.name;
+        return h('li', null, h('span', { class: 'sl-rk' }, k + 1), sr && sr.cc ? flag(sr.cc) : null, href ? h('a', { href }, nm) : h('span', { title: sr ? null : 'As written by the manager (not matched to a rider of the squad)' }, nm));
+      }));
+    } else body = h('p', { class: 'sl-none' }, 'Startlist not posted yet');
+    return h('div', { class: 'sl-team' + (post ? '' : ' wait') },
       h('div', { class: 'sl-head' }, t && t.jersey ? h('img', { class: 'sl-jsy', src: 'img/jerseys/' + t.jersey + '.png', alt: '' }) : null,
         h('div', null, t ? h('a', { href: '#s2team-' + i, class: 'sl-name' }, e.team) : h('span', { class: 'sl-name' }, e.team), h('small', null, t ? s2Name(t) : e.name))),
-      riders.length ? h('details', { class: 'sl-squad' }, h('summary', null, 'Squad · ' + riders.length + ' riders'),
-        h('ul', { class: 'sl-riders' }, riders.map((x) => { const href = s2RiderHref(x), nm = s2RiderName(x); return h('li', null, x.cc ? flag(x.cc) : null, href ? h('a', { href }, nm) : nm); }))) : null);
+      body);
   });
-  return h('section', { class: 'card' }, h('div', { class: 'card-h' }, h('h2', null, 'Startlist · Day ' + d.day), h('span', { class: 'mute' }, keys.length + ' groups · ' + list.length + ' teams in each')),
-    h('p', { class: 'src' }, 'Seeded random group draw for Day ' + d.day + (d.weeks.length > 1 ? ' (weeks ' + d.weeks.join('–') + ')' : '') + ', posted by Joe in #ipl_announcements on 20 November. Each manager picks the riders who start in the game: the squads are folded under each team.' + (G.not_drawn && G.not_drawn.length ? ' Not in the draw: ' + G.not_drawn.join(', ') + '.' : '')),
+  const ch = posts.find((p) => p.group === UI.s2grp)?.channel || { A: '#division-1', B: '#division-2', C: '#division-3' }[UI.s2grp];
+  return h('section', { class: 'card' }, h('div', { class: 'card-h' }, h('h2', null, 'Startlist · Day ' + d.day + ' · Group ' + UI.s2grp), h('span', { class: 'mute' }, sent + ' of ' + list.length + ' teams posted · ' + riders + ' riders')),
+    h('p', { class: 'src' }, 'Group draw for Day ' + d.day + (d.weeks.length > 1 ? ' (weeks ' + d.weeks.join('–') + ')' : '') + ' posted by Joe in #ipl_announcements on 20 November. Riders as each manager posted them in ' + ch + ' (checked ' + fdate((S.s2start && S.s2start.checked || '').slice(0, 10)) + ').' + (G.not_drawn && G.not_drawn.length ? ' Not in the draw: ' + G.not_drawn.join(', ') + '.' : '')),
     h('div', { class: 'chips', role: 'group', 'aria-label': 'Group' }, keys.map((g) => h('button', { class: 'chip', type: 'button', 'aria-pressed': String(UI.s2grp === g), onclick: () => { UI.s2grp = g; UI.keepScroll = true; route(); } }, 'Group ' + g))),
     h('div', { class: 'sl-grid' }, cards));
 }
@@ -2661,6 +2672,7 @@ Promise.all(['data/s1.json', 'data/league.json', 'data/profiles.json', 'data/poi
       fetch('data/s2_objectives.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.s2obj = d; }).catch(() => {}),
       fetch('data/s2_squads.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.s2squads = d; }).catch(() => {}),
       fetch('data/s2_groups.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.s2groups = d; }).catch(() => {}),
+      fetch('data/s2_startlists.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.s2start = d; }).catch(() => {}),
       fetch('data/s2_riders.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.s2riders = d; }).catch(() => {}),
       fetch('data/rules.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.rules = d; }).catch(() => {}),
       fetch('data/race_points.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.rp = d; }).catch(() => {})]);
