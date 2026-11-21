@@ -1,7 +1,7 @@
 {
  "source": "#rules (International Pro League) on the PCM UK Discord, posted by Joewhiteley0711",
- "checked": "2026-11-18T23:00Z",
- "updated": "2026-11-06T10:45:00Z",
+ "checked": "2026-11-21T10:34Z",
+ "updated": "2026-11-20T15:02:00Z",
  "sections": [
   {
    "id": "welcome",
@@ -97,9 +97,10 @@
   {
    "id": "divisions",
    "title": "Divisions",
-   "edited": "2024-06-11T15:14:00Z",
+   "edited": "2026-11-20T15:02:00Z",
    "items": [
-    "Day 1, 2 and 3 will have randomly draw groups (each day a different group) which will then determine on Day 4 who will be in each division.",
+    "For Season 2, the first 6 days will be random, but seeded group draws",
+    "Then onwards until the TDF it will be fully random drawn groups, starting at the TDF the divisions system will be used",
     "Depending on how many people play each day, will determine how many people will be in Div 1, Div 2 etc.",
     "If for example we have 24 players, you will need to be in the top 8 of that specific Race Day to be in Div 1.",
     "Division numbers are always subject to change so do not assume you will be in a division just because you were previously.",
