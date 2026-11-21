@@ -1,0 +1,621 @@
+{
+ "source": "#ipl_announcements, Joewhiteley0711's draw images (20 Nov 2026, 16:50-17:10 CET)",
+ "checked": "2026-11-21T11:47Z",
+ "format": "Days 1-6: seeded random groups; then fully random lobbies until the Tour de France; divisions from the Tour on.",
+ "not_drawn": [
+  "NsN"
+ ],
+ "days": [
+  {
+   "day": "1",
+   "weeks": [
+    1
+   ],
+   "groups": {
+    "A": [
+     {
+      "name": "Joe",
+      "team": "MTN Qhubeka"
+     },
+     {
+      "name": "Hubi",
+      "team": "Biesse - Carrera - Premac"
+     },
+     {
+      "name": "Daagz",
+      "team": "Bahrain Victorious"
+     },
+     {
+      "name": "Bouke",
+      "team": "Rabobank"
+     },
+     {
+      "name": "Hillingz",
+      "team": "Deceuninck - Quick-Step"
+     },
+     {
+      "name": "TheBigDog",
+      "team": "MEO (Benfica)"
+     },
+     {
+      "name": "Marcel + Imposter",
+      "team": "Red Bull"
+     },
+     {
+      "name": "Mars",
+      "team": "CSC"
+     },
+     {
+      "name": "Leandro",
+      "team": "Liberty Seguros"
+     }
+    ],
+    "B": [
+     {
+      "name": "Ivan",
+      "team": "UnoX"
+     },
+     {
+      "name": "Benjong",
+      "team": "Talkwalker"
+     },
+     {
+      "name": "Miko",
+      "team": "Milka"
+     },
+     {
+      "name": "Chris",
+      "team": "7-Eleven"
+     },
+     {
+      "name": "FireJohn",
+      "team": "Unibet Rose Rockets"
+     },
+     {
+      "name": "JGCol",
+      "team": "Kelme Costa Blanca"
+     },
+     {
+      "name": "Grandpa",
+      "team": "Tudor"
+     },
+     {
+      "name": "Bandalhoquerido",
+      "team": "GI Group Holding Simoldes UDO"
+     },
+     {
+      "name": "Joaozinhoaac",
+      "team": "FEIRENSE - BEECELER"
+     }
+    ],
+    "C": [
+     {
+      "name": "Agap",
+      "team": "Discovery Channel"
+     },
+     {
+      "name": "Sheep",
+      "team": "Royal Bank of Scotland"
+     },
+     {
+      "name": "Tom",
+      "team": "B&B Hotels"
+     },
+     {
+      "name": "Frabo",
+      "team": "Astana"
+     },
+     {
+      "name": "Pena",
+      "team": "Renova"
+     },
+     {
+      "name": "Riverside",
+      "team": "Ukraine Cycling Team"
+     },
+     {
+      "name": "Sabu",
+      "team": "Tavfer-Ovos Matinados-Mortágua"
+     },
+     {
+      "name": "SeanColl",
+      "team": "Modern Adventure"
+     },
+     {
+      "name": "Bessadelas + Sonecas",
+      "team": "Portugal in 150 Seconds"
+     }
+    ]
+   }
+  },
+  {
+   "day": "2",
+   "weeks": [
+    2
+   ],
+   "groups": {
+    "A": [
+     {
+      "name": "Joe",
+      "team": "MTN Qhubeka"
+     },
+     {
+      "name": "Sheep",
+      "team": "Royal Bank of Scotland"
+     },
+     {
+      "name": "Miko",
+      "team": "Milka"
+     },
+     {
+      "name": "Bouke",
+      "team": "Rabobank"
+     },
+     {
+      "name": "Pena",
+      "team": "Renova"
+     },
+     {
+      "name": "Riverside",
+      "team": "Ukraine Cycling Team"
+     },
+     {
+      "name": "Marcel + Imposter",
+      "team": "Red Bull"
+     },
+     {
+      "name": "Bandalhoquerido",
+      "team": "GI Group Holding Simoldes UDO"
+     },
+     {
+      "name": "Leandro",
+      "team": "Liberty Seguros"
+     }
+    ],
+    "B": [
+     {
+      "name": "Ivan",
+      "team": "UnoX"
+     },
+     {
+      "name": "Benjong",
+      "team": "Talkwalker"
+     },
+     {
+      "name": "Daagz",
+      "team": "Bahrain Victorious"
+     },
+     {
+      "name": "Frabo",
+      "team": "Astana"
+     },
+     {
+      "name": "FireJohn",
+      "team": "Unibet Rose Rockets"
+     },
+     {
+      "name": "JGCol",
+      "team": "Kelme Costa Blanca"
+     },
+     {
+      "name": "Sabu",
+      "team": "Tavfer-Ovos Matinados-Mortágua"
+     },
+     {
+      "name": "Mars",
+      "team": "CSC"
+     },
+     {
+      "name": "Joaozinhoaac",
+      "team": "FEIRENSE - BEECELER"
+     }
+    ],
+    "C": [
+     {
+      "name": "Agap",
+      "team": "Discovery Channel"
+     },
+     {
+      "name": "Hubi",
+      "team": "Biesse - Carrera - Premac"
+     },
+     {
+      "name": "Tom",
+      "team": "B&B Hotels"
+     },
+     {
+      "name": "Chris",
+      "team": "7-Eleven"
+     },
+     {
+      "name": "Hillingz",
+      "team": "Deceuninck - Quick-Step"
+     },
+     {
+      "name": "TheBigDog",
+      "team": "MEO (Benfica)"
+     },
+     {
+      "name": "Grandpa",
+      "team": "Tudor"
+     },
+     {
+      "name": "SeanColl",
+      "team": "Modern Adventure"
+     },
+     {
+      "name": "Bessadelas + Sonecas",
+      "team": "Portugal in 150 Seconds"
+     }
+    ]
+   }
+  },
+  {
+   "day": "3",
+   "weeks": [
+    3
+   ],
+   "groups": {
+    "A": [
+     {
+      "name": "Agap",
+      "team": "Discovery Channel"
+     },
+     {
+      "name": "Sheep",
+      "team": "Royal Bank of Scotland"
+     },
+     {
+      "name": "Tom",
+      "team": "B&B Hotels"
+     },
+     {
+      "name": "Bouke",
+      "team": "Rabobank"
+     },
+     {
+      "name": "Hillingz",
+      "team": "Deceuninck - Quick-Step"
+     },
+     {
+      "name": "Riverside",
+      "team": "Ukraine Cycling Team"
+     },
+     {
+      "name": "Marcel + Imposter",
+      "team": "Red Bull"
+     },
+     {
+      "name": "SeanColl",
+      "team": "Modern Adventure"
+     },
+     {
+      "name": "Bessadelas + Sonecas",
+      "team": "Portugal in 150 Seconds"
+     }
+    ],
+    "B": [
+     {
+      "name": "Joe",
+      "team": "MTN Qhubeka"
+     },
+     {
+      "name": "Benjong",
+      "team": "Talkwalker"
+     },
+     {
+      "name": "Miko",
+      "team": "Milka"
+     },
+     {
+      "name": "Frabo",
+      "team": "Astana"
+     },
+     {
+      "name": "FireJohn",
+      "team": "Unibet Rose Rockets"
+     },
+     {
+      "name": "JGCol",
+      "team": "Kelme Costa Blanca"
+     },
+     {
+      "name": "Grandpa",
+      "team": "Tudor"
+     },
+     {
+      "name": "Bandalhoquerido",
+      "team": "GI Group Holding Simoldes UDO"
+     },
+     {
+      "name": "Joaozinhoaac",
+      "team": "FEIRENSE - BEECELER"
+     }
+    ],
+    "C": [
+     {
+      "name": "Ivan",
+      "team": "UnoX"
+     },
+     {
+      "name": "Hubi",
+      "team": "Biesse - Carrera - Premac"
+     },
+     {
+      "name": "Daagz",
+      "team": "Bahrain Victorious"
+     },
+     {
+      "name": "Chris",
+      "team": "7-Eleven"
+     },
+     {
+      "name": "Pena",
+      "team": "Renova"
+     },
+     {
+      "name": "TheBigDog",
+      "team": "MEO (Benfica)"
+     },
+     {
+      "name": "Sabu",
+      "team": "Tavfer-Ovos Matinados-Mortágua"
+     },
+     {
+      "name": "Mars",
+      "team": "CSC"
+     },
+     {
+      "name": "Leandro",
+      "team": "Liberty Seguros"
+     }
+    ]
+   }
+  },
+  {
+   "day": "4+5",
+   "weeks": [
+    4,
+    5
+   ],
+   "groups": {
+    "A": [
+     {
+      "name": "Joe",
+      "team": "MTN Qhubeka"
+     },
+     {
+      "name": "Benjong",
+      "team": "Talkwalker"
+     },
+     {
+      "name": "Tom",
+      "team": "B&B Hotels"
+     },
+     {
+      "name": "Frabo",
+      "team": "Astana"
+     },
+     {
+      "name": "FireJohn",
+      "team": "Unibet Rose Rockets"
+     },
+     {
+      "name": "Riverside",
+      "team": "Ukraine Cycling Team"
+     },
+     {
+      "name": "Grandpa",
+      "team": "Tudor"
+     },
+     {
+      "name": "Bandalhoquerido",
+      "team": "GI Group Holding Simoldes UDO"
+     },
+     {
+      "name": "Bessadelas + Sonecas",
+      "team": "Portugal in 150 Seconds"
+     }
+    ],
+    "B": [
+     {
+      "name": "Ivan",
+      "team": "UnoX"
+     },
+     {
+      "name": "Hubi",
+      "team": "Biesse - Carrera - Premac"
+     },
+     {
+      "name": "Daagz",
+      "team": "Bahrain Victorious"
+     },
+     {
+      "name": "Chris",
+      "team": "7-Eleven"
+     },
+     {
+      "name": "Hillingz",
+      "team": "Deceuninck - Quick-Step"
+     },
+     {
+      "name": "TheBigDog",
+      "team": "MEO (Benfica)"
+     },
+     {
+      "name": "Sabu",
+      "team": "Tavfer-Ovos Matinados-Mortágua"
+     },
+     {
+      "name": "Mars",
+      "team": "CSC"
+     },
+     {
+      "name": "Joaozinhoaac",
+      "team": "FEIRENSE - BEECELER"
+     }
+    ],
+    "C": [
+     {
+      "name": "Agap",
+      "team": "Discovery Channel"
+     },
+     {
+      "name": "Sheep",
+      "team": "Royal Bank of Scotland"
+     },
+     {
+      "name": "Miko",
+      "team": "Milka"
+     },
+     {
+      "name": "Bouke",
+      "team": "Rabobank"
+     },
+     {
+      "name": "Pena",
+      "team": "Renova"
+     },
+     {
+      "name": "JGCol",
+      "team": "Kelme Costa Blanca"
+     },
+     {
+      "name": "Marcel + Imposter",
+      "team": "Red Bull"
+     },
+     {
+      "name": "SeanColl",
+      "team": "Modern Adventure"
+     },
+     {
+      "name": "Leandro",
+      "team": "Liberty Seguros"
+     }
+    ]
+   }
+  },
+  {
+   "day": "6",
+   "weeks": [
+    6
+   ],
+   "groups": {
+    "A": [
+     {
+      "name": "Agap",
+      "team": "Discovery Channel"
+     },
+     {
+      "name": "Benjong",
+      "team": "Talkwalker"
+     },
+     {
+      "name": "Miko",
+      "team": "Milka"
+     },
+     {
+      "name": "Bouke",
+      "team": "Rabobank"
+     },
+     {
+      "name": "FireJohn",
+      "team": "Unibet Rose Rockets"
+     },
+     {
+      "name": "JGCol",
+      "team": "Kelme Costa Blanca"
+     },
+     {
+      "name": "Sabu",
+      "team": "Tavfer-Ovos Matinados-Mortágua"
+     },
+     {
+      "name": "Mars",
+      "team": "CSC"
+     },
+     {
+      "name": "Bessadelas + Sonecas",
+      "team": "Portugal in 150 Seconds"
+     }
+    ],
+    "B": [
+     {
+      "name": "Joe",
+      "team": "MTN Qhubeka"
+     },
+     {
+      "name": "Hubi",
+      "team": "Biesse - Carrera - Premac"
+     },
+     {
+      "name": "Daagz",
+      "team": "Bahrain Victorious"
+     },
+     {
+      "name": "Chris",
+      "team": "7-Eleven"
+     },
+     {
+      "name": "Pena",
+      "team": "Renova"
+     },
+     {
+      "name": "TheBigDog",
+      "team": "MEO (Benfica)"
+     },
+     {
+      "name": "Marcel + Imposter",
+      "team": "Red Bull"
+     },
+     {
+      "name": "SeanColl",
+      "team": "Modern Adventure"
+     },
+     {
+      "name": "Joaozinhoaac",
+      "team": "FEIRENSE - BEECELER"
+     }
+    ],
+    "C": [
+     {
+      "name": "Ivan",
+      "team": "UnoX"
+     },
+     {
+      "name": "Sheep",
+      "team": "Royal Bank of Scotland"
+     },
+     {
+      "name": "Tom",
+      "team": "B&B Hotels"
+     },
+     {
+      "name": "Frabo",
+      "team": "Astana"
+     },
+     {
+      "name": "Hillingz",
+      "team": "Deceuninck - Quick-Step"
+     },
+     {
+      "name": "Riverside",
+      "team": "Ukraine Cycling Team"
+     },
+     {
+      "name": "Grandpa",
+      "team": "Tudor"
+     },
+     {
+      "name": "Bandalhoquerido",
+      "team": "GI Group Holding Simoldes UDO"
+     },
+     {
+      "name": "Leandro",
+      "team": "Liberty Seguros"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -342,6 +342,8 @@ th { font-family: var(--f-display); font-weight: 600; font-size: 13px; letter-sp
 .sl-riders li:last-child { border-bottom: 0; }
 .sl-rk { flex: none; min-width: 26px; text-align: right; font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
 .sl-rk.pod { color: var(--ink); font-weight: 700; }
+.sl-squad summary { cursor: pointer; padding: 8px 12px; font-size: 13px; color: var(--muted); }
+.sl-squad .sl-riders li { gap: 6px; }
 /* managers table */
 .mgrs td, .stand td { vertical-align: middle; }
 .lrk { display: inline-grid; place-items: center; min-width: 28px; height: 24px; border-radius: 6px; background: var(--soft); font-weight: 600; color: var(--ink); }
@@ -871,7 +873,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.19.0', updated: '2026-11-21T12:36' };
+const SITE = { version: '1.20.0', updated: '2026-11-21T12:53' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0, nat: '' };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -1799,7 +1801,31 @@ function viewS2Race(i) {
     }).filter(Boolean);
     if (parts.length) $view.append(card('Climbs and sprints', null, parts));
   }
-  $view.append(card('Startlist', null, h('p', { class: 'empty' }, 'Startlist not available yet.')));
+  $view.append(s2Startlist(r));
+}
+// Season 2 startlist before the race: the group draw (data/s2_groups.json, tools/make_s2_groups.py). Days 1-6 race in
+// seeded random groups; each team card shows the squad, since the manager picks who starts in the game
+function s2Startlist(r) {
+  const G = S.s2groups, wk = r.weeks;
+  const d = G && G.days.find((x) => x.weeks.join(',') === wk);
+  if (!d) return card('Startlist', null, h('p', { class: 'empty' }, +wk.split(',')[0] > 6 ? 'Startlist not available yet. After Day 6 the league races in fully random lobbies until the Tour de France, and in divisions from the Tour on.' : 'Startlist not available yet.'));
+  const keys = Object.keys(d.groups);
+  if (!keys.includes(UI.s2grp)) UI.s2grp = keys[0];
+  const T = (S.s2signups && S.s2signups.teams) || [], Q = S.s2squads;
+  const list = d.groups[UI.s2grp];
+  const cards = list.map((e) => {
+    const i = T.findIndex((x) => x.team === e.team), t = T[i], q = Q && Q.teams[e.team];
+    const riders = q ? q.riders.slice().sort((a, b) => s2RiderName(a).localeCompare(s2RiderName(b))) : [];
+    return h('div', { class: 'sl-team' },
+      h('div', { class: 'sl-head' }, t && t.jersey ? h('img', { class: 'sl-jsy', src: 'img/jerseys/' + t.jersey + '.png', alt: '' }) : null,
+        h('div', null, t ? h('a', { href: '#s2team-' + i, class: 'sl-name' }, e.team) : h('span', { class: 'sl-name' }, e.team), h('small', null, t ? s2Name(t) : e.name))),
+      riders.length ? h('details', { class: 'sl-squad' }, h('summary', null, 'Squad · ' + riders.length + ' riders'),
+        h('ul', { class: 'sl-riders' }, riders.map((x) => { const href = s2RiderHref(x), nm = s2RiderName(x); return h('li', null, x.cc ? flag(x.cc) : null, href ? h('a', { href }, nm) : nm); }))) : null);
+  });
+  return h('section', { class: 'card' }, h('div', { class: 'card-h' }, h('h2', null, 'Startlist · Day ' + d.day), h('span', { class: 'mute' }, keys.length + ' groups · ' + list.length + ' teams in each')),
+    h('p', { class: 'src' }, 'Seeded random group draw for Day ' + d.day + (d.weeks.length > 1 ? ' (weeks ' + d.weeks.join('–') + ')' : '') + ', posted by Joe in #ipl_announcements on 20 November. Each manager picks the riders who start in the game: the squads are folded under each team.' + (G.not_drawn && G.not_drawn.length ? ' Not in the draw: ' + G.not_drawn.join(', ') + '.' : '')),
+    h('div', { class: 'chips', role: 'group', 'aria-label': 'Group' }, keys.map((g) => h('button', { class: 'chip', type: 'button', 'aria-pressed': String(UI.s2grp === g), onclick: () => { UI.s2grp = g; UI.keepScroll = true; route(); } }, 'Group ' + g))),
+    h('div', { class: 'sl-grid' }, cards));
 }
 function viewRace(ri) {
   const s1 = S.s1, race = s1.races[ri];
@@ -2634,6 +2660,7 @@ Promise.all(['data/s1.json', 'data/league.json', 'data/profiles.json', 'data/poi
       fetch('data/s2_team_nations.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.s2nations = d; }).catch(() => {}),
       fetch('data/s2_objectives.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.s2obj = d; }).catch(() => {}),
       fetch('data/s2_squads.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.s2squads = d; }).catch(() => {}),
+      fetch('data/s2_groups.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.s2groups = d; }).catch(() => {}),
       fetch('data/s2_riders.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.s2riders = d; }).catch(() => {}),
       fetch('data/rules.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.rules = d; }).catch(() => {}),
       fetch('data/race_points.json').then((r) => (r.ok ? r.json() : null)).then((d) => { S.rp = d; }).catch(() => {})]);
