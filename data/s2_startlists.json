@@ -1,6 +1,6 @@
 {
  "source": "managers’ posts in #division-1/2/3 (group A/B/C) on the PCM UK Discord",
- "checked": "2026-11-21T12:21Z",
+ "checked": "2026-11-22T19:42Z",
  "posts": [
   {
    "day": "1",
@@ -291,6 +291,236 @@
      {
       "name": "Per Strand Hagenes",
       "id": 15277
+     }
+    ]
+   }
+  },
+  {
+   "day": "1",
+   "group": "A",
+   "channel": "#division-1",
+   "team": "Rabobank",
+   "by": "Bouke (Mollema fanboy)",
+   "posted": "2026-11-21T13:44Z",
+   "picture": false,
+   "races": {
+    "Classic of Thailand": [
+     {
+      "name": "Alex Aranburu",
+      "id": 5984
+     },
+     {
+      "name": "Alex Molenaar",
+      "id": 6446
+     },
+     {
+      "name": "Guillaume Visser",
+      "id": 8206
+     },
+     {
+      "name": "Otto van Zanden",
+      "id": 8651
+     },
+     {
+      "name": "Sergio Henao",
+      "id": 16039
+     },
+     {
+      "name": "Jaako Hänninen",
+      "id": 7072
+     }
+    ],
+    "NZ Sprint Classic": [
+     {
+      "name": "Max Walscheid",
+      "id": 3630
+     },
+     {
+      "name": "Alex Molenaar",
+      "id": 6446
+     },
+     {
+      "name": "thijs de Vries",
+      "id": 3905
+     },
+     {
+      "name": "Yorben Lauryssen",
+      "id": 8053
+     },
+     {
+      "name": "Bruno Kessler",
+      "id": 4954
+     },
+     {
+      "name": "Nils Sinschek",
+      "id": 7026
+     }
+    ],
+    "Giro del Monza": [
+     {
+      "name": "Bauke Mollema",
+      "id": 16
+     },
+     {
+      "name": "Alex Aranburu",
+      "id": 5984
+     },
+     {
+      "name": "Xandro Meurisse",
+      "id": 3803
+     },
+     {
+      "name": "Georg Zimmermann",
+      "id": 5798
+     },
+     {
+      "name": "Fabian Doubey",
+      "id": 1380
+     },
+     {
+      "name": "Sergio Henao",
+      "id": 16039
+     }
+    ],
+    "Milano San Remo TTT": [
+     {
+      "name": "Guillaume Visser",
+      "id": 8206
+     },
+     {
+      "name": "Yorben Lauryssen",
+      "id": 8053
+     },
+     {
+      "name": "Kay de Bruyckere",
+      "id": 8369
+     },
+     {
+      "name": "Gijs Schoonvelde",
+      "id": 10045
+     },
+     {
+      "name": "Bruno Kessler",
+      "id": 4954
+     },
+     {
+      "name": "Nils Sinschek",
+      "id": 7026
+     }
+    ]
+   }
+  },
+  {
+   "day": "1",
+   "group": "B",
+   "channel": "#division-2",
+   "team": "UnoX",
+   "by": "ivanes04",
+   "posted": "2026-11-21T12:38Z",
+   "picture": false,
+   "races": {
+    "Classic of Thailand": [
+     {
+      "name": "Magnus Cort Nielsen",
+      "id": 3011
+     },
+     {
+      "name": "Edoardo Zambanini",
+      "id": 14276
+     },
+     {
+      "name": "Ådne Holter",
+      "id": 7219
+     },
+     {
+      "name": "Martin Urianstad",
+      "id": 6924
+     },
+     {
+      "name": "Martin Solhaug Hansen",
+      "id": 8366
+     },
+     {
+      "name": "Michael Hettegger",
+      "id": 17434
+     }
+    ],
+    "NZ Sprint Classic": [
+     {
+      "name": "Magnus Cort Nielsen",
+      "id": 3011
+     },
+     {
+      "name": "Edoardo Zambanini",
+      "id": 14276
+     },
+     {
+      "name": "Jelle Vermoote",
+      "id": 4961
+     },
+     {
+      "name": "Kasper Haugland",
+      "id": 9397
+     },
+     {
+      "name": "Michael Hettegger",
+      "id": 17434
+     },
+     {
+      "name": "Georg Rydningen Martinsen",
+      "id": 5250
+     }
+    ],
+    "Giro del Monza": [
+     {
+      "name": "Tobias Halland Johannessen",
+      "id": 13452
+     },
+     {
+      "name": "Magnus Cort Nielsen",
+      "id": 3011
+     },
+     {
+      "name": "Ådne Holter",
+      "id": 7219
+     },
+     {
+      "name": "Cedrik Christophersen",
+      "id": 8550
+     },
+     {
+      "name": "Kasper Haugland",
+      "id": 9397
+     },
+     {
+      "name": "Martin Solhaug Hansen",
+      "id": 8366
+     }
+    ],
+    "Milano San Remo TTT": [
+     {
+      "name": "Niklas Larsen",
+      "id": 5752
+     },
+     {
+      "name": "Rasmus Søjberg Pedersen",
+      "id": 15360
+     },
+     {
+      "name": "Kasper Haugland",
+      "id": 9397
+     },
+     {
+      "name": "Miguel Heidemann",
+      "id": 7197
+     },
+     {
+      "name": "Mikkel Honoré",
+      "id": 6594
+     },
+     {
+      "name": "Filippo Zana",
+      "id": 6713
      }
     ]
    }
