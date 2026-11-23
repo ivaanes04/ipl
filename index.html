@@ -347,22 +347,21 @@ th { font-family: var(--f-display); font-weight: 600; font-size: 13px; letter-sp
 /* favourites (S2 race pages) */
 .fav .chips + .chips { margin-top: -4px; }
 .fav-tiers { display: flex; flex-direction: column; }
-.fav-tier { display: grid; grid-template-columns: 86px minmax(0, 1fr); gap: 12px; align-items: baseline; padding: 9px 2px; border-bottom: 1px solid var(--soft); }
+.fav-tier { display: grid; grid-template-columns: 86px minmax(0, 1fr); gap: 12px; align-items: start; padding: 10px 2px; border-bottom: 1px solid var(--soft); }
 .fav-tier:last-child { border-bottom: 0; }
-.fav-st { font-size: 15px; letter-spacing: 1px; color: #e0a800; white-space: nowrap; }
+.fav-st { font-size: 15px; letter-spacing: 1px; color: #e0a800; white-space: nowrap; padding-top: 4px; }
 .fav-st i { font-style: normal; color: var(--soft); }
-.fav-names { display: flex; flex-wrap: wrap; gap: 4px 0; min-width: 0; }
-.fav-n { display: inline-flex; align-items: baseline; gap: 6px; white-space: nowrap; }
-.fav-n:not(:last-child)::after { content: ","; margin-right: 10px; color: var(--muted); }
-.fav-n > .fl, .fav-n > .mj { align-self: center; }
-.fav-n > a { font-weight: 600; }
-.fav-tm { display: inline-flex; align-items: center; gap: 0; font-size: 12px; color: var(--muted); }
-.fav-tm .mj { width: 16px; height: 16px; margin-right: 3px; }
-.fav-tm a { color: inherit; font-weight: 400; }
+/* every name in a cell of the same width, so the columns line up from one star row to the next */
+.fav-names { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 6px 14px; min-width: 0; }
+.fav-n { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 7px; align-items: center; min-width: 0; padding: 3px 0; }
+.fav-n > a { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fav-n > .mj { margin: 0; width: 18px; height: 18px; }
+.fav-tm { grid-column: 2; display: flex; align-items: center; min-width: 0; font-size: 12px; color: var(--muted); }
+.fav-tm .mj { width: 15px; height: 15px; margin-right: 4px; flex: none; }
+.fav-tm a { color: inherit; font-weight: 400; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .fav-tm a:hover { color: var(--accent); }
-.fav-tier.s5 .fav-n > a { font-size: 16px; }
 .fav-tier:not(.s5):not(.s4) .fav-n > a { font-weight: 500; }
-@media (max-width: 640px) { .fav-tier { grid-template-columns: 1fr; gap: 4px; } }
+@media (max-width: 640px) { .fav-tier { grid-template-columns: 1fr; gap: 6px; } .fav-names { grid-template-columns: minmax(0, 1fr); gap: 2px; } .fav-n { grid-template-columns: auto auto minmax(0, 1fr); } .fav-tm { grid-column: 3; margin-left: 6px; } }
 /* managers table */
 .mgrs td, .stand td { vertical-align: middle; }
 .lrk { display: inline-grid; place-items: center; min-width: 28px; height: 24px; border-radius: 6px; background: var(--soft); font-weight: 600; color: var(--ink); }
@@ -892,7 +891,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.21.2', updated: '2026-11-23T12:29' };
+const SITE = { version: '1.21.3', updated: '2026-11-23T12:35' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0, nat: '' };
 const TODAY = new Date().toISOString().slice(0, 10);
 
