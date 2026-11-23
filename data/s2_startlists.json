@@ -1,6 +1,6 @@
 {
  "source": "managers’ posts in #division-1/2/3 (group A/B/C) on the PCM UK Discord",
- "checked": "2026-11-22T19:42Z",
+ "checked": "2026-11-23T10:51Z",
  "posts": [
   {
    "day": "1",
@@ -314,8 +314,8 @@
       "id": 6446
      },
      {
-      "name": "Guillaume Visser",
-      "id": 8206
+      "name": "Xandro Meurisse",
+      "id": 3803
      },
      {
       "name": "Otto van Zanden",
@@ -366,8 +366,8 @@
       "id": 5984
      },
      {
-      "name": "Xandro Meurisse",
-      "id": 3803
+      "name": "Guillaume Visser",
+      "id": 8206
      },
      {
       "name": "Georg Zimmermann",
@@ -521,6 +521,236 @@
      {
       "name": "Filippo Zana",
       "id": 6713
+     }
+    ]
+   }
+  },
+  {
+   "day": "1",
+   "group": "A",
+   "channel": "#division-1",
+   "team": "Biesse - Carrera - Premac",
+   "by": "Hubi",
+   "posted": "2026-11-22T22:19Z",
+   "picture": false,
+   "races": {
+    "Classic of Thailand": [
+     {
+      "name": "(c) Cristian Scaroni",
+      "id": 7107
+     },
+     {
+      "name": "(c) Matthias Vacek",
+      "id": 7425
+     },
+     {
+      "name": "Marco Frigo",
+      "id": 7126
+     },
+     {
+      "name": "Ludovico Crescioli",
+      "id": 15386
+     },
+     {
+      "name": "Aubin Sparfel",
+      "id": 9427
+     },
+     {
+      "name": "Roberto Capellio",
+      "id": 11435
+     }
+    ],
+    "NZ Sprint Classic": [
+     {
+      "name": "(c) Alessio Magagnotti",
+      "id": 5538
+     },
+     {
+      "name": "Noa Isidore",
+      "id": 15416
+     },
+     {
+      "name": "Folrian Dauphin",
+      "id": 15300
+     },
+     {
+      "name": "Kasper Anderson",
+      "id": 7531
+     },
+     {
+      "name": "Mattia Agostionacio",
+      "id": 12368
+     },
+     {
+      "name": "Tommaso Bambagioni",
+      "id": 9821
+     }
+    ],
+    "Giro del Monza": [
+     {
+      "name": "(c) Davide Piganzoli",
+      "id": 14431
+     },
+     {
+      "name": "(c) Cristian Scaroni",
+      "id": 7107
+     },
+     {
+      "name": "Marco Frigo",
+      "id": 7126
+     },
+     {
+      "name": "Ludovico Crescioli",
+      "id": 15386
+     },
+     {
+      "name": "Aubin Sparfel",
+      "id": 9427
+     },
+     {
+      "name": "Nicola Zumsteg",
+      "id": 11413
+     }
+    ],
+    "Milano San Remo TTT": [
+     {
+      "name": "Matthias Vacek",
+      "id": 7425
+     },
+     {
+      "name": "Davide Piganzoli",
+      "id": 14431
+     },
+     {
+      "name": "Matteo Sobrero",
+      "id": 6739
+     },
+     {
+      "name": "Marco Frigo",
+      "id": 7126
+     },
+     {
+      "name": "Andreas Leknesund",
+      "id": 6692
+     },
+     {
+      "name": "Milan Lanhove",
+      "id": 10064
+     }
+    ]
+   }
+  },
+  {
+   "day": "1",
+   "group": "B",
+   "channel": "#division-2",
+   "team": "Kelme Costa Blanca",
+   "by": "JGCol",
+   "posted": "2026-11-23T05:03Z",
+   "picture": false,
+   "races": {
+    "Classic of Thailand": [
+     {
+      "name": "Jesus Herrada",
+      "id": 2303
+     },
+     {
+      "name": "Jeferson Cepeda",
+      "id": 7118
+     },
+     {
+      "name": "Jan Christen",
+      "id": 15267
+     },
+     {
+      "name": "Brandon Rivera",
+      "id": 7090
+     },
+     {
+      "name": "Jon Barrenetxea",
+      "id": 7442
+     },
+     {
+      "name": "Henok Mulubrhan",
+      "id": 7370
+     }
+    ],
+    "NZ Sprint Classic": [
+     {
+      "name": "Bryan Coquard",
+      "id": 3060
+     },
+     {
+      "name": "Matteo Moschetti",
+      "id": 6548
+     },
+     {
+      "name": "Martin Herreño",
+      "id": 12027
+     },
+     {
+      "name": "Jose Ibañez",
+      "id": 4869
+     },
+     {
+      "name": "Iker Gomez",
+      "id": 9830
+     },
+     {
+      "name": "Eñaut Urkaregi",
+      "id": 12426
+     }
+    ],
+    "Giro del Monza": [
+     {
+      "name": "Juan Ayuso",
+      "id": 7399
+     },
+     {
+      "name": "Felix Gall",
+      "id": 6028
+     },
+     {
+      "name": "Ivan Sosa",
+      "id": 6000
+     },
+     {
+      "name": "Diego Quintero",
+      "id": 5481
+     },
+     {
+      "name": "Camilo Ardila",
+      "id": 7055
+     },
+     {
+      "name": "Eñaut Urkaregi",
+      "id": 12426
+     }
+    ],
+    "Milano San Remo TTT": [
+     {
+      "name": "Juan Ayuso",
+      "id": 7399
+     },
+     {
+      "name": "Jesus Herrada",
+      "id": 2303
+     },
+     {
+      "name": "Harold Tejada",
+      "id": 7054
+     },
+     {
+      "name": "Alberto Bettiol",
+      "id": 3362
+     },
+     {
+      "name": "Jan Christen",
+      "id": 15267
+     },
+     {
+      "name": "Stefan Bisseger",
+      "id": 6609
      }
     ]
    }
