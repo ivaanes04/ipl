@@ -346,16 +346,19 @@ th { font-family: var(--f-display); font-weight: 600; font-size: 13px; letter-sp
 .sl-team.wait { opacity: .7; }
 /* favourites (S2 race pages) */
 .fav .chips + .chips { margin-top: -4px; }
-.fav-list { list-style: none; margin: 0; padding: 0; columns: 3 300px; column-gap: 24px; }
-.fav-r { break-inside: avoid; display: grid; grid-template-columns: 78px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 7px 2px; border-bottom: 1px solid var(--soft); }
-.fav-st { font-size: 14px; letter-spacing: 1px; color: #e0a800; white-space: nowrap; }
+.fav-tiers { display: flex; flex-direction: column; }
+.fav-tier { display: grid; grid-template-columns: 86px minmax(0, 1fr); gap: 12px; align-items: baseline; padding: 9px 2px; border-bottom: 1px solid var(--soft); }
+.fav-tier:last-child { border-bottom: 0; }
+.fav-st { font-size: 15px; letter-spacing: 1px; color: #e0a800; white-space: nowrap; }
 .fav-st i { font-style: normal; color: var(--soft); }
-.fav-n { min-width: 0; display: block; line-height: 1.3; }
-.fav-n > .fl { margin-right: 6px; vertical-align: -1px; }
+.fav-names { display: flex; flex-wrap: wrap; gap: 4px 0; min-width: 0; }
+.fav-n { display: inline-flex; align-items: baseline; gap: 6px; white-space: nowrap; }
+.fav-n:not(:last-child)::after { content: ","; margin-right: 10px; color: var(--muted); }
+.fav-n > .fl, .fav-n > .mj { align-self: center; }
 .fav-n > a { font-weight: 600; }
-.fav-n small { display: block; margin-top: 2px; font-size: 12px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.fav-r.s5 .fav-n > a { font-size: 16px; }
-.fav-sc { font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
+.fav-tier.s5 .fav-n > a { font-size: 16px; }
+.fav-tier:not(.s5):not(.s4) .fav-n > a { font-weight: 500; }
+@media (max-width: 640px) { .fav-tier { grid-template-columns: 1fr; gap: 4px; } }
 /* managers table */
 .mgrs td, .stand td { vertical-align: middle; }
 .lrk { display: inline-grid; place-items: center; min-width: 28px; height: 24px; border-radius: 6px; background: var(--soft); font-weight: 600; color: var(--ink); }
@@ -885,7 +888,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.21.0', updated: '2026-11-23T12:07' };
+const SITE = { version: '1.21.1', updated: '2026-11-23T12:23' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0, nat: '' };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -1871,15 +1874,18 @@ function s2Favourites(r) {
   rows.sort((a, b) => b.score - a.score);
   const best = rows.length ? rows[0].score : 0;
   rows.forEach((x) => { x.stars = favStars(best - x.score); });
-  const shown = ttt ? rows : rows.filter((x) => x.stars > 0).slice(0, 15);
+  const shown = ttt ? rows : rows.filter((x) => x.stars > 0).slice(0, 25);
+  // one row per star level (5 to 1), names in order of score, like the PCS favourites box
+  const name = (x) => {
+    const [ti, t] = teamOf(x.post.team), tip = (ttt ? (t ? s2Name(t) : x.post.by) : x.post.team) + ' · ' + x.score.toFixed(1);
+    if (ttt) return h('span', { class: 'fav-n', title: tip }, jsy(t), ti >= 0 ? h('a', { href: '#s2team-' + ti }, x.post.team) : x.post.team);
+    const cc = ((S.s2squads && S.s2squads.teams[x.post.team] && S.s2squads.teams[x.post.team].riders) || []).find((q) => q.id === x.id)?.cc;
+    return h('span', { class: 'fav-n', title: tip }, flag(cc), h('a', { href: '#s2rider-' + x.id }, x.rd.name));
+  };
+  const tiers = [5, 4, 3, 2, 1].map((n) => [n, shown.filter((x) => x.stars === n)]).filter(([, l]) => l.length);
   const body = !w ? h('p', { class: 'empty' }, 'No favourites for this stage: its type is not known.')
     : !shown.length ? h('p', { class: 'empty' }, 'No startlist posted yet in Group ' + UI.s2grp + '.')
-    : h('ol', { class: 'fav-list' }, shown.map((x) => {
-      const [ti, t] = teamOf(x.post.team);
-      const who = ttt ? h('span', { class: 'fav-n' }, jsy(t), ti >= 0 ? h('a', { href: '#s2team-' + ti }, x.post.team) : x.post.team, h('small', null, t ? s2Name(t) : x.post.by))
-        : h('span', { class: 'fav-n' }, flag(((S.s2squads && S.s2squads.teams[x.post.team] && S.s2squads.teams[x.post.team].riders) || []).find((q) => q.id === x.id)?.cc), h('a', { href: '#s2rider-' + x.id }, x.rd.name), h('small', null, jsy(t), x.post.team));
-      return h('li', { class: 'fav-r s' + x.stars }, starsEl(x.stars), who, h('span', { class: 'fav-sc', title: 'Weighted PCM rating for this stage' }, x.score.toFixed(1)));
-    }));
+    : h('div', { class: 'fav-tiers' }, tiers.map(([n, l]) => h('div', { class: 'fav-tier s' + n }, starsEl(n), h('div', { class: 'fav-names' }, l.map(name)))));
   const wTxt = w ? Object.entries(w).map(([k, x]) => k + ' ' + Math.round(x * 100) + '%').join(' · ') : '';
   return h('section', { class: 'card fav' },
     h('div', { class: 'card-h' }, h('h2', null, 'Favourites · Group ' + UI.s2grp), w ? h('span', { class: 'mute' }, ttt ? 'team time trial' : FAV_NAME[kind]) : null),
