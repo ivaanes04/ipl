@@ -344,6 +344,18 @@ th { font-family: var(--f-display); font-weight: 600; font-size: 13px; letter-sp
 .sl-rk.pod { color: var(--ink); font-weight: 700; }
 .sl-none { margin: 0; padding: 12px; font-size: 13px; color: var(--muted); font-style: italic; }
 .sl-team.wait { opacity: .7; }
+/* favourites (S2 race pages) */
+.fav .chips + .chips { margin-top: -4px; }
+.fav-list { list-style: none; margin: 0; padding: 0; columns: 3 300px; column-gap: 24px; }
+.fav-r { break-inside: avoid; display: grid; grid-template-columns: 78px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 7px 2px; border-bottom: 1px solid var(--soft); }
+.fav-st { font-size: 14px; letter-spacing: 1px; color: #e0a800; white-space: nowrap; }
+.fav-st i { font-style: normal; color: var(--soft); }
+.fav-n { min-width: 0; display: block; line-height: 1.3; }
+.fav-n > .fl { margin-right: 6px; vertical-align: -1px; }
+.fav-n > a { font-weight: 600; }
+.fav-n small { display: block; margin-top: 2px; font-size: 12px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fav-r.s5 .fav-n > a { font-size: 16px; }
+.fav-sc { font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
 /* managers table */
 .mgrs td, .stand td { vertical-align: middle; }
 .lrk { display: inline-grid; place-items: center; min-width: 28px; height: 24px; border-radius: 6px; background: var(--soft); font-weight: 600; color: var(--ink); }
@@ -873,7 +885,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.20.3', updated: '2026-11-23T11:51' };
+const SITE = { version: '1.21.0', updated: '2026-11-23T12:07' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0, nat: '' };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -1801,7 +1813,80 @@ function viewS2Race(i) {
     }).filter(Boolean);
     if (parts.length) $view.append(card('Climbs and sprints', null, parts));
   }
+  const fav = s2Favourites(r); if (fav) $view.append(fav);
   $view.append(s2Startlist(r));
+}
+// Favourites (PCS / PCM style stars): every rider of the posted startlists of the chosen group, scored with his
+// PCM 26 ratings (data/s2_riders.json) weighted by the stage type (data/stage_types.json). An estimate, not a game number.
+const FAV_W = {
+  p1: { SP: 0.5, ACC: 0.3, FL: 0.2 },
+  p2: { SP: 0.35, ACC: 0.25, HIL: 0.25, FL: 0.15 },
+  p2h: { HIL: 0.45, ACC: 0.2, SP: 0.2, MM: 0.15 },
+  p3: { HIL: 0.5, ACC: 0.3, MM: 0.2 },
+  p4: { MO: 0.45, MM: 0.25, HIL: 0.15, DH: 0.15 },
+  p5: { MO: 0.75, MM: 0.15, ACC: 0.1 },
+  cob: { COB: 0.5, FL: 0.25, HIL: 0.15, SP: 0.1 },
+  tt: { TT: 0.8, PRL: 0.2 },
+  pro: { PRL: 0.7, TT: 0.3 },
+  gc: { MO: 0.35, MM: 0.2, TT: 0.2, REC: 0.15, HIL: 0.1 },
+};
+const FAV_NAME = { p1: 'flat', p2: 'hills, flat finish (ProfileScore under 60)', p2h: 'hills, flat finish (ProfileScore 60+)', p3: 'uphill finish', p4: 'mountains, flat finish', p5: 'summit finish', cob: 'cobbles', tt: 'time trial', pro: 'prologue (under 12 km)', gc: 'general classification' };
+const FAV_STARS = [1, 2.5, 4, 6, 8]; // points behind the best score for 5, 4, 3, 2 and 1 stars
+function favKind(t) {
+  if (!t) return null;
+  if (t.tt) return t.km && t.km < 12 ? 'pro' : 'tt';
+  if (t.cobbles) return 'cob';
+  if (t.icon === 'p2' && t.ps != null && t.ps >= 60) return 'p2h';
+  return FAV_W[t.icon] ? t.icon : null;
+}
+const favScore = (st, w) => Object.entries(w).reduce((a, [k, x]) => a + x * (st[k] || 0), 0);
+const favStars = (gap) => { const i = FAV_STARS.findIndex((g) => gap < g); return i < 0 ? 0 : 5 - i; };
+const starsEl = (n) => h('span', { class: 'fav-st', title: n + (n === 1 ? ' star' : ' stars'), 'aria-label': n + ' stars' }, '★'.repeat(n), h('i', null, '★'.repeat(5 - n)));
+function s2Favourites(r) {
+  const G = S.s2groups, d = G && G.days.find((x) => x.weeks.join(',') === r.weeks);
+  const posts = ((S.s2start && S.s2start.posts) || []).filter((p) => d && p.day === d.day && p.races[r.race]);
+  if (!d || !posts.length || !S.s2riders) return null;
+  const keys = Object.keys(d.groups);
+  if (!keys.includes(UI.s2grp)) UI.s2grp = keys[0];
+  const mine = posts.filter((p) => p.group === UI.s2grp);
+  const T = (S.s2signups && S.s2signups.teams) || [];
+  const multi = r.list.length > 1;
+  const opts = multi ? ['gc', ...r.list.map((p, k) => k)] : [0];
+  if (!opts.includes(UI.favSt)) UI.favSt = opts[0];
+  const p = UI.favSt === 'gc' ? null : r.list[UI.favSt], tp = p ? stageTypeOf(s2Key(p)) : null;
+  const kind = p ? favKind(tp) : 'gc', w = kind && FAV_W[kind];
+  const ttt = !multi && /\bTTT\b/.test(r.race);
+  const teamOf = (name) => { const i = T.findIndex((x) => x.team === name); return [i, T[i]]; };
+  const jsy = (t) => (t && t.jersey ? h('img', { class: 'mj', src: 'img/jerseys/' + t.jersey + '.png', alt: '' }) : null);
+  let rows = [], skipped = 0;
+  if (w && ttt) {
+    rows = mine.map((post) => { const ids = post.races[r.race].map((x) => x.id).filter((id) => id != null && S.s2riders[id]); skipped += post.races[r.race].length - ids.length; return { post, n: ids.length, score: ids.length ? ids.reduce((a, id) => a + favScore(S.s2riders[id].stats, w), 0) / ids.length : 0 }; }).filter((x) => x.n);
+  } else if (w) {
+    for (const post of mine) for (const x of post.races[r.race]) {
+      const rd = x.id != null && S.s2riders[x.id];
+      if (!rd) { skipped++; continue; }
+      rows.push({ post, id: x.id, rd, score: favScore(rd.stats, w) });
+    }
+  }
+  rows.sort((a, b) => b.score - a.score);
+  const best = rows.length ? rows[0].score : 0;
+  rows.forEach((x) => { x.stars = favStars(best - x.score); });
+  const shown = ttt ? rows : rows.filter((x) => x.stars > 0).slice(0, 15);
+  const body = !w ? h('p', { class: 'empty' }, 'No favourites for this stage: its type is not known.')
+    : !shown.length ? h('p', { class: 'empty' }, 'No startlist posted yet in Group ' + UI.s2grp + '.')
+    : h('ol', { class: 'fav-list' }, shown.map((x) => {
+      const [ti, t] = teamOf(x.post.team);
+      const who = ttt ? h('span', { class: 'fav-n' }, jsy(t), ti >= 0 ? h('a', { href: '#s2team-' + ti }, x.post.team) : x.post.team, h('small', null, t ? s2Name(t) : x.post.by))
+        : h('span', { class: 'fav-n' }, flag(((S.s2squads && S.s2squads.teams[x.post.team] && S.s2squads.teams[x.post.team].riders) || []).find((q) => q.id === x.id)?.cc), h('a', { href: '#s2rider-' + x.id }, x.rd.name), h('small', null, jsy(t), x.post.team));
+      return h('li', { class: 'fav-r s' + x.stars }, starsEl(x.stars), who, h('span', { class: 'fav-sc', title: 'Weighted PCM rating for this stage' }, x.score.toFixed(1)));
+    }));
+  const wTxt = w ? Object.entries(w).map(([k, x]) => k + ' ' + Math.round(x * 100) + '%').join(' · ') : '';
+  return h('section', { class: 'card fav' },
+    h('div', { class: 'card-h' }, h('h2', null, 'Favourites · Group ' + UI.s2grp), w ? h('span', { class: 'mute' }, ttt ? 'team time trial' : FAV_NAME[kind]) : null),
+    h('div', { class: 'chips', role: 'group', 'aria-label': 'Group' }, keys.map((g) => h('button', { class: 'chip', type: 'button', 'aria-pressed': String(UI.s2grp === g), onclick: () => { UI.s2grp = g; UI.keepScroll = true; route(); } }, 'Group ' + g))),
+    multi ? h('div', { class: 'chips', role: 'group', 'aria-label': 'Stage' }, opts.map((o) => h('button', { class: 'chip', type: 'button', 'aria-pressed': String(UI.favSt === o), onclick: () => { UI.favSt = o; UI.keepScroll = true; route(); } }, o === 'gc' ? 'GC' : 'Stage ' + r.list[o].stage))) : null,
+    body,
+    w ? h('p', { class: 'src' }, 'Estimate, not a game or league figure: each rider of the startlists posted in Group ' + UI.s2grp + ' (' + mine.length + ' of ' + d.groups[UI.s2grp].length + ' teams so far) is scored with his PCM 26 ratings, weighted for this stage (' + wTxt + ')' + (ttt ? ', averaged over the team’s six riders' : '') + '. Stars by how far behind the best score: 5★ within ' + FAV_STARS[0] + ' point, then ' + FAV_STARS.slice(1).join(', ') + ' points.' + (skipped ? ' ' + skipped + (skipped === 1 ? ' rider' : ' riders') + ' left out: not matched to a rider of the squad.' : '')) : null);
 }
 // Season 2 startlist before the race: the group draw (data/s2_groups.json, tools/make_s2_groups.py) and, for each team,
 // the six riders its manager posted for this race in his group's channel (data/s2_startlists.json, tools/make_s2_startlists.py)
