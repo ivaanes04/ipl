@@ -356,6 +356,10 @@ th { font-family: var(--f-display); font-weight: 600; font-size: 13px; letter-sp
 .fav-n:not(:last-child)::after { content: ","; margin-right: 10px; color: var(--muted); }
 .fav-n > .fl, .fav-n > .mj { align-self: center; }
 .fav-n > a { font-weight: 600; }
+.fav-tm { display: inline-flex; align-items: center; gap: 0; font-size: 12px; color: var(--muted); }
+.fav-tm .mj { width: 16px; height: 16px; margin-right: 3px; }
+.fav-tm a { color: inherit; font-weight: 400; }
+.fav-tm a:hover { color: var(--accent); }
 .fav-tier.s5 .fav-n > a { font-size: 16px; }
 .fav-tier:not(.s5):not(.s4) .fav-n > a { font-weight: 500; }
 @media (max-width: 640px) { .fav-tier { grid-template-columns: 1fr; gap: 4px; } }
@@ -888,7 +892,7 @@ const S = {};
 // site version and time of the last data/content update: tools/stamp.py bumps both before each publish.
 // The footer says whether you are looking at the live site (iplmulti.pages.dev) or the preview (Claude artifact).
 const PREVIEW = !/pages\.dev$|github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
-const SITE = { version: '1.21.1', updated: '2026-11-23T12:23' };
+const SITE = { version: '1.21.2', updated: '2026-11-23T12:29' };
 const UI = { round: null, timer: null, race: {}, q: '', rankDiv: 0, nat: '' };
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -1880,7 +1884,7 @@ function s2Favourites(r) {
     const [ti, t] = teamOf(x.post.team), tip = (ttt ? (t ? s2Name(t) : x.post.by) : x.post.team) + ' · ' + x.score.toFixed(1);
     if (ttt) return h('span', { class: 'fav-n', title: tip }, jsy(t), ti >= 0 ? h('a', { href: '#s2team-' + ti }, x.post.team) : x.post.team);
     const cc = ((S.s2squads && S.s2squads.teams[x.post.team] && S.s2squads.teams[x.post.team].riders) || []).find((q) => q.id === x.id)?.cc;
-    return h('span', { class: 'fav-n', title: tip }, flag(cc), h('a', { href: '#s2rider-' + x.id }, x.rd.name));
+    return h('span', { class: 'fav-n', title: tip }, flag(cc), h('a', { href: '#s2rider-' + x.id }, x.rd.name), h('small', { class: 'fav-tm' }, jsy(t), ti >= 0 ? h('a', { href: '#s2team-' + ti }, x.post.team) : x.post.team));
   };
   const tiers = [5, 4, 3, 2, 1].map((n) => [n, shown.filter((x) => x.stars === n)]).filter(([, l]) => l.length);
   const body = !w ? h('p', { class: 'empty' }, 'No favourites for this stage: its type is not known.')
