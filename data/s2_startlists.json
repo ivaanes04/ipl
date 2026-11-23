@@ -1,6 +1,6 @@
 {
  "source": "managers’ posts in #division-1/2/3 (group A/B/C) on the PCM UK Discord",
- "checked": "2026-11-23T10:51Z",
+ "checked": "2026-11-23T21:27Z",
  "posts": [
   {
    "day": "1",
@@ -751,6 +751,125 @@
      {
       "name": "Stefan Bisseger",
       "id": 6609
+     }
+    ]
+   }
+  },
+  {
+   "day": "1",
+   "group": "A",
+   "channel": "#division-1",
+   "team": "MTN Qhubeka",
+   "by": "Joewhiteley0711",
+   "posted": "2026-11-23T21:21Z",
+   "picture": false,
+   "races": {
+    "Classic of Thailand": [
+     {
+      "name": "Ramses Debruyne",
+      "id": 15206
+     },
+     {
+      "name": "Byron Munton",
+      "id": 13948
+     },
+     {
+      "name": "Sean Quinn",
+      "id": 6809
+     },
+     {
+      "name": "Merhawi Kudus",
+      "id": 3466
+     },
+     {
+      "name": "Nahom Zerai",
+      "id": 15000
+     },
+     {
+      "name": "Marcel Camprubi",
+      "id": 4310
+     }
+    ],
+    "NZ Sprint Classic": [
+     {
+      "name": "Filippo Fiorelli",
+      "id": 7062
+     },
+     {
+      "name": "Ben Oliver",
+      "id": 4439
+     },
+     {
+      "name": "Rayan Boulahoite",
+      "id": 8702
+     },
+     {
+      "name": "Alexander Konychev",
+      "id": 7069
+     },
+     {
+      "name": "Joe Pidcock",
+      "id": 7546
+     },
+     {
+      "name": "RJVR",
+      "id": 2658
+     }
+    ],
+    "Giro del Monza": [
+     {
+      "name": "Tom Pidcock",
+      "id": 6501
+     },
+     {
+      "name": "DLC",
+      "id": 1978
+     },
+     {
+      "name": "Ramses Debruyne",
+      "id": 15206
+     },
+     {
+      "name": "Byron Munton",
+      "id": 13948
+     },
+     {
+      "name": "Ammanuel Ghebreigzabhier",
+      "id": 6357
+     },
+     {
+      "name": "Marcel Camprubi",
+      "id": 4310
+     },
+     {
+      "name": "Joe Pidcock",
+      "id": 7546
+     }
+    ],
+    "Milano San Remo TTT": [
+     {
+      "name": "DLC",
+      "id": 1978
+     },
+     {
+      "name": "Damien Howson",
+      "id": 3386
+     },
+     {
+      "name": "Byron Munton",
+      "id": 13948
+     },
+     {
+      "name": "Xabier Azparren",
+      "id": 7445
+     },
+     {
+      "name": "Rayan Boulahoite",
+      "id": 8702
+     },
+     {
+      "name": "Kelland O'Brien",
+      "id": 14302
      }
     ]
    }
