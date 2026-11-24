@@ -1,6 +1,6 @@
 {
  "source": "managers’ posts in #division-1/2/3 (group A/B/C) on the PCM UK Discord",
- "checked": "2026-11-24T11:49Z",
+ "checked": "2026-11-24T16:31Z",
  "posts": [
   {
    "day": "1",
@@ -870,6 +870,121 @@
      {
       "name": "Kelland O'Brien",
       "id": 14302
+     }
+    ]
+   }
+  },
+  {
+   "day": "1",
+   "group": "B",
+   "channel": "#division-2",
+   "team": "Unibet Rose Rockets",
+   "by": "firejohn",
+   "posted": "2026-11-24T16:30Z",
+   "picture": false,
+   "races": {
+    "Classic of Thailand": [
+     {
+      "name": "Henri Uhlig",
+      "id": 7206
+     },
+     {
+      "name": "Moritz Kretschy",
+      "id": 7577
+     },
+     {
+      "name": "Adne van Engelen",
+      "id": 15095
+     },
+     {
+      "name": "Jardi van der Lee",
+      "id": 9457
+     },
+     {
+      "name": "Axel Mariault",
+      "id": 4276
+     },
+     {
+      "name": "Victor Lafay",
+      "id": 5507
+     }
+    ],
+    "NZ Sprint Classic": [
+     {
+      "name": "Silvan Dillier",
+      "id": 3392
+     },
+     {
+      "name": "Arthur Blaise",
+      "id": 15684
+     },
+     {
+      "name": "Tomas Kopecky",
+      "id": 11230
+     },
+     {
+      "name": "Owen Geleijn",
+      "id": 7301
+     },
+     {
+      "name": "Arvid de Kleijn",
+      "id": 3866
+     },
+     {
+      "name": "Martijn Rasenberg",
+      "id": 8462
+     }
+    ],
+    "Giro del Monza": [
+     {
+      "name": "Silvan Dillier",
+      "id": 3392
+     },
+     {
+      "name": "Julian Alaphilippe",
+      "id": 3365
+     },
+     {
+      "name": "Tijmen Graat",
+      "id": 4261
+     },
+     {
+      "name": "Jardi van der Lee",
+      "id": 9457
+     },
+     {
+      "name": "Eivind Fougner",
+      "id": 8367
+     },
+     {
+      "name": "Cian Uijtdebroeks",
+      "id": 13471
+     }
+    ],
+    "Milano San Remo TTT": [
+     {
+      "name": "Arthur Blaise",
+      "id": 15684
+     },
+     {
+      "name": "Wessel Mouris",
+      "id": 8135
+     },
+     {
+      "name": "Tomas Kopecky",
+      "id": 11230
+     },
+     {
+      "name": "Ryan Gal",
+      "id": 9252
+     },
+     {
+      "name": "Sjoerd Bax",
+      "id": 3901
+     },
+     {
+      "name": "Colin Savioz",
+      "id": 8471
      }
     ]
    }
