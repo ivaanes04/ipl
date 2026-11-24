@@ -1,6 +1,6 @@
 {
  "source": "managers’ posts in #division-1/2/3 (group A/B/C) on the PCM UK Discord",
- "checked": "2026-11-23T21:27Z",
+ "checked": "2026-11-24T11:49Z",
  "posts": [
   {
    "day": "1",
@@ -1204,8 +1204,8 @@
    "races": {
     "Classic of Thailand": [
      {
-      "name": "v Aert W",
-      "id": 5978
+      "name": "Vendrame A",
+      "id": 6001
      },
      {
       "name": "Velasco S",
@@ -1534,6 +1534,121 @@
      {
       "name": "Julian Borresch",
       "id": 14508
+     }
+    ]
+   }
+  },
+  {
+   "day": "1",
+   "group": "C",
+   "channel": "#division-3",
+   "team": "B&B Hotels",
+   "by": "Tom Bryant [RKTS]",
+   "posted": "2026-11-24T11:18Z",
+   "picture": false,
+   "races": {
+    "Classic of Thailand": [
+     {
+      "name": "Louis Barré",
+      "id": 7761
+     },
+     {
+      "name": "Gianmarco Garofoli",
+      "id": 7497
+     },
+     {
+      "name": "Louis Rouland",
+      "id": 15710
+     },
+     {
+      "name": "Edoardo Zamperini",
+      "id": 15265
+     },
+     {
+      "name": "Timothée Coudière-Cantin",
+      "id": 17612
+     },
+     {
+      "name": "Diego Bracalente",
+      "id": 8431
+     }
+    ],
+    "NZ Sprint Classic": [
+     {
+      "name": "Paul Magnier",
+      "id": 15675
+     },
+     {
+      "name": "Timo Kielich",
+      "id": 14183
+     },
+     {
+      "name": "Sandy Dujardin",
+      "id": 7045
+     },
+     {
+      "name": "Sébastien Grignard",
+      "id": 6743
+     },
+     {
+      "name": "Paul Conor",
+      "id": 11406
+     },
+     {
+      "name": "Lénaïc Langella",
+      "id": 15613
+     }
+    ],
+    "Giro del Monza": [
+     {
+      "name": "Louis Barré",
+      "id": 7761
+     },
+     {
+      "name": "Gianmarco Garofoli",
+      "id": 7497
+     },
+     {
+      "name": "Louis Rouland",
+      "id": 15710
+     },
+     {
+      "name": "Paul Conor",
+      "id": 11406
+     },
+     {
+      "name": "Diego Bracalente",
+      "id": 8431
+     },
+     {
+      "name": "Lénaïc Langella",
+      "id": 15613
+     }
+    ],
+    "Milano San Remo TTT": [
+     {
+      "name": "Mauro Schmid",
+      "id": 7193
+     },
+     {
+      "name": "Romain Grégoire",
+      "id": 14395
+     },
+     {
+      "name": "Tim Wellens",
+      "id": 3030
+     },
+     {
+      "name": "Clément Berthet",
+      "id": 7422
+     },
+     {
+      "name": "Pavel Sivakov",
+      "id": 6327
+     },
+     {
+      "name": "Andrea Raccagni Noviero",
+      "id": 8455
      }
     ]
    }
