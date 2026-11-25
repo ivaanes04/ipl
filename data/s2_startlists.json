@@ -1,6 +1,6 @@
 {
  "source": "managers’ posts in #division-1/2/3 (group A/B/C) on the PCM UK Discord",
- "checked": "2026-11-24T16:31Z",
+ "checked": "2026-11-25T11:15Z",
  "posts": [
   {
    "day": "1",
@@ -993,6 +993,121 @@
    "day": "1",
    "group": "B",
    "channel": "#division-2",
+   "team": "FEIRENSE - BEECELER",
+   "by": "joaoluis0959",
+   "posted": "2026-11-24T23:51Z",
+   "picture": false,
+   "races": {
+    "Classic of Thailand": [
+     {
+      "name": "Jonathan Narvaez",
+      "id": 6247
+     },
+     {
+      "name": "Pau Miquel",
+      "id": 14953
+     },
+     {
+      "name": "Tim van Dijke",
+      "id": 7308
+     },
+     {
+      "name": "Menno Huising",
+      "id": 15513
+     },
+     {
+      "name": "Thibaud Gruel",
+      "id": 15510
+     },
+     {
+      "name": "Xabier Isasa",
+      "id": 14922
+     }
+    ],
+    "NZ Sprint Classic": [
+     {
+      "name": "Biniam Girmay",
+      "id": 7110
+     },
+     {
+      "name": "Thibaud Gruel",
+      "id": 15510
+     },
+     {
+      "name": "Benjamín Prades",
+      "id": 6565
+     },
+     {
+      "name": "Tomas Contte",
+      "id": 12276
+     },
+     {
+      "name": "Fergus Browning",
+      "id": 8226
+     },
+     {
+      "name": "Carlos Miguel Salgueiro",
+      "id": 12473
+     }
+    ],
+    "Giro del Monza": [
+     {
+      "name": "Jhonatan Narvaez",
+      "id": 6247
+     },
+     {
+      "name": "Finn Fisher-Black",
+      "id": 7300
+     },
+     {
+      "name": "Tiesj Benoot",
+      "id": 3687
+     },
+     {
+      "name": "Juan Pedro López",
+      "id": 6971
+     },
+     {
+      "name": "Rui Carvalho",
+      "id": 14560
+     },
+     {
+      "name": "Harrison Wood",
+      "id": 7131
+     }
+    ],
+    "Milano San Remo TTT": [
+     {
+      "name": "Primoz Roglic",
+      "id": 3280
+     },
+     {
+      "name": "Tim van Dijke",
+      "id": 7308
+     },
+     {
+      "name": "Finn Fisher-Black",
+      "id": 7300
+     },
+     {
+      "name": "Daan Hoole",
+      "id": 6567
+     },
+     {
+      "name": "Sven Erik Bystrøm",
+      "id": 3701
+     },
+     {
+      "name": "Will Barta",
+      "id": 3932
+     }
+    ]
+   }
+  },
+  {
+   "day": "1",
+   "group": "B",
+   "channel": "#division-2",
    "team": "Talkwalker",
    "by": "benjong",
    "posted": "2026-11-20T16:28Z",
@@ -1193,24 +1308,24 @@
     ],
     "Milano San Remo TTT": [
      {
-      "name": "Brun N.",
-      "id": 15341
+      "name": "Sommer J.",
+      "id": null
      },
      {
-      "name": "Hue A.",
-      "id": 9350
+      "name": "Bleddyn O.",
+      "id": 8657
+     },
+     {
+      "name": "Currie L.",
+      "id": 13854
      },
      {
       "name": "Lienhard F.",
       "id": 6200
      },
      {
-      "name": "Sommer J.",
-      "id": null
-     },
-     {
-      "name": "Currie L.",
-      "id": 13854
+      "name": "Leidert L.",
+      "id": 15810
      },
      {
       "name": "Barhoumi I.",
@@ -1764,6 +1879,240 @@
      {
       "name": "Andrea Raccagni Noviero",
       "id": 8455
+     }
+    ]
+   }
+  },
+  {
+   "day": "1",
+   "group": "C",
+   "channel": "#division-3",
+   "team": "Modern Adventure",
+   "by": "SeanColl",
+   "posted": "2026-11-24T21:53Z",
+   "picture": false,
+   "races": {
+    "Classic of Thailand": [
+     {
+      "name": "Luke Lamperti",
+      "id": 12774
+     },
+     {
+      "name": "Max Schachmann",
+      "id": 3257
+     },
+     {
+      "name": "Clement Venturini",
+      "id": 3406
+     },
+     {
+      "name": "Milan Fretin",
+      "id": 7602
+     },
+     {
+      "name": "Baptiste Gillet",
+      "id": 15748
+     },
+     {
+      "name": "Jorge Arcas",
+      "id": 5630
+     }
+    ],
+    "NZ Sprint Classic": [
+     {
+      "name": "Riley Pickrell",
+      "id": 7560
+     },
+     {
+      "name": "Dion Smith",
+      "id": 5711
+     },
+     {
+      "name": "Milan Fretin",
+      "id": 7602
+     },
+     {
+      "name": "Erlend Blikra",
+      "id": 6136
+     },
+     {
+      "name": "Enzo Hincapie",
+      "id": 17209
+     },
+     {
+      "name": "Baptiste Gillet",
+      "id": 15748
+     }
+    ],
+    "Giro del Monza": [
+     {
+      "name": "Guilio Ciccone",
+      "id": 5675
+     },
+     {
+      "name": "Bruno Armirail",
+      "id": 3957
+     },
+     {
+      "name": "Rudy Molard",
+      "id": 2542
+     },
+     {
+      "name": "Max Schachmann",
+      "id": 3257
+     },
+     {
+      "name": "Jambaljants Sainbayer",
+      "id": 11707
+     },
+     {
+      "name": "Josh Burnett",
+      "id": 4434
+     }
+    ],
+    "Milano San Remo TTT": [
+     {
+      "name": "Jay Vine",
+      "id": 7424
+     },
+     {
+      "name": "Stefan Kung",
+      "id": 3708
+     },
+     {
+      "name": "Bruno Armirail",
+      "id": 3957
+     },
+     {
+      "name": "Magnus Sheffield",
+      "id": 15048
+     },
+     {
+      "name": "Max Schachmann",
+      "id": 3257
+     },
+     {
+      "name": "Cristian Rodriguez",
+      "id": 5658
+     },
+     {
+      "name": "Joshua Kench",
+      "id": 15137
+     }
+    ]
+   }
+  },
+  {
+   "day": "1",
+   "group": "C",
+   "channel": "#division-3",
+   "team": "Portugal in 150 Seconds",
+   "by": "Bessa4delas",
+   "posted": "2026-11-24T21:57Z",
+   "picture": false,
+   "races": {
+    "Classic of Thailand": [
+     {
+      "name": "Milan Jonathan",
+      "id": 7406
+     },
+     {
+      "name": "Tratnik Jan",
+      "id": 2268
+     },
+     {
+      "name": "Gachignard Thomas",
+      "id": 15315
+     },
+     {
+      "name": "Peña Jesús David",
+      "id": 7086
+     },
+     {
+      "name": "Pinto Pedro",
+      "id": 10610
+     },
+     {
+      "name": "Novikov Savva",
+      "id": 7378
+     }
+    ],
+    "NZ Sprint Classic": [
+     {
+      "name": "Milan Jonathan",
+      "id": 7406
+     },
+     {
+      "name": "Kopecký Matyáš",
+      "id": 4139
+     },
+     {
+      "name": "Ackermann Pascal",
+      "id": 5939
+     },
+     {
+      "name": "Mikutis Aivaras",
+      "id": 13757
+     },
+     {
+      "name": "Lopes Lucas",
+      "id": 15378
+     },
+     {
+      "name": "Huyet Baptiste",
+      "id": 7759
+     }
+    ],
+    "Giro del Monza": [
+     {
+      "name": "Landa Mikel",
+      "id": 1992
+     },
+     {
+      "name": "Oliveira Nélson",
+      "id": 1975
+     },
+     {
+      "name": "Tratnik Jan",
+      "id": 2268
+     },
+     {
+      "name": "Gachignard Thomas",
+      "id": 15315
+     },
+     {
+      "name": "Pinto Pedro",
+      "id": 10610
+     },
+     {
+      "name": "Novikov Savva",
+      "id": 7378
+     }
+    ],
+    "Milano San Remo TTT": [
+     {
+      "name": "Vlasov Aleksandr",
+      "id": 6419
+     },
+     {
+      "name": "Oliveira Nélson",
+      "id": 1975
+     },
+     {
+      "name": "Tratnik Jan",
+      "id": 2268
+     },
+     {
+      "name": "Gachignard Thomas",
+      "id": 15315
+     },
+     {
+      "name": "Antunes Tiago",
+      "id": 6892
+     },
+     {
+      "name": "Huyet Baptiste",
+      "id": 7759
      }
     ]
    }
